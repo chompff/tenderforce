@@ -89,7 +89,7 @@ const StappenslagHero: React.FC = () => {
         </div>
 
         {/* Scroll indicator - positioned at bottom */}
-        <div className="relative z-10 pb-8 text-center">
+        <div className="relative z-10 pb-8 text-center scroll-hint">
           <div className="text-gray-400">
             <div className="flex flex-col items-center space-y-2">
               <span className="text-sm">Scroll voor meer informatie</span>
