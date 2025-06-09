@@ -1,0 +1,20 @@
+
+{
+  "suggestions": [
+    { "code": "30000000", "description": "Kantoormachines, automatiseringsapparatuur, computers, telecommunicatie, informatie en audiovisuele apparatuur" },
+    { "code": "30100000", "description": "Kantoormachines en -benodigdheden behalve meubilair en softwarepakketten" },
+    { "code": "30200000", "description": "Computerapparatuur en -benodigdheden" },
+    { "code": "39000000", "description": "Meubilair (inclusief kantoormeubilair), woninginrichting, huishoudelijke apparaten (exclusief verlichting) en schoonmaakmiddelen" },
+    { "code": "39100000", "description": "Meubilair" },
+    { "code": "39110000", "description": "Kantoormeubilair" },
+    { "code": "72000000", "description": "IT-diensten: advies, software-ontwikkeling, internet en ondersteuning" },
+    { "code": "72100000", "description": "Diensten op het gebied van computerhardware en -software" },
+    { "code": "72200000", "description": "Diensten op het gebied van software-programmering en -advies" },
+    { "code": "90000000", "description": "Riolering, afvalverwijdering, reiniging en milieudiensten" },
+    { "code": "90900000", "description": "Reinigings- en schoonmaakdiensten" },
+    { "code": "90910000", "description": "Schoonmaakdiensten" },
+    { "code": "45000000", "description": "Bouwwerkzaamheden" },
+    { "code": "45100000", "description": "Bouwrijp maken van bouwterreinen" },
+    { "code": "45200000", "description": "Bouwwerkzaamheden voor gebouwen (volledig of gedeeltelijk)" }
+  ]
+}
