@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { SignInButton, UserButton, useUser, OrganizationSwitcher } from "@clerk/clerk-react";
+import { SignInButton, useUser } from "@clerk/clerk-react";
+import UserDropdown from './UserDropdown';
 import '../../styles/button-overlay.css';
 
 const Navigation: React.FC = () => {
@@ -51,40 +52,26 @@ const Navigation: React.FC = () => {
                   d="M0,10C0,4.48,4.48,0,10,0s10,4.48,10,10-4.48,10-10,10S0,15.52,0,10ZM10,2C5.58,2,2,5.58,2,10s3.58,8,8,8,8-3.58,8-8S14.42,2,10,2Z"
                 />
               </svg>
-              <span className={`text-xl font-bold transition-colors duration-300 ${
-                isScrolled ? 'text-gray-900' : 'text-gray-900 drop-shadow-sm'
-              }`}>Tenderforce</span>
+              <div className="flex items-center space-x-2">
+                <span className={`text-xl font-bold transition-colors duration-300 ${
+                  isScrolled ? 'text-gray-900' : 'text-gray-900 drop-shadow-sm'
+                }`}>Tenderforce</span>
+                <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium transition-colors duration-300 ${
+                  isScrolled 
+                    ? 'bg-orange-100 text-orange-800 border border-orange-200' 
+                    : 'bg-orange-100/90 text-orange-800 border border-orange-200/90 backdrop-blur-sm'
+                }`}>
+                  BETA
+                </span>
+              </div>
             </a>
 
-            {/* Right side: Tender Dashboard, Auth and hamburger menu */}
+            {/* Right side: User dropdown and hamburger menu */}
             <div className="flex items-center space-x-4">
-              {/* Tender Dashboard Link - Only show when signed in */}
-              {isSignedIn && (
-                <a 
-                  href="/tender-dashboard" 
-                  className={`hidden sm:block px-3 py-1.5 text-sm font-medium transition-all duration-300 hover:opacity-75 ${
-                    isScrolled 
-                      ? 'text-gray-700 hover:text-blue-600' 
-                      : 'text-gray-800 hover:text-blue-600'
-                  }`}
-                >
-                  Tender dashboard
-                </a>
-              )}
-
               {/* Authentication */}
               <div className="hidden sm:flex items-center space-x-3">
                 {isSignedIn ? (
-                  <>
-                    <OrganizationSwitcher 
-                      appearance={{
-                        elements: {
-                          organizationSwitcherTrigger: "px-3 py-1.5 text-sm font-medium bg-white border border-gray-200 rounded-md hover:bg-gray-50",
-                        },
-                      }}
-                    />
-                    <UserButton />
-                  </>
+                  <UserDropdown isScrolled={isScrolled} />
                 ) : (
                   <SignInButton mode="modal">
                     <span className={`cursor-pointer px-3 py-1.5 text-sm font-medium transition-all duration-300 hover:opacity-75 ${
@@ -457,16 +444,9 @@ const Navigation: React.FC = () => {
               {/* Mobile Authentication */}
               <div className="flex flex-col items-center space-y-3">
                 {isSignedIn ? (
-                  <>
-                    <OrganizationSwitcher 
-                      appearance={{
-                        elements: {
-                          organizationSwitcherTrigger: "w-full px-4 py-2 text-sm font-medium bg-white border border-gray-200 rounded-md hover:bg-gray-50",
-                        },
-                      }}
-                    />
-                    <UserButton />
-                  </>
+                  <div className="w-full">
+                    <UserDropdown isScrolled={true} />
+                  </div>
                 ) : (
                   <SignInButton mode="modal">
                     <span className="cursor-pointer text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors">

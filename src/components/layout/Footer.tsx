@@ -67,7 +67,12 @@ const Footer: React.FC = () => {
                   d="M0,10C0,4.48,4.48,0,10,0s10,4.48,10,10-4.48,10-10,10S0,15.52,0,10ZM10,2C5.58,2,2,5.58,2,10s3.58,8,8,8,8-3.58,8-8S14.42,2,10,2Z"
                 />
               </svg>
-              <span className="text-xl font-bold text-gray-900">Tenderforce</span>
+              <div className="flex items-center space-x-2">
+                <span className="text-xl font-bold text-gray-900">Tenderforce</span>
+                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 border border-orange-200">
+                  BETA
+                </span>
+              </div>
             </a>
             <p className="text-sm text-gray-600 leading-relaxed max-w-sm">
               AI-gestuurde tools voor aanbestedingsprofessionals. 
