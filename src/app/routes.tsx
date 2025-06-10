@@ -6,12 +6,12 @@ import Layout from "@/components/layout/Layout";
 // Tool Pages (Procurement Tools)
 import Index from "@/features/tools/Index";
 import Stappenslang from "@/features/tools/Stappenslang";
-import SectoraleVerplichtingencheck from "@/features/tools/SectoraleVerplichtingencheck";
+import SectoraleVerplichtingencheckPage from "@/pages/tools/sectorale-verplichtingencheck";
 import Gunningsbriefbouwer from "@/features/tools/Gunningsbriefbouwer";
 import WezenlijkeWijzigingscheck from "@/features/tools/WezenlijkeWijzigingscheck";
 import Opdrachtramer from "@/features/tools/Opdrachtramer";
 import GemengdeOpdrachtKwalificatie from "@/features/tools/GemengdeOpdrachtKwalificatie";
-import AanbestedingsplichtCheck from "@/features/tools/AanbestedingsplichtCheck";
+import AanbestedingsplichtCheckPage from "@/pages/tools/aanbestedingsplicht-check";
 import AanbestedingsplichtCheckResult from "@/features/tools/AanbestedingsplichtCheckResult";
 import Results from "@/features/tools/Results";
 
@@ -22,7 +22,7 @@ import Dashboard from "@/features/auth/Dashboard";
 
 // Static Pages
 import OverTenderforce from "@/pages/OverTenderforce";
-import Prijzen from "@/pages/Prijzen";
+import PrijzenPage from "@/features/static/Prijzen";
 import Privacybeleid from "@/pages/Privacybeleid";
 import AlgemeneVoorwaarden from "@/pages/AlgemeneVoorwaarden";
 import Disclaimer from "@/pages/Disclaimer";
@@ -37,12 +37,12 @@ const AppRoutes = () => {
       
       {/* Procurement Tools */}
       <Route path="/tools/stappenslang" element={<Layout><Stappenslang /></Layout>} />
-      <Route path="/tools/sectorale-verplichtingencheck" element={<Layout><SectoraleVerplichtingencheck /></Layout>} />
+      <Route path="/tools/sectorale-verplichtingencheck" element={<Layout><SectoraleVerplichtingencheckPage /></Layout>} />
       <Route path="/tools/gunningsbriefbouwer" element={<Layout><Gunningsbriefbouwer /></Layout>} />
       <Route path="/tools/wezenlijke-wijzigingscheck" element={<Layout><WezenlijkeWijzigingscheck /></Layout>} />
       <Route path="/tools/opdrachtramer" element={<Layout><Opdrachtramer /></Layout>} />
       <Route path="/tools/gemengde-opdracht-kwalificatie" element={<Layout><GemengdeOpdrachtKwalificatie /></Layout>} />
-      <Route path="/tools/aanbestedingsplicht-check" element={<Layout><AanbestedingsplichtCheck /></Layout>} />
+      <Route path="/tools/aanbestedingsplicht-check" element={<Layout><AanbestedingsplichtCheckPage /></Layout>} />
       <Route path="/tools/aanbestedingsplicht-check/result" element={<Layout><AanbestedingsplichtCheckResult /></Layout>} />
       <Route path="/tools/results/:code" element={<Layout><Results /></Layout>} />
       
@@ -56,7 +56,7 @@ const AppRoutes = () => {
       
       {/* Static Pages */}
       <Route path="/over-tenderforce" element={<Layout><OverTenderforce /></Layout>} />
-      <Route path="/prijzen" element={<Layout><Prijzen /></Layout>} />
+      <Route path="/prijzen" element={<Layout><PrijzenPage /></Layout>} />
       <Route path="/privacybeleid" element={<Layout><Privacybeleid /></Layout>} />
       <Route path="/algemene-voorwaarden" element={<Layout><AlgemeneVoorwaarden /></Layout>} />
       <Route path="/disclaimer" element={<Layout><Disclaimer /></Layout>} />

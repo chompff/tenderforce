@@ -95,7 +95,7 @@ const AanbestedingsplichtCheckHeroNew: React.FC = () => {
     const step = params.get('step');
     
     if (step?.startsWith('result')) {
-      navigate('/aanbestedingsplicht-check/result?' + params.toString(), { replace: true });
+              navigate('/tools/aanbestedingsplicht-check/result?' + params.toString(), { replace: true });
     }
   }, [navigate]);
 

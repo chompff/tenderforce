@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Check, Star, Zap, Shield, Users, ArrowLeft } from 'lucide-react';
 
-
-
-const Prijzen: React.FC = () => {
+const PrijzenPage: React.FC = () => {
   const [isAnnual, setIsAnnual] = useState(true);
   const navigate = useNavigate();
 
@@ -300,4 +298,4 @@ const Prijzen: React.FC = () => {
   );
 };
 
-export default Prijzen; 
+export default PrijzenPage; 

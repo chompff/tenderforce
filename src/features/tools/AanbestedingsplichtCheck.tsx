@@ -133,7 +133,7 @@ const AanbestedingsplichtCheckHero: React.FC = () => {
       const currentPath = `/tools/aanbestedingsplicht-check?${params.toString()}`;
       sessionStorage.setItem('lastPath', currentPath);
       
-      navigate('/aanbestedingsplicht-check/result?' + params.toString(), { replace: true });
+      navigate('/tools/aanbestedingsplicht-check/result?' + params.toString(), { replace: true });
     }
   }, [phase, navigate, selectedCode, organizationType]);
 

@@ -78,7 +78,7 @@ const AanbestedingsplichtCheckResult: React.FC = () => {
                 } else {
                   params.set('step', 'other-org-subsidy');
                 }
-                navigate(`/aanbestedingsplicht-check?${params.toString()}`);
+                navigate(`/tools/aanbestedingsplicht-check?${params.toString()}`);
               }
             }}
             className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
