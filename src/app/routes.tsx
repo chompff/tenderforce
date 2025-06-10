@@ -4,16 +4,16 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 
 // Tool Pages (Procurement Tools)
-import Index from "@/features/tools/Index";
-import Stappenslang from "@/features/tools/Stappenslang";
+import IndexPage from "@/pages/tools/index";
+import StappenslagPage from "@/pages/tools/stappenslang";
 import SectoraleVerplichtingencheckPage from "@/pages/tools/sectorale-verplichtingencheck";
-import Gunningsbriefbouwer from "@/features/tools/Gunningsbriefbouwer";
-import WezenlijkeWijzigingscheck from "@/features/tools/WezenlijkeWijzigingscheck";
-import Opdrachtramer from "@/features/tools/Opdrachtramer";
-import GemengdeOpdrachtKwalificatie from "@/features/tools/GemengdeOpdrachtKwalificatie";
+import GunningsbriefbouwerPage from "@/pages/tools/gunningsbriefbouwer";
+import WezenlijkeWijzigingscheckPage from "@/pages/tools/wezenlijke-wijzigingscheck";
+import OpdrachtamerPage from "@/pages/tools/opdrachtramer";
+import GemengdeOpdrachtKwalificatiePage from "@/pages/tools/gemengde-opdracht-kwalificatie";
 import AanbestedingsplichtCheckPage from "@/pages/tools/aanbestedingsplicht-check";
-import AanbestedingsplichtCheckResult from "@/features/tools/AanbestedingsplichtCheckResult";
-import Results from "@/features/tools/Results";
+import AanbestedingsplichtCheckResultPage from "@/pages/tools/aanbestedingsplicht-check-result";
+import ResultsPage from "@/pages/tools/results";
 
 // Auth Pages (will be added later)
 import Login from "@/features/auth/Login";
@@ -33,21 +33,21 @@ const AppRoutes = () => {
   return (
     <Routes>
       {/* Public Routes */}
-      <Route path="/" element={<Layout><Index /></Layout>} />
+      <Route path="/" element={<Layout><IndexPage /></Layout>} />
       
       {/* Procurement Tools */}
-      <Route path="/tools/stappenslang" element={<Layout><Stappenslang /></Layout>} />
+      <Route path="/tools/stappenslang" element={<Layout><StappenslagPage /></Layout>} />
       <Route path="/tools/sectorale-verplichtingencheck" element={<Layout><SectoraleVerplichtingencheckPage /></Layout>} />
-      <Route path="/tools/gunningsbriefbouwer" element={<Layout><Gunningsbriefbouwer /></Layout>} />
-      <Route path="/tools/wezenlijke-wijzigingscheck" element={<Layout><WezenlijkeWijzigingscheck /></Layout>} />
-      <Route path="/tools/opdrachtramer" element={<Layout><Opdrachtramer /></Layout>} />
-      <Route path="/tools/gemengde-opdracht-kwalificatie" element={<Layout><GemengdeOpdrachtKwalificatie /></Layout>} />
+      <Route path="/tools/gunningsbriefbouwer" element={<Layout><GunningsbriefbouwerPage /></Layout>} />
+      <Route path="/tools/wezenlijke-wijzigingscheck" element={<Layout><WezenlijkeWijzigingscheckPage /></Layout>} />
+      <Route path="/tools/opdrachtramer" element={<Layout><OpdrachtamerPage /></Layout>} />
+      <Route path="/tools/gemengde-opdracht-kwalificatie" element={<Layout><GemengdeOpdrachtKwalificatiePage /></Layout>} />
       <Route path="/tools/aanbestedingsplicht-check" element={<Layout><AanbestedingsplichtCheckPage /></Layout>} />
-      <Route path="/tools/aanbestedingsplicht-check/result" element={<Layout><AanbestedingsplichtCheckResult /></Layout>} />
-      <Route path="/tools/results/:code" element={<Layout><Results /></Layout>} />
+      <Route path="/tools/aanbestedingsplicht-check/result" element={<Layout><AanbestedingsplichtCheckResultPage /></Layout>} />
+      <Route path="/tools/results/:code" element={<Layout><ResultsPage /></Layout>} />
       
       {/* Legacy Routes - Redirects for backward compatibility */}
-      <Route path="/results/:code" element={<Layout><Results /></Layout>} />
+      <Route path="/results/:code" element={<Layout><ResultsPage /></Layout>} />
       
       {/* Auth Routes (Future Implementation) */}
       <Route path="/auth/login" element={<Login />} />
