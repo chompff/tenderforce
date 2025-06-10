@@ -112,7 +112,7 @@ const ExpandableInfo: React.FC<ExpandableInfoProps> = ({ title, level, descripti
                 )}
               </button>
               <div ref={contentRef} className="pr-8">
-                {expandedInfo}
+              {expandedInfo}
               </div>
             </div>
           </CollapsibleContent>

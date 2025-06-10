@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { SignInButton, UserButton, useUser, OrganizationSwitcher } from "@clerk/clerk-react";
 import '../../styles/button-overlay.css';
 
 const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { isSignedIn } = useUser();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -54,19 +56,47 @@ const Navigation: React.FC = () => {
               }`}>Tenderforce</span>
             </a>
 
-            {/* Right side: Login button and hamburger menu */}
+            {/* Right side: Tender Dashboard, Auth and hamburger menu */}
             <div className="flex items-center space-x-4">
-              {/* Login Button */}
-              <a 
-                href="/login" 
-                className={`hidden sm:flex items-center px-3 py-1.5 text-sm font-medium transition-all duration-300 hover:opacity-75 ${
-                  isScrolled 
-                    ? 'text-gray-700 hover:text-blue-600' 
-                    : 'text-gray-800 hover:text-blue-600'
-                }`}
-              >
-                Login
-              </a>
+              {/* Tender Dashboard Link - Only show when signed in */}
+              {isSignedIn && (
+                <a 
+                  href="/tender-dashboard" 
+                  className={`hidden sm:block px-3 py-1.5 text-sm font-medium transition-all duration-300 hover:opacity-75 ${
+                    isScrolled 
+                      ? 'text-gray-700 hover:text-blue-600' 
+                      : 'text-gray-800 hover:text-blue-600'
+                  }`}
+                >
+                  Tender dashboard
+                </a>
+              )}
+
+              {/* Authentication */}
+              <div className="hidden sm:flex items-center space-x-3">
+                {isSignedIn ? (
+                  <>
+                    <OrganizationSwitcher 
+                      appearance={{
+                        elements: {
+                          organizationSwitcherTrigger: "px-3 py-1.5 text-sm font-medium bg-white border border-gray-200 rounded-md hover:bg-gray-50",
+                        },
+                      }}
+                    />
+                    <UserButton />
+                  </>
+                ) : (
+                  <SignInButton mode="modal">
+                    <span className={`cursor-pointer px-3 py-1.5 text-sm font-medium transition-all duration-300 hover:opacity-75 ${
+                      isScrolled 
+                        ? 'text-gray-700 hover:text-blue-600' 
+                        : 'text-gray-800 hover:text-blue-600'
+                    }`}>
+                      Inloggen
+                    </span>
+                  </SignInButton>
+                )}
+              </div>
 
               {/* Animated Hamburger Menu Button */}
               <button
@@ -152,6 +182,15 @@ const Navigation: React.FC = () => {
                 >
                   Start
                 </a>
+                {/* Tender Dashboard Link - Only show when signed in */}
+                {isSignedIn && (
+                  <a 
+                    href="/tender-dashboard" 
+                    className="block text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors py-2"
+                  >
+                    Tender dashboard
+                  </a>
+                )}
                 <a 
                   href="/over-tenderforce" 
                   className="block text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors py-2"
@@ -413,8 +452,30 @@ const Navigation: React.FC = () => {
               </div>
             </div>
 
-            {/* Menu Footer with CTA - Mobile */}
-            <div className="p-6 border-t border-gray-100">
+            {/* Menu Footer with Auth & CTA - Mobile */}
+            <div className="p-6 border-t border-gray-100 space-y-4">
+              {/* Mobile Authentication */}
+              <div className="flex flex-col items-center space-y-3">
+                {isSignedIn ? (
+                  <>
+                    <OrganizationSwitcher 
+                      appearance={{
+                        elements: {
+                          organizationSwitcherTrigger: "w-full px-4 py-2 text-sm font-medium bg-white border border-gray-200 rounded-md hover:bg-gray-50",
+                        },
+                      }}
+                    />
+                    <UserButton />
+                  </>
+                ) : (
+                  <SignInButton mode="modal">
+                    <span className="cursor-pointer text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors">
+                      Inloggen
+                    </span>
+                  </SignInButton>
+                )}
+              </div>
+              
               <a 
                 href="/prijzen"
                 className="block w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium text-lg text-center"

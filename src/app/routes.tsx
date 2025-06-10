@@ -20,6 +20,9 @@ import Login from "@/features/auth/Login";
 import Register from "@/features/auth/Register";
 import Dashboard from "@/features/auth/Dashboard";
 
+// Tender Dashboard
+import TenderDashboardPage from "@/pages/TenderDashboardPage";
+
 // Static Pages
 import OverTenderforce from "@/pages/OverTenderforce";
 import PrijzenPage from "@/features/static/Prijzen";
@@ -48,6 +51,9 @@ const AppRoutes = () => {
       
       {/* Legacy Routes - Redirects for backward compatibility */}
       <Route path="/results/:code" element={<Layout><ResultsPage /></Layout>} />
+      
+      {/* Tender Dashboard */}
+      <Route path="/tender-dashboard" element={<Layout><TenderDashboardPage /></Layout>} />
       
       {/* Auth Routes (Future Implementation) */}
       <Route path="/auth/login" element={<Login />} />

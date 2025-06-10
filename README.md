@@ -4,7 +4,7 @@
 
 ---
 
-## 🧭 Mission
+## 🛍️ Mission
 
 Tenderforce exists to radically simplify public procurement.
 
@@ -21,7 +21,9 @@ Tenderforce makes tendering simple, structured, and secure — helping you stay 
 Tenderforce is a toolset and ultimately a platform that simplifies the full **aanbestedingsproces** (public procurement lifecycle).
 
 ### In the short term:
+
 We offer 10–15 focused tools to solve concrete steps, such as:
+
 - **Flow-based decision aids** (e.g. which procedure to choose)
 - **Document generators** (e.g. award letters, rejection letters)
 - **Checklists and validations**
@@ -29,6 +31,7 @@ We offer 10–15 focused tools to solve concrete steps, such as:
 - **Templates** for tender documents (PvE, Gunningsleidraad, Nota van Inlichtingen)
 
 ### In the long term:
+
 Type what you want to tender — and Tenderforce will generate the required documentation, guide you through the legal requirements, and structure the review and award process.
 
 From initial scoping to publishing, evaluating, and sending compliant *gunningsbrieven* and *afwijzingsbrieven* — Tenderforce covers the full journey.
@@ -40,13 +43,19 @@ From initial scoping to publishing, evaluating, and sending compliant *gunningsb
 This repository contains the early prototype built via [Lovable.dev](https://lovable.dev) and edited in [Cursor](https://cursor.sh). It may include some inconsistent or exploratory code, which we're now auditing.
 
 We're currently:
+
 - Refactoring the codebase for clarity and modularity
 - Setting up a robust folder structure
 - Aligning functionality with our roadmap
+- Integrating Clerk for authentication
+- Preparing Supabase for tender storage
+- Planning Stripe integration for billing and subscription management
 
 ---
 
 ## ⚙️ Tech stack
+
+**Frontend & Dev Tools:**
 
 - Vite
 - TypeScript
@@ -54,7 +63,21 @@ We're currently:
 - Tailwind CSS
 - PostCSS
 - shadcn-ui
-- Lovable + Cursor
+- Lovable
+- Cursor
+
+**Auth & Storage:**
+
+- Clerk (authentication & user management)
+- Supabase (PostgreSQL database for tenders and metadata)
+
+**Billing:**
+
+- Stripe (for handling subscriptions and payment plans)
+
+**Deployment:**
+
+- Vercel
 
 ---
 
@@ -67,3 +90,14 @@ git clone <YOUR_GIT_URL>
 cd <YOUR_PROJECT_NAME>
 npm install
 npm run dev
+```
+
+Ensure you have a `.env.local` file with the following:
+
+```env
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+```
+
+> Note: Supabase and Stripe keys will be added once those services are integrated.
+
