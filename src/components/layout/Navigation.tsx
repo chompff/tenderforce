@@ -51,7 +51,7 @@ const Navigation: React.FC = () => {
               </svg>
               <span className={`text-xl font-bold transition-colors duration-300 ${
                 isScrolled ? 'text-gray-900' : 'text-gray-900 drop-shadow-sm'
-              }`}>Tenderforce.ai</span>
+              }`}>Tenderforce</span>
             </a>
 
             {/* Right side: Login button and hamburger menu */}

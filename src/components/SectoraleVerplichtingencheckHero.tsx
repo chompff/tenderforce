@@ -605,7 +605,7 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
         </div>
 
         {/* Scroll indicator - positioned at bottom */}
-        <div className={`relative z-10 pb-8 text-center transition-opacity duration-500 ${
+        <div className={`relative z-10 pb-8 text-center scroll-hint transition-opacity duration-500 ${
           showScrollIndicator ? 'opacity-100' : 'opacity-0'
         }`}>
           <div className="text-gray-400">

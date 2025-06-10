@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
                   d="M0,10C0,4.48,4.48,0,10,0s10,4.48,10,10-4.48,10-10,10S0,15.52,0,10ZM10,2C5.58,2,2,5.58,2,10s3.58,8,8,8,8-3.58,8-8S14.42,2,10,2Z"
                 />
               </svg>
-              <span className="text-xl font-bold text-gray-900">Tenderforce.ai</span>
+              <span className="text-xl font-bold text-gray-900">Tenderforce</span>
             </a>
             <p className="text-sm text-gray-600 leading-relaxed max-w-sm">
               AI-gestuurde tools voor aanbestedingsprofessionals. 
@@ -132,7 +132,7 @@ const Footer: React.FC = () => {
               Contact
             </h3>
             <div className="space-y-2 text-sm text-gray-600">
-              <p className="font-semibold text-gray-800">Tenderforce.ai</p>
+              <p className="font-semibold text-gray-800">Tenderforce</p>
               <div className="space-y-1">
                 <p>Kleverlaan 77</p>
                 <p>2061 TD Bloemendaal</p>
@@ -184,7 +184,7 @@ const Footer: React.FC = () => {
         <div className="mt-12 pt-6 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-4 text-xs text-gray-500">
-              <span>© {currentYear} Tenderforce.ai</span>
+              <span>© {currentYear} Tenderforce</span>
               <span>•</span>
               <span>Alle rechten voorbehouden</span>
               <span>•</span>
