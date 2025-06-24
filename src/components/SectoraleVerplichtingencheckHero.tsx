@@ -15,13 +15,17 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
   const navigate = useNavigate();
   const autocompleteRef = useRef<AutocompleteRef>(null);
   const footerRef = useRef<HTMLDivElement>(null);
-  const [phase, setPhase] = useState<'input' | 'organization' | 'estimation' | 'high-threshold'>('input');
+  const [phase, setPhase] = useState<'input' | 'organization' | 'private-funding' | 'estimation' | 'sectoral-assessment' | 'high-threshold'>('input');
   const [selectedCode, setSelectedCode] = useState<string>('');
   const [selectedDescription, setSelectedDescription] = useState<string>('');
   const [organizationType, setOrganizationType] = useState<string>('');
   const [typeAanbesteding, setTypeAanbesteding] = useState<string>('');
   const [showHighThresholdWarning, setShowHighThresholdWarning] = useState(false);
   const [showScrollIndicator, setShowScrollIndicator] = useState(true);
+  const [isPrivateEnterprise, setIsPrivateEnterprise] = useState(false);
+  const [privateFundingQuestion, setPrivateFundingQuestion] = useState<'pending' | 'yes' | 'no' | null>(null);
+  const [showExceptionNotification, setShowExceptionNotification] = useState(false);
+  const [selectedExceptionType, setSelectedExceptionType] = useState<string>('');
 
   const { getStateFromUrl, setStateInUrl } = useUrlStateNoRerender();
 
@@ -69,6 +73,12 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
         setPhase('estimation');
       } else if (urlState.step === '2') {
         setPhase('organization');
+      } else if (urlState.step === 'sectoral') {
+        setPhase('sectoral-assessment');
+      } else if (urlState.step === 'private-funding') {
+        setPhase('private-funding');
+      } else if (urlState.step === '4') {
+        setPhase('high-threshold');
       } else {
         setPhase('input');
       }
@@ -121,6 +131,15 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
   const handleOrganizationSelect = (organizationType: string) => {
     if (!selectedCode) return;
     setOrganizationType(organizationType);
+    if (organizationType === 'private') {
+      setIsPrivateEnterprise(true);
+      setPrivateFundingQuestion('pending');
+      setPhase('private-funding');
+      setStateInUrl({ code: selectedCode, org: organizationType, step: 'private-funding' });
+      return;
+    }
+    setIsPrivateEnterprise(false);
+    setPrivateFundingQuestion(null);
     setPhase('estimation');
     setStateInUrl({ code: selectedCode, org: organizationType, step: '3' });
   };
@@ -132,10 +151,8 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
       setStateInUrl({ code: selectedCode, org: organizationType, step: '4', estimation: answer });
       return;
     }
-    setStateInUrl({ code: selectedCode, org: organizationType, step: '3', estimation: answer });
-    // Store current path before navigating to results
-    sessionStorage.setItem('lastPath', `/tools/sectorale-verplichtingencheck?code=${selectedCode}&org=${organizationType}&step=3`);
-    navigate(`/results/${selectedCode}?org=${organizationType}&estimation=${answer}`);
+    setPhase('sectoral-assessment');
+    setStateInUrl({ code: selectedCode, org: organizationType, step: 'sectoral', estimation: answer });
   };
 
   const handleHighThresholdSelect = (answer: string) => {
@@ -145,10 +162,23 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
       setStateInUrl({ code: selectedCode, org: organizationType, step: '4', estimation: answer });
       return;
     }
-    setStateInUrl({ code: selectedCode, org: organizationType, step: '3', estimation: answer });
-    // Store current path before navigating to results
-    sessionStorage.setItem('lastPath', `/tools/sectorale-verplichtingencheck?code=${selectedCode}&org=${organizationType}&step=4`);
-    navigate(`/results/${selectedCode}?org=${organizationType}&estimation=yes`);
+    // Route to sectoral assessment instead of direct to results
+    setPhase('sectoral-assessment');
+    setStateInUrl({ code: selectedCode, org: organizationType, step: 'sectoral', estimation: 'yes' });
+  };
+
+  const handleSectoralAssessmentSelect = (exception: string) => {
+    if (!selectedCode || !organizationType) return;
+    if (exception === 'none') {
+      // No exception - show sectoral obligations (normal sectoral rules apply)
+      sessionStorage.setItem('lastPath', `/tools/sectorale-verplichtingencheck?code=${selectedCode}&org=${organizationType}&step=sectoral`);
+      navigate(`/results/${selectedCode}?org=${organizationType}&estimation=yes`);
+    } else {
+      // Has exception - show exception notification (no sectoral obligations apply)
+      setSelectedExceptionType(exception);
+      setShowExceptionNotification(true);
+      setStateInUrl({ code: selectedCode, org: organizationType, step: 'sectoral', exception: exception });
+    }
   };
 
   const handleProgressStepClick = (step: number) => {
@@ -191,7 +221,7 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
         {/* Connector 1 */}
         <div className="flex-1 max-w-20">
           <div className={`h-1 rounded-full transition-all duration-500 ${
-            phase === 'estimation' || phase === 'high-threshold'
+            phase === 'estimation' || phase === 'sectoral-assessment' || phase === 'high-threshold'
               ? 'bg-green-500' 
               : phase === 'organization'
                 ? 'bg-gradient-to-r from-green-500 to-orange-500'
@@ -207,13 +237,13 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
         >
           <div className="relative">
             <div className={`w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 ${
-              phase === 'estimation' || phase === 'high-threshold'
+              phase === 'estimation' || phase === 'sectoral-assessment' || phase === 'high-threshold'
                 ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white group-hover:shadow-xl' 
                 : phase === 'organization' 
                   ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-orange-200 group-hover:shadow-xl' 
                   : 'bg-gray-200 text-gray-500'
             }`}>
-              {phase === 'estimation' || phase === 'high-threshold' ? (
+              {phase === 'estimation' || phase === 'sectoral-assessment' || phase === 'high-threshold' ? (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
@@ -224,7 +254,7 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
               )}
             </div>
             <div className={`absolute -inset-1 rounded-full opacity-20 transition-opacity ${
-              phase === 'estimation' || phase === 'high-threshold'
+              phase === 'estimation' || phase === 'sectoral-assessment' || phase === 'high-threshold'
                 ? 'bg-gradient-to-r from-green-400 to-emerald-400 group-hover:opacity-30' 
                 : phase === 'organization' 
                   ? 'bg-gradient-to-r from-orange-400 to-amber-400 group-hover:opacity-30' 
@@ -233,20 +263,20 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
           </div>
           <div className="ml-3 text-left">
             <div className={`text-sm font-semibold transition-colors ${
-              phase === 'estimation' || phase === 'high-threshold'
+              phase === 'estimation' || phase === 'sectoral-assessment' || phase === 'high-threshold'
                 ? 'text-green-700' 
                 : phase === 'organization' 
                   ? 'text-orange-700' 
                   : 'text-gray-500'
             }`}>Organisatie</div>
             <div className={`text-xs transition-colors ${
-              phase === 'estimation' || phase === 'high-threshold'
+              phase === 'estimation' || phase === 'sectoral-assessment' || phase === 'high-threshold'
                 ? 'text-green-600' 
                 : phase === 'organization' 
                   ? 'text-orange-600' 
                   : 'text-gray-400'
             }`}>
-              {phase === 'estimation' || phase === 'high-threshold' ? 'Voltooid' : phase === 'organization' ? 'Actief' : 'Wachtend'}
+              {phase === 'estimation' || phase === 'sectoral-assessment' || phase === 'high-threshold' ? 'Voltooid' : phase === 'organization' ? 'Actief' : 'Wachtend'}
             </div>
           </div>
         </button>
@@ -256,7 +286,7 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
           <div className={`h-1 rounded-full transition-all duration-500 ${
             phase === 'high-threshold'
               ? 'bg-green-500'
-              : phase === 'estimation'
+              : phase === 'estimation' || phase === 'sectoral-assessment'
               ? 'bg-gradient-to-r from-green-500 to-orange-500' 
               : 'bg-gray-200'
           }`}></div>
@@ -273,13 +303,13 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
           className={`flex items-center transition-all duration-200 group ${
             phase === 'high-threshold' ? 'hover:scale-105 cursor-pointer' : 'cursor-default'
           }`}
-          disabled={phase !== 'high-threshold' && phase !== 'estimation'}
+          disabled={phase !== 'high-threshold' && phase !== 'estimation' && phase !== 'sectoral-assessment'}
         >
           <div className="relative">
             <div className={`w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 ${
               phase === 'high-threshold'
                 ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white group-hover:shadow-xl'
-                : phase === 'estimation'
+                : phase === 'estimation' || phase === 'sectoral-assessment'
                 ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-orange-200' 
                 : 'bg-gray-200 text-gray-500'
             }`}>
@@ -296,7 +326,7 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
             <div className={`absolute -inset-1 rounded-full opacity-20 transition-opacity ${
               phase === 'high-threshold'
                 ? 'bg-gradient-to-r from-green-400 to-emerald-400 group-hover:opacity-30'
-                : phase === 'estimation'
+                : phase === 'estimation' || phase === 'sectoral-assessment'
                 ? 'bg-gradient-to-r from-orange-400 to-amber-400' 
                 : 'bg-gray-300'
             }`}></div>
@@ -305,18 +335,18 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
             <div className={`text-sm font-semibold transition-colors ${
               phase === 'high-threshold' 
                 ? 'text-green-700'
-                : phase === 'estimation' 
+                : phase === 'estimation' || phase === 'sectoral-assessment'
                 ? 'text-orange-700' 
                 : 'text-gray-500'
             }`}>Drempelwaarde</div>
             <div className={`text-xs transition-colors ${
               phase === 'high-threshold' 
                 ? 'text-green-600'
-                : phase === 'estimation' 
+                : phase === 'estimation' || phase === 'sectoral-assessment'
                 ? 'text-orange-600' 
                 : 'text-gray-400'
             }`}>
-              {phase === 'high-threshold' ? 'Voltooid' : phase === 'estimation' ? 'Actief' : 'Wachtend'}
+              {phase === 'high-threshold' ? 'Voltooid' : (phase === 'estimation' || phase === 'sectoral-assessment') ? 'Actief' : 'Wachtend'}
             </div>
           </div>
         </button>
@@ -371,10 +401,14 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Check welke sectorale wetgeving van toepassing is.<br />
                 <span className="font-bold">
-                  {phase === 'input' 
-                    ? 'Typ hier wat je wilt aanbesteden:' 
+                  {phase === 'input'
+                    ? 'Typ hier wat je wilt aanbesteden:'
                     : phase === 'organization'
                     ? 'Voor welke organisatie werk je?'
+                    : phase === 'private-funding'
+                    ? 'Wordt deze onderneming voor meer dan 50% gefinancierd met publieke middelen?'
+                    : phase === 'sectoral-assessment'
+                    ? 'Is er een uitzondering van toepassing?'
                     : phase === 'high-threshold'
                     ? 'Is het een geraamde waarde van €250 miljoen of meer?'
                     : `Komt je raming boven de drempelwaarde van ${getThresholdAmount(organizationType, typeAanbesteding)} uit?`
@@ -455,6 +489,16 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                           Zorgverzekeraars, woningcorporaties en andere organisaties met een publieke taak die aanbesteden volgens de wet.
                         </p>
                       </button>
+
+                      <button
+                        onClick={() => handleOrganizationSelect('private')}
+                        className="group flex-1 p-6 bg-white border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center"
+                      >
+                        <span className="text-xl font-bold text-gray-900 block mb-3">Private onderneming</span>
+                        <p className="text-sm text-gray-600 leading-relaxed">
+                          Commerciële bedrijven of andere private organisaties die mogelijk met publieke middelen gefinancierd worden.
+                        </p>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -463,6 +507,166 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                 <div className="max-w-6xl mx-auto">
                   <ProgressBar />
                 </div>
+              </div>
+
+              {/* Private Funding Question */}
+              <div className={`absolute inset-0 transition-all duration-1000 ease-in-out ${phase === 'private-funding' ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-4 pointer-events-none'}`}>
+                <div className="w-full">
+                  <div className="container mx-auto px-6 lg:px-8">
+                    <div className="max-w-4xl mx-auto mb-8">
+                      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button
+                          onClick={() => {
+                            setPrivateFundingQuestion('yes');
+                            setOrganizationType('publiekrechterlijk');
+                            setPhase('estimation');
+                            setStateInUrl({ code: selectedCode, org: 'publiekrechterlijk', step: '3' });
+                          }}
+                          className="group flex-1 p-6 bg-white border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center"
+                        >
+                          <span className="text-xl font-bold text-gray-900 block mb-3">Ja</span>
+                          <p className="text-sm text-gray-600 leading-relaxed">
+                            De onderneming wordt behandeld als een publiekrechtelijke instelling voor deze check.
+                          </p>
+                        </button>
+                        <button
+                          onClick={() => {
+                            setPrivateFundingQuestion('no');
+                            navigate(`/results/${selectedCode}?org=private&estimation=no`);
+                          }}
+                          className="group flex-1 p-6 bg-white border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center"
+                        >
+                          <span className="text-xl font-bold text-gray-900 block mb-3">Nee</span>
+                          <p className="text-sm text-gray-600 leading-relaxed">
+                            Geen sectorale verplichtingen van toepassing.
+                          </p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Sectoral Assessment Phase */}
+              <div className={`absolute inset-0 transition-all duration-1000 ease-in-out ${phase === 'sectoral-assessment' ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-4 pointer-events-none'}`}>
+                {/* Show exception notification if user selected an exception */}
+                {showExceptionNotification ? (
+                  <div className={`w-full transition-all duration-500 ease-in-out ${showExceptionNotification ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                    <div className="container mx-auto px-6 lg:px-8">
+                      <div className="max-w-4xl mx-auto p-8 bg-orange-50 border-2 border-orange-200 rounded-xl shadow-lg">
+                        <div className="text-center">
+                          <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg className="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L5.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                            </svg>
+                          </div>
+                          <h2 className="text-2xl font-bold text-orange-900 mb-4">Uitzondering van toepassing: {selectedExceptionType}</h2>
+                          <p className="text-orange-800 mb-6 leading-relaxed">
+                            Voor aanbestedingen die vallen onder de categorie "{selectedExceptionType}" gelden bijzondere regelingen en mogelijk uitzonderingen op de standaard aanbestedingsregels.
+                          </p>
+                          <div className="bg-white border border-orange-300 rounded-lg p-6 mb-6">
+                            <h3 className="text-lg font-semibold text-orange-900 mb-3">Wat betekent dit?</h3>
+                            <ul className="text-left text-orange-800 space-y-2">
+                              <li className="flex items-start">
+                                <span className="text-orange-600 mr-2">•</span>
+                                Er kunnen specifieke procedures gelden voor deze categorie
+                              </li>
+                              <li className="flex items-start">
+                                <span className="text-orange-600 mr-2">•</span>
+                                De EED is niet van toepassing
+                              </li>
+                              <li className="flex items-start">
+                                <span className="text-orange-600 mr-2">•</span>
+                                Raadpleeg de relevante wetgeving voor {selectedExceptionType.toLowerCase()}
+                              </li>
+                              <li className="flex items-start">
+                                <span className="text-orange-600 mr-2">•</span>
+                                Overleg met juridisch advies indien nodig
+                              </li>
+                            </ul>
+                          </div>
+                          <a 
+                            href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX%3A32009L0081" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-6 py-3 bg-orange-600 text-white font-medium rounded-lg hover:bg-orange-700 transition-colors mr-4"
+                          >
+                            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                            Meer informatie
+                          </a>
+                          
+                          <div className="mt-4">
+                            <span 
+                              onClick={() => setShowExceptionNotification(false)}
+                              className="text-orange-600 hover:text-orange-800 cursor-pointer transition-colors underline"
+                            >
+                              Terug naar vorige stap
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  // Show sectoral assessment options
+                  <div className="w-full">
+                    <div className="container mx-auto px-6 lg:px-8">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center max-w-6xl mx-auto mb-8">
+                        <button
+                          onClick={() => handleSectoralAssessmentSelect('defensie')}
+                          className="group p-6 bg-white border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center"
+                        >
+                          <span className="text-xl font-bold text-gray-900 block mb-3">Defensie</span>
+                          <p className="text-sm text-gray-600 leading-relaxed">
+                            Aanbestedingen voor defensie-gerelateerde goederen en diensten.
+                          </p>
+                        </button>
+                        
+                        <button
+                          onClick={() => handleSectoralAssessmentSelect('noodsituatie')}
+                          className="group p-6 bg-white border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center"
+                        >
+                          <span className="text-xl font-bold text-gray-900 block mb-3">Noodsituatie</span>
+                          <p className="text-sm text-gray-600 leading-relaxed">
+                            Urgente aanbestedingen in noodsituaties of crisissituaties.
+                          </p>
+                        </button>
+                        
+                        <button
+                          onClick={() => handleSectoralAssessmentSelect('militair')}
+                          className="group p-6 bg-white border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center"
+                        >
+                          <span className="text-xl font-bold text-gray-900 block mb-3">Militair</span>
+                          <p className="text-sm text-gray-600 leading-relaxed">
+                            Militaire uitrusting en operationele benodigdheden.
+                          </p>
+                        </button>
+                        
+                        <button
+                          onClick={() => handleSectoralAssessmentSelect('defensie-conflict')}
+                          className="group p-6 bg-white border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center"
+                        >
+                          <span className="text-xl font-bold text-gray-900 block mb-3">Defensie conflict</span>
+                          <p className="text-sm text-gray-600 leading-relaxed">
+                            Aanbestedingen gerelateerd aan defensieconflicten.
+                          </p>
+                        </button>
+                        
+                        <button
+                          onClick={() => handleSectoralAssessmentSelect('none')}
+                          className="group p-6 bg-white border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center sm:col-span-2 lg:col-span-1"
+                        >
+                          <span className="text-xl font-bold text-gray-900 block mb-3">Nee</span>
+                          <p className="text-sm text-gray-600 leading-relaxed">
+                            Geen van bovenstaande uitzonderingen is van toepassing.
+                          </p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Estimation Phase */}
