@@ -1142,6 +1142,219 @@ const ReikwijdteOpdrachtExamples: React.FC = () => {
   );
 };
 
+const ContractueleUitvoeringsvoorwaardenTable: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<'arbeidsomstandigheden' | 'sociale' | 'milieunormen'>('arbeidsomstandigheden');
+  const [isCopied, setIsCopied] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
+  const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
+
+  const getTipContent = (tab: string) => {
+    switch (tab) {
+      case 'arbeidsomstandigheden':
+        return "Ondersteunt arbeidsrechten zoals veilige werkomstandigheden en verbod op dwangarbeid.";
+      case 'sociale':
+        return "Helpt sociale misstanden in productieketens te vermijden.";
+      case 'milieunormen':
+        return "Vermindert milieu-impact door emissiebeperking en afvalscheiding.";
+      default:
+        return "Geen tip beschikbaar.";
+    }
+  };
+
+  const getTooltipContent = (tab: string) => {
+    switch (tab) {
+      case 'arbeidsomstandigheden':
+        return "Deze voorwaarden zijn gebaseerd op sociale en arbeidsnormen in de EU GPP-achtergronddocumentatie Meubilair, 2017.";
+      case 'sociale':
+        return "Deze voorwaarden zijn gebaseerd op sociale en arbeidsnormen in de EU GPP-achtergronddocumentatie Meubilair, 2017.";
+      case 'milieunormen':
+        return "Deze voorwaarden komen uit de milieucriteria in de EU GPP-achtergronddocumentatie Meubilair, 2017.";
+      default:
+        return "Geen informatie beschikbaar.";
+    }
+  };
+
+  const tables = {
+    arbeidsomstandigheden: {
+      title: "Contractuele voorwaarden arbeidsomstandigheden",
+      data: [
+        { code: "CV1", criterion: "Aannemer moet zorgen voor naleving van gezondheids- en veiligheidseisen tijdens de uitvoering.", bronvermelding: "GPP background 2017, p. 61" },
+        { code: "CV2", criterion: "Producten moeten worden vervaardigd onder omstandigheden die voldoen aan fundamentele arbeidsnormen van de ILO.", bronvermelding: "GPP background 2017, p. 61" }
+      ]
+    },
+    sociale: {
+      title: "Contractuele voorwaarden sociale normen",
+      data: [
+        { code: "CV3", criterion: "Leveranciers moeten een verklaring ondertekenen dat er geen sprake is van kinderarbeid of gedwongen arbeid.", bronvermelding: "GPP background 2017, p. 61" },
+        { code: "CV4", criterion: "Transparantie over de toeleveringsketen is gewenst (herkomst, productiecondities).", bronvermelding: "GPP background 2017, p. 61" }
+      ]
+    },
+    milieunormen: {
+      title: "Contractuele voorwaarden milieunormen",
+      data: [
+        { code: "CV5", criterion: "Levering en montage moeten plaatsvinden met minimaal CO₂-belastend transport.", bronvermelding: "GPP background 2017, p. 59" },
+        { code: "CV6", criterion: "Gebruik van oplosmiddelarme of -vrije lakken en lijmen bij assemblage of herstelling.", bronvermelding: "GPP background 2017, p. 57" },
+        { code: "CV7", criterion: "Afval van verpakkingen of oude meubels moet gescheiden worden afgevoerd.", bronvermelding: "GPP background 2017, p. 58" }
+      ]
+    }
+  };
+
+  const handleCopy = async () => {
+    try {
+      const currentTable = tables[activeTab];
+      let tableText = `${currentTable.title}\n\n`;
+      tableText += "CV-code\tContractuele voorwaarde\tBronvermelding\n";
+      currentTable.data.forEach(row => {
+        tableText += `${row.code}\t${row.criterion}\t${row.bronvermelding || ''}\n`;
+      });
+      
+      await navigator.clipboard.writeText(tableText);
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+    }
+  };
+
+  return (
+    <div className="space-y-4">
+      
+      {/* Tabs */}
+      <div className="border-b border-gray-200">
+        <div className="flex space-x-4 overflow-x-auto">
+          <button 
+            onClick={() => setActiveTab('arbeidsomstandigheden')}
+            className={`py-2 px-3 border-b-2 font-medium text-sm transition-colors whitespace-nowrap ${
+              activeTab === 'arbeidsomstandigheden' 
+                ? 'border-blue-500 text-blue-600' 
+                : 'border-transparent text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            💼 Arbeidsomstandigheden
+          </button>
+          <button 
+            onClick={() => setActiveTab('sociale')}
+            className={`py-2 px-3 border-b-2 font-medium text-sm transition-colors whitespace-nowrap ${
+              activeTab === 'sociale' 
+                ? 'border-blue-500 text-blue-600' 
+                : 'border-transparent text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            🤝 Sociale normen
+          </button>
+          <button 
+            onClick={() => setActiveTab('milieunormen')}
+            className={`py-2 px-3 border-b-2 font-medium text-sm transition-colors whitespace-nowrap ${
+              activeTab === 'milieunormen' 
+                ? 'border-blue-500 text-blue-600' 
+                : 'border-transparent text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            🌱 Milieunormen
+          </button>
+        </div>
+      </div>
+
+      {/* Table */}
+      <div className="border border-gray-200 rounded-lg overflow-visible">
+        <div className="flex justify-between items-center p-4 bg-gray-50 border-b border-gray-200">
+          <h5 className="font-medium text-gray-900">
+            {tables[activeTab].title}
+          </h5>
+          <button 
+            onClick={handleCopy}
+            className="p-1 hover:bg-gray-200 rounded transition-colors group"
+            title={isCopied ? "Gekopieerd!" : "Kopieer tabel naar klembord"}
+          >
+            {isCopied ? (
+              <Check className="h-4 w-4 text-green-600" />
+            ) : (
+              <Copy className="h-4 w-4 text-gray-500 group-hover:text-gray-700" />
+            )}
+          </button>
+        </div>
+        
+        <div className="overflow-x-auto">
+          <table className="w-full">
+            <thead>
+              <tr className="bg-gray-50">
+                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200 w-24">
+                  CV-code
+                </th>
+                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200">
+                  Contractuele voorwaarde
+                </th>
+                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200 w-80">
+                  <div className="flex items-center gap-1">
+                    <span>Bronvermelding</span>
+                    <div className="relative">
+                      <Info 
+                        className="h-3 w-3 text-gray-400 hover:text-gray-600 cursor-help" 
+                        onMouseEnter={(e) => {
+                          const rect = e.currentTarget.getBoundingClientRect();
+                          setTooltipPosition({
+                            x: rect.left + rect.width / 2,
+                            y: rect.top - 10
+                          });
+                          setShowTooltip(true);
+                        }}
+                        onMouseLeave={() => setShowTooltip(false)}
+                      />
+                    </div>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody className="bg-white divide-y divide-gray-200">
+              {tables[activeTab].data.map((row, index) => (
+                <tr key={index} className="hover:bg-gray-50">
+                  <td className="px-4 py-3 text-sm font-medium text-gray-900 border-r border-gray-200 w-24">
+                    {row.code}
+                  </td>
+                  <td className="px-4 py-3 text-sm text-gray-700">
+                    {row.criterion}
+                  </td>
+                  <td className="px-4 py-3 text-sm text-gray-600 w-80">
+                    {row.bronvermelding}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
+        <p className="text-xs text-blue-800">
+          💡 <strong>Tip:</strong> {getTipContent(activeTab)}
+        </p>
+      </div>
+      
+      {showTooltip && createPortal(
+        <div 
+          className="fixed w-80 p-3 bg-gray-800 text-white text-xs rounded-lg shadow-lg z-[9999] pointer-events-none"
+          style={{
+            left: tooltipPosition.x - 160,
+            top: tooltipPosition.y - 200,
+          }}
+        >
+          <div className="mb-2 font-semibold text-sm">Bronvermelding</div>
+          <p>{getTooltipContent(activeTab)}</p>
+          <div 
+            className="absolute w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-800"
+            style={{
+              left: '50%',
+              top: '100%',
+              transform: 'translateX(-50%)'
+            }}
+          ></div>
+        </div>,
+        document.body
+      )}
+    </div>
+  );
+};
+
 const Results: React.FC = () => {
   const { code } = useParams<{ code: string }>();
   const [searchParams] = useSearchParams();
@@ -1563,8 +1776,8 @@ const Results: React.FC = () => {
                         <li>Kiezen van de aanbestedingsstrategie (bijv. EMVI, laagste prijs, functioneel specificeren)</li>
                         <li>Bepalen of en hoe duurzaamheid wordt meegenomen — en dus hoe je invulling geeft aan de EED/GPP-verplichting</li>
                       </ul>
-                      <div className="p-4 bg-amber-50 rounded-lg border border-amber-200 mb-4">
-                        <p className="text-amber-800"><strong>⚠️ Let op:</strong> De keuzes die je hier maakt, zijn bepalend voor de rest van de aanbesteding.</p>
+                      <div className="p-4 bg-green-50 rounded-lg border border-green-200 mb-4">
+                        <p className="text-green-800"><strong>📌 Let op:</strong> De GPP bieden hier niet-verplichte opties. Je keuzes hier bepalen hoe duurzaam de rest van je aanbesteding wordt.</p>
                       </div>
                     </div>
                     {sampleBepalingScope.map((item, index) => (
@@ -1624,11 +1837,11 @@ const Results: React.FC = () => {
                       <p className="mb-4">De toepasselijke GPP-criteria bevatten aanbevelingen voor contractuele voorwaarden op het gebied van arbeidsomstandigheden, sociale normen en milieunormen. Deze zijn niet verplicht, maar dragen bij aan circulaire of klimaatvriendelijke doelstellingen en sluiten aan bij het Rijksbeleid voor maatschappelijk verantwoord inkopen.</p>
                       <div className="p-4 bg-green-50 rounded-lg border border-green-200 mb-4">
                         <p className="text-green-800">
-                          📌 <strong>Let op:</strong> Je voldoet aan de Europese verplichtingen (zoals de EED) ook zónder contractuele verplichtingen, mits je de minimale technische specificaties opneemt.
+                          📌 <strong>Let op:</strong> Je voldoet aan de Europese verplichtingen (zoals de EED) ook zónder contractuele verplichtingen, mits je de verplichte technische specificaties opneemt.
                         </p>
                       </div>
                     </div>
-                    <GunningscriteriaTable />
+                    <ContractueleUitvoeringsvoorwaardenTable />
                   </div>
                 </AccordionContent>
               </AccordionItem>
