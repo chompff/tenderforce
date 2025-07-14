@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { ArrowLeft, Info, ChevronDown, ChevronUp, Lock, Star, CheckCircle, Building, Calculator, Copy, Check } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -463,46 +464,118 @@ const LevenscyclusbenaderingExamples: React.FC = () => {
 const TechnischeSpecificatiesTables: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'verplicht' | 'voorwaardelijk' | 'aanbevolen' | 'optioneel'>('verplicht');
   const [isCopied, setIsCopied] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
+  const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
+
+  const getTipContent = (tab: string) => {
+    switch (tab) {
+      case 'verplicht':
+        return "Let op: deze minimale eisen vormen de ondergrens. Een inschrijving die hier niet aan voldoet, moet worden uitgesloten. Zorg dus dat deze eisen expliciet en toetsbaar in je bestek staan.";
+      case 'voorwaardelijk':
+        return "Gebruik deze eisen alleen als ze aantoonbaar relevant zijn voor het beoogde gebruik of beleid. Licht in je aanbestedingsstukken toe waarom de voorwaarde van toepassing is.";
+      case 'aanbevolen':
+        return "Aanbevolen specificaties kunnen bijdragen aan betere prestaties of duurzaamheid, maar zijn niet verplicht. Gebruik ze als richtinggevend kader of als basis voor gunningscriteria.";
+      case 'optioneel':
+        return "Vermijd overmatige technische detaillering buiten de GPP-structuur: dat beperkt markttoegang en remt innovatie. Gebruik de TS-codes als stabiele basis en versterk eventueel met functionele of circulaire eisen bij het Programma van Eisen.";
+      default:
+        return "Geen tip beschikbaar.";
+    }
+  };
+
+  const getTooltipContent = (tab: string) => {
+    switch (tab) {
+      case 'verplicht':
+        return {
+          title: "🔴 Verplichte specificaties",
+          content: (
+            <div className="space-y-2">
+              <p>De GPP-criteria zijn beleidsinstrumenten die verplichtende technische eisen formuleren op basis van bestaande EU-wetgeving en normen. De onderliggende bron van deze verplichte specificaties is juridisch bindend, zoals:</p>
+              <ul className="list-disc list-inside space-y-1 ml-2">
+                <li>Europese verordeningen (bv. REACH, EUTR),</li>
+                <li>Europese normen (bv. EN 1335, EN 717-1),</li>
+                <li>Beleidsafspraken met rechtsgrond (bv. Ecodesign-richtlijn).</li>
+              </ul>
+              <p>Daarom vind je hier per specificatie een formele juridische of normatieve bron. Zo weet je zeker dat de eis niet vrijblijvend is, maar rechtstreeks voortkomt uit wet- en regelgeving.</p>
+            </div>
+          )
+        };
+      case 'voorwaardelijk':
+        return {
+          title: "🟡 Voorwaardelijk verplichte specificaties",
+          content: (
+            <div className="space-y-2">
+              <p>Deze eisen gelden alleen als een bepaalde voorwaarde van toepassing is, zoals de aanwezigheid van mechanische onderdelen of een terugnameverplichting. De onderbouwing bestaat deels uit normatieve kaders (zoals ISO 14024), maar is meestal beleidsmatig.</p>
+              <p>De bronvermelding verwijst hier naar internationale standaarden of GPP-analyses, die transparantie en controleerbaarheid ondersteunen — maar alleen verplicht zijn als de genoemde situatie zich voordoet.</p>
+            </div>
+          )
+        };
+      case 'aanbevolen':
+        return {
+          title: "🔵 Aanbevolen specificaties",
+          content: (
+            <div className="space-y-2">
+              <p>Deze technische aanbevelingen zijn gebaseerd op de EU GPP-achtergrondrapporten. Ze zijn niet wettelijk verplicht, maar bevorderen circulaire economie, milieuvriendelijkheid of gezond binnenklimaat.</p>
+              <p>De bronvermelding verwijst hier naar het GPP Technical Background Report, omdat er geen specifieke wetgeving of norm aan ten grondslag ligt. Je kunt ze wel opnemen als gunnings- of uitvoeringseis voor extra impact.</p>
+            </div>
+          )
+        };
+      case 'optioneel':
+        return {
+          title: "🟢 Optionele specificaties",
+          content: (
+            <div className="space-y-2">
+              <p>Optionele specificaties zijn inspirerende suggesties uit het GPP-kader. Ze zijn bedoeld om innovatie te stimuleren en ambities op het gebied van duurzaamheid of circulariteit te versterken.</p>
+              <p>Er is geen bronvermelding nodig, want ze hebben geen verplichtend karakter. Je kunt ze naar eigen inzicht opnemen, bijvoorbeeld in overleg met marktpartijen of als experimentele eis.</p>
+            </div>
+          )
+        };
+      default:
+        return {
+          title: "Bronvermelding",
+          content: <div>Geen informatie beschikbaar.</div>
+        };
+    }
+  };
 
   const tables = {
     verplicht: {
       title: "Verplichte specificaties",
       data: [
-        { code: "TS1", specification: "Het toegepaste hout in het meubilair moet afkomstig zijn uit duurzaam beheerde bossen en voldoen aan de vereisten van de Europese Houtverordening (EUTR). Er dient aantoonbaar gebruikgemaakt te worden van legaal hout." },
-        { code: "TS2", specification: "Het meubilair moet voldoen aan de grenswaarden voor formaldehyde-emissie volgens de EN 717-1 norm of een gelijkwaardige Europese norm. Dit geldt voor alle toegepaste houtmaterialen, zoals spaanplaat, MDF en multiplex." },
-        { code: "TS3", specification: "Alle geleverde meubelproducten moeten voldoen aan de REACH-verordening. Het gebruik van stoffen die zijn opgenomen op de lijst van Zeer Zorgwekkende Stoffen (SVHC-lijst) is verboden." },
-        { code: "TS4", specification: "Indien in de productspecificaties een minimumpercentage gerecycled materiaal is opgenomen, dient het meubilair aan dit percentage te voldoen. De herkomst en het percentage gerecycled materiaal moeten aantoonbaar zijn." },
-        { code: "TS5", specification: "Voor bureaustoelen, werktafels en andere zit- en werkmeubelen moeten ergonomische eisen worden gevolgd zoals vastgelegd in de toepasselijke EN-normen, waaronder EN 1335, EN 527 en/of gelijkwaardige normen." },
-        { code: "TS6", specification: "Het meubilair moet zijn getest op duurzaamheid en stabiliteit conform de relevante Europese normen, zoals EN 16139 voor zitmeubilair of EN 1728 voor structurele sterkte en veiligheid." },
-        { code: "TS7", specification: "De verpakking van het meubilair dient minimaal en functioneel te zijn, waarbij zoveel mogelijk gebruik wordt gemaakt van recyclebare materialen. De verpakking moet duidelijk gemarkeerd zijn ten behoeve van gescheiden afvalinzameling." },
-        { code: "TS8", specification: "Bij levering van het meubilair moeten duidelijke onderhouds- en reinigingsinstructies worden meegeleverd. Deze moeten afgestemd zijn op de gebruikte materialen en afwerkingen." }
+        { code: "TS1", specification: "Het toegepaste hout in het meubilair moet afkomstig zijn uit duurzaam beheerde bossen en voldoen aan de vereisten van de Europese Houtverordening (EUTR). Er dient aantoonbaar gebruikgemaakt te worden van legaal hout.", bronvermelding: "Verordening (EU) nr. 995/2010 (EUTR)" },
+        { code: "TS2", specification: "Het meubilair moet voldoen aan de grenswaarden voor formaldehyde-emissie volgens de EN 717-1 norm of een gelijkwaardige Europese norm. Dit geldt voor alle toegepaste houtmaterialen, zoals spaanplaat, MDF en multiplex.", bronvermelding: "EN 717-1: Formaldehyde-emissie — testmethode" },
+        { code: "TS3", specification: "Alle geleverde meubelproducten moeten voldoen aan de REACH-verordening. Het gebruik van stoffen die zijn opgenomen op de lijst van Zeer Zorgwekkende Stoffen (SVHC-lijst) is verboden.", bronvermelding: "Verordening (EG) nr. 1907/2006 (REACH); SVHC-lijst (ECHA)" },
+        { code: "TS4", specification: "Voor bureaustoelen, werktafels en andere zit- en werkmeubelen moeten ergonomische eisen worden gevolgd zoals vastgelegd in de toepasselijke EN-normen, waaronder EN 1335, EN 527 en/of gelijkwaardige normen.", bronvermelding: "EN 1335 (bureaustoelen); EN 527 (werktafels)" },
+        { code: "TS5", specification: "Het meubilair moet zijn getest op duurzaamheid en stabiliteit conform de relevante Europese normen, zoals EN 16139 voor zitmeubilair of EN 1728 voor structurele sterkte en veiligheid.", bronvermelding: "EN 16139, EN 1728: Mechanische sterkte en duurzaamheid van meubelen" },
+        { code: "TS6", specification: "De verpakking van het meubilair dient minimaal en functioneel te zijn, waarbij zoveel mogelijk gebruik wordt gemaakt van recyclebare materialen. De verpakking moet duidelijk gemarkeerd zijn ten behoeve van gescheiden afvalinzameling.", bronvermelding: "Richtlijn 94/62/EG betreffende verpakking en verpakkingsafval" },
+        { code: "TS7", specification: "Bij levering van het meubilair moeten duidelijke onderhouds- en reinigingsinstructies worden meegeleverd. Deze moeten afgestemd zijn op de gebruikte materialen en afwerkingen.", bronvermelding: "ISO 14021 (milieu-informatie); gangbare leveranciersdocumentatie" }
       ]
     },
     voorwaardelijk: {
       title: "Voorwaardelijk verplichte specificaties",
       data: [
-        { code: "TS9", specification: (<><em>Indien het geleverde meubilair mechanische of verstelbare onderdelen bevat,</em> moeten deze onderdelen als afzonderlijke componenten vervangbaar zijn. In de documentatie dient te worden aangegeven welke onderdelen vervangbaar zijn en hoe ze kunnen worden besteld.</>) },
-        { code: "TS10", specification: (<><em>Indien sprake is van modulair meubilair,</em> moet het ontwerp uitbreidbaar en aanpasbaar zijn met behoud van functionele en esthetische samenhang. Koppeling met bestaande modules dient zonder speciaal gereedschap mogelijk te zijn.</>) },
-        { code: "TS11", specification: (<><em>Indien de inschrijver zich beroept op een milieukeurmerk of certificering van een derde partij</em> om aan te tonen dat wordt voldaan aan een technische of milieueis, moet dit keurmerk onafhankelijk, transparant en toetsbaar zijn, conform ISO 14024 of een gelijkwaardig systeem.</>) },
-        { code: "TS12", specification: (<><em>Indien in de opdracht sprake is van een terugname- of recyclingsverplichting,</em> moet de inschrijver een sluitend systeem aanbieden voor het ophalen, hergebruiken en/of milieuvriendelijk verwerken van het afgedankte meubilair.</>) }
+        { code: "TS8", specification: (<><em>Indien in de productspecificaties een minimumpercentage gerecycled materiaal is opgenomen,</em> dient het meubilair aan dit percentage te voldoen. De herkomst en het percentage gerecycled materiaal moeten aantoonbaar zijn.</>) , bronvermelding: "Europese Green Deal-doelstellingen, Afvalrichtlijn (2008/98/EG)" },
+        { code: "TS9", specification: (<><em>Indien het geleverde meubilair mechanische of verstelbare onderdelen bevat,</em> moeten deze onderdelen als afzonderlijke componenten vervangbaar zijn. In de documentatie dient te worden aangegeven welke onderdelen vervangbaar zijn en hoe ze kunnen worden besteld.</>) , bronvermelding: "EU GPP Criteria for Furniture, Technical Report 2021, pagina 15 (Product durability and reparability)" },
+        { code: "TS10", specification: (<><em>Indien sprake is van modulair meubilair,</em> moet het ontwerp uitbreidbaar en aanpasbaar zijn met behoud van functionele en esthetische samenhang. Koppeling met bestaande modules dient zonder speciaal gereedschap mogelijk te zijn.</>) , bronvermelding: "EU GPP Criteria for Furniture, Technical Report 2021, pagina 15 (Product modularity and upgradability)" },
+        { code: "TS11", specification: (<><em>Indien de inschrijver zich beroept op een milieukeurmerk of certificering van een derde partij</em> om aan te tonen dat wordt voldaan aan een technische of milieueis, moet dit keurmerk onafhankelijk, transparant en toetsbaar zijn, conform ISO 14024 of een gelijkwaardig systeem.</>) , bronvermelding: "EU GPP Criteria for Furniture, Technical Background Report 2021, pagina 33 (Use of ecolabels – compliance with ISO 14024)" },
+        { code: "TS12", specification: (<><em>Indien in de opdracht sprake is van een terugname- of recyclingsverplichting,</em> moet de inschrijver een sluitend systeem aanbieden voor het ophalen, hergebruiken en/of milieuvriendelijk verwerken van het afgedankte meubilair.</>) , bronvermelding: "EU GPP Criteria for Furniture, Technical Report 2021, pagina 16 (Take-back and recycling schemes)" }
       ]
     },
     aanbevolen: {
-      title: "Sterk aanbevolen specificaties",
+              title: "Aanbevolen specificaties",
       data: [
-        { code: "TS13", specification: "Meubilair dient ontworpen te zijn met het oog op eenvoudige demontage, zodat verschillende materiaalsoorten (hout, metaal, kunststof) aan het einde van de levensduur makkelijk van elkaar gescheiden kunnen worden." },
-        { code: "TS14", specification: "Het gebruik van hout dat FSC- of PEFC-gecertificeerd is, wordt sterk aanbevolen ter borging van duurzaam bosbeheer, bovenop de wettelijke verplichting tot legaal houtgebruik." },
-        { code: "TS15", specification: "Het is sterk aanbevolen dat de inschrijver garandeert dat reserveonderdelen voor de geleverde meubelen gedurende minimaal vijf jaar beschikbaar blijven, gerekend vanaf het moment van levering." },
-        { code: "TS16", specification: "Waar mogelijk wordt geadviseerd gebruik te maken van lijmen, lakken en verven met lage emissies van vluchtige organische stoffen (VOS), ten behoeve van een gezond binnenklimaat." }
+        { code: "TS13", specification: "Meubilair dient ontworpen te zijn met het oog op eenvoudige demontage, zodat verschillende materiaalsoorten (hout, metaal, kunststof) aan het einde van de levensduur makkelijk van elkaar gescheiden kunnen worden.", bronvermelding: "EU GPP Criteria for Furniture, Technical Background Report 2021, p. 15 (Design for disassembly)" },
+        { code: "TS14", specification: "Het gebruik van hout dat FSC- of PEFC-gecertificeerd is, wordt sterk aanbevolen ter borging van duurzaam bosbeheer, bovenop de wettelijke verplichting tot legaal houtgebruik.", bronvermelding: "EU GPP Criteria for Furniture, Technical Background Report 2021, p. 13 (Legal and sustainable timber sourcing)" },
+        { code: "TS15", specification: "Het is sterk aanbevolen dat de inschrijver garandeert dat reserveonderdelen voor de geleverde meubelen gedurende minimaal vijf jaar beschikbaar blijven, gerekend vanaf het moment van levering.", bronvermelding: "EU GPP Criteria for Furniture, Technical Background Report 2021, p. 15 (Product durability and reparability)" },
+        { code: "TS16", specification: "Waar mogelijk wordt geadviseerd gebruik te maken van lijmen, lakken en verven met lage emissies van vluchtige organische stoffen (VOS), ten behoeve van een gezond binnenklimaat.", bronvermelding: "EU GPP Criteria for Furniture, Technical Background Report 2021, p. 19 (Indoor air quality – low emission materials)" }
       ]
     },
     optioneel: {
       title: "Optionele specificaties",
       data: [
-        { code: "TS17", specification: "Het is toegestaan om, aanvullend op de minimale eisen, meubels aan te bieden met biologisch afbreekbare coatings of oppervlaktebehandelingen die het milieuprofiel verder verbeteren." },
-        { code: "TS18", specification: "Indien beschikbaar kunnen opbergmeubelen geleverd worden met akoestische demping of geluidreducerende panelen, mits dit niet ten koste gaat van functionaliteit of veiligheid." },
-        { code: "TS19", specification: "De inschrijver mag vrijwillig een Environmental Product Declaration (EPD) meesturen per product, mits opgesteld volgens ISO 14025 of een vergelijkbaar erkend systeem." },
-        { code: "TS20", specification: "Het staat de inschrijver vrij om esthetische varianten aan te bieden in kleur, materiaal of afwerking, zolang deze voldoen aan de overige technische en functionele eisen van de opdracht." }
+        { code: "TS17", specification: "Het is toegestaan, aanvullend op de minimale eisen, meubels aan te bieden met biologisch afbreekbare coatings of oppervlaktebehandelingen die het milieuprofiel verder verbeteren.", bronvermelding: "EU GPP Criteria for Furniture, Technical Background Report 2021, p. 17 (Surface treatments – use of low-emission and biodegradable coatings)" },
+        { code: "TS18", specification: "Indien beschikbaar kunnen opbergmeubelen geleverd worden met akoestische demping of geluidsreducerende panelen, mits dit niet ten koste gaat van functionaliteit of veiligheid.", bronvermelding: "EU GPP Criteria for Furniture, Technical Background Report 2021, p. 14 (Noise reduction – acoustic comfort)" },
+        { code: "TS19", specification: "De inschrijver mag vrijwillig een Environmental Product Declaration (EPD) meesturen per product, mits opgesteld volgens ISO 14025 of een vergelijkbaar erkend systeem.", bronvermelding: "EU GPP Criteria for Furniture, Technical Background Report 2021, p. 33 (Product-level environmental information – use of EPDs conform ISO 14025)" },
+        { code: "TS20", specification: "Het staat de inschrijver vrij om esthetische varianten aan te bieden in kleur, materiaal of afwerking, zolang deze voldoen aan de overige technische en functionele eisen van de opdracht.", bronvermelding: "Niet van toepassing – aanbestedingsrechtelijke ruimte voor varianten (interne toelichting of motivering volstaat)" }
       ]
     }
   };
@@ -511,9 +584,9 @@ const TechnischeSpecificatiesTables: React.FC = () => {
     try {
       const currentTable = tables[activeTab];
       let tableText = `${currentTable.title}\n\n`;
-      tableText += "TS-code\tSpecificatie\n";
+      tableText += "TS-code\tSpecificatie\tBronvermelding\n";
       currentTable.data.forEach(row => {
-        tableText += `${row.code}\t${row.specification}\n`;
+        tableText += `${row.code}\t${row.specification}\t${row.bronvermelding || ''}\n`;
       });
       
       await navigator.clipboard.writeText(tableText);
@@ -586,7 +659,7 @@ const TechnischeSpecificatiesTables: React.FC = () => {
       </div>
 
       {/* Table */}
-      <div className="border border-gray-200 rounded-lg overflow-hidden">
+      <div className="border border-gray-200 rounded-lg overflow-visible">
         <div className="flex justify-between items-center p-4 bg-gray-50 border-b border-gray-200">
           <h5 className="font-medium text-gray-900">
             {tables[activeTab].title}
@@ -614,6 +687,25 @@ const TechnischeSpecificatiesTables: React.FC = () => {
                 <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200">
                   Specificatie
                 </th>
+                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200 w-80">
+                  <div className="flex items-center gap-1">
+                    <span>Bronvermelding</span>
+                                        <div className="relative">
+                      <Info 
+                        className="h-3 w-3 text-gray-400 hover:text-gray-600 cursor-help" 
+                        onMouseEnter={(e) => {
+                          const rect = e.currentTarget.getBoundingClientRect();
+                          setTooltipPosition({
+                            x: rect.left + rect.width / 2,
+                            y: rect.top - 10
+                          });
+                          setShowTooltip(true);
+                        }}
+                        onMouseLeave={() => setShowTooltip(false)}
+                      />
+                    </div>
+                  </div>
+                </th>
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
@@ -625,6 +717,9 @@ const TechnischeSpecificatiesTables: React.FC = () => {
                   <td className="px-4 py-3 text-sm text-gray-700">
                     {row.specification}
                   </td>
+                  <td className="px-4 py-3 text-sm text-gray-600 w-80">
+                    {row.bronvermelding}
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -634,39 +729,125 @@ const TechnischeSpecificatiesTables: React.FC = () => {
       
       <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
         <p className="text-xs text-blue-800">
-          💡 <strong>Tip:</strong> Vermijd overmatige technische detaillering buiten de GPP-structuur: dat beperkt markttoegang en remt innovatie. Gebruik de TS-codes als stabiele basis en versterk eventueel met functionele of circulaire eisen bij het Programma van Eisen.
+          💡 <strong>Tip:</strong> {getTipContent(activeTab)}
         </p>
       </div>
+      
+            {showTooltip && createPortal(
+        <div 
+          className="fixed w-80 p-3 bg-gray-800 text-white text-xs rounded-lg shadow-lg z-[9999] pointer-events-none"
+          style={{
+            left: tooltipPosition.x - 160,
+            top: tooltipPosition.y - 200,
+          }}
+        >
+          <div className="mb-2 font-semibold text-sm">{getTooltipContent(activeTab).title}</div>
+          {getTooltipContent(activeTab).content}
+          <div 
+            className="absolute w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-800"
+            style={{
+              left: '50%',
+              top: '100%',
+              transform: 'translateX(-50%)'
+            }}
+          ></div>
+        </div>,
+        document.body
+      )}
     </div>
   );
 };
 
 const GunningscriteriaTable: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'licht' | 'zwaar'>('licht');
+  const [activeTab, setActiveTab] = useState<'circulariteit' | 'milieu' | 'sociaal' | 'kwaliteit' | 'certificering' | 'logistiek'>('circulariteit');
   const [isCopied, setIsCopied] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
+  const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
+
+  const getTipContent = (tab: string) => {
+    switch (tab) {
+      case 'circulariteit':
+        return "Stimuleert hergebruik en verlenging van de levensduur, in lijn met Rijksbeleid Circulaire Economie.";
+      case 'milieu':
+        return "Richt zich op reductie van milieubelasting. Vereist bewijs via EPD's, LCA's of certificaten.";
+      case 'sociaal':
+        return "Ondersteunt eerlijk werk, veilige productieomstandigheden en inclusieve arbeid.";
+      case 'kwaliteit':
+        return "Verlengt de gebruiksperiode en voorkomt vervanging. Toetsing is relatief eenvoudig.";
+      case 'certificering':
+        return "Vergemakkelijkt toetsing via erkende labels en borgt minimale prestaties.";
+      case 'logistiek':
+        return "Draagt bij aan emissiereductie in de keten en circulaire retourstromen.";
+      default:
+        return "Geen tip beschikbaar.";
+    }
+  };
+
+  const getTooltipContent = (tab: string) => {
+    switch (tab) {
+      case 'circulariteit':
+        return "Deze criteria zijn gebaseerd op circulaire ontwerpprincipes in de EU GPP-achtergronddocumentatie.";
+      case 'milieu':
+        return "Deze criteria zijn gericht op CO₂-reductie en toxiciteit en gebaseerd op het EU GPP-achtergronddocument.";
+      case 'sociaal':
+        return "Geïnspireerd op OESO-richtlijnen voor IMVO en sociaal ondernemerschap. Zie ook EU GPP achtergrondpagina's.";
+      case 'kwaliteit':
+        return "Gebaseerd op kwaliteitsnormen uit het EU GPP-document en achtergrondrapport.";
+      case 'certificering':
+        return "Gebaseerd op erkende certificeringen en EU-aanbevolen milieulabels.";
+      case 'logistiek':
+        return "Gebaseerd op logistieke optimalisatie en emissiebeperking zoals opgenomen in de GPP-achtergrondrapporten.";
+      default:
+        return "Geen informatie beschikbaar.";
+    }
+  };
 
   const tables = {
-    licht: {
-      title: "Voorbeelden lichte gunningscriteria",
+    circulariteit: {
+      title: "Gunningscriteria circulariteit",
       data: [
-        { code: "GC1", criterion: "Levensduur: Extra punten voor meubels met een aantoonbare levensduur ≥ 10 jaar" },
-        { code: "GC2", criterion: "Reparatie: Extra punten voor beschikbaarheid van reserveonderdelen gedurende ≥ 5 jaar" },
-        { code: "GC3", criterion: "Materialen: Extra punten voor aantoonbaar gebruik van gerecyclede materialen (≥ 20%)" },
-        { code: "GC4", criterion: "Milieucertificaat: Extra punten voor meubilair met EU Ecolabel of gelijkwaardig" },
-        { code: "GC5", criterion: "Transport: Extra punten voor levering met gebruik van schoon of emissiearm vervoer" }
-      ],
-      tip: "Deze criteria zijn relatief eenvoudig te toetsen, generiek toepasbaar en ondersteunen naleving van de EED-verplichting."
+        { code: "GC1", criterion: "Modulair ontwerp met vervangbare onderdelen", bronvermelding: "GPP background 2017, p. 53" },
+        { code: "GC2", criterion: "Demonteerbaar ontwerp t.b.v. recycling", bronvermelding: "GPP background 2017, p. 54" },
+        { code: "GC3", criterion: "Hergebruik van refurbished onderdelen", bronvermelding: "GPP background 2017, p. 52" },
+        { code: "GC4", criterion: "Aanwezigheid van materialenpaspoort", bronvermelding: "GPP background 2017, p. 60" },
+        { code: "GC5", criterion: "Terugnamegarantie einde levensduur", bronvermelding: "GPP background 2017, p. 56" }
+      ]
     },
-    zwaar: {
-      title: "Voorbeelden zware gunningscriteria",
+    milieu: {
+      title: "Gunningscriteria milieu-impact",
       data: [
-        { code: "GC1+", criterion: "Levensduur: Meubels moeten aantoonbaar ontworpen zijn voor een levensduur van ≥ 15 jaar, inclusief toegang tot onderhoudsschema's" },
-        { code: "GC2+", criterion: "Reparatie: Extra punten voor gereedschapsloze vervanging van onderdelen en beschikbaarheid van onderdelen ≥ 10 jaar" },
-        { code: "GC3+", criterion: "Materialen: ≥ 50% gerecyclede of biobased materialen; herkomst transparant en onderbouwd" },
-        { code: "GC4+", criterion: "Circulariteit: Inschrijver toont aan hoe meubilair opnieuw kan worden ingezet of herverwaard na einde levensduur (inclusief terugnamegarantie)" },
-        { code: "GC5+", criterion: "Sociale impact: Extra punten voor inzet van mensen met afstand tot de arbeidsmarkt in productie of logistiek" }
-      ],
-      tip: "Gebruik deze criteria wanneer je écht verschil wil maken in circulariteit, innovatie en sociale waarde. Deze vragen om meer onderbouwing maar leveren ook meer impact op."
+        { code: "GC6", criterion: "LCA met aantoonbaar lagere impact dan referentieproduct", bronvermelding: "GPP background 2017, p. 58–59" },
+        { code: "GC7", criterion: "Vrij van schadelijke stoffen (zoals formaldehyde)", bronvermelding: "GPP background 2017, p. 50" },
+        { code: "GC8", criterion: "Gebruik van snel hernieuwbare materialen (bv. bamboe)", bronvermelding: "GPP background 2017, p. 51" }
+      ]
+    },
+    sociaal: {
+      title: "Gunningscriteria sociaal",
+      data: [
+        { code: "GC9", criterion: "Transparantie over toeleveringsketen en mensenrechtenrisico's", bronvermelding: "OESO-richtlijnen IMVO" },
+        { code: "GC10", criterion: "Gecertificeerde arbeidsomstandigheden (SA8000, Fair Wear)", bronvermelding: "GPP background 2017, p. 61" },
+        { code: "GC11", criterion: "Inclusieve werkgelegenheid bij montage of levering", bronvermelding: "Nederlandse social return-beleidskaders" }
+      ]
+    },
+    kwaliteit: {
+      title: "Gunningscriteria kwaliteit & levensduur",
+      data: [
+        { code: "GC12", criterion: "Levensduur ≥ 10 jaar", bronvermelding: "EU GPP criteria, hfst. 2.3" },
+        { code: "GC13", criterion: "Beschikbaarheid reserveonderdelen ≥ 5 jaar", bronvermelding: "EU GPP criteria, hfst. 2.4" }
+      ]
+    },
+    certificering: {
+      title: "Gunningscriteria certificering & labels",
+      data: [
+        { code: "GC14", criterion: "EU Ecolabel of gelijkwaardig", bronvermelding: "EU GPP criteria, hfst. 2.1" },
+        { code: "GC15", criterion: "Gecertificeerd circulair ontwerp", bronvermelding: "GPP background 2017, p. 55" }
+      ]
+    },
+    logistiek: {
+      title: "Gunningscriteria logistiek & transport",
+      data: [
+        { code: "GC16", criterion: "Emissiearm transport (elektrisch of HVO)", bronvermelding: "GPP background 2017, p. 62" }
+      ]
     }
   };
 
@@ -674,9 +855,9 @@ const GunningscriteriaTable: React.FC = () => {
     try {
       const currentTable = tables[activeTab];
       let tableText = `${currentTable.title}\n\n`;
-      tableText += "GC-code\tGunningscriterium\n";
+      tableText += "GC-code\tGunningscriterium\tBronvermelding\n";
       currentTable.data.forEach(row => {
-        tableText += `${row.code}\t${row.criterion}\n`;
+        tableText += `${row.code}\t${row.criterion}\t${row.bronvermelding}\n`;
       });
       
       await navigator.clipboard.writeText(tableText);
@@ -691,32 +872,72 @@ const GunningscriteriaTable: React.FC = () => {
     <div className="space-y-4">
       {/* Tabs */}
       <div className="border-b border-gray-200">
-        <div className="flex space-x-8">
+        <div className="flex space-x-4 overflow-x-auto">
           <button 
-            onClick={() => setActiveTab('licht')}
-            className={`py-2 px-1 border-b-2 font-medium text-sm transition-colors ${
-              activeTab === 'licht' 
+            onClick={() => setActiveTab('circulariteit')}
+            className={`py-2 px-3 border-b-2 font-medium text-sm transition-colors whitespace-nowrap ${
+              activeTab === 'circulariteit' 
                 ? 'border-blue-500 text-blue-600' 
                 : 'border-transparent text-gray-500 hover:text-gray-700'
             }`}
           >
-            📋 Licht
+            ♻️ Circulariteit
           </button>
           <button 
-            onClick={() => setActiveTab('zwaar')}
-            className={`py-2 px-1 border-b-2 font-medium text-sm transition-colors ${
-              activeTab === 'zwaar' 
+            onClick={() => setActiveTab('milieu')}
+            className={`py-2 px-3 border-b-2 font-medium text-sm transition-colors whitespace-nowrap ${
+              activeTab === 'milieu' 
                 ? 'border-blue-500 text-blue-600' 
                 : 'border-transparent text-gray-500 hover:text-gray-700'
             }`}
           >
-            🎯 Zwaar
+            🌿 Milieu-impact
+          </button>
+          <button 
+            onClick={() => setActiveTab('sociaal')}
+            className={`py-2 px-3 border-b-2 font-medium text-sm transition-colors whitespace-nowrap ${
+              activeTab === 'sociaal' 
+                ? 'border-blue-500 text-blue-600' 
+                : 'border-transparent text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            👥 Sociaal
+          </button>
+          <button 
+            onClick={() => setActiveTab('kwaliteit')}
+            className={`py-2 px-3 border-b-2 font-medium text-sm transition-colors whitespace-nowrap ${
+              activeTab === 'kwaliteit' 
+                ? 'border-blue-500 text-blue-600' 
+                : 'border-transparent text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            📦 Kwaliteit & levensduur
+          </button>
+          <button 
+            onClick={() => setActiveTab('certificering')}
+            className={`py-2 px-3 border-b-2 font-medium text-sm transition-colors whitespace-nowrap ${
+              activeTab === 'certificering' 
+                ? 'border-blue-500 text-blue-600' 
+                : 'border-transparent text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            📋 Certificering & labels
+          </button>
+          <button 
+            onClick={() => setActiveTab('logistiek')}
+            className={`py-2 px-3 border-b-2 font-medium text-sm transition-colors whitespace-nowrap ${
+              activeTab === 'logistiek' 
+                ? 'border-blue-500 text-blue-600' 
+                : 'border-transparent text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            🚛 Logistiek & transport
           </button>
         </div>
       </div>
 
       {/* Table */}
-      <div className="border border-gray-200 rounded-lg overflow-hidden">
+      <div className="border border-gray-200 rounded-lg overflow-visible">
         <div className="flex justify-between items-center p-4 bg-gray-50 border-b border-gray-200">
           <h5 className="font-medium text-gray-900">
             {tables[activeTab].title}
@@ -744,6 +965,25 @@ const GunningscriteriaTable: React.FC = () => {
                 <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200">
                   Gunningscriterium
                 </th>
+                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200 w-80">
+                  <div className="flex items-center gap-1">
+                    <span>Bronvermelding</span>
+                    <div className="relative">
+                      <Info 
+                        className="h-3 w-3 text-gray-400 hover:text-gray-600 cursor-help" 
+                        onMouseEnter={(e) => {
+                          const rect = e.currentTarget.getBoundingClientRect();
+                          setTooltipPosition({
+                            x: rect.left + rect.width / 2,
+                            y: rect.top - 10
+                          });
+                          setShowTooltip(true);
+                        }}
+                        onMouseLeave={() => setShowTooltip(false)}
+                      />
+                    </div>
+                  </div>
+                </th>
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
@@ -755,6 +995,9 @@ const GunningscriteriaTable: React.FC = () => {
                   <td className="px-4 py-3 text-sm text-gray-700">
                     {row.criterion}
                   </td>
+                  <td className="px-4 py-3 text-sm text-gray-600 w-80">
+                    {row.bronvermelding}
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -764,9 +1007,31 @@ const GunningscriteriaTable: React.FC = () => {
       
       <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
         <p className="text-xs text-blue-800">
-          💡 <strong>Tip:</strong> {tables[activeTab].tip}
+          💡 <strong>Tip:</strong> {getTipContent(activeTab)}
         </p>
       </div>
+      
+      {showTooltip && createPortal(
+        <div 
+          className="fixed w-80 p-3 bg-gray-800 text-white text-xs rounded-lg shadow-lg z-[9999] pointer-events-none"
+          style={{
+            left: tooltipPosition.x - 160,
+            top: tooltipPosition.y - 200,
+          }}
+        >
+          <div className="mb-2 font-semibold text-sm">Bronvermelding</div>
+          <p>{getTooltipContent(activeTab)}</p>
+          <div 
+            className="absolute w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-800"
+            style={{
+              left: '50%',
+              top: '100%',
+              transform: 'translateX(-50%)'
+            }}
+          ></div>
+        </div>,
+        document.body
+      )}
     </div>
   );
 };
@@ -881,7 +1146,7 @@ const Results: React.FC = () => {
   const { code } = useParams<{ code: string }>();
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
-  const [levelFilter, setLevelFilter] = useState('alle-niveaus');
+
   const [cpvName, setCpvName] = useState('Laden...');
   const [openAccordions, setOpenAccordions] = useState<string[]>([]);
 
@@ -1029,7 +1294,7 @@ const Results: React.FC = () => {
       level: "basis",
       description: (
         <>
-          Bij een reguliere aanbesteding voor kantoormeubilair wordt vaak automatisch gekozen voor de levering van nieuw meubilair, zonder expliciet stil te staan bij andere mogelijkheden. De GPP-criteria dwingen je om deze keuze bewust te maken aan de hand van duurzaamheidsoverwegingen. GPP onderscheidt drie soorten opdrachten:
+          Bij een reguliere aanbesteding voor kantoormeubilair wordt vaak automatisch gekozen voor de levering van nieuw meubilair, zonder expliciet stil te staan bij andere mogelijkheden. De GPP-criteria vragen je om deze keuze bewust te maken aan de hand van duurzaamheidsoverwegingen. GPP onderscheidt drie soorten opdrachten:
           <br /><br />
           - <strong>Nieuw meubilair:</strong> productie van nieuwe meubels met milieuvriendelijke materialen en processen.<br />
           - <strong>Refurbished meubilair:</strong> bestaande meubels worden opgeknapt, aangepast of opnieuw gestoffeerd.<br />
@@ -1096,26 +1361,50 @@ const Results: React.FC = () => {
       title: "Arbeidsomstandigheden",
       level: "basis",
       description: "Naleving van veiligheidsvoorschriften tijdens uitvoering",
-      expandedInfo: "De opdrachtnemer dient alle relevante arbeidsomstandighedenwetgeving na te leven en ervoor te zorgen dat alle werknemers veilig kunnen werken volgens de geldende normen."
+      expandedInfo: (
+        <div className="space-y-3">
+          <p>Voorbeelden van arbeidsomstandigheden eisen:</p>
+          <ul className="list-disc list-inside space-y-1 ml-2">
+            <li>Gebruik van persoonlijke beschermingsmiddelen (PBM's)</li>
+            <li>Toezicht op veilige werkomstandigheden op locatie</li>
+            <li>Voldoende instructie en training voor uitvoerend personeel</li>
+          </ul>
+        </div>
+      )
     },
     {
       title: "Sociale normen",
       level: "gemiddeld", 
       description: "Eerlijke arbeidsvoorwaarden en geen kinderarbeid",
-      expandedInfo: "De opdrachtnemer garandeert eerlijke lonen, redelijke werktijden en verbiedt het gebruik van kinderarbeid in de gehele toeleveringsketen."
+      expandedInfo: (
+        <div className="space-y-3">
+          <p>Voorbeelden van sociale normen eisen:</p>
+          <ul className="list-disc list-inside space-y-1 ml-2">
+            <li>Betaling van ten minste het lokale minimumloon</li>
+            <li>Transparantie over herkomst van personeel</li>
+            <li>Uitsluiting van leveranciers die kinderarbeid toestaan</li>
+          </ul>
+        </div>
+      )
     },
     {
       title: "Milieunormen",
       level: "streng",
       description: "Minimale milieu-impact tijdens uitvoering",
-      expandedInfo: "Tijdens de uitvoering van de opdracht dienen alle werkzaamheden te voldoen aan strenge milieunormen om de ecologische voetafdruk te minimaliseren."
+      expandedInfo: (
+        <div className="space-y-3">
+          <p>Voorbeelden van milieunormen eisen:</p>
+          <ul className="list-disc list-inside space-y-1 ml-2">
+            <li>Gebruik van emissievrij transport tijdens levering</li>
+            <li>Afvalscheiding en hergebruik van verpakkingen</li>
+            <li>Gebruik van milieuvriendelijke middelen bij reiniging/installatie</li>
+          </ul>
+        </div>
+      )
     }
   ];
 
-  const filterItems = (items: any[]) => {
-    if (levelFilter === 'alle-niveaus') return items;
-    return items.filter(item => item.level === levelFilter);
-  };
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
@@ -1144,42 +1433,7 @@ const Results: React.FC = () => {
                 )}
               </h1>
             </div>
-            {estimationAnswer !== 'no' && (
-              <div className="flex items-center gap-4 ml-4 relative">
-                <Popover>
-                  <PopoverTrigger asChild>
-                    <div className="flex items-center gap-2 cursor-pointer">
-                      <Info className="h-4 w-4 text-gray-400" />
-                      <span className="text-sm text-gray-600">Ambitieniveau</span>
-                    </div>
-                  </PopoverTrigger>
-                  <PopoverContent className="w-80">
-                    <div className="space-y-2">
-                      <h4 className="font-medium">Ambitieniveau uitleg</h4>
-                      <p className="text-sm text-gray-600">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </p>
-                      <p className="text-sm text-gray-600">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                      </p>
-                    </div>
-                  </PopoverContent>
-                </Popover>
-                <div className="relative">
-                  <Select value={levelFilter} onValueChange={setLevelFilter}>
-                    <SelectTrigger className="w-48">
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent align="end" side="bottom" sideOffset={5}>
-                      <SelectItem value="alle-niveaus">Alle niveaus</SelectItem>
-                      <SelectItem value="basis">Basis</SelectItem>
-                      <SelectItem value="gemiddeld">Gemiddeld</SelectItem>
-                      <SelectItem value="streng">Streng</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-              </div>
-            )}
+
           </div>
 
           {/* User Input Summary - integrated */}
@@ -1309,9 +1563,11 @@ const Results: React.FC = () => {
                         <li>Kiezen van de aanbestedingsstrategie (bijv. EMVI, laagste prijs, functioneel specificeren)</li>
                         <li>Bepalen of en hoe duurzaamheid wordt meegenomen — en dus hoe je invulling geeft aan de EED/GPP-verplichting</li>
                       </ul>
-                      <p><strong>Let op:</strong> De keuzes die je hier maakt, zijn bepalend voor de rest van de aanbesteding.</p>
+                      <div className="p-4 bg-amber-50 rounded-lg border border-amber-200 mb-4">
+                        <p className="text-amber-800"><strong>⚠️ Let op:</strong> De keuzes die je hier maakt, zijn bepalend voor de rest van de aanbesteding.</p>
+                      </div>
                     </div>
-                    {filterItems(sampleBepalingScope).map((item, index) => (
+                    {sampleBepalingScope.map((item, index) => (
                       <ExpandableInfo key={index} {...item} />
                     ))}
                   </div>
@@ -1327,7 +1583,11 @@ const Results: React.FC = () => {
                   <div className="space-y-4">
                     <div className="text-gray-600 mb-4">
                       <p className="mb-4">Bij deze aanbesteding moeten de Europese GPP-criteria uitdrukkelijk worden opgenomen als technische specificaties. Ze vormen de ondergrens waaraan geleverd meubilair moet voldoen. Door deze eisen expliciet in het bestek op te nemen, voldoe je aan de verplichting uit de Energie-Efficiëntierichtlijn (EED).</p>
-                      <p className="mb-4"><strong>⚠️ Let op: De <u>minimale</u> technische specificaties uit de GPP criteria zijn verplicht voor deze aanbesteding. Je kunt niet volstaan met alleen gunningscriteria of EMVI-aspecten.</strong></p>
+                      <div className="p-4 bg-amber-50 rounded-lg border border-amber-200 mb-4">
+                        <p className="text-amber-800">
+                          ⚠️ <strong>Let op:</strong> De minimale technische specificaties uit de GPP criteria zijn verplicht voor deze aanbesteding. Je kunt niet volstaan met alleen gunningscriteria of EMVI-aspecten.
+                        </p>
+                      </div>
                       <p>Kopieer de tabel hier onder letterlijk in je bestek of verwijs naar <a href="https://green-forum.ec.europa.eu/green-business/green-public-procurement/gpp-criteria-and-requirements_en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">de officiële EU GPP-meubilaircriteria</a>.</p>
                     </div>
                     <TechnischeSpecificatiesTables />
@@ -1343,8 +1603,10 @@ const Results: React.FC = () => {
                 <AccordionContent className="px-6 pb-6">
                   <div className="space-y-4">
                     <div className="text-gray-600 mb-4">
-                      <p className="mb-4">Gebruik gunningscriteria om duurzame prestaties extra te belonen. De onderstaande voorbeelden zijn optioneel en helpen je aanbesteding aan te laten sluiten op je ambities.</p>
-                      <p className="mb-4">📌 <strong>Let op:</strong> Je voldoet aan de Europese verplichtingen (zoals de EED) ook zónder gunningscriteria, mits je de minimale technische specificaties opneemt.</p>
+                      <p className="mb-4">Gebruik gunningscriteria om bepaalde prestaties extra te belonen. De onderstaande voorbeelden zijn optioneel en helpen je aanbesteding aan te laten sluiten op je ambities.</p>
+                      <div className="p-4 mb-4 bg-green-50 border border-green-200 rounded-lg">
+                        <p className="text-green-800">📌 <strong>Let op:</strong> Je voldoet aan de Europese verplichtingen (zoals de EED) ook zónder gunningscriteria, mits je de verplichte technische specificaties opneemt.</p>
+                      </div>
                     </div>
                     <GunningscriteriaTable />
                   </div>
@@ -1359,11 +1621,14 @@ const Results: React.FC = () => {
                 <AccordionContent className="px-6 pb-6">
                   <div className="space-y-4">
                     <div className="text-gray-600 mb-4">
-                      <p className="mb-4">Contractuele uitvoeringsvoorwaarden zijn de verplichtingen die tijdens de uitvoering van de opdracht gelden, zoals eisen op het gebied van arbeidsomstandigheden, sociale of milieunormen.</p>
+                      <p className="mb-4">De toepasselijke GPP-criteria bevatten aanbevelingen voor contractuele voorwaarden op het gebied van arbeidsomstandigheden, sociale normen en milieunormen. Deze zijn niet verplicht, maar dragen bij aan circulaire of klimaatvriendelijke doelstellingen en sluiten aan bij het Rijksbeleid voor maatschappelijk verantwoord inkopen.</p>
+                      <div className="p-4 bg-green-50 rounded-lg border border-green-200 mb-4">
+                        <p className="text-green-800">
+                          📌 <strong>Let op:</strong> Je voldoet aan de Europese verplichtingen (zoals de EED) ook zónder contractuele verplichtingen, mits je de minimale technische specificaties opneemt.
+                        </p>
+                      </div>
                     </div>
-                    {filterItems(sampleContractueleUitvoeringsvoorwaarden).map((item, index) => (
-                      <ExpandableInfo key={index} {...item} />
-                    ))}
+                    <GunningscriteriaTable />
                   </div>
                 </AccordionContent>
               </AccordionItem>
