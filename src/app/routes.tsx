@@ -1,7 +1,15 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate, useParams } from "react-router-dom";
+import { useStealthMode } from "@/lib/utils";
+
+// Helper component for redirecting with params
+const RedirectToEedResults = () => {
+  const { code } = useParams();
+  return <Navigate to={`/eed-results/${code}`} replace />;
+};
 
 // Layout Components
 import Layout from "@/components/layout/Layout";
+import StealthLayout from "@/components/layout/StealthLayout";
 
 // Tool Pages (Procurement Tools)
 import IndexPage from "@/pages/tools/index";
@@ -33,10 +41,35 @@ import Support from "@/pages/Support";
 import NotFound from "@/pages/NotFound";
 
 const AppRoutes = () => {
+  const { isStealthMode } = useStealthMode();
+
+  // In stealth mode, use StealthLayout and restrict routes
+  if (isStealthMode) {
+    return (
+      <Routes>
+        {/* Redirect home to EED check */}
+        <Route path="/" element={<Navigate to="/eed-check" replace />} />
+        
+        {/* EED Tool routes */}
+        <Route path="/eed-check" element={<StealthLayout><SectoraleVerplichtingencheckPage /></StealthLayout>} />
+        <Route path="/eed-results/:code" element={<StealthLayout><ResultsPage /></StealthLayout>} />
+        
+        {/* Legacy compatibility - redirect old URLs to EED versions */}
+        <Route path="/tools/sectorale-verplichtingencheck" element={<Navigate to="/eed-check" replace />} />
+        <Route path="/tools/results/:code" element={<RedirectToEedResults />} />
+        <Route path="/results/:code" element={<RedirectToEedResults />} />
+        
+        {/* Catch-all redirect to EED check */}
+        <Route path="*" element={<Navigate to="/eed-check" replace />} />
+      </Routes>
+    );
+  }
+
+  // Normal mode - full routing
   return (
     <Routes>
       {/* Public Routes */}
-      <Route path="/" element={<Layout><IndexPage /></Layout>} />
+      <Route path="/" element={<Navigate to="/tools/sectorale-verplichtingencheck" replace />} />
       
       {/* Procurement Tools */}
       <Route path="/tools/stappenslang" element={<Layout><StappenslagPage /></Layout>} />
@@ -51,6 +84,10 @@ const AppRoutes = () => {
       
       {/* Legacy Routes - Redirects for backward compatibility */}
       <Route path="/results/:code" element={<Layout><ResultsPage /></Layout>} />
+      
+      {/* EED Tool routes (for stealth mode compatibility) */}
+      <Route path="/eed-check" element={<Layout><SectoraleVerplichtingencheckPage /></Layout>} />
+      <Route path="/eed-results/:code" element={<Layout><ResultsPage /></Layout>} />
       
       {/* Tender Dashboard */}
       <Route path="/tender-dashboard" element={<Layout><TenderDashboardPage /></Layout>} />

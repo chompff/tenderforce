@@ -35,11 +35,11 @@ const HeroSection: React.FC = () => {
         <div className="relative z-10 flex-1 flex items-center justify-center px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              De kortste route naar<br /><span className="text-blue-600">een complete aanbesteding</span>
+              De kortste route naar<br /><span className="text-blue-600">EED compliance</span>
             </h1>
             
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Automatiseer structuur, inhoud én documentatie met Tenderforce.<br />
+              Check EU Energy Efficiency Directive verplichtingen.<br />
               <strong>Typ hier wat je wilt aanbesteden:</strong>
             </p>
 

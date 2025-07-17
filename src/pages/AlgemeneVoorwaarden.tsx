@@ -13,15 +13,15 @@ const AlgemeneVoorwaarden: React.FC = () => {
             
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-600 mb-8">
-                Laatst bijgewerkt: December 2024
+                Laatst bijgewerkt: Juli 2025
               </p>
 
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Algemene bepalingen</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Deze algemene voorwaarden zijn van toepassing op alle overeenkomsten tussen Tenderforce.ai, 
-                  gevestigd te Kleverlaan 77, 2061 TD Bloemendaal ("Tenderforce", "wij", "ons") en de gebruiker 
-                  van onze AI-gestuurde aanbestedingstools ("gebruiker", "u").
+                  Deze algemene voorwaarden zijn van toepassing op alle overeenkomsten tussen EED Tool, 
+                  gevestigd te Kleverlaan 77, 2061 TD Bloemendaal ("EED Tool", "wij", "ons") en de gebruiker 
+                  van onze EED compliance tools ("gebruiker", "u").
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   Door gebruik te maken van onze diensten accepteert u deze voorwaarden volledig. 
@@ -34,19 +34,19 @@ const AlgemeneVoorwaarden: React.FC = () => {
                 
                 <h3 className="text-xl font-medium text-gray-900 mb-3">2.1 Aard van de diensten</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Tenderforce.ai biedt AI-gestuurde tools voor aanbestedingsprofessionals, waaronder maar niet beperkt tot:
+                  EED Tool biedt tools voor aanbestedingsprofessionals, waaronder maar niet beperkt tot:
                 </p>
                 <ul className="list-disc list-inside text-gray-700 mb-4 space-y-1">
                   <li>Sectorale verplichtingencheck voor aanbestedingen</li>
-                  <li>Stappenslang voor compliance-processen</li>
-                  <li>Juridische informatietools</li>
+                  <li>EED compliance processen</li>
+                  <li>GPP verplichtingen check</li>
                   <li>Automatische analyses van aanbestedingsdocumentatie</li>
                 </ul>
 
-                <h3 className="text-xl font-medium text-gray-900 mb-3">2.2 AI-disclaimer</h3>
+                <h3 className="text-xl font-medium text-gray-900 mb-3">2.2 Tool-disclaimer</h3>
                 <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg mb-4">
                   <p className="text-yellow-800 font-medium">
-                    Onze diensten maken gebruik van kunstmatige intelligentie. Alle gegenereerde informatie 
+                    Onze diensten bieden informatieve analyses. Alle gegenereerde informatie 
                     is uitsluitend informatief en vormt geen juridisch advies. Raadpleeg altijd gekwalificeerde 
                     juridische professionals voor definitieve beslissingen.
                   </p>
@@ -66,15 +66,15 @@ const AlgemeneVoorwaarden: React.FC = () => {
                 <ul className="list-disc list-inside text-gray-700 mb-4 space-y-1">
                   <li>Gebruik voor professionele aanbestedingsdoeleinden</li>
                   <li>Toegang volgens uw abonnementsniveau</li>
-                  <li>Redelijk gebruik van AI-capaciteit</li>
+                  <li>Redelijk gebruik van tool capaciteit</li>
                   <li>Naleving van alle toepasselijke wet- en regelgeving</li>
                 </ul>
 
                 <h3 className="text-xl font-medium text-gray-900 mb-3">3.2 Verboden gebruik</h3>
                 <ul className="list-disc list-inside text-gray-700 mb-4 space-y-1">
-                  <li>Misbruik van AI-systemen voor frauduleuze doeleinden</li>
+                  <li>Misbruik van systemen voor frauduleuze doeleinden</li>
                   <li>Uploaden van malware, virussen of schadelijke code</li>
-                  <li>Reverse engineering van onze AI-algoritmen</li>
+                  <li>Reverse engineering van onze systemen</li>
                   <li>Commerciële doorverkoop zonder expliciete toestemming</li>
                   <li>Gebruik dat inbreuk maakt op intellectuele eigendomsrechten</li>
                 </ul>
@@ -91,8 +91,8 @@ const AlgemeneVoorwaarden: React.FC = () => {
                 
                 <h3 className="text-xl font-medium text-gray-900 mb-3">4.1 Onze rechten</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Alle intellectuele eigendomsrechten op onze platform, AI-algoritmen, software, 
-                  documentatie en merkrechten blijven eigendom van Tenderforce.ai.
+                  Alle intellectuele eigendomsrechten op onze platform, systemen, software, 
+                  documentatie en merkrechten blijven eigendom van EED Tool.
                 </p>
 
                 <h3 className="text-xl font-medium text-gray-900 mb-3">4.2 Gebruikersgegevens</h3>
@@ -102,9 +102,9 @@ const AlgemeneVoorwaarden: React.FC = () => {
                   systeemverbetering.
                 </p>
 
-                <h3 className="text-xl font-medium text-gray-900 mb-3">4.3 AI-gegenereerde content</h3>
+                <h3 className="text-xl font-medium text-gray-900 mb-3">4.3 Gegenereerde content</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Output gegenereerd door onze AI-systemen kan door u worden gebruikt voor uw bedrijfsdoeleinden, 
+                  Output gegenereerd door onze systemen kan door u worden gebruikt voor uw bedrijfsdoeleinden, 
                   maar wij behouden ons het recht voor op vergelijkbare analyses voor andere gebruikers.
                 </p>
               </section>
@@ -135,7 +135,7 @@ const AlgemeneVoorwaarden: React.FC = () => {
                 
                 <h3 className="text-xl font-medium text-gray-900 mb-3">6.1 Beperkte garanties</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Onze diensten worden geleverd "as is". Wij garanderen niet dat onze AI-analyses 
+                  Onze diensten worden geleverd "as is". Wij garanderen niet dat onze analyses 
                   volledig, accuraat of geschikt zijn voor specifieke doeleinden.
                 </p>
 
@@ -148,7 +148,7 @@ const AlgemeneVoorwaarden: React.FC = () => {
                 <h3 className="text-xl font-medium text-gray-900 mb-3">6.3 Uitgesloten schade</h3>
                 <p className="text-gray-700 leading-relaxed">
                   Wij zijn niet aansprakelijk voor indirecte schade, gevolgschade, gemiste winsten, 
-                  of schade door verkeerde AI-analyses of compliance-interpretaties.
+                  of schade door verkeerde analyses of compliance-interpretaties.
                 </p>
               </section>
 
@@ -161,7 +161,7 @@ const AlgemeneVoorwaarden: React.FC = () => {
                   Reeds betaalde bedragen worden niet gerestitueerd.
                 </p>
 
-                <h3 className="text-xl font-medium text-gray-900 mb-3">7.2 Opzegging door Tenderforce</h3>
+                <h3 className="text-xl font-medium text-gray-900 mb-3">7.2 Opzegging door EED Tool</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Wij kunnen uw account beëindigen bij schending van deze voorwaarden, na schriftelijke 
                   waarschuwing en een hersteltermijn van 14 dagen.
@@ -199,10 +199,10 @@ const AlgemeneVoorwaarden: React.FC = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. Contact</h2>
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <p className="text-gray-700 mb-2"><strong>Tenderforce.ai</strong></p>
+                  <p className="text-gray-700 mb-2"><strong>EED Tool</strong></p>
                   <p className="text-gray-700 mb-2">Kleverlaan 77, 2061 TD Bloemendaal</p>
                   <p className="text-gray-700 mb-2">Nederland</p>
-                  <p className="text-gray-700 mb-2">Email: legal@tenderforce.ai</p>
+                  <p className="text-gray-700 mb-2">Email: legal@eedtool.eu</p>
                   <p className="text-gray-700 mb-2">Telefoon: +31 (0)20 123 4567</p>
                   <p className="text-gray-700">KvK nummer: [TBD]</p>
                 </div>

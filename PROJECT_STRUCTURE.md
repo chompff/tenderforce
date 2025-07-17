@@ -2,6 +2,30 @@
 
 This document outlines the restructured architecture of Tenderforce, a comprehensive procurement SaaS platform.
 
+## 🥷 STEALTH MODE
+
+**STEALTH MODE** is a special operational mode that transforms Tenderforce into "EED TOOL" for alternative branding:
+
+### Activation
+- **Toggle**: Type "STEALTH MODE ON" or "STEALTH MODE OFF" in any input field + Enter
+- **Persistence**: Stored in localStorage, survives browser restarts
+- **URL**: Changes URLs from `/tools/sectorale-verplichtingencheck` to `/eed-check`
+
+### Changes When Active
+1. **Logo**: "Tenderforce" → "EED TOOL" (keeps beta badge)
+2. **Navigation**: ALL navigation, footer, login completely hidden
+3. **Title**: "Sectorale check" → "EED Check" 
+4. **Homepage**: Root `/` redirects to `/eed-check`
+5. **Upsells**: All commercial elements hidden ("Ontgrendel alle sectorale verplichtingen", etc.)
+6. **Access**: ONLY EED check tool available, no other features
+7. **Branding**: Removes all Tenderforce branding and commercial aspects
+
+### Technical Implementation
+- `useStealthMode()` hook in `utils.ts`
+- `StealthLayout` component (minimal header only)
+- Conditional routing in `routes.tsx`
+- Feature flags throughout components
+
 ## 🏗️ Project Architecture
 
 ```

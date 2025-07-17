@@ -13,13 +13,13 @@ const Disclaimer: React.FC = () => {
             
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-600 mb-8">
-                Laatst bijgewerkt: December 2024
+                Laatst bijgewerkt: Juli 2025
               </p>
 
               <div className="bg-red-50 border border-red-200 p-6 rounded-lg mb-8">
                 <h2 className="text-xl font-bold text-red-800 mb-3">⚠️ Belangrijke waarschuwing</h2>
                 <p className="text-red-700 leading-relaxed">
-                  De informatie en analyses gegenereerd door Tenderforce.ai zijn uitsluitend bedoeld voor informatieve doeleinden. 
+                  De informatie en analyses gegenereerd door EED Tool zijn uitsluitend bedoeld voor informatieve doeleinden. 
                   Deze output vormt <strong>GEEN juridisch advies</strong> en kan niet worden beschouwd als definitieve 
                   compliance-informatie voor aanbestedingsprocedures.
                 </p>
@@ -28,11 +28,11 @@ const Disclaimer: React.FC = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Aard van de dienstverlening</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Tenderforce.ai is een AI-gestuurde informatietool die gebruikers helpt bij het identificeren van 
+                  EED Tool is een informatietool die gebruikers helpt bij het identificeren van 
                   potentieel relevante wet- en regelgeving voor aanbestedingsprocedures. Onze systemen:
                 </p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
-                  <li>Analyseren input op basis van trainingsdata en algoritmen</li>
+                  <li>Analyseren input op basis van data en procedures</li>
                   <li>Genereren suggesties en analyses die kunnen bevatten fouten of onvolledigheden</li>
                   <li>Werken met informatie die mogelijk niet de meest recente ontwikkelingen weergeeft</li>
                   <li>Kunnen geen rekening houden met specifieke lokale interpretaties of jurisprudentie</li>
@@ -40,14 +40,14 @@ const Disclaimer: React.FC = () => {
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Beperkingen van kunstmatige intelligentie</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Beperkingen van geautomatiseerde tools</h2>
                 
                 <h3 className="text-xl font-medium text-gray-900 mb-3">2.1 Technische beperkingen</h3>
                 <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
-                  <li><strong>Geen garantie op volledigheid:</strong> AI kan relevante informatie missen of overzien</li>
-                  <li><strong>Mogelijke inaccuracies:</strong> Algoritmische fouten kunnen voorkomen</li>
+                  <li><strong>Geen garantie op volledigheid:</strong> Tools kunnen relevante informatie missen of overzien</li>
+                  <li><strong>Mogelijke inaccuracies:</strong> Systematische fouten kunnen voorkomen</li>
                   <li><strong>Verouderde informatie:</strong> Kennisbank reflecteert mogelijk niet de laatste wijzigingen</li>
-                  <li><strong>Contextlimitaties:</strong> AI begrijpt niet altijd de volledige complexiteit van situaties</li>
+                  <li><strong>Contextlimitaties:</strong> Tools begrijpen niet altijd de volledige complexiteit van situaties</li>
                 </ul>
 
                 <h3 className="text-xl font-medium text-gray-900 mb-3">2.2 Juridische complexiteit</h3>
@@ -69,7 +69,7 @@ const Disclaimer: React.FC = () => {
                   <h3 className="text-lg font-semibold text-blue-800 mb-3">Dringend advies</h3>
                   <p className="text-blue-700 leading-relaxed">
                     Raadpleeg altijd gekwalificeerde juridische professionals, aanbestedingsadviseurs of compliance-experts 
-                    voordat u definitieve beslissingen neemt op basis van Tenderforce analyses.
+                    voordat u definitieve beslissingen neemt op basis van EED Tool analyses.
                   </p>
                 </div>
 
@@ -100,7 +100,7 @@ const Disclaimer: React.FC = () => {
                   Gebruikers zijn verplicht om:
                 </p>
                 <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
-                  <li>AI-gegenereerde informatie te verifiëren via onafhankelijke bronnen</li>
+                  <li>Tool-gegenereerde informatie te verifiëren via onafhankelijke bronnen</li>
                   <li>Recente ontwikkelingen in relevante wetgeving te controleren</li>
                   <li>Specifieke omstandigheden van hun situatie mee te nemen</li>
                   <li>Professioneel advies in te winnen voor belangrijke beslissingen</li>
@@ -108,7 +108,7 @@ const Disclaimer: React.FC = () => {
 
                 <h3 className="text-xl font-medium text-gray-900 mb-3">4.2 Risico-acceptatie</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Door gebruik te maken van Tenderforce erkent u dat alle beslissingen gebaseerd op onze analyses 
+                  Door gebruik te maken van EED Tool erkent u dat alle beslissingen gebaseerd op onze analyses 
                   voor uw eigen risico zijn en dat u volledig verantwoordelijk bent voor de gevolgen van die beslissingen.
                 </p>
               </section>
@@ -118,10 +118,10 @@ const Disclaimer: React.FC = () => {
                 
                 <h3 className="text-xl font-medium text-gray-900 mb-3">5.1 Algemene uitsluiting</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Tenderforce.ai wijst alle aansprakelijkheid af voor:
+                  EED Tool wijst alle aansprakelijkheid af voor:
                 </p>
                 <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
-                  <li>Onjuiste, onvolledige of verouderde informatie in AI-analyses</li>
+                  <li>Onjuiste, onvolledige of verouderde informatie in analyses</li>
                   <li>Schade voortvloeiend uit verkeerde interpretatie van gegenereerde content</li>
                   <li>Gemiste deadlines of procedures door verkeerde compliance-informatie</li>
                   <li>Financiële verliezen door verkeerde aanbestedingsbeslissingen</li>
@@ -131,7 +131,7 @@ const Disclaimer: React.FC = () => {
                 <h3 className="text-xl font-medium text-gray-900 mb-3">5.2 Specifieke uitsluitingen</h3>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
                   <li><strong>Regelgevingswijzigingen:</strong> Wij zijn niet verantwoordelijk voor schade door recente wijzigingen in wet- en regelgeving</li>
-                  <li><strong>Technische storingen:</strong> Platform downtime of AI-systeem fouten</li>
+                  <li><strong>Technische storingen:</strong> Platform downtime of systeemfouten</li>
                   <li><strong>Derde partijen:</strong> Acties of adviezen van externe professionals</li>
                   <li><strong>Gebruikersfouten:</strong> Verkeerde input of misinterpretatie van output</li>
                 </ul>
@@ -142,7 +142,7 @@ const Disclaimer: React.FC = () => {
                 
                 <h3 className="text-xl font-medium text-gray-900 mb-3">6.1 Databronnen</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Onze AI-systemen zijn getraind op basis van publiek beschikbare informatie, inclusief:
+                  Onze systemen zijn gebaseerd op publiek beschikbare informatie, inclusief:
                 </p>
                 <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
                   <li>Europese en Nederlandse aanbestedingswetgeving</li>
@@ -163,10 +163,10 @@ const Disclaimer: React.FC = () => {
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. Aanbevolen best practices</h2>
                 
                 <div className="bg-green-50 border border-green-200 p-6 rounded-lg">
-                  <h3 className="text-lg font-semibold text-green-800 mb-3">Optimaal gebruik van Tenderforce</h3>
+                  <h3 className="text-lg font-semibold text-green-800 mb-3">Optimaal gebruik van EED Tool</h3>
                   <ul className="list-decimal list-inside text-green-700 space-y-2">
-                    <li>Gebruik Tenderforce als startpunt voor uw onderzoek, niet als eindpunt</li>
-                    <li>Verifieer alle AI-gegenereerde informatie via officiële bronnen</li>
+                    <li>Gebruik EED Tool als startpunt voor uw onderzoek, niet als eindpunt</li>
+                    <li>Verifieer alle gegenereerde informatie via officiële bronnen</li>
                     <li>Raadpleeg professionals voor complexe of kritieke beslissingen</li>
                     <li>Houd rekening met recente ontwikkelingen in uw sector</li>
                     <li>Documenteer uw due diligence proces voor audit doeleinden</li>
@@ -181,8 +181,8 @@ const Disclaimer: React.FC = () => {
                   Voor vragen over deze disclaimer of de beperkingen van onze dienstverlening:
                 </p>
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <p className="text-gray-700 mb-2"><strong>Tenderforce.ai Support</strong></p>
-                  <p className="text-gray-700 mb-2">Email: support@tenderforce.ai</p>
+                  <p className="text-gray-700 mb-2"><strong>EED Tool Support</strong></p>
+                  <p className="text-gray-700 mb-2">Email: support@eedtool.eu</p>
                   <p className="text-gray-700 mb-2">Telefoon: +31 (0)20 123 4567</p>
                   <p className="text-gray-700">
                     <strong>Let op:</strong> Ons support team kan geen juridisch advies verstrekken en zal u doorverwijzen 
@@ -193,9 +193,9 @@ const Disclaimer: React.FC = () => {
 
               <div className="bg-yellow-50 border border-yellow-200 p-6 rounded-lg">
                 <p className="text-yellow-800 font-medium">
-                  Door gebruik te maken van Tenderforce.ai bevestigt u dat u deze disclaimer heeft gelezen, 
-                  begrepen en accepteert, en dat u zich bewust bent van de beperkingen van AI-gestuurde 
-                  juridische informatietools.
+                  Door gebruik te maken van EED Tool bevestigt u dat u deze disclaimer heeft gelezen, 
+                  begrepen en accepteert, en dat u zich bewust bent van de beperkingen van 
+                  geautomatiseerde juridische informatietools.
                 </p>
               </div>
             </div>

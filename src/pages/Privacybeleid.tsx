@@ -13,18 +13,18 @@ const Privacybeleid: React.FC = () => {
             
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-600 mb-8">
-                Laatst bijgewerkt: December 2024
+                Laatst bijgewerkt: Juli 2025
               </p>
 
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Inleiding</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Tenderforce.ai ("wij", "ons", "onze") respecteert uw privacy en is toegewijd aan het beschermen van uw persoonlijke gegevens. 
+                  EED Tool ("wij", "ons", "onze") respecteert uw privacy en is toegewijd aan het beschermen van uw persoonlijke gegevens. 
                   Dit privacybeleid legt uit hoe wij uw persoonlijke informatie verzamelen, gebruiken, delen en beschermen wanneer u onze 
-                  AI-gestuurde aanbestedingstools gebruikt.
+                  EED compliance tools gebruikt.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Als AI-powered platform dat gevoelige aanbestedingsinformatie verwerkt, nemen wij extra voorzorgsmaatregelen om 
+                  Als platform dat gevoelige aanbestedingsinformatie verwerkt, nemen wij extra voorzorgsmaatregelen om 
                   compliance met de Algemene Verordening Gegevensbescherming (AVG) en andere toepasselijke privacywetgeving te waarborgen.
                 </p>
               </section>
@@ -43,7 +43,7 @@ const Privacybeleid: React.FC = () => {
                 <h3 className="text-xl font-medium text-gray-900 mb-3">2.2 Gebruiksgegevens</h3>
                 <ul className="list-disc list-inside text-gray-700 mb-4 space-y-1">
                   <li>Aanbestedingsinformatie die u invoert</li>
-                  <li>Zoekquery's en AI-interacties</li>
+                  <li>Zoekquery's en tool-interacties</li>
                   <li>Platform gebruiksstatistieken</li>
                   <li>Technische logs en foutmeldingen</li>
                 </ul>
@@ -51,7 +51,7 @@ const Privacybeleid: React.FC = () => {
                 <h3 className="text-xl font-medium text-gray-900 mb-3">2.3 Technische gegevens</h3>
                 <ul className="list-disc list-inside text-gray-700 mb-4 space-y-1">
                   <li>IP-adres en browserinformatie</li>
-                  <li>Apparaat- en systeeминformatie</li>
+                  <li>Apparaat- en systeem informatie</li>
                   <li>Cookies en vergelijkbare technologieën</li>
                 </ul>
               </section>
@@ -59,8 +59,8 @@ const Privacybeleid: React.FC = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">3. Hoe wij uw gegevens gebruiken</h2>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
-                  <li><strong>Service levering:</strong> Het verstrekken van AI-gestuurde aanbestedingsanalyses en compliance checks</li>
-                  <li><strong>AI-training:</strong> Verbetering van onze algoritmen (geanonimiseerd en geaggregeerd)</li>
+                  <li><strong>Service levering:</strong> Het verstrekken van EED compliance analyses en checks</li>
+                  <li><strong>Tool verbetering:</strong> Verbetering van onze systemen (geanonimiseerd en geaggregeerd)</li>
                   <li><strong>Klantenservice:</strong> Ondersteuning en technische assistentie</li>
                   <li><strong>Compliance:</strong> Voldoen aan wettelijke verplichtingen</li>
                   <li><strong>Beveiliging:</strong> Fraudepreventie en systeembeveiliging</li>
@@ -69,14 +69,14 @@ const Privacybeleid: React.FC = () => {
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. AI en gegevensverwerking</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Gegevensverwerking</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Onze AI-systemen verwerken uw aanbestedingsgegevens om relevante juridische analyses te bieden. Wij:
+                  Onze systemen verwerken uw aanbestedingsgegevens om relevante EED analyses te bieden. Wij:
                 </p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
-                  <li>Gebruiken geavanceerde encryptie tijdens AI-verwerking</li>
-                  <li>Bewaren geen volledige documenten in AI-trainingsdata</li>
-                  <li>Anonimiseren gegevens voor modelverbetering</li>
+                  <li>Gebruiken geavanceerde encryptie tijdens verwerking</li>
+                  <li>Bewaren geen volledige documenten in systeem data</li>
+                  <li>Anonimiseren gegevens voor systeemverbetering</li>
                   <li>Implementeren strikte toegangscontroles</li>
                 </ul>
               </section>
@@ -87,7 +87,7 @@ const Privacybeleid: React.FC = () => {
                   Wij verkopen uw persoonlijke gegevens nooit. Wij kunnen gegevens delen met:
                 </p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
-                  <li><strong>Serviceproviders:</strong> Gecontroleerde partners voor hosting en analyticsΗ</li>
+                  <li><strong>Serviceproviders:</strong> Gecontroleerde partners voor hosting en analytics</li>
                   <li><strong>Wettelijke verplichtingen:</strong> Indien vereist door Nederlandse of EU-wetgeving</li>
                   <li><strong>Bedrijfsoverdrachten:</strong> Bij fusies of overnames (met voorafgaande kennisgeving)</li>
                 </ul>
@@ -128,7 +128,7 @@ const Privacybeleid: React.FC = () => {
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
                   <li>Het verlenen van onze diensten</li>
                   <li>Wettelijke bewaarplichten (7 jaar voor financiële gegevens)</li>
-                  <li>Legitimate business interests (geanonimiseerde analyticsΗ)</li>
+                  <li>Legitimate business interests (geanonimiseerde analytics)</li>
                 </ul>
               </section>
 
@@ -139,9 +139,9 @@ const Privacybeleid: React.FC = () => {
                 </p>
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <p className="text-gray-700 mb-2"><strong>Data Protection Officer</strong></p>
-                  <p className="text-gray-700 mb-2">Tenderforce.ai</p>
+                  <p className="text-gray-700 mb-2">EED Tool</p>
                   <p className="text-gray-700 mb-2">Kleverlaan 77, 2061 TD Bloemendaal</p>
-                  <p className="text-gray-700 mb-2">Email: privacy@tenderforce.ai</p>
+                  <p className="text-gray-700 mb-2">Email: privacy@eedtool.eu</p>
                   <p className="text-gray-700">Telefoon: +31 (0)20 123 4567</p>
                 </div>
               </section>

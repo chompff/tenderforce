@@ -9,6 +9,7 @@ import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { getCpvName } from '../../utils/cpvLookup';
 import Confetti from '../../components/Confetti';
+import { useStealthMode } from '@/lib/utils';
 
 interface ExpandableInfoProps {
   title: string;
@@ -131,11 +132,11 @@ const ExpandableInfo: React.FC<ExpandableInfoProps> = ({ title, level, descripti
 
 // TypeOpdrachtExamples component with tabs and copy functionality
 const TypeOpdrachtExamples: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'minimaal' | 'streng'>('minimaal');
+  const [activeTab, setActiveTab] = useState<'basis' | 'ambitieus'>('basis');
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
 
   const examples = {
-    minimaal: [
+    basis: [
       {
         title: "🪑 Nieuw meubilair",
         text: "Deze opdracht betreft de levering van nieuw kantoormeubilair dat voldoet aan de basisvereisten van de Europese GPP-criteria. De focus ligt op meubels met een acceptabele levensduur, lage emissies van vluchtige organische stoffen, en het gebruik van hout uit duurzaam beheerde bossen (FSC/PEFC)."
@@ -149,18 +150,18 @@ const TypeOpdrachtExamples: React.FC = () => {
         text: "Deze opdracht betreft het ophalen, sorteren en op milieuvriendelijke wijze verwerken van afgeschreven kantoormeubilair. Herbruikbare onderdelen worden apart gehouden en verantwoord afgevoerd."
       }
     ],
-    streng: [
+    ambitieus: [
       {
         title: "🪑 Nieuw meubilair",
-        text: "Deze opdracht betreft de levering van nieuw, duurzaam en circulair kantoormeubilair met een lange levensduur, lage emissies, maximale demonteerbaarheid en een hoog percentage gerecycled materiaal. Leveranciers moeten materiaalpaspoorten aanleveren en hergebruik/vervangbaarheid van onderdelen aantonen. Er wordt gegund op milieu-impact en circulariteit."
+        text: "Deze opdracht betreft de levering van nieuw, duurzaam en circulair kantoormeubilair met een lange levensduur, lage emissies, maximale demonteerbaarheid en een hoog percentage gerecycled materiaal. Leveranciers moeten materiaalpaspoorten aanleveren en hergebruik/vervangbaarheid van onderdelen aantonen. De gunning vindt plaats op basis van milieu-impact en circulariteit."
       },
       {
-        title: "🔄 Refurbished meubilair",
-        text: "Deze opdracht betreft de levering van refurbished meubilair waarbij de opdrachtnemer garanties biedt op duurzaamheid, levensduurverlenging, traceerbaarheid van onderdelen en milieuprestaties. Er gelden eisen voor modulair ontwerp, vervangbaarheid van onderdelen en milieucertificering van gebruikte materialen. Een onderhoudsplan en impactrapportage maken deel uit van de opdracht."
+        title: "🔄 Refurbished meubilair", 
+        text: "Deze opdracht betreft de levering van refurbished meubilair waarbij de opdrachtnemer garanties biedt op duurzaamheid, levensduurverlenging, traceerbaarheid van onderdelen en milieuprestaties. Er gelden eisen voor modulair ontwerp, vervangbaarheid van onderdelen en milieucertificering van gebruikte materialen. Een onderhoudsplan en een impactrapportage maken onderdeel uit van de opdracht."
       },
       {
         title: "♻️ End-of-life verwerking", 
-        text: "Deze opdracht betreft een circulaire verwerkingsopdracht waarbij afgeschreven meubilair maximaal wordt hergebruikt of hoogwaardig wordt gerecycled. De opdrachtnemer moet aantonen hoeveel procent van het meubilair wordt hergebruikt, welke onderdelen worden teruggewonnen, en hoe reststromen worden verwerkt conform GPP-richtlijnen. Terugnameverplichtingen, transparante rapportages en een 'zero waste'-aanpak zijn onderdeel van de eisen."
+        text: "Deze opdracht betreft een circulaire verwerkingsopdracht waarbij afgeschreven meubilair zoveel mogelijk wordt hergebruikt of hoogwaardig gerecycled. De opdrachtnemer moet aantonen hoeveel procent van het meubilair wordt hergebruikt, welke onderdelen worden teruggewonnen, en hoe reststromen worden verwerkt conform GPP-richtlijnen. Terugnameverplichtingen, transparante rapportages en een 'zero waste'-aanpak zijn onderdeel van de eisen."
       }
     ]
   };
@@ -182,24 +183,24 @@ const TypeOpdrachtExamples: React.FC = () => {
       <div className="border-b border-gray-200">
         <div className="flex space-x-8">
           <button 
-            onClick={() => setActiveTab('minimaal')}
+            onClick={() => setActiveTab('basis')}
             className={`py-2 px-1 border-b-2 font-medium text-sm transition-colors ${
-              activeTab === 'minimaal' 
+              activeTab === 'basis' 
                 ? 'border-blue-500 text-blue-600' 
                 : 'border-transparent text-gray-500 hover:text-gray-700'
             }`}
           >
-            📋 Minimaal
+            📋 Basis
           </button>
           <button 
-            onClick={() => setActiveTab('streng')}
+            onClick={() => setActiveTab('ambitieus')}
             className={`py-2 px-1 border-b-2 font-medium text-sm transition-colors ${
-              activeTab === 'streng' 
+              activeTab === 'ambitieus' 
                 ? 'border-blue-500 text-blue-600' 
                 : 'border-transparent text-gray-500 hover:text-gray-700'
             }`}
           >
-            🎯 Streng
+            🎯 Ambitieus
           </button>
         </div>
       </div>
@@ -233,14 +234,14 @@ const TypeOpdrachtExamples: React.FC = () => {
       
       <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
         <p className="text-xs text-blue-800">
-          {activeTab === 'minimaal' ? (
+          {activeTab === 'basis' ? (
             <>
-              💡 <strong>Tip:</strong> De minimale criteria helpen je te voldoen aan de EED-verplichting. 
+              💡 <strong>Tip:</strong> De basiscriteria helpen je te voldoen aan de EED-verplichting. 
               Kies deze variant als je vooral wilt voldoen aan de Europese regelgeving zonder aanvullende ambities.
             </>
           ) : (
             <>
-              💡 <strong>Tip:</strong> De strenge criteria gaan verder dan de EED-verplichting en helpen je organisatie actief te sturen op circulariteit, CO₂-reductie en innovatie. 
+              💡 <strong>Tip:</strong> De ambitieuze criteria gaan verder dan de EED-verplichting en helpen je organisatie actief te sturen op circulariteit, CO₂-reductie en innovatie. 
               Kies deze variant als je duurzaamheid centraal wilt stellen.
             </>
           )}
@@ -252,20 +253,20 @@ const TypeOpdrachtExamples: React.FC = () => {
 
 // FunctioneleBehoefteExamples component with tabs and copy functionality
 const FunctioneleBehoefteExamples: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'minimaal' | 'streng'>('minimaal');
+  const [activeTab, setActiveTab] = useState<'basis' | 'ambitieus'>('basis');
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
 
   const examples = {
-    minimaal: [
+    basis: [
       {
         title: "📋 Functionele eisen",
         text: "Deze opdracht betreft de levering van kantoormeubilair dat geschikt is voor dagelijks gebruik en eenvoudig te reinigen is. De meubels moeten voldoen aan de basisvereisten voor ergonomie en gebruikscomfort."
       }
     ],
-    streng: [
+    ambitieus: [
       {
         title: "📋 Functionele eisen",
-        text: "Deze opdracht betreft de levering van modulair kantoormeubilair met een lange gebruiksduur, dat eenvoudig aanpasbaar is aan veranderende behoeften. De meubels moeten ergonomisch ontworpen zijn, gemakkelijk te onderhouden en inzetbaar in circulaire werkconcepten."
+        text: "Deze opdracht betreft de levering van modulair kantoormeubilair met een lange gebruiksduur, dat eenvoudig aanpasbaar is aan veranderende behoeften. De meubels moeten ergonomisch ontworpen zijn, eenvoudig te onderhouden en geschikt voor circulaire werkconcepten."
       }
     ]
   };
@@ -287,24 +288,24 @@ const FunctioneleBehoefteExamples: React.FC = () => {
       <div className="border-b border-gray-200">
         <div className="flex space-x-8">
           <button 
-            onClick={() => setActiveTab('minimaal')}
+            onClick={() => setActiveTab('basis')}
             className={`py-2 px-1 border-b-2 font-medium text-sm transition-colors ${
-              activeTab === 'minimaal' 
+              activeTab === 'basis' 
                 ? 'border-blue-500 text-blue-600' 
                 : 'border-transparent text-gray-500 hover:text-gray-700'
             }`}
           >
-            📋 Minimaal
+            📋 Basis
           </button>
           <button 
-            onClick={() => setActiveTab('streng')}
+            onClick={() => setActiveTab('ambitieus')}
             className={`py-2 px-1 border-b-2 font-medium text-sm transition-colors ${
-              activeTab === 'streng' 
+              activeTab === 'ambitieus' 
                 ? 'border-blue-500 text-blue-600' 
                 : 'border-transparent text-gray-500 hover:text-gray-700'
             }`}
           >
-            🎯 Streng
+            🎯 Ambitieus
           </button>
         </div>
       </div>
@@ -338,14 +339,14 @@ const FunctioneleBehoefteExamples: React.FC = () => {
       
       <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
         <p className="text-xs text-blue-800">
-          {activeTab === 'minimaal' ? (
+          {activeTab === 'basis' ? (
             <>
-              💡 <strong>Tip:</strong> De minimale criteria helpen je te voldoen aan de EED-verplichting. 
+              💡 <strong>Tip:</strong> De basiscriteria helpen je te voldoen aan de EED-verplichting. 
               Kies deze variant als je vooral wilt voldoen aan de Europese regelgeving zonder aanvullende ambities.
             </>
           ) : (
             <>
-              💡 <strong>Tip:</strong> De strenge criteria gaan verder dan de EED-verplichting en helpen je organisatie actief te sturen op circulariteit, CO₂-reductie en innovatie. 
+              💡 <strong>Tip:</strong> De ambitieuze criteria gaan verder dan de EED-verplichting en helpen je organisatie actief te sturen op circulariteit, CO₂-reductie en innovatie. 
               Kies deze variant als je duurzaamheid centraal wilt stellen.
             </>
           )}
@@ -357,14 +358,14 @@ const FunctioneleBehoefteExamples: React.FC = () => {
 
 // LevenscyclusbenaderingExamples component with tabs and copy functionality
 const LevenscyclusbenaderingExamples: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'minimaal' | 'streng'>('minimaal');
+  const [activeTab, setActiveTab] = useState<'basis' | 'ambitieus'>('basis');
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
 
   const examples = {
     minimaal: [
       {
         title: "🔄 Levenscyclus",
-        text: "Bij de beoordeling wordt rekening gehouden met de verwachte levensduur van het meubilair en de mogelijkheid tot eenvoudig onderhoud. Er wordt gekozen voor producten met standaardonderdelen die eenvoudig vervangen kunnen worden."
+        text: "Bij de beoordeling wordt rekening gehouden met de verwachte levensduur van het meubilair en de mogelijkheid tot eenvoudig onderhoud. Er wordt gekozen voor producten met standaardonderdelen die eenvoudig vervangen en onderhouden kunnen worden."
       }
     ],
     streng: [
@@ -1127,7 +1128,7 @@ const ReikwijdteOpdrachtExamples: React.FC = () => {
         <p className="text-xs text-blue-800">
           {activeTab === 'minimaal' ? (
             <>
-              💡 <strong>Tip bij Minimaal:</strong> De minimale criteria helpen je te voldoen aan de EED-verplichting. 
+              💡 <strong>Tip:</strong> De minimale criteria helpen je te voldoen aan de EED-verplichting. 
               Kies deze variant als je vooral wilt voldoen aan de Europese regelgeving zonder aanvullende ambities.
             </>
           ) : (
@@ -1359,6 +1360,7 @@ const Results: React.FC = () => {
   const { code } = useParams<{ code: string }>();
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
+  const { isStealthMode } = useStealthMode();
 
   const [cpvName, setCpvName] = useState('Laden...');
   const [openAccordions, setOpenAccordions] = useState<string[]>([]);
@@ -1507,7 +1509,7 @@ const Results: React.FC = () => {
       level: "basis",
       description: (
         <>
-          Bij een reguliere aanbesteding voor kantoormeubilair wordt vaak automatisch gekozen voor de levering van nieuw meubilair, zonder expliciet stil te staan bij andere mogelijkheden. De GPP-criteria vragen je om deze keuze bewust te maken aan de hand van duurzaamheidsoverwegingen. GPP onderscheidt drie soorten opdrachten:
+          Bij aanbestedingen voor kantoormeubilair wordt vaak automatisch gekozen voor nieuw meubilair, zonder dat bewust wordt gekeken naar andere duurzame opties. De GPP-criteria vragen je om deze keuze bewust te maken aan de hand van duurzaamheidsoverwegingen. GPP onderscheidt drie soorten opdrachten:
           <br /><br />
           - <strong>Nieuw meubilair:</strong> productie van nieuwe meubels met milieuvriendelijke materialen en processen.<br />
           - <strong>Refurbished meubilair:</strong> bestaande meubels worden opgeknapt, aangepast of opnieuw gestoffeerd.<br />
@@ -1638,10 +1640,12 @@ const Results: React.FC = () => {
           <div className="flex items-start justify-between mb-4">
             <div className="flex-1 min-w-0">
               <h1 className="text-2xl font-bold text-gray-900 flex items-center gap-3">
-                {estimationAnswer === 'no' ? 'Geen sectorale verplichtingen' : (
+                {estimationAnswer === 'no' ? (
+                  'Geen EED verplichtingen'
+                ) : (
                   <>
                     <span className="w-4 h-4 rounded-full bg-red-500"></span>
-                    Let op: Sectorale verplichtingen
+                    Let op: EED verplichtingen
                   </>
                 )}
               </h1>
@@ -1697,29 +1701,6 @@ const Results: React.FC = () => {
           )}
         </div>
 
-        {/* Upgrade Banner - only show if above threshold */}
-        {estimationAnswer !== 'no' && (
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-6 mb-6 animate-fade-in" style={{ animationDelay: '500ms', animationDuration: '1000ms' }}>
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-4">
-                <div className="p-2 bg-white/20 rounded-lg">
-                  <Lock className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold">Ontgrendel alle sectorale verplichtingen</h3>
-                  <p className="text-blue-100">Krijg toegang tot gedetailleerde compliance-informatie en praktische voorbeelden</p>
-                </div>
-              </div>
-              <button
-                onClick={handleUpgrade}
-                className="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors font-medium whitespace-nowrap"
-              >
-                Start je proefperiode
-              </button>
-            </div>
-          </div>
-        )}
-
         {/* Below threshold explanation */}
         {estimationAnswer === 'no' && (
           <div className="bg-green-50 border border-green-200 rounded-xl p-6 mb-6 animate-fade-in" style={{ animationDelay: '500ms', animationDuration: '1000ms' }}>
@@ -1745,7 +1726,7 @@ const Results: React.FC = () => {
         {/* EED Section - only show if above threshold */}
         {estimationAnswer !== 'no' && (
           <div className="mb-6 animate-fade-in" style={{ animationDelay: '600ms', animationDuration: '1000ms' }}>
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">Let op: EED van toepassing</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">Overzicht EED verplichtingen</h2>
             <p className="text-gray-700 mb-6">
               Voor deze aanbesteding is de Europese Energie-Efficiëntierichtlijn (EED) van toepassing. Je bent daarom <strong><u>verplicht</u></strong> om bepaalde technische specificaties uit de <a href="https://green-forum.ec.europa.eu/green-business/green-public-procurement/gpp-criteria-and-requirements_en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">EU Green Public Procurement (GPP)-criteria</a> op te nemen in je aanbestedingsdocumenten. De EU GPP-criteria geven ook (niet verplichte) aanbevelingen voor de bepaling scope opdracht, de gunningscriteria en de contractuele uitvoeringsvoorwaarden, omdat deze onderdelen samen helpen om duurzaamheidsdoelen te realiseren.
             </p>

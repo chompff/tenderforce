@@ -4,6 +4,7 @@ import Autocomplete, { AutocompleteRef } from './Autocomplete';
 
 
 import { useUrlStateNoRerender } from '../hooks/useUrlStateNoRerender';
+import { useStealthMode } from '@/lib/utils';
 
 interface Suggestion {
   code: string;
@@ -13,6 +14,7 @@ interface Suggestion {
 
 const SectoraleVerplichtingencheckHero: React.FC = () => {
   const navigate = useNavigate();
+  const { isStealthMode } = useStealthMode();
   const autocompleteRef = useRef<AutocompleteRef>(null);
   const footerRef = useRef<HTMLDivElement>(null);
   const [phase, setPhase] = useState<'input' | 'organization' | 'private-funding' | 'estimation' | 'sectoral-assessment' | 'high-threshold'>('input');
@@ -395,11 +397,16 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
           <div className="w-full text-center">
             <div className="max-w-6xl mx-auto">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                <span className="text-blue-600">Sectorale check</span>
+                <span className="text-blue-600">
+                  EED Tool
+                </span>
               </h1>
               
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Check welke sectorale wetgeving van toepassing is.<br />
+                {isStealthMode 
+                  ? 'Check welke EU Energy Efficiency Directive verplichtingen van toepassing zijn.'
+                  : 'Check welke sectorale wetgeving van toepassing is.'
+                }<br />
                 <span className="font-bold">
                   {phase === 'input'
                     ? 'Typ hier wat je wilt aanbesteden:'
