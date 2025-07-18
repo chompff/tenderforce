@@ -65,7 +65,7 @@ const GunningsbriefbouwwerHero: React.FC = () => {
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <span className="text-sm text-gray-500 flex items-center">Populaire zoekopdrachten:</span>
+              <span className="text-sm text-gray-500 flex items-center">Voorbeeld zoekopdrachten:</span>
               <button 
                 onClick={() => handlePillClick('Kantoormeubilair')}
                 className="text-sm bg-blue-50 text-blue-600 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors"

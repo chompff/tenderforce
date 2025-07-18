@@ -403,10 +403,7 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
               </h1>
               
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                {isStealthMode 
-                  ? 'Check welke EU Energy Efficiency Directive verplichtingen van toepassing zijn.'
-                  : 'Check welke sectorale wetgeving van toepassing is.'
-                }<br />
+                Check welke EU Energy Efficiency Directive (Richtlijn (EU) 2023/1791) verplichtingen van toepassing zijn.<br />
                 <span className="font-bold">
                   {phase === 'input'
                     ? 'Typ hier wat je wilt aanbesteden:'
@@ -438,7 +435,7 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                   </div>
 
                   <div className="flex flex-wrap items-center justify-center gap-3">
-                    <span className="text-sm text-gray-500 flex items-center">Populaire zoekopdrachten:</span>
+                    <span className="text-sm text-gray-500 flex items-center">Voorbeeld zoekopdrachten:</span>
                     <button 
                       onClick={() => handlePillClick('Kantoormeubilair')}
                       className="text-sm bg-blue-50 text-blue-600 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors"
