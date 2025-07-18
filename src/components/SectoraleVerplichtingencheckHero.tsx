@@ -403,7 +403,7 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
               </h1>
               
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Check welke EU Energy Efficiency Directive (Richtlijn (EU) 2023/1791) verplichtingen van toepassing zijn.<br />
+                Controleer welke EED verplichtingen van toepassing zijn. (Europese Energie-Efficiëntierichtlijn (EU) 2023/1791)<br />
                 <span className="font-bold">
                   {phase === 'input'
                     ? 'Typ hier wat je wilt aanbesteden:'
