@@ -408,7 +408,7 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                   {phase === 'input'
                     ? 'Typ hier wat je wilt aanbesteden:'
                     : phase === 'organization'
-                    ? 'Voor welke organisatie werk je?'
+                    ? 'Tot welke organisatie behoort u?'
                     : phase === 'private-funding'
                     ? 'Wordt deze onderneming voor meer dan 50% gefinancierd met publieke middelen?'
                     : phase === 'sectoral-assessment'
@@ -507,9 +507,22 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Progress Bar - Centered */}
-                <div className="max-w-6xl mx-auto">
-                  <ProgressBar />
+                {/* Back Navigation */}
+                <div className="max-w-6xl mx-auto text-center">
+                  <button
+                    onClick={() => {
+                      setPhase('input');
+                      if (autocompleteRef.current) autocompleteRef.current.reset();
+                      setSelectedCode('');
+                      setSelectedDescription('');
+                      setOrganizationType('');
+                      setTypeAanbesteding('');
+                      setStateInUrl({});
+                    }}
+                    className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                  >
+                    Vorige stap
+                  </button>
                 </div>
               </div>
 
@@ -556,7 +569,7 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                 {/* Show exception notification if user selected an exception */}
                 {showExceptionNotification ? (
                   <div className={`w-full transition-all duration-500 ease-in-out ${showExceptionNotification ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                    <div className="container mx-auto px-6 lg:px-8">
+                    <div className="container mx-auto px-6 lg:px-8 pb-48 mb-12">
                       <div className="max-w-4xl mx-auto p-8 bg-orange-50 border-2 border-orange-200 rounded-xl shadow-lg">
                         <div className="text-center">
                           <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -566,7 +579,7 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                           </div>
                           <h2 className="text-2xl font-bold text-orange-900 mb-4">Uitzondering van toepassing: {selectedExceptionType}</h2>
                           <p className="text-orange-800 mb-6 leading-relaxed">
-                            Voor aanbestedingen die vallen onder de categorie "{selectedExceptionType}" gelden bijzondere regelingen en mogelijk uitzonderingen op de standaard aanbestedingsregels.
+                            Voor aanbestedingen die vallen onder de categorie "{selectedExceptionType}" is de EED niet van toepassing.
                           </p>
                           <div className="bg-white border border-orange-300 rounded-lg p-6 mb-6">
                             <h3 className="text-lg font-semibold text-orange-900 mb-3">Wat betekent dit?</h3>
@@ -617,14 +630,28 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                   // Show sectoral assessment options
                   <div className="w-full">
                     <div className="container mx-auto px-6 lg:px-8">
+                      {/* Nee button - full width at top */}
+                      <div className="max-w-6xl mx-auto mb-6">
+                        <button
+                          onClick={() => handleSectoralAssessmentSelect('none')}
+                          className="group w-full p-6 bg-white border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center"
+                        >
+                          <span className="text-xl font-bold text-gray-900 block mb-3">Nee</span>
+                          <p className="text-sm text-gray-600 leading-relaxed">
+                            De EED is volledig van toepassing. (Geen uitzondering op basis van defensie, crisis of militaire aard.)
+                          </p>
+                        </button>
+                      </div>
+                      
+                      {/* Other buttons - grid layout below */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center max-w-6xl mx-auto mb-8">
                         <button
                           onClick={() => handleSectoralAssessmentSelect('defensie')}
                           className="group p-6 bg-white border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center"
                         >
-                          <span className="text-xl font-bold text-gray-900 block mb-3">Defensie</span>
+                          <span className="text-xl font-bold text-gray-900 block mb-3">Conflict met defensie-activiteit</span>
                           <p className="text-sm text-gray-600 leading-relaxed">
-                            Aanbestedingen voor defensie-gerelateerde goederen en diensten.
+                            Toepassing EED is strijdig met het primaire doel van een defensiegerelateerde activiteit, zoals nationale veiligheid.
                           </p>
                         </button>
                         
@@ -644,27 +671,7 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                         >
                           <span className="text-xl font-bold text-gray-900 block mb-3">Militair</span>
                           <p className="text-sm text-gray-600 leading-relaxed">
-                            Militaire uitrusting en operationele benodigdheden.
-                          </p>
-                        </button>
-                        
-                        <button
-                          onClick={() => handleSectoralAssessmentSelect('defensie-conflict')}
-                          className="group p-6 bg-white border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center"
-                        >
-                          <span className="text-xl font-bold text-gray-900 block mb-3">Defensie conflict</span>
-                          <p className="text-sm text-gray-600 leading-relaxed">
-                            Aanbestedingen gerelateerd aan defensieconflicten.
-                          </p>
-                        </button>
-                        
-                        <button
-                          onClick={() => handleSectoralAssessmentSelect('none')}
-                          className="group p-6 bg-white border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center sm:col-span-2 lg:col-span-1"
-                        >
-                          <span className="text-xl font-bold text-gray-900 block mb-3">Nee</span>
-                          <p className="text-sm text-gray-600 leading-relaxed">
-                            Geen van bovenstaande uitzonderingen is van toepassing.
+                            Aanbestedingen van militaire uitrusting of operationele benodigdheden die onder defensieactiviteiten vallen.
                           </p>
                         </button>
                       </div>
@@ -685,7 +692,7 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                       >
                         <span className="text-xl font-bold text-gray-900 block mb-3">Ja</span>
                         <p className="text-sm text-gray-600 leading-relaxed">
-                          Voor ramingen hoger dan {getThresholdAmount(organizationType, typeAanbesteding)} moet je Europees aanbesteden.
+                          EED van toepassing
                         </p>
                       </button>
                       
@@ -695,31 +702,24 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                       >
                         <span className="text-xl font-bold text-gray-900 block mb-3">Nee</span>
                         <p className="text-sm text-gray-600 leading-relaxed">
-                          Voor ramingen lager dan {getThresholdAmount(organizationType, typeAanbesteding)} kan je national aanbesteden.
-                        </p>
-                      </button>
-                      
-                      <button
-                        onClick={() => {
-                          const newWindow = window.open('http://localhost:8080/opdrachtramer', '_blank', 'noopener,noreferrer');
-                          if (newWindow) {
-                            newWindow.focus();
-                          }
-                        }}
-                        className="group flex-1 p-6 bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl hover:bg-gray-100 hover:border-gray-400 transition-all duration-200 shadow-sm text-center"
-                      >
-                        <span className="text-xl font-bold text-gray-600 block mb-3">Hulp met raming?</span>
-                        <p className="text-sm text-gray-500 leading-relaxed">
-                          Maak een inschatting van je ramingskosten met de ramingstool.
+                          EED niet van toepassing
                         </p>
                       </button>
                     </div>
                   </div>
                 </div>
 
-                {/* Progress Bar - Centered */}
-                <div className="max-w-6xl mx-auto">
-                  <ProgressBar />
+                {/* Back Navigation */}
+                <div className="max-w-6xl mx-auto text-center">
+                  <button
+                    onClick={() => {
+                      setPhase('organization');
+                      setStateInUrl({ code: selectedCode, org: organizationType, step: '2' });
+                    }}
+                    className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                  >
+                    Vorige stap
+                  </button>
                 </div>
               </div>
 
@@ -801,9 +801,17 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                       </div>
                     </div>
 
-                    {/* Progress Bar - Centered */}
-                    <div className="max-w-6xl mx-auto">
-                      <ProgressBar />
+                    {/* Back Navigation */}
+                    <div className="max-w-6xl mx-auto text-center">
+                      <button
+                        onClick={() => {
+                          setPhase('sectoral-assessment');
+                          setStateInUrl({ code: selectedCode, org: organizationType, step: 'sectoral', estimation: 'yes' });
+                        }}
+                        className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                      >
+                        Vorige stap
+                      </button>
                     </div>
                   </div>
                 )}

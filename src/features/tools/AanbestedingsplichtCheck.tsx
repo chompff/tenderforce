@@ -762,8 +762,16 @@ const AanbestedingsplichtCheckHero: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <div className="max-w-6xl mx-auto">
-                  <ProgressBar />
+                <div className="max-w-6xl mx-auto text-center">
+                  <button
+                    onClick={() => {
+                      setPhase('askOrgType');
+                      setStateInUrl({ code: selectedCode, step: 'askOrgType' });
+                    }}
+                    className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                  >
+                    Vorige stap
+                  </button>
                 </div>
               </div>
               <div className={`absolute inset-0 transition-all duration-1000 ease-in-out ${phase === 'other-org-subsidy' ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-4 pointer-events-none'}`}>
@@ -781,8 +789,16 @@ const AanbestedingsplichtCheckHero: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <div className="max-w-6xl mx-auto">
-                  <ProgressBar />
+                <div className="max-w-6xl mx-auto text-center">
+                  <button
+                    onClick={() => {
+                      setPhase('askSubsidy');
+                      setStateInUrl({ code: selectedCode, org: organizationType, step: 'askSubsidy' });
+                    }}
+                    className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                  >
+                    Vorige stap
+                  </button>
                 </div>
               </div>
               <div className={`absolute inset-0 transition-all duration-1000 ease-in-out ${phase === 'other-org-subsidy-result' ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-4 pointer-events-none'}`}>
@@ -838,8 +854,16 @@ const AanbestedingsplichtCheckHero: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <div className="max-w-6xl mx-auto">
-                  <ProgressBar />
+                <div className="max-w-6xl mx-auto text-center">
+                  <button
+                    onClick={() => {
+                      setPhase('askWrittenAgreement');
+                      setStateInUrl({ code: selectedCode, org: organizationType, step: 'askWrittenAgreement' });
+                    }}
+                    className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                  >
+                    Vorige stap
+                  </button>
                 </div>
               </div>
               {/* askCounterPerformance phase */}
@@ -1092,8 +1116,16 @@ const AanbestedingsplichtCheckHero: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <div className="max-w-6xl mx-auto">
-                  <ProgressBar />
+                <div className="max-w-6xl mx-auto text-center">
+                  <button
+                    onClick={() => {
+                      setPhase('askThreshold');
+                      setStateInUrl({ code: selectedCode, org: organizationType, step: 'askThreshold' });
+                    }}
+                    className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                  >
+                    Vorige stap
+                  </button>
                 </div>
               </div>
               <div className={`absolute inset-0 transition-all duration-1000 ease-in-out ${phase === 'high-threshold' ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-4 pointer-events-none'}`}>
@@ -1169,8 +1201,16 @@ const AanbestedingsplichtCheckHero: React.FC = () => {
                         </button>
                       </div>
                     </div>
-                    <div className="max-w-6xl mx-auto">
-                      <ProgressBar />
+                    <div className="max-w-6xl mx-auto text-center">
+                      <button
+                        onClick={() => {
+                          setPhase('askCrossBorderInterest');
+                          setStateInUrl({ code: selectedCode, org: organizationType, step: 'askCrossBorderInterest' });
+                        }}
+                        className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                      >
+                        Vorige stap
+                      </button>
                     </div>
                   </div>
                 )}

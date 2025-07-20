@@ -1758,7 +1758,7 @@ const Results: React.FC = () => {
                         <li>Bepalen of en hoe duurzaamheid wordt meegenomen — en dus hoe je invulling geeft aan de EED/GPP-verplichting</li>
                       </ul>
                       <div className="p-4 bg-green-50 rounded-lg border border-green-200 mb-4">
-                        <p className="text-green-800"><strong>📌 Let op:</strong> De GPP bieden hier niet-verplichte opties. Je keuzes hier bepalen hoe duurzaam de rest van je aanbesteding wordt.</p>
+                        <p className="text-green-800"><strong>📌 Let op:</strong> De EU GPP-criteria geven deze <strong>niet verplichte</strong> aanbevelingen voor de bepaling scope opdracht omdat deze helpen om duurzaamheidsdoelen te realiseren.</p>
                       </div>
                     </div>
                     {sampleBepalingScope.map((item, index) => (
@@ -1779,7 +1779,7 @@ const Results: React.FC = () => {
                       <p className="mb-4">Bij deze aanbesteding moeten de Europese GPP-criteria uitdrukkelijk worden opgenomen als technische specificaties. Ze vormen de ondergrens waaraan geleverd meubilair moet voldoen. Door deze eisen expliciet in het bestek op te nemen, voldoe je aan de verplichting uit de Energie-Efficiëntierichtlijn (EED).</p>
                       <div className="p-4 bg-amber-50 rounded-lg border border-amber-200 mb-4">
                         <p className="text-amber-800">
-                          ⚠️ <strong>Let op:</strong> De minimale technische specificaties uit de GPP criteria zijn verplicht voor deze aanbesteding. Je kunt niet volstaan met alleen gunningscriteria of EMVI-aspecten.
+                          ⚠️ <strong>Let op:</strong> De minimale technische specificaties uit de GPP criteria zijn verplicht voor deze aanbesteding.
                         </p>
                       </div>
                       <p>Kopieer de tabel hier onder letterlijk in je bestek of verwijs naar <a href="https://green-forum.ec.europa.eu/green-business/green-public-procurement/gpp-criteria-and-requirements_en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">de officiële EU GPP-meubilaircriteria</a>.</p>
@@ -1799,7 +1799,7 @@ const Results: React.FC = () => {
                     <div className="text-gray-600 mb-4">
                       <p className="mb-4">Gebruik gunningscriteria om bepaalde prestaties extra te belonen. De onderstaande voorbeelden zijn optioneel en helpen je aanbesteding aan te laten sluiten op je ambities.</p>
                       <div className="p-4 mb-4 bg-green-50 border border-green-200 rounded-lg">
-                        <p className="text-green-800">📌 <strong>Let op:</strong> Je voldoet aan de Europese verplichtingen (zoals de EED) ook zónder gunningscriteria, mits je de verplichte technische specificaties opneemt.</p>
+                        <p className="text-green-800">📌 <strong>Let op:</strong> De EU GPP-criteria geven deze <strong>niet verplichte</strong> aanbevelingen voor gunningscriteria omdat deze helpen om duurzaamheidsdoelen te realiseren.</p>
                       </div>
                     </div>
                     <GunningscriteriaTable />
@@ -1818,7 +1818,7 @@ const Results: React.FC = () => {
                       <p className="mb-4">De toepasselijke GPP-criteria bevatten aanbevelingen voor contractuele voorwaarden op het gebied van arbeidsomstandigheden, sociale normen en milieunormen. Deze zijn niet verplicht, maar dragen bij aan circulaire of klimaatvriendelijke doelstellingen en sluiten aan bij het Rijksbeleid voor maatschappelijk verantwoord inkopen.</p>
                       <div className="p-4 bg-green-50 rounded-lg border border-green-200 mb-4">
                         <p className="text-green-800">
-                          📌 <strong>Let op:</strong> Je voldoet aan de Europese verplichtingen (zoals de EED) ook zónder contractuele verplichtingen, mits je de verplichte technische specificaties opneemt.
+                          📌 <strong>Let op:</strong> De EU GPP-criteria geven deze <strong>niet verplichte</strong> aanbevelingen voor contractuele uitvoeringsvoorwaarden omdat deze helpen om duurzaamheidsdoelen te realiseren.
                         </p>
                       </div>
                     </div>

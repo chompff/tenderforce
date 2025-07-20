@@ -94,13 +94,13 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* AI Disclaimer */}
+          {/* Disclaimer */}
           <div className="space-y-6">
             <h3 className="text-sm font-bold text-gray-900 uppercase tracking-wider">
-              AI Disclaimer
+              Disclaimer
             </h3>
             <p className="text-xs text-gray-500 leading-relaxed">
-              Deze tool gebruikt kunstmatige intelligentie voor informatiedoeleinden. 
+              Deze tool is in BETA. 
               Resultaten zijn niet rechtsgeldig en vervangen geen professioneel juridisch advies. 
               Raadpleeg altijd een gekwalificeerde jurist voor definitieve beslissingen.
             </p>
@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
         <div className="mt-12 pt-6 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-4 text-xs text-gray-500">
-              <span>© {currentYear} Pacem Holding BV</span>
+              <span>© {currentYear} Chömpff</span>
               <span>•</span>
               <span>Alle rechten voorbehouden</span>
             </div>
