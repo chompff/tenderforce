@@ -560,6 +560,19 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                         </button>
                       </div>
                     </div>
+
+                    {/* Back Navigation */}
+                    <div className="max-w-6xl mx-auto text-center">
+                      <button
+                        onClick={() => {
+                          setPhase('organization');
+                          setStateInUrl({ code: selectedCode, org: organizationType, step: '2' });
+                        }}
+                        className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                      >
+                        Vorige stap
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
