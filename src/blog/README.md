@@ -1,6 +1,6 @@
 # Blog Structure
 
-This folder will contain markdown-based blog posts for Tenderforce.
+This folder will contain markdown-based blog posts for EED TOOL.
 
 ## Structure
 
@@ -36,7 +36,7 @@ This folder will contain markdown-based blog posts for Tenderforce.
 title: "Getting Started with Procurement"
 description: "A comprehensive guide to modern procurement processes"
 date: "2024-01-01"
-author: "Tenderforce Team"
+author: "EED TOOL Team"
 category: "guides"
 tags: ["procurement", "beginners", "guide"]
 featured: true

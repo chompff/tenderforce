@@ -34,12 +34,12 @@ const Support: React.FC = () => {
 
   const faqs = [
     {
-      question: "Hoe accuraat zijn de AI-analyses van Tenderforce?",
+      question: "Hoe accuraat zijn de EED compliance analyses?",
       answer: "Onze AI-analyses zijn gebaseerd op uitgebreide training op Nederlandse en Europese aanbestedingswetgeving. De accuraatheid is hoog voor standaard compliance checks, maar wij raden altijd aan om complexe beslissingen te verifiëren met juridische professionals. Onze AI dient als eerste screening tool, niet als vervanging voor expert advies."
     },
     {
-      question: "Kan ik Tenderforce gebruiken voor internationale aanbestedingen?",
-      answer: "Ja, Tenderforce ondersteunt alle EU-landen en hun specifieke aanbestedingsrichtlijnen. Voor landen buiten de EU is onze database beperkt en raden wij lokale expertise aan."
+      question: "Kan ik EED TOOL gebruiken voor projecten buiten Nederland?",
+      answer: "Ja, EED TOOL ondersteunt alle EU-landen en hun Energy Efficiency Directive verplichtingen. Voor landen buiten de EU raden wij lokale expertise aan."
     },
     {
       question: "Hoe lang duurt het voordat ik een AI-analyse ontvang?",
@@ -54,7 +54,7 @@ const Support: React.FC = () => {
       answer: "Ja, u kunt uw abonnement op elk moment opzeggen via uw accountinstellingen. Bij maandelijkse abonnementen stopt de facturering direct, bij jaarlijkse abonnementen aan het einde van de periode."
     },
     {
-      question: "Biedt Tenderforce training of workshops aan?",
+      question: "Biedt EED TOOL training of workshops aan?",
       answer: "Ja, wij bieden aangepaste training voor teams en organisaties. Neem contact op met ons sales team voor meer informatie over onze trainingsmogelijkheden."
     }
   ];
@@ -71,7 +71,7 @@ const Support: React.FC = () => {
     const categoryLabel = categories.find(cat => cat.value === formData.category)?.label || formData.category;
     const priorityLabel = priorities.find(prio => prio.value === formData.priority)?.label || formData.priority;
     
-    const emailBody = `Beste Tenderforce Support Team,
+    const emailBody = `Beste EED TOOL Support Team,
 
 Naam: ${formData.name}
 Email: ${formData.email}
@@ -85,7 +85,7 @@ Beschrijving:
 ${formData.description}
 
 ---
-Deze email is gegenereerd via het Tenderforce support formulier.
+Deze email is gegenereerd via het EED TOOL support formulier.
 Verwachte responstijd: ${getPriorityResponseTime(formData.priority)}
 
 Met vriendelijke groet,
@@ -113,7 +113,7 @@ ${formData.name}`;
     }
 
     const emailContent = generateEmailContent();
-    const mailtoLink = `mailto:support@tenderforce.ai?subject=${encodeURIComponent(formData.subject)}&body=${emailContent}`;
+    const mailtoLink = `mailto:support@eedtool.eu?subject=${encodeURIComponent(formData.subject)}&body=${emailContent}`;
     
     window.location.href = mailtoLink;
   };
@@ -143,7 +143,7 @@ ${formData.name}`;
                       </svg>
                     </div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Gebruikershandleiding</h3>
-                    <p className="text-sm text-gray-600 mb-4">Ontdek alle functies van Tenderforce</p>
+                    <p className="text-sm text-gray-600 mb-4">Ontdek alle functies van EED TOOL</p>
                     <a href="#" className="text-blue-600 hover:text-blue-700 font-medium">Bekijk handleiding →</a>
                   </div>
 
@@ -333,7 +333,7 @@ ${formData.name}`;
                   <div className="mt-6 pt-6 border-t border-gray-200">
                     <h3 className="font-medium text-gray-900 mb-2">Directe contact opties:</h3>
                     <div className="space-y-2 text-sm text-gray-600">
-                      <p>📧 support@tenderforce.ai</p>
+                      <p>📧 support@eedtool.eu</p>
                       <p>📞 +31 (0)20 123 4567</p>
                       <p>🕒 Ma-Vr: 9:00-17:00 CET</p>
                     </div>

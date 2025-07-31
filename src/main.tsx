@@ -38,7 +38,7 @@ createRoot(document.getElementById("root")!).render(
 
         signIn: {
           start: {
-            title: "Log in op Tenderforce",
+            title: "Log in to EED TOOL",
             subtitle: "Welkom terug! Log in om verder te gaan",
             actionText: "Heb je nog geen account?",
             actionLink: "Registreer hier",

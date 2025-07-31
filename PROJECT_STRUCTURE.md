@@ -1,30 +1,30 @@
-# Tenderforce - SaaS Project Structure
+# EED TOOL - Project Structure
 
-This document outlines the restructured architecture of Tenderforce, a comprehensive procurement SaaS platform.
+This document outlines the architecture of EED TOOL, a comprehensive EU Energy Efficiency Directive compliance platform for public procurement.
 
-## 🥷 STEALTH MODE
+## 🌱 Platform Overview
 
-**STEALTH MODE** is a special operational mode that transforms Tenderforce into "EED TOOL" for alternative branding:
+**EED TOOL** is designed as a specialized compliance platform that helps procurement professionals navigate EU Energy Efficiency Directive requirements:
 
-### Activation
-- **Toggle**: Type "STEALTH MODE ON" or "STEALTH MODE OFF" in any input field + Enter
-- **Persistence**: Stored in localStorage, survives browser restarts
-- **URL**: Changes URLs from `/tools/sectorale-verplichtingencheck` to `/eed-check`
+### Core Features
+- **Automated Assessment**: Determines applicable EED requirements based on procurement category
+- **GPP Integration**: Direct access to EU Green Public Procurement criteria
+- **Compliance Guidance**: Step-by-step guidance for implementing energy efficiency requirements
+- **Documentation**: Templates and generators for compliant technical specifications
 
-### Changes When Active
-1. **Logo**: "Tenderforce" → "EED TOOL" (keeps beta badge)
-2. **Navigation**: ALL navigation, footer, login completely hidden
-3. **Title**: "Sectorale check" → "EED Check" 
-4. **Homepage**: Root `/` redirects to `/eed-check`
-5. **Upsells**: All commercial elements hidden ("Ontgrendel alle sectorale verplichtingen", etc.)
-6. **Access**: ONLY EED check tool available, no other features
-7. **Branding**: Removes all Tenderforce branding and commercial aspects
+### Platform Focus
+1. **Specialization**: Focused exclusively on energy efficiency compliance
+2. **Automation**: Automated assessment and requirement determination
+3. **Integration**: Direct integration with EU GPP criteria database
+4. **Guidance**: Clear, actionable guidance for procurement professionals
+5. **Compliance**: Ensures adherence to EED obligations
+6. **Sustainability**: Supports EU environmental objectives
 
-### Technical Implementation
-- `useStealthMode()` hook in `utils.ts`
-- `StealthLayout` component (minimal header only)
-- Conditional routing in `routes.tsx`
-- Feature flags throughout components
+### Technical Architecture
+- React-based frontend with TypeScript
+- Component-based architecture for modularity
+- Automated compliance assessment engine
+- Integration with EU regulatory databases
 
 ## 🏗️ Project Architecture
 

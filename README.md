@@ -1,40 +1,40 @@
-# Tenderforce
+# EED TOOL
 
-> Turning Europe's procurement jungle into a usable path.
+> Simplifying EU Energy Efficiency Directive compliance for public procurement.
 
 ---
 
-## 🛍️ Mission
+## 🌱 Mission
 
-Tenderforce exists to radically simplify public procurement.
+EED TOOL exists to simplify compliance with the EU Energy Efficiency Directive in public procurement.
 
-Across Europe, governments use procurement not only to acquire goods and services but also to drive societal change — pushing sustainability, innovation, and inclusion through complex requirements. While the intent is noble, the result is a tangled web of procedures and legislation.
+The EU Energy Efficiency Directive requires public procurement to consider energy efficiency criteria for certain product categories. This creates complexity for procurement professionals who must navigate technical specifications, Green Public Procurement (GPP) criteria, and sector-specific energy requirements.
 
-This legal jungle makes tenders so complex that full compliance becomes difficult. That creates risk — legal risk. In the Netherlands, many tenders are challenged in court (*kort geding*) by bidders exploiting minor flaws.
+This regulatory complexity makes energy efficiency compliance challenging and time-consuming. Organizations risk non-compliance or miss opportunities to contribute to EU sustainability goals.
 
-Tenderforce makes tendering simple, structured, and secure — helping you stay compliant without drowning in complexity.
+EED TOOL makes energy efficiency compliance simple, automated, and reliable — helping you meet regulatory requirements while supporting environmental objectives.
 
 ---
 
 ## 🎯 What we're building
 
-Tenderforce is a toolset and ultimately a platform that simplifies the full **aanbestedingsproces** (public procurement lifecycle).
+EED TOOL is a comprehensive platform that simplifies energy efficiency compliance throughout the procurement process.
 
 ### In the short term:
 
-We offer 10–15 focused tools to solve concrete steps, such as:
+We offer focused tools to solve energy efficiency compliance, such as:
 
-- **Flow-based decision aids** (e.g. which procedure to choose)
-- **Document generators** (e.g. award letters, rejection letters)
-- **Checklists and validations**
-- **Interactive guides** for evaluating compliance
-- **Templates** for tender documents (PvE, Gunningsleidraad, Nota van Inlichtingen)
+- **Automated EED assessment** (determining applicable requirements)
+- **GPP criteria integration** (mandatory technical specifications)
+- **Energy efficiency checklists** and validations
+- **Interactive guides** for compliance evaluation
+- **Documentation templates** for energy efficiency requirements
 
 ### In the long term:
 
-Type what you want to tender — and Tenderforce will generate the required documentation, guide you through the legal requirements, and structure the review and award process.
+Describe your procurement needs — and EED TOOL will automatically determine applicable energy efficiency requirements, generate compliant technical specifications, and guide you through the implementation process.
 
-From initial scoping to publishing, evaluating, and sending compliant *gunningsbrieven* and *afwijzingsbrieven* — Tenderforce covers the full journey.
+From initial assessment to contract execution and monitoring — EED TOOL covers the full energy efficiency compliance journey.
 
 ---
 
@@ -48,7 +48,7 @@ We're currently:
 - Setting up a robust folder structure
 - Aligning functionality with our roadmap
 - Integrating Clerk for authentication
-- Preparing Supabase for tender storage
+- Preparing Supabase for assessment data storage
 - Planning Stripe integration for billing and subscription management
 
 ---
@@ -69,7 +69,7 @@ We're currently:
 **Auth & Storage:**
 
 - Clerk (authentication & user management)
-- Supabase (PostgreSQL database for tenders and metadata)
+- Supabase (PostgreSQL database for assessments and compliance data)
 
 **Billing:**
 

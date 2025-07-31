@@ -7,7 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 // Stealth Mode Management
-const STEALTH_MODE_KEY = 'tenderforce_stealth_mode'
+const STEALTH_MODE_KEY = 'eed_tool_stealth_mode'
 
 export const stealthModeStorage = {
   get: (): boolean => {
@@ -31,7 +31,7 @@ export const useStealthMode = () => {
     if (enabled) {
       document.title = 'EED Tool - EU Energy Efficiency Directive Check'
     } else {
-      document.title = 'Tenderforce - Complete aanbestedingen'
+      document.title = 'EED TOOL - EU Energy Efficiency Directive Check'
     }
   }
 

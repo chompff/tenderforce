@@ -34,10 +34,10 @@ const AlgemeneVoorwaarden: React.FC = () => {
                 
                 <h3 className="text-xl font-medium text-gray-900 mb-3">2.1 Aard van de diensten</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  EED Tool biedt tools voor aanbestedingsprofessionals, waaronder maar niet beperkt tot:
+                  EED Tool biedt tools voor energie-efficiëntie compliance, waaronder maar niet beperkt tot:
                 </p>
                 <ul className="list-disc list-inside text-gray-700 mb-4 space-y-1">
-                  <li>Sectorale verplichtingencheck voor aanbestedingen</li>
+                  <li>EU Energy Efficiency Directive compliance check</li>
                   <li>EED compliance processen</li>
                   <li>GPP verplichtingen check</li>
                   <li>Automatische analyses van aanbestedingsdocumentatie</li>

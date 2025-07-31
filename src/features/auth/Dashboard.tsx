@@ -12,7 +12,7 @@ const Dashboard = () => {
           
           <div className="bg-white p-6 rounded-lg shadow">
             <h3 className="text-lg font-semibold mb-2">Saved Projects</h3>
-            <p className="text-gray-600">Manage your tender projects</p>
+            <p className="text-gray-600">Manage your energy efficiency assessments</p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow">

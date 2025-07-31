@@ -41,8 +41,8 @@
   background-image: url('/start-button-image.jpg');
 }
 
-.button-tenderforce-image::after {
-  background-image: url('/tenderforce-button-image.jpg');
+.button-eed-tool-image::after {
+  background-image: url('/eed-tool-button-image.jpg');
 }
 
 .button-prijzen-image::after {

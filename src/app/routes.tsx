@@ -32,7 +32,7 @@ import Dashboard from "@/features/auth/Dashboard";
 import TenderDashboardPage from "@/pages/TenderDashboardPage";
 
 // Static Pages
-import OverTenderforce from "@/pages/OverTenderforce";
+import AboutEEDTool from "@/pages/AboutEEDTool";
 import PrijzenPage from "@/features/static/Prijzen";
 import Privacybeleid from "@/pages/Privacybeleid";
 import AlgemeneVoorwaarden from "@/pages/AlgemeneVoorwaarden";
@@ -98,7 +98,7 @@ const AppRoutes = () => {
       <Route path="/auth/dashboard" element={<Layout><Dashboard /></Layout>} />
       
       {/* Static Pages */}
-      <Route path="/over-tenderforce" element={<Layout><OverTenderforce /></Layout>} />
+              <Route path="/about-eed-tool" element={<Layout><AboutEEDTool /></Layout>} />
       <Route path="/prijzen" element={<Layout><PrijzenPage /></Layout>} />
       <Route path="/privacybeleid" element={<Layout><Privacybeleid /></Layout>} />
       <Route path="/algemene-voorwaarden" element={<Layout><AlgemeneVoorwaarden /></Layout>} />
