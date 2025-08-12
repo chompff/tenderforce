@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
             </h3>
             <div className="space-y-3 text-sm text-gray-600">
               <div>
-                <p className="font-medium text-gray-900">EED Tool</p>
+                <p className="font-medium text-gray-900">Pacem Holding B.V.</p>
                 <p>Kleverlaan 77</p>
                 <p>2061 TD Bloemendaal</p>
                 <p>The Netherlands</p>

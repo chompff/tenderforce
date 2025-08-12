@@ -97,7 +97,7 @@ const AanbestedingsplichtCheckResult: React.FC = () => {
           <div className="mt-6 pt-6 border-t border-gray-100">
             <h2 className="text-lg font-semibold text-blue-900 mb-4 flex items-center gap-2">
               <CheckCircle className="h-5 w-5" />
-              Jouw selecties
+              Uw keuzes
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {/* Jouw organisatie - Always show */}

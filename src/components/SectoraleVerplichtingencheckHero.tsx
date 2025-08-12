@@ -414,7 +414,7 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                     : phase === 'sectoral-assessment'
                     ? 'Is er een uitzondering van toepassing?'
                     : phase === 'high-threshold'
-                    ? 'Is het een geraamde waarde van €250 miljoen of meer?'
+                    ? 'FSR Check: Is het een geraamde waarde van €250 miljoen of meer?'
                     : `Komt je raming boven de drempelwaarde van ${getThresholdAmount(organizationType, typeAanbesteding)} uit?`
                   }
                 </span>
@@ -662,7 +662,7 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                           onClick={() => handleSectoralAssessmentSelect('defensie')}
                           className="group p-6 bg-white border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center"
                         >
-                          <span className="text-xl font-bold text-gray-900 block mb-3">Conflict met defensie-activiteit</span>
+                          <span className="text-xl font-bold text-gray-900 block mb-3">Ja, conflict met defensie-activiteit</span>
                           <p className="text-sm text-gray-600 leading-relaxed">
                             Toepassing EED is strijdig met het primaire doel van een defensiegerelateerde activiteit, zoals nationale veiligheid.
                           </p>
@@ -672,7 +672,7 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                           onClick={() => handleSectoralAssessmentSelect('noodsituatie')}
                           className="group p-6 bg-white border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center"
                         >
-                          <span className="text-xl font-bold text-gray-900 block mb-3">Noodsituatie</span>
+                          <span className="text-xl font-bold text-gray-900 block mb-3">Ja, noodsituatie</span>
                           <p className="text-sm text-gray-600 leading-relaxed">
                             Urgente aanbestedingen in noodsituaties of crisissituaties.
                           </p>
@@ -682,11 +682,12 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                           onClick={() => handleSectoralAssessmentSelect('militair')}
                           className="group p-6 bg-white border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center"
                         >
-                          <span className="text-xl font-bold text-gray-900 block mb-3">Militair</span>
+                          <span className="text-xl font-bold text-gray-900 block mb-3">Ja, militaire aanbesteding</span>
                           <p className="text-sm text-gray-600 leading-relaxed">
                             Aanbestedingen van militaire uitrusting of operationele benodigdheden die onder defensieactiviteiten vallen.
                           </p>
                         </button>
+
                       </div>
 
                       {/* Back Navigation */}
