@@ -1464,6 +1464,61 @@ const ContractueleUitvoeringsvoorwaardenTable: React.FC = () => {
   );
 };
 
+// EED Disclaimer component with read more functionality
+const EEDDisclaimerWithReadMore: React.FC = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  return (
+    <div className="text-sm text-blue-800 leading-relaxed">
+      <p className="mb-4 font-semibold">De EED hoeft niet te worden toegepast wanneer het aantoonbaar is dat voldoen aan het energie-efficiëntie-eerstbeginsel technisch niet haalbaar is.</p>
+      
+      {isExpanded && (
+        <div className="space-y-4">
+          <div>
+            <p className="font-semibold mb-2">1. Bewezen afwezigheid van beschikbare technologie</p>
+            <p className="mb-2">Er bestaat geen technologie op de markt – binnen de planning- en aanbestedingsperiode – die de vereiste energie-efficiëntieprestaties uit bijlage IV kan halen.</p>
+            <p className="italic">Voorbeeld: er is geen bouwsysteem beschikbaar dat het gestelde energiepeil of energielabel haalt bij gebruik van bepaalde materialen of installaties.</p>
+          </div>
+          
+          <div>
+            <p className="font-semibold mb-2">2. Onverenigbaarheid met cruciale eisen of context</p>
+            <p className="mb-2">Toepassing van de vereiste efficiëntiemaatregel leidt tot conflicten met belangrijke functionele of economische eisen van het project.</p>
+            <p className="italic">Voorbeeld: maatregelen botsen met de monumentale status van een gebouw of met veiligheidseisen.</p>
+          </div>
+          
+          <div>
+            <p className="font-semibold mb-2">3. Onevenredige meerkosten</p>
+            <p className="mb-2">De benodigde aanvullende investeringen zijn disproportioneel hoog in verhouding tot de baten.</p>
+            <p className="italic">Voorbeeld: de meerkosten liggen aantoonbaar ver boven gangbare percentages. Dit moet worden onderbouwd met een LCC-analyse of business case.</p>
+          </div>
+          
+          <div>
+            <p className="font-semibold mb-2">4. Goed gedocumenteerde uitzonderingssituaties</p>
+            <p>Het technisch niet haalbare moet aantoonbaar en verifieerbaar zijn. Dit vereist een technische memo of verklaring door een deskundige, en onderbouwing met cijfers, literatuur of marktvergelijking.</p>
+          </div>
+        </div>
+      )}
+      
+      <button 
+        onClick={() => setIsExpanded(!isExpanded)}
+        className="mt-4 flex items-center gap-1 text-blue-600 text-sm hover:text-blue-800 transition-colors font-medium"
+      >
+        {isExpanded ? (
+          <>
+            <span>Lees minder</span>
+            <ChevronUp className="h-3 w-3" />
+          </>
+        ) : (
+          <>
+            <span>Lees meer</span>
+            <ChevronDown className="h-3 w-3" />
+          </>
+        )}
+      </button>
+    </div>
+  );
+};
+
 const Results: React.FC = () => {
   const { code } = useParams<{ code: string }>();
   const [searchParams] = useSearchParams();
@@ -1745,7 +1800,7 @@ const Results: React.FC = () => {
                 ) : (
                   <>
                     <span className="w-4 h-4 rounded-full bg-red-500"></span>
-                    Let op: Meerdere verplichtingen
+                    Let op: GPP van toepassing
                   </>
                 )}
               </h1>
@@ -1823,160 +1878,9 @@ const Results: React.FC = () => {
           </div>
         )}
 
-        {/* EED Disclaimer - only show if above threshold */}
-        {estimationAnswer !== 'no' && (
-          <div className="mb-6 animate-fade-in" style={{ animationDelay: '500ms', animationDuration: '1000ms' }}>
-            <div className="bg-blue-50 border-2 border-dashed border-blue-300 rounded-lg p-4 mb-6">
-              <p className="text-sm text-blue-800 leading-relaxed">
-                Concludeert u dat onderstaande EED verplichtingen niet haalbaar zijn? Dan moet dit onderbouwd worden gedocumenteerd in het inkoopdossier. Op basis van artikel 2.98 Aw 2012 controleert de Europese Commissie steekproefsgewijs of uw motivering steekhoudend is.
-              </p>
-            </div>
-          </div>
-        )}
 
-        {/* EED Section - only show if above threshold */}
-        {estimationAnswer !== 'no' && (
-          <div className="space-y-4 animate-fade-in mb-8" style={{ animationDelay: '550ms', animationDuration: '1200ms' }}>
-            {/* EU EED Criteria Banner with EED heading and content */}
-            <div className="bg-gray-100 border border-gray-300 rounded-lg px-6 py-4 mb-4">
-              <div className="flex items-center justify-between mb-4">
-                <h2 className="text-2xl font-bold text-gray-800">Overzicht algemene EED verplichtingen <span className="text-red-600 font-semibold">NOTE TO SELF: ALLEEN INDIEN GEEN GPP VAN TOEPASSING</span></h2>
-                <div className="flex items-center gap-3">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
-                    EED
-                  </span>
-                  <svg className="h-6 w-auto" style={{height: '24px'}} id="Layer_2_EU_EED" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 92.01 55.11">
-                  <defs>
-                    <style>
-                      {`.cls-1-eu-eed { fill: none; } .cls-2-eu-eed { fill: #314199; } .cls-3-eu-eed { fill: #f8ec26; } .cls-4-eu-eed { clip-path: url(#clippath-eu-eed); }`}
-                    </style>
-                    <clipPath id="clippath-eu-eed">
-                      <rect className="cls-1-eu-eed" x="0" width="92.01" height="55.11" rx="8.77" ry="8.77"/>
-                    </clipPath>
-                  </defs>
-                  <g id="Flag-EU-EED">
-                    <g className="cls-4-eu-eed">
-                      <g>
-                        <rect className="cls-2-eu-eed" x=".05" y="-.64" width="91.91" height="56.67"/>
-                        <g>
-                          <polygon className="cls-3-eu-eed" points="45.99 43.82 46.73 46.03 49 46.02 47.39 47.24 47.83 49.61 45.99 48.27 44.13 49.58 44.58 47.24 42.99 46.02 45.25 46.02 45.99 43.82"/>
-                          <polygon className="cls-3-eu-eed" points="45.99 5.49 46.73 7.7 49 7.7 47.39 8.91 47.83 11.28 45.99 9.94 44.13 11.25 44.58 8.91 42.99 7.69 45.25 7.69 45.99 5.49"/>
-                          <polygon className="cls-3-eu-eed" points="55.22 7.96 55.96 10.16 58.23 10.16 56.62 11.38 57.07 13.75 55.22 12.4 53.36 13.71 53.81 11.38 52.22 10.15 54.49 10.15 55.22 7.96"/>
-                          <polygon className="cls-3-eu-eed" points="36.31 7.96 37.05 10.16 39.32 10.16 37.71 11.38 38.16 13.75 36.31 12.4 34.45 13.71 34.9 11.38 33.31 10.15 35.58 10.15 36.31 7.96"/>
-                          <polygon className="cls-3-eu-eed" points="55.22 41.23 55.96 43.44 58.23 43.43 56.62 44.65 57.07 47.02 55.22 45.68 53.36 46.99 53.81 44.65 52.22 43.43 54.49 43.43 55.22 41.23"/>
-                          <polygon className="cls-3-eu-eed" points="36.31 41.23 37.05 43.44 39.32 43.43 37.71 44.65 38.16 47.02 36.31 45.68 34.45 46.99 34.9 44.65 33.31 43.43 35.58 43.43 36.31 41.23"/>
-                          <polygon className="cls-3-eu-eed" points="29.24 15.19 29.98 17.4 32.25 17.39 30.64 18.61 31.08 20.98 29.24 19.64 27.38 20.95 27.83 18.61 26.24 17.39 28.51 17.39 29.24 15.19"/>
-                          <polygon className="cls-3-eu-eed" points="62.52 15.19 63.27 17.4 65.54 17.39 63.92 18.61 64.37 20.98 62.52 19.64 60.67 20.95 61.12 18.61 59.52 17.39 61.79 17.39 62.52 15.19"/>
-                          <polygon className="cls-3-eu-eed" points="29.24 34.32 29.98 36.53 32.25 36.52 30.64 37.74 31.08 40.11 29.24 38.77 27.38 40.08 27.83 37.74 26.24 36.52 28.51 36.52 29.24 34.32"/>
-                          <polygon className="cls-3-eu-eed" points="62.52 34.32 63.27 36.53 65.54 36.52 63.92 37.74 64.37 40.11 62.52 38.77 60.67 40.08 61.12 37.74 59.52 36.52 61.79 36.52 62.52 34.32"/>
-                          <polygon className="cls-3-eu-eed" points="27.04 24.68 27.79 26.89 30.06 26.89 28.45 28.11 28.89 30.47 27.04 29.13 25.19 30.44 25.64 28.11 24.04 26.88 26.31 26.88 27.04 24.68"/>
-                          <polygon className="cls-3-eu-eed" points="64.96 24.68 65.7 26.89 67.97 26.89 66.36 28.11 66.8 30.47 64.96 29.13 63.1 30.44 63.55 28.11 61.96 26.88 64.22 26.88 64.96 24.68"/>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-                </div>
-              </div>
-              <p className="text-gray-700">
-                Vanwege de gekozen CPV-code bent u verplicht om de <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX%3A32012L0027" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Energy Efficiency Directive (EED)</a> te volgen.
-              </p>
-            </div>
-            
-            <Accordion 
-              type="multiple" 
-              className="space-y-4"
-              value={openAccordions}
-              onValueChange={setOpenAccordions}
-            >
-              {/* Bepaling scope opdracht - EED */}
-              <AccordionItem value="eed-bepaling-scope" className="bg-white rounded-xl shadow-sm border">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline">
-                  <div className="flex items-center justify-between w-full">
-                    <span className="text-lg font-semibold">Bepaling scope opdracht</span>
-                    <div className="flex items-center gap-3 mr-4">
-                      <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
-                        EED
-                      </span>
-                      <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm font-medium rounded-full min-w-[100px] text-center">
-                        Aanbevolen
-                      </span>
-                    </div>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4">
-                    <div className="text-gray-600 mb-4">
-                      <p className="mb-3">Wat je doet in deze fase:</p>
-                      <ul className="list-disc list-inside mb-4 space-y-1">
-                        <li>Vaststellen van de opdracht en het doel ervan</li>
-                        <li>Opstellen van het programma van eisen (PvE)</li>
-                        <li>Kiezen van de aanbestedingsstrategie (bijv. EMVI, laagste prijs, functioneel specificeren)</li>
-                        <li>Bepalen of en hoe duurzaamheid wordt meegenomen — en dus hoe je invulling geeft aan de EED/GPP-verplichting</li>
-                      </ul>
-                      <div className="p-4 bg-yellow-50 rounded-lg border border-yellow-200 mb-4">
-                        <p className="text-yellow-800"><strong>📌 Let op:</strong> De EU EED-criteria geven deze <strong>niet verplichte</strong> aanbevelingen voor de bepaling scope opdracht omdat deze helpen om duurzaamheidsdoelen te realiseren.</p>
-                      </div>
-                    </div>
-                    {sampleBepalingScope.map((item, index) => (
-                      <ExpandableInfo key={index} {...item} />
-                    ))}
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-              
-              {/* Publicatie op Tendernet - EED */}
-              <AccordionItem value="eed-publicatie-tendernet" className="bg-white rounded-xl shadow-sm border">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline">
-                  <div className="flex items-center justify-between w-full">
-                                          <span className="text-lg font-semibold">Rapportage op TenderNed</span>
-                    <div className="flex items-center gap-3 mr-4">
-                      <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
-                        EED
-                      </span>
-                      <span className="px-3 py-1 bg-red-100 text-red-800 text-sm font-medium rounded-full min-w-[100px] text-center">
-                        Verplicht
-                      </span>
-                    </div>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4">
-                    <div className="text-gray-600 mb-4">
-                      <p className="mb-3 font-medium">U moet in TenderNed rapporteren:</p>
-                      <ul className="list-disc list-inside mb-4 space-y-1">
-                        <li>Hoe het energie-efficiëntie-eerst-beginsel is toegepast.</li>
-                      </ul>
-                      <p className="mb-3 font-medium">OF</p>
-                      <ul className="list-disc list-inside mb-4 space-y-1">
-                        <li>Waarom het energie-efficiëntie-eerst-beginsel niet is toegepast.</li>
-                      </ul>
-                      <p className="mb-4">
-                        Aanbestedende diensten moeten in TenderNed rapporteren hoe zij het energie-efficiëntie-eerst-beginsel hebben toegepast.
-                      </p>
-                      <div className="p-4 bg-red-50 rounded-lg border border-red-200 mb-4">
-                        <p className="text-red-800"><strong>⚠️ Let op:</strong> De rapportage in TenderNed over het (niet) toepassen van het energie-efficiëntie-eerst-beginsel is verplicht voor deze aanbesteding. Op basis van artikel 2.98 Aw 2012 controleert de Europese Commissie steekproefsgewijs of uw motivering steekhoudend is.</p>
-                      </div>
-                      
-                      <Collapsible>
-                        <CollapsibleTrigger asChild>
-                          <button className="flex items-center gap-1 text-blue-600 text-sm hover:text-blue-800 transition-colors mb-3 group">
-                            <span className="group-data-[state=open]:hidden">Toon voorbeelden</span>
-                            <span className="group-data-[state=closed]:hidden">Verberg voorbeelden</span>
-                            <ChevronDown className="h-3 w-3 group-data-[state=open]:rotate-180 transition-transform" />
-                          </button>
-                        </CollapsibleTrigger>
-                        <CollapsibleContent>
-                          <TenderNetExamples />
-                        </CollapsibleContent>
-                      </Collapsible>
-                    </div>
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          </div>
-        )}
+
+
 
         {/* GPP Section - only show if above threshold */}
         {estimationAnswer !== 'no' && (
@@ -1986,6 +1890,9 @@ const Results: React.FC = () => {
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-2xl font-bold text-gray-800">Overzicht GPP verplichtingen</h2>
                 <div className="flex items-center gap-3">
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                    EED
+                  </span>
                   <span className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">
                     GPP
                   </span>
@@ -2023,7 +1930,7 @@ const Results: React.FC = () => {
                 </div>
               </div>
               <p className="text-gray-700">
-                Vanwege de gekozen CPV code bent u volgens de EED verplicht om de <a href="https://green-forum.ec.europa.eu/green-business/green-public-procurement/gpp-criteria-and-requirements_en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">EU Green Public Procurement (GPP)-criteria</a> toe te passen. Er zijn verplichte en niet verplichte aanbevelingen voor uw leidraad.
+                Vanwege de gekozen CPV code bent u volgens de EED verplicht om de <a href="https://green-forum.ec.europa.eu/green-business/green-public-procurement/gpp-criteria-and-requirements_en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">EU Green Public Procurement (GPP)-criteria voor Meubels</a> toe te passen. Er zijn verplichte en niet verplichte aanbevelingen voor uw aanbestedingsdocumenten.
               </p>
             </div>
             
@@ -2090,10 +1997,10 @@ const Results: React.FC = () => {
                       <p className="mb-4">Bij deze aanbesteding moeten de Europese GPP-criteria uitdrukkelijk worden opgenomen als technische specificaties. Ze vormen de ondergrens waaraan geleverd meubilair moet voldoen. Door deze eisen expliciet in het bestek op te nemen, voldoe je aan de verplichting uit de Energie-Efficiëntierichtlijn (EED).</p>
                       <div className="p-4 bg-red-50 rounded-lg border border-red-200 mb-4">
                         <p className="text-red-800">
-                          ⚠️ <strong>Let op:</strong> De minimale technische specificaties uit de GPP criteria zijn verplicht voor deze aanbesteding.
+                          ⚠️ <strong>Let op:</strong> De minimale technische specificaties uit de GPP criteria zijn verplicht voor deze aanbesteding. Ook moet u vergelijkbare MVI criteria opnemen als deze strenger zijn.
                         </p>
                       </div>
-                      <p>Kopieer de tabel hier onder letterlijk in je bestek of verwijs naar <a href="https://green-forum.ec.europa.eu/green-business/green-public-procurement/gpp-criteria-and-requirements_en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">de officiële EU GPP-meubilaircriteria</a>.</p>
+                      <p>Kopieer de onderstaande tabel in uw aanbestedingsdocumenten of verwijs naar <a href="https://green-forum.ec.europa.eu/green-business/green-public-procurement/gpp-criteria-and-requirements_en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">de officiële EU GPP-meubilaircriteria</a>. Check hierna de <a href="https://www.mvicriteria.nl/en/webtool#//23/2//en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">MVI Criteriatool</a> voor strengere technische specificaties.</p>
                     </div>
                     <TechnischeSpecificatiesTables />
                   </div>
@@ -2157,17 +2064,19 @@ const Results: React.FC = () => {
                   </div>
                 </AccordionContent>
               </AccordionItem>
+
+
             </Accordion>
           </div>
         )}
 
-        {/* Duplicate MVI Expandable Sections */}
+        {/* MVI Criteria Banner */}
         {estimationAnswer !== 'no' && (
           <div className="space-y-4 animate-fade-in mt-8" style={{ animationDelay: '1000ms', animationDuration: '1200ms' }}>
             {/* MVI Criteria Banner with MVI heading and content */}
             <div className="bg-gray-100 border border-gray-300 rounded-lg px-6 py-4 mb-4">
               <div className="flex items-center justify-between mb-4">
-                <h2 className="text-2xl font-bold text-gray-800">Overzicht MVI criteria</h2>
+                <h2 className="text-2xl font-bold text-gray-800">Overzicht MVI-criteria</h2>
                 <div className="flex items-center gap-3">
                   <span className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">
                     MVI
@@ -2194,143 +2103,39 @@ const Results: React.FC = () => {
                 </div>
               </div>
               <p className="text-gray-700">
-                Vanwege de gekozen CPV code bent u verplicht om de criteria voor Maatschappelijk verantwoord inkopen toe te passen.
+                Vanwege de gekozen CPV-code moet u de MVI-criteriatool gebruiken om de juiste criteria voor Maatschappelijk Verantwoord Inkopen te vinden en toe te passen. Deze criteria zijn gebaseerd op de EU-GPP-criteria. Raadpleeg <a href="https://www.mvicriteria.nl/nl/webtool" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">www.mvicriteria.nl</a>
               </p>
             </div>
-            
-            <Accordion 
-              type="multiple" 
-              className="space-y-4"
-              value={openAccordions}
-              onValueChange={setOpenAccordions}
-            >
-              {/* Bepaling scope opdracht - MVI */}
-              <AccordionItem value="mvi-bepaling-scope" className="bg-white rounded-xl shadow-sm border">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline">
-                  <div className="flex items-center justify-between w-full">
-                    <span className="text-lg font-semibold">Bepaling scope opdracht</span>
-                    <div className="flex items-center gap-3 mr-4">
-                      <span className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">
-                        MVI
-                      </span>
-                      <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm font-medium rounded-full min-w-[100px] text-center">
-                        Aanbevolen
-                      </span>
-                    </div>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4">
-                    <div className="text-gray-600 mb-4">
-                      <p className="mb-3">Wat je doet in deze fase:</p>
-                      <ul className="list-disc list-inside mb-4 space-y-1">
-                        <li>Vaststellen van de opdracht en het doel ervan</li>
-                        <li>Opstellen van het programma van eisen (PvE)</li>
-                        <li>Kiezen van de aanbestedingsstrategie (bijv. EMVI, laagste prijs, functioneel specificeren)</li>
-                        <li>Bepalen of en hoe duurzaamheid wordt meegenomen — en dus hoe je invulling geeft aan de EED/GPP-verplichting</li>
-                      </ul>
-                      <div className="p-4 bg-yellow-50 rounded-lg border border-yellow-200 mb-4">
-                        <p className="text-yellow-800"><strong>📌 Let op:</strong> De EU GPP-criteria geven deze <strong>niet verplichte</strong> aanbevelingen voor de bepaling scope opdracht omdat deze helpen om duurzaamheidsdoelen te realiseren.</p>
-                      </div>
-                    </div>
-                    {sampleBepalingScope.map((item, index) => (
-                      <ExpandableInfo key={index} {...item} />
-                    ))}
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-
-              {/* Technische specificaties - MVI */}
-              <AccordionItem value="mvi-technische-specificaties" className="bg-white rounded-xl shadow-sm border">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline">
-                  <div className="flex items-center justify-between w-full">
-                    <span className="text-lg font-semibold">Technische specificaties</span>
-                    <div className="flex items-center gap-3 mr-4">
-                      <span className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">
-                        MVI
-                      </span>
-                      <span className="px-3 py-1 bg-red-100 text-red-800 text-sm font-medium rounded-full min-w-[100px] text-center">
-                        Verplicht
-                      </span>
-                    </div>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4">
-                    <div className="text-gray-600 mb-4">
-                      <p className="mb-4">Bij deze aanbesteding moeten de Europese GPP-criteria uitdrukkelijk worden opgenomen als technische specificaties. Ze vormen de ondergrens waaraan geleverd meubilair moet voldoen. Door deze eisen expliciet in het bestek op te nemen, voldoe je aan de verplichting uit de Energie-Efficiëntierichtlijn (EED).</p>
-                      <div className="p-4 bg-red-50 rounded-lg border border-red-200 mb-4">
-                        <p className="text-red-800">
-                          ⚠️ <strong>Let op:</strong> De minimale technische specificaties uit de GPP criteria zijn verplicht voor deze aanbesteding.
-                        </p>
-                      </div>
-                      <p>Kopieer de tabel hier onder letterlijk in je bestek of verwijs naar <a href="https://green-forum.ec.europa.eu/green-business/green-public-procurement/gpp-criteria-and-requirements_en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">de officiële EU GPP-meubilaircriteria</a>.</p>
-                    </div>
-                    <TechnischeSpecificatiesTables />
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-
-              {/* Gunningscriteria - MVI */}
-              <AccordionItem value="mvi-gunningscriteria" className="bg-white rounded-xl shadow-sm border">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline">
-                  <div className="flex items-center justify-between w-full">
-                    <span className="text-lg font-semibold">Gunningscriteria</span>
-                    <div className="flex items-center gap-3 mr-4">
-                      <span className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">
-                        MVI
-                      </span>
-                      <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm font-medium rounded-full min-w-[100px] text-center">
-                        Aanbevolen
-                      </span>
-                    </div>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4">
-                    <div className="text-gray-600 mb-4">
-                      <p className="mb-4">Gebruik gunningscriteria om bepaalde prestaties extra te belonen. De onderstaande voorbeelden zijn optioneel en helpen je aanbesteding aan te laten sluiten op je ambities.</p>
-                      <div className="p-4 mb-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-                        <p className="text-yellow-800">📌 <strong>Let op:</strong> De EU GPP-criteria geven deze <strong>niet verplichte</strong> aanbevelingen voor gunningscriteria omdat deze helpen om duurzaamheidsdoelen te realiseren.</p>
-                      </div>
-                    </div>
-                    <GunningscriteriaTable />
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-
-              {/* Contractuele uitvoeringsvoorwaarden - MVI */}
-              <AccordionItem value="mvi-contractuele-uitvoeringsvoorwaarden" className="bg-white rounded-xl shadow-sm border">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline">
-                  <div className="flex items-center justify-between w-full">
-                    <span className="text-lg font-semibold">Contractuele uitvoeringsvoorwaarden</span>
-                    <div className="flex items-center gap-3 mr-4">
-                      <span className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">
-                        MVI
-                      </span>
-                      <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm font-medium rounded-full min-w-[100px] text-center">
-                        Aanbevolen
-                      </span>
-                    </div>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4">
-                    <div className="text-gray-600 mb-4">
-                      <p className="mb-4">De toepasselijke GPP-criteria bevatten aanbevelingen voor contractuele voorwaarden op het gebied van arbeidsomstandigheden, sociale normen en milieunormen. Deze zijn niet verplicht, maar dragen bij aan circulaire of klimaatvriendelijke doelstellingen en sluiten aan bij het Rijksbeleid voor maatschappelijk verantwoord inkopen.</p>
-                      <div className="p-4 bg-yellow-50 rounded-lg border border-yellow-200 mb-4">
-                        <p className="text-yellow-800">
-                          📌 <strong>Let op:</strong> De EU GPP-criteria geven deze <strong>niet verplichte</strong> aanbevelingen voor contractuele uitvoeringsvoorwaarden omdat deze helpen om duurzaamheidsdoelen te realiseren.
-                        </p>
-                      </div>
-                    </div>
-                    <ContractueleUitvoeringsvoorwaardenTable />
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
           </div>
         )}
+
+        {/* EED Disclaimer - moved to bottom with read more functionality */}
+        {estimationAnswer !== 'no' && (
+          <div className="mt-8 mb-6 animate-fade-in" style={{ animationDelay: '1200ms', animationDuration: '1000ms' }}>
+            <div className="bg-blue-50 border-2 border-dashed border-blue-300 rounded-lg p-4">
+              <EEDDisclaimerWithReadMore />
+            </div>
+          </div>
+        )}
+
+        {/* EED Disclaimer - Duplicate with warning style */}
+        {estimationAnswer !== 'no' && (
+          <div className="mt-6 mb-6 animate-fade-in" style={{ animationDelay: '1400ms', animationDuration: '1000ms' }}>
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0 mt-0.5">
+                  <svg className="h-5 w-5 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div className="text-sm text-yellow-800">
+                  <span className="font-semibold">Let op:</span> De rapportage in TenderNed over het (niet) toepassen van het energie-efficiëntie-eerst-beginsel is verplicht voor deze aanbesteding. Op basis van artikel 2.98 Aw 2012 controleert de Europese Commissie steekproefsgewijs of uw motivering steekhoudend is.
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
       </div>
     </div>
   );

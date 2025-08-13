@@ -58,20 +58,20 @@ const Footer: React.FC = () => {
             <p className="text-sm text-gray-600 leading-relaxed max-w-sm">
               Tool voor aanbestedingsprofessionals om hun EED en GPP verplichtingen in kaart te brengen. 
               Vereenvoudig compliance en verhoog efficiëntie in uw aanbestedingsprocessen.
+              <br /><br />
+              Feedback is welkom: <a href="mailto:feedback@eedtool.eu" className="text-blue-600 hover:text-blue-800 underline">feedback@eedtool.eu</a>
             </p>
           </div>
 
-          {/* Contact Info */}
+          {/* Over Info */}
           <div className="space-y-6">
             <h3 className="text-sm font-bold text-gray-900 uppercase tracking-wider">
-              Contact
+              Over
             </h3>
             <div className="space-y-3 text-sm text-gray-600">
               <div>
                 <p className="font-medium text-gray-900">Pacem Holding B.V.</p>
-                <p>Kleverlaan 77</p>
-                <p>2061 TD Bloemendaal</p>
-                <p>The Netherlands</p>
+                <p className="leading-relaxed">Ons team bestaat uit ervaren ontwikkelaars en experts in Europese regelgeving. Samen zorgen wij dat u voldoet aan de laatste verplichtingen.</p>
               </div>
             </div>
           </div>
