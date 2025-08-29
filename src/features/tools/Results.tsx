@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
-import { ArrowLeft, Info, ChevronDown, ChevronUp, Lock, Star, CheckCircle, Building, Calculator, Copy, Check } from 'lucide-react';
+import { ArrowLeft, Info, ChevronDown, ChevronUp, Lock, Star, CheckCircle, Building, Calculator, Copy, Check, Scale } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -19,6 +19,136 @@ interface ExpandableInfoProps {
   hideCopyButton?: boolean;
   hideLevelBadge?: boolean;
 }
+
+// Legal Tooltip component for showing legal citations
+const LegalTooltip: React.FC<{ 
+  children: React.ReactNode; 
+  citation: string;
+  reference: string;
+}> = ({ children, citation, reference }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [position, setPosition] = useState({ x: 0, y: 0, showBelow: false, adjustedX: 0 });
+  const triggerRef = useRef<HTMLSpanElement>(null);
+  const tooltipRef = useRef<HTMLDivElement>(null);
+
+  const calculatePosition = (triggerRect: DOMRect) => {
+    const tooltipWidth = 384; // w-96 = 384px
+    const tooltipHeight = 250; // More realistic height estimate
+    const margin = 20; // Larger safety margin
+    const arrowHeight = 8;
+
+    // Calculate horizontal position
+    let x = triggerRect.left + triggerRect.width / 2;
+    let adjustedX = x - tooltipWidth / 2;
+
+    // Adjust if tooltip would go off left edge
+    if (adjustedX < margin) {
+      adjustedX = margin;
+    }
+    // Adjust if tooltip would go off right edge
+    else if (adjustedX + tooltipWidth > window.innerWidth - margin) {
+      adjustedX = window.innerWidth - tooltipWidth - margin;
+    }
+
+    // Calculate vertical position - be more aggressive about showing below
+    const spaceAbove = triggerRect.top;
+    const spaceBelow = window.innerHeight - triggerRect.bottom;
+    const requiredSpaceAbove = tooltipHeight + arrowHeight + margin;
+    const requiredSpaceBelow = tooltipHeight + arrowHeight + margin;
+    
+    let y = triggerRect.bottom + arrowHeight; // Default to below
+    let showBelow = true;
+
+    // Only show above if there's definitely enough space above AND not enough space below
+    if (spaceAbove >= requiredSpaceAbove && spaceBelow < requiredSpaceBelow) {
+      y = triggerRect.top - arrowHeight;
+      showBelow = false;
+    }
+    // If we're showing above but there's not enough space, force below
+    else if (!showBelow && spaceAbove < requiredSpaceAbove) {
+      y = triggerRect.bottom + arrowHeight;
+      showBelow = true;
+    }
+
+    return { x, y, showBelow, adjustedX };
+  };
+
+  const handleMouseEnter = (e: React.MouseEvent) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const newPosition = calculatePosition(rect);
+    setPosition(newPosition);
+    setIsVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsVisible(false);
+  };
+
+  const arrowOffset = position.x - position.adjustedX - 8; // 8px for half arrow width
+
+  return (
+    <>
+      <span
+        ref={triggerRef}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        className="relative cursor-help underline decoration-dotted decoration-2 decoration-blue-500 hover:decoration-blue-700 hover:decoration-solid transition-all duration-200 font-medium text-blue-700 hover:text-blue-800"
+      >
+        {children}
+      </span>
+      {isVisible && createPortal(
+        <div
+          ref={tooltipRef}
+          className="fixed z-[9999] w-96 p-4 bg-white border border-gray-200 rounded-lg shadow-xl pointer-events-none transition-opacity duration-200"
+          style={{
+            left: position.adjustedX,
+            top: position.y,
+            transform: position.showBelow ? 'translateY(0)' : 'translateY(-100%)',
+          }}
+        >
+          <div className="flex items-center gap-2 mb-2">
+            <Scale className="h-4 w-4 text-blue-600 flex-shrink-0" />
+            <span className="text-xs font-semibold text-blue-700 uppercase tracking-wide">Wettelijke Basis</span>
+          </div>
+          <p className="text-sm text-gray-700 leading-relaxed mb-2">
+            {citation}
+          </p>
+          <p className="text-xs text-gray-500 font-medium">
+            {reference}
+          </p>
+          
+          {/* Arrow - points up when tooltip is below, down when above */}
+          {position.showBelow ? (
+            // Arrow pointing up (tooltip below trigger)
+            <>
+              <div 
+                className="absolute bottom-full left-0 w-0 h-0 border-l-4 border-r-4 border-b-4 border-l-transparent border-r-transparent border-b-gray-200"
+                style={{ left: `${Math.max(8, Math.min(arrowOffset, 384 - 16))}px` }}
+              />
+              <div 
+                className="absolute bottom-full left-0 translate-y-px w-0 h-0 border-l-4 border-r-4 border-b-4 border-l-transparent border-r-transparent border-b-white"
+                style={{ left: `${Math.max(8, Math.min(arrowOffset, 384 - 16))}px` }}
+              />
+            </>
+          ) : (
+            // Arrow pointing down (tooltip above trigger)
+            <>
+              <div 
+                className="absolute top-full left-0 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-gray-200"
+                style={{ left: `${Math.max(8, Math.min(arrowOffset, 384 - 16))}px` }}
+              />
+              <div 
+                className="absolute top-full left-0 -translate-y-px w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-white"
+                style={{ left: `${Math.max(8, Math.min(arrowOffset, 384 - 16))}px` }}
+              />
+            </>
+          )}
+        </div>,
+        document.body
+      )}
+    </>
+  );
+};
 
 // Paywall overlay component
 const PaywallOverlay: React.FC<{ onUpgrade: () => void }> = ({ onUpgrade }) => (
@@ -1794,16 +1924,32 @@ const Results: React.FC = () => {
         <div className="bg-white rounded-xl shadow-sm border p-6 mb-6 animate-fade-in" style={{ animationDelay: '200ms', animationDuration: '1000ms' }}>
           <div className="flex items-start justify-between mb-4">
             <div className="flex-1 min-w-0">
-              <h1 className="text-2xl font-bold text-gray-900 flex items-center gap-3">
+              <h1 className="text-xl font-bold text-gray-900 flex items-center gap-3">
                 {estimationAnswer === 'no' ? (
                   'Geen EED verplichtingen'
                 ) : (
                   <>
-                    <span className="w-4 h-4 rounded-full bg-red-500"></span>
-                    Let op: GPP van toepassing
+                    <span className="w-4 h-4 rounded-full" style={{ backgroundColor: '#A53434' }}></span>
+                    Let op: EED Verplichtingen
                   </>
                 )}
               </h1>
+              
+              {/* EED Description text */}
+              {estimationAnswer !== 'no' && (
+                <p className="text-base text-gray-700 mt-3 leading-relaxed">
+                  U bent{' '}
+                  <LegalTooltip 
+                    citation="De lidstaten zorgen ervoor dat aanbestedende diensten en aanbestedende instanties, bij het gunnen van overheidsopdrachten en concessies met een waarde gelijk aan of groter dan de in artikel 8 van Richtlijn 2014/23/EU, artikel 4 van Richtlijn 2014/24/EU en artikel 15 van Richtlijn 2014/25/EU vastgelegde drempelwaarden, uitsluitend producten, diensten, gebouwen en werken kopen met hoge energie-efficiëntieprestaties in overeenstemming met de eisen van bijlage IV bij deze richtlijn, tenzij dit technisch niet haalbaar is."
+                    reference="Art. 7 - (EU) 2023/1791"
+                  >
+                    verplicht
+                  </LegalTooltip>
+                  {' '}om alleen producten, diensten, gebouwen en werken met hoge energie-efficiëntieprestaties in te kopen, tenzij dit technisch niet haalbaar is.
+                </p>
+              )}
+              
+
             </div>
 
           </div>
@@ -1811,8 +1957,10 @@ const Results: React.FC = () => {
           {/* User Input Summary - integrated */}
           {(organizationType || estimationAnswer) && (
             <div className="mt-6 pt-6 border-t border-gray-100">
-              <h2 className="text-lg font-semibold text-blue-900 mb-4 flex items-center gap-2">
-                <CheckCircle className="h-5 w-5" />
+              <h2 className="text-base font-semibold text-gray-900 mb-4 flex items-end gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-5.0 -10.0 110.0 135.0" className="h-6 w-6 text-gray-900 fill-current">
+                  <path d="m87.418 22.336-40.445 43.285c-0.75781 0.80859-1.8164 1.2695-2.9219 1.2695h-0.027343c-1.1172-0.007813-2.1797-0.48438-2.9297-1.3086l-13.516-14.875c-1.4844-1.6328-1.3672-4.1641 0.26953-5.6484 1.6367-1.4844 4.1641-1.3672 5.6484 0.26953l10.598 11.66 37.484-40.113c1.5078-1.6133 4.0391-1.6992 5.6562-0.19141 1.6133 1.5078 1.6992 4.0391 0.19141 5.6523zm-8.9141 21.754c-2.2109 0-4 1.7891-4 4v29.41h-55v-55h44.219c2.2109 0 4-1.7891 4-4s-1.7891-4-4-4h-48.219c-2.2109 0-4 1.7891-4 4v63c0 2.2109 1.7891 4 4 4h63c2.2109 0 4-1.7891 4-4v-33.41c0-2.2109-1.7891-4-4-4z"/>
+                </svg>
                 Uw keuzes
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -1820,9 +1968,9 @@ const Results: React.FC = () => {
                 <div className="bg-blue-50 rounded-lg p-4 border border-blue-100">
                   <div className="flex items-center gap-2 mb-2">
                     <Star className="h-4 w-4 text-blue-600" />
-                    <span className="text-sm font-medium text-blue-900">Aanbesteding</span>
+                    <span className="text-xs font-medium text-blue-900 uppercase tracking-wide">Aanbesteding</span>
                   </div>
-                  <p className="text-sm text-gray-700 font-medium">{code}</p>
+                  <p className="text-sm text-gray-900 font-semibold">{code}</p>
                   <p className="text-xs text-gray-600">{cpvName}</p>
                 </div>
 
@@ -1831,9 +1979,9 @@ const Results: React.FC = () => {
                   <div className="bg-blue-50 rounded-lg p-4 border border-blue-100">
                     <div className="flex items-center gap-2 mb-2">
                       <Building className="h-4 w-4 text-blue-600" />
-                      <span className="text-sm font-medium text-blue-900">Organisatie</span>
+                      <span className="text-xs font-medium text-blue-900 uppercase tracking-wide">Organisatie</span>
                     </div>
-                    <p className="text-sm text-gray-700 font-medium">{getOrganizationName(organizationType)}</p>
+                    <p className="text-sm text-gray-900 font-semibold">{getOrganizationName(organizationType)}</p>
                     <p className="text-xs text-gray-600">Type aanbestedende dienst</p>
                   </div>
                 )}
@@ -1843,18 +1991,32 @@ const Results: React.FC = () => {
                   <div className="bg-blue-50 rounded-lg p-4 border border-blue-100">
                     <div className="flex items-center gap-2 mb-2">
                       <Calculator className="h-4 w-4 text-blue-600" />
-                      <span className="text-sm font-medium text-blue-900">Drempelwaarde</span>
+                      <span className="text-xs font-medium text-blue-900 uppercase tracking-wide">Drempelwaarde</span>
                     </div>
-                    <p className="text-sm text-gray-700 font-medium">{getEstimationText(estimationAnswer)}</p>
+                    <p className="text-sm text-gray-900 font-semibold">{getEstimationText(estimationAnswer)}</p>
                     {organizationType && estimationAnswer !== 'help' && (
                       <p className="text-xs text-gray-600">Drempel: {getThresholdAmount(organizationType, 'Diensten')}</p>
                     )}
                   </div>
                 )}
               </div>
+              
+              {/* Red Warning - inside white block */}
+              {estimationAnswer !== 'no' && (
+                <div className="mt-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+                  <p className="text-sm text-red-800 flex items-start gap-2">
+                    <span className="text-red-600">⚠️</span>
+                    <span>
+                      <strong>Let op:</strong> Bij niet-naleving kunnen benadeelde inschrijvers bij de rechter schorsing van de gunning en/of schadevergoeding vorderen wegens onrechtmatig handelen van de aanbestedende dienst.
+                    </span>
+                  </p>
+                </div>
+              )}
             </div>
           )}
         </div>
+
+
 
         {/* Below threshold explanation */}
         {estimationAnswer === 'no' && (
@@ -1888,7 +2050,7 @@ const Results: React.FC = () => {
             {/* EU GPP Criteria Banner with GPP heading and content */}
             <div className="bg-gray-100 border border-gray-300 rounded-lg px-6 py-4 mb-4">
               <div className="flex items-center justify-between mb-4">
-                <h2 className="text-2xl font-bold text-gray-800">Overzicht GPP verplichtingen</h2>
+                <h2 className="text-2xl font-bold text-gray-800">EU GPP verplichtingen</h2>
                 <div className="flex items-center gap-3">
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
                     EED
@@ -2076,7 +2238,7 @@ const Results: React.FC = () => {
             {/* MVI Criteria Banner with MVI heading and content */}
             <div className="bg-gray-100 border border-gray-300 rounded-lg px-6 py-4 mb-4">
               <div className="flex items-center justify-between mb-4">
-                <h2 className="text-2xl font-bold text-gray-800">Overzicht MVI-criteria</h2>
+                <h2 className="text-2xl font-bold text-gray-800">NL MVI-criteria</h2>
                 <div className="flex items-center gap-3">
                   <span className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">
                     MVI
