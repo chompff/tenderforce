@@ -29,16 +29,16 @@ export const useStealthMode = () => {
     
     // Update document title
     if (enabled) {
-      document.title = 'EED Tool - EU Energy Efficiency Directive Check'
+      document.title = 'EED Check - EU Energy Efficiency Directive Check'
     } else {
-      document.title = 'EED TOOL - EU Energy Efficiency Directive Check'
+      document.title = 'EED CHECK - EU Energy Efficiency Directive Check'
     }
   }
 
   useEffect(() => {
     // Set initial title
     if (isStealthMode) {
-      document.title = 'EED Tool - EU Energy Efficiency Directive Check'
+      document.title = 'EED Check - EU Energy Efficiency Directive Check'
     }
   }, [isStealthMode])
 

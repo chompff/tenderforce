@@ -8,7 +8,7 @@ const AboutEEDTool: React.FC = () => {
         <div className="bg-gradient-to-br from-green-50 to-emerald-100 pt-24 pb-16">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl font-bold text-gray-900 mb-6">About EED TOOL</h1>
+              <h1 className="text-5xl font-bold text-gray-900 mb-6">About EED CHECK</h1>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Your comprehensive solution for EU Energy Efficiency Directive compliance. 
                 Automated assessment and guidance for sustainable procurement requirements.
@@ -26,7 +26,7 @@ const AboutEEDTool: React.FC = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                    EED TOOL was created to simplify compliance with the EU Energy Efficiency Directive (EED) 
+                    EED CHECK was created to simplify compliance with the EU Energy Efficiency Directive (EED) 
                     for procurement professionals across Europe.
                   </p>
                   <p className="text-lg text-gray-700 leading-relaxed">
@@ -125,7 +125,7 @@ const AboutEEDTool: React.FC = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Technology</h2>
               <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-lg">
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  EED TOOL is built on a comprehensive database of EU energy efficiency requirements, 
+                  EED CHECK is built on a comprehensive database of EU energy efficiency requirements, 
                   Green Public Procurement criteria, and best practices from across Europe.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -182,7 +182,7 @@ const AboutEEDTool: React.FC = () => {
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Public Launch</h3>
                     <p className="text-gray-600">
-                      Official launch of EED TOOL with comprehensive coverage of EU energy efficiency requirements 
+                      Official launch of EED CHECK with comprehensive coverage of EU energy efficiency requirements 
                       and integrated GPP criteria for sustainable procurement.
                     </p>
                   </div>
@@ -195,7 +195,7 @@ const AboutEEDTool: React.FC = () => {
               <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white p-8 rounded-lg">
                 <h2 className="text-3xl font-bold mb-4">Ready to Simplify Your EED Compliance?</h2>
                 <p className="text-xl mb-6">
-                  Discover how EED TOOL can streamline your energy efficiency procurement processes.
+                  Discover how EED CHECK can streamline your energy efficiency procurement processes.
                 </p>
                 <button className="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                   Start Your Assessment

@@ -1,10 +1,10 @@
-# EED TOOL - Project Structure
+# EED CHECK - Project Structure
 
-This document outlines the architecture of EED TOOL, a comprehensive EU Energy Efficiency Directive compliance platform for public procurement.
+This document outlines the architecture of EED CHECK, a comprehensive EU Energy Efficiency Directive compliance platform for public procurement.
 
 ## 🌱 Platform Overview
 
-**EED TOOL** is designed as a specialized compliance platform that helps procurement professionals navigate EU Energy Efficiency Directive requirements:
+**EED CHECK** is designed as a specialized compliance platform that helps procurement professionals navigate EU Energy Efficiency Directive requirements:
 
 ### Core Features
 - **Automated Assessment**: Determines applicable EED requirements based on procurement category

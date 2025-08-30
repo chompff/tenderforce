@@ -398,12 +398,12 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
             <div className="max-w-6xl mx-auto">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                 <span className="text-blue-600">
-                  EED Tool
+                  EED Check
                 </span>
               </h1>
               
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Controleer welke EED verplichtingen van toepassing zijn. (Europese Energie-Efficiëntierichtlijn (EU) 2023/1791)<br />
+                Check welke EED verplichtingen van toepassing zijn. (Europese Energie-Efficiëntierichtlijn (EU) 2023/1791)<br />
                 <span className="font-bold">
                   {phase === 'input'
                     ? 'Typ hier wat je wilt aanbesteden:'

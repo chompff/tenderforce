@@ -38,8 +38,8 @@ const Support: React.FC = () => {
       answer: "Onze AI-analyses zijn gebaseerd op uitgebreide training op Nederlandse en Europese aanbestedingswetgeving. De accuraatheid is hoog voor standaard compliance checks, maar wij raden altijd aan om complexe beslissingen te verifiëren met juridische professionals. Onze AI dient als eerste screening tool, niet als vervanging voor expert advies."
     },
     {
-      question: "Kan ik EED TOOL gebruiken voor projecten buiten Nederland?",
-      answer: "Ja, EED TOOL ondersteunt alle EU-landen en hun Energy Efficiency Directive verplichtingen. Voor landen buiten de EU raden wij lokale expertise aan."
+      question: "Kan ik EED CHECK gebruiken voor projecten buiten Nederland?",
+      answer: "Ja, EED CHECK ondersteunt alle EU-landen en hun Energy Efficiency Directive verplichtingen. Voor landen buiten de EU raden wij lokale expertise aan."
     },
     {
       question: "Hoe lang duurt het voordat ik een AI-analyse ontvang?",
@@ -54,7 +54,7 @@ const Support: React.FC = () => {
       answer: "Ja, u kunt uw abonnement op elk moment opzeggen via uw accountinstellingen. Bij maandelijkse abonnementen stopt de facturering direct, bij jaarlijkse abonnementen aan het einde van de periode."
     },
     {
-      question: "Biedt EED TOOL training of workshops aan?",
+      question: "Biedt EED CHECK training of workshops aan?",
       answer: "Ja, wij bieden aangepaste training voor teams en organisaties. Neem contact op met ons sales team voor meer informatie over onze trainingsmogelijkheden."
     }
   ];
@@ -71,7 +71,7 @@ const Support: React.FC = () => {
     const categoryLabel = categories.find(cat => cat.value === formData.category)?.label || formData.category;
     const priorityLabel = priorities.find(prio => prio.value === formData.priority)?.label || formData.priority;
     
-    const emailBody = `Beste EED TOOL Support Team,
+    const emailBody = `Beste EED CHECK Support Team,
 
 Naam: ${formData.name}
 Email: ${formData.email}
@@ -85,7 +85,7 @@ Beschrijving:
 ${formData.description}
 
 ---
-Deze email is gegenereerd via het EED TOOL support formulier.
+Deze email is gegenereerd via het EED CHECK support formulier.
 Verwachte responstijd: ${getPriorityResponseTime(formData.priority)}
 
 Met vriendelijke groet,
@@ -143,7 +143,7 @@ ${formData.name}`;
                       </svg>
                     </div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Gebruikershandleiding</h3>
-                    <p className="text-sm text-gray-600 mb-4">Ontdek alle functies van EED TOOL</p>
+                    <p className="text-sm text-gray-600 mb-4">Ontdek alle functies van EED CHECK</p>
                     <a href="#" className="text-blue-600 hover:text-blue-700 font-medium">Bekijk handleiding →</a>
                   </div>
 

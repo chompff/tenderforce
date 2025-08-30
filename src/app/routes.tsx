@@ -50,7 +50,7 @@ const AppRoutes = () => {
         {/* Redirect home to EED check */}
         <Route path="/" element={<Navigate to="/eed-check" replace />} />
         
-        {/* EED Tool routes */}
+        {/* EED Check routes */}
         <Route path="/eed-check" element={<StealthLayout><SectoraleVerplichtingencheckPage /></StealthLayout>} />
         <Route path="/eed-results/:code" element={<StealthLayout><ResultsPage /></StealthLayout>} />
         
@@ -85,7 +85,7 @@ const AppRoutes = () => {
       {/* Legacy Routes - Redirects for backward compatibility */}
       <Route path="/results/:code" element={<Layout><ResultsPage /></Layout>} />
       
-      {/* EED Tool routes (for stealth mode compatibility) */}
+      {/* EED Check routes (for stealth mode compatibility) */}
       <Route path="/eed-check" element={<Layout><SectoraleVerplichtingencheckPage /></Layout>} />
       <Route path="/eed-results/:code" element={<Layout><ResultsPage /></Layout>} />
       

@@ -1,6 +1,6 @@
 # Blog Structure
 
-This folder will contain markdown-based blog posts for EED TOOL.
+This folder will contain markdown-based blog posts for EED CHECK.
 
 ## Structure
 
@@ -36,7 +36,7 @@ This folder will contain markdown-based blog posts for EED TOOL.
 title: "Getting Started with Procurement"
 description: "A comprehensive guide to modern procurement processes"
 date: "2024-01-01"
-author: "EED TOOL Team"
+author: "EED CHECK Team"
 category: "guides"
 tags: ["procurement", "beginners", "guide"]
 featured: true
