@@ -19,7 +19,7 @@ const Privacybeleid: React.FC = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Inleiding</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  EED Tool ("wij", "ons", "onze") respecteert uw privacy en is toegewijd aan het beschermen van uw persoonlijke gegevens. 
+                  EED Check ("wij", "ons", "onze") respecteert uw privacy en is toegewijd aan het beschermen van uw persoonlijke gegevens. 
                   Dit privacybeleid legt uit hoe wij uw persoonlijke informatie verzamelen, gebruiken, delen en beschermen wanneer u onze 
                   EED compliance tools gebruikt.
                 </p>
@@ -139,7 +139,7 @@ const Privacybeleid: React.FC = () => {
                 </p>
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <p className="text-gray-700 mb-2"><strong>Data Protection Officer</strong></p>
-                  <p className="text-gray-700 mb-2">EED Tool</p>
+                  <p className="text-gray-700 mb-2">EED Check</p>
                   <p className="text-gray-700 mb-2">Kleverlaan 77, 2061 TD Bloemendaal</p>
                   <p className="text-gray-700 mb-2">Email: privacy@eedtool.eu</p>
                   <p className="text-gray-700">Telefoon: +31 (0)20 123 4567</p>

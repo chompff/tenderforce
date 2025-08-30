@@ -19,8 +19,8 @@ const AlgemeneVoorwaarden: React.FC = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Algemene bepalingen</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Deze algemene voorwaarden zijn van toepassing op alle overeenkomsten tussen EED Tool, 
-                  gevestigd te Kleverlaan 77, 2061 TD Bloemendaal ("EED Tool", "wij", "ons") en de gebruiker 
+                  Deze algemene voorwaarden zijn van toepassing op alle overeenkomsten tussen EED Check, 
+                  gevestigd te Kleverlaan 77, 2061 TD Bloemendaal ("EED Check", "wij", "ons") en de gebruiker 
                   van onze EED compliance tools ("gebruiker", "u").
                 </p>
                 <p className="text-gray-700 leading-relaxed">
@@ -34,7 +34,7 @@ const AlgemeneVoorwaarden: React.FC = () => {
                 
                 <h3 className="text-xl font-medium text-gray-900 mb-3">2.1 Aard van de diensten</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  EED Tool biedt tools voor energie-efficiëntie compliance, waaronder maar niet beperkt tot:
+                  EED Check biedt tools voor energie-efficiëntie compliance, waaronder maar niet beperkt tot:
                 </p>
                 <ul className="list-disc list-inside text-gray-700 mb-4 space-y-1">
                   <li>EU Energy Efficiency Directive compliance check</li>
@@ -92,7 +92,7 @@ const AlgemeneVoorwaarden: React.FC = () => {
                 <h3 className="text-xl font-medium text-gray-900 mb-3">4.1 Onze rechten</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Alle intellectuele eigendomsrechten op onze platform, systemen, software, 
-                  documentatie en merkrechten blijven eigendom van EED Tool.
+                  documentatie en merkrechten blijven eigendom van EED Check.
                 </p>
 
                 <h3 className="text-xl font-medium text-gray-900 mb-3">4.2 Gebruikersgegevens</h3>
@@ -161,7 +161,7 @@ const AlgemeneVoorwaarden: React.FC = () => {
                   Reeds betaalde bedragen worden niet gerestitueerd.
                 </p>
 
-                <h3 className="text-xl font-medium text-gray-900 mb-3">7.2 Opzegging door EED Tool</h3>
+                <h3 className="text-xl font-medium text-gray-900 mb-3">7.2 Opzegging door EED Check</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Wij kunnen uw account beëindigen bij schending van deze voorwaarden, na schriftelijke 
                   waarschuwing en een hersteltermijn van 14 dagen.
@@ -199,7 +199,7 @@ const AlgemeneVoorwaarden: React.FC = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. Contact</h2>
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <p className="text-gray-700 mb-2"><strong>EED Tool</strong></p>
+                  <p className="text-gray-700 mb-2"><strong>EED Check</strong></p>
                   <p className="text-gray-700 mb-2">Kleverlaan 77, 2061 TD Bloemendaal</p>
                   <p className="text-gray-700 mb-2">Nederland</p>
                   <p className="text-gray-700 mb-2">Email: legal@eedtool.eu</p>

@@ -19,7 +19,7 @@ const Disclaimer: React.FC = () => {
               <div className="bg-red-50 border border-red-200 p-6 rounded-lg mb-8">
                 <h2 className="text-xl font-bold text-red-800 mb-3">⚠️ Belangrijke waarschuwing</h2>
                 <p className="text-red-700 leading-relaxed">
-                  De informatie en analyses gegenereerd door EED Tool zijn uitsluitend bedoeld voor informatieve doeleinden. 
+                  De informatie en analyses gegenereerd door EED Check zijn uitsluitend bedoeld voor informatieve doeleinden. 
                   Deze output vormt <strong>GEEN juridisch advies</strong> en kan niet worden beschouwd als definitieve 
                   compliance-informatie voor aanbestedingsprocedures.
                 </p>
@@ -28,7 +28,7 @@ const Disclaimer: React.FC = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Aard van de dienstverlening</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  EED Tool is een informatietool die gebruikers helpt bij het identificeren van 
+                  EED Check is een informatietool die gebruikers helpt bij het identificeren van 
                   potentieel relevante wet- en regelgeving voor aanbestedingsprocedures. Onze systemen:
                 </p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
@@ -69,7 +69,7 @@ const Disclaimer: React.FC = () => {
                   <h3 className="text-lg font-semibold text-blue-800 mb-3">Dringend advies</h3>
                   <p className="text-blue-700 leading-relaxed">
                     Raadpleeg altijd gekwalificeerde juridische professionals, aanbestedingsadviseurs of compliance-experts 
-                    voordat u definitieve beslissingen neemt op basis van EED Tool analyses.
+                    voordat u definitieve beslissingen neemt op basis van EED Check analyses.
                   </p>
                 </div>
 
@@ -108,7 +108,7 @@ const Disclaimer: React.FC = () => {
 
                 <h3 className="text-xl font-medium text-gray-900 mb-3">4.2 Risico-acceptatie</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Door gebruik te maken van EED Tool erkent u dat alle beslissingen gebaseerd op onze analyses 
+                  Door gebruik te maken van EED Check erkent u dat alle beslissingen gebaseerd op onze analyses 
                   voor uw eigen risico zijn en dat u volledig verantwoordelijk bent voor de gevolgen van die beslissingen.
                 </p>
               </section>
@@ -118,7 +118,7 @@ const Disclaimer: React.FC = () => {
                 
                 <h3 className="text-xl font-medium text-gray-900 mb-3">5.1 Algemene uitsluiting</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  EED Tool wijst alle aansprakelijkheid af voor:
+                  EED Check wijst alle aansprakelijkheid af voor:
                 </p>
                 <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
                   <li>Onjuiste, onvolledige of verouderde informatie in analyses</li>
@@ -163,9 +163,9 @@ const Disclaimer: React.FC = () => {
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. Aanbevolen best practices</h2>
                 
                 <div className="bg-green-50 border border-green-200 p-6 rounded-lg">
-                  <h3 className="text-lg font-semibold text-green-800 mb-3">Optimaal gebruik van EED Tool</h3>
+                  <h3 className="text-lg font-semibold text-green-800 mb-3">Optimaal gebruik van EED Check</h3>
                   <ul className="list-decimal list-inside text-green-700 space-y-2">
-                    <li>Gebruik EED Tool als startpunt voor uw onderzoek, niet als eindpunt</li>
+                    <li>Gebruik EED Check als startpunt voor uw onderzoek, niet als eindpunt</li>
                     <li>Verifieer alle gegenereerde informatie via officiële bronnen</li>
                     <li>Raadpleeg professionals voor complexe of kritieke beslissingen</li>
                     <li>Houd rekening met recente ontwikkelingen in uw sector</li>
@@ -181,7 +181,7 @@ const Disclaimer: React.FC = () => {
                   Voor vragen over deze disclaimer of de beperkingen van onze dienstverlening:
                 </p>
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <p className="text-gray-700 mb-2"><strong>EED Tool Support</strong></p>
+                  <p className="text-gray-700 mb-2"><strong>EED Check Support</strong></p>
                   <p className="text-gray-700 mb-2">Email: support@eedtool.eu</p>
                   <p className="text-gray-700 mb-2">Telefoon: +31 (0)20 123 4567</p>
                   <p className="text-gray-700">
@@ -193,7 +193,7 @@ const Disclaimer: React.FC = () => {
 
               <div className="bg-yellow-50 border border-yellow-200 p-6 rounded-lg">
                 <p className="text-yellow-800 font-medium">
-                  Door gebruik te maken van EED Tool bevestigt u dat u deze disclaimer heeft gelezen, 
+                  Door gebruik te maken van EED Check bevestigt u dat u deze disclaimer heeft gelezen, 
                   begrepen en accepteert, en dat u zich bewust bent van de beperkingen van 
                   geautomatiseerde juridische informatietools.
                 </p>

@@ -65,7 +65,7 @@ const PrijzenPage: React.FC = () => {
           {/* Hero Section */}
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Kies uw <span className="text-blue-600">EED TOOL</span> plan
+              Kies uw <span className="text-blue-600">EED CHECK</span> plan
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               Start gratis en upgrade wanneer u meer functionaliteit nodig heeft. 

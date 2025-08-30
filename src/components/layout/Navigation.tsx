@@ -27,7 +27,7 @@ const Navigation: React.FC = () => {
             <div className="flex items-center space-x-2">
               <span className={`text-xl font-bold transition-colors duration-300 ${
                 isScrolled ? 'text-gray-900' : 'text-gray-900 drop-shadow-sm'
-              }`}>EED TOOL</span>
+              }`}>EED CHECK</span>
               <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium transition-colors duration-300 ${
                 isScrolled 
                   ? 'bg-orange-100 text-orange-800 border border-orange-200' 
