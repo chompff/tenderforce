@@ -2,11 +2,11 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./styles/globals.css";
-import { ClerkProvider } from "@clerk/clerk-react";
+// import { ClerkProvider } from "@clerk/clerk-react";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ClerkProvider
+    {/* <ClerkProvider
       publishableKey={import.meta.env.VITE_CLERK_PUBLISHABLE_KEY}
       appearance={{
         variables: {
@@ -53,8 +53,8 @@ createRoot(document.getElementById("root")!).render(
           },
         },
       }}
-    >
+    > */}
       <App />
-    </ClerkProvider>
+    {/* </ClerkProvider> */}
   </StrictMode>
 );

@@ -1,0 +1,98 @@
+{
+  "obligation_id": "services_new_products",
+  "archetype": "services",
+  "title": "EED verplichtingen voor diensten",
+  "summary": "Op basis van de gekozen CPV-code bent u volgens de EED verplicht uw dienstverleners te verplichten dat de nieuwe producten die zij voor de uitvoering van de dienst aanschaffen energiezuinig zijn.",
+  "badges": ["EED"],
+  "legal_references": [
+    {
+      "label": "Richtlijn (EU) 2023/1791",
+      "citation": "artikel 6, lid 3, sub d",
+      "url": ""
+    },
+    {
+      "label": "Richtlijn (EU) 2023/1791",
+      "citation": "bijlage IV",
+      "url": ""
+    }
+  ],
+  "sections": [
+    {
+      "key": "scope",
+      "title": "Bepaling scope opdracht",
+      "requirement_level": "verplicht",
+      "intro": "De EED-verplichting is uitsluitend van toepassing wanneer de opdrachtnemer nieuwe producten aanschaft voor de uitvoering van de dienst. Leg dit expliciet vast in de scope zodat duidelijk is dat deze situatie onder de opdracht kan vallen.",
+      "warnings": [
+        {
+          "severity": "red",
+          "text": "Als niet wordt benoemd dat de EED-verplichting alleen van toepassing is bij aanschaf van nieuwe producten, kan onduidelijkheid ontstaan of en wanneer de eis geldt. Dit kan leiden tot verkeerde interpretatie in latere fases van de aanbesteding."
+        }
+      ],
+      "steps": [
+        "Benoem in de scope dat de opdracht diensten betreft waarbij de opdrachtnemer mogelijk nieuwe producten aanschaft om de dienst te verlenen.",
+        "Leg vast wanneer de EED-verplichting geactiveerd wordt: zodra nieuwe producten worden aangeschaft voor de uitvoering.",
+        "Verwijs in de opdrachtomschrijving naar de juridische basis: Richtlijn (EU) 2023/1791, artikel 6, lid 3, sub d, in samenhang met bijlage IV."
+      ],
+      "example_texts": [
+        {
+          "label": "Voorbeeldtekst",
+          "text": "De opdracht betreft de levering van [omschrijving dienst]. Indien de opdrachtnemer voor de uitvoering van de dienst nieuwe producten aanschaft, vallen deze onder de energie-efficiëntie-eisen van Richtlijn (EU) 2023/1791, bijlage IV."
+        }
+      ]
+    },
+    {
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "intro": "Omdat de EED-verplichting alleen geldt bij de aanschaf van nieuwe producten door de opdrachtnemer, moet dit expliciet in de technische eisen worden opgenomen.",
+      "warnings": [
+        {
+          "severity": "red",
+          "text": "Als de technische specificaties niet benoemen dat de verplichting alleen geldt bij nieuwe producten, kunnen leveranciers onnodig worden uitgesloten of kan de eis onuitvoerbaar blijken."
+        }
+      ],
+      "steps": [
+        "Neem als technische specificatie op dat, wanneer de opdrachtnemer nieuwe producten aanschaft voor de uitvoering van de dienst, deze producten moeten voldoen aan de energie-efficiëntie-eisen uit Richtlijn (EU) 2023/1791, bijlage IV (punten a, b en d).",
+        "Specificeer dat bestaande of reeds gebruikte producten die de opdrachtnemer inzet, buiten de verplichting vallen."
+      ],
+      "mandatory_specs": [
+        {
+          "code": "TS1",
+          "text": "Indien de opdrachtnemer gedurende de contractperiode nieuwe producten aanschaft voor de uitvoering van de dienst, moeten deze producten voldoen aan de energie-efficiëntie-eisen zoals vastgesteld in Richtlijn (EU) 2023/1791, bijlage IV (punten a, b en d).",
+          "legal_basis": "Richtlijn (EU) 2023/1791, bijlage IV"
+        }
+      ],
+      "example_texts": [
+        {
+          "label": "Voorbeeldtekst",
+          "text": "Wanneer de opdrachtnemer voor de uitvoering nieuwe producten aanschaft, moeten deze voldoen aan de energie-efficiëntie-eisen uit Richtlijn (EU) 2023/1791, bijlage IV (punten a, b en d). Bestaande/reeds gebruikte producten die de opdrachtnemer inzet, vallen buiten deze verplichting."
+        }
+      ]
+    },
+    {
+      "key": "execution_conditions",
+      "title": "Uitvoeringsvoorwaarden",
+      "requirement_level": "aanbevolen",
+      "intro": "De uitvoeringsvoorwaarden bepalen hoe de opdrachtnemer tijdens de uitvoering moet aantonen dat hij aan de EED-verplichting voldoet. Omdat de verplichting alleen geldt bij de aanschaf van nieuwe producten, moeten controle- en meldplichten hier specifiek op zijn gericht.",
+      "warnings": [
+        {
+          "severity": "yellow",
+          "text": "Zonder duidelijke uitvoeringsvoorwaarden is naleving niet te controleren en ontbreekt een afdwingbare basis om bewijsstukken of meldingen tijdens de uitvoering te eisen."
+        }
+      ],
+      "steps": [
+        "Leg vast dat de opdrachtnemer tijdens de uitvoering moet melden wanneer hij nieuwe producten aanschaft voor de dienst.",
+        "Bepaal dat de opdrachtnemer bij levering bewijsstukken moet overleggen (bijv. energielabels, conformiteitsverklaringen) waaruit blijkt dat de producten voldoen aan de eisen van Richtlijn (EU) 2023/1791, bijlage IV.",
+        "Neem op dat bij gebrek aan dergelijke bewijsstukken de aanbestedende dienst aanvullende maatregelen kan treffen (bijv. hersteltermijn, sanctie of vervangingsplicht)."
+      ],
+      "example_texts": [
+        {
+          "label": "Voorbeeldtekst",
+          "text": "Indien de opdrachtnemer tijdens de uitvoering van de opdracht nieuwe producten aanschaft, meldt hij dit voorafgaand aan de levering aan de aanbestedende dienst. De opdrachtnemer overlegt bij levering bewijsstukken (zoals energielabels of conformiteitsverklaringen) waaruit blijkt dat deze producten voldoen aan de energie-efficiëntie-eisen bedoeld in Richtlijn (EU) 2023/1791, bijlage IV."
+        }
+      ],
+      "contractual_conditions": []
+    }
+  ],
+  "notes": []
+}

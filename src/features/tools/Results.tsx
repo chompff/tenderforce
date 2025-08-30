@@ -3,13 +3,17 @@ import { createPortal } from 'react-dom';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { ArrowLeft, Info, ChevronDown, ChevronUp, Lock, Star, CheckCircle, Building, Calculator, Copy, Check, Scale } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { getCpvName } from '../../utils/cpvLookup';
 import Confetti from '../../components/Confetti';
 import { useStealthMode } from '@/lib/utils';
+import { Obligation } from '@/types/obligations';
+import { ObligationService } from '@/services/obligationService';
+import { ObligationHeader } from '@/components/obligations/ObligationHeader';
+import { LegalReferences } from '@/components/obligations/LegalReferences';
+import { ObligationSection } from '@/components/obligations/ObligationSection';
 
 interface ExpandableInfoProps {
   title: string;
@@ -1656,7 +1660,8 @@ const Results: React.FC = () => {
   const { isStealthMode } = useStealthMode();
 
   const [cpvName, setCpvName] = useState('Laden...');
-  const [openAccordions, setOpenAccordions] = useState<string[]>([]);
+  const [obligations, setObligations] = useState<Obligation[]>([]);
+  const [loading, setLoading] = useState(true);
 
   // Extract URL parameters
   const organizationType = searchParams.get('org') || '';
@@ -1759,10 +1764,24 @@ const Results: React.FC = () => {
     return thresholds[orgType]?.[typeAanbesteding] || '€221.000';
   };
 
-  // Fetch CPV name when component mounts
+  // Fetch CPV name and obligations when component mounts
   useEffect(() => {
     if (code) {
+      // Fetch CPV name
       getCpvName(code).then(setCpvName);
+      
+      // Fetch obligations for this CPV code
+      setLoading(true);
+      ObligationService.getObligationsByCpv(code)
+        .then(data => {
+          setObligations(data);
+          setLoading(false);
+        })
+        .catch(error => {
+          console.error('Error loading obligations:', error);
+          setObligations([]);
+          setLoading(false);
+        });
     }
   }, [code]);
 
@@ -1787,8 +1806,8 @@ const Results: React.FC = () => {
     }
   };
 
-  // Sample data for all 5 tabs
-  const sampleBepalingScope = [
+  // Keep legacy sample data for fallback - TO BE REMOVED when all CPV codes have obligations
+  // const sampleBepalingScope = [
     {
       title: "Type opdracht",
       level: "basis",
@@ -1839,11 +1858,11 @@ const Results: React.FC = () => {
       hideCopyButton: true,
       hideLevelBadge: true
     }
-  ];
+  // ];
 
 
 
-  const sampleTechnischeSpecificaties = [
+  // const sampleTechnischeSpecificaties = [
     {
       title: "GPP-criteria voor meubilair",
       level: "basis",
@@ -1854,9 +1873,9 @@ const Results: React.FC = () => {
       hideCopyButton: true,
       hideLevelBadge: true
     }
-  ];
+  // ];
 
-  const sampleContractueleUitvoeringsvoorwaarden = [
+  // const sampleContractueleUitvoeringsvoorwaarden = [
     {
       title: "Arbeidsomstandigheden",
       level: "basis",
@@ -2044,191 +2063,63 @@ const Results: React.FC = () => {
 
 
 
-        {/* GPP Section - only show if above threshold */}
-        {estimationAnswer !== 'no' && (
-          <div className="space-y-4 animate-fade-in" style={{ animationDelay: '600ms', animationDuration: '1200ms' }}>
-            {/* EU GPP Criteria Banner with GPP heading and content */}
-            <div className="bg-gray-100 border border-gray-300 rounded-lg px-6 py-4 mb-4">
-              <div className="flex items-center justify-between mb-4">
-                <h2 className="text-2xl font-bold text-gray-800">EU GPP verplichtingen</h2>
-                <div className="flex items-center gap-3">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
-                    EED
-                  </span>
-                  <span className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">
-                    GPP
-                  </span>
-                  <svg className="h-6 w-auto" style={{height: '24px'}} id="Layer_2_EU" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 92.01 55.11">
-                  <defs>
-                    <style>
-                      {`.cls-1-eu { fill: none; } .cls-2-eu { fill: #314199; } .cls-3-eu { fill: #f8ec26; } .cls-4-eu { clip-path: url(#clippath-eu); }`}
-                    </style>
-                    <clipPath id="clippath-eu">
-                      <rect className="cls-1-eu" x="0" width="92.01" height="55.11" rx="8.77" ry="8.77"/>
-                    </clipPath>
-                  </defs>
-                  <g id="Flag-EU">
-                    <g className="cls-4-eu">
-                      <g>
-                        <rect className="cls-2-eu" x=".05" y="-.64" width="91.91" height="56.67"/>
-                        <g>
-                          <polygon className="cls-3-eu" points="45.99 43.82 46.73 46.03 49 46.02 47.39 47.24 47.83 49.61 45.99 48.27 44.13 49.58 44.58 47.24 42.99 46.02 45.25 46.02 45.99 43.82"/>
-                          <polygon className="cls-3-eu" points="45.99 5.49 46.73 7.7 49 7.7 47.39 8.91 47.83 11.28 45.99 9.94 44.13 11.25 44.58 8.91 42.99 7.69 45.25 7.69 45.99 5.49"/>
-                          <polygon className="cls-3-eu" points="55.22 7.96 55.96 10.16 58.23 10.16 56.62 11.38 57.07 13.75 55.22 12.4 53.36 13.71 53.81 11.38 52.22 10.15 54.49 10.15 55.22 7.96"/>
-                          <polygon className="cls-3-eu" points="36.31 7.96 37.05 10.16 39.32 10.16 37.71 11.38 38.16 13.75 36.31 12.4 34.45 13.71 34.9 11.38 33.31 10.15 35.58 10.15 36.31 7.96"/>
-                          <polygon className="cls-3-eu" points="55.22 41.23 55.96 43.44 58.23 43.43 56.62 44.65 57.07 47.02 55.22 45.68 53.36 46.99 53.81 44.65 52.22 43.43 54.49 43.43 55.22 41.23"/>
-                          <polygon className="cls-3-eu" points="36.31 41.23 37.05 43.44 39.32 43.43 37.71 44.65 38.16 47.02 36.31 45.68 34.45 46.99 34.9 44.65 33.31 43.43 35.58 43.43 36.31 41.23"/>
-                          <polygon className="cls-3-eu" points="29.24 15.19 29.98 17.4 32.25 17.39 30.64 18.61 31.08 20.98 29.24 19.64 27.38 20.95 27.83 18.61 26.24 17.39 28.51 17.39 29.24 15.19"/>
-                          <polygon className="cls-3-eu" points="62.52 15.19 63.27 17.4 65.54 17.39 63.92 18.61 64.37 20.98 62.52 19.64 60.67 20.95 61.12 18.61 59.52 17.39 61.79 17.39 62.52 15.19"/>
-                          <polygon className="cls-3-eu" points="29.24 34.32 29.98 36.53 32.25 36.52 30.64 37.74 31.08 40.11 29.24 38.77 27.38 40.08 27.83 37.74 26.24 36.52 28.51 36.52 29.24 34.32"/>
-                          <polygon className="cls-3-eu" points="62.52 34.32 63.27 36.53 65.54 36.52 63.92 37.74 64.37 40.11 62.52 38.77 60.67 40.08 61.12 37.74 59.52 36.52 61.79 36.52 62.52 34.32"/>
-                          <polygon className="cls-3-eu" points="27.04 24.68 27.79 26.89 30.06 26.89 28.45 28.11 28.89 30.47 27.04 29.13 25.19 30.44 25.64 28.11 24.04 26.88 26.31 26.88 27.04 24.68"/>
-                          <polygon className="cls-3-eu" points="64.96 24.68 65.7 26.89 67.97 26.89 66.36 28.11 66.8 30.47 64.96 29.13 63.1 30.44 63.55 28.11 61.96 26.88 64.22 26.88 64.96 24.68"/>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
+        {/* Dynamic Obligations Section - only show if above threshold */}
+        {estimationAnswer !== 'no' && obligations.length > 0 && (
+          <div className="space-y-6">
+            {obligations.map((obligation, index) => (
+              <div 
+                key={obligation.obligation_id} 
+                className="space-y-4 animate-fade-in" 
+                style={{ animationDelay: `${600 + index * 200}ms`, animationDuration: '1200ms' }}
+              >
+                {/* Obligation Banner */}
+                <div className="bg-gray-100 border border-gray-300 rounded-lg px-6 py-4">
+                  <ObligationHeader obligation={obligation} />
+                  <LegalReferences references={obligation.legal_references} />
+                  {/* Notes section if available */}
+                  {obligation.notes && obligation.notes.length > 0 && (
+                    <div className="mt-4 p-3 bg-blue-50 rounded border border-blue-200">
+                      <p className="text-sm text-blue-800 font-medium mb-1">Let op:</p>
+                      <ul className="list-disc list-inside space-y-1">
+                        {obligation.notes.map((note, noteIndex) => (
+                          <li key={noteIndex} className="text-sm text-blue-700">{note}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+                
+                {/* Render obligation sections */}
+                <div className="mt-6 space-y-4">
+                  {obligation.sections.map((section) => (
+                    <ObligationSection 
+                      key={section.key} 
+                      section={section}
+                      defaultOpen={false}
+                    />
+                  ))}
                 </div>
               </div>
-              <p className="text-gray-700">
-                Vanwege de gekozen CPV code bent u volgens de EED verplicht om de <a href="https://green-forum.ec.europa.eu/green-business/green-public-procurement/gpp-criteria-and-requirements_en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">EU Green Public Procurement (GPP)-criteria voor Meubels</a> toe te passen. Er zijn verplichte en niet verplichte aanbevelingen voor uw aanbestedingsdocumenten.
-              </p>
+            ))}
+          </div>
+        )}
+
+        
+        {/* Fallback for no obligations but above threshold */}
+        {estimationAnswer !== 'no' && obligations.length === 0 && !loading && (
+          <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 mb-6 animate-fade-in" style={{ animationDelay: '500ms', animationDuration: '1000ms' }}>
+            <div className="flex items-start space-x-4">
+              <div className="p-2 bg-yellow-100 rounded-lg">
+                <Info className="w-6 h-6 text-yellow-600" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-yellow-900">Geen specifieke EED-verplichtingen gevonden</h3>
+                <p className="text-yellow-700 mt-2">
+                  Voor CPV-code {code} zijn geen specifieke EED- of GPP-verplichtingen geregistreerd. 
+                  Raadpleeg de EU GPP-criteria en MVI-criteriatool voor mogelijke toepasselijke eisen.
+                </p>
+              </div>
             </div>
-            
-            <Accordion 
-              type="multiple" 
-              className="space-y-4"
-              value={openAccordions}
-              onValueChange={setOpenAccordions}
-            >
-              {/* Bepaling scope opdracht */}
-              <AccordionItem value="bepaling-scope" className="bg-white rounded-xl shadow-sm border">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline">
-                  <div className="flex items-center justify-between w-full">
-                    <span className="text-lg font-semibold">Bepaling scope opdracht</span>
-                    <div className="flex items-center gap-3 mr-4">
-                      <span className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">
-                        GPP
-                      </span>
-                      <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm font-medium rounded-full min-w-[100px] text-center">
-                        Aanbevolen
-                      </span>
-                    </div>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4">
-                    <div className="text-gray-600 mb-4">
-                      <p className="mb-3">Wat je doet in deze fase:</p>
-                      <ul className="list-disc list-inside mb-4 space-y-1">
-                        <li>Vaststellen van de opdracht en het doel ervan</li>
-                        <li>Opstellen van het programma van eisen (PvE)</li>
-                        <li>Kiezen van de aanbestedingsstrategie (bijv. EMVI, laagste prijs, functioneel specificeren)</li>
-                        <li>Bepalen of en hoe duurzaamheid wordt meegenomen — en dus hoe je invulling geeft aan de EED/GPP-verplichting</li>
-                      </ul>
-                      <div className="p-4 bg-yellow-50 rounded-lg border border-yellow-200 mb-4">
-                        <p className="text-yellow-800"><strong>📌 Let op:</strong> De EU GPP-criteria geven deze <strong>niet verplichte</strong> aanbevelingen voor de bepaling scope opdracht omdat deze helpen om duurzaamheidsdoelen te realiseren.</p>
-                      </div>
-                    </div>
-                    {sampleBepalingScope.map((item, index) => (
-                      <ExpandableInfo key={index} {...item} />
-                    ))}
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-
-              {/* Technische specificaties */}
-              <AccordionItem value="technische-specificaties" className="bg-white rounded-xl shadow-sm border">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline">
-                  <div className="flex items-center justify-between w-full">
-                    <span className="text-lg font-semibold">Technische specificaties</span>
-                    <div className="flex items-center gap-3 mr-4">
-                      <span className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">
-                        GPP
-                      </span>
-                      <span className="px-3 py-1 bg-red-100 text-red-800 text-sm font-medium rounded-full min-w-[100px] text-center">
-                        Verplicht
-                      </span>
-                    </div>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4">
-                    <div className="text-gray-600 mb-4">
-                      <p className="mb-4">Bij deze aanbesteding moeten de Europese GPP-criteria uitdrukkelijk worden opgenomen als technische specificaties. Ze vormen de ondergrens waaraan geleverd meubilair moet voldoen. Door deze eisen expliciet in het bestek op te nemen, voldoe je aan de verplichting uit de Energie-Efficiëntierichtlijn (EED).</p>
-                      <div className="p-4 bg-red-50 rounded-lg border border-red-200 mb-4">
-                        <p className="text-red-800">
-                          ⚠️ <strong>Let op:</strong> De minimale technische specificaties uit de GPP criteria zijn verplicht voor deze aanbesteding. Ook moet u vergelijkbare MVI criteria opnemen als deze strenger zijn.
-                        </p>
-                      </div>
-                      <p>Kopieer de onderstaande tabel in uw aanbestedingsdocumenten of verwijs naar <a href="https://green-forum.ec.europa.eu/green-business/green-public-procurement/gpp-criteria-and-requirements_en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">de officiële EU GPP-meubilaircriteria</a>. Check hierna de <a href="https://www.mvicriteria.nl/en/webtool#//23/2//en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">MVI Criteriatool</a> voor strengere technische specificaties.</p>
-                    </div>
-                    <TechnischeSpecificatiesTables />
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-
-              {/* Gunningscriteria */}
-              <AccordionItem value="gunningscriteria" className="bg-white rounded-xl shadow-sm border">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline">
-                  <div className="flex items-center justify-between w-full">
-                    <span className="text-lg font-semibold">Gunningscriteria</span>
-                    <div className="flex items-center gap-3 mr-4">
-                      <span className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">
-                        GPP
-                      </span>
-                      <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm font-medium rounded-full min-w-[100px] text-center">
-                        Aanbevolen
-                      </span>
-                    </div>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4">
-                    <div className="text-gray-600 mb-4">
-                      <p className="mb-4">Gebruik gunningscriteria om bepaalde prestaties extra te belonen. De onderstaande voorbeelden zijn optioneel en helpen je aanbesteding aan te laten sluiten op je ambities.</p>
-                      <div className="p-4 mb-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-                        <p className="text-yellow-800">📌 <strong>Let op:</strong> De EU GPP-criteria geven deze <strong>niet verplichte</strong> aanbevelingen voor gunningscriteria omdat deze helpen om duurzaamheidsdoelen te realiseren.</p>
-                      </div>
-                    </div>
-                    <GunningscriteriaTable />
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-
-              {/* Contractuele uitvoeringsvoorwaarden */}
-              <AccordionItem value="contractuele-uitvoeringsvoorwaarden" className="bg-white rounded-xl shadow-sm border">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline">
-                  <div className="flex items-center justify-between w-full">
-                    <span className="text-lg font-semibold">Contractuele uitvoeringsvoorwaarden</span>
-                    <div className="flex items-center gap-3 mr-4">
-                      <span className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">
-                        GPP
-                      </span>
-                      <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm font-medium rounded-full min-w-[100px] text-center">
-                        Aanbevolen
-                      </span>
-                    </div>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4">
-                    <div className="text-gray-600 mb-4">
-                      <p className="mb-4">De toepasselijke GPP-criteria bevatten aanbevelingen voor contractuele voorwaarden op het gebied van arbeidsomstandigheden, sociale normen en milieunormen. Deze zijn niet verplicht, maar dragen bij aan circulaire of klimaatvriendelijke doelstellingen en sluiten aan bij het Rijksbeleid voor maatschappelijk verantwoord inkopen.</p>
-                      <div className="p-4 bg-yellow-50 rounded-lg border border-yellow-200 mb-4">
-                        <p className="text-yellow-800">
-                          📌 <strong>Let op:</strong> De EU GPP-criteria geven deze <strong>niet verplichte</strong> aanbevelingen voor contractuele uitvoeringsvoorwaarden omdat deze helpen om duurzaamheidsdoelen te realiseren.
-                        </p>
-                      </div>
-                    </div>
-                    <ContractueleUitvoeringsvoorwaardenTable />
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-
-
-            </Accordion>
           </div>
         )}
 

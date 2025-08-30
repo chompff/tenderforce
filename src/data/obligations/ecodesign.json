@@ -1,0 +1,91 @@
+{
+  "obligation_id": "ecodesign_products",
+  "archetype": "ecodesign",
+  "title": "EED verplichtingen voor producten onder ecodesign",
+  "summary": "U moet alleen producten aanschaffen die vallen onder en voldoen aan de eisen van Richtlijn 2009/125/EG (Ecodesign) en de toepasselijke product-specifieke uitvoeringsverordeningen.",
+  "badges": ["EED"],
+  "legal_references": [
+    {
+      "label": "Richtlijn 2009/125/EG",
+      "citation": "Ecodesign-kader voor energiegerelateerde producten",
+      "url": ""
+    }
+  ],
+  "sections": [
+    {
+      "key": "scope",
+      "title": "Bepaling scope opdracht",
+      "requirement_level": "verplicht",
+      "intro": "Vermeld in de opdrachtomschrijving dat het product onder de reikwijdte van de Ecodesign-richtlijn en de relevante uitvoeringsverordening valt. Let op mogelijke overlap met energielabelproducten.",
+      "warnings": [
+        {
+          "severity": "red",
+          "text": "Zonder deze scopebepaling blijft onduidelijk of de ecodesign-eisen van toepassing zijn en kan dit leiden tot onjuiste of niet-afdwingbare specificaties."
+        }
+      ],
+      "steps": [
+        "Bevestig in de scope dat het product valt onder de toepassingssfeer van de Ecodesign-richtlijn 2009/125/EG.",
+        "[Optioneel] Wanneer overlap bestaat met energielabels of GPP, maak expliciet welk kader van toepassing is.",
+        "Noem de bijbehorende uitvoeringsverordening (nummer en titel)."
+      ],
+      "example_texts": [
+        {
+          "label": "Voorbeeldtekst",
+          "text": "Deze opdracht betreft de levering van [productgroep, bijvoorbeeld servers of verlichting]. Dit product valt onder de toepassingssfeer van de Ecodesign-richtlijn 2009/125/EG en de bijbehorende uitvoeringsverordening [nummer en titel]."
+        },
+        {
+          "label": "Voorbeeldtekst bij overlap met energielabels (Artikel A)",
+          "text": "Deze opdracht betreft de levering van huishoudelijke wasdrogers. De productgroep valt onder de EU-energielabelverordening (2017/1369) in combinatie met het productmaatregel voor wasdrogers en onder de ecodesign-uitvoeringsmaatregel voor wasdrogers. Daarom zijn energie-etiketterings- en ecodesignverplichtingen van toepassing."
+        }
+      ]
+    },
+    {
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "intro": "Schaf uitsluitend producten aan die voldoen aan de geldende Ecodesign-eisen uit Richtlijn 2009/125/EG en de toepasselijke product-specifieke uitvoeringsverordeningen.",
+      "warnings": [
+        {
+          "severity": "red",
+          "text": "Zonder deze bepaling in de technische specificaties kan de eis niet afdwingbaar worden toegepast bij de beoordeling van inschrijvingen."
+        }
+      ],
+      "steps": [
+        "Identificeer de relevante uitvoeringsverordening voor uw CPV-code.",
+        "Neem de minimum-energieprestatie-eisen en aanvullende eisen uit de uitvoeringsverordening op in het bestek of de eisenlijst.",
+        "Verwijs in de specificaties naar de titel/nummer van de uitvoeringsverordening."
+      ],
+      "example_texts": [
+        {
+          "label": "Voorbeeldtekst",
+          "text": "Het aangeboden product moet voldoen aan de minimum-energieprestatie-eisen en aanvullende eisen die zijn vastgesteld in de toepasselijke uitvoeringsverordening krachtens Richtlijn 2009/125/EG (Ecodesign). Voor [productgroep X] geldt [Verordening (EU) XXXX/XXXX]."
+        }
+      ]
+    },
+    {
+      "key": "execution_conditions",
+      "title": "Uitvoeringsvoorwaarden",
+      "requirement_level": "aanbevolen",
+      "intro": "Leg contractueel bewijs en verificatie vast om naleving van de juiste Ecodesign-verordening te borgen.",
+      "warnings": [
+        {
+          "severity": "yellow",
+          "text": "De specifieke eisen verschillen per productgroep. Leg de nadruk op bewijs en verificatie van naleving van de juiste verordening."
+        }
+      ],
+      "steps": [
+        "Eis bij levering een EU-conformiteitsverklaring waaruit blijkt dat het product voldoet aan de toepasselijke Ecodesign-verordening.",
+        "Vraag op verzoek de onderliggende technische documentatie (testverslagen/berekeningen) op.",
+        "Bepaal in het contract dat niet-conforme levering leidt tot kosteloze vervanging door een conform exemplaar of een contractuele sanctie."
+      ],
+      "contractual_conditions": [
+        {
+          "code": "CV1",
+          "text": "Bij levering moet de opdrachtnemer een EU-conformiteitsverklaring overleggen waaruit blijkt dat het product voldoet aan de toepasselijke Ecodesign-verordening (Richtlijn 2009/125/EG). Op verzoek verstrekt de opdrachtnemer de onderliggende technische documentatie (zoals testverslagen of berekeningen). Indien het product niet conform is, wordt levering geweigerd en moet de opdrachtnemer het product kosteloos vervangen door een conform exemplaar of wordt een contractuele sanctie opgelegd.",
+          "legal_basis": "Richtlijn 2009/125/EG en toepasselijke uitvoeringsverordening"
+        }
+      ]
+    }
+  ],
+  "notes": []
+}

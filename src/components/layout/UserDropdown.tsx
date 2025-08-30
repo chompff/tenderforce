@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useUser, useOrganization, useClerk } from "@clerk/clerk-react";
+// import { useUser, useOrganization, useClerk } from "@clerk/clerk-react";
 import { ChevronDown, LayoutDashboard, Building2, Plus, User, LogOut, Settings } from 'lucide-react';
 import { useOrganizationData } from '@/hooks/useOrganizationData';
 
@@ -10,10 +10,18 @@ interface UserDropdownProps {
 const UserDropdown: React.FC<UserDropdownProps> = ({ isScrolled }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const { user, isSignedIn } = useUser();
-  const { organization } = useOrganization();
+  // const { user, isSignedIn } = useUser();
+  // const { organization } = useOrganization();
   const { orgName } = useOrganizationData();
-  const { signOut, openUserProfile, openCreateOrganization } = useClerk();
+  // const { signOut, openUserProfile, openCreateOrganization } = useClerk();
+  
+  // Temporary mock data while Clerk is disabled
+  const user = null;
+  const isSignedIn = false;
+  const organization = null;
+  const signOut = () => {};
+  const openUserProfile = () => {};
+  const openCreateOrganization = () => {};
 
   // Close dropdown when clicking outside
   useEffect(() => {

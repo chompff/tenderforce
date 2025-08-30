@@ -1,5 +1,5 @@
-import Results from '@/features/tools/Results';
+import ResultsDynamic from '@/features/tools/ResultsDynamic';
 
 export default function ResultsPage() {
-  return <Results />;
+  return <ResultsDynamic />;
 } 

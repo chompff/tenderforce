@@ -1,0 +1,105 @@
+{
+  "obligation_id": "furniture",
+  "archetype": "furniture",
+  "title": "EED verplichtingen voor kantoormeubilair",
+  "summary": "Bij aanbestedingen voor kantoormeubilair moet u voldoen aan de EU GPP-criteria voor meubilair, die energie-efficiëntie en duurzaamheid waarborgen.",
+  "badges": ["EED", "GPP"],
+  "legal_references": [
+    {
+      "label": "Art. 7 - (EU) 2023/1791",
+      "citation": "Energy Efficiency Directive - Aanbestedingsverplichtingen",
+      "url": ""
+    },
+    {
+      "label": "EU GPP Criteria",
+      "citation": "Green Public Procurement criteria voor meubilair",
+      "url": "https://ec.europa.eu/environment/gpp/furniture_en.htm"
+    }
+  ],
+  "sections": [
+    {
+      "key": "scope",
+      "title": "Bepaling van de scope",
+      "requirement_level": "verplicht",
+      "intro": "Bepaal het type opdracht en de functionele behoefte om effectief te kunnen sturen op duurzaamheid en energie-efficiëntie.",
+      "steps": [
+        "Kies bewust het type opdracht: nieuw meubilair, refurbished meubilair, of end-of-life verwerking",
+        "Beschrijf de functionele behoefte: ergonomie, comfort, onderhoudsgemak, aanpasbaarheid",
+        "Pas de levenscyclusbenadering toe: kijk verder dan alleen aanschafprijs",
+        "Bepaal de reikwijdte: welke producten, diensten en nevenactiviteiten vallen binnen de aanbesteding"
+      ],
+      "example_texts": [
+        {
+          "label": "Type opdracht",
+          "text": "Deze aanbesteding betreft de levering van [nieuw/refurbished] kantoormeubilair inclusief transport, plaatsing en afvoer van bestaand meubilair."
+        },
+        {
+          "label": "Functionele behoefte",
+          "text": "Het meubilair moet voldoen aan ergonomische normen (NEN-EN 1335), geschikt zijn voor intensief gebruik (minimaal 8 uur per dag), en modulair aanpasbaar zijn voor verschillende werkplekindelingen."
+        }
+      ]
+    },
+    {
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "intro": "De technische specificaties moeten voldoen aan de EU GPP-criteria voor meubilair om energie-efficiëntie en duurzaamheid te waarborgen.",
+      "mandatory_specs": [
+        {
+          "code": "TS1",
+          "text": "Algemene productvereisten: Het product moet voldoen aan de relevante EN-normen voor kantoormeubilair, waaronder EN 527 (bureaus), EN 1335 (bureaustoelen), EN 14073 (opbergmeubelen).",
+          "legal_basis": "EU GPP Criteria - Core requirement"
+        },
+        {
+          "code": "TS2",
+          "text": "Houtherkomst: Al het massief hout, spaanplaat, vezelplaat en multiplex moet legaal gekapt zijn conform Verordening (EU) Nr. 995/2010.",
+          "legal_basis": "EU Timber Regulation (EUTR)"
+        },
+        {
+          "code": "TS3",
+          "text": "Gevaarlijke stoffen: Het product mag geen stoffen bevatten die zijn opgenomen in de kandidatenlijst van REACH (Verordening (EG) nr. 1907/2006).",
+          "legal_basis": "REACH Regulation"
+        },
+        {
+          "code": "TS4",
+          "text": "Duurzaamheid en repareerbaarheid: Onderdelen moeten minimaal 5 jaar na aankoop leverbaar zijn. Producten moeten demontabel zijn voor reparatie en recycling.",
+          "legal_basis": "EU GPP Criteria - Circular economy requirements"
+        }
+      ]
+    },
+    {
+      "key": "gunningscriteria",
+      "title": "Gunningscriteria",
+      "requirement_level": "aanbevolen",
+      "intro": "Gebruik gunningscriteria om verder te gaan dan de minimale technische specificaties en te selecteren op beste prijs-kwaliteitverhouding.",
+      "example_texts": [
+        {
+          "label": "Gunningscriterium circulariteit",
+          "text": "Extra punten worden toegekend voor: gebruik van gerecyclede materialen (>50%), uitgebreide garantieperiode (>5 jaar), terugnameprogramma voor end-of-life producten."
+        }
+      ]
+    },
+    {
+      "key": "execution_conditions",
+      "title": "Contractuele uitvoeringsvoorwaarden",
+      "requirement_level": "aanbevolen",
+      "intro": "Stel voorwaarden aan de uitvoering van het contract om duurzaamheid tijdens de hele contractperiode te waarborgen.",
+      "contractual_conditions": [
+        {
+          "code": "CV1",
+          "text": "Leverancier moet een onderhoudsschema verstrekken om de levensduur van het meubilair te maximaliseren.",
+          "legal_basis": "EU GPP Criteria - Contract performance"
+        },
+        {
+          "code": "CV2",
+          "text": "Transport moet plaatsvinden met voertuigen die minimaal voldoen aan Euro 6 emissienormen.",
+          "legal_basis": "EU GPP Criteria - Transport requirements"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Deze criteria zijn gebaseerd op de EU GPP-criteria voor meubilair (2017 versie, momenteel in herziening).",
+    "Voor specifieke productgroepen kunnen aanvullende eisen van toepassing zijn."
+  ]
+}

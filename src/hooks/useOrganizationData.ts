@@ -1,11 +1,15 @@
-import { useOrganization } from "@clerk/clerk-react";
+// import { useOrganization } from "@clerk/clerk-react";
 
 /**
  * Custom hook to get organization-scoped data
  * Use this to scope tender data to the active organization
  */
 export const useOrganizationData = () => {
-  const { organization, isLoaded } = useOrganization();
+  // const { organization, isLoaded } = useOrganization();
+  
+  // Temporary mock data while Clerk is disabled
+  const organization = null;
+  const isLoaded = true;
   
   return {
     // Organization ID to use for scoping tender data

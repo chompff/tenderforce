@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useUser } from '@clerk/clerk-react';
+// import { useUser } from '@clerk/clerk-react';
 import { useOrganizationData } from '@/hooks/useOrganizationData';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -38,7 +38,8 @@ const mockSupabase = {
 };
 
 const TenderDashboard: React.FC = () => {
-  const { user } = useUser();
+  // const { user } = useUser();
+  const user = null; // Temporary mock while Clerk is disabled
   const { orgId, orgName, isLoaded, hasOrganization } = useOrganizationData();
   
   // State management

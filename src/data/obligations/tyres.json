@@ -1,0 +1,66 @@
+{
+  "obligation_id": "tyres",
+  "archetype": "tyres",
+  "title": "EED verplichtingen voor banden",
+  "summary": "Volgens de EED moet u uitsluitend banden uit de hoogste brandstofrendementsklasse (A) aanbesteden, zoals vastgesteld in Verordening (EU) 2020/740 inzake de etikettering van banden.",
+  "badges": ["EED"],
+  "legal_references": [
+    {
+      "label": "Verordening (EU) 2020/740",
+      "citation": "etikettering van banden; toepassingsgebied art. 2 en 3",
+      "url": ""
+    }
+  ],
+  "sections": [
+    {
+      "key": "scope",
+      "title": "Bepaling scope opdracht",
+      "requirement_level": "verplicht",
+      "intro": "Leg expliciet vast dat de opdracht de levering van banden voor C1, C2 en/of C3 voertuigen betreft, zodat de EED-eis correct kan worden toegepast.",
+      "warnings": [
+        {
+          "severity": "red",
+          "text": "Zonder deze scopebepaling blijft onduidelijk of de eis van toepassing is en kan dit leiden tot onjuiste of niet-afdwingbare specificaties."
+        }
+      ],
+      "steps": [
+        "Vermeld expliciet in de scope dat de opdracht betrekking heeft op C1, C2 en/of C3 banden en verwijs naar Verordening (EU) 2020/740, art. 2 en 3.",
+        "Sluit uit dat het gaat om banden die niet onder de etiketteringsplicht vallen (art. 2 lid 2), zoals: professionele terreinbanden; banden ontworpen voor voertuigen eerst geregistreerd vóór 1 oktober 1990; T-reservebanden voor tijdelijk gebruik; banden met snelheidscategorie < 80 km/h; banden met nominale velgdiameter < 254 mm of > 635 mm; banden met trekkrachtoverbrengende voorzieningen (spijkerbanden); banden uitsluitend voor racevoertuigen; tweedehandsbanden.",
+        "Als de opdracht ook andere producten bevat (bijv. voertuigen mét banden), maak dan duidelijk dat de geleverde banden onder de verordening vallen."
+      ],
+      "example_texts": [
+        {
+          "label": "Voorbeeldtekst",
+          "text": "De opdracht betreft de levering van banden voor [C1, C2 en/of C3 voertuigen], vallend onder het toepassingsgebied van Verordening (EU) 2020/740, art. 2 en 3, inzake de etikettering van banden."
+        }
+      ]
+    },
+    {
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "intro": "Neem in de technische specificaties op dat uitsluitend banden uit de hoogste brandstofrendementsklasse (A) mogen worden aangeboden. Indien voor een type band geen klasse A bestaat, kan klasse B worden toegestaan mits gemotiveerd.",
+      "warnings": [
+        {
+          "severity": "red",
+          "text": "Zonder deze minimums in de technische specificaties kan de verplichting niet worden afgedwongen en bestaat het risico dat banden uit lagere klassen (C, D, E) worden aangeboden."
+        }
+      ],
+      "steps": [
+        "Specificeer dat alle aangeboden banden tot de hoogste brandstofrendementsklasse A moeten behoren.",
+        "Controleer per type band (C1, C2, C3) of klasse A beschikbaar is.",
+        "Indien klasse A niet bestaat voor het betreffende type, specificeer dat klasse B is toegestaan en motiveer dit in de aanbesteding.",
+        "Verwijs expliciet naar Verordening (EU) 2020/740, bijlage I (labelklassen)."
+      ],
+      "example_texts": [
+        {
+          "label": "Voorbeeldtekst",
+          "text": "Alle aangeboden banden moeten behoren tot de hoogste brandstofrendementsklasse (A), zoals vastgesteld in Verordening (EU) 2020/740 inzake de etikettering van banden, bijlage I (labelklassen). Indien voor een specifiek type band (C1, C2 of C3) geen klasse A beschikbaar is, wordt klasse B toegestaan."
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Indien veiligheid of volksgezondheid in het geding is, mag van bovenstaande worden afgeweken en kan worden gekozen voor beste grip of laagste rolgeluidsemissie."
+  ]
+}
