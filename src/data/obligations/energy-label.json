@@ -2,7 +2,7 @@
   "obligation_id": "energy_label_products",
   "archetype": "energy_label",
   "title": "EED verplichtingen voor producten met energielabel",
-  "summary": "Op basis van de gekozen CPV-code bent u volgens de EED verplicht alleen producten aan te schaffen die voldoen aan artikel 7, lid 2, van [Verordening (EU) 2017/1369](toggle:legal) inzake energie-etikettering.",
+  "summary": "Op basis van de gekozen CPV-code bent u volgens de EED verplicht alleen producten aan te schaffen met een energie-efficiëntieklasse die behoort tot de twee significant bevolkte klassen (uit EPREL).",
   "badges": ["EED", "EU"],
   "legal_references": [
     {
@@ -16,16 +16,16 @@
       "key": "scope",
       "title": "Bepaling scope opdracht",
       "requirement_level": "Verplicht",
-      "intro": "De aanbestedende dienst stelt een opdracht in de markt voor de levering van producten die onder de Europese energie-etiketteringsverordening vallen (Verordening (EU) 2017/1369 en gedelegeerde handelingen).",
+      "intro": "Volgens de herziene EED moet bij boven-drempelige aanbestedingen alleen worden gevraagd naar producten met een energie-efficiëntieklasse die behoort tot de twee significant bevolkte klassen (uit EPREL).",
       "warnings": [
         {
           "severity": "red",
-          "text": "Let op: Indien in de aanbestedingsstukken niet wordt vastgelegd dat uitsluitend de hoogst beschikbare energieklassen worden toegestaan, kan een niet-conform product onterecht worden toegelaten. Dit is in strijd met de EED."
+          "text": "Let op: Indien in de aanbestedingsstukken niet wordt vastgelegd dat uitsluitend de hoogst beschikbare energieklassen worden toegestaan, kan een niet-conform product onterecht worden toegelaten. Dit is in strijd met de EED."
         }
       ],
       "steps": [
-        "Controleer of het voorwerp van de opdracht een product betreft waarvoor energie-etikettering verplicht is.",
-        "Vermeld in de opdrachtomschrijving dat de levering onder de reikwijdte van de energie-etiketteringsregels valt."
+        "Vermeld in de opdrachtomschrijving dat de levering onder de reikwijdte van de energie-etiketteringsregels valt.",
+        "Gebruik EPREL om de twee hoogste energieklasses van je product op te vinden.."
       ],
       "example_texts": [
         {
@@ -78,7 +78,7 @@
       "warnings": [
         {
           "severity": "yellow",
-          "text": "Let op: Zonder duidelijke uitvoeringsvoorwaarden is naleving niet te controleren en ontbreekt de basis om bewijsstukken of meldingen tijdens de uitvoering te eisen."
+          "text": "Let op: Zonder duidelijke uitvoeringsvoorwaarden is naleving niet te controleren en ontbreekt de basis om bewijsstukken of meldingen tijdens de uitvoering te eisen."
         }
       ],
       "steps": [
