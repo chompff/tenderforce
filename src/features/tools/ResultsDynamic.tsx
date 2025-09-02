@@ -9,6 +9,7 @@ import { ObligationService } from '@/services/obligationService';
 import { ObligationHeader } from '@/components/obligations/ObligationHeader';
 import { LegalReferences } from '@/components/obligations/LegalReferences';
 import { ObligationSection } from '@/components/obligations/ObligationSection';
+import { WarningAlert } from '@/components/obligations/WarningAlert';
 
 const ResultsDynamic: React.FC = () => {
   const { code } = useParams<{ code: string }>();
@@ -327,6 +328,13 @@ const ResultsDynamic: React.FC = () => {
                       defaultOpen={false}
                     />
                   ))}
+                  
+                  {/* Footer warnings if available */}
+                  {obligation.footer_warnings && obligation.footer_warnings.length > 0 && (
+                    <div className="mt-4">
+                      <WarningAlert warnings={obligation.footer_warnings} />
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

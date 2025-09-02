@@ -22,7 +22,7 @@ export const StepsList: React.FC<StepsListProps> = ({ steps, title }) => {
                 {index + 1}
               </span>
             </div>
-            <p className="text-sm text-gray-700 pt-1">{step}</p>
+            <p className="text-sm text-gray-700 pt-1 whitespace-pre-line">{step}</p>
           </li>
         ))}
       </ol>

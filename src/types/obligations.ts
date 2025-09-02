@@ -47,7 +47,8 @@ export interface Obligation {
   title: string;
   summary: string;
   badges: string[];
+  warnings?: Warning[];
+  footer_warnings?: Warning[];
   legal_references: LegalReference[];
   sections: ObligationSection[];
-  notes?: string[];
 }

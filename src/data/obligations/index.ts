@@ -4,6 +4,7 @@ import furnitureData from './furniture.json';
 import ecodesignData from './ecodesign.json';
 import energyLabelData from './energy-label.json';
 import servicesData from './services.json';
+import algemeneEedData from './algemene-eed.json';
 
 // Type-safe obligation imports
 const tyres: Obligation = tyresData as Obligation;
@@ -11,6 +12,7 @@ const furniture: Obligation = furnitureData as Obligation;
 const ecodesign: Obligation = ecodesignData as Obligation;
 const energyLabel: Obligation = energyLabelData as Obligation;
 const services: Obligation = servicesData as Obligation;
+const algemeneEed: Obligation = algemeneEedData as Obligation;
 
 // Map of obligation IDs to obligation data
 export const obligations: Record<string, Obligation> = {
@@ -19,13 +21,17 @@ export const obligations: Record<string, Obligation> = {
   ecodesign_products: ecodesign,
   energy_label_products: energyLabel,
   services_new_products: services,
+  algemene_eed: algemeneEed,
 };
 
 // Map of CPV codes to obligation IDs
 // This mapping determines which obligations apply to which CPV codes
 export const cpvToObligationMap: Record<string, string[]> = {
+  // Algemene EED verplichtingen
+  '90510000-5': ['algemene_eed'], // Afvoer van huisvuil en behandeling van afval
+  
   // Tyres CPV codes (with full codes including hyphens)
-  // '34350000-5': ['tyres'], // Banden voor normale en zware voertuigen
+  '34350000-5': ['tyres'], // Banden voor normale en zware voertuigen
   // '34351000-2': ['tyres'], // Banden voor normale auto's
   // '34351100-3': ['tyres'], // Banden voor motorvoertuigen
   // '34352000-9': ['tyres'], // Banden voor zwaar gebruik

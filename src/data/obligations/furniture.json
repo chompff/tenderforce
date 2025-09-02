@@ -4,6 +4,12 @@
   "title": "EED verplichtingen voor kantoormeubilair",
   "summary": "Bij aanbestedingen voor kantoormeubilair moet u voldoen aan de EU GPP-criteria voor meubilair, die energie-efficiëntie en duurzaamheid waarborgen.",
   "badges": ["EED", "GPP"],
+  "footer_warnings": [
+    {
+      "severity": "yellow",
+      "text": "Deze criteria zijn gebaseerd op de EU GPP-criteria voor meubilair (2017 versie, momenteel in herziening). Voor specifieke productgroepen kunnen aanvullende eisen van toepassing zijn."
+    }
+  ],
   "legal_references": [
     {
       "label": "Art. 7 - (EU) 2023/1791",
@@ -101,9 +107,5 @@
         }
       ]
     }
-  ],
-  "notes": [
-    "Deze criteria zijn gebaseerd op de EU GPP-criteria voor meubilair (2017 versie, momenteel in herziening).",
-    "Voor specifieke productgroepen kunnen aanvullende eisen van toepassing zijn."
   ]
 }

@@ -2,8 +2,15 @@
   "obligation_id": "energy_label_products",
   "archetype": "energy_label",
   "title": "EED verplichtingen voor producten met energielabel",
-  "summary": "Op basis van de gekozen CPV-code bent u volgens de EED verplicht alleen producten aan te schaffen die voldoen aan artikel 7, lid 2, van Verordening (EU) 2017/1369 inzake energie-etikettering.",
+  "summary": "Op basis van de gekozen CPV-code bent u volgens de EED verplicht alleen producten aan te schaffen die voldoen aan artikel 7, lid 2, van [Verordening (EU) 2017/1369](toggle:legal) inzake energie-etikettering.",
   "badges": ["EED", "EU"],
+  "legal_references": [
+    {
+      "label": "Verordening (EU) 2017/1369",
+      "citation": "energie-etikettering; artikel 7(2)",
+      "url": ""
+    }
+  ],
   "sections": [
     {
       "key": "scope",
@@ -98,6 +105,5 @@
         }
       ]
     }
-  ],
-  "notes": []
+  ]
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Obligation } from '@/types/obligations';
 import { Badge } from '@/components/ui/badge';
 import { SummaryWithToggleLinks } from './SummaryWithToggleLinks';
+import { WarningAlert } from './WarningAlert';
 
 interface ObligationHeaderProps {
   obligation: Obligation;
@@ -38,6 +39,7 @@ export const ObligationHeader: React.FC<ObligationHeaderProps> = ({ obligation, 
       <p className="text-base text-gray-700 leading-relaxed">
         <SummaryWithToggleLinks text={obligation.summary} onToggleLegal={onToggleLegal} />
       </p>
+      {obligation.warnings && <WarningAlert warnings={obligation.warnings} />}
     </div>
   );
 };
