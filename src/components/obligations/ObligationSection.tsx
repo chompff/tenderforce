@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ObligationSection as SectionType } from '@/types/obligations';
-import { ChevronDown, ChevronUp, AlertCircle } from 'lucide-react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { WarningAlert } from './WarningAlert';
@@ -37,21 +37,16 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
         <CollapsibleTrigger className="w-full">
           <div className="p-4 hover:bg-gray-50 transition-colors cursor-pointer">
             <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <h3 className="text-base font-semibold text-gray-900">
-                  {section.title}
-                </h3>
+              <h3 className="text-base font-semibold text-gray-900">
+                {section.title}
+              </h3>
+              <div className="flex items-center gap-2">
                 <Badge 
                   variant="outline" 
                   className={`text-xs px-2 py-0.5 ${getLevelColor(section.requirement_level)}`}
                 >
                   {section.requirement_level}
                 </Badge>
-              </div>
-              <div className="flex items-center gap-2">
-                {section.warnings && section.warnings.length > 0 && (
-                  <AlertCircle className="h-4 w-4 text-red-500" />
-                )}
                 {isOpen ? (
                   <ChevronUp className="h-5 w-5 text-gray-400" />
                 ) : (

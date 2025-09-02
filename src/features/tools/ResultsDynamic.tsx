@@ -19,6 +19,7 @@ const ResultsDynamic: React.FC = () => {
   const [cpvName, setCpvName] = useState('Laden...');
   const [obligations, setObligations] = useState<Obligation[]>([]);
   const [loading, setLoading] = useState(true);
+  const [showLegalRefs, setShowLegalRefs] = useState<Set<string>>(new Set());
 
   // Extract URL parameters
   const organizationType = searchParams.get('org') || '';
@@ -147,6 +148,18 @@ const ResultsDynamic: React.FC = () => {
         navigate('/start');
       }
     }
+  };
+
+  const toggleLegalReferences = (obligationId: string) => {
+    setShowLegalRefs(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(obligationId)) {
+        newSet.delete(obligationId);
+      } else {
+        newSet.add(obligationId);
+      }
+      return newSet;
+    });
   };
 
   return (
@@ -284,8 +297,13 @@ const ResultsDynamic: React.FC = () => {
               >
                 {/* Obligation Banner */}
                 <div className="bg-gray-100 border border-gray-300 rounded-lg px-6 py-4">
-                  <ObligationHeader obligation={obligation} />
-                  <LegalReferences references={obligation.legal_references} />
+                  <ObligationHeader 
+                    obligation={obligation} 
+                    onToggleLegal={() => toggleLegalReferences(obligation.obligation_id)}
+                  />
+                  {showLegalRefs.has(obligation.obligation_id) && (
+                    <LegalReferences references={obligation.legal_references} />
+                  )}
                   
                   {/* Notes section if available */}
                   {obligation.notes && obligation.notes.length > 0 && (

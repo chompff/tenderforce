@@ -115,7 +115,7 @@ export const cpvToObligationMap: Record<string, string[]> = {
   // Ecodesign products CPV codes (energy-related products with full codes)
   // '31500000-7': ['ecodesign_products'], // Verlichtingsapparatuur en elektrische lampen
   // '31520000-7': ['ecodesign_products'], // Lampen en verlichtingstoestellen
-  // '30213000-5': ['ecodesign_products'], // Personal computers
+  '30213000-5': ['ecodesign_products'], // Personal computers
   // '30213100-6': ['ecodesign_products'], // Draagbare computers
   // '30213300-8': ['ecodesign_products'], // Desktopcomputers
   // '30231000-7': ['ecodesign_products'], // Computerschermen en -consoles
