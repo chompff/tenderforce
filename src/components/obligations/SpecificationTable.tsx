@@ -1,9 +1,9 @@
 import React from 'react';
-import { MandatorySpec, ContractualCondition } from '@/types/obligations';
+import { Spec, ContractualCondition } from '@/types/obligations';
 import { FileCheck, ClipboardCheck } from 'lucide-react';
 
 interface SpecificationTableProps {
-  specifications?: MandatorySpec[];
+  specifications?: Spec[];
   conditions?: ContractualCondition[];
   title: string;
 }
@@ -29,9 +29,15 @@ export const SpecificationTable: React.FC<SpecificationTableProps> = ({
         <table className="w-full border-collapse">
           <thead>
             <tr className="bg-gray-50 border-b border-gray-200">
-              <th className="text-left p-3 text-xs font-semibold text-gray-700 w-20">Code</th>
-              <th className="text-left p-3 text-xs font-semibold text-gray-700">Omschrijving</th>
-              <th className="text-left p-3 text-xs font-semibold text-gray-700 w-1/3">Juridische basis</th>
+              <th className="text-left p-3 text-xs font-semibold text-gray-700 w-20">
+                {specifications ? 'TS-code' : 'Code'}
+              </th>
+              <th className="text-left p-3 text-xs font-semibold text-gray-700">
+                {specifications ? 'Specificatie' : 'Omschrijving'}
+              </th>
+              <th className="text-left p-3 text-xs font-semibold text-gray-700 w-1/3">
+                Bronvermelding
+              </th>
             </tr>
           </thead>
           <tbody>

@@ -7,6 +7,7 @@ import { WarningAlert } from './WarningAlert';
 import { StepsList } from './StepsList';
 import { ExampleTextCard } from './ExampleTextCard';
 import { SpecificationTable } from './SpecificationTable';
+import { TechnicalSpecificationsTabs } from './TechnicalSpecificationsTabs';
 
 interface ObligationSectionProps {
   section: SectionType;
@@ -20,7 +21,7 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   const getLevelColor = (level: string) => {
-    switch (level) {
+    switch (level.toLowerCase()) {
       case 'verplicht':
         return 'bg-red-100 text-red-800 border-red-200';
       case 'aanbevolen':
@@ -59,7 +60,7 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
               </div>
             </div>
             {!isOpen && section.intro && (
-              <p className="text-sm text-gray-600 mt-2 text-left line-clamp-2">
+              <p className="text-sm text-gray-600 mt-2 text-left line-clamp-2 whitespace-pre-line">
                 {section.intro}
               </p>
             )}
@@ -67,10 +68,10 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
         </CollapsibleTrigger>
 
         <CollapsibleContent>
-          <div className="px-4 pb-4 space-y-4 border-t border-gray-100 pt-4">
+          <div className="px-4 pb-4 space-y-6 border-t border-gray-100 pt-4">
             {/* Introduction */}
             {section.intro && (
-              <div className="text-sm text-gray-700 leading-relaxed">
+              <div className="text-sm text-gray-700 leading-relaxed whitespace-pre-line">
                 {section.intro}
               </div>
             )}
@@ -80,22 +81,21 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
 
             {/* Steps */}
             {section.steps && (
-              <StepsList steps={section.steps} title="Te volgen stappen" />
+              <StepsList steps={section.steps} title="Neem de volgende stappen:" />
             )}
 
             {/* Example Texts */}
             {section.example_texts && (
               <ExampleTextCard 
                 examples={section.example_texts} 
-                title="Voorbeeldteksten"
               />
             )}
 
-            {/* Mandatory Specifications */}
-            {section.mandatory_specs && (
-              <SpecificationTable
-                specifications={section.mandatory_specs}
-                title="Verplichte specificaties"
+            {/* Technical Specifications */}
+            {section.specs && (
+              <TechnicalSpecificationsTabs
+                specifications={section.specs}
+                title="Technische specificaties"
               />
             )}
 

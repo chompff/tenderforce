@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
-import { ArrowLeft, Info, CheckCircle, Building, Calculator, Star } from 'lucide-react';
+import { ArrowLeft, Info, CheckCircle, Building, Calculator, Star, Wrench } from 'lucide-react';
 import { getCpvName } from '../../utils/cpvLookup';
 import Confetti from '../../components/Confetti';
 import { useStealthMode } from '@/lib/utils';
@@ -317,16 +317,15 @@ const ResultsDynamic: React.FC = () => {
         
         {/* Fallback for no obligations but above threshold */}
         {estimationAnswer !== 'no' && obligations.length === 0 && !loading && (
-          <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 mb-6 animate-fade-in" style={{ animationDelay: '500ms', animationDuration: '1000ms' }}>
+          <div className="bg-transparent border border-gray-300 rounded-xl p-6 mb-6 animate-fade-in" style={{ animationDelay: '500ms', animationDuration: '1000ms' }}>
             <div className="flex items-start space-x-4">
-              <div className="p-2 bg-yellow-100 rounded-lg">
-                <Info className="w-6 h-6 text-yellow-600" />
+              <div className="p-2 bg-gray-100 rounded-lg">
+                <Wrench className="w-6 h-6 text-gray-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-yellow-900">Geen specifieke EED-verplichtingen gevonden</h3>
-                <p className="text-yellow-700 mt-2">
-                  Voor CPV-code {code} zijn geen specifieke EED- of GPP-verplichtingen geregistreerd. 
-                  Raadpleeg de EU GPP-criteria en MVI-criteriatool voor mogelijke toepasselijke eisen.
+                <h3 className="text-lg font-semibold text-gray-900">Module in aanbouw</h3>
+                <p className="text-gray-700 mt-2">
+                  Deze module is momenteel in aanbouw. Binnenkort vind je hier de volledige ondersteuning voor het toepassen van het energie-efficiëntie-eerstbeginsel bij aanbestedingen.
                 </p>
               </div>
             </div>
@@ -334,7 +333,7 @@ const ResultsDynamic: React.FC = () => {
         )}
 
         {/* MVI Criteria Banner */}
-        {estimationAnswer !== 'no' && obligations.length > 0 && (
+        {/* {estimationAnswer !== 'no' && obligations.length > 0 && (
           <div className="space-y-4 animate-fade-in mt-8" style={{ animationDelay: '1000ms', animationDuration: '1200ms' }}>
             <div className="bg-gray-100 border border-gray-300 rounded-lg px-6 py-4 mb-4">
               <div className="flex items-center justify-between mb-4">
@@ -348,10 +347,10 @@ const ResultsDynamic: React.FC = () => {
               </p>
             </div>
           </div>
-        )}
+        )} */}
 
         {/* EED Disclaimer */}
-        {estimationAnswer !== 'no' && obligations.length > 0 && (
+        {/* {estimationAnswer !== 'no' && obligations.length > 0 && (
           <div className="mt-6 mb-6 animate-fade-in" style={{ animationDelay: '1400ms', animationDuration: '1000ms' }}>
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
               <div className="flex items-start gap-3">
@@ -366,7 +365,7 @@ const ResultsDynamic: React.FC = () => {
               </div>
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

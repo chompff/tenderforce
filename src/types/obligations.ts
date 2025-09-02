@@ -14,10 +14,11 @@ export interface ExampleText {
   text: string;
 }
 
-export interface MandatorySpec {
+export interface Spec {
   code: string;
   text: string;
   legal_basis: string;
+  requirement_level?: 'verplicht' | 'voorwaardelijk_verplicht' | 'aanbevolen' | 'optioneel';
 }
 
 export interface ContractualCondition {
@@ -36,7 +37,7 @@ export interface ObligationSection {
   warnings?: Warning[];
   steps?: string[];
   example_texts?: ExampleText[];
-  mandatory_specs?: MandatorySpec[];
+  specs?: Spec[];
   contractual_conditions?: ContractualCondition[];
 }
 

@@ -55,11 +55,12 @@
         "Neem als technische specificatie op dat, wanneer de opdrachtnemer nieuwe producten aanschaft voor de uitvoering van de dienst, deze producten moeten voldoen aan de energie-efficiëntie-eisen uit Richtlijn (EU) 2023/1791, bijlage IV (punten a, b en d).",
         "Specificeer dat bestaande of reeds gebruikte producten die de opdrachtnemer inzet, buiten de verplichting vallen."
       ],
-      "mandatory_specs": [
+      "specs": [
         {
           "code": "TS1",
           "text": "Indien de opdrachtnemer gedurende de contractperiode nieuwe producten aanschaft voor de uitvoering van de dienst, moeten deze producten voldoen aan de energie-efficiëntie-eisen zoals vastgesteld in Richtlijn (EU) 2023/1791, bijlage IV (punten a, b en d).",
-          "legal_basis": "Richtlijn (EU) 2023/1791, bijlage IV"
+          "legal_basis": "Richtlijn (EU) 2023/1791, bijlage IV",
+          "requirement_level": "verplicht"
         }
       ],
       "example_texts": [

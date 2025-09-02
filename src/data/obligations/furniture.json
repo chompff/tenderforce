@@ -44,26 +44,30 @@
       "title": "Technische specificaties",
       "requirement_level": "verplicht",
       "intro": "De technische specificaties moeten voldoen aan de EU GPP-criteria voor meubilair om energie-efficiëntie en duurzaamheid te waarborgen.",
-      "mandatory_specs": [
+      "specs": [
         {
           "code": "TS1",
           "text": "Algemene productvereisten: Het product moet voldoen aan de relevante EN-normen voor kantoormeubilair, waaronder EN 527 (bureaus), EN 1335 (bureaustoelen), EN 14073 (opbergmeubelen).",
-          "legal_basis": "EU GPP Criteria - Core requirement"
+          "legal_basis": "EU GPP Criteria - Core requirement",
+          "requirement_level": "verplicht"
         },
         {
           "code": "TS2",
           "text": "Houtherkomst: Al het massief hout, spaanplaat, vezelplaat en multiplex moet legaal gekapt zijn conform Verordening (EU) Nr. 995/2010.",
-          "legal_basis": "EU Timber Regulation (EUTR)"
+          "legal_basis": "EU Timber Regulation (EUTR)",
+          "requirement_level": "verplicht"
         },
         {
           "code": "TS3",
           "text": "Gevaarlijke stoffen: Het product mag geen stoffen bevatten die zijn opgenomen in de kandidatenlijst van REACH (Verordening (EG) nr. 1907/2006).",
-          "legal_basis": "REACH Regulation"
+          "legal_basis": "REACH Regulation",
+          "requirement_level": "verplicht"
         },
         {
           "code": "TS4",
           "text": "Duurzaamheid en repareerbaarheid: Onderdelen moeten minimaal 5 jaar na aankoop leverbaar zijn. Producten moeten demontabel zijn voor reparatie en recycling.",
-          "legal_basis": "EU GPP Criteria - Circular economy requirements"
+          "legal_basis": "EU GPP Criteria - Circular economy requirements",
+          "requirement_level": "aanbevolen"
         }
       ]
     },

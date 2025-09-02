@@ -2,30 +2,23 @@
   "obligation_id": "energy_label_products",
   "archetype": "energy_label",
   "title": "EED verplichtingen voor producten met energielabel",
-  "summary": "Volgens artikel 7, lid 2 van Verordening (EU) 2017/1369 moet u bij aanbestedingen uitsluitend producten toestaan die behoren tot de hoogste energieklassen die feitelijk op de markt beschikbaar zijn.",
-  "badges": ["EED"],
-  "legal_references": [
-    {
-      "label": "Verordening (EU) 2017/1369",
-      "citation": "energie-etikettering; artikel 7(2)",
-      "url": ""
-    }
-  ],
+  "summary": "Op basis van de gekozen CPV-code bent u volgens de EED verplicht alleen producten aan te schaffen die voldoen aan artikel 7, lid 2, van Verordening (EU) 2017/1369 inzake energie-etikettering.",
+  "badges": ["EED", "EU"],
   "sections": [
     {
       "key": "scope",
       "title": "Bepaling scope opdracht",
-      "requirement_level": "verplicht",
-      "intro": "Stel in de opdrachtdocumenten vast dat het product valt onder de Europese energie-etiketteringsregels.",
+      "requirement_level": "Verplicht",
+      "intro": "De aanbestedende dienst stelt een opdracht in de markt voor de levering van producten die onder de Europese energie-etiketteringsverordening vallen (Verordening (EU) 2017/1369 en gedelegeerde handelingen).",
       "warnings": [
         {
           "severity": "red",
-          "text": "Wanneer niet wordt vastgelegd dat uitsluitend de hoogste beschikbare energieklassen worden toegestaan, kan een niet-conform product onterecht worden toegelaten. Dit is in strijd met de EED."
+          "text": "Let op: Indien in de aanbestedingsstukken niet wordt vastgelegd dat uitsluitend de hoogst beschikbare energieklassen worden toegestaan, kan een niet-conform product onterecht worden toegelaten. Dit is in strijd met de EED."
         }
       ],
       "steps": [
         "Controleer of het voorwerp van de opdracht een product betreft waarvoor energie-etikettering verplicht is.",
-        "Vermeld in de opdrachtomschrijving dat de levering onder de reikwijdte van de energie-etiketteringsregels (Verordening (EU) 2017/1369 en gedelegeerde handelingen) valt."
+        "Vermeld in de opdrachtomschrijving dat de levering onder de reikwijdte van de energie-etiketteringsregels valt."
       ],
       "example_texts": [
         {
@@ -38,7 +31,7 @@
       "key": "technical_specs",
       "title": "Technische specificaties",
       "requirement_level": "verplicht",
-      "intro": "Leg vast dat uitsluitend de meest energie-efficiënte producten worden toegestaan, conform art. 7(2).",
+      "intro": "De aanbestedende dienst moet in de technische specificaties vastleggen dat uitsluitend de meest energie-efficiënte producten worden toegelaten. \n\nVolgens artikel 7, lid 2 van Verordening (EU) 2017/1369 betekent dit dat alleen producten in de hoogste twee energieklassen die feitelijk op de markt beschikbaar zijn mogen worden aangeboden.",
       "warnings": [
         {
           "severity": "red",
@@ -49,11 +42,18 @@
         "Neem de verplichting op dat uitsluitend producten uit de hoogste twee energieklassen die feitelijk op de markt beschikbaar zijn, worden toegestaan.",
         "Verwijs expliciet naar artikel 7(2) van Verordening (EU) 2017/1369."
       ],
-      "mandatory_specs": [
+      "specs": [
         {
           "code": "TS1",
           "text": "Het aangeboden product moet behoren tot ten minste de hoogste twee energieklassen die feitelijk op de markt beschikbaar zijn, conform artikel 7(2) van Verordening (EU) 2017/1369.",
-          "legal_basis": "Verordening (EU) 2017/1369, art. 7(2)"
+          "legal_basis": "Artikel 7, lid 2 van Verordening (EU) 2017/1369",
+          "requirement_level": "verplicht"
+        },
+        {
+          "code": "",
+          "text": "Het aangeboden product moet behoren tot de hoogste energieklasse die feitelijk op de markt beschikbaar is, conform artikel 7(2) Verordening (EU) 2017/1369. De aanbestedende motiveert deze keuze als volgt: [in verband met duurzaamheidsbeleid/strategische doelstellingen].",
+          "legal_basis": "Artikel 42 en 67 Richtlijn 2014/24/EU",
+          "requirement_level": "optioneel"
         }
       ],
       "example_texts": [
@@ -67,24 +67,34 @@
       "key": "execution_conditions",
       "title": "Uitvoeringsvoorwaarden",
       "requirement_level": "aanbevolen",
-      "intro": "Borg bij levering het bewijs dat het product inderdaad tot de hoogste twee energieklassen behoort.",
+      "intro": "De contractuele uitvoeringsvoorwaarden borgen dat de opdrachtnemer bij levering aantoont dat de producten daadwerkelijk behoren tot de hoogste twee energieklassen die feitelijk op de markt beschikbaar zijn.",
       "warnings": [
         {
           "severity": "yellow",
-          "text": "Zonder duidelijke uitvoeringsvoorwaarden is naleving niet te controleren en ontbreekt de basis om bewijstukken of meldingen tijdens de uitvoering te eisen."
+          "text": "Let op: Zonder duidelijke uitvoeringsvoorwaarden is naleving niet te controleren en ontbreekt de basis om bewijsstukken of meldingen tijdens de uitvoering te eisen."
         }
       ],
       "steps": [
-        "Verplicht bewijs bij levering: energie-etiket en productinformatiefiche uit de EPREL-database.",
+        "Verplicht bewijs bij levering: opdrachtnemer levert het energie-etiket en productinformatiefiche uit de EPREL-database.",
         "Stel vast dat producten zonder geldig etiket/fiche, of met een lagere energieklasse, worden geweigerd.",
-        "Bepaal dat niet-conforme levering leidt tot vervanging op kosten van de opdrachtnemer of tot een contractuele boete.",
-        "Verifieer als aanbestedende dienst de QR-code/EPREL-link en bevestig dat het product tot de hoogste twee energieklassen behoort."
+        "Sancties: bepaal dat niet-conforme levering leidt tot vervanging op kosten opdrachtnemer of oplegging van contractuele boete.",
+        "Verificatie door aanbestedende dienst: controleer QR-code/EPREL-link en bevestig dat het product tot de hoogste twee energieklassen behoort."
       ],
       "contractual_conditions": [
         {
           "code": "CV1",
-          "text": "Bij levering moet de opdrachtnemer het energie-etiket en het productinformatiefiche uit de EPREL-database overleggen. De aanbestedende dienst verifieert via EPREL-link/QR-code dat het geleverde product behoort tot de hoogste twee energieklassen die feitelijk op de markt beschikbaar zijn. Indien blijkt dat het product niet voldoet, of geen geldig bewijs wordt geleverd, kan levering worden geweigerd en is de opdrachtnemer verplicht tot kosteloze vervanging of wordt een contractuele sanctie opgelegd.",
+          "text": "Bij levering moet de opdrachtnemer het energie-etiket en het productinformatiefiche uit de EPREL-database overleggen.",
           "legal_basis": "Verordening (EU) 2017/1369, art. 7(2)"
+        },
+        {
+          "code": "",
+          "text": "De aanbestedende dienst verifieert via EPREL-link/QR-code dat het geleverde product behoort tot de hoogste twee energieklassen die feitelijk op de markt beschikbaar zijn.",
+          "legal_basis": "Richtlijn (EU) 2023/1791, Bijlage IV, sub a"
+        },
+        {
+          "code": "",
+          "text": "Indien blijkt dat het product niet voldoet, of geen geldig bewijs wordt geleverd, kan de levering worden geweigerd en is de opdrachtnemer verplicht tot kosteloze vervanging of wordt een contractuele sanctie opgelegd.",
+          "legal_basis": "Aanbestedingsrichtlijn 2014/24/EU, art. 42(3) en art. 67(2) (ruimte voor milieucriteria, mits proportioneel)"
         }
       ]
     }
