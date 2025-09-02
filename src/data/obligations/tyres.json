@@ -3,7 +3,7 @@
   "archetype": "tyres",
   "title": "EED verplichtingen voor banden",
   "summary": "Op basis van de gekozen CPV code bent u volgens de EED verplicht om uitsluitend banden uit de hoogste brandstofrendementsklasse aan te besteden, zoals vastgelegd in Verordening (EU) 2020/740 inzake de etikettering van banden.",
-  "badges": ["EED"],
+  "badges": ["EED", "EU"],
   "footer_warnings": [
     {
       "severity": "yellow",
