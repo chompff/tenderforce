@@ -326,6 +326,7 @@ const ResultsDynamic: React.FC = () => {
                       key={section.key} 
                       section={section}
                       defaultOpen={false}
+                      showGppBadge={obligation.badges?.includes('GPP')}
                     />
                   ))}
                   

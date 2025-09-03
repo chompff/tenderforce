@@ -27,7 +27,40 @@ export interface ContractualCondition {
   legal_basis: string;
 }
 
-export type SectionKey = 'scope' | 'technical_specs' | 'gunningscriteria' | 'execution_conditions';
+export interface TabbedExample {
+  title: string;
+  text: string;
+}
+
+export interface TabbedExamples {
+  basis?: TabbedExample[];
+  ambitieus?: TabbedExample[];
+}
+
+export interface GunningscriteriumItem {
+  code: string;
+  title: string;
+  description: string;
+  points?: string[];
+  legal_basis: string;
+}
+
+export interface GunningscriteriaTabs {
+  circulariteit?: GunningscriteriumItem[];
+  milieu_impact?: GunningscriteriumItem[];
+  sociaal?: GunningscriteriumItem[];
+  kwaliteit_levensduur?: GunningscriteriumItem[];
+  certificering_labels?: GunningscriteriumItem[];
+  logistiek_transport?: GunningscriteriumItem[];
+}
+
+export interface ContractualConditionTabs {
+  arbeidsomstandigheden?: ContractualCondition[];
+  sociale_normen?: ContractualCondition[];
+  milieunormen?: ContractualCondition[];
+}
+
+export type SectionKey = 'scope' | 'type_opdracht' | 'functionele_behoefte' | 'levenscyclusbenadering' | 'reikwijdte_opdracht' | 'technical_specs' | 'gunningscriteria' | 'execution_conditions';
 
 export interface ObligationSection {
   key: SectionKey;
@@ -37,8 +70,12 @@ export interface ObligationSection {
   warnings?: Warning[];
   steps?: string[];
   example_texts?: ExampleText[];
+  tabbed_examples?: TabbedExamples;
+  gunningscriteria_tabs?: GunningscriteriaTabs;
+  contractual_conditions_tabs?: ContractualConditionTabs;
   specs?: Spec[];
   contractual_conditions?: ContractualCondition[];
+  footer_note?: string;
 }
 
 export interface Obligation {

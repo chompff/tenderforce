@@ -15,25 +15,40 @@ export const ObligationHeader: React.FC<ObligationHeaderProps> = ({ obligation, 
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-bold text-gray-900">{obligation.title}</h2>
         <div className="flex gap-2 items-center">
-          {obligation.badges.map((badge) => (
-            badge === 'EU' ? (
-              <img 
-                key={badge}
-                src="/eu-flag.png" 
-                alt="EU Flag" 
-                className="h-5 w-auto"
-              />
-            ) : (
-              <Badge 
-                key={badge} 
-                variant="outline"
-                className="text-xs"
-                style={{ backgroundColor: '#DBEAFE', color: '#1E40AF', borderColor: '#DBEAFE' }}
-              >
-                {badge}
-              </Badge>
-            )
-          ))}
+          {obligation.badges.map((badge) => {
+            if (badge === 'EU') {
+              return (
+                <img 
+                  key={badge}
+                  src="/eu-flag.png" 
+                  alt="EU Flag" 
+                  className="h-5 w-auto"
+                />
+              );
+            } else if (badge === 'GPP') {
+              return (
+                <Badge 
+                  key={badge} 
+                  variant="outline"
+                  className="text-xs"
+                  style={{ backgroundColor: '#DCFCE7', color: '#166534', borderColor: '#DCFCE7' }}
+                >
+                  {badge}
+                </Badge>
+              );
+            } else {
+              return (
+                <Badge 
+                  key={badge} 
+                  variant="outline"
+                  className="text-xs"
+                  style={{ backgroundColor: '#DBEAFE', color: '#1E40AF', borderColor: '#DBEAFE' }}
+                >
+                  {badge}
+                </Badge>
+              );
+            }
+          })}
         </div>
       </div>
       <p className="text-base text-gray-700 leading-relaxed">

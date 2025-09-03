@@ -5,6 +5,7 @@ import ecodesignData from './ecodesign.json';
 import energyLabelData from './energy-label.json';
 import servicesData from './services.json';
 import algemeneEedData from './algemene-eed.json';
+import gppFurnitureData from './gpp-furniture.json';
 
 // Type-safe obligation imports
 const tyres: Obligation = tyresData as Obligation;
@@ -13,6 +14,7 @@ const ecodesign: Obligation = ecodesignData as Obligation;
 const energyLabel: Obligation = energyLabelData as Obligation;
 const services: Obligation = servicesData as Obligation;
 const algemeneEed: Obligation = algemeneEedData as Obligation;
+const gppFurniture: Obligation = gppFurnitureData as Obligation;
 
 // Map of obligation IDs to obligation data
 export const obligations: Record<string, Obligation> = {
@@ -22,6 +24,7 @@ export const obligations: Record<string, Obligation> = {
   energy_label_products: energyLabel,
   services_new_products: services,
   algemene_eed: algemeneEed,
+  'gpp-furniture': gppFurniture,
 };
 
 // Map of CPV codes to obligation IDs
@@ -66,7 +69,7 @@ export const cpvToObligationMap: Record<string, string[]> = {
   // '39122000-3': ['furniture'], // Kasten, boekenkasten, rekken
   // '39122100-4': ['furniture'], // Kasten
   // '39122200-5': ['furniture'], // Boekenkasten
-  // '39130000-2': ['furniture'], // Kantoormeubelen
+  '39130000-2': ['gpp-furniture'], // Kantoormeubelen
   // '39131000-9': ['furniture'], // Kantoorstellingen
   // '39131100-0': ['furniture'], // Archiefstellingen
   // '39132000-6': ['furniture'], // Archiefsystemen

@@ -8,15 +8,20 @@ import { StepsList } from './StepsList';
 import { ExampleTextCard } from './ExampleTextCard';
 import { SpecificationTable } from './SpecificationTable';
 import { TechnicalSpecificationsTabs } from './TechnicalSpecificationsTabs';
+import { TabbedExamplesCard } from './TabbedExamplesCard';
+import { GunningscriteriaTabs } from './GunningscriteriaTabs';
+import { ContractualConditionsTabs } from './ContractualConditionsTabs';
 
 interface ObligationSectionProps {
   section: SectionType;
   defaultOpen?: boolean;
+  showGppBadge?: boolean;
 }
 
 export const ObligationSection: React.FC<ObligationSectionProps> = ({ 
   section, 
-  defaultOpen = false 
+  defaultOpen = false,
+  showGppBadge = false
 }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
@@ -41,12 +46,69 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                 {section.title}
               </h3>
               <div className="flex items-center gap-2">
-                <Badge 
-                  variant="outline" 
-                  className={`text-xs px-2 py-0.5 ${getLevelColor(section.requirement_level)}`}
-                >
-                  {section.requirement_level}
-                </Badge>
+                {showGppBadge && section.key === 'scope' && (
+                  <Badge 
+                    variant="outline" 
+                    className="text-xs px-2 py-0.5"
+                    style={{ backgroundColor: '#DCFCE7', color: '#166534', borderColor: '#DCFCE7' }}
+                  >
+                    GPP
+                  </Badge>
+                )}
+                {section.key === 'scope' && (
+                  <Badge 
+                    variant="outline" 
+                    className={`text-xs px-2 py-0.5 ${getLevelColor(section.requirement_level)}`}
+                  >
+                    {section.requirement_level}
+                  </Badge>
+                )}
+                {section.key === 'technical_specs' && (
+                  <Badge 
+                    variant="outline" 
+                    className={`text-xs px-2 py-0.5 ${getLevelColor(section.requirement_level)}`}
+                  >
+                    {section.requirement_level}
+                  </Badge>
+                )}
+                {section.key === 'gunningscriteria' && (
+                  <>
+                    {showGppBadge && (
+                      <Badge 
+                        variant="outline" 
+                        className="text-xs px-2 py-0.5"
+                        style={{ backgroundColor: '#DCFCE7', color: '#166534', borderColor: '#DCFCE7' }}
+                      >
+                        GPP
+                      </Badge>
+                    )}
+                    <Badge 
+                      variant="outline" 
+                      className={`text-xs px-2 py-0.5 ${getLevelColor(section.requirement_level)}`}
+                    >
+                      {section.requirement_level}
+                    </Badge>
+                  </>
+                )}
+                {section.key === 'execution_conditions' && (
+                  <>
+                    {showGppBadge && (
+                      <Badge 
+                        variant="outline" 
+                        className="text-xs px-2 py-0.5"
+                        style={{ backgroundColor: '#DCFCE7', color: '#166534', borderColor: '#DCFCE7' }}
+                      >
+                        GPP
+                      </Badge>
+                    )}
+                    <Badge 
+                      variant="outline" 
+                      className={`text-xs px-2 py-0.5 ${getLevelColor(section.requirement_level)}`}
+                    >
+                      {section.requirement_level}
+                    </Badge>
+                  </>
+                )}
                 {isOpen ? (
                   <ChevronUp className="h-5 w-5 text-gray-400" />
                 ) : (
@@ -86,6 +148,13 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
               />
             )}
 
+            {/* Tabbed Examples */}
+            {section.tabbed_examples && (
+              <TabbedExamplesCard 
+                examples={section.tabbed_examples} 
+              />
+            )}
+
             {/* Technical Specifications */}
             {section.specs && (
               <TechnicalSpecificationsTabs
@@ -94,11 +163,27 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
               />
             )}
 
+            {/* Gunningscriteria */}
+            {section.gunningscriteria_tabs && (
+              <GunningscriteriaTabs
+                criteria={section.gunningscriteria_tabs}
+                title="Gunningscriteria"
+              />
+            )}
+
             {/* Contractual Conditions */}
             {section.contractual_conditions && (
               <SpecificationTable
                 conditions={section.contractual_conditions}
                 title="Contractuele voorwaarden"
+              />
+            )}
+
+            {/* Contractual Conditions Tabs */}
+            {section.contractual_conditions_tabs && (
+              <ContractualConditionsTabs
+                conditions={section.contractual_conditions_tabs}
+                title="Contractuele uitvoeringsvoorwaarden"
               />
             )}
           </div>
