@@ -69,6 +69,17 @@ export const ObligationHeader: React.FC<ObligationHeaderProps> = ({ obligation, 
                   {badge}
                 </Badge>
               );
+            } else if (badge === 'DIENSTEN') {
+              return (
+                <Badge
+                  key={badge}
+                  variant="outline"
+                  className="text-xs uppercase"
+                  style={{ backgroundColor: '#E5FAFD', color: '#008A9E', borderColor: '#E5FAFD' }}
+                >
+                  {badge}
+                </Badge>
+              );
             } else {
               return (
                 <Badge

@@ -157,6 +157,28 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                             {badge}
                           </Badge>
                         );
+                      } else if (badge === 'BANDEN') {
+                        return (
+                          <Badge
+                            key={badge}
+                            variant="outline"
+                            className="text-xs px-2 py-0.5 uppercase"
+                            style={{ backgroundColor: '#6C6C6C', color: '#FFFFFF', borderColor: '#6C6C6C' }}
+                          >
+                            {badge}
+                          </Badge>
+                        );
+                      } else if (badge === 'DIENSTEN') {
+                        return (
+                          <Badge
+                            key={badge}
+                            variant="outline"
+                            className="text-xs px-2 py-0.5 uppercase"
+                            style={{ backgroundColor: '#E5FAFD', color: '#008A9E', borderColor: '#E5FAFD' }}
+                          >
+                            {badge}
+                          </Badge>
+                        );
                       }
                       return null;
                     })}
