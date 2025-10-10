@@ -22,28 +22,27 @@ const requirementLevels: {
 ];
 
 export const TechnicalSpecificationsTabs: React.FC<TechnicalSpecificationsTabsProps> = ({ 
-  specifications, 
-  title 
+  specifications,
+  title
 }) => {
-  if (!specifications || specifications.length === 0) return null;
-
   // Group specifications by requirement level
-  const groupedSpecs = specifications.reduce((acc, spec) => {
+  const groupedSpecs = specifications ? specifications.reduce((acc, spec) => {
     const level = spec.requirement_level || 'verplicht';
     if (!acc[level]) {
       acc[level] = [];
     }
     acc[level].push(spec);
     return acc;
-  }, {} as Record<RequirementLevel, Spec[]>);
+  }, {} as Record<RequirementLevel, Spec[]>) : {};
 
   // Get available levels that have specifications
   const availableLevels = requirementLevels.filter(level => groupedSpecs[level.key]);
 
-  if (availableLevels.length === 0) return null;
-
   // Default to first available level
-  const [activeTab, setActiveTab] = useState(availableLevels[0].key);
+  const [activeTab, setActiveTab] = useState(availableLevels.length > 0 ? availableLevels[0].key : 'verplicht');
+
+  if (!specifications || specifications.length === 0) return null;
+  if (availableLevels.length === 0) return null;
 
   const renderTable = (specs: Spec[]) => (
     <div className="overflow-x-auto">

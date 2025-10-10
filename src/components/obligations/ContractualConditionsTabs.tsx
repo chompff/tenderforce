@@ -35,17 +35,13 @@ const tabConfig = [
   }
 ];
 
-export const ContractualConditionsTabs: React.FC<ContractualConditionsTabsProps> = ({ 
-  conditions, 
-  title = 'Contractuele voorwaarden' 
+export const ContractualConditionsTabs: React.FC<ContractualConditionsTabsProps> = ({
+  conditions,
+  title = 'Contractuele voorwaarden'
 }) => {
   const [activeTab, setActiveTab] = useState('');
 
-  if (!conditions) return null;
-
-  const availableTabs = tabConfig.filter(tab => conditions[tab.key] && conditions[tab.key].length > 0);
-  
-  if (availableTabs.length === 0) return null;
+  const availableTabs = conditions ? tabConfig.filter(tab => conditions[tab.key] && conditions[tab.key].length > 0) : [];
 
   // Set the active tab after we know we have tabs
   useEffect(() => {
@@ -53,6 +49,9 @@ export const ContractualConditionsTabs: React.FC<ContractualConditionsTabsProps>
       setActiveTab(availableTabs[0].key);
     }
   }, [availableTabs, activeTab]);
+
+  if (!conditions) return null;
+  if (availableTabs.length === 0) return null;
 
   const renderConditionsTable = (items: Array<{
     code?: string;

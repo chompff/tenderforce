@@ -65,11 +65,7 @@ export const GunningscriteriaTabs: React.FC<GunningscriteriaTabsProps> = ({
 }) => {
   const [activeTab, setActiveTab] = useState('');
 
-  if (!criteria) return null;
-
-  const availableTabs = tabConfig.filter(tab => criteria[tab.key] && criteria[tab.key].length > 0);
-  
-  if (availableTabs.length === 0) return null;
+  const availableTabs = criteria ? tabConfig.filter(tab => criteria[tab.key] && criteria[tab.key].length > 0) : [];
 
   // Set the active tab after we know we have tabs
   useEffect(() => {
@@ -77,6 +73,9 @@ export const GunningscriteriaTabs: React.FC<GunningscriteriaTabsProps> = ({
       setActiveTab(availableTabs[0].key);
     }
   }, [availableTabs, activeTab]);
+
+  if (!criteria) return null;
+  if (availableTabs.length === 0) return null;
 
   const renderCriteriaTable = (items: Array<{
     code?: string;
