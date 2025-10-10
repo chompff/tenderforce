@@ -133,14 +133,14 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                         <Badge
                           variant="outline"
                           className="text-xs px-2 py-0.5"
-                          style={{ backgroundColor: '#D4F1F4', color: '#0B5563', borderColor: '#D4F1F4' }}
+                          style={{ backgroundColor: '#4A9400', color: '#FFFFFF', borderColor: '#4A9400' }}
                         >
                           MVI
                         </Badge>
                         <Badge
                           variant="outline"
                           className="text-xs px-2 py-0.5"
-                          style={{ backgroundColor: '#DCFCE7', color: '#166534', borderColor: '#DCFCE7' }}
+                          style={{ backgroundColor: '#3E6B3A', color: '#FFFFFF', borderColor: '#3E6B3A' }}
                         >
                           GPP
                         </Badge>
@@ -161,14 +161,14 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                         <Badge
                           variant="outline"
                           className="text-xs px-2 py-0.5"
-                          style={{ backgroundColor: '#D4F1F4', color: '#0B5563', borderColor: '#D4F1F4' }}
+                          style={{ backgroundColor: '#4A9400', color: '#FFFFFF', borderColor: '#4A9400' }}
                         >
                           MVI
                         </Badge>
                         <Badge
                           variant="outline"
                           className="text-xs px-2 py-0.5"
-                          style={{ backgroundColor: '#DCFCE7', color: '#166534', borderColor: '#DCFCE7' }}
+                          style={{ backgroundColor: '#3E6B3A', color: '#FFFFFF', borderColor: '#3E6B3A' }}
                         >
                           GPP
                         </Badge>
