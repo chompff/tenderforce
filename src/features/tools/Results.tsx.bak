@@ -42,7 +42,7 @@ const LegalTooltip: React.FC<{
     const arrowHeight = 8;
 
     // Calculate horizontal position
-    const x = triggerRect.left + triggerRect.width / 2;
+    let x = triggerRect.left + triggerRect.width / 2;
     let adjustedX = x - tooltipWidth / 2;
 
     // Adjust if tooltip would go off left edge
@@ -1806,6 +1806,122 @@ const Results: React.FC = () => {
     }
   };
 
+  // Keep legacy sample data for fallback - TO BE REMOVED when all CPV codes have obligations
+  // const sampleBepalingScope = [
+  //   {
+  //     title: "Type opdracht",
+      level: "basis",
+      description: (
+        <>
+          Bij aanbestedingen voor kantoormeubilair wordt vaak automatisch gekozen voor nieuw meubilair, zonder dat bewust wordt gekeken naar andere duurzame opties. De GPP-criteria vragen je om deze keuze bewust te maken aan de hand van duurzaamheidsoverwegingen. GPP onderscheidt drie soorten opdrachten:
+          <br /><br />
+          - <strong>Nieuw meubilair:</strong> productie van nieuwe meubels met milieuvriendelijke materialen en processen.<br />
+          - <strong>Refurbished meubilair:</strong> bestaande meubels worden opgeknapt, aangepast of opnieuw gestoffeerd.<br />
+          - <strong>End-of-life verwerking:</strong> afvoer, hergebruik of recycling van oude meubels.
+          <br /><br />
+          Door vooraf na te denken over welk type opdracht het beste past bij de doelstelling en context van je organisatie, voldoe je aan de verplichting van de EED én stuur je gericht op milieu-impact.
+        </>
+      ),
+      expandedInfo: (
+        <TypeOpdrachtExamples />
+      ),
+      hideCopyButton: true,
+      hideLevelBadge: true
+    },
+    {
+      title: "Functionele behoefte",
+      level: "basis",
+      description: "In deze stap beschrijf je wat het meubilair functioneel moet kunnen. Denk aan ergonomie, comfort, onderhoudsgemak, aanpasbaarheid (bijv. modulair), gebruiksduur of geschiktheid voor intensief gebruik. Door deze eisen slim te formuleren, kun je sturen op duurzaamheid zonder over te specificeren. Zo voorkom je dat duurzaamheid botst met functionele eisen, en vergroot je de ruimte voor innovatieve oplossingen.",
+      expandedInfo: (
+        <FunctioneleBehoefteExamples />
+      ),
+      hideCopyButton: true,
+      hideLevelBadge: true
+    },
+    {
+      title: "Levenscyclusbenadering",
+      level: "basis",
+      description: "De levenscyclusbenadering kijkt verder dan alleen de aanschafprijs. Je houdt hierbij rekening met de milieu-impact en kosten over de hele levensduur van het meubilair: van grondstoffenwinning en productie, tot gebruik, onderhoud en afdanking. Door in deze fase al levensduur, repareerbaarheid en hergebruik mee te nemen, kun je sturen op lagere milieukosten en minder verspilling.",
+      expandedInfo: (
+        <LevenscyclusbenaderingExamples />
+      ),
+      hideCopyButton: true,
+      hideLevelBadge: true
+    },
+    {
+      title: "Reikwijdte van de opdracht",
+      level: "basis",
+      description: "De reikwijdte bepaalt welke producten, diensten en nevenactiviteiten binnen de aanbesteding vallen. Bij kantoorinrichting kun je denken aan losse meubels, vaste inrichting, transport, plaatsing, onderhoud, en afvoer van bestaand meubilair. Door de reikwijdte slim te kiezen, vergroot je de impact op circulariteit en milieu, én kun je beter sturen op samenhangende prestaties. De Europese GPP-criteria helpen bij het expliciteren van een duurzame scope.",
+      expandedInfo: (
+        <ReikwijdteOpdrachtExamples />
+      ),
+      hideCopyButton: true,
+      hideLevelBadge: true
+    }
+  // ];
+
+
+
+  // const sampleTechnischeSpecificaties = [
+    {
+      title: "GPP-criteria voor meubilair",
+      level: "basis",
+      description: "De onderstaande technische specificaties zijn gebaseerd op de officiële EU GPP-criteria voor meubilair. Deze vormen de juridisch bindende ondergrens voor je aanbesteding.",
+      expandedInfo: (
+        <TechnischeSpecificatiesTables />
+      ),
+      hideCopyButton: true,
+      hideLevelBadge: true
+    }
+  // ];
+
+  // const sampleContractueleUitvoeringsvoorwaarden = [
+    {
+      title: "Arbeidsomstandigheden",
+      level: "basis",
+      description: "Naleving van veiligheidsvoorschriften tijdens uitvoering",
+      expandedInfo: (
+        <div className="space-y-3">
+          <p>Voorbeelden van arbeidsomstandigheden eisen:</p>
+          <ul className="list-disc list-inside space-y-1 ml-2">
+            <li>Gebruik van persoonlijke beschermingsmiddelen (PBM's)</li>
+            <li>Toezicht op veilige werkomstandigheden op locatie</li>
+            <li>Voldoende instructie en training voor uitvoerend personeel</li>
+          </ul>
+        </div>
+      )
+    },
+    {
+      title: "Sociale normen",
+      level: "gemiddeld", 
+      description: "Eerlijke arbeidsvoorwaarden en geen kinderarbeid",
+      expandedInfo: (
+        <div className="space-y-3">
+          <p>Voorbeelden van sociale normen eisen:</p>
+          <ul className="list-disc list-inside space-y-1 ml-2">
+            <li>Betaling van ten minste het lokale minimumloon</li>
+            <li>Transparantie over herkomst van personeel</li>
+            <li>Uitsluiting van leveranciers die kinderarbeid toestaan</li>
+          </ul>
+        </div>
+      )
+    },
+    {
+      title: "Milieunormen",
+      level: "streng",
+      description: "Minimale milieu-impact tijdens uitvoering",
+      expandedInfo: (
+        <div className="space-y-3">
+          <p>Voorbeelden van milieunormen eisen:</p>
+          <ul className="list-disc list-inside space-y-1 ml-2">
+            <li>Gebruik van emissievrij transport tijdens levering</li>
+            <li>Afvalscheiding en hergebruik van verpakkingen</li>
+            <li>Gebruik van milieuvriendelijke middelen bij reiniging/installatie</li>
+          </ul>
+        </div>
+      )
+    }
+  ];
 
 
 

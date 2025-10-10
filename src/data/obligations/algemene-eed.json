@@ -1,103 +1,54 @@
 {
   "obligation_id": "algemene_eed",
   "archetype": "general_eed",
-  "title": "Algemene EED verplichtingen",
-  "summary": "Op basis van de gekozen CPV code bent u volgens de EED verplicht om het energie-efficiëntie eerstbeginsel toe te passen, ook al zijn er geen specifieke eisen gesteld voor deze opdracht.",
-  "badges": ["EED", "EU"],
-  "warnings": [
-    {
-      "severity": "red",
-      "text": "Let op: U mag alleen afwijken deze verplichting indien u kunt aantonen dat toepassing technisch niet mogelijk of onevenredig hoge kosten veroorzaakt."
-    }
-  ],
-  "legal_references": [
-    {
-      "label": "EED",
-      "citation": "Artikel 7",
-      "url": ""
-    }
-  ],
+  "title": "Algemene EED verplichtingen (Energie-efficiëntie-eerstbeginsel)",
+  "summary": "Op basis van de gekozen CPV-code bent u [volgens de EED](popup:WETTELIJKE BASIS||De lidstaten zorgen er ook voor dat aanbestedende diensten en aanbestedende instanties bij het gunnen van overheidsopdrachten en concessies met een waarde gelijk aan of hoger dan de in de eerste alinea bedoelde drempelwaarden, het energie-efficiëntie-eerstbeginsel overeenkomstig artikel 3 toepassen, ook voor overheidsopdrachten en concessies waarvoor in bijlage IV geen specifieke eisen zijn opgenomen.||Art. 7 - (EU) 2023/1791) verplicht om het energie-efficiëntie eerstbeginsel toe te passen.",
+  "badges": ["ALGEMEEN", "EED", "EU"],
+  "legal_references": [],
   "sections": [
     {
       "key": "energy_efficiency_first",
       "title": "Toepassen energie-efficiëntie-eerstbeginsel",
-      "requirement_level": "Verplicht",
-      "intro": "Het energie-efficiëntie-eerstbeginsel (EE1) houdt in dat bij elke beslissing over beleid, planning en investeringen energie-efficiëntie systematisch wordt meegewogen voordat nieuwe energievoorziening of infrastructuur wordt gekozen. Voor aanbestedingen betekent dit dat energie-efficiëntie altijd een criterium moet zijn bij ontwerp, specificatie, gunning en uitvoering van opdrachten.\n\nEE1 geldt ook voor productgroepen waarbij energie-efficiëntie niet direct zichtbaar is (bijv. landbouwproducten of grondstoffen). Dan kunt u technische eisen en gunningscriteria opstellen die zien op de keten en de randvoorwaarden, bijvoorbeeld:\n\n• Energie-efficiëntie bij productie, verwerking en teeltmethoden,\n• Transport en distributie (brandstofefficiëntie, logistieke optimalisatie),\n• Verpakking en opslag (energiezuinige materialen en processen).",
+      "requirement_level": "verplicht",
+      "badges": ["ALGEMEEN"],
+      "intro": "Het [energie-efficiëntie-eerstbeginsel](popup:TOEPASSING||De lidstaten zorgen er ook voor dat aanbestedende diensten en aanbestedende instanties bij het gunnen van overheidsopdrachten en concessies met een waarde gelijk aan of hoger dan de in de eerste alinea bedoelde drempelwaarden, het energie-efficiëntie-eerstbeginsel overeenkomstig artikel 3 toepassen, ook voor overheidsopdrachten en concessies waarvoor in bijlage IV geen specifieke eisen zijn opgenomen.||) houdt in dat bij het voorbereiden en vormgeven van overheidsopdrachten systematisch wordt nagegaan in hoeverre energie-efficiëntie op een passende wijze kan worden meegenomen, bijvoorbeeld bij ontwerp en specificatie.\n\nDit brengt mee dat in de scopingsfase (bij de aanbestedings- en contracteringsstrategie) ten minste een kosten-batenanalyse (KBA) wordt uitgevoerd waarin energie-efficiënte alternatieven worden vergeleken. Het staat aanbestedende diensten daarnaast vrij om waar passend energie-efficiëntiecriteria te verwerken in geschiktheidseisen, technische specificaties, gunningscriteria of bijzondere uitvoeringsvoorwaarden.",
       "warnings": [
         {
           "severity": "red",
-          "text": "Let op: Als EE1 niet duidelijk in de aanbestedingsstukken is verwerkt, kan een energie-inefficiënte oplossing onterecht worden toegelaten. Daarmee handelt de aanbestedende dienst in strijd met de EED, met risico op klachten, niet-naleving en procedures."
-        }
-      ],
-      "steps": [
-        "Analyseer de behoefte: Vraag hoe de behoefte zo energie-efficiënt mogelijk kan worden ingevuld?",
-        "Verken alternatieven: Welk materieel scenario's uit, inclusief varianten met hogere energie-efficiëntie.",
-        "Voer berekeningen uit: Gebruik een kosten-batenanalyse (KBA) en/of levenscycluskostenanalyse (LCC).",
-        "Formuleer eisen en criteria: Neem energie-efficiëntie expliciet op in de technische specificaties en gunningscriteria.",
-        "Documenteer afwijkingen: Leg vast en motiveer waarom eventueel niet voor de meest efficiënte optie is gekozen.",
-        "Controle en borging: Gebruik checklists of formats om consistent aan te tonen dat EE1 is toegepast."
-      ],
-      "example_texts": [
-        {
-          "label": "Voorbeeldtekst",
-          "text": "De aanbestedende dienst past het energie-efficiëntie-eerstbeginsel to conform Artikel 7 van Richtlijn (EU) 2023/1791. Dit beginsel geldt voor alle aanbestedingen boven de Europese drempelwaarden en is verwerkt in de voorbereiding en uitvoering van deze opdracht."
+          "text": "Let op: Het energie-efficiëntie-eerstbeginsel moet zichtbaar zijn verwerkt in de aanbestedingsstukken én aantoonbaar zijn vastgelegd in het aankoopdossier. Vermeld of en hoe het beginsel is toegepast. De Europese Commissie kan dit steekproefsgewijs controleren."
         }
       ]
     },
     {
       "key": "cost_benefit_analysis",
       "title": "Kosten-batenanalyse (KBA)",
-      "requirement_level": "Aanbevolen",
+      "requirement_level": "optioneel",
       "intro": "Een kosten-batenanalyse (KBA) is een methode om de energie-efficiëntie van een aanbesteding te beoordelen door de totale kosten (aanschaf, gebruik, onderhoud) af te zetten tegen de baten (energiebesparing, lagere exploitatiekosten, milieuwinst). Het instrument helpt aanbestedende diensten om onderbouwde en transparante keuzes te maken en zo te voldoen aan het energie-efficiëntie-eerstbeginsel van Artikel 7 EED.",
       "warnings": [
         {
-          "severity": "yellow",
-          "text": "Let op: Momenteel geldt er geen algemene (nationale) KBA verplichting voor aanbestedingen. Wel is de Algemene MKBA-leidraad (Maatschappelijke Kosten-Batenanalyse) verplicht voor KBA's uitgevoerd door of voor de Rijksoverheid. Voor andere opdrachten kan deze leidraad als referentie dienen, zoals voor onderstaande stappen."
-        }
-      ],
-      "steps": [
-        "Beschrijf het probleem en de doelstelling: Beschrijf waarom de maatregel wordt overwogen (bijv. verduurzaming gebouwen).",
-        "Beschrijf het nulalternatief: Wat gebeurt er als de aanbestedende dienst niets doet (status quo, minimale wettelijke eis)?",
-        "Projectalternatieven: Beschrijf de energie-efficiënte varianten indien aanwezig.",
-        "Beschrijf de effecten.\n  • Directe kosten (aanschaf, installatie, onderhoud).\n  • Directe baten (lagere energiekosten, subsidies).\n  • Indirecte baten (CO₂-reductie, gezondheidswinst, productiviteit).",
-        "Monetariseren.\n  • Zet zoveel mogelijk effecten om in euro’s. \n  • Gebruik standaard waarden (bv. €100 per ton CO₂, afhankelijk van nationale richtsnoeren).",
-        "Disconteren:\n  • Reken met een discontovoet (standaard: 3% in de Algemene MKBA-leidraad) over de levensduur.",
-        "Netto contante waarde (NCW) berekenen: Vergelijk NCW van nulalternatief en projectalternatief.",
-        "Onzekerheden en scenario’s: Maak gevoeligheidsanalyses (bv. lage/hoge energieprijzen, langere/lagere levensduur).",
-        "Conclusies en aanbevelingen: Formuleer de maatschappelijke meerwaarde en motiveer keuze voor projectalternatief."
-      ]
-    },
-    {
-      "key": "lifecycle_cost_analysis",
-      "title": "Levenscycluskostenanalyse (LCC)",
-      "requirement_level": "Aanbevolen",
-      "intro": "Een levenscycluskostenanalyse (LCC) is een methode om de totale kosten van een product, dienst of werk te berekenen over de volledige levensduur. Dit gaat verder dan alleen de aanschafprijs en omvat ook gebruik, onderhoud, vervanging en einde-levensduurfase. De LCC helpt aanbestedende diensten keuzes te maken die financieel en duurzaam optimaal zijn, conform het energie-efficiëntie-eerstbeginsel van Artikel 7 EED.",
-      "warnings": [
-        {
-          "severity": "yellow",
-          "text": "Let op: Momenteel geldt er geen algemene (nationale) LCC verplichting voor aanbestedingen. De LLC wordt door de Europese Commissie en de Aanbestedingswet (art. 2.115 Aw 2012) wel expliciet genoemd als mogelijke gunningsmethode."
-        }
-      ],
-      "steps": [
-        "Definieer het object en de gebruiksduur: Beschrijf het product, dienst of werk en bepaal de verwachte levensduur (bijv. 10 jaar, 20 jaar).",
-        "Bepaal kostencategorieën:\n  • Aanschaf- en installatiekosten\n  • Energie- en gebruikskosten\n  • Onderhouds- en reparatiekosten\n  • Vervangingskosten tijdens de levensduur\n  • Einde-levensduurkosten (sloop, recycling, afvalverwerking)",
-        "Verzamel gegevens en aannames:\n  • Gebruik waar mogelijk marktprijzen of betrouwbare databronnen.\n  • Hanteer aannames transparant (bv. energieprijzen, onderhoudsfrequentie).",
-        "Bereken totale levenscycluskosten:\n  • Tel alle kostenposten op over de levensduur.\n  • Pas een discontovoet toe (standaard 3% conform Algemene MKBA-leidraad) om kosten naar netto contante waarde (NCW) te brengen.",
-        "Vergelijk alternatieven:\n  • Zet scenario's naast elkaar (bv. conventionele verlichting vs. LED).\n  • Kies de optie met de laagste NCW.",
-        "Documenteer in aanbestedingsstukken:\n  • Leg vast hoe de LCC is berekend.\n  • Neem de LCC als gunningscriterium of als onderdeel van de minimumeisen."
-      ]
-    },
-    {
-      "key": "tendernet_reporting",
-      "title": "Rapportage in Tendernet",
-      "requirement_level": "Verplicht",
-      "intro": "U moet in Tendernet rapporteren:\n\n• Hoe het energie-efficiëntie-eerst-beginsel is toegepast.\n\nOf\n\n• Waarom het energie-efficiënte-eerst-beginsel niet is toegepast.",
-      "warnings": [
-        {
           "severity": "red",
-          "text": "Let op: De rapportage in TenderNed over het (niet) toepassen van het energie-efficiëntie-eerst-beginsel is verplicht voor deze aanbesteding. Op basis van artikel 2.98 Aw 2012 controleert de Europese Commissie steekproefsgewijs of uw motivering steekhoudend is."
+          "text": "Let op: KBA is verplicht. Zie ook EED guidance."
         }
-      ]
+      ],
+      "steps_title": "Neem de volgende stappen:",
+      "steps": [
+        "Beschrijf het probleem en de doelstelling\n• Leg uit waarom de maatregel wordt overwogen (bijv. energiebesparing, verduurzaming gebouwen).\n• Benoem expliciet de beleids- en juridische context (EED-verplichtingen, nationale regelgeving).",
+        "Bepaal het nulalternatief\n• Geef weer wat er gebeurt als de aanbestedende dienst niets doet.\n• Neem hierbij de minimale naleving van wettelijke/EED-verplichtingen mee.",
+        "Ontwikkel projectalternatieven\n• Beschrijf ten minste één energie-efficiënter alternatief.\n• Licht meerdere varianten toe als die realistisch zijn.",
+        "Identificeer en specificeer de effecten\n• Kosten: investeringen, installatie, onderhoud, operationele kosten.\n• Baten (energiegerelateerd): lagere energierekening, subsidies, vermeden energie-import.\n• Baten (niet-energiegerelateerd): CO₂-reductie, luchtkwaliteit, gezondheid, comfort, productiviteit.",
+        "Monetariseer de effecten\n• Zet zoveel mogelijk effecten om in euro's.\n• Gebruik schaduwprijzen of standaardwaarden (bv. EC-handbook on external costs, CO₂-waarden volgens nationale richtsnoeren).",
+        "Pas discontering toe\n• Hanteer een discontovoet over de levensduur (bv. 3% conform Nederlandse MKBA-leidraad).",
+        "Bereken besluitvormingsindicatoren\n• Bereken de Netto Contante Waarde (NCW).\n• Bereken, indien mogelijk, ook de Interne Rentevoet (IRR).\n• Vergelijk nulalternatief en projectalternatief(en).",
+        "Voer onzekerheids- en scenarioanalyses uit\n• Test gevoeligheden voor lage/hoge energieprijzen, kortere/langere levensduur, subsidiehoogte.",
+        "Formuleer conclusies en aanbevelingen\n• Beschrijf de maatschappelijke meerwaarde.\n• Motiveer de keuze voor het voorkeursalternatief."
+      ],
+      "example_texts": [
+        {
+          "label": "Voorbeeld KBA-paragraaf – Afvaldienstverlening",
+          "text": "De gemeente overweegt de vervanging van het huidige wagenpark voor afvalinzameling om energie-efficiënter te opereren en CO₂-uitstoot te reduceren. Het probleem is dat de huidige dieselvoertuigen hoge brandstof- en onderhoudskosten opleveren en niet voldoen aan toekomstige emissienormen (probleem & doelstelling). Als nulalternatief is doorgaan met het bestaande wagenpark opgenomen, waarbij alleen minimale onderhouds- en vervangingsinvesteringen plaatsvinden (nulalternatief). Als projectalternatief wordt de aanschaf van elektrische inzamelwagens onderzocht (projectalternatief). De effecten zijn in kaart gebracht: directe kosten bestaan uit hogere investeringskosten, terwijl de baten bestaan uit lagere energiekosten, minder onderhoud en subsidieëvordelen. Niet-energiegerelateerde baten zijn de vermeden CO₂-uitstoot, stillere inzameling en verbeterde luchtkwaliteit voor bewoners. De baten zijn gemonetariseerd met gebruik van de nationale CO₂-schaduwprijs en standaardsubsidiewaarden. Bij een discontovoet van 3% levert het projectalternatief een hogere netto contante waarde op dan het nulalternatief, met tevens een positieve interne rentevoet. Gevoeligheidsanalyses tonen dat zelfs bij lage energieprijzen de maatschappelijke meerwaarde positief blijft. Conclusie is dat de overgang naar elektrische inzamelwagens de voorkeur verdient, omdat dit alternatief structureel lagere kosten, maatschappelijke baten en naleving van de EED-verplichtingen oplevert."
+        }
+      ],
+      "content_order": ["intro", "warnings", "steps", "example_texts"]
     }
   ]
 }

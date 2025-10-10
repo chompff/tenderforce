@@ -28,7 +28,7 @@ const AanbestedingsplichtCheckResult: React.FC = () => {
 
   // Debug log for URL params
   useEffect(() => {
-    // eslint-disable-next-line no-console
+     
     console.log('AanbestedingsplichtCheckResult params:', { org, userOrg, subsidy, agreement, step, search: window.location.search });
   }, [org, userOrg, subsidy, agreement, step]);
 

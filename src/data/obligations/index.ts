@@ -268,7 +268,7 @@ export const cpvToObligationMap: Record<string, string[]> = {
   // '55521000-8': ['services_new_products'], // Cateringdiensten voor particuliere huishoudens
   // '55521100-9': ['services_new_products'], // Tafeltje-dekje-diensten
   // '55521200-0': ['services_new_products'], // Maaltijdbezorging
-  // '55522000-5': ['services_new_products'], // Cateringdiensten voor vervoersondernemingen
+  '55522000-5': ['algemene_eed'], // Cateringdiensten voor vervoersondernemingen
   // '55523000-2': ['services_new_products'], // Cateringdiensten voor andere ondernemingen of instellingen
   // '55523100-3': ['services_new_products'], // Schoolmaaltijddiensten
   // '55524000-9': ['services_new_products'], // Schoolcateringdiensten
