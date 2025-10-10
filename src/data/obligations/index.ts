@@ -6,6 +6,7 @@ import energyLabelData from './energy-label.json';
 import servicesData from './services.json';
 import algemeneEedData from './algemene-eed.json';
 import gppFurnitureData from './gpp-furniture.json';
+import standardObligationsData from './standard-obligations.json';
 
 // Type-safe obligation imports
 const tyres: Obligation = tyresData as Obligation;
@@ -15,6 +16,7 @@ const energyLabel: Obligation = energyLabelData as Obligation;
 const services: Obligation = servicesData as Obligation;
 const algemeneEed: Obligation = algemeneEedData as Obligation;
 const gppFurniture: Obligation = gppFurnitureData as Obligation;
+const standardObligations: Obligation = standardObligationsData as Obligation;
 
 // Map of obligation IDs to obligation data
 export const obligations: Record<string, Obligation> = {
@@ -25,6 +27,7 @@ export const obligations: Record<string, Obligation> = {
   services_new_products: services,
   algemene_eed: algemeneEed,
   'gpp-furniture': gppFurniture,
+  standard_obligations: standardObligations,
 };
 
 // Map of CPV codes to obligation IDs
@@ -269,31 +272,38 @@ export const cpvToObligationMap: Record<string, string[]> = {
 
 // Helper function to get obligations by CPV code
 export function getObligationsByCpv(cpvCode: string): Obligation[] {
+  let result: Obligation[] = [];
+
   // First try exact match
   const obligationIds = cpvToObligationMap[cpvCode];
-  
+
   if (obligationIds) {
-    return obligationIds.map(id => obligations[id]).filter(Boolean);
-  }
-  
-  // If no exact match, try parent codes (remove last digit repeatedly)
-  let parentCode = cpvCode;
-  while (parentCode.length > 2) {
-    // Remove last character if it's a digit
-    if (parentCode[parentCode.length - 1] !== '0') {
-      parentCode = parentCode.slice(0, -1) + '0';
-    } else {
-      parentCode = parentCode.slice(0, -1);
+    result = obligationIds.map(id => obligations[id]).filter(Boolean);
+  } else {
+    // If no exact match, try parent codes (remove last digit repeatedly)
+    let parentCode = cpvCode;
+    while (parentCode.length > 2) {
+      // Remove last character if it's a digit
+      if (parentCode[parentCode.length - 1] !== '0') {
+        parentCode = parentCode.slice(0, -1) + '0';
+      } else {
+        parentCode = parentCode.slice(0, -1);
+      }
+
+      const parentObligationIds = cpvToObligationMap[parentCode];
+      if (parentObligationIds) {
+        result = parentObligationIds.map(id => obligations[id]).filter(Boolean);
+        break;
+      }
     }
-    
-    const parentObligationIds = cpvToObligationMap[parentCode];
-    if (parentObligationIds) {
-      return parentObligationIds.map(id => obligations[id]).filter(Boolean);
-    }
   }
-  
-  // No obligations found for this CPV code
-  return [];
+
+  // Always append standard_obligations if there are any obligations
+  if (result.length > 0 && obligations.standard_obligations) {
+    result.push(obligations.standard_obligations);
+  }
+
+  return result;
 }
 
 // Helper function to get a specific obligation by ID

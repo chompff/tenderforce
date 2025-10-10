@@ -10,6 +10,7 @@ import { ObligationHeader } from '@/components/obligations/ObligationHeader';
 import { LegalReferences } from '@/components/obligations/LegalReferences';
 import { ObligationSection } from '@/components/obligations/ObligationSection';
 import { WarningAlert } from '@/components/obligations/WarningAlert';
+import { TechnicalInfeasibility } from '@/components/TechnicalInfeasibility';
 
 const ResultsDynamic: React.FC = () => {
   const { code } = useParams<{ code: string }>();
@@ -356,6 +357,13 @@ const ResultsDynamic: React.FC = () => {
                 </p>
               </div>
             </div>
+          </div>
+        )}
+
+        {/* Technical Infeasibility Section */}
+        {estimationAnswer !== 'no' && obligations.length > 0 && (
+          <div className="mt-6 animate-fade-in" style={{ animationDelay: '1200ms', animationDuration: '1000ms' }}>
+            <TechnicalInfeasibility />
           </div>
         )}
 

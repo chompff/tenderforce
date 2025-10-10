@@ -69,6 +69,7 @@ export interface ObligationSection {
   intro: string;
   warnings?: Warning[];
   steps?: string[];
+  steps_ordered?: boolean;
   example_texts?: ExampleText[];
   tabbed_examples?: TabbedExamples;
   gunningscriteria_tabs?: GunningscriteriaTabs;

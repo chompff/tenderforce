@@ -47,8 +47,8 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
               </h3>
               <div className="flex items-center gap-2">
                 {showGppBadge && section.key === 'scope' && (
-                  <Badge 
-                    variant="outline" 
+                  <Badge
+                    variant="outline"
                     className="text-xs px-2 py-0.5"
                     style={{ backgroundColor: '#DCFCE7', color: '#166534', borderColor: '#DCFCE7' }}
                   >
@@ -56,16 +56,16 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                   </Badge>
                 )}
                 {section.key === 'scope' && (
-                  <Badge 
-                    variant="outline" 
+                  <Badge
+                    variant="outline"
                     className={`text-xs px-2 py-0.5 ${getLevelColor(section.requirement_level)}`}
                   >
                     {section.requirement_level}
                   </Badge>
                 )}
                 {section.key === 'technical_specs' && (
-                  <Badge 
-                    variant="outline" 
+                  <Badge
+                    variant="outline"
                     className={`text-xs px-2 py-0.5 ${getLevelColor(section.requirement_level)}`}
                   >
                     {section.requirement_level}
@@ -74,16 +74,16 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                 {section.key === 'gunningscriteria' && (
                   <>
                     {showGppBadge && (
-                      <Badge 
-                        variant="outline" 
+                      <Badge
+                        variant="outline"
                         className="text-xs px-2 py-0.5"
                         style={{ backgroundColor: '#DCFCE7', color: '#166534', borderColor: '#DCFCE7' }}
                       >
                         GPP
                       </Badge>
                     )}
-                    <Badge 
-                      variant="outline" 
+                    <Badge
+                      variant="outline"
                       className={`text-xs px-2 py-0.5 ${getLevelColor(section.requirement_level)}`}
                     >
                       {section.requirement_level}
@@ -93,16 +93,16 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                 {section.key === 'execution_conditions' && (
                   <>
                     {showGppBadge && (
-                      <Badge 
-                        variant="outline" 
+                      <Badge
+                        variant="outline"
                         className="text-xs px-2 py-0.5"
                         style={{ backgroundColor: '#DCFCE7', color: '#166534', borderColor: '#DCFCE7' }}
                       >
                         GPP
                       </Badge>
                     )}
-                    <Badge 
-                      variant="outline" 
+                    <Badge
+                      variant="outline"
                       className={`text-xs px-2 py-0.5 ${getLevelColor(section.requirement_level)}`}
                     >
                       {section.requirement_level}
@@ -116,11 +116,6 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                 )}
               </div>
             </div>
-            {!isOpen && section.intro && (
-              <p className="text-sm text-gray-600 mt-2 text-left line-clamp-2 whitespace-pre-line">
-                {section.intro}
-              </p>
-            )}
           </div>
         </CollapsibleTrigger>
 
@@ -133,13 +128,16 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
               </div>
             )}
 
-            {/* Warnings */}
-            {section.warnings && <WarningAlert warnings={section.warnings} />}
-
             {/* Steps */}
             {section.steps && (
-              <StepsList steps={section.steps} title="Neem de volgende stappen:" />
+              <StepsList
+                steps={section.steps}
+                ordered={section.steps_ordered !== false}
+              />
             )}
+
+            {/* Warnings */}
+            {section.warnings && <WarningAlert warnings={section.warnings} />}
 
             {/* Example Texts */}
             {section.example_texts && (
