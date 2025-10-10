@@ -182,6 +182,14 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                     </Badge>
                   </>
                 )}
+                {section.key === 'tenderned_reporting' && (
+                  <Badge
+                    variant="outline"
+                    className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}
+                  >
+                    {section.requirement_level}
+                  </Badge>
+                )}
                 {section.key === 'execution_conditions' && (
                   <>
                     {section.badges?.map((badge) => {
