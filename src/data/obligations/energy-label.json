@@ -45,7 +45,7 @@
     {
       "key": "execution_conditions",
       "title": "Uitvoeringsvoorwaarden",
-      "requirement_level": "aanbevolen",
+      "requirement_level": "optioneel",
       "badges": ["ENERGIELABEL"],
       "intro": "De contractuele uitvoeringsvoorwaarden borgen dat de opdrachtnemer bij levering aantoont dat de producten daadwerkelijk behoren tot de hoogste twee energieklassen die feitelijk op de markt beschikbaar zijn.",
       "content_order": ["intro", "warnings", "steps", "contractual_conditions"],

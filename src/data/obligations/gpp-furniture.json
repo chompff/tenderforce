@@ -22,7 +22,7 @@
     {
       "key": "scope",
       "title": "Bepaling scope opdracht",
-      "requirement_level": "aanbevolen",
+      "requirement_level": "optioneel",
       "intro": "Wanneer een aanbestedende dienst meubels wil aankopen of huren, geldt volgens de EED dat deze binnen de reikwijdte van de GPP-criteria voor meubels vallen. De aanbestedende dienst is verplicht deze milieucriteria op te nemen in de aanbestedingsstukken.\n\nDe GPP onderscheidt drie soorten opdrachten:\n\n- Nieuw meubilair: productie van nieuwe meubels met milieuvriendelijke materialen en processen.\n- Refurbished meubilair: bestaande meubels worden opgeknapt, aangepast of opnieuw gestoffeerd.\n- End-of-life verwerking: afvoer, hergebruik of recycling van oude meubels.\n\nDoor vooraf na te denken over welk type opdracht het beste past bij de doelstelling en context van je organisatie, voldoe je aan de verplichting van de EED én stuur je gericht op milieu-impact.",
       "warnings": [
         {
@@ -42,7 +42,7 @@
     {
       "key": "type_opdracht",
       "title": "Type opdracht",
-      "requirement_level": "aanbevolen",
+      "requirement_level": "optioneel",
       "intro": "Bij aanbestedingen voor kantoormeubilair wordt vaak automatisch gekozen voor nieuw meubilair, zonder dat bewust wordt gekeken naar andere duurzame opties. De GPP-criteria vragen je om deze keuze bewust te maken aan de hand van duurzaamheidsoverwegingen. GPP onderscheidt drie soorten opdrachten:\n\n- Nieuw meubilair: productie van nieuwe meubels met milieuvriendelijke materialen en processen.\n- Refurbished meubilair: bestaande meubels worden opgeknapt, aangepast of opnieuw gestoffeerd.\n- End-of-life verwerking: afvoer, hergebruik of recycling van oude meubels.\n\nDoor vooraf na te denken over welk type opdracht het beste past bij de doelstelling en context van je organisatie, voldoe je aan de verplichting van de EED én stuur je gericht op milieu-impact.",
       "warnings": [],
       "steps": [],
@@ -84,7 +84,7 @@
     {
       "key": "functionele_behoefte",
       "title": "Functionele behoefte",
-      "requirement_level": "aanbevolen",
+      "requirement_level": "optioneel",
       "intro": "In deze stap beschrijf je wat het meubilair functioneel moet kunnen. Denk aan ergonomie, comfort, onderhoudsgemak, aanpasbaarheid (bijv. modulair), gebruiksduur of geschiktheid voor intensief gebruik. Door deze eisen slim te formuleren, kun je sturen op duurzaamheid zonder over te specificeren. Zo voorkom je dat duurzaamheid botst met functionele eisen, en vergroot je de ruimte voor innovatieve oplossingen.",
       "warnings": [],
       "steps": [],
@@ -110,7 +110,7 @@
     {
       "key": "levenscyclusbenadering",
       "title": "Levenscyclusbenadering",
-      "requirement_level": "aanbevolen",
+      "requirement_level": "optioneel",
       "intro": "De levenscyclusbenadering kijkt verder dan alleen de aanschafprijs. Je houdt hierbij rekening met de milieu-impact en kosten over de hele levensduur van het meubilair: van grondstoffenwinning en productie, tot gebruik, onderhoud en afdanking. Door in deze fase al levensduur, repareerbaarheid en hergebruik mee te nemen, kun je sturen op lagere milieukosten en minder verspilling.",
       "warnings": [],
       "steps": [],
@@ -136,7 +136,7 @@
     {
       "key": "reikwijdte_opdracht",
       "title": "Reikwijdte van de opdracht",
-      "requirement_level": "aanbevolen",
+      "requirement_level": "optioneel",
       "intro": "De reikwijdte bepaalt welke producten, diensten en nevenactiviteiten binnen de aanbesteding vallen. Bij kantoorinrichting kun je denken aan losse meubels, vaste inrichting, transport, plaatsing, onderhoud, en afvoer van bestaand meubilair. Door de reikwijdte slim te kiezen, vergroot je de impact op circulariteit en milieu, én kun je beter sturen op samenhangende prestaties. De Europese GPP-criteria helpen bij het expliciteren van een duurzame scope.",
       "warnings": [],
       "steps": [],
@@ -276,7 +276,7 @@
     {
       "key": "gunningscriteria",
       "title": "Gunningscriteria",
-      "requirement_level": "aanbevolen",
+      "requirement_level": "optioneel",
       "intro": "Gebruik gunningscriteria om bepaalde prestaties extra te belonen. De onderstaande voorbeelden zijn optioneel en helpen je aanbesteding aan te laten sluiten op je ambities.",
       "warnings": [
         {
@@ -483,7 +483,7 @@
     {
       "key": "execution_conditions",
       "title": "Contractuele uitvoeringsvoorwaarden",
-      "requirement_level": "aanbevolen",
+      "requirement_level": "optioneel",
       "intro": "De toepasselijke GPP-criteria bevatten aanbevelingen voor contractuele voorwaarden op het gebied van arbeidsomstandigheden, sociale normen en milieunormen. Deze zijn niet verplicht, maar dragen bij aan circulaire of klimaatvriendelijke doelstellingen en sluiten aan bij het Rijksbeleid voor maatschappelijk verantwoord inkopen.",
       "warnings": [
         {

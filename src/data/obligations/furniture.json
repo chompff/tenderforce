@@ -80,7 +80,7 @@
     {
       "key": "gunningscriteria",
       "title": "Gunningscriteria",
-      "requirement_level": "aanbevolen",
+      "requirement_level": "optioneel",
       "intro": "Gebruik gunningscriteria om verder te gaan dan de minimale technische specificaties en te selecteren op beste prijs-kwaliteitverhouding.",
       "example_texts": [
         {
@@ -92,7 +92,7 @@
     {
       "key": "execution_conditions",
       "title": "Contractuele uitvoeringsvoorwaarden",
-      "requirement_level": "aanbevolen",
+      "requirement_level": "optioneel",
       "intro": "Stel voorwaarden aan de uitvoering van het contract om duurzaamheid tijdens de hele contractperiode te waarborgen.",
       "contractual_conditions": [
         {

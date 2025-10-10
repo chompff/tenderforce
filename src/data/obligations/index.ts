@@ -197,7 +197,7 @@ export const cpvToObligationMap: Record<string, string[]> = {
   
   // Services CPV codes that may involve purchasing new products (with full codes)
   // Cleaning services
-  // '90900000-6': ['services_new_products'], // Schoonmaak- en sanitaire diensten
+  '90900000-6': ['services_new_products'], // Schoonmaak- en sanitaire diensten
   // '90910000-9': ['services_new_products'], // Schoonmaakdiensten
   // '90911000-6': ['services_new_products'], // Schoonmaak van accommodatie, gebouwen en ramen
   // '90911200-8': ['services_new_products'], // Schoonmaak van gebouwen
