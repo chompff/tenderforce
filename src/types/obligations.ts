@@ -62,6 +62,8 @@ export interface ContractualConditionTabs {
 
 export type SectionKey = 'scope' | 'type_opdracht' | 'functionele_behoefte' | 'levenscyclusbenadering' | 'reikwijdte_opdracht' | 'technical_specs' | 'gunningscriteria' | 'execution_conditions';
 
+export type ContentBlockType = 'intro' | 'warnings' | 'steps' | 'example_texts' | 'tabbed_examples' | 'specs' | 'gunningscriteria_tabs' | 'contractual_conditions' | 'contractual_conditions_tabs';
+
 export interface ObligationSection {
   key: SectionKey;
   title: string;
@@ -77,6 +79,7 @@ export interface ObligationSection {
   specs?: Spec[];
   contractual_conditions?: ContractualCondition[];
   footer_note?: string;
+  content_order?: ContentBlockType[];
 }
 
 export interface Obligation {

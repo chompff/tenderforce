@@ -3,7 +3,7 @@
   "archetype": "energy_label",
   "title": "Energie-etikettering verplicht",
   "summary": "Op basis van de gekozen CPV-code bent u [volgens de EED](popup:WETTELIJKE BASIS||Zij kopen, in het geval van producten die onder een gedelegeerde handeling krachtens Verordening (EU) 2017/1369 of een daaraan gerelateerde uitvoeringsrichtlijn van de Commissie vallen, alleen die producten aan welke voldoen aan het criterium van artikel 7, lid 2,[1] van die verordening.||Artikel 7, lid 2 (EU) 2017/1369) verplicht alleen producten aan te schaffen die behoren tot de hoogste twee significant bevolkte energie-efficiëntieklassen. Zie hiervoor het Europees productregister voor energie-etikettering [EPREL](https://eprel.ec.europa.eu/screen/home).",
-  "badges": ["EED", "EU"],
+  "badges": ["ENERGIELABEL", "EED", "EU"],
   "legal_references": [
     {
       "label": "Verordening (EU) 2017/1369",
@@ -13,10 +13,10 @@
   ],
   "sections": [
     {
-      "key": "scope",
-      "title": "Bepaling scope opdracht",
-      "requirement_level": "Verplicht",
-      "intro": "Volgens de herziene EED moet bij boven-drempelige aanbestedingen alleen worden gevraagd naar producten met een energie-efficiëntieklasse die behoort tot de twee significant bevolkte klassen (uit EPREL).",
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "intro": "Volgens de herziene EED moet bij bovendrempelige aanbestedingen alleen worden gevraagd naar producten met een energie-efficiëntieklasse die behoort tot de hoogste twee [significant bevolkte](popup:BEGRIPPEN||De term \"significant bevolkt\" verwijst naar energie-efficiëntieklassen die een aanzienlijk aantal producten bevatten. Bijvoorbeeld, als producten in de klassen A en B slechts 2% van de markt uitmaken, worden deze niet als significant bevolkt beschouwd. In dat geval zouden de klassen D en E als de twee hoogst bevolkte klassen worden beschouwd en dus de minimale vereiste zijn voor aanbestedingen.||) klassen. U moet daarom in de technische specificaties vastleggen dat uitsluitend de meest energie-efficiënte producten worden toegelaten.",
       "warnings": [
         {
           "severity": "red",
@@ -24,49 +24,21 @@
         }
       ],
       "steps": [
-        "Vermeld in de opdrachtomschrijving dat de levering onder de reikwijdte van de energie-etiketteringsregels valt.",
-        "Gebruik EPREL om de twee hoogste energieklasses van je product op te vinden.."
+        "Vermeld dat de levering onder de reikwijdte van de [energie-etiketteringsregels valt](popup:WETTELIJKE BASIS||Zij kopen, in het geval van producten die onder een gedelegeerde handeling krachtens Verordening (EU) 2017/1369 of een daaraan gerelateerde uitvoeringsrichtlijn van de Commissie vallen, alleen die producten aan welke voldoen aan het criterium van artikel 7, lid 2,[1] van die verordening.||Artikel 7, lid 2 (EU) 2017/1369).",
+        "Ga naar de [EPREL website](https://eprel.ec.europa.eu/screen/home).",
+        "Klik op de relevante productcategorie.",
+        "Noteer voor elke categorie hoeveel resultaten er zijn. Gebruik het filter.",
+        "Noteer de hoogste twee meest [significant bevolkte](popup:BEGRIPPEN||De term \"significant bevolkt\" verwijst naar energie-efficiëntieklassen die een aanzienlijk aantal producten bevatten. Bijvoorbeeld, als producten in de klassen A en B slechts 2% van de markt uitmaken, worden deze niet als significant bevolkt beschouwd. In dat geval zouden de klassen D en E als de twee hoogst bevolkte klassen worden beschouwd en dus de minimale vereiste zijn voor aanbestedingen.||) energie-efficiëntieklassen.",
+        "Neem de verplichting op dat uitsluitend producten worden toegestaan uit deze twee energieklassen."
       ],
       "example_texts": [
         {
-          "label": "Voorbeeldtekst",
-          "text": "Deze opdracht betreft de levering van [productgroep, bijvoorbeeld koelkasten of verlichting]. Dit product valt onder de toepassing van Verordening (EU) 2017/1369 inzake energie-etikettering en de daarbij behorende gedelegeerde handelingen."
-        }
-      ]
-    },
-    {
-      "key": "technical_specs",
-      "title": "Technische specificaties",
-      "requirement_level": "verplicht",
-      "intro": "De aanbestedende dienst moet in de technische specificaties vastleggen dat uitsluitend de meest energie-efficiënte producten worden toegelaten. \n\nVolgens artikel 7, lid 2 van Verordening (EU) 2017/1369 betekent dit dat alleen producten in de hoogste twee energieklassen die feitelijk op de markt beschikbaar zijn mogen worden aangeboden.",
-      "warnings": [
-        {
-          "severity": "red",
-          "text": "Zonder deze bepaling in de technische specificaties kan de eis niet afdwingbaar worden toegepast bij de beoordeling van inschrijvingen."
-        }
-      ],
-      "steps": [
-        "Neem de verplichting op dat uitsluitend producten uit de hoogste twee energieklassen die feitelijk op de markt beschikbaar zijn, worden toegestaan.",
-        "Verwijs expliciet naar artikel 7(2) van Verordening (EU) 2017/1369."
-      ],
-      "specs": [
-        {
-          "code": "TS1",
-          "text": "Het aangeboden product moet behoren tot ten minste de hoogste twee energieklassen die feitelijk op de markt beschikbaar zijn, conform artikel 7(2) van Verordening (EU) 2017/1369.",
-          "legal_basis": "Artikel 7, lid 2 van Verordening (EU) 2017/1369",
-          "requirement_level": "verplicht"
+          "label": "Toon voorbeeld bepalen energie-efficiëntieklassen",
+          "text": "Een aanbestedende dienst wil verwarmingsketels voor vaste brandstoffen aanbesteden.\n\n\nVolgens EPREL zijn er voor deze categorie de volgende ketels beschikbaar:\n\n![Energy Classes](/energy-classes.png)"
         },
         {
-          "code": "",
-          "text": "Het aangeboden product moet behoren tot de hoogste energieklasse die feitelijk op de markt beschikbaar is, conform artikel 7(2) Verordening (EU) 2017/1369. De aanbestedende motiveert deze keuze als volgt: [in verband met duurzaamheidsbeleid/strategische doelstellingen].",
-          "legal_basis": "Artikel 42 en 67 Richtlijn 2014/24/EU",
-          "requirement_level": "optioneel"
-        }
-      ],
-      "example_texts": [
-        {
-          "label": "Motivatie-hint",
-          "text": "De aanbestedende dienst motiveert deze keuze bijvoorbeeld in verband met duurzaamheidsdoelstellingen/strategische doelstellingen."
+          "label": "Toon voorbeeld technische specificatie",
+          "text": "**Voorbeeldtekst**\n\nHet aangeboden product moet behoren tot de energieklassen [vul hier de hoogste twee meest significant bevolkte energie-efficiëntieklassen in], conform artikel 7, lid 2 van Verordening (EU) 2017/1369."
         }
       ]
     },
@@ -75,6 +47,7 @@
       "title": "Uitvoeringsvoorwaarden",
       "requirement_level": "aanbevolen",
       "intro": "De contractuele uitvoeringsvoorwaarden borgen dat de opdrachtnemer bij levering aantoont dat de producten daadwerkelijk behoren tot de hoogste twee energieklassen die feitelijk op de markt beschikbaar zijn.",
+      "content_order": ["intro", "warnings", "steps", "contractual_conditions"],
       "warnings": [
         {
           "severity": "yellow",

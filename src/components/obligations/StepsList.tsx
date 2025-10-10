@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle } from 'lucide-react';
+import { SummaryWithToggleLinks } from './SummaryWithToggleLinks';
 
 interface StepsListProps {
   steps: string[];
@@ -24,7 +25,9 @@ export const StepsList: React.FC<StepsListProps> = ({ steps, title, ordered = tr
                   {index + 1}
                 </span>
               </div>
-              <p className="text-sm text-gray-700 pt-1 whitespace-pre-line">{step}</p>
+              <div className="text-sm text-gray-700 pt-1 whitespace-pre-line">
+                <SummaryWithToggleLinks text={step} />
+              </div>
             </li>
           ))}
         </ol>
@@ -32,7 +35,7 @@ export const StepsList: React.FC<StepsListProps> = ({ steps, title, ordered = tr
         <ul className="space-y-2 list-disc list-inside">
           {steps.map((step, index) => (
             <li key={index} className="text-sm text-gray-700 whitespace-pre-line">
-              {step}
+              <SummaryWithToggleLinks text={step} />
             </li>
           ))}
         </ul>

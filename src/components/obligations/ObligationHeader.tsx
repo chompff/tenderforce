@@ -18,19 +18,30 @@ export const ObligationHeader: React.FC<ObligationHeaderProps> = ({ obligation, 
           {obligation.badges.map((badge) => {
             if (badge === 'EU') {
               return (
-                <img 
+                <img
                   key={badge}
-                  src="/eu-flag.png" 
-                  alt="EU Flag" 
+                  src="/eu-flag.png"
+                  alt="EU Flag"
                   className="h-5 w-auto"
                 />
               );
+            } else if (badge === 'ENERGIELABEL') {
+              return (
+                <Badge
+                  key={badge}
+                  variant="outline"
+                  className="text-xs uppercase"
+                  style={{ backgroundColor: '#D1FAE5', color: '#065F46', borderColor: '#D1FAE5' }}
+                >
+                  {badge}
+                </Badge>
+              );
             } else if (badge === 'GPP') {
               return (
-                <Badge 
-                  key={badge} 
+                <Badge
+                  key={badge}
                   variant="outline"
-                  className="text-xs"
+                  className="text-xs uppercase"
                   style={{ backgroundColor: '#DCFCE7', color: '#166534', borderColor: '#DCFCE7' }}
                 >
                   {badge}
@@ -38,10 +49,10 @@ export const ObligationHeader: React.FC<ObligationHeaderProps> = ({ obligation, 
               );
             } else {
               return (
-                <Badge 
-                  key={badge} 
+                <Badge
+                  key={badge}
                   variant="outline"
-                  className="text-xs"
+                  className="text-xs uppercase"
                   style={{ backgroundColor: '#DBEAFE', color: '#1E40AF', borderColor: '#DBEAFE' }}
                 >
                   {badge}
