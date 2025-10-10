@@ -13,60 +13,64 @@
   ],
   "sections": [
     {
-      "key": "scope",
-      "title": "Bepaling scope opdracht",
-      "requirement_level": "verplicht",
-      "intro": "In de opdrachtomschrijving moet worden vermeld dat het product onder de reikwijdte van de Ecodesign-richtlijn en uitvoerings-verordeningen valt. Dit geld voor energiegerelateerde producten zoals verlichting, huishoudelijke apparaten, ICT- en netwerkapparatuur, motoren, pompen en verwarmingssystemen.\n\nEr kan overlap bestaan tussen Bijlage IV, a (energielabel) en Bijlage IV, b (ecodesign). Bijvoorbeeld bij wasdrogers: Deze productgroep valt én onder de EU-energielabelregels (Reg. (EU) 2017/1369 i.c.m. productmaatregel voor wasdrogers) én onder de ecodesign-uitvoeringsmaatregel voor wasdrogers. Bij overlap zijn zowel Bijlage IV, a als b van de EED van toepassing.",
-      "warnings": [
-        {
-          "severity": "red",
-          "text": "Zonder deze scopebepaling blijft onduidelijk of de ecodesign-eisen van toepassing zijn en kan dit leiden tot onjuiste of niet-afdwingbare specificaties."
-        }
-      ],
-      "steps": [
-        "Bevestig in de scope dat het product valt onder de toepassingssfeer van de Ecodesign-richtlijn 2009/125/EG.",
-        "[OPTIONEEL] In geval van overlap met energielabels of GPP, bevestig dat het product onder het energielabel-kader valt.",
-        "Noem de bijbehorende uitvoeringsverordening (nummer en titel)."
-      ],
-      "example_texts": [
-        {
-          "label": "Voorbeeldtekst",
-          "text": "Deze opdracht betreft de levering van [productgroep, bijvoorbeeld servers of verlichting]. Dit product valt onder de toepassingssfeer van de Ecodesign-richtlijn 2009/125/EG en de bijbehorende uitvoeringsverordening [nummer en titel]."
-        },
-        {
-          "label": "Voorbeeldtekst bij overlap met energielabels (Artikel A)",
-          "text": "Deze opdracht betreft de levering van huishoudelijke wasdrogers. De productgroep valt onder de EU-energielabelverordening (2017/1369, met de specifieke maatregel voor wasdrogers) en onder de ecodesign-uitvoeringsmaatregel voor wasdrogers. Daarom zijn de energie-etiketterings- én ecodesignverplichtingen uit Bijlage IV van Richtlijn (EU) 2023/1791 van toepassing."
-        }
-      ]
-    },
-    {
       "key": "technical_specs",
       "title": "Technische specificaties",
       "requirement_level": "verplicht",
       "badges": ["ECODESIGN"],
-      "intro": "Aanbestedende diensten zijn verplicht uitsluitend producten aan te schaffen die voldoen aan de geldende Ecodesign-eisen. Deze eisen zijn vastgelegd in Richtlijn 2009/125/EG en de bijbehorende product-specifieke uitvoeringsverordeningen.",
+      "intro": "Aanbestedende diensten zijn verplicht te voldoen aan de geldende ecodesign vereisten. Deze eisen zijn vastgelegd in verschillende product-specifieke (uitvoerings)verordeningen.",
       "warnings": [
         {
           "severity": "red",
-          "text": "Zonder deze bepaling in de technische specificaties kan de eis niet afdwingbaar worden toegepast bij de beoordeling van inschrijvingen."
+          "text": "Als de ecodesignvereisten niet worden opgenomen in de aanbestedingsstukken, kan het voorkomen dat producten worden toegelaten die later niet blijken te voldoen aan de EU-regels."
         }
       ],
       "steps": [
-        "Pak de bijbehorende uitvoeringsverordening die relevant is voor uw CPV code.",
-        "Neem de minimum-energieprestatie-eisen en aanvullende eisen op in uw bestek.",
-        "U kunt ook direct verwijzen naar de uitvoeringsverordening."
+        "Neem op in de aanbestedingsdocumenten dat het product valt onder de toepassingsfeer van de Ecodesign-richtlijn 2009/125/EG."
       ],
       "example_texts": [
         {
           "label": "Voorbeeldtekst",
-          "text": "Het aangeboden product moet voldoen aan de minimum-energieprestatie-eisen en aanvullende eisen die zijn vastgesteld in de toepasselijke uitvoeringsverordening krachtens Richtlijn 2009/125/EG (Ecodesign). Voor [productgroep X] geldt [Verordening (EU) XXXX/XXXX]."
+          "text": "Deze opdracht betreft de levering van [productgroep]. Dit product valt onder de toepassingsfeer van de Ecodesign-richtlijn 2009/125/ EG en de bijbehorende uitvoeringsverordening [nummer en titel]."
         }
-      ]
+      ],
+      "product_links": [
+        {"label": "Verlichting (lichtbronnen + besturingsapparatuur)", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32019R2020"},
+        {"label": "Industriële ventilatoren", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32011R0327"},
+        {"label": "Waterpompen", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32012R0547"},
+        {"label": "Computers (desktop/laptop/thin client)", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32013R0617"},
+        {"label": "Elektronische beeldschermen", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32019R2021"},
+        {"label": "Huishoudelijke koelkasten/vriezers", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32019R2019"},
+        {"label": "Koelapparatuur met directe verkoopfunctie (vitrines, vending)", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32019R2024"},
+        {"label": "Stofzuigers", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32013R0666"},
+        {"label": "Huishoudelijke wasmachines en was-droogcombi's", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32019R2023"},
+        {"label": "Ventilatie-units (residentieel/niet-residentieel)", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32014R1253"},
+        {"label": "Ruimteverwarming op vaste brandstof (lokaal)", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32015R1185"},
+        {"label": "Waterverwarmers en warmwateropslag", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32013R0814"},
+        {"label": "Lasapparatuur", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32019R1784"},
+        {"label": "Elektrische motoren en variabele snelheidsregelaars (VSD)", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32019R1781"},
+        {"label": "Circulatiepompen", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32012R0622"},
+        {"label": "Externe voedingen / adapters", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32019R1782"},
+        {"label": "Servers en dataopslagproducten", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32019R0424"},
+        {"label": "Kooktoestellen (ovens, kookplaten, afzuigkappen)", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32014R0066"},
+        {"label": "Professionele koelapparatuur", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32015R1095"},
+        {"label": "Huishoudelijke vaatwassers", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32019R2022"},
+        {"label": "Airconditioners en comfortventilatoren", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32012R0206"},
+        {"label": "Huishoudelijke droogtrommels/wasdrogers", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32012R0932"},
+        {"label": "Lokale ruimteverwarmers", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32015R1188"},
+        {"label": "Verwarmingsketels op vaste brandstof", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32015R1189"},
+        {"label": "Verwarmingsinstallaties voor ruimten (boilers/warmtepompen/combi)", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32013R0813"},
+        {"label": "Stand-by en uit-modus (horizontale eis)", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32013R0801"}
+      ],
+      "additional_steps": [
+        "Kies hieronder welke product-specifieke (uitvoerings)verordeningen op uw aanbesteding van toepassing is.",
+        "Neem de ecodesign vereisten uit de relevante (uitvoerings)verordeningen op in de aanbestedingsdocumenten."
+      ],
+      "content_order": ["intro", "warnings", "steps", "example_texts", "product_links", "additional_steps"]
     },
     {
       "key": "execution_conditions",
       "title": "Uitvoeringsvoorwaarden",
-      "requirement_level": "aanbevolen",
+      "requirement_level": "optioneel",
       "badges": ["ECODESIGN"],
       "intro": "U bent verplicht uitsluitend producten te kopen die voldoen aan de geldende Ecodesign-verordeningen. Omdat de daadwerkelijke controle plaatsvindt bij de levering, moet dit via contractuele voorwaarden geborgd worden.",
       "warnings": [

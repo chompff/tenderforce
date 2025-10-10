@@ -6,9 +6,10 @@ interface StepsListProps {
   steps: string[];
   title?: string;
   ordered?: boolean;
+  startNumber?: number;
 }
 
-export const StepsList: React.FC<StepsListProps> = ({ steps, title, ordered = true }) => {
+export const StepsList: React.FC<StepsListProps> = ({ steps, title, ordered = true, startNumber = 1 }) => {
   if (!steps || steps.length === 0) return null;
 
   return (
@@ -22,7 +23,7 @@ export const StepsList: React.FC<StepsListProps> = ({ steps, title, ordered = tr
             <li key={index} className="flex gap-3">
               <div className="flex-shrink-0 w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center">
                 <span className="text-sm font-semibold text-blue-700">
-                  {index + 1}
+                  {index + startNumber}
                 </span>
               </div>
               <div className="text-sm text-gray-700 pt-1 whitespace-pre-line">

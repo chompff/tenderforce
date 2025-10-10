@@ -14,6 +14,11 @@ export interface ExampleText {
   text: string;
 }
 
+export interface ProductLink {
+  label: string;
+  url: string;
+}
+
 export interface Spec {
   code: string;
   text: string;
@@ -62,12 +67,12 @@ export interface ContractualConditionTabs {
 
 export type SectionKey = 'scope' | 'type_opdracht' | 'functionele_behoefte' | 'levenscyclusbenadering' | 'reikwijdte_opdracht' | 'technical_specs' | 'gunningscriteria' | 'execution_conditions';
 
-export type ContentBlockType = 'intro' | 'warnings' | 'steps' | 'example_texts' | 'tabbed_examples' | 'specs' | 'gunningscriteria_tabs' | 'contractual_conditions' | 'contractual_conditions_tabs';
+export type ContentBlockType = 'intro' | 'warnings' | 'steps' | 'example_texts' | 'tabbed_examples' | 'specs' | 'gunningscriteria_tabs' | 'contractual_conditions' | 'contractual_conditions_tabs' | 'product_links' | 'additional_steps';
 
 export interface ObligationSection {
   key: SectionKey;
   title: string;
-  requirement_level: 'verplicht' | 'aanbevolen';
+  requirement_level: 'verplicht' | 'optioneel';
   intro: string;
   badges?: string[];
   warnings?: Warning[];
@@ -79,6 +84,8 @@ export interface ObligationSection {
   contractual_conditions_tabs?: ContractualConditionTabs;
   specs?: Spec[];
   contractual_conditions?: ContractualCondition[];
+  product_links?: ProductLink[];
+  additional_steps?: string[];
   footer_note?: string;
   content_order?: ContentBlockType[];
 }

@@ -30,7 +30,7 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
     switch (level.toLowerCase()) {
       case 'verplicht':
         return 'bg-red-100 text-red-800 border-red-200';
-      case 'aanbevolen':
+      case 'optioneel':
         return 'bg-yellow-100 text-yellow-800 border-yellow-200';
       default:
         return 'bg-gray-100 text-gray-800 border-gray-200';
@@ -59,7 +59,7 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                 {section.key === 'scope' && (
                   <Badge
                     variant="outline"
-                    className={`text-xs px-2 py-0.5 ${getLevelColor(section.requirement_level)}`}
+                    className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}
                   >
                     {section.requirement_level}
                   </Badge>
@@ -94,7 +94,7 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                     })}
                     <Badge
                       variant="outline"
-                      className={`text-xs px-2 py-0.5 ${getLevelColor(section.requirement_level)}`}
+                      className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}
                     >
                       {section.requirement_level}
                     </Badge>
@@ -113,7 +113,7 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                     )}
                     <Badge
                       variant="outline"
-                      className={`text-xs px-2 py-0.5 ${getLevelColor(section.requirement_level)}`}
+                      className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}
                     >
                       {section.requirement_level}
                     </Badge>
@@ -158,7 +158,7 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                     )}
                     <Badge
                       variant="outline"
-                      className={`text-xs px-2 py-0.5 ${getLevelColor(section.requirement_level)}`}
+                      className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}
                     >
                       {section.requirement_level}
                     </Badge>
@@ -195,7 +195,10 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                   />
                 ),
                 example_texts: section.example_texts && (
-                  <ExampleTextCard examples={section.example_texts} />
+                  <ExampleTextCard
+                    examples={section.example_texts}
+                    defaultExpanded={section.key === 'technical_specs'}
+                  />
                 ),
                 tabbed_examples: section.tabbed_examples && (
                   <TabbedExamplesCard examples={section.tabbed_examples} />
@@ -223,6 +226,28 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                   <ContractualConditionsTabs
                     conditions={section.contractual_conditions_tabs}
                     title="Contractuele uitvoeringsvoorwaarden"
+                  />
+                ),
+                product_links: section.product_links && (
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {section.product_links.map((link, index) => (
+                      <a
+                        key={index}
+                        href={link.url || '#'}
+                        className="text-sm text-blue-600 hover:text-blue-800 hover:underline"
+                        target={link.url ? '_blank' : undefined}
+                        rel={link.url ? 'noopener noreferrer' : undefined}
+                      >
+                        {link.label}
+                      </a>
+                    ))}
+                  </div>
+                ),
+                additional_steps: section.additional_steps && (
+                  <StepsList
+                    steps={section.additional_steps}
+                    ordered={section.steps_ordered !== false}
+                    startNumber={(section.steps?.length || 0) + 1}
                   />
                 ),
               };

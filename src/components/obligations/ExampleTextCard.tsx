@@ -5,11 +5,12 @@ import { Copy, Check, FileText, ChevronRight, ChevronDown } from 'lucide-react';
 interface ExampleTextCardProps {
   examples: ExampleText[];
   title?: string;
+  defaultExpanded?: boolean;
 }
 
-export const ExampleTextCard: React.FC<ExampleTextCardProps> = ({ examples, title }) => {
+export const ExampleTextCard: React.FC<ExampleTextCardProps> = ({ examples, title, defaultExpanded = false }) => {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(defaultExpanded ? 0 : null);
 
   if (!examples || examples.length === 0) return null;
 
