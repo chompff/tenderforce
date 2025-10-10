@@ -358,7 +358,7 @@
           }
         ],
         "default_main_tab": "refurbished",
-        "code_column_header": "TS-CODE",
+        "code_column_header": "CODE",
         "spec_column_header": "SPECIFICATIE",
         "data": {
           "refurbished": {

@@ -318,7 +318,7 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                     data={section.gpp_specs.data}
                     mainTabs={section.gpp_specs.main_tabs}
                     defaultMainTab={section.gpp_specs.default_main_tab}
-                    codeColumnHeader="TS-CODE"
+                    codeColumnHeader="CODE"
                     specColumnHeader="SPECIFICATIE"
                   />
                 ),
