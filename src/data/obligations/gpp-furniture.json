@@ -1,16 +1,16 @@
 {
   "obligation_id": "gpp-furniture",
   "archetype": "GPP",
-  "title": "EU GPP verplichtingen",
-  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de EU Green Public Procurement (GPP)-criteria voor Meubels toe te passen. Er zijn verplichte en niet verplichte aanbevelingen voor uw aanbestedingsdocumenten.",
-  "badges": ["EED", "GPP", "EU"],
+  "title": "EU GPP criteria of nationaal gelijkwaardig",
+  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de [EU-criteria inzake groene overheidsopdrachten voor meubilair](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/743867db-6635-4500-b042-d969300ad570/details) toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
+  "badges": ["MVI", "GPP", "EED", "EU", "NL"],
   "warnings": [],
   "footer_warnings": [],
   "legal_references": [
     {
       "label": "EU Green Public Procurement criteria voor Meubels",
       "citation": "EU GPP criteria voor Meubels",
-      "url": "https://ec.europa.eu/environment/gpp/furniture_en.htm"
+      "url": "https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/743867db-6635-4500-b042-d969300ad570/details"
     },
     {
       "label": "Richtlijn (EU) 2023/1791",
@@ -20,525 +20,546 @@
   ],
   "sections": [
     {
-      "key": "scope",
-      "title": "Bepaling scope opdracht",
-      "requirement_level": "optioneel",
-      "intro": "Wanneer een aanbestedende dienst meubels wil aankopen of huren, geldt volgens de EED dat deze binnen de reikwijdte van de GPP-criteria voor meubels vallen. De aanbestedende dienst is verplicht deze milieucriteria op te nemen in de aanbestedingsstukken.\n\nDe GPP onderscheidt drie soorten opdrachten:\n\n- Nieuw meubilair: productie van nieuwe meubels met milieuvriendelijke materialen en processen.\n- Refurbished meubilair: bestaande meubels worden opgeknapt, aangepast of opnieuw gestoffeerd.\n- End-of-life verwerking: afvoer, hergebruik of recycling van oude meubels.\n\nDoor vooraf na te denken over welk type opdracht het beste past bij de doelstelling en context van je organisatie, voldoe je aan de verplichting van de EED én stuur je gericht op milieu-impact.",
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als technische specificaties. Ze vormen de ondergrens waaraan geleverd meubilair moet voldoen. Door deze eisen expliciet in het bestek op te nemen, voldoe je aan de verplichting uit de Energie-Efficiëntierichtlijn (EED).",
       "warnings": [
         {
-          "severity": "yellow",
-          "text": "Let op: De EU GPP-criteria geven deze niet verplichte aanbevelingen voor de bepaling scope opdracht omdat deze helpen om duurzaamheidsdoelen te realiseren."
+          "severity": "red",
+          "text": "Let op: De kerncriteria (minimale technische specificaties) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
         }
       ],
       "steps": [
-        "Benoem expliciet in de opdrachtomschrijving dat de aanbesteding betrekking heeft op de aankoop of huur van gebouwen die ten minste bijna-energieneutraal zijn.",
-        "Leg de juridische basis vast: neem in de scope een verwijzing op naar Richtlijn (EU) 2023/1791, artikel 5, en nationale implementatie.",
-        "Optioneel: Verwijs naar een uitzondering: geef aan dat de verplichting niet geldt vanwege gevallen die artikel 5, lid 3 noemt."
+        "Kies welk type opdracht het betreft. De GPP onderscheidt drie soorten:\n   A. Refurbished meubilair: bestaande meubels worden opgeknapt, aangepast of opnieuw gestoffeerd.\n   B. Nieuw meubilair: productie van nieuwe meubels met milieuvriendelijke materialen en processen.\n   C. End-of-life verwerking: afvoer, hergebruik of recycling van oude meubels.",
+        "Ga in de tabel hieronder na welke technische specificaties van toepassing zijn.",
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit sterkere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
       ],
+      "steps_ordered": true,
       "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "refurbished",
+            "label": "📋 Refurbished meubilair",
+            "label_short": "Refurbished meubilair"
+          },
+          {
+            "key": "new",
+            "label": "🪑 Nieuw meubilair",
+            "label_short": "Nieuw meubilair"
+          },
+          {
+            "key": "end_of_life",
+            "label": "♻️ End-of-life verwerking",
+            "label_short": "End-of-life verwerking"
+          }
+        ],
+        "default_main_tab": "refurbished",
+        "data": {
+          "refurbished": {
+            "core_criteria": [
+            {
+              "code": "TS1",
+              "title": "Renovatie-eisen",
+              "specification": "De inschrijver renoveert het door de aanbestedende dienst aangeleverd meubilair in overeenstemming met de gespecificeerde eisen.\n\nNaargalang het soort te renoveren meubel en de staat van het bestaande meubel moet de aanbestedende dienst de uit te voeren handelingen zo gedetailleerd mogelijk beschrijven (bv. herbespuiten van metaalwerk, herstellen en/of opnieuw afwerken van houten oppervlakken, herbekleden, herbestemming van tafels enz.).\n\n(De overheidsdienst kan in een eerste aanbesteding een afzonderlijke studie aanvragen om de bestaande meubelvoorraad te laten beoordelen (type, aantal, staat enz.) en deze beschrijving gebruiken voor de aanbesteding.)",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 6"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De inschrijver beschrijft alle uit te voeren renovatiehandelingen in detail."
+              }
+            },
+            {
+              "code": "TS2",
+              "title": "Duurzame bekledingsmaterialen (Alleen voor bekleed meubilair)",
+              "specification": "De inschrijver levert uitsluitend hout dat afkomstig is uit duurzaam beheerde bossen, met een geldig certificaat dat aantoont dat het voldoet aan de eisen van duurzame bosbouw.\nHet certificaat moet zijn afgegeven door een onafhankelijk, derde partij en gebaseerd zijn op erkende systemen voor duurzaam bosbeheer.\nHet hout mag niet afkomstig zijn uit illegale bronnen of gebieden waar sprake is van aantasting van natuurlijke habitats of schending van de rechten van lokale gemeenschappen.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 6"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De inschrijver levert certificeringsbewijzen of gelijkwaardige documentatie aan waaruit de herkomst en duurzaamheid van het hout blijkt."
+              }
+            },
+            {
+              "code": "TS3",
+              "title": "Blaasmiddelen (Alleen voor bekleed meubilair)",
+              "specification": "De inschrijver zorgt ervoor dat alle gebruikte houtproducten (zoals spaanplaat, MDF en multiplex) geen formaldehydegehalte hebben dat de grenswaarden van de klasse E1 overschrijdt, zoals gedefinieerd in EN 13986.Bij voorkeur worden materialen gebruikt met een nog lager formaldehydegehalte (E0) of materialen die volledig vrij zijn van toegevoegde formaldehyde.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 6"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De inschrijver overlegt testrapporten of certificaten van de fabrikant die aantonen dat het toegepaste houtmateriaal voldoet aan de vereiste emissieklasse."
+              }
+            },
+            {
+              "code": "TS4",
+              "title": "Garantie voor gerenoveerd meubilair",
+              "specification": "De inschrijver biedt een garantie van minimaal twee jaar (langer voor duurdere meubelstukken) die ingaat vanaf de dag van levering van het product. Deze garantie geldt voor reparatiewerkzaamheden en vervangingen en omvat een serviceovereenkomst met opties voor afhaling en terugbrenging of reparaties ter plaatse. De garantie garandeert dat de goederen zonder bijkomende kosten in overeenstemming zijn met de contractueel vastgelegde specificaties.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 7"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De inschrijver stelt een schriftelijke verklaring op waarin de bovenvermelde garantie is opgenomen. Een exemplaar van de garantie wordt door de inschrijver voorgelegd. Ze voorzien een verklaring waarin de conformiteit van de goederen met de contractueel vastgelegde specificaties bevestigd wordt."
+              }
+            }
+          ],
+          "extended_criteria": [
+            {
+              "code": "TS4",
+              "title": "Garantie voor gerenoveerd meubilair",
+              "specification": "De inschrijver voorziet een garantie van minimaal drie jaar (langer voor duurdere meubelstukken) die ingaat vanaf de dag van levering van het product. Deze garantie geldt voor reparatiewerkzaamheden of vervangingen en omvat  een serviceovereenkomst met opties voor afhaling en terugbrenging of reparaties ter plaatse. De garantie garandeert dat de goederen zonder bijkomende kosten in overeenstemming zijn met de contractueel vastgelegde specificaties.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 7"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De inschrijver stelt een schriftelijke verklaring op waarin de bovenvermelde garantie is opgenomen. Een exemplaar van de garantie wordt door de inschrijver voorgelegd. Ze voorzien een verklaring waarin de conformiteit van de goederen met de contractueel vastgelegde specificaties bevestigd wordt."
+              }
+            }
+          ]
+        },
+        "new": {
+          "core_criteria": [
+            {
+              "code": "TS1",
+              "title": "Inkoop van legaal hout voor de productie van meubilair",
+              "specification": "Al het voor meubilair gebruikte hout dat in het kader van de opdracht wordt geleverd, moet legaal verkregen zijn in overeenstemming met Verordening (EU) nr. 995/2010 (de \"EU-houtverordening\").\n\nVoor hout of houtproducten die niet onder Verordening (EU) nr. 995/2010 vallen, moeten ofwel FLEGT-vergunningen ofwel desbetreffende CITES-vergunningen of -certificeringen gelden, of deze moeten onderworpen zijn aan een door de inschrijver geïmplementeerd zorgvuldigheidsstelsel waar de nodige informatie wordt verschaft over het land waar het hout gekapt werd, de houtsoort, de hoeveelheden, leveranciersgegevens alsook informatie over de naleving van de relevante nationale wetgeving. Wanneer in de bevoorradingsketen een risico op illegaal hout wordt vastgesteld, moet het zorgvuldigheidsstelsel procedures definiëren om dit risico te beperken.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 13"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele uitvoeringsvoorwaarde",
+                "text": "De aanbestedende dienst heeft het recht om steekproefsgewijze controles uit te voeren betreffende de naleving van technische specificatie TS1 voor alle of een specifieke groep van uit hout vervaardigd meubilair dat wordt gebruikt in het kader van de opdracht. Op verzoek verstrekt de contractant bewijsstukken om de naleving van de EU-houtverordening aan te tonen.\n\nIn de meeste gevallen, wanneer de contractant niet de onderneming is die hout of houtproducten voor de eerste keer op de Europese markt brengt, maar deze producten verkrijgt van anderen (gedefinieerd als \"handelaar\"5 in Verordening (EU) nr. 995/2010), moet de contractant de volgende informatie over hout of houtproducten verstrekken die zal worden geverifieerd tijdens een steekproefsgewijze controle:\n• de marktdeelnemers of handelaren die het hout en de houtproducten gebruikt in het meubelstuk hebben geleverd;\n• documenten of andere informatie waaruit blijkt dat deze houtproducten in overeenstemming zijn met de toepasselijke wetgeving6;\n• bewijsstukken van de risicobeoordelings- en risicobeperkingsprocedures die zijn ingevoerd overeenkomstig artikel 6, lid 1, onder b) en c), van Verordening (EU) nr. 995/2010.\n\nIn gevallen waarbij de contractant hout of van hout vervaardigde meubelen voor de eerste keer op de Europese markt brengt (gedefinieerd als \"marktdeelnemer\"7 in Verordening (EU) nr. 995/2010), moet de contractant de volgende informatie over hout of houtproducten verstrekken die tijdens de steekproefsgewijze controle worden gecontroleerd:\n• een beschrijving van elke gebruikte houtsoort, met inbegrip van de handelsnaam, het type product en de gebruikelijke benaming van de boomsoort en, indien van toepassing, de\n• beileidige wetenschappelijke benaming daarvan;\n• naam en adres van de leverancier van het hout en de houtproducten;\n• het land waar het hout is gekapt en, indien van toepassing8:\n• i) het subnationale gebied waar het hout is gekapt;\n• ii) de kapconcessie;\n• iii) de hoeveelheid (uitgedrukt in omvang, gewicht of aantal eenheden);\n• documenten of andere informatie waaruit blijkt dat deze houtproducten in overeenstemming zijn met de toepasselijke wetgeving;\n• bewijsstukken van de risicobeoordelings- en risicobeperkingsprocedures die zijn ingevoerd overeenkomstig artikel 6, lid 1, onder b) en c), van Verordening (EU) nr. 995/2010. Dit kan\n• tevens certificering of andere door derden geverifieerde regelingen omvatten.\nHout dat onder een geldige FLEGT-vergunning of desbetreffende CITES-vergunning of -certificering van de EU valt, wordt beschouwd als legaal gekapt hout in overeenstemming met Verordening (EU) nr. 995/2010."
+              }
+            },
+            {
+              "code": "TS2",
+              "title": "Formaldehyde-emissies uit van hout vervaardigde platen",
+              "specification": "Formaldehyde-emissies uit alle geleverde van hout vervaardigde platen, in de vorm waarin ze in het meubel worden gebruikt (m.a.w.: al dan niet gecoat, gefineerd of van een beschermende deklaag voorzien), en die zijn vervaardigd met behulp van harsen op basis van formaldehyde, moeten zijn aan of lager liggen dan de E1-drempelwaarden voor formaldehyde-emissies zoals gedefinieerd in bijlage B bij EN 13986.\n\nDeze eis is van toepassing ongeacht de gewichtsfractie van de van hout vervaardigde platen in het meubel.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 14"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De leverancier moet een verklaring overleggen waarin vermeld wordt dat de door hem geleverde van hout vervaardigde platen voldoen aan de E1-emissiegrenswaarden, ondersteund door testverslagen die in overeenstemming met EN 717-1, EN 717-2/EN ISO 12460-3 of EN 120/EN ISO 12460-5 zijn opgesteld.\n\nMeubelen die over de Europese milieukeur voor meubelen beschikken, zoals bepaald in Besluit (EU) nr. 2016/1332 van de Europese Commissie, of over andere relevante type I-milieukeuren conform ISO 14024 die rechtstreeks aan de gestelde eisen voldoen of daartoe gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+              }
+            },
+            {
+              "code": "TS3",
+              "title": "Rapportage van stoffen op de REACH-kandidatenlijst",
+              "specification": "De inschrijver moet de aanwezigheid verklaren van op de REACH-kandidatenlijst10 vermelde stoffen die in een concentratie van meer dan 0,1 % (gewichtsprocent) in het product en in de onderdelen/materialen ervan voorkomen.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 16"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De inschrijver moet een verklaring overleggen waarin specifieke op de REACH-kandidatenlijst vermelde stoffen worden geïdentificeerd die voorkomen in overeenstemming met de meest recente versie van de kandidatenlijst op de datum van publicatie van de uitnodiging tot inschrijving."
+              }
+            },
+            {
+              "code": "TS4",
+              "title": "Blaasmiddelen (Alleen voor bekleed meubilair)",
+              "specification": "Wanneer bij de bekleding van meubilair opvulmateriaal van schuimrubber wordt gebruikt, mogen bij de productie van dergelijk opvulmateriaal geen gehalogeneerde organische verbindingen als blaasmiddel of hulpblaasmiddel worden gebruikt.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 17"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De inschrijver verstrekt een verklaring van de fabrikant waarin deze bevestigt dat geen opvulmateriaal van schuimrubber is gebruikt. Beklede meubelen waaraan de Europese milieukeur voor meubelen werd toegekend, zoals bepaald in Besluit (EU) nr. 2016/1332 van de Europese Commissie, of andere relevante type I-milieukeuren conform ISO 14024 die rechtstreeks aan de gestelde eisen voldoen of daartoe gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+              }
+            },
+            {
+              "code": "TS5",
+              "title": "Geschiktheid voor gebruik",
+              "specification": "Het meubel voldoet aan de eisen zoals vermeld in de meest recente versies van de volgende relevante EN-normen betreffende de duurzaamheid, vereisten i.v.m. afmetingen, veiligheid en sterkte van het product:\n\n[Verwijs hier naar specifieke normen in aanhangsel IV of andere bronnen die bijzonder relevant zijn voor de aangeschafte meubelen]",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 18"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De inschrijver verstrekt een verklaring van overeenstemming met de desbetreffende EN-normen, gestaafd met testverslagen van de meubelfabrikant of van leveranciers van onderdelen/ onderdeelmaterialen, naargelang het geval. Meubelen die over de Europese milieukeur voor meubelen beschikken, zoals bepaald in Besluit (EU) nr. 2016/1332 van de Europese Commissie, of over andere relevante type I-milieukeuren conform ISO 14024 die rechtstreeks aan de gestelde eisen voldoen of daartoe gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+              }
+            },
+            {
+              "code": "TS6",
+              "title": "Ontwerp gericht op demontage en reparatie",
+              "specification": "De inschrijver moet volledige demontage- en reparatie-instructies ter beschikking (bv. in gedrukte of elektronische vorm of in de vorm van video's), zodat het meubel zonder schade kan worden gedemonteerd met het oog op vervanging van onderdelen/materialen. Samen met het product moeten de nodige instructies in gedrukte vorm worden bezorgd, of in elektronische vorm via de website van de fabrikant. De demontage en vervanging moet door ongeschoolde personen en met behulp van gewoon basisgereedschap uitgevoerd kunnen worden.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 18"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De inschrijver moet een handleiding bezorgen, inclusief een opengewerkt schema van het product waarop aangegeven wordt welke onderdelen verwijderd en vervangen kunnen worden en welke gereedschappen daartoe nodig zijn. Meubelen waaraan de Europese milieukeur voor meubelen werd toegekend, zoals bepaald in Besluit 2016/1332/EU van de Commissie, of andere relevante type I-milieukeuren conform ISO 14024 die rechtstreeks aan de gestelde eisen voldoen of daartoe gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+              }
+            },
+            {
+              "code": "TS7",
+              "title": "Productgarantie en reserveonderdelen",
+              "specification": "De inschrijver voorziet een garantie van minimaal drie jaar die ingaat vanaf de dag van levering van het product. Deze garantie geldt voor reparatiewerkzaamheden of vervangingen en omvat een serviceovereenkomst met opties voor afhaling en teruggave van reparaties ter plaatse. De garantie garandeert dat de goederen zonder bijkomende kosten in overeenstemming zijn met de contractueel vastgelegde specificaties.\n\nDe inschrijver garandeert de beschikbaarheid van reserveonderdelen of van elementen met een gelijkwaardige functie gedurende een periode van minstens drie jaar vanaf de dag van levering van het meubel. Er worden contactgegevens verstrekt die moeten worden gebruikt om de levering van reserveonderdelen te regelen.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 18"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De inschrijver verstrekt een schriftelijke verklaring waarin de aangeboden periode wordt gedetailleerd en wordt vermeld dat deze de conformiteit van de goederen met de contractueel vastgelegde specificaties omvat, inclusief alle aangegeven gebruiksmogelijkheden.\n\nDe inschrijver verstrekt een verklaring waarin gesteld wordt dat hij zelf of via een dienstverlener aan de aanbestedende dienst compatibele reserveonderdelen beschikbaar zal stellen.\n\nMeubelen waaraan de Europese milieukeur voor meubelen werd toegekend, zoals bepaald in Besluit (EU) nr. 2016/1332 van de Commissie, of andere relevante type I-milieukeuren conform ISO 14024 die rechtstreeks aan de gestelde eisen voldoen of daartoe gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+              }
+            }
+          ],
+          "extended_criteria": [
+            {
+              "code": "TS2",
+              "title": "Formaldehyde-emissies uit van hout vervaardigde platen",
+              "specification": "Deze uitgebreide eis moet als meerwaarde beschouwd worden als de gewichtsfractie van de van hout vervaardigde platen in het meubel meer dan 5 % bedraagt.\n\nFormaldehyde-emissies uit alle geleverde van hout vervaardigde platen, in de vorm waarin ze in het meubel worden gebruikt (m.a.w.: al dan niet gecoat, gefineerd of van een beschermende deklaag voorzien), en die zijn vervaardigd met behulp van harsen op basis van formaldehyde, moeten gelijk zijn aan of minder bedragen dan 65 % van de E1-drempelwaarden voor formaldehyde-emissies zoals gedefinieerd in bijlage B bij EN 13986.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 14"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De leverancier moet een verklaring overleggen waarin vermeld wordt dat de door hem geleverde van hout vervaardigde platen voldoen aan de vereiste 65 % van de E1-emissiegrenswaarden, ondersteund door testverslagen die in overeenstemming met EN 717-1, EN 717-2/EN ISO 12460-3 of EN 120/EN ISO 12460-5 zijn opgesteld. Meubelen die over de Europese milieukeur voor meubelen beschikken, zoals bepaald in Besluit (EU) nr. 2016/1332 van de Europese Commissie, of over andere relevante type I-milieukeuren conform ISO 14024 die rechtstreeks aan de gestelde eisen voldoen of daartoe gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+              }
+            },
+            {
+              "code": "TS2",
+              "title": "Beperkingen voor coatingmengsels",
+              "specification": "Coatingmengsels die door de meubelfabrikant voor het coaten van houten of metalen meubelcomponenten worden gebruikt, mogen conform Verordening (EG) nr. 1272/2008 van het Europees Parlement en de Raad niet geclassificeerd zijn als:\n• categorie 1 of 2 kankerverwekkend, mutageen of giftig voor de voortplanting;\n• acuut toxisch bij orale of dermale opname of bij inhalatie (categorieën 1 of 2) of voor\n• het aquatisch milieu (categorie 1);\n• categorie 1 voor specifieke doelorgaantoxiciteit.\nVerder mogen ze ook geen additieven op basis van cadmium, lood, chroom VI, kwik, arseen of selenium bevatten in concentraties van meer dan 0,010 gewichtsprocent.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 15"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De inschrijver moet via een verklaring bevestigen welke (eventuele) coatingmengsels hij voor het meubel heeft gebruikt. Dit moet ondersteund worden met veiligheidsinformatiebladen waarin duidelijk de gevarenindeling van het (eventuele) coatingmengsel wordt vermeld en waaruit blijkt dat de formulering niet tot een van de volgende classificaties behoort:\n\n![Gevaar classificaties tabel](/gevaar-tabel.png)\n\nHet veiligheidsinformatieblad en/of ander ocumentatiemateriaal (indien voorhanden) moeten aanvullend vermelden of in het meubel cadmium, lood, chroom VI, kwik, arseen of selenium in concentraties van meer dan 0,010 gewichtsprocent voorkomt.\n\nMeubelen die over de Europese milieukeur voor meubelen beschikken, zoals bepaald in Besluit (EU) nr. 2016/1332 van de Europese Commissie, of andere relevante type I-milieukeuren conform ISO 14024 die rechtstreeks aan de gestelde eisen voldoen of daartoe gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+              }
+            },
+            {
+              "code": "TS4",
+              "title": "Beperkingen voor metalen",
+              "specification": "Verbindingen met cadmium worden niet gebruikt voor het galvaniseren van metalen onderdelen die in het eindproduct worden gebruikt.\n\nHet gebruik van nikkel bij het galvaniseren is uitsluitend toegestaan wanneer overeenkomstig EN 1811 minder dan 0,5 µg nikkel/cm2/week uit het gegalvaniseerde onderdeel vrijkomt.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 16"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De aanvrager verstrekt een verklaring afkomstig van de leverancier van het metalen onderdeel/de metalen onderdelen dat er geen galvanisatie met cadmium of cadmiumverbindingen op is toegepast.\n\nWanneer bij het galvaniseren nikkel is gebruikt, verstrekt de aanvrager een verklaring van de leverancier van het metalen onderdeel/de metalen onderdelen, ondersteund door een testverslag overeenkomstig EN 1811, waarbij de resultaten aangeven dat minder dan 0,5 µg nikkel/cm2/week vrijkomt.\n\nMeubelen die over de Europese milieukeur voor meubelen beschikken, zoals bepaald in Besluit (EU) nr. 2016/1332 van de Europese Commissie, of over andere relevante type I-milieukeuren conform ISO 14024 die rechtstreeks aan deze eisen voldoen of daartoe gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+              }
+            },
+            {
+              "code": "TS4",
+              "title": "Beperkingen voor stoffen op de REACH-kandidatenlijst",
+              "specification": "Het product en de onderdelen/onderdeelmaterialen ervan mogen geen op de REACH-kandidatenlijst vermelde stoffen in grotere concentraties dan 0,10 gewichtsprocent bevatten.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 16"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De inschrijver moet een verklaring overleggen waarin bevestigd wordt dat het meubelstuk en de onderdelen/materialen ervan geen specifieke op de REACH-kandidatenlijst vermelde stoffen in grotere concentraties dan 0,10 gewichtsprocent bevatten in overeenstemming met de meest recente versie van de kandidatenlijst op de datum van publicatie van de uitnodiging tot inschrijving.\n\nDeze verklaring moet ondersteund worden door gelijkwaardige verklaringen van alle leveranciers van onderdelen en onderdeelmaterialen waaruit het eindproduct blijft bestaan. Meubelen die over de Europese milieukeur voor meubelen beschikken, zoals bepaald in Besluit (EU) nr. 2016/1332 van de Europese Commissie, of over andere relevante type I-milieukeuren conform ISO 14024 die rechtstreeks aan deze eisen voldoen of daartoe gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+              }
+            },
+            {
+              "code": "TS4",
+              "title": "Duurzame bekledingsmaterialen (Alleen voor bekleed meubilair)",
+              "specification": "Bij gebruik van bekledingsmaterialen op basis van leder, textielstoffen of gecoate stoffen moeten deze voldoen aan alle eisen in verband met fysische kwaliteit zoals vermeld in de tabellen 2, 3 of 4 van aanhangsel I, naargelang van toepassing.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 17"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De inschrijver verstrekt een verklaring van de leverancier van het leder, het textiel of de gecoate stof, naargelang van toepassing, gestaafd met relevante testverslagen waaruit blijkt dat het bekledingsmateriaal voldoet aan de fysische eisen voor leder, textiel of gecoate stoffen, zoals vermeld in respectievelijk tabel 2, tabel 3 of tabel 4 van aanhangsel I.\n\nBeklede meubelen waaraan de Europese milieukeur voor meubelen werd toegekend zoals bepaald in Besluit (EU) nr. 2016/1332 van de Europese Commissie, van textiel vervaardigde bekleding waaraan de Europese milieukeur voor textiel werd toegekend zoals bepaald in Besluit 2014/350/EU van de Europese Commissie of bekledingsmaterialen waaraan andere relevante type I-milieukeuren conform ISO 14024 werden toegekend die rechtstreeks aan de gestelde eisen voldoen of daartoe gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+              }
+            },
+            {
+              "code": "TS10",
+              "title": "Productgarantie en reserveonderdelen",
+              "specification": "De inschrijver voorziet een garantie van minimaal vijf jaar die ingaat vanaf de dag van levering van het product. Deze garantie geldt voor reparatiewerkzaamheden of vervangingen en omvat een serviceovereenkomst met opties voor afhaling en terugbrenging of reparaties ter plaatse. De garantie garandeert dat de goederen zonder bijkomende kosten in overeenstemming zijn met de contractueel vastgelegde specificaties.\n\nDe inschrijver garandeert de beschikbaarheid van reserveonderdelen of van elementen met een gelijkwaardige functie gedurende een periode van minstens vijf jaar vanaf de dag van levering van het meubel. Er worden contactgegevens verstrekt die moeten worden gebruikt om de levering van reserveonderdelen te regelen.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 17"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De inschrijver verstrekt een schriftelijke verklaring waarin de aangeboden periode wordt gedetailleerd en wordt vermeld dat deze de conformiteit van de goederen met de contractueel vastgelegde specificaties omvat, inclusief alle aangegeven gebruiksmogelijkheden.\n\nDe inschrijver verstrekt een verklaring waarin gesteld wordt dat hij zelf of via een dienstverlener aan de aanbestedende dienst compatibele reserveonderdelen beschikbaar zal stellen.\n\nMeubelen waaraan de Europese milieukeur voor meubelen werd toegekend, zoals bepaald in Besluit (EU) nr. 2016/1332 van de Commissie, of andere relevante type I-milieukeuren conform ISO 14024 die rechtstreeks aan de gestelde eisen voldoen of daartoe gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+              }
+            }
+          ]
+        },
+        "end_of_life": {
+          "core_criteria": [
+            {
+              "code": "TS1",
+              "title": "Inzameling en hergebruik van bestaande meubelvoorraad",
+              "specification": "De aanbestedende dienst bezorgt in de uitnodiging tot inschrijving een evaluatie van de staat van de op te halen meubels, waarin ook een minimumpercentage voor hergebruik wordt gedefinieerd, waaraan moet worden voldaan (bv. 50% van de voorziene meubels). Om hygiënische redenen worden matrassen niet opgenomen in de minimumpercentages voor hergebruik.\n\nDe inschrijvers moeten de meubels rechtstreeks ophalen op een door de aanbestedende dienst gespecificeerde locatie en een dienst aan te bieden voor hergebruik en recycling van meubels die aan het eind van hun levensduur zijn gekomen.\n\nDe inschrijvers moeten beschrijven hoe ze de levensduur van de meubels zullen verlengen door ze aan te bieden voor hergebruik.\n\nBij meubelstukken of onderdelen die niet geschikt worden geacht voor hergebruik, moet de aanbestedende dienst in overeenstemming met haar kennis over aangepaste recyclingfaciliteiten in de regio een van de volgende opties kiezen:\n\nOptie a.\nMeubelstukken/onderdelen die niet hergebruikt kunnen worden, worden gedemonteerd en in verschillende materiaalstromen ingedeeld (bv. op zijn minst in kunststoffen, metalen, stoffen en hout), waarna deze naar verschillende recyclingfaciliteiten worden verzonden. De resterende materialen worden naar inrichtingen voor energieterugwinning gestuurd, ongeacht waar deze op regionaal niveau beschikbaar zijn.\n\nOptie b.\nMetalen delen van meubelstukken/onderdelen die niet hergebruikt kunnen worden, worden gerecycled, terwijl de rest van het meubel naar inrichtingen voor energieterugwinning wordt gestuurd, ongeacht waar deze op regionaal niveau beschikbaar zijn.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 27"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De inschrijver bezorgt alle gegevens over de regelingen voor de inzameling van de meubels, alsook de toe te passen hergebruik- en recyclingprocessen. Dit omvat de gegevens van alle partijen die betrokken zijn bij het hergebruik en de recyclage van de meubels."
+              }
+            }
+          ],
+          "extended_criteria": [
+            {
+              "code": "TS1",
+              "title": "Inzameling en hergebruik van bestaande meubelvoorraad",
+              "specification": "De aanbestedende overheid bezorgt in de uitnodiging tot inschrijving een evaluatie van de staat van de op te halen meubelen, waarin ook een minimumpercentage voor hergebruik wordt gedefinieerd, waaraan moet worden voldaan (bv. 50% van de voorziene meubelen). Om hygiënische redenen worden matrassen niet opgenomen in de minimumpercentages voor hergebruik.\n\nDe inschrijvers moeten de meubelen rechtstreeks ophalen op een door de aanbestedende dienst gespecificeerde locatie en een dienst aanbieden voor hergebruik en recyclage van meubelen die aan het einde van hun levensduur zijn gekomen.\n\nDe inschrijvers moeten beschrijven hoe ze de levensduur van de meubelen zullen verlengen door ze aan te bieden voor hergebruik.\n\nMeubelstukken/onderdelen die niet hergebruikt kunnen worden, worden gedemonteerd en in verschillende materiaalstromen ingedeeld (bv. op zijn minst in kunststoffen, metalen, stoffen en hout), waarna deze naar verschillende recyclingfaciliteiten worden verzonden. De resterende materialen worden naar inrichtingen voor energieterugwinning gestuurd, ongeacht waar deze op regionaal niveau beschikbaar zijn.",
+              "source": {
+                "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 27"
+              },
+              "contractual_condition": {
+                "title": "Bijbehorende contractuele voorwaarde",
+                "text": "De inschrijver bezorgt alle gegevens over de regelingen voor de inzameling van de meubelen, alsook de toe te passen hergebruik- en recyclingprocessen. Dit omvat de gegevens van alle partijen die betrokken zijn bij het hergebruik en de recyclage van de meubelen."
+              }
+            }
+          ]
+        }
+        }
+      },
       "specs": [],
       "contractual_conditions": []
     },
     {
-      "key": "type_opdracht",
-      "title": "Type opdracht",
-      "requirement_level": "optioneel",
-      "intro": "Bij aanbestedingen voor kantoormeubilair wordt vaak automatisch gekozen voor nieuw meubilair, zonder dat bewust wordt gekeken naar andere duurzame opties. De GPP-criteria vragen je om deze keuze bewust te maken aan de hand van duurzaamheidsoverwegingen. GPP onderscheidt drie soorten opdrachten:\n\n- Nieuw meubilair: productie van nieuwe meubels met milieuvriendelijke materialen en processen.\n- Refurbished meubilair: bestaande meubels worden opgeknapt, aangepast of opnieuw gestoffeerd.\n- End-of-life verwerking: afvoer, hergebruik of recycling van oude meubels.\n\nDoor vooraf na te denken over welk type opdracht het beste past bij de doelstelling en context van je organisatie, voldoe je aan de verplichting van de EED én stuur je gericht op milieu-impact.",
-      "warnings": [],
-      "steps": [],
-      "example_texts": [],
-      "tabbed_examples": {
-        "basis": [
-          {
-            "title": "🪑 Nieuw meubilair",
-            "text": "Deze opdracht betreft de levering van nieuw kantoormeubilair dat voldoet aan de basisvereisten van de Europese GPP-criteria. De focus ligt op meubels met een acceptabele levensduur, lage emissies van vluchtige organische stoffen, en het gebruik van hout uit duurzaam beheerde bossen (FSC/PEFC)."
-          },
-          {
-            "title": "🔄 Refurbished meubilair",
-            "text": "Deze opdracht betreft de levering van refurbished kantoormeubilair dat technisch en esthetisch is opgeknapt en voldoet aan de gebruikerseisen. Basisinformatie over de herkomst en opgeknapte onderdelen wordt meegeleverd."
-          },
-          {
-            "title": "♻️ End-of-life verwerking",
-            "text": "Deze opdracht betreft het ophalen, sorteren en op milieuvriendelijke wijze verwerken van afgeschreven kantoormeubilair. Herbruikbare onderdelen worden apart gehouden en verantwoord afgevoerd."
-          }
-        ],
-        "ambitieus": [
-          {
-            "title": "🪑 Nieuw meubilair",
-            "text": "Deze opdracht betreft de levering van nieuw, duurzaam en circulair kantoormeubilair met een lange levensduur, lage emissies, maximale demonteerbaarheid en een hoog percentage gerecycled materiaal. Leveranciers moeten materiaalspaspoorten aanleveren en hergebruik/vervangbaarheid van onderdelen aantonen. De gunning vindt plaats op basis van milieu-impact en circulariteit."
-          },
-          {
-            "title": "🔄 Refurbished meubilair",
-            "text": "Deze opdracht betreft de levering van refurbished meubilair waarbij de opdrachtnemer garanties biedt op duurzaamheid, levensduurverlenging, traceerbaarheid van onderdelen en milieuprestaties. Er gelden eisen voor modulair ontwerp, vervangbaarheid van onderdelen en milieucertificering van gebruikte materialen. Een onderhoudsplan en een impactrapportage maken onderdeel uit van de opdracht."
-          },
-          {
-            "title": "♻️ End-of-life verwerking",
-            "text": "Deze opdracht betreft een circulaire verwerkingsopdracht waarbij afgeschreven meubilair zoveel mogelijk wordt hergebruikt of hoogwaardig gerecycled. De opdrachtnemer moet aantonen hoeveel procent van het meubilair wordt hergebruikt, welke onderdelen worden teruggewonnen, en hoe reststromen worden verwerkt conform GPP-richtlijnen. Terugnamegaranties, transparante rapportages en een 'zero waste'-aanpak zijn onderdeel van de eisen."
-          }
-        ]
-      },
-      "specs": [],
-      "contractual_conditions": [],
-      "footer_note": "Tip: De ambitieuze criteria gaan verder dan de EED-verplichting en helpen je organisatie actief te sturen op circulariteit, CO₂-reductie en innovatie. Kies deze variant als je duurzaamheid centraal wilt stellen."
-    },
-    {
-      "key": "functionele_behoefte",
-      "title": "Functionele behoefte",
-      "requirement_level": "optioneel",
-      "intro": "In deze stap beschrijf je wat het meubilair functioneel moet kunnen. Denk aan ergonomie, comfort, onderhoudsgemak, aanpasbaarheid (bijv. modulair), gebruiksduur of geschiktheid voor intensief gebruik. Door deze eisen slim te formuleren, kun je sturen op duurzaamheid zonder over te specificeren. Zo voorkom je dat duurzaamheid botst met functionele eisen, en vergroot je de ruimte voor innovatieve oplossingen.",
-      "warnings": [],
-      "steps": [],
-      "example_texts": [],
-      "tabbed_examples": {
-        "basis": [
-          {
-            "title": "📋 Functionele eisen",
-            "text": "Deze opdracht betreft de levering van kantoormeubilair dat geschikt is voor dagelijks gebruik en eenvoudig te reinigen is. De meubels moeten voldoen aan de basisvereisten voor ergonomie en gebruikscomfort."
-          }
-        ],
-        "ambitieus": [
-          {
-            "title": "📋 Functionele eisen",
-            "text": "Deze opdracht betreft de levering van modulair kantoormeubilair met een lange gebruiksduur, dat eenvoudig aanpasbaar is aan veranderende behoeften. De meubels moeten ergonomisch ontworpen zijn, eenvoudig te onderhouden en geschikt voor circulaire werkconcepten."
-          }
-        ]
-      },
-      "specs": [],
-      "contractual_conditions": [],
-      "footer_note": "Tip: De ambitieuze criteria gaan verder dan de EED-verplichting en helpen je organisatie actief te sturen op circulariteit, CO₂-reductie en innovatie. Kies deze variant als je duurzaamheid centraal wilt stellen."
-    },
-    {
-      "key": "levenscyclusbenadering",
-      "title": "Levenscyclusbenadering",
-      "requirement_level": "optioneel",
-      "intro": "De levenscyclusbenadering kijkt verder dan alleen de aanschafprijs. Je houdt hierbij rekening met de milieu-impact en kosten over de hele levensduur van het meubilair: van grondstoffenwinning en productie, tot gebruik, onderhoud en afdanking. Door in deze fase al levensduur, repareerbaarheid en hergebruik mee te nemen, kun je sturen op lagere milieukosten en minder verspilling.",
-      "warnings": [],
-      "steps": [],
-      "example_texts": [],
-      "tabbed_examples": {
-        "basis": [
-          {
-            "title": "🔄 Levenscyclus",
-            "text": "Bij de beoordeling wordt rekening gehouden met de verwachte levensduur van het meubilair en de mogelijkheid tot eenvoudig onderhoud. Er wordt gekozen voor producten met standaardonderdelen die eenvoudig vervangen en onderhouden kunnen worden."
-          }
-        ],
-        "ambitieus": [
-          {
-            "title": "🔄 Levenscyclus",
-            "text": "Het meubilair moet ontworpen zijn op basis van een volledige levenscyclusbenadering. Dit betekent: demontabel ontwerp, herbruikbare onderdelen, beschikbaarheid van reserveonderdelen gedurende minimaal 10 jaar en een onderbouwde inschatting van milieu-impact volgens de LCA-methode."
-          }
-        ]
-      },
-      "specs": [],
-      "contractual_conditions": [],
-      "footer_note": "Tip: De ambitieuze criteria gaan verder dan de EED-verplichting en helpen je organisatie actief te sturen op circulariteit, CO₂-reductie en innovatie. Kies deze variant als je duurzaamheid centraal wilt stellen."
-    },
-    {
-      "key": "reikwijdte_opdracht",
-      "title": "Reikwijdte van de opdracht",
-      "requirement_level": "optioneel",
-      "intro": "De reikwijdte bepaalt welke producten, diensten en nevenactiviteiten binnen de aanbesteding vallen. Bij kantoorinrichting kun je denken aan losse meubels, vaste inrichting, transport, plaatsing, onderhoud, en afvoer van bestaand meubilair. Door de reikwijdte slim te kiezen, vergroot je de impact op circulariteit en milieu, én kun je beter sturen op samenhangende prestaties. De Europese GPP-criteria helpen bij het expliciteren van een duurzame scope.",
-      "warnings": [],
-      "steps": [],
-      "example_texts": [],
-      "tabbed_examples": {
-        "basis": [
-          {
-            "title": "📋 Opdracht scope",
-            "text": "De opdracht betreft de levering en plaatsing van kantoormeubilair. Afvoer van oud meubilair wordt als optionele dienst benoemd. Eventuele onderhoudsverplichtingen zijn beperkt tot de garantietermijn."
-          }
-        ],
-        "ambitieus": [
-          {
-            "title": "📋 Opdracht scope",
-            "text": "De opdracht omvat levering, plaatsing, onderhoud en circulaire verwerking van bestaand meubilair. Van opdrachtnemer wordt verwacht dat hij ontzorgt via een totaaloplossing, inclusief demontage, sortering, hergebruik en rapportage over teruggewonnen materialen."
-          }
-        ]
-      },
-      "specs": [],
-      "contractual_conditions": [],
-      "footer_note": "Tip: De ambitieuze criteria gaan verder dan de EED-verplichting en helpen je organisatie actief te sturen op circulariteit, CO₂-reductie en innovatie. Kies deze variant als je duurzaamheid centraal wilt stellen."
-    },
-    {
-      "key": "technical_specs",
-      "title": "Technische specificaties",
+      "key": "gunningscriteria",
+      "title": "Gunningscriteria",
       "requirement_level": "verplicht",
-      "intro": "Bij deze aanbesteding moeten de Europese GPP-criteria uitdrukkelijk worden opgenomen als technische specificaties. Ze vormen de ondergrens waaraan geleverd meubilair moet voldoen. Door deze eisen expliciet in het bestek op te nemen, voldoe je aan de verplichting uit de Energie-Efficiëntierichtlijn (EED).",
+      "intro": "De toepasselijke GPP-criteria bevatten eisen voor gunningscriteria. Deze helpen inschrijvers die op essentiële punten extra scoren. Door deze criteria expliciet in het bestek op te nemen, voldoe je aan de verplichting uit de Energie-Efficiëntierichtlijn (EED).",
       "warnings": [
         {
           "severity": "red",
-          "text": "Let op: De wetten en regels (o.a. Bbl artikel 4.149 lid 1) bepalen dat een bijna-energieneutraal gebouw (nZEB/BENG) moet voldoen aan alle drie de indicatoren gelijktijdig."
+          "text": "Let op: Een paar gunningcriteria uit de GPP zijn verplicht voor deze aanbesteding."
         }
       ],
-      "steps": [],
+      "steps": [
+        "Kies welk type opdracht het betreft. De GPP onderscheidt drie soorten:\n   A. Refurbished meubilair: bestaande meubels worden opgeknapt, aangepast of opnieuw gestoffeerd.\n   B. Nieuw meubilair: productie van nieuwe meubels met milieuvriendelijke materialen en processen.\n   C. End-of-life verwerking: afvoer, hergebruik of recycling van oude meubels.",
+        "Ga in de tabel hieronder na welke gunningscriteria van toepassing zijn.",
+        "Neem in ieder geval de kerncriteria op in je aanbestedingsdocumenten. Als je ambitieuzer bent kan je de uitgebreide criteria opnemen."
+      ],
+      "steps_ordered": true,
       "example_texts": [],
-      "specs": [
-        {
-          "code": "TS1",
-          "text": "Het toegepaste hout in het meubilair moet afkomstig zijn uit duurzaam beheerde bossen en voldoen aan de vereisten van de Europese Houtverordening (EUTR). Er dient aantoonbaar gebruikgemaakt te worden van legaal hout.",
-          "legal_basis": "Verordening (EU) nr. 995/2010 (EUTR)",
-          "requirement_level": "verplicht"
-        },
-        {
-          "code": "TS2",
-          "text": "Het meubilair moet voldoen aan de grenswaarden voor formaldehyde-emissie volgens de EN 717-1 norm of een gelijkwaardige Europese norm. Dit geldt voor alle toegepaste houtmaterialen, zoals spaanplaat, MDF en multiplex.",
-          "legal_basis": "EN 717-1: Formaldehyde-emissie — testmethode",
-          "requirement_level": "verplicht"
-        },
-        {
-          "code": "TS3",
-          "text": "Alle geleverde meubelproducten moeten voldoen aan de REACH-verordening. Het gebruik van stoffen die zijn opgenomen op de lijst van Zeer Zorgwekkende Stoffen (SVHC-lijst) is verboden.",
-          "legal_basis": "Verordening (EG) nr. 1907/2006 (REACH); SVHC-lijst (ECHA)",
-          "requirement_level": "verplicht"
-        },
-        {
-          "code": "TS4",
-          "text": "Voor bureaustoelen, werktafels en andere zit- en werkmeubelen moeten ergonomische eisen worden gevolgd zoals vastgelegd in de toepasselijke EN-normen, waaronder EN 1335, EN 527 en/of gelijkwaardige normen.",
-          "legal_basis": "EN 1335 (bureaustoelen); EN 527 (werktafels)",
-          "requirement_level": "verplicht"
-        },
-        {
-          "code": "TS5",
-          "text": "Het meubilair moet zijn getest op duurzaamheid en stabiliteit conform de relevante Europese normen, zoals EN 16139, EN 1728: Mechanische sterkte en duurzaamheid van meubelen",
-          "legal_basis": "EN 16139, EN 1728: Mechanische sterkte en duurzaamheid van meubelen",
-          "requirement_level": "verplicht"
-        },
-        {
-          "code": "TS6",
-          "text": "De verpakking van het meubilair dient minimaal en functioneel te zijn, waarbij zoveel mogelijk gebruik wordt gemaakt van recycleerbare materialen. De verpakking moet duidelijk gemarkeerd zijn ten behoeve van gescheiden afvalinzameling.",
-          "legal_basis": "Richtlijn 94/62/EG betreffende verpakking en verpakkingsafval",
-          "requirement_level": "verplicht"
-        },
-        {
-          "code": "TS7",
-          "text": "Bij levering van het meubilair moeten duidelijke onderhouds- en reinigingsinstructies worden meegeleverd. Deze moeten afgestemd zijn op de gebruikte materialen en afwerkingen.",
-          "legal_basis": "ISO 14021 (milieu-informatie); gangbare leveranciersdocumentatie",
-          "requirement_level": "verplicht"
-        },
-        {
-          "code": "TS8",
-          "text": "Indien in de productspecificaties een minimumpercentage gerecycled materiaal is opgenomen, dient het meubilair aan dit percentage te voldoen. De herkomst en het percentage gerecycled materiaal moeten aantoonbaar zijn.",
-          "legal_basis": "Europese Green Deal-doelstellingen, Afvalrichtlijn (2008/98/EG)",
-          "requirement_level": "voorwaardelijk_verplicht"
-        },
-        {
-          "code": "TS9",
-          "text": "Indien het geleverde meubilair mechanische of verstelbare onderdelen bevat, moeten deze onderdelen als afzonderlijke componenten vervangbaar zijn. In de documentatie dient te worden aangegeven welke onderdelen vervangbaar zijn en hoe ze kunnen worden besteld.",
-          "legal_basis": "EU GPP Criteria for Furniture, Technical Report 2021, pagina 15 (Product durability and reparability)",
-          "requirement_level": "voorwaardelijk_verplicht"
-        },
-        {
-          "code": "TS10",
-          "text": "Indien sprake is van modulair meubilair, moet het ontwerp uitbreidbaar en aanpasbaar zijn met behoud van functionele en esthetische samenhang. Koppeling met bestaande modules dient zonder speciaal gereedschap mogelijk te zijn.",
-          "legal_basis": "EU GPP Criteria for Furniture, Technical Report 2021, pagina 15 (Product modularity and upgradability)",
-          "requirement_level": "voorwaardelijk_verplicht"
-        },
-        {
-          "code": "TS11",
-          "text": "Indien de inschrijver zich beroept op een milieukeurmerk of certificering van een derde partij om aan te tonen dat wordt voldaan aan een technische of milieueis, moet dit keurmerk onafhankelijk, transparant en toetsbaar zijn, conform ISO 14024 of een gelijkwaardig systeem.",
-          "legal_basis": "EU GPP Criteria for Furniture, Technical Background Report 2021, pagina 33 (Use of ecolabels - compliance with ISO 14024)",
-          "requirement_level": "voorwaardelijk_verplicht"
-        },
-        {
-          "code": "TS12",
-          "text": "Indien in de opdracht sprake is van een terugname- of recyclingverplichting, moet de inschrijver een sluitend systeem aanbieden voor het ophalen, hergebruiken en/of milieuvriendelijk verwerken van het afgedankte meubilair.",
-          "legal_basis": "EU GPP Criteria for Furniture, Technical Report 2021, pagina 16 (Take-back and recycling schemes)",
-          "requirement_level": "voorwaardelijk_verplicht"
-        },
-        {
-          "code": "TS13",
-          "text": "Meubilair dient ontworpen te zijn met het oog op eenvoudige demontage, zodat verschillende materiaalsoorten (hout, metaal, kunststof) aan het einde van de levensduur makkelijk van elkaar gescheiden kunnen worden.",
-          "legal_basis": "EU GPP Criteria for Furniture, Technical Background Report 2021, p. 15 (Design for disassembly)",
-          "requirement_level": "aanbevolen"
-        },
-        {
-          "code": "TS14",
-          "text": "Het gebruik van hout dat FSC- of PEFC-gecertificeerd is, wordt sterk aanbevolen ter borging van duurzaam bosbeheer, bovenop de wettelijke verplichting tot legaal houtgebruik.",
-          "legal_basis": "EU GPP Criteria for Furniture, Technical Background Report 2021, p. 13 (Legal and sustainable timber sourcing)",
-          "requirement_level": "aanbevolen"
-        },
-        {
-          "code": "TS15",
-          "text": "Het is sterk aanbevolen dat de inschrijver garandeert dat reserveonderdelen voor de geleverde meubelen gedurende minimaal vijf jaar beschikbaar blijven, gerekend vanaf het moment van levering.",
-          "legal_basis": "EU GPP Criteria for Furniture, Technical Background Report 2021, p. 15 (Product durability and reparability)",
-          "requirement_level": "aanbevolen"
-        },
-        {
-          "code": "TS16",
-          "text": "Waar mogelijk wordt geadviseerd gebruik te maken van lijmen, lakken en verven met lage emissies van vluchtige organische stoffen (VOS), ten behoeve van een gezond binnenklimaat.",
-          "legal_basis": "EU GPP Criteria for Furniture, Technical Background Report 2021, p. 19 (Indoor air quality - low emission materials)",
-          "requirement_level": "aanbevolen"
+      "gpp_criteria_tabs": {
+        "main_tabs": [
+          {
+            "key": "refurbished",
+            "label": "📋 Refurbished meubilair",
+            "label_short": "Refurbished meubilair"
+          },
+          {
+            "key": "new",
+            "label": "🪑 Nieuw meubilair",
+            "label_short": "Nieuw meubilair"
+          },
+          {
+            "key": "end_of_life",
+            "label": "♻️ End-of-life verwerking",
+            "label_short": "End-of-life verwerking"
+          }
+        ],
+        "default_main_tab": "refurbished",
+        "code_column_header": "TS-CODE",
+        "spec_column_header": "SPECIFICATIE",
+        "data": {
+          "refurbished": {
+            "core_criteria": [
+              {
+                "code": "GC4",
+                "title": "Langere garantieperioden",
+                "specification": "Er worden maximaal X extra punten toegekend voor elk extra jaar dat aan de garantie- en serviceovereenkomst wordt toegevoegd bovenop de minimumperiode bepaald in de technische specificatie (zie bovenstaande TS). Dit gaat als volgt:\n• 4 of meer jaar extra garantie: x punten\n• 3 jaar extra garantie: 0,75 x punten\n• 2 jaar extra garantie: 0,5 x punten\n• 1 jaar extra garantie: 0,25 x punten",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 12"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een schriftelijke verklaring waarin de aangeboden periode wordt gedetailleerd en wordt vermeld dat deze de conformiteit van de goederen met de contractueel vastgelegde specificaties omvat, inclusief alle aangegeven gebruiksmogelijkheden."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "GC1",
+                "title": "Bekledingsmaterialen met een laag gehalte aan chemische residuen (Alleen voor bekleed meubilair)",
+                "specification": "Er worden punten toegekend wanneer blijkt dat het bekledingsmateriaal, waar nodig, voldoet aan de onderstaande grenswaarden voor kleurstoffen op basis van aan beperkingen onderworpen arylamines, extraheerbare zware metalen  en vrij formaldehyde.\n\nVoor textiel- en gecoate stoffen:\n• Geen aan beperkingen onderworpen arylamines (zie tabel 5 in aanhangsel II) aanwezig boven 30 mg/kg  (de grenswaarde geldt voor elke afzonderlijke amine) in overeenstemming met EN ISO 14362-1 en 14362 3.\n• Vrij en deels hydrolyseerbaar formaldehyde ≤ 75 mg/kg in overeenstemming met EN ISO 14184-1.\n• Extraheerbare zware metalen bepaald conform EN ISO 105-E04 als zijnde minder dan de onderstaande grenswaarden (in mg/kg): antimoon ≤ 30,0; arseen ≤ 1,0; cadmium ≤ 0,1; chroom ≤ 2,0; kobalt ≤ 4,0;  koper ≤ 50,0; lood ≤ 1,0; kwik ≤ 0,02 en nikkel ≤ 1,0.\n\nVoor leder:\n• Geen aan beperkingen onderworpen arylamines (zie tabel 5 in aanhangsel II) aanwezig boven 30 mg/kg  (de grenswaarde geldt voor elke afzonderlijke amine) in overeenstemming met EN ISO 17234-1.\n• Chroom VI mag niet meer dan 3 mg/kg bedragen in overeenstemming met EN ISO 17075 (aantoonbaarheidsgrens).\n• Vrij en deels hydrolyseerbaar formaldehyde ≤ 300 mg/kg in overeenstemming met EN ISO 17226-1.\n• Extraheerbare zware metalen bepaald conform EN ISO 17072-1 als zijnde minder dan de onderstaande grenswaarden (in mg/kg): antimoon ≤ 30,0; arseen ≤ 1,0; cadmium ≤ 0,1; chroom ≤ 200,0; kobalt ≤ 4,0;  koper ≤ 50,0; lood ≤ 1,0; kwik ≤ 0,02 en nikkel ≤ 1,0.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag.8"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Er worden punten toegekend aan inschrijvers die een verklaring voorleggen waarin wordt gesteld dat het  bekledingsmateriaal van leder, textiel- of gecoate stof, waar nodig, voldoet aan de bovenstaande grenswaarden,  ondersteund door de resultaten van relevante testmethodes aangevraagd door ofwel de inschrijver zelf, ofwel de  leverancier van het materiaal.  Bekledingsmaterialen waaraan de Europese milieukeur voor textiel is toegekend, zoals vastgesteld in Besluit  2014/350/EU van de Commissie, of andere relevante type I-milieukeuren conform ISO 14024  die rechtstreeks aan de  gestelde eisen voldoen of gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "GC2",
+                "title": "Opvulmaterialen met een laag gehalte aan chemische residuen",
+                "specification": "Wanneer bij de bekleding van meubilair latexschuimrubber als opvulmateriaal wordt gebruikt, zullen punten worden  toegekend als het schuimrubber voldoet aan de eisen inzake chloorfenolen, zware metalen, bestrijdingsmiddelen en  butadieen zoals vermeld in tabel 7 van aanhangsel III, in overeenstemming met de desbetreffende testmethode (A-D)  vermeld in dezelfde tabel.\n\nWanneer bij de bekleding van meubilair polyurethaanschuimrubber als opvulmateriaal wordt gebruikt, zullen punten  worden toegekend als het schuimrubber voldoet aan de eisen inzake zware metalen, weekmakers, TDA, MDA,  organische vluchtige verbindingen en andere specifieke stoffen vermeld in tabel 8 van aanhangsel III, in overeenstemming  met de desbetreffende testmethode (A-E) vermeld in dezelfde tabel.\n\nWanneer andere opvulmaterialen worden gebruikt, zullen punten worden toegekend als kan worden aangetoond dat  deze voldoen aan de grenswaarden voor chemische residuen zoals vermeld in tabel 7 of tabel 8 van aanhangsel III.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 8"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde voor latexschuimrubber (of andere opvulmaterialen):",
+                  "text": "De inschrijver verstrekt een verklaring van overeenstemming met dit criterium, ondersteund door testverslagen conform de volgende methoden:\nA. De inschrijver verstrekt voor chloorfenolen een verslag waarin de resultaten van de volgende testprocedure zijn opgenomen. 5 g van het monster wordt gemalen en de chloorfenolen worden geëxtraheerd in de vorm van fenol  (PCP), natriumzout (SPP) of esters. De extracten worden geanalyseerd met behulp van gaschromatografie (GC). De  detectie vindt plaats met behulp van een massaspectrometer of elektronenvangstdetector (ECD).\n\nB. De inschrijver verstrekt voor zware metalen een verslag waarin de resultaten van de volgende testprocedure zijn  opgenomen. Het gemalen monster wordt geëlueerd in overeenstemming met DIN 38414-S4 of een gelijkwaardige  norm in een verhouding van 1:10. Het daaruit verkregen filtraat wordt door een membraanfilter van 0,45 μm  gefiltreerd (indien nodig met behulp van drukfiltratie). De verkregen oplossing wordt onderzocht op het gehalte aan  zware metalen door middel van optische emissiespectrometrie met inductief gekoppeld plasma (ICP-OES), ook  bekend als atoememissiespectrometrie met inductief gekoppeld plasma (ICP-AES) of door middel van atoomabsorptiespectrometrie met behulp van een hydride of koudedampproces.\n\nC. De inschrijver verstrekt voor bestrijdingsmiddelen een verslag waarin de resultaten van de volgende testprocedure zijn opgenomen. 2 g van het monster wordt geëxtraheerd in een ultrasoon bad met een mengsel van hexaan en dichloormethaan (85/15). Het extract wordt schoongemaakt door middel van schudden in acetonitril of door adsorptiechromatografie met behulp van florisil. De meting en kwantificatie worden bepaald door middel van gaschromatografie met detectie op een elektronenvangstdetector of door gekoppelde gaschromatografie/massaspectrometrie. Het testen op bestrijdingsmiddelen is vereist voor latexschuimrubber met een gehalte aan natuurlijk schuimrubber van minstens 20 %.\n\nD. De inschrijver verstrekt voor butadieen een verslag waarin de resultaten van de volgende testprocedure zijn opgenomen. Na het vermalen en wegen van het latexschuimrubber worden monsters genomen van de damp boven de vloeistof (head space). Het butadieengehalte wordt bepaald middels gaschromatografie met detectie door vlamionisatie.\n\n**Bijbehorende contractuele voorwaarde voor polyurethaanschuimrubber (of andere opvulmaterialen):**\n\nDe inschrijver verstrekt een verklaring van overeenstemming met dit criterium, ondersteund door testverslagen waarin de conformiteit wordt aangetoond met de grenswaarden in tabel 7 van aanhangsel III. Voor de methoden B, C, D en E worden 6 composietmonsters genomen op een maximumdiepte van 2 cm onder het oppervlak van het materiaal dat naar het betrokken laboratorium is verzonden.\n\nA. De inschrijver verstrekt voor ftalaten en andere specifieke stoffen vermeld in tabel 7 van aanhangsel III een verklaring die wordt ondersteund door verklaringen van leveranciers van het schuimrubber waarin wordt bevestigd dat deze stoffen niet doelbewust zijn toegevoegd aan de formulering van het schuimrubber.\n\nB. De inschrijver verstrekt voor zware metalen een verslag waarin de resultaten van de volgende testprocedure zijn opgenomen. Het gemalen monster wordt geëlueerd in overeenstemming met DIN 38414-S4 of een gelijkwaardige norm in een verhouding van 1:10. Het daaruit verkregen filtraat wordt door een membraanfilter van 0,45 μm gefilterd (indien nodig met behulp van drukfiltratie). De verkregen oplossing wordt onderzocht op het gehalte aan zware metalen door middel van atoememissiespectrometrie met inductief gekoppeld plasma (ICP-AES of ICP-OES) of door middel van atoomabsorptiespectrometrie met behulp van een hydride of koudedampproces.\n\nC. De inschrijver verstrekt voor het totaalgehalte aan weekmakers een verslag waarin de resultaten van de volgende testprocedure zijn opgenomen. Er wordt een extractie verricht met behulp van een gevalideerde methode zoals de subsone extractie van 0,3 g van een monster in een kolf met 9 ml t-butylmethylether gedurende 1 uur, gevolgd door de bepaling van het gehalte aan ftalaten via GC met behulp van een massaselectieve detector in SIM-modus (single ion monitoring).\n\nD. De inschrijver verstrekt voor TDA en MDA een verslag waarin de resultaten van de volgende testprocedure zijn opgenomen. Er wordt een extractie van een composietmonster van 0,5 g verricht in een injectiespuitje van 5 ml met 2,5 ml azijnzuur in 1 % waterige oplossing. Het injectiespuitje wordt leeggespoten en de vloeistof wordt terug in het injectiespuitje gebracht. Nadat deze handeling 20 keer is herhaald, wordt het uiteindelijk verkregen extract behouden voor analyse. Er wordt vervolgens opnieuw 2,5 ml azijnzuur in 1 % waterige oplossing in het injectiespuitje gebracht en dezelfde handeling wordt opnieuw twintig keer herhaald. Daarna wordt het extract gecombineerd met het eerste extract en tot 10 ml verdund in een maatkolf met azijnzuur. De extracten worden geanalyseerd met behulp van hogedrukvloeistofchromatografie (HPLC-UV) of HPLC-MS. Als er bij toepassing van HPLC-UV vermoedelijk interferentie is opgetreden, wordt een nieuwe analyse met HPLC-MS (hogedrukvloeistofchromatografie gekoppeld aan massaspectrometrie) verricht.\n\nE. De inschrijver verstrekt voor organische tinverbindingen een verslag waarin de resultaten van de volgende 10 testprocedure zijn opgenomen. Een composietmonster dat 1-2 g weegt, wordt gedurende 1 uur vermengt met ten minste 30 ml extractie-agens is een mengsel dat als volgt is samengesteld: 1750 ml methanol + 300 ml azijnzuur + 250 ml buffer (pH 4,5). De buffer is een oplossing van 164 g natriumacetaat in 1200 ml water en 165 ml azijnzuur, te verdunnen met water totdat een volume van 2000 ml bereikt is. Na extractie wordt de alkyl-tinsoort gederivatiseerd door toevoeging van 100 μl natriumtetraethylboraat in tetrahydrofuraan (THF) (200 mg/ml THF). Het derivaat wordt geëxtraheerd met n-hexaan en het monster ondergaat een tweede extractieprocedure. Beide hexaanextracten worden gecombineerd en verder gebruikt om de organische tinverbindingen te bepalen door middel van gaschromatografie met massaselectieve detectie in SIM-modus."
+                }
+              },
+              {
+                "code": "GC3",
+                "title": "Opvulmaterialen met lage uitstoot (Alleen voor bekleed meubilair)",
+                "specification": "**GC 3.1. Opvulmaterialen van latexschuimrubber met lage uitstoot**\n\nWanneer bij de bekleding van meubilair latexschuimrubber als opvulmateriaal wordt gebruikt, zullen punten worden  toegekend als het latexschuimrubber voldoet aan de eisen inzake uitstoot van vluchtige organische stoffen zoals  hieronder vermeld.\n\n![Grenswaarden tabel latexschuimrubber](/stof-grenswaarde1.png)\n\n* N-nitrosodimethylamine (NDMA), N-nitrosodiethylamine (NDEA), N-nitrosomethylethylamine (NMEA), N-nitrosodi­iso-propylamine (NDIPA), N-nitrosodi-n-propylamine (NDPA), N-nitrosodi-n-butylamine (NDBA), N-nitrosopyrrolidinon (NPYR), N-nitrosopiperidine (NPIP), N-nitrosomorfoline (NMOR).\n\n**GC 3.2. Opvulmaterialen van polyurethaanschuimrubber met lage uitstoot**\n\nWanneer bij de bekleding van meubilair latexschuimrubber als opvulmateriaal wordt gebruikt, zullen punten worden  toegekend als het latexschuimrubber voldoet aan de eisen inzake uitstoot van vluchtige organische stoffen zoals  hieronder vermeld.\n\n![Grenswaarden tabel polyurethaanschuimrubber](/stof-grenswaarde2.png)\n\n**GC 3.3. Andere opvulmaterialen van schuimrubber met lage uitstoot**\n\nWanneer andere opvulmaterialen worden gebruikt, kunnen ook punten worden toegekend als kan worden aangetoond dat  voldaan is aan de grenswaarden voor de uitstoot van vluchtige organische stoffen zoals vermeld in 3.1 of 3.2.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 10, 11, 12"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een verklaring van overeenstemming met dit criterium, ondersteund door een testverslag waarin de resultaten van een testkameranalyse overeenkomstig ISO 16000-9 of een gelijkwaardige test zijn opgenomen.\n\nHet ingepakte monster moet minstens 24 uur op kamertemperatuur worden bewaard. Na deze periode wordt het monster uitgepakt en direct naar de testkamer overgebracht. Het monster wordt geplaatst op een monsterhouder die luchttoegang van alle kanten mogelijk maakt. De klimaatfactoren worden aangepast in overeenstemming met ISOnorm 16000-9. Ten behoeve van de vergelijking van testresultaten moet de plaatsspecifieke ventilatiesnelheid (q = n/l) 1 zijn. De ventilatiesnelheid moet tussen 0,5 en 1 liggen. De luchtbemonstering wordt uitgevoerd 24 ± 1 uur nadat het monster in de testkamer is geplaatst gedurende 1 uur op DNPH-patronen voor de analyse van formaldehyde en andere aldehyden en op Tenax TA voor de analyse van andere vluchtige organische stoffen. De bemonstering van andere stoffen mag langer duren, maar moet binnen 30 uur zijn voltooid.\n\nDe analyse van formaldehyde en andere aldehyden moet voldoen aan de ISO-norm 16000-3 of gelijkwaardige tests. Tenzij anders is aangegeven, moet de analyse van andere vluchtige organische stoffen voldoen aan de ISO-norm 16000-6.\n\nDe analyse van nitrosaminen wordt uitgevoerd met behulp van gaschromatografie in combinatie met een detector voor thermische energieanalyse (GC-TEA), in overeenstemming met de methode BGI 505-23 (voorheen: ZH 1/120.23) of gelijkwaardig.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver verstrekt een verklaring van overeenstemming met dit criterium, ondersteund door testresultaten waaruit blijkt dat voldaan is aan de bovenvermelde grenswaarden. De combinatie monster/testkamer is:\n• 1 monster met de afmetingen 25×20×15 cm wordt in een testkamer van 0,5 m3 geplaatst, of\n• 2 monsters met de afmetingen 25×20×15 cm worden in een testkamer van 1,0 m3 geplaatst.\n\nHet schuimrubbermonster wordt onder in een ruimte voor de emissieproef geplaatst en gedurende drie dagen geconditioneerd op 23 °C en 50 % relatieve vochtigheid, waarbij een luchtverversingsnelheid n wordt toegepast van 0,5 per uur en een ruimtelading L van 0,4 m²/m³ (= totaal blootgesteld oppervlak van het monster in verhouding tot de afmetingen van de ruimte zonder afdichtingsranden en achterkant) in overeenstemming met de ISO-normen 16000-9 en 16000-11 of gelijkwaardige tests.\n\nDe bemonstering vindt 72 ± 2 uur na het laden van de ruimte plaats gedurende 1 uur met behulp van Tenax TA- en DNPH-patronen voor de analyse van respectievelijk vluchtige organische stoffen en formaldehyde. De VOSemissies worden gevangen in Tenax TA-absorptiebuizen en vervolgens geanalyseerd door middel van GC-MS met thermische desorptie overeenkomstig ISO-norm 16000-6 of gelijkwaardige tests.\n\nDe resultaten worden semikwantitatief uitgedrukt als tolueenequivalenten. Alle gespecificeerde afzonderlijke analyten worden gerapporteerd vanaf een concentratiegrens ≥ 1 μg/m³. De totale VOS-waarde is de som van alle analyten met een concentratie ≥ 1 μg/m³ die binnen het retentietijdvenster van n-hexaan (C6) tot n-hexadecaan (C16) elueren, beide inclusief. De som van alle detecteerbare componenten die volgens Verordening (EG) nr. 1272/2008 zijn ingedeeld in categorie C1A of C1B is de som van al deze stoffen met een concentratie ≥ 1 μg/m³. Indien de testresultaten de standaardgrenzen overschrijden, moet een stofspecifieke kwantificering worden uitgevoerd. Formaldehyde kan worden bepaald door het verzamelen van de bemonsterde lucht op een DNPH-patroon en daaropvolgende analyse met behulp van HPLC/UV in overeenstemming met ISO-norm 16000-3 of gelijkwaardige tests."
+                }
+              }
+            ]
+          },
+          "new": {
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "Formaldehyde-emissies uit van hout vervaardigde platen",
+                "specification": "Er worden punten toegekend wanneer blijkt dat alle in de meubelen gebruikte van hout vervaardigde platen formaldehyde-emissiewaarden kunnen voorleggen die voldoen aan 65% van de E1-drempelwaarden voor formaldehyde-emissies zoals gedefinieerd in bijlage B bij EN 13986.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Conformiteit met 65% van E1-drempelwaarden kan aan te tonen als volgt: De leverancier moet een verklaring overleggen waarin vermeld wordt dat de door hem geleverde van hout vervaardigde platen voldoen aan de E1-emissiegrenswaarden, ondersteund door testverslagen die in overeenstemming met EN 717-1, EN 717-2/EN ISO 12460-3 of EN 120/EN ISO 12460-5 zijn opgesteld. Meubelen die over de Europese milieukeur voor meubelen beschikken, zoals bepaald in Besluit (EU) nr. 2016/1332 van de Europese Commissie, of over andere relevante type I-milieukeuren conform ISO 14024 die rechtstreeks aan de gestelde eisen voldoen of daartoe gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "GC2",
+                "title": "Markering van kunststof",
+                "specification": "Er worden punten toegekend wanneer kunststofonderdelen met een massa groter dan 100 g worden gemarkeerd conform EN ISO 11469 en EN ISO 1043 (delen 1-4). De letters die voor de markeringen worden gebruikt, moeten minstens 2,5 mm hoog zijn.\nWanneer doelbewust vulstoffen, vlamvertragers of weekmakers in de kunststof zijn opgenomen in verhoudingen groter dan 1 gewichtsprocent, moet de aanwezigheid ervan ook blijken uit de markering conform EN ISO 1043 delen 2-4.\nIn uitzonderlijke gevallen is het niet verplicht om kunststofonderdelen met een groter gewicht dan 100 g te markeren:\n• als de markering een negatief effect zou hebben op de prestaties of de functionaliteit van het kunststofonderdeel;\n• als de productiemethode het aanbrengen van de markering technisch onmogelijk maakt;\n• als onderdelen niet kunnen worden gemarkeerd omdat ze onvoldoende ruimte bieden voor een leesbaar opschrift dat door een recyclingmedewerker kan worden herkend.\nIn bovenstaande gevallen, wanneer niet-markering gerechtvaardigd is, worden verdere gegevens over het polymertype en eventuele additieven conform de vereisten van EN ISO 11469 en EN ISO 1043 (delen 1-4) schriftelijk vermeld.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een verklaring van overeenstemming met dit criterium, met daarbij een lijst van alle kunststofonderdelen met een gewicht van meer dan 100 g in het meubel en de vermelding of deze al dan niet gemarkeerd zijn in overeenstemming met EN ISO 11469 en EN ISO 1043 (delen 1-4).\n\nDe markering van kunststofonderdelen moet duidelijk zichtbaar zijn tijdens een visueel onderzoek van het kunststofonderdeel. De markering hoeft niet noodzakelijk duidelijk zichtbaar te zijn op het meubel na de eindassemblage.\n\nBij niet-markering van kunststofonderdelen met een gewicht van meer dan 100 g, verstrekt de inschrijver de nodige rechtvaardigingen en alle relevante informatie.\n\nMeubelen die over de Europese milieukeur voor meubelen beschikken, zoals bepaald in Besluit (EU) nr. 2016/1332 van de Europese Commissie, of over andere relevante type I-milieukeuren conform ISO 14024 die rechtstreeks aan de gestelde eisen voldoen of daartoe gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "GC3",
+                "title": "Langere garantieperioden",
+                "specification": "Er worden maximaal X extra punten toegekend voor elk extra jaar dat aan de garantie- en serviceovereenkomst wordt toegevoegd bovenop de minimumperiode bepaald in de technische specificatie. Dit gaat als volgt:\n• +4 of meer jaren extra garantie: x punten\n• +3 jaren extra garantie: 0,75 x punten\n• +2 jaren extra garantie: 0,5 x punten\n• +1 jaar extra garantie: 0,25 x punten",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een schriftelijke verklaring waarin de aangeboden periode wordt gedetailleerd en wordt vermeld dat deze de conformiteit van de goederen met de contractueel vastgelegde specificaties omvat, inclusief alle aangegeven gebruiksmogelijkheden."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "GC1",
+                "title": "Formaldehyde-emissies uit van hout vervaardigde platen",
+                "specification": "Er worden punten toegekend wanneer blijkt dat alle in de meubelen gebruikte van hout vervaardigde platen formaldehyde-emissiewaarden kunnen voorleggen die voldoen aan 50% van de E1-drempelwaarden voor formaldehyde-emissies zoals gedefinieerd in bijlage B bij EN 13986.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Conformiteit met 50% van E1-drempelwaarden aan te tonen als volgt: De leverancier moet een verklaring overleggen waarin vermeld wordt dat de door hem geleverde van hout vervaardigde platen voldoen aan de vereiste 65 % van de E1- emissiegrenswaarden, ondersteund door testverslagen die in overeenstemming met EN 717-1, EN 717-2/EN ISO 12460-3 of EN 120/EN ISO 12460-5 zijn opgesteld. Meubelen die over de Europese milieukeur voor meubelen beschikken, zoals bepaald in Besluit (EU) nr. 2016/1332 van de Europese Commissie, of over andere relevante type I-milieukeuren conform ISO 14024 die rechtstreeks aan de gestelde eisen voldoen of daartoe gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "GC3",
+                "title": "Bekledingsmaterialen met een laag gehalte aan chemische residuen",
+                "specification": "Er zullen punten worden toegekend wanneer blijkt dat het bekledingsmateriaal, waar nodig, voldoet aan de onderstaande grenswaarden voor kleurstoffen op basis van aan beperkingen onderworpen arylamines, extraheerbare zware metalen en vrij formaldehyde.\n\nVoor textiel- en gecoate stoffen:\n• Geen aan beperkingen onderworpen arylamines aanwezig boven 30 mg/kg (de grenswaarde geldt voor elke afzonderlijke amine) in overeenstemming met EN ISO 14362-1 en 14362-3.\n• Vrij en deels hydrolyseerbaar formaldehyde ≤ 75 mg/kg in overeenstemming met EN ISO 14184-1.\n• Extraheerbare zware metalen bepaald conform EN ISO 105-E04 als zijnde minder dan de onderstaande grenswaarden (in mg/kg): antimoon ≤ 30,0; arseen ≤ 1,0; cadmium ≤ 0,1; chroom ≤ 2,0; kobalt ≤ 4,0; koper ≤ 50,0; lood ≤ 1,0; kwik ≤ 0,02 en nikkel ≤ 1,0.\n\nVoor leder:\n• Geen aan beperkingen onderworpen arylamines aanwezig boven 30 mg/kg (de grenswaarde geldt voor elke afzonderlijke amine) in overeenstemming met EN ISO 17234-1 en EN ISO 17234-2.\n• Chroom VI mag niet meer dan 3 mg/kg bedragen in overeenstemming met EN ISO 17075 (aantoonbaarheidsgrens).\n• Vrij en deels hydrolyseerbaar formaldehyde ≤ 300 mg/kg in overeenstemming met EN ISO 17226-1.\n• Extraheerbare zware metalen bepaald conform EN ISO 17072-1 als zijnde minder dan de onderstaande grenswaarden (in mg/kg): antimoon ≤ 30,0; arseen ≤ 1,0; cadmium ≤ 0,1; chroom ≤ 200,0; kobalt ≤ 4,0; koper ≤ 50,0; lood ≤ 1,0; kwik ≤ 0,02 en nikkel ≤ 1,0.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 20"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Er worden punten toegekend aan inschrijvers die een verklaring voorleggen waarin wordt gesteld dat het  bekledingsmateriaal van leder, textiel- of gecoate stof, waar nodig, voldoet aan de bovenstaande grenswaarden, ondersteund door de resultaten van relevante testmethodes aangevraagd door ofwel de inschrijver zelf, ofwel de leverancier van het materiaal.\n\nBeklede meubelen waaraan de Europese milieukeur voor meubelen werd toegekend zoals bepaald in Besluit (EU) nr. 2016/1332 van de Europese Commissie of textielstoffen waaraan de Europese milieukeur voor textiel werd toegekend zoals bepaald in Besluit 2014/350/EU van de Commissie of bekledingsmaterialen waaraan andere relevante type I-milieukeuren conform ISO 14024 werden toegekend die rechtstreeks aan de gestelde eisen voldoen of daartoe gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "GC4",
+                "title": "Meubelen met lage VOS-emissies",
+                "specification": "Punten worden toegekend wanneer wordt aangetoond dat de totale uitstoot van vluchtige organische stoffen uit het volledige beklede meubel (zoals leunstoelen, sofa's of kantoorstoelen) of voortvloeiend uit tests van enkel het bekledingsmateriaal (wanneer dit als de belangrijkste bron voor de VOS-emissies van het meubel beschouwd wordt, bv. leder of gecoate stoffen) leiden tot TVOS-concentraties in de testkamer van minder dan 500 μg/m³ na 28 dagen van testen conform ISO 16000 of gelijkwaardige normen bij de volgende laadcapaciteiten en ventilatiesnelheden:\n\n![Test element tabel](/testelement.png)",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 20"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een kopie van het verslag van een test in de testkamer uitgevoerd in overeenstemming met de eisen van de normen uit de ISO 16000-reeks of gelijkwaardige normen. Als vroeger aan de concentratiegrens in de testkamer gespecificeerd op 28 dagen voldaan kan worden, mag de test voortijdig gestopt worden.\n\nDe inschrijver moet duidelijk maken of de test al dan niet toegepast is op het volledige meubel dan wel op specifiek gedefinieerde onderdeelmaterialen.\n\nBeklede meubelen waaraan de Europese milieukeur voor meubelen werd toegekend, zoals bepaald in Besluit (EU) nr. 2016/1332 van de Europese Commissie, of andere type I-milieukeuren conform ISO 14024 die rechtstreeks aan de gestelde eisen voldoen of daartoe gelijkwaardige methodes gebruiken, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "GC6",
+                "title": "Opvulmaterialen met een laag gehalte aan chemische residuen (Alleen voor bekleed meubilair)",
+                "specification": "Wanneer bij de bekleding van meubilair latexschuimrubber als opvulmateriaal wordt gebruikt, zullen punten worden toegekend als het schuimrubber voldoet aan de eisen inzake chloorfenolen, zware metalen, bestrijdingsmiddelen en butadieen vermeld in tabel 7 van aanhangsel III, in overeenstemming met de desbetreffende testmethode (A-D) vermeld in dezelfde tabel.\n\nWanneer bij de bekleding van meubilair polyurethaanschuimrubber als opvulmateriaal wordt gebruikt, zullen punten worden toegekend als het schuimrubber voldoet aan de eisen inzake zware metalen, weekmakers, TDA, MDA, organische verbindingen en andere specifieke stoffen vermeld in tabel 8 van aanhangsel III, in overeenstemming met de desbetreffende testmethode (A-E) vermeld in dezelfde tabel.\n\nWanneer andere opvulmaterialen worden gebruikt, zullen punten worden toegekend als kan worden aangetoond dat deze voldoen aan de grenswaarden voor chemische residuen zoals vermeld in tabel 7 of tabel 8 van aanhangsel III.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "**Voor latexschuimrubber (of andere opvulmaterialen):**\n\nDe inschrijver verstrekt een verklaring van overeenstemming met dit criterium, ondersteund door testverslagen conform de volgende methoden:\n\nA. De inschrijver verstrekt voor chloorfenolen een verslag waarin de resultaten van de volgende testprocedure zijn opgenomen. 5 g van het monster wordt gemalen en de chloorfenolen worden geëxtraheerd in de vorm van fenol (PCP), natriumzout (SPP) of esters. De extracten worden geanalyseerd met behulp van gaschromatografie (GC). De detectie vindt plaats met behulp van een massaspectrometer of elektronenvangstdetector (ECD).\n\nB. De inschrijver verstrekt voor zware metalen een verslag waarin de resultaten van de volgende testprocedure zijn opgenomen. Het gemalen monster wordt geëlueerd in overeenstemming met DIN 38414-S4 of een gelijkwaardige norm in een verhouding van 1:10. Het daaruit verkregen filtraat wordt door een membraanfilter van 0,45 μm gefilterd (indien nodig met behulp van drukfiltratie). De verkregen oplossing wordt onderzocht op het gehalte aan zware metalen door middel van optische emissiespectrometrie met inductief gekoppeld plasma (ICP-OES), ook bekend als atoememissiespectrometrie met inductief gekoppeld plasma (ICP-AES) of door middel van atoomabsorptiespectrometrie met behulp van een hydride- of koude dampmethode.\n\nC. De inschrijver verstrekt voor bestrijdingsmiddelen een verslag waarin de resultaten van de volgende testprocedure zijn opgenomen. 2 g van het monster wordt geëxtraheerd in een ultrasoon bad met een mengsel van hexaan en dichloormethaan (85/15). Het extract wordt schoongemaakt door middel van schudden in acetonitril of door adsorptiechromatografie met behulp van florisil. De meting en kwantificatie worden bepaald door middel van gaschromatografie met detectie op een elektronenvangstdetector of door gekoppelde gaschromatografie/massaspectrometrie. Het testen op bestrijdingsmiddelen is vereist voor latexschuimrubber met een gehalte aan natuurlijk schuimrubber van minstens 20%.\n\nD. De inschrijver verstrekt voor butadieen een verslag waarin de resultaten van de volgende testprocedure zijn opgenomen. Na het vermalen en wegen van het latexschuimrubber worden monsters genomen van de damp boven de vloeistof (head space). Het butadieengehalte wordt bepaald middels gaschromatografie met detectie door vlamionisatie.\n\n**Voor polyurethaanschuimrubber (of andere opvulmaterialen):**\n\nDe inschrijver verstrekt een verklaring van overeenstemming met dit criterium, ondersteund door testverslagen waarin de conformiteit wordt aangetoond met de grenswaarden in tabel 8 van aanhangsel III. Voor de methoden B, C, D en E worden 6 composietmonsters genomen op een maximumdiepte van 2 cm onder het oppervlak van het materiaal dat naar het betrokken laboratorium is verzonden.\n\nA. De inschrijver verstrekt voor ftalaten en andere specifieke stoffen vermeld in tabel 8 van aanhangsel III een verklaring die wordt ondersteund door verklaringen van leveranciers van het schuimrubber waarin wordt bevestigd dat deze stoffen niet doelbewust zijn toegevoegd aan de formulering van het schuimrubber.\n\nB. De inschrijver verstrekt voor zware metalen een verslag waarin de resultaten van de volgende testprocedure zijn opgenomen. Het gemalen monster wordt geëlueerd in overeenstemming met DIN 38414-S4 of een gelijkwaardige norm in een verhouding van 1:10. Het daaruit verkregen filtraat wordt door een membraanfilter van 0,45 μm gefilterd (indien nodig met behulp van drukfiltratie). De verkregen oplossing wordt onderzocht op het gehalte aan zware metalen door middel van atoememissiespectrometrie met inductief gekoppeld plasma (ICP-AES of ICP-OES) of door middel van atoomabsorptiespectrometrie met behulp van een hydride of koudedampproces.\n\nC. De inschrijver verstrekt voor het totaalgehalte aan weekmakers een verslag waarin de resultaten van de volgende testprocedure zijn opgenomen. Er wordt een extractie verricht met behulp van een gevalideerde methode zoals de subsone extractie van 0,3 g van een monster in een kolf met 9 ml t-butylmethylether gedurende 1 uur, gevolgd door de bepaling van het gehalte aan ftalaten via GC met behulp van een massaselectieve detector in SIM-modus (single ion monitoring).\n\nD. De inschrijver verstrekt voor TDA en MDA een verslag waarin de resultaten van de volgende testprocedure zijn opgenomen. Er wordt een extractie van een composietmonster van 0,5 g verricht in een injectiespuitje van 5 ml met 2,5 ml azijnzuur in 1 % waterige oplossing. Het injectiespuitje wordt leeggespoten en de vloeistof wordt terug in het injectiespuitje gebracht. Nadat deze handeling 20 keer is herhaald, wordt het uiteindelijk verkregen extract behouden voor analyse. Er wordt vervolgens opnieuw 2,5 ml azijnzuur in 1 % waterige oplossing in het injectiespuitje gebracht en dezelfde handeling wordt opnieuw twintig keer herhaald. Daarna wordt het extract gecombineerd met het eerste extract en tot 10 ml verdund in een maatkolf met azijnzuur. De extracten worden geanalyseerd met behulp van hogedrukvloeistofchromatografie (HPLC-UV) of HPLC-MS. Als er bij toepassing van HPLC-UV vermoedelijk interferentie is opgetreden, wordt een nieuwe analyse met HPLC-MS (hogedrukvloeistofchromatografie gekoppeld aan massaspectrometrie) verricht.\n\nE. De inschrijver verstrekt voor organische tinverbindingen een verslag waarin de resultaten van de volgende testprocedure zijn opgenomen. Een composietmonster dat 1-2 g weegt, wordt gedurende 1 uur vermengt met ten minste 30 ml extractie-agens (een mengsel dat als volgt is samengesteld: 1750 ml methanol + 300 ml azijnzuur + 250 ml buffer (pH 4,5). De buffer is een oplossing van 164 g natriumacetaat in 1200 ml water en 165 ml azijnzuur, te verdunnen met water totdat een volume van 2000 ml bereikt is). Na extractie wordt de alkyl-tinsoort gederivatiseerd door toevoeging van 100 μl natriumtetraethylboraat in tetrahydrofuraan (THF) (200 mg/ml THF). Het derivaat wordt geëxtraheerd met n-hexaan en het monster ondergaat een tweede extractieprocedure. Beide hexaanextracten worden gecombineerd en verder gebruikt om de organische tinverbindingen te bepalen door middel van gaschromatografie met massaselectieve detectie in SIM-modus."
+                }
+              },
+              {
+                "code": "GC7.1",
+                "title": "Opvulmaterialen van latexschuimrubber met lage uitstoot (Alleen voor bekleed meubilair)",
+                "specification": "Wanneer bij de bekleding van meubilair latexschuimrubber als opvulmateriaal wordt gebruikt, zullen punten worden  toegekend als het schuimrubber voldoet aan de eisen inzake uitstoot van vluchtige organische stoffen zoals  hieronder vermeld.\n\n![Grenswaarden tabel latexschuimrubber](/stof-grenswaarde3.png)\n\n* N-nitrosodimethylamine (NDMA), N-nitrosodiethylamine (NDEA), N-nitrosomethylethylamine (NMEA), N-nitrosodi­iso-propylamine (NDIPA), N-nitrosodi-n-propylamine (NDPA), N-nitrosodi-n-butylamine (NDBA), N-nitrosopyrrolidinon (NPYR), N-nitrosopiperidine (NPIP), N-nitrosomorfoline (NMOR).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 24"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een verklaring van overeenstemming met dit criterium, ondersteund door een testverslag waarin de resultaten van een testkameranalyse overeenkomstig ISO 16000-9 of een gelijkwaardige test zijn opgenomen.\n\nHet ingepakte monster moet minstens 24 uur op kamertemperatuur worden bewaard. Na deze periode wordt het monster uitgepakt en direct naar de testkamer overgebracht. Het monster wordt geplaatst op een monsterhouder die luchttoegang van alle kanten mogelijk maakt. De klimaatfactoren worden aangepast in overeenstemming met ISO-norm 16000-9. Ten behoeve van de vergelijking van testresultaten moet de plaats-specifieke ventilatiesnelheid (q = n/l) 1 zijn. De ventilatiesnelheid moet tussen 0,5 en 1 liggen.\n\nDe luchtbemonstering wordt uitgevoerd 24 ± 1 uur nadat het monster in de testkamer is geplaatst, gebruikmakend van DNPH-patronen voor de analyse van formaldehyde en andere aldehyden en van Tenax TA voor de analyse van andere vluchtige organische stoffen. De bemonstering van andere stoffen mag langer duren, maar moet binnen 30 uur zijn voltooid.\n\nDe analyse van formaldehyde en andere aldehyden moet voldoen aan de ISO-norm 16000-3 of gelijkwaardige tests. Tenzij anders is aangegeven, moet de analyse van andere vluchtige organische stoffen voldoen aan de ISO-norm 16000-6.\n\nDe analyse van nitrosaminen wordt uitgevoerd met behulp van gaschromatografie in combinatie met een detector voor thermische energieanalyse (GC-TEA), in overeenstemming met de methode BGI 505-23 (voorheen: ZH 1/120.23) of een gelijkwaardige methode."
+                }
+              },
+              {
+                "code": "GC7.2",
+                "title": "Opvulmaterialen van polyurethaanschuimrubber met lage uitstoot (Alleen voor bekleed meubilair)",
+                "specification": "Wanneer bij de bekleding van meubilair polyurethaanschuimrubber als opvulmateriaal wordt gebruikt, zullen punten worden toegekend als het schuimrubber voldoet aan de eisen inzake uitstoot van vluchtige organische stoffen zoals hieronder vermeld.\n\n![Grenswaarden tabel polyurethaanschuimrubber](/stof-grenswaarde4.png)",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 25"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een verklaring van overeenstemming met dit criterium, ondersteund door testresultaten waaruit blijkt dat voldaan is aan de bovenvermelde grenswaarden. De combinatie monster/testkamer is:\n• 1 monster met de afmetingen 25×20×15 cm wordt in een testkamer van 0,5 m³ geplaatst, of\n• 2 monsters met de afmetingen 25×20×15 cm worden in een testkamer van 1,0 m³ geplaatst.\n\nHet schuimrubbermonster wordt onder in een ruimte voor de emissieproef geplaatst en gedurende drie dagen geconditioneerd op 23 °C en 50 % relatieve vochtigheid, waarbij een luchtverversingsnelheid n wordt toegepast van 0,5 per uur en een ruimtelading L van 0,4 m²/m³ (= totaal blootgesteld oppervlak van het monster in verhouding tot de afmetingen van de ruimte zonder afdichtingsranden en achterkant) in overeenstemming met de ISO-normen 16000-9 en 16000-11 of gelijkwaardige tests.\n\nDe bemonstering vindt 72 ± 2 uur na het laden van de ruimte plaats gedurende 1 uur met behulp van Tenax TA- en DNPH-patronen voor de analyse van respectievelijk vluchtige organische stoffen en formaldehyde. De VOS-emissies worden gevangen in Tenax TA-absorptiebuizen en vervolgens geanalyseerd door middel van GC-MS met thermische desorptie overeenkomstig ISO-norm 16000-6 of gelijkwaardige tests.\n\nDe resultaten worden semikwantitatief uitgedrukt als tolueenequivalenten. Alle gespecificeerde afzonderlijke analyten worden gerapporteerd vanaf een concentratiegrens ≥ 1 μg/m³. De totale VOS-waarde is de som van alle analyten met een concentratie ≥ 1 μg/m³ die binnen het retentietijdvenster van n-hexaan (C6) tot n-hexadecaan (C16) elueren, beide inclusief. De som van alle detecteerbare componenten die volgens Verordening (EG) nr. 1272/2008 zijn ingedeeld in categorie C1A of C1B is de som van al deze stoffen met een concentratie ≥ 1 μg/m³. Indien de testresultaten de standaardgrenzen overschrijden, moet een stofspecifieke kwantificering worden uitgevoerd. Formaldehyde kan worden bepaald door het verzamelen van de bemonsterde lucht op een DNPH-patroon en daaropvolgende analyse met behulp van HPLC/UV in overeenstemming met ISO-norm 16000-3 of gelijkwaardige tests."
+                }
+              },
+              {
+                "code": "GC7.3",
+                "title": "Andere opvulmaterialen van schuimrubber met lage uitstoot (Alleen voor bekleed meubilair)",
+                "specification": "Wanneer andere opvulmaterialen worden gebruikt, kunnen ook punten worden toegekend als kan worden aangetoond dat voldaan is aan de grenswaarden voor de uitstoot van vluchtige organische stoffen zoals vermeld in GC7.1 of GC7.2.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 25"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een verklaring van overeenstemming met dit criterium, ondersteund door testresultaten overeenkomstig de methodes beschreven in GC7.1 of GC7.2, afhankelijk van welke grenswaarden van toepassing zijn op het gebruikte opvulmateriaal."
+                }
+              }
+            ]
+          },
+          "end_of_life": {
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "Formaldehyde-emissies uit van hout vervaardigde platen",
+                "specification": "Punten worden toegekend aan inschrijvers die hogere hergebruikpercentages aanbieden dan wat vermeld wordt in de technische specificatie.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair, Versie 1.0 - Pag. 27"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver bezorgt de nodige gegevens over hoe het extra hergebruikpercentage gerealiseerd zal worden."
+                }
+              }
+            ],
+            "extended_criteria": []
+          }
         }
-      ],
-      "contractual_conditions": [],
-      "footer_note": "Tip: Aanbevolen specificaties kunnen bijdragen aan betere prestaties of duurzaamheid, maar zijn niet verplicht. Gebruik ze als richtinggevend kader of als basis voor gunningscriteria."
-    },
-    {
-      "key": "gunningscriteria",
-      "title": "Gunningscriteria",
-      "requirement_level": "optioneel",
-      "intro": "Gebruik gunningscriteria om bepaalde prestaties extra te belonen. De onderstaande voorbeelden zijn optioneel en helpen je aanbesteding aan te laten sluiten op je ambities.",
-      "warnings": [
-        {
-          "severity": "yellow",
-          "text": "Let op: De EU GPP-criteria geven deze niet verplichte aanbevelingen voor gunningscriteria omdat deze helpen om duurzaamheidsdoelen te realiseren."
-        }
-      ],
-      "steps": [],
-      "example_texts": [],
-      "gunningscriteria_tabs": {
-        "circulariteit": [
-          {
-            "code": "GC1",
-            "title": "Modulair ontwerp met vervangbare onderdelen",
-            "description": "De inschrijver toont aan dat het aangeboden product is opgebouwd uit een modulair ontwerp, waarbij onderdelen afzonderlijk vervangen of geüpgraded kunnen worden zonder dat het gehele product vervangen hoeft te worden. Punten worden toegekend op basis van:",
-            "points": [
-              "Het aantal en type onderdelen dat modulair en vervangbaar is;",
-              "De mate waarin dit bijdraagt aan verlenging van de levensduur;",
-              "De beschikbaarheid van documentatie en handleidingen voor vervanging."
-            ],
-            "legal_basis": "GPP background 2017, p. 53"
-          },
-          {
-            "code": "GC2",
-            "title": "Demonteerbaar ontwerp t.b.v. recycling",
-            "description": "De inschrijver toont aan dat het product zodanig is ontworpen dat onderdelen eenvoudig kunnen worden gedemonteerd en gescheiden, met het oog op recycling of hergebruik. Punten worden toegekend op basis van:",
-            "points": [
-              "Het aandeel materialen dat zonder specialistisch gereedschap kan worden gescheiden;",
-              "De aanwezigheid van markeringen of coderingen voor materiaalidentificatie;",
-              "De mate waarin dit proces leidt tot hoogwaardige recyclingstromen."
-            ],
-            "legal_basis": "GPP background 2017, p. 54"
-          },
-          {
-            "code": "GC3",
-            "title": "Hergebruik van refurbished onderdelen",
-            "description": "De inschrijver specificeert in welke mate gebruik is gemaakt van refurbished of hergebruikte onderdelen in het product. Punten worden toegekend op basis van:",
-            "points": [
-              "Het percentage refurbished onderdelen ten opzichte van het totaal;",
-              "De kwaliteitsgaranties en testprocedures die gelden voor deze onderdelen;",
-              "De impact hiervan op vermindering van grondstoffengebruik en CO₂-uitstoot."
-            ],
-            "legal_basis": "GPP background 2017, p. 52"
-          },
-          {
-            "code": "GC4",
-            "title": "Aanwezigheid van materialenpaspoort",
-            "description": "De inschrijver levert een materialenpaspoort aan, waarin de samenstelling van het product (materialen, herkomst, recyclebaarheid, kritische grondstoffen) inzichtelijk wordt gemaakt. Punten worden toegekend op basis van:",
-            "points": [
-              "De volledigheid en transparantie van de aangeleverde informatie;",
-              "De digitale beschikbaarheid en toegankelijkheid van het paspoort;",
-              "De bruikbaarheid van het paspoort voor hergebruik of recycling aan het einde van de levensduur."
-            ],
-            "legal_basis": "GPP background 2017, p. 60"
-          },
-          {
-            "code": "GC5",
-            "title": "Terugamegarantie einde levensduur",
-            "description": "De inschrijver biedt een terugamegarantie aan voor het product of de onderdelen daarvan aan het einde van de levensduur. Punten worden toegekend op basis van:",
-            "points": [
-              "De reikwijdte van de terugamegarantie (volledig product vs. geselecteerde onderdelen);",
-              "De wijze van verwerking (refurbishment, hergebruik, recycling);",
-              "De mate waarin de inschrijver dit proces logistiek en financieel borgt."
-            ],
-            "legal_basis": "GPP background 2017, p. 56"
-          }
-        ],
-        "milieu_impact": [
-          {
-            "code": "GC6",
-            "title": "LCA met aantoonbaar lagere impact dan referentieproduct",
-            "description": "De inschrijver toont met een levenscyclusanalyse (LCA) of gelijkwaardig bewijs (zoals een Environmental Product Declaration – EPD) aan dat het aangeboden product een aantoonbaar lagere milieu-impact heeft dan een referentieproduct. Punten worden toegekend op basis van:",
-            "points": [
-              "De mate van reductie in relevante milieu-indicatoren (zoals CO₂-uitstoot, watergebruik, toxiciteit, energieverbruik);",
-              "De volledigheid en verificatie van de gebruikte LCA of EPD;",
-              "De wijze waarop verbeteringen in de gehele levenscyclus zijn gerealiseerd."
-            ],
-            "legal_basis": "GPP background 2017, p. 58-59"
-          },
-          {
-            "code": "GC7",
-            "title": "Vrij van schadelijke stoffen (zoals formaldehyde)",
-            "description": "De inschrijver garandeert dat het product vrij is van schadelijke stoffen die risico's opleveren voor mens of milieu, waaronder ten minste formaldehyde en andere stoffen die op de Europese REACH- of RoHS-lijsten staan. Punten worden toegekend op basis van:",
-            "points": [
-              "Het aantal uitgesloten schadelijke stoffen;",
-              "Het beschikbaar stellen van testresultaten, certificaten of conformiteitsverklaringen;",
-              "De transparantie over toegepaste alternatieve stoffen of productiemethoden."
-            ],
-            "legal_basis": "GPP background 2017, p. 50"
-          },
-          {
-            "code": "GC8",
-            "title": "Gebruik van snel hernieuwbare materialen (bijv. bamboe)",
-            "description": "De inschrijver toont aan dat in het product gebruik is gemaakt van snel hernieuwbare materialen, zoals bamboe, vlas of andere biobased grondstoffen. Punten worden toegekend op basis van:",
-            "points": [
-              "Het percentage snel hernieuwbare materialen in het totale productgewicht;",
-              "De herkomst en certificering (bijv. FSC, PEFC, biobased keurmerk);",
-              "De mate waarin de toepassing bijdraagt aan reductie van fossiele of niet-hernieuwbare grondstoffen."
-            ],
-            "legal_basis": "GPP background 2017, p. 51"
-          }
-        ],
-        "sociaal": [
-          {
-            "code": "GC9",
-            "title": "Transparantie over toeleveringsketen en mensenrechtenrisico's",
-            "description": "De inschrijver verschaft inzicht in de toeleveringsketen en de maatregelen die zijn genomen om mensenrechtenrisico's te voorkomen of te beperken, conforme de OESO-richtlijnen voor Internationaal Maatschappelijk Verantwoord Ondernemen (IMVO). Punten worden toegekend op basis van:",
-            "points": [
-              "De mate van transparantie over productielocaties en leveranciers;",
-              "De aanwezigheid van een risicoanalyse en due diligence-proces;",
-              "De maatregelen om geïdentificeerde risico's actief te mitigeren."
-            ],
-            "legal_basis": "OESO-richtlijnen IMVO"
-          },
-          {
-            "code": "GC10",
-            "title": "Gecertificeerde arbeidsomstandigheden (SA8000, Fair Wear)",
-            "description": "De inschrijver toont aan dat de productie plaatsvindt onder gecertificeerde en gecontroleerde arbeidsomstandigheden, bijvoorbeeld door SA8000, Fair Wear of gelijkwaardige certificaten. Punten worden toegekend op basis van:",
-            "points": [
-              "De geldigheid en dekking van de certificaten;",
-              "De mate waarin onafhankelijke audits worden uitgevoerd;",
-              "De verbeterprogramma's voor arbeidsomstandigheden in de keten."
-            ],
-            "legal_basis": "GPP background 2017, p. 61"
-          },
-          {
-            "code": "GC11",
-            "title": "Inclusieve werkgelegenheid bij montage of levering",
-            "description": "De inschrijver zet in op inclusieve werkgelegenheid door bij de montage, levering of uitvoering personen met een afstand tot de arbeidsmarkt in te zetten, conform de Nederlandse social return-beleidskaders. Punten worden toegekend op basis van:",
-            "points": [
-              "Het percentage van de loonsom of het aantal uren dat door deze doelgroep wordt ingevuld;",
-              "De duurzaamheid van de geboden werkgelegenheid (structureel vs. tijdelijk);",
-              "De wijze van begeleiding en ondersteuning van de betrokken werknemers."
-            ],
-            "legal_basis": "Nederlandse social return-beleidskaders"
-          }
-        ],
-        "kwaliteit_levensduur": [
-          {
-            "code": "GC12",
-            "title": "Levensduur ≥ 10 jaar",
-            "description": "De inschrijver toont aan dat het aangeboden product een technische en functionele levensduur van ten minste 10 jaar heeft, onder normaal gebruik. Punten worden toegekend op basis van:",
-            "points": [
-              "De garantie- of onderhoudsverklaringen waaruit de levensduur blijkt;",
-              "Testresultaten, testrapporten of gelijkwaardig bewijs die de duurzaamheid ondersteunen;",
-              "De mate waarin de levensduur is geborgd door ontwerpkeuzes en materiaalgebruik."
-            ],
-            "legal_basis": "EU GPP criteria, hfst. 2.3"
-          },
-          {
-            "code": "GC13",
-            "title": "Beschikbaarheid reserveonderdelen ≥ 5 jaar",
-            "description": "De inschrijver garandeert dat reserveonderdelen gedurende ten minste 5 jaar na levering beschikbaar zijn, zodat onderhoud, reparatie en levensduurverlenging mogelijk zijn. Punten worden toegekend op basis van:",
-            "points": [
-              "De duur en reikwijdte van de beschikbaarheid van onderdelen;",
-              "De wijze waarop onderdelen geleverd kunnen worden (doorlooptijd, logistieke beschikbaarheid, minimale bestelhoeveelheden);",
-              "De transparantie over prijsvorming en documentatie (bijv. onderdelenlijsten of catalogi)."
-            ],
-            "legal_basis": "EU GPP criteria, hfst. 2.4"
-          }
-        ],
-        "certificering_labels": [
-          {
-            "code": "GC14",
-            "title": "EU Ecolabel of gelijkwaardig",
-            "description": "De inschrijver toont aan dat het product beschikt over het EU Ecolabel of een gelijkwaardig, onafhankelijk erkend milieulabel dat aantoont dat het product voldoet aan hoge milieu- en prestatienormen. Punten worden toegekend op basis van:",
-            "points": [
-              "De aanwezigheid van een geldig EU Ecolabel of gelijkwaardig label;",
-              "De reikwijdte van de certificering (volledige productcategorie of slechts onderdelen daarvan);",
-              "De mate waarin het label aanvullende milieuvoordelen borgt ten opzichte van de minimumeisen."
-            ],
-            "legal_basis": "EU GPP criteria, hfst. 2.1"
-          },
-          {
-            "code": "GC15",
-            "title": "Gecertificeerd circulair ontwerp",
-            "description": "De inschrijver toont aan dat het product is ontworpen en geproduceerd conform een erkende certificeringsmethode voor circulair ontwerp (bijv. Cradle to Cradle, Circular Product Label of gelijkwaardig). Punten worden toegekend op basis van:",
-            "points": [
-              "De mate waarin het certificaat de circulariteit van ontwerp en productie borgt;",
-              "De geldigheid en onafhankelijkheid van de certificerende instantie;",
-              "De dekking van de certificering (gehele product, onderdelen of keten)."
-            ],
-            "legal_basis": "GPP background 2017, p. 55"
-          }
-        ],
-        "logistiek_transport": [
-          {
-            "code": "GC16",
-            "title": "Emissiearm transport (elektrisch of HVO)",
-            "description": "De inschrijver toont aan dat voor levering, montage en eventuele retourstromen gebruik wordt gemaakt van emissiearm transport, zoals elektrische voertuigen of transport op basis van hernieuwbare brandstoffen (bijv. HVO). Punten worden toegekend op basis van:",
-            "points": [
-              "Het aandeel emissiearm transport in de totale logistieke keten;",
-              "Het type ingezette voertuigen en brandstoffen en de daadwerkelijke emissiereductie;",
-              "De borging van continuïteit en beschikbaarheid van emissiearme transportmiddelen gedurende de contractperiode."
-            ],
-            "legal_basis": "GPP background 2017, p. 62"
-          }
-        ]
-      },
-      "specs": [],
-      "contractual_conditions": [],
-      "footer_note": "Tip: Draagt bij aan emissiereductie in de keten en circulaire retourstromen."
-    },
-    {
-      "key": "execution_conditions",
-      "title": "Contractuele uitvoeringsvoorwaarden",
-      "requirement_level": "optioneel",
-      "intro": "De toepasselijke GPP-criteria bevatten aanbevelingen voor contractuele voorwaarden op het gebied van arbeidsomstandigheden, sociale normen en milieunormen. Deze zijn niet verplicht, maar dragen bij aan circulaire of klimaatvriendelijke doelstellingen en sluiten aan bij het Rijksbeleid voor maatschappelijk verantwoord inkopen.",
-      "warnings": [
-        {
-          "severity": "yellow",
-          "text": "Let op: De EU GPP-criteria geven deze niet verplichte aanbevelingen voor contractuele uitvoeringsvoorwaarden omdat deze helpen om duurzaamheidsdoelen te realiseren."
-        }
-      ],
-      "steps": [],
-      "example_texts": [],
-      "contractual_conditions_tabs": {
-        "arbeidsomstandigheden": [
-          {
-            "code": "CV1",
-            "text": "Naleving van gezondheids- en veiligheidseisen tijdens uitvoering\nDe aannemer dient ervoor te zorgen dat tijdens de uitvoering van de opdracht te allen tijde wordt voldaan aan geldende gezondheids- en veiligheidseisen. Dit omvat onder meer het naleven van relevante wet- en regelgeving, het bieden van veilige werkplekken, het gebruik van beschermingsmiddelen en het voorkomen van gevaarlijke situaties voor werknemers en derden.",
-            "legal_basis": "GPP background 2017, p. 61"
-          },
-          {
-            "code": "CV2",
-            "text": "Voldoen aan fundamentele arbeidsnormen van de ILO\nDe producten die in het kader van deze opdracht worden geleverd, dienen te zijn vervaardigd onder omstandigheden die voldoen aan de fundamentele arbeidsnormen van de International Labour Organization (ILO). Dit omvat onder andere het verbod op kinderarbeid en dwangarbeid, het recht op gelijke behandeling en het recht op vrijheid van vereniging en collectieve onderhandeling.",
-            "legal_basis": "GPP background 2017, p. 61"
-          }
-        ],
-        "sociale_normen": [
-          {
-            "code": "CV3",
-            "text": "Verklaring uitsluiting kinderarbeid en gedwongen arbeid\nLeveranciers dienen een schriftelijke verklaring te ondertekenen waaruit blijkt dat bij de productie van de te leveren producten geen sprake is van kinderarbeid of gedwongen arbeid. Deze verklaring moet aantonen dat de leverancier voldoet aan de fundamentele arbeidsnormen en internationale verdragen ter bescherming van werknemersrechten.",
-            "legal_basis": "GPP background 2017, p. 61"
-          },
-          {
-            "code": "CV4",
-            "text": "Transparantie over de toeleveringsketen\nDe leverancier verschaft inzicht in de herkomst en productieomstandigheden van de geleverde producten. Dit omvat minimaal informatie over de productielocaties, de belangrijkste leveranciers en de omstandigheden waaronder de productie plaatsvindt. Het doel hiervan is om transparantie te bevorderen en sociale misstanden in de keten te voorkomen.",
-            "legal_basis": "GPP background 2017, p. 61"
-          }
-        ],
-        "milieunormen": [
-          {
-            "code": "CV5",
-            "text": "Levering en montage met minimaal CO₂-belastend transport\nDe aannemer dient ervoor te zorgen dat levering en montage van de producten plaatsvinden met transportmiddelen die zo min mogelijk CO₂ uitstoten. Hierbij kan gebruik worden gemaakt van emissiearme of emissievrije voertuigen (zoals elektrisch of HVO), of door middel van efficiënte bundeling van transportstromen.",
-            "legal_basis": "GPP background 2017, p. 59"
-          },
-          {
-            "code": "CV6",
-            "text": "Gebruik van oplosmiddelarme of -vrije lakken en lijmen\nBij de assemblage of herstelwerkzaamheden dienen uitsluitend oplosmiddelarme of -vrije lakken, lijmen en vergelijkbare producten te worden toegepast. Dit ter beperking van schadelijke emissies en ter bevordering van een gezonde werkomgeving.",
-            "legal_basis": "GPP background 2017, p. 57"
-          },
-          {
-            "code": "CV7",
-            "text": "Gescheiden afvoer van verpakkingsafval en oude meubels\nDe aannemer is verplicht om afvalstromen die ontstaan bij levering, montage of vervanging, waaronder verpakkingsmaterialen en afgedankte meubels, gescheiden af te voeren conform geldende afvalscheidingsregels. De afvoer dient aantoonbaar te leiden tot hoogwaardige recycling of hergebruik.",
-            "legal_basis": "GPP background 2017, p. 58"
-          }
-        ]
-      },
-      "specs": [],
-      "contractual_conditions": [],
-      "footer_note": "Tip: Vermindert milieu-impact door emissiebeperking en afvalscheiding."
+      }
     }
   ]
 }

@@ -12,6 +12,7 @@ import { TabbedExamplesCard } from './TabbedExamplesCard';
 import { GunningscriteriaTabs } from './GunningscriteriaTabs';
 import { ContractualConditionsTabs } from './ContractualConditionsTabs';
 import { SummaryWithToggleLinks } from './SummaryWithToggleLinks';
+import { GppCriteriaTabs } from './GppCriteriaTabs';
 
 interface ObligationSectionProps {
   section: SectionType;
@@ -138,13 +139,22 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                 {section.key === 'gunningscriteria' && (
                   <>
                     {showGppBadge && (
-                      <Badge
-                        variant="outline"
-                        className="text-xs px-2 py-0.5"
-                        style={{ backgroundColor: '#DCFCE7', color: '#166534', borderColor: '#DCFCE7' }}
-                      >
-                        GPP
-                      </Badge>
+                      <>
+                        <Badge
+                          variant="outline"
+                          className="text-xs px-2 py-0.5"
+                          style={{ backgroundColor: '#D4F1F4', color: '#0B5563', borderColor: '#D4F1F4' }}
+                        >
+                          MVI
+                        </Badge>
+                        <Badge
+                          variant="outline"
+                          className="text-xs px-2 py-0.5"
+                          style={{ backgroundColor: '#DCFCE7', color: '#166534', borderColor: '#DCFCE7' }}
+                        >
+                          GPP
+                        </Badge>
+                      </>
                     )}
                     <Badge
                       variant="outline"
@@ -257,7 +267,7 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
           <div className="px-4 pb-4 space-y-6 border-t border-gray-100 pt-4">
             {(() => {
               // Default order if not specified
-              const defaultOrder = ['intro', 'warnings', 'steps', 'example_texts', 'additional_warnings', 'tabbed_examples', 'specs', 'gunningscriteria_tabs', 'contractual_conditions', 'contractual_conditions_tabs'];
+              const defaultOrder = ['intro', 'warnings', 'steps', 'example_texts', 'additional_warnings', 'tabbed_examples', 'gpp_specs', 'gpp_criteria_tabs', 'specs', 'gunningscriteria_tabs', 'contractual_conditions', 'contractual_conditions_tabs'];
               const order = section.content_order || defaultOrder;
 
               const contentBlocks: Record<string, React.ReactNode> = {
@@ -284,6 +294,24 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                 ),
                 tabbed_examples: section.tabbed_examples && (
                   <TabbedExamplesCard examples={section.tabbed_examples} />
+                ),
+                gpp_specs: section.gpp_specs && (
+                  <GppCriteriaTabs
+                    data={section.gpp_specs.data}
+                    mainTabs={section.gpp_specs.main_tabs}
+                    defaultMainTab={section.gpp_specs.default_main_tab}
+                    codeColumnHeader="TS-CODE"
+                    specColumnHeader="SPECIFICATIE"
+                  />
+                ),
+                gpp_criteria_tabs: section.gpp_criteria_tabs && (
+                  <GppCriteriaTabs
+                    data={section.gpp_criteria_tabs.data}
+                    mainTabs={section.gpp_criteria_tabs.main_tabs}
+                    defaultMainTab={section.gpp_criteria_tabs.default_main_tab}
+                    codeColumnHeader={section.gpp_criteria_tabs.code_column_header || 'CODE'}
+                    specColumnHeader={section.gpp_criteria_tabs.spec_column_header || 'SPECIFICATIE'}
+                  />
                 ),
                 specs: section.specs && (
                   <TechnicalSpecificationsTabs

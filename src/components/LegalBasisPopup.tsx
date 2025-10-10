@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Scale } from 'lucide-react';
+import { Scale, Search } from 'lucide-react';
 
 interface LegalBasisPopupProps {
   triggerText: string;
@@ -39,6 +39,44 @@ export const LegalBasisPopup: React.FC<LegalBasisPopupProps> = ({
     };
   }, [isOpen]);
 
+  const parseMarkdown = (text: string) => {
+    // Split by lines to handle images
+    const lines = text.split('\n');
+
+    return lines.map((line, lineIndex) => {
+      // Check for image syntax: ![alt text](url)
+      const imageMatch = line.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+      if (imageMatch) {
+        const [, alt, src] = imageMatch;
+        return (
+          <div key={lineIndex} className="my-4">
+            <img src={src} alt={alt} className="max-w-full h-auto rounded border border-gray-200" />
+          </div>
+        );
+      }
+
+      // Handle empty lines as spacing
+      if (line.trim() === '') {
+        return <div key={lineIndex} className="h-2" />;
+      }
+
+      // Check if line is a URL (starts with www. or http)
+      if (line.trim().match(/^(https?:\/\/|www\.)/)) {
+        return (
+          <div key={lineIndex} className="text-sm text-gray-500 mt-2">
+            {line}
+          </div>
+        );
+      }
+
+      // Regular text
+      return <div key={lineIndex}>{line}</div>;
+    });
+  };
+
+  // Use Search icon for "VOORBEELD" title, otherwise use Scale
+  const Icon = title === 'VOORBEELD' ? Search : Scale;
+
   return (
     <span className="relative inline-block">
       <button
@@ -58,7 +96,7 @@ export const LegalBasisPopup: React.FC<LegalBasisPopupProps> = ({
           {/* Header */}
           <div className="flex items-start gap-3 mb-3">
             <div className="flex-shrink-0 mt-0.5">
-              <Scale className="h-5 w-5 text-blue-600" />
+              <Icon className="h-5 w-5 text-blue-600" />
             </div>
             <h3 className="text-base font-semibold text-blue-600 uppercase tracking-wide">
               {title}
@@ -66,9 +104,9 @@ export const LegalBasisPopup: React.FC<LegalBasisPopupProps> = ({
           </div>
 
           {/* Content */}
-          <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-line">
-            {content}
-          </p>
+          <div className="text-sm text-gray-700 leading-relaxed">
+            {parseMarkdown(content)}
+          </div>
 
           {/* Legal Reference */}
           {legalReference && (
