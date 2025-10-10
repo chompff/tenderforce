@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ObligationSection as SectionType } from '@/types/obligations';
+import { ObligationSection as SectionType, LegalReference } from '@/types/obligations';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
@@ -17,12 +17,14 @@ interface ObligationSectionProps {
   section: SectionType;
   defaultOpen?: boolean;
   showGppBadge?: boolean;
+  legalReferences?: LegalReference[];
 }
 
-export const ObligationSection: React.FC<ObligationSectionProps> = ({ 
-  section, 
+export const ObligationSection: React.FC<ObligationSectionProps> = ({
+  section,
   defaultOpen = false,
-  showGppBadge = false
+  showGppBadge = false,
+  legalReferences = []
 }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
@@ -85,6 +87,17 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                             variant="outline"
                             className="text-xs px-2 py-0.5 uppercase"
                             style={{ backgroundColor: '#f3e4ee', color: '#7d2352', borderColor: '#f3e4ee' }}
+                          >
+                            {badge}
+                          </Badge>
+                        );
+                      } else if (badge === 'BANDEN') {
+                        return (
+                          <Badge
+                            key={badge}
+                            variant="outline"
+                            className="text-xs px-2 py-0.5 uppercase"
+                            style={{ backgroundColor: '#6C6C6C', color: '#FFFFFF', borderColor: '#6C6C6C' }}
                           >
                             {badge}
                           </Badge>
@@ -191,7 +204,9 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                 steps: section.steps && (
                   <StepsList
                     steps={section.steps}
+                    title={section.steps_title}
                     ordered={section.steps_ordered !== false}
+                    legalReferences={legalReferences}
                   />
                 ),
                 example_texts: section.example_texts && (
@@ -219,7 +234,7 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                   <SpecificationTable
                     conditions={section.contractual_conditions}
                     title="Contractuele voorwaarden"
-                    collapsible={true}
+                    collapsible={section.key !== 'execution_conditions'}
                   />
                 ),
                 contractual_conditions_tabs: section.contractual_conditions_tabs && (
@@ -248,6 +263,7 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                     steps={section.additional_steps}
                     ordered={section.steps_ordered !== false}
                     startNumber={(section.steps?.length || 0) + 1}
+                    legalReferences={legalReferences}
                   />
                 ),
               };

@@ -72,28 +72,36 @@
       "title": "Uitvoeringsvoorwaarden",
       "requirement_level": "optioneel",
       "badges": ["ECODESIGN"],
-      "intro": "U bent verplicht uitsluitend producten te kopen die voldoen aan de geldende Ecodesign-verordeningen. Omdat de daadwerkelijke controle plaatsvindt bij de levering, moet dit via contractuele voorwaarden geborgd worden.",
+      "intro": "Aanbestedende diensten zijn verplicht te voldoen aan de geldende ecodesign vereisten. Omdat de daadwerkelijke controle plaatsvindt bij de levering, moet dit via contractuele voorwaarden geborgd worden.",
       "warnings": [
         {
           "severity": "yellow",
-          "text": "De specifieke eisen verschillen per productgroep. Leg de nadruk op bewijs en verificatie van naleving van de juiste verordening."
+          "text": "Let op: Zonder expliciete uitvoeringsvoorwaarden ontbreekt een toetsingskader voor naleving, waardoor u risico loopt bij audits of Europese rapportages."
         }
+      ],
+      "steps_title": "Neem de volgende stappen:",
+      "steps": [
+        "Leg ecodesignvereisten contractueel vast: beschrijf in de opdrachtovereenkomst dat geleverde producten moeten voldoen aan de toepasselijke ecodesignverordening(en) genoemd in Richtlijn 2009/125/EG.",
+        "Vraag om proportioneel bewijs van conformiteit: verplicht de opdrachtnemer om bij levering een EU-conformiteitsverklaring te overleggen waaruit blijkt dat het product aan de relevante ecodesign-eisen voldoet."
       ],
       "contractual_conditions": [
         {
           "code": "CV1",
           "text": "Bij levering moet de opdrachtnemer een EU-conformiteitsverklaring overleggen waarin staat dat het product voldoet aan de toepasselijke Ecodesign-verordening (krachtens Richtlijn 2009/125/EG).",
           "legal_basis": "Richtlijn (EU) 2023/1791, Bijlage IV(b); Richtlijn 2009/125/EG"
-        }, {
+        },
+        {
           "code": "",
           "text": "De opdrachtnemer verstrekt op verzoek de onderliggende technische documentatie die de conformiteit met de Ecodesign-eisen aantoont (zoals testverslagen of berekeningen).",
           "legal_basis": "Richtlijn 2009/125/EG, art. 5 jo. uitvoeringsverordening"
-        }, {
+        },
+        {
           "code": "",
           "text": "Indien het product niet conform is met de Ecodesign-verordening, kan de levering worden geweigerd en moet de opdrachtnemer het product kosteloos vervangen door een conform exemplaar, of wordt een contractuele sanctie opgelegd.",
           "legal_basis": "Richtlijn (EU) 2023/1791, art. 31 jo. Bijlage IV(b)"
         }
-      ]
+      ],
+      "content_order": ["intro", "warnings", "steps", "contractual_conditions"]
     }
   ]
 }

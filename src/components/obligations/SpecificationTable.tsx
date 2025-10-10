@@ -40,13 +40,13 @@ export const SpecificationTable: React.FC<SpecificationTableProps> = ({
               <thead>
                 <tr className="bg-gray-50 border-b border-gray-200">
                   <th className="text-left p-3 text-xs font-semibold text-gray-700 w-20">
-                    {specifications ? 'TS-code' : 'Code'}
+                    {specifications ? 'TS-CODE' : 'CV-CODE'}
                   </th>
                   <th className="text-left p-3 text-xs font-semibold text-gray-700">
-                    {specifications ? 'Specificatie' : 'Omschrijving'}
+                    {specifications ? 'SPECIFICATIE' : 'CONTRACTUELE VOORWAARDE'}
                   </th>
                   <th className="text-left p-3 text-xs font-semibold text-gray-700 w-1/3">
-                    Bronvermelding
+                    BRONVERMELDING
                   </th>
                 </tr>
               </thead>
@@ -77,13 +77,13 @@ export const SpecificationTable: React.FC<SpecificationTableProps> = ({
           <thead>
             <tr className="bg-gray-50 border-b border-gray-200">
               <th className="text-left p-3 text-xs font-semibold text-gray-700 w-20">
-                {specifications ? 'TS-code' : 'Code'}
+                {specifications ? 'TS-CODE' : 'CV-CODE'}
               </th>
               <th className="text-left p-3 text-xs font-semibold text-gray-700">
-                {specifications ? 'Specificatie' : 'Omschrijving'}
+                {specifications ? 'SPECIFICATIE' : 'CONTRACTUELE VOORWAARDE'}
               </th>
               <th className="text-left p-3 text-xs font-semibold text-gray-700 w-1/3">
-                Bronvermelding
+                BRONVERMELDING
               </th>
             </tr>
           </thead>

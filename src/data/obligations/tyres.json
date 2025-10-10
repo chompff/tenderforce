@@ -3,67 +3,105 @@
   "archetype": "tyres",
   "title": "EED verplichtingen voor banden",
   "summary": "Op basis van de gekozen CPV code bent u volgens de EED verplicht om uitsluitend banden uit de hoogste brandstofrendementsklasse aan te besteden, zoals vastgelegd in Verordening (EU) 2020/740 inzake de etikettering van banden.",
-  "badges": ["EED", "EU"],
-  "footer_warnings": [
-    {
-      "severity": "yellow",
-      "text": "Let op: Is er sprake van de veiligheid of volksgezondheid? Dan mag u afwijken van bovenstaande vereisten en kiezen voor beste grip of laagste rolgeluidemissie."
-    }
-  ],
+  "badges": ["BANDEN", "EED", "EU"],
   "legal_references": [
     {
       "label": "Verordening (EU) 2020/740",
       "citation": "etikettering van banden; toepassingsgebied art. 2 en 3",
       "url": ""
+    },
+    {
+      "label": "c1",
+      "citation": "Categorie C1 omvat banden die bestemd zijn voor personenauto's en lichte bestelwagens (voertuigcategorieën M1, N1, O1 en O2 volgens de EU-voertuigclassificatie).\n\nVerordening (EG) nr. 661/2009, artikel 8",
+      "url": ""
+    },
+    {
+      "label": "c2",
+      "citation": "Categorie C2 omvat banden die bestemd zijn voor lichte bedrijfsvoertuigen en middelzware aanhangwagens (voertuigcategorieën M2, N2, O2 en O3 volgens de EU-voertuigclassificatie).\n\nVerordening (EG) nr. 661/2009, artikel 8",
+      "url": ""
+    },
+    {
+      "label": "c3",
+      "citation": "Categorie C3 omvat banden die bestemd zijn voor zwaardere voertuigen, zoals vrachtwagens, bussen en zware aanhangwagens (voertuigcategorieën M3, N3, O3 en O4 volgens de EU-voertuigclassificatie).\n\nVerordening (EG) nr. 661/2009, artikel 8",
+      "url": ""
     }
   ],
   "sections": [
     {
-      "key": "scope",
-      "title": "Bepaling scope opdracht",
-      "requirement_level": "verplicht",
-      "intro": "Alleen als duidelijk is vastgelegd dat de levering van banden voor personenauto’s (C1), lichte bedrijfswagens (C2) of zware voertuigen (C3) onder de opdracht valt, kan de verplichting uit de EED (brandstofrendementsklasse A) correct worden toegepast.",
-      "warnings": [
-        {
-          "severity": "red",
-          "text": "Zonder deze scopebepaling blijft onduidelijk of de eis van toepassing is en kan dit leiden tot onjuiste of niet-afdwingbare specificaties."
-        }
-      ],
-      "steps": [
-        "Vermeld expliciet in de scope dat de opdracht betrekking heeft op C1, C2 en/of C3 banden. Verwijs daarbij naar het toepassingsgebied van Verordening (EU) 2020/740, art. 2 en 3.",
-        "Sluit uit dat het gaat om banden die volgens art. 2 lid 2 van de verordening niet onder de etiketteringsplicht vallen, zoals:\n  • professionele terreinbanden;\n  • banden die enkel zijn ontworpen voor montage op voertuigen die voor het eerst zijn geregistreerd vóór 1 oktober 1990;\n  • T-reservebanden voor tijdelijk gebruik;\n  • banden van de snelheidscategorie onder 80 km/h;\n  • banden met een nominale velgdiameter van minder dan 254 mm of meer dan 635 mm;\n  • banden met trekkrachtbevorderende voorzieningen, zoals spijkerbanden;\n  • banden die uitsluitend zijn ontworpen om te worden gemonteerd op voertuigen die alleen bestemd zijn voor races;\n  • tweedehandsbanden, tenzij deze banden vanuit een derde land zijn ingevoerd.",
-        "Als de opdracht ook andere producten bevat (bijvoorbeeld voertuigen mét banden), zorg dat duidelijk is dat de banden in de opdracht onder de verordening vallen."
-      ],
-      "example_texts": [
-        {
-          "label": "Voorbeeldtekst",
-          "text": "De opdracht betreft de levering van banden voor [C1, C2 en/of C3 voertuigen], vallend onder het toepassingsgebied van Verordening (EU) 2020/740, art. 2 en 3, inzake de etikettering van banden."
-        }
-      ]
-    },
-    {
       "key": "technical_specs",
       "title": "Technische specificaties",
       "requirement_level": "verplicht",
-      "intro": "Alleen als in de technische specificaties duidelijk is opgenomen dat uitsluitend banden uit de hoogste brandstofrendementsklasse (A) mogen worden geleverd, wordt voldaan aan de verplichting uit de EED. Dit volgt uit art. 6 lid 3 sub d van de Energie-efficiëntierichtlijn (EED) en Verordening (EU) 2020/740. Indien voor een bepaald type band geen klasse A bestaat, mag klasse B worden toegestaan, maar dit moet expliciet in de aanbestedingsstukken worden gemotiveerd.",
+      "badges": ["BANDEN"],
+      "intro": "Bij de aankoop van voertuigen of banden (categorie C1, C2 of C3) moet de aanbestedende dienst nagaan of de banden – afzonderlijk of gemonteerd onder het voertuig – voldoen aan de etiketteringsverplichtingen van Verordening (EU) 2020/740. De verplichting ziet dus zowel op de rechtstreekse inkoop van banden als op de controle van de banden die bij de levering van een voertuig zijn gemonteerd.\n\nU mag hiervan alleen afwijken wanneer dat nodig is om redenen van veiligheid of volksgezondheid, bijvoorbeeld om banden te kiezen met betere grip op nat wegdek of minder rolgeluid.",
       "warnings": [
         {
           "severity": "red",
-          "text": "Zonder deze minimumeis in de technische specificaties kan de verplichting niet worden afgedwongen en bestaat het risico dat banden uit lagere klassen (C, D, E) worden aangeboden."
+          "text": "Let op: De verordening verplicht dat de aanbestedende dienst die voertuigen koopt het etiket moet kunnen zien vóór aankoop. Dat betekent dat bij de aanbieding van een voertuig met gemonteerde banden de leverancier het bandenlabel moet tonen (fysiek of digitaal), en dat u als inkoper mag verlangen dat deze informatie beschikbaar is."
         }
       ],
+      "steps_title": "Neem de volgende stappen:",
       "steps": [
-        "Neem in de technische specificaties op dat alle aangeboden banden tot de hoogste brandstofrendementsklasse A moeten behoren.",
-        "Controleer per type band (C1, C2, C3) of klasse A beschikbaar is.",
-        "Als klasse A voor een type band niet bestaat, specificeer dat klasse B mag worden aangeboden en motiveer dit in de aanbesteding.",
-        "Verwijs expliciet naar Verordening (EU) 2020/740, bijlage I (labelklassen)."
+        "Stel vast dat het gaat om nieuwe [C1](toggle:c1), [C2](toggle:c2) of [C3](toggle:c3) banden gaat en dat de labelregels van toepassing zijn.",
+        "Ook als de band onder C1, C2 of C3 valt, kunnen er uitzonderingen zijn waarbij de labelregels niet gelden. Controleer of er een uitzondering van toepassing is:\n□ Is het géén terreinband?\n□ Is het voertuig gemaakt ná 1 oktober 1990?\n□ Is het geen tijdelijke reserveband?\n□ Is de snelheidsindex 80 km/u of hoger?\n□ Is de velgdiameter tussen 254 mm en 635 mm?\n□ Heeft de band geen spijkers of andere hulpmiddelen voor extra grip?\n□ Is het geen raceband?\n□ Is het geen tweedehandsband (behalve als deze uit een land buiten de EU komt)?",
+        "Indien sprake is van een C1-, C2- of C3-band en er geen uitzondering geldt, dient u in de aanbestedingsstukken te eisen dat de geleverde banden voldoen aan Verordening (EU) 2020/740, Bijlage II inzake de etikettering van banden."
       ],
       "example_texts": [
         {
           "label": "Voorbeeldtekst",
-          "text": "Alle aangeboden banden moeten behoren tot de hoogste brandstofrendementsklasse (A), zoals vastgesteld in Verordening (EU) 2020/740 inzake de etikettering van banden, bijlage I (labelklassen). Indien voor een specifiek type band (C1, C2 of C3) geen klasse A beschikbaar is, wordt klasse B toegestaan."
+          "text": "De aangeboden voertuigen of banden (categorie C1, C2 of C3) dienen te voldoen aan de eisen van Verordening (EU) 2020/740 inzake de etikettering van banden met betrekking tot brandstofefficiëntie, grip en geluidsniveau.\n\nDe inschrijver toont bij zijn aanbieding aan dat aan deze verordening is voldaan, bijvoorbeeld door:\n• het overleggen van het EU-bandenlabel (fysiek of digitaal), of\n• een verwijzing naar de registratie in de EPREL-database.\n\nBij levering controleert de aanbestedende dienst of de geleverde banden daadwerkelijk voorzien zijn van het juiste label conform Bijlage II van Verordening (EU) 2020/740."
         }
-      ]
+      ],
+      "content_order": ["intro", "warnings", "steps", "example_texts"]
+    },
+    {
+      "key": "geschiktheidseisen",
+      "title": "Geschiktheidseisen",
+      "requirement_level": "verplicht",
+      "badges": ["BANDEN"],
+      "intro": "Deze eis zorgt ervoor dat alleen leveranciers deelnemen die producten aanbieden die conform Europese regelgeving zijn geregistreerd en geëtiketteerd.",
+      "warnings": [
+        {
+          "severity": "red",
+          "text": "Let op: Zonder duidelijke geschiktheidseis kan de aanbestedende dienst niet uitsluiten dat leveranciers banden aanbieden die niet voldoen aan de EU-verordening. Dit bemoeilijkt de beoordeling van inschrijvingen en kan leiden tot ongeldige aanbiedingen."
+        }
+      ],
+      "steps_title": "Neem de volgende stappen:",
+      "steps": [
+        "Neem in de aanbestedingsstukken op dat de inschrijver moet aantonen dat de aangeboden banden of voertuigen (categorie C1, C2 of C3) voldoen aan Verordening (EU) 2020/740. Als bewijs kan de inschrijver:\n• productbladen, datasheets of technische documentatie overleggen,\n• een kopie van het EU-bandenlabel (fysiek of digitaal) aanleveren, of\n• een verwijzing opnemen naar de registratie in de EPREL-database.",
+        "Controleer tijdens de beoordeling of de overgelegde documenten de juiste energieklassen en etiketten bevatten conform Bijlage II van Verordening (EU) 2020/740. Bij twijfel kan de aanbestedende dienst aanvullende verificatie vragen of steekproefsgewijs de opgegeven productnummers controleren in EPREL."
+      ],
+      "example_texts": [
+        {
+          "label": "Voorbeeldtekst",
+          "text": "De inschrijver toont in zijn inschrijving aan dat de aangeboden banden of voertuigen (categorie C1, C2 of C3) voldoen aan de etiketteringsverplichtingen van Verordening (EU) 2020/740 inzake brandstofefficiëntie, grip en geluidsniveau. Als bewijs worden productbladen, EU-bandenlabels of verwijzingen naar de registratie in de EPREL-database overgelegd."
+        }
+      ],
+      "content_order": ["intro", "warnings", "steps", "example_texts"]
+    },
+    {
+      "key": "execution_conditions",
+      "title": "Uitvoeringsvoorwaarden",
+      "requirement_level": "verplicht",
+      "badges": ["BANDEN"],
+      "intro": "De uitvoeringsvoorwaarden bepalen hoe de opdrachtnemer tijdens de uitvoering moet aantonen dat hij aan de EED-verplichting voldoet.",
+      "warnings": [
+        {
+          "severity": "red",
+          "text": "Let op: Zonder duidelijke uitvoeringsvoorwaarden is naleving niet te controleren en ontbreekt een afdwingbare basis om bewijsstukken of meldingen tijdens de uitvoering te eisen."
+        }
+      ],
+      "steps_title": "Neem de volgende stappen:",
+      "steps": [
+        "Leg in de aanbestedingsstukken vast dat de opdrachtnemer bij levering of voorafgaand aan ingebruikname moet aantonen dat de banden waarmee het voertuig is uitgerust voldoen aan de etiketteringsverplichtingen van Verordening (EU) 2020/740. Dit bewijs kan bestaan uit het tonen van het bandenlabel (fysiek of digitaal) of een verwijzing naar de registratie in de EPREL-database.",
+        "Controleer tijdens de uitvoering steekproefsgewijs of de geleverde voertuigen of banden daadwerkelijk zijn voorzien van de juiste etiketten en energieklassen. Documenteer de bevindingen in het contractdossier en leg afwijkingen vast, zodat eventuele corrigerende maatregelen kunnen worden genomen."
+      ],
+      "example_texts": [
+        {
+          "label": "Voorbeeldtekst",
+          "text": "De inschrijver toont bij levering of voorafgaand aan de ingebruikname aan dat de banden waarmee het voertuig is uitgerust voldoen aan de etiketteringsverplichtingen van Verordening (EU) 2020/740.\n\nDe aanbestedende dienst behoudt zich het recht voor om steekproefsgewijs te controleren of de geleverde voertuigen of banden daadwerkelijk zijn voorzien van de juiste etiketten en energieklassen."
+        }
+      ],
+      "content_order": ["intro", "warnings", "steps", "example_texts"]
     }
   ]
 }

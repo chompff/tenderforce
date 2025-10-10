@@ -323,11 +323,12 @@ const ResultsDynamic: React.FC = () => {
                 {/* Render obligation sections */}
                 <div className="mt-6 space-y-4">
                   {obligation.sections.map((section) => (
-                    <ObligationSection 
-                      key={section.key} 
+                    <ObligationSection
+                      key={section.key}
                       section={section}
                       defaultOpen={false}
                       showGppBadge={obligation.badges?.includes('GPP')}
+                      legalReferences={obligation.legal_references}
                     />
                   ))}
                   

@@ -1,14 +1,17 @@
 import React from 'react';
 import { LegalBasisPopup } from '../LegalBasisPopup';
+import { LegalReference } from '@/types/obligations';
 
 interface SummaryWithToggleLinksProps {
   text: string;
   onToggleLegal?: () => void;
+  legalReferences?: LegalReference[];
 }
 
 export const SummaryWithToggleLinks: React.FC<SummaryWithToggleLinksProps> = ({
   text,
-  onToggleLegal
+  onToggleLegal,
+  legalReferences = []
 }) => {
   // Parse text for [text](toggle:legal) and [text](popup:title||content||reference) patterns
   const parseText = (input: string): React.ReactNode[] => {
@@ -63,6 +66,25 @@ export const SummaryWithToggleLinks: React.FC<SummaryWithToggleLinksProps> = ({
                   {linkText}
                 </button>
               );
+            } else if (action.startsWith('toggle:')) {
+              // Handle dynamic toggle references like toggle:c1, toggle:c2, etc.
+              const refLabel = action.substring(7); // Remove 'toggle:' prefix
+              const legalRef = legalReferences.find(ref => ref.label === refLabel);
+
+              if (legalRef) {
+                parts.push(
+                  <LegalBasisPopup
+                    key={i}
+                    triggerText={linkText}
+                    title="TOELICHTING"
+                    content={legalRef.citation}
+                    legalReference=""
+                  />
+                );
+              } else {
+                // If no legal reference found, just show as text
+                parts.push(linkText);
+              }
             } else if (action.startsWith('popup:')) {
               // Parse popup parameters: popup:title||content||reference
               const popupData = action.substring(6); // Remove 'popup:' prefix

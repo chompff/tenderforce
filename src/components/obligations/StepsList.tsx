@@ -1,15 +1,17 @@
 import React from 'react';
 import { CheckCircle } from 'lucide-react';
 import { SummaryWithToggleLinks } from './SummaryWithToggleLinks';
+import { LegalReference } from '@/types/obligations';
 
 interface StepsListProps {
   steps: string[];
   title?: string;
   ordered?: boolean;
   startNumber?: number;
+  legalReferences?: LegalReference[];
 }
 
-export const StepsList: React.FC<StepsListProps> = ({ steps, title, ordered = true, startNumber = 1 }) => {
+export const StepsList: React.FC<StepsListProps> = ({ steps, title, ordered = true, startNumber = 1, legalReferences = [] }) => {
   if (!steps || steps.length === 0) return null;
 
   return (
@@ -27,7 +29,7 @@ export const StepsList: React.FC<StepsListProps> = ({ steps, title, ordered = tr
                 </span>
               </div>
               <div className="text-sm text-gray-700 pt-1 whitespace-pre-line">
-                <SummaryWithToggleLinks text={step} />
+                <SummaryWithToggleLinks text={step} legalReferences={legalReferences} />
               </div>
             </li>
           ))}
@@ -36,7 +38,7 @@ export const StepsList: React.FC<StepsListProps> = ({ steps, title, ordered = tr
         <ul className="space-y-2 list-disc list-inside">
           {steps.map((step, index) => (
             <li key={index} className="text-sm text-gray-700 whitespace-pre-line">
-              <SummaryWithToggleLinks text={step} />
+              <SummaryWithToggleLinks text={step} legalReferences={legalReferences} />
             </li>
           ))}
         </ul>
