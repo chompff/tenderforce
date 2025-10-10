@@ -3,7 +3,7 @@
   "archetype": "ecodesign",
   "title": "EED verplichtingen voor producten onder ecodesign",
   "summary": "Op basis van de gekozen CPV-code bent u volgens de EED verplicht alleen producten aan te schaffen die vallen onder een uitvoeringsmaatregel van [Richtlijn 2009/125/EG](toggle:legal) en die voldoen aan de daarin vastgelegde ecodesign-eisen.",
-  "badges": ["EED", "EU"],
+  "badges": ["ECODESIGN", "EED", "EU"],
   "legal_references": [
     {
       "label": "Richtlijn 2009/125/EG",

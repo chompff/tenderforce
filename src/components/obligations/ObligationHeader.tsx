@@ -36,6 +36,17 @@ export const ObligationHeader: React.FC<ObligationHeaderProps> = ({ obligation, 
                   {badge}
                 </Badge>
               );
+            } else if (badge === 'ECODESIGN') {
+              return (
+                <Badge
+                  key={badge}
+                  variant="outline"
+                  className="text-xs uppercase"
+                  style={{ backgroundColor: '#f3e4ee', color: '#7d2352', borderColor: '#f3e4ee' }}
+                >
+                  {badge}
+                </Badge>
+              );
             } else if (badge === 'GPP') {
               return (
                 <Badge
