@@ -5,7 +5,7 @@ export interface LegalReference {
 }
 
 export interface Warning {
-  severity: 'red' | 'yellow';
+  severity: 'red' | 'yellow' | 'positive';
   text: string;
 }
 
