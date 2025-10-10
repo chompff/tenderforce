@@ -56,13 +56,24 @@ export const ObligationHeader: React.FC<ObligationHeaderProps> = ({ obligation, 
                   {badge}
                 </Badge>
               );
+            } else if (badge === 'MVI') {
+              return (
+                <Badge
+                  key={badge}
+                  variant="outline"
+                  className="text-xs uppercase"
+                  style={{ backgroundColor: '#4A9400', color: '#FFFFFF', borderColor: '#4A9400' }}
+                >
+                  {badge}
+                </Badge>
+              );
             } else if (badge === 'GPP') {
               return (
                 <Badge
                   key={badge}
                   variant="outline"
                   className="text-xs uppercase"
-                  style={{ backgroundColor: '#DCFCE7', color: '#166534', borderColor: '#DCFCE7' }}
+                  style={{ backgroundColor: '#3E6B3A', color: '#FFFFFF', borderColor: '#3E6B3A' }}
                 >
                   {badge}
                 </Badge>
