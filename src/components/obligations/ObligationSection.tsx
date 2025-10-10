@@ -235,7 +235,7 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
           <div className="px-4 pb-4 space-y-6 border-t border-gray-100 pt-4">
             {(() => {
               // Default order if not specified
-              const defaultOrder = ['intro', 'warnings', 'steps', 'example_texts', 'tabbed_examples', 'specs', 'gunningscriteria_tabs', 'contractual_conditions', 'contractual_conditions_tabs'];
+              const defaultOrder = ['intro', 'warnings', 'steps', 'example_texts', 'additional_warnings', 'tabbed_examples', 'specs', 'gunningscriteria_tabs', 'contractual_conditions', 'contractual_conditions_tabs'];
               const order = section.content_order || defaultOrder;
 
               const contentBlocks: Record<string, React.ReactNode> = {
@@ -245,6 +245,7 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                   </div>
                 ),
                 warnings: section.warnings && <WarningAlert warnings={section.warnings} />,
+                additional_warnings: section.additional_warnings && <WarningAlert warnings={section.additional_warnings} />,
                 steps: section.steps && (
                   <StepsList
                     steps={section.steps}

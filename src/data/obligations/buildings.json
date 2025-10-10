@@ -73,10 +73,6 @@
         {
           "severity": "red",
           "text": "Let op: Als je de uitvoeringsvoorwaarden niet opvraagt, kan dat betekenen dat je niet voldoet aan de regels van de EED (artikel 7, lid 7, bijlage IV en artikel 6), maar ook aan de EPBD en het Bbl."
-        },
-        {
-          "severity": "positive",
-          "text": "Let op: uitbreiding volgt binnenkort\n\nBinnen afzienbare tijd wordt deze module uitgebreid met informatie over artikel 6e van Richtlijn (EU) 2023/1791, ook wel bekend als de renovatieplicht. Deze bepaling heeft aanzienlijke impact op bestaande gebouwen en de verplichtingen van overheidsinstanties. Zodra de uitvoeringsrichtlijnen en nationale kaders meer duidelijkheid verschaffen, wordt dit handvat uitgebreid met praktische handvatten, voorbeelden en formats."
         }
       ],
       "example_texts": [
@@ -89,7 +85,13 @@
           "text": "Indien het gebouw op het moment van verwerving nog niet aan de BENG-eisen voldoet, wordt in de overeenkomst opgenomen dat de verkoper of koper binnen een overeengekomen termijn renovatiemaatregelen uitvoert om aan deze eisen te voldoen."
         }
       ],
-      "content_order": ["intro", "warnings", "example_texts"]
+      "additional_warnings": [
+        {
+          "severity": "positive",
+          "text": "Let op: uitbreiding volgt binnenkort\n\nBinnen afzienbare tijd wordt deze module uitgebreid met informatie over artikel 6e van Richtlijn (EU) 2023/1791, ook wel bekend als de renovatieplicht. Deze bepaling heeft aanzienlijke impact op bestaande gebouwen en de verplichtingen van overheidsinstanties. Zodra de uitvoeringsrichtlijnen en nationale kaders meer duidelijkheid verschaffen, wordt dit handvat uitgebreid met praktische handvatten, voorbeelden en formats."
+        }
+      ],
+      "content_order": ["intro", "warnings", "example_texts", "additional_warnings"]
     }
   ]
 }

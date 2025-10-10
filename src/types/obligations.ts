@@ -67,7 +67,7 @@ export interface ContractualConditionTabs {
 
 export type SectionKey = 'scope' | 'type_opdracht' | 'functionele_behoefte' | 'levenscyclusbenadering' | 'reikwijdte_opdracht' | 'technical_specs' | 'gunningscriteria' | 'execution_conditions' | 'geschiktheidseisen';
 
-export type ContentBlockType = 'intro' | 'warnings' | 'steps' | 'example_texts' | 'tabbed_examples' | 'specs' | 'gunningscriteria_tabs' | 'contractual_conditions' | 'contractual_conditions_tabs' | 'product_links' | 'additional_steps';
+export type ContentBlockType = 'intro' | 'warnings' | 'steps' | 'example_texts' | 'additional_warnings' | 'tabbed_examples' | 'specs' | 'gunningscriteria_tabs' | 'contractual_conditions' | 'contractual_conditions_tabs' | 'product_links' | 'additional_steps';
 
 export interface ObligationSection {
   key: SectionKey;
@@ -76,6 +76,7 @@ export interface ObligationSection {
   intro: string;
   badges?: string[];
   warnings?: Warning[];
+  additional_warnings?: Warning[];
   steps_title?: string;
   steps?: string[];
   steps_ordered?: boolean;
