@@ -128,6 +128,24 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                       }
                       return null;
                     })}
+                    {showGppBadge && (
+                      <>
+                        <Badge
+                          variant="outline"
+                          className="text-xs px-2 py-0.5"
+                          style={{ backgroundColor: '#D4F1F4', color: '#0B5563', borderColor: '#D4F1F4' }}
+                        >
+                          MVI
+                        </Badge>
+                        <Badge
+                          variant="outline"
+                          className="text-xs px-2 py-0.5"
+                          style={{ backgroundColor: '#DCFCE7', color: '#166534', borderColor: '#DCFCE7' }}
+                        >
+                          GPP
+                        </Badge>
+                      </>
+                    )}
                     <Badge
                       variant="outline"
                       className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}
