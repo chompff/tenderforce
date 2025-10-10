@@ -65,12 +65,40 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                   </Badge>
                 )}
                 {section.key === 'technical_specs' && (
-                  <Badge
-                    variant="outline"
-                    className={`text-xs px-2 py-0.5 ${getLevelColor(section.requirement_level)}`}
-                  >
-                    {section.requirement_level}
-                  </Badge>
+                  <>
+                    {section.badges?.map((badge) => {
+                      if (badge === 'ENERGIELABEL') {
+                        return (
+                          <Badge
+                            key={badge}
+                            variant="outline"
+                            className="text-xs px-2 py-0.5 uppercase"
+                            style={{ backgroundColor: '#D1FAE5', color: '#065F46', borderColor: '#D1FAE5' }}
+                          >
+                            {badge}
+                          </Badge>
+                        );
+                      } else if (badge === 'ECODESIGN') {
+                        return (
+                          <Badge
+                            key={badge}
+                            variant="outline"
+                            className="text-xs px-2 py-0.5 uppercase"
+                            style={{ backgroundColor: '#f3e4ee', color: '#7d2352', borderColor: '#f3e4ee' }}
+                          >
+                            {badge}
+                          </Badge>
+                        );
+                      }
+                      return null;
+                    })}
+                    <Badge
+                      variant="outline"
+                      className={`text-xs px-2 py-0.5 ${getLevelColor(section.requirement_level)}`}
+                    >
+                      {section.requirement_level}
+                    </Badge>
+                  </>
                 )}
                 {section.key === 'gunningscriteria' && (
                   <>
@@ -101,6 +129,17 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                             variant="outline"
                             className="text-xs px-2 py-0.5 uppercase"
                             style={{ backgroundColor: '#D1FAE5', color: '#065F46', borderColor: '#D1FAE5' }}
+                          >
+                            {badge}
+                          </Badge>
+                        );
+                      } else if (badge === 'ECODESIGN') {
+                        return (
+                          <Badge
+                            key={badge}
+                            variant="outline"
+                            className="text-xs px-2 py-0.5 uppercase"
+                            style={{ backgroundColor: '#f3e4ee', color: '#7d2352', borderColor: '#f3e4ee' }}
                           >
                             {badge}
                           </Badge>

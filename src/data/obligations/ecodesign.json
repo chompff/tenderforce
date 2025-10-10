@@ -43,6 +43,7 @@
       "key": "technical_specs",
       "title": "Technische specificaties",
       "requirement_level": "verplicht",
+      "badges": ["ECODESIGN"],
       "intro": "Aanbestedende diensten zijn verplicht uitsluitend producten aan te schaffen die voldoen aan de geldende Ecodesign-eisen. Deze eisen zijn vastgelegd in Richtlijn 2009/125/EG en de bijbehorende product-specifieke uitvoeringsverordeningen.",
       "warnings": [
         {
@@ -66,6 +67,7 @@
       "key": "execution_conditions",
       "title": "Uitvoeringsvoorwaarden",
       "requirement_level": "aanbevolen",
+      "badges": ["ECODESIGN"],
       "intro": "U bent verplicht uitsluitend producten te kopen die voldoen aan de geldende Ecodesign-verordeningen. Omdat de daadwerkelijke controle plaatsvindt bij de levering, moet dit via contractuele voorwaarden geborgd worden.",
       "warnings": [
         {
