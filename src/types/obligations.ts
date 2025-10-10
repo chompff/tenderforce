@@ -69,6 +69,7 @@ export interface ObligationSection {
   title: string;
   requirement_level: 'verplicht' | 'aanbevolen';
   intro: string;
+  badges?: string[];
   warnings?: Warning[];
   steps?: string[];
   steps_ordered?: boolean;

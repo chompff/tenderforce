@@ -93,6 +93,21 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                 )}
                 {section.key === 'execution_conditions' && (
                   <>
+                    {section.badges?.map((badge) => {
+                      if (badge === 'ENERGIELABEL') {
+                        return (
+                          <Badge
+                            key={badge}
+                            variant="outline"
+                            className="text-xs px-2 py-0.5 uppercase"
+                            style={{ backgroundColor: '#D1FAE5', color: '#065F46', borderColor: '#D1FAE5' }}
+                          >
+                            {badge}
+                          </Badge>
+                        );
+                      }
+                      return null;
+                    })}
                     {showGppBadge && (
                       <Badge
                         variant="outline"
