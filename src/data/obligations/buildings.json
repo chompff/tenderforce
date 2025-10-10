@@ -1,0 +1,91 @@
+{
+  "obligation_id": "buildings",
+  "archetype": "buildings",
+  "title": "EED verplichtingen voor gebouwen",
+  "summary": "Op basis van de gekozen CPV-code valt deze opdracht onder de EED-verplichtingen voor overheidsgebouwen. Overheidinstanties aanschaffen/renoveren 3% van hun gebouwen tot bijna-energieneutraal of emissievrije gebouwen en mogen uitsluitend nieuwe gebouwen aankopen of huren die aan deze energieprestatie-eisen voldoen.",
+  "badges": ["GEBOUWEN", "EED", "NL", "EU"],
+  "legal_references": [
+    {
+      "label": "Richtlijn (EU) 2023/1791",
+      "citation": "artikel 6, lid 3",
+      "url": ""
+    }
+  ],
+  "sections": [
+    {
+      "key": "scope",
+      "title": "Bepaling scope opdracht",
+      "requirement_level": "verplicht",
+      "intro": "Wanneer een aanbestedende dienst een gebouw wil aankopen of een nieuwe huurovereenkomst wil sluiten, geldt volgens de EED dat het gebouw minimaal bijna-energieneutraal (nZEB) moet zijn. Alleen in drie limitatieve gevallen geldt een uitzondering:\n1. Het gebouw wordt aangekocht om grondig te renoveren of af te breken;\n2. Het gebouw wordt door een overheidinstantie gekocht om het weer te verhogen zonder eigen gebruik;\n3. Het gebouw is beschermd erfgoed vanwege bijzondere architectuur of historische waarde.",
+      "warnings": [
+        {
+          "severity": "red",
+          "text": "Let op: Als deze scope-afbakening niet duidelijk in de aanbestedingsstukken staat, kan een niet-conform gebouw ontrecht worden toegelaten. Daarmee handelt de aanbestedende dienst in strijd met de EED."
+        }
+      ],
+      "steps_title": "Neem de volgende stappen:",
+      "steps": [
+        "Beoordeel of het gaat om een aankoop of nieuwe huur van een gebouw.",
+        "Controleer of het gebouw binnen de verplichting valt. Dit is het geval als het gebouw:\na. minimaal 250 m² nuttig vloeroppervlakte heeft, en\nb. een totale bruikbare vloeroppervlakte van meer dan 250 m² heeft, en\nc. eigendom is van een overheidinstantie, en\nd. op 1 januari 2024 nog geen bijna-energieneutraal (BENG) gebouw was.",
+        "Controleer of er sprake is van een uitzondering. Dit is het geval als het doel van de aankoop is:\ni) grondig renoveren of afbreken;\nii) doorverkoop zonder gebruik voor overheidsdoeleinden;\niii) bescherming van erfgoed of bijzondere architectuur.",
+        "Neem in de aanbestedingsstukken op dat het gebouw minimaal BENG moet zijn.",
+        "Vermeld als eis dat de verhuurder/verkoper moet aantonen dat het gebouw bijna-energieneutraal is.\n• Vraag bewijs in de vorm van een geldig energieprestatiecertificaat (EPC) of BENG-berekeninsrapport."
+      ],
+      "example_texts": [
+        {
+          "label": "Voorbeeldtekst",
+          "text": "De opdracht betreft de [aankoop / nieuwe huur] van een gebouw en valt hiermee onder de reikwijdte van artikel 6 van Richtlijn (EU) 2023/1791.\n\nHet gebouw moet minimaal bijna-energieneutraal (BENG) zijn. De (verhuurder / verhuurder) dient aan te tonen dat het gebouw bijna-energieneutraal is met een geldig energieprestatiecertificaat (EPC) of BENG-berekeninsrapport."
+        }
+      ],
+      "content_order": ["intro", "warnings", "steps", "example_texts"]
+    },
+    {
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "badges": ["GEBOUWEN"],
+      "intro": "Het aan te kopen of te huren gebouw moet voldoen aan de eisen BENG, ofwewel Bijna Energie Neutraal Gebouw. De energieprestatie bij [BENG](https://www.rvo.nl/onderwerpen/wetten-en-regels-gebouwen/beng) wordt bepaald aan de hand van 3 individueel te behalen eisen:\n1. de maximale energiebehoefte in kWh per m2 gebruiksoppervlak per jaar (kWh/m2.jr)\n2. het maximale primair fossiel energiegebruik, eveneens in kWh per m2 gebruiksoppervlak per jaar (kWh/m2.jr)\n3. het minimale aandeel hernieuwbare energie in procenten (%)",
+      "warnings": [
+        {
+          "severity": "red",
+          "text": "Let op: De wetten en regels (o.a. Btu artikel 4.145 lid 1) bepalen dat een bijna-energieneutraal gebouw (BENG) moet voldoen aan alle drie de indicatoren gelijktijdig."
+        }
+      ],
+      "steps_title": "Neem de volgende stappen:",
+      "steps": [
+        "Herinner technische specificaties die duidelijk maken dat alleen gebouwen worden geaccepteerd die voldoen aan BENG-eisen."
+      ],
+      "example_texts": [
+        {
+          "label": "Voorbeeldtekst",
+          "text": "Het aangeboden gebouw dient te voldoen aan de eisen voor een bijna-energieneutraal gebouw (BENG) zoals vastgelegd in het Besluit bouwwerken leefomgeving (Bbl) en berekend volgens de bepalingsmethode NTA 8800. De inschrijver overlegt een geldig energieprestatiecertificaat (EPC) of BENG-berekeningsrapport."
+        }
+      ],
+      "content_order": ["intro", "warnings", "steps", "example_texts"]
+    },
+    {
+      "key": "execution_conditions",
+      "title": "Uitvoeringsvoorwaarden",
+      "requirement_level": "verplicht",
+      "badges": ["GEBOUWEN"],
+      "intro": "De BENG-eisen dekken de energieprestatie-inhoud af, maar er zijn aanvullende verplichtingen uit Nederlandse en Europese regelgeving die bij uitvoering en oplevering spelen.",
+      "warnings": [
+        {
+          "severity": "red",
+          "text": "Let op: Als je de uitvoeringsvoorwaarden niet opvraagt, kan dat betekenen dat je niet voldoet aan de regels van de EED (artikel 7, lid 7, bijlage IV en artikel 6), maar ook aan de EPBD en het Bbl."
+        }
+      ],
+      "example_texts": [
+        {
+          "label": "Voorbeeldtekst huur",
+          "text": "De huurder en verhuurder komen overeen dat het gebouw gedurende de looptijd van de huurovereenkomst ten minste de energieprestatie behoudt die overeenkomt met de BENG-maatstaven of dat maatregelen worden getroffen om aan deze norm te voldoen."
+        },
+        {
+          "label": "Voorbeeldtekst aankoop met verbouwing",
+          "text": "Indien het gebouw op het moment van verwerving nog niet aan de BENG-eisen voldoet, wordt in de overeenkomst opgenomen dat de verkoper of koper binnen een overeengekomen termijn renovatiemaatregelen uitvoert om aan deze eisen te voldoen."
+        }
+      ],
+      "content_order": ["intro", "warnings", "example_texts"]
+    }
+  ]
+}

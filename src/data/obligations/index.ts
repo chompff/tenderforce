@@ -7,6 +7,7 @@ import servicesData from './services.json';
 import algemeneEedData from './algemene-eed.json';
 import gppFurnitureData from './gpp-furniture.json';
 import standardObligationsData from './standard-obligations.json';
+import buildingsData from './buildings.json';
 
 // Type-safe obligation imports
 const tyres: Obligation = tyresData as Obligation;
@@ -17,6 +18,7 @@ const services: Obligation = servicesData as Obligation;
 const algemeneEed: Obligation = algemeneEedData as Obligation;
 const gppFurniture: Obligation = gppFurnitureData as Obligation;
 const standardObligations: Obligation = standardObligationsData as Obligation;
+const buildings: Obligation = buildingsData as Obligation;
 
 // Map of obligation IDs to obligation data
 export const obligations: Record<string, Obligation> = {
@@ -28,6 +30,7 @@ export const obligations: Record<string, Obligation> = {
   algemene_eed: algemeneEed,
   'gpp-furniture': gppFurniture,
   standard_obligations: standardObligations,
+  buildings: buildings,
 };
 
 // Map of CPV codes to obligation IDs
@@ -35,7 +38,10 @@ export const obligations: Record<string, Obligation> = {
 export const cpvToObligationMap: Record<string, string[]> = {
   // Algemene EED verplichtingen
   '90510000-5': ['algemene_eed'], // Afvoer van huisvuil en behandeling van afval
-  
+
+  // Buildings CPV codes
+  '45000000-7': ['buildings'], // Bouwwerkzaamheden
+
   // Tyres CPV codes (with full codes including hyphens)
   '34350000-5': ['tyres'], // Banden voor normale en zware voertuigen
   // '34351000-2': ['tyres'], // Banden voor normale auto's

@@ -102,6 +102,17 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                             {badge}
                           </Badge>
                         );
+                      } else if (badge === 'GEBOUWEN') {
+                        return (
+                          <Badge
+                            key={badge}
+                            variant="outline"
+                            className="text-xs px-2 py-0.5 uppercase"
+                            style={{ backgroundColor: '#F4EDE6', color: '#5C4033', borderColor: '#F4EDE6' }}
+                          >
+                            {badge}
+                          </Badge>
+                        );
                       }
                       return null;
                     })}
@@ -175,6 +186,17 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                             variant="outline"
                             className="text-xs px-2 py-0.5 uppercase"
                             style={{ backgroundColor: '#E5FAFD', color: '#008A9E', borderColor: '#E5FAFD' }}
+                          >
+                            {badge}
+                          </Badge>
+                        );
+                      } else if (badge === 'GEBOUWEN') {
+                        return (
+                          <Badge
+                            key={badge}
+                            variant="outline"
+                            className="text-xs px-2 py-0.5 uppercase"
+                            style={{ backgroundColor: '#F4EDE6', color: '#5C4033', borderColor: '#F4EDE6' }}
                           >
                             {badge}
                           </Badge>

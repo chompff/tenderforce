@@ -16,7 +16,16 @@ export const ObligationHeader: React.FC<ObligationHeaderProps> = ({ obligation, 
         <h2 className="text-xl font-bold text-gray-900">{obligation.title}</h2>
         <div className="flex gap-2 items-center">
           {obligation.badges.map((badge) => {
-            if (badge === 'EU') {
+            if (badge === 'NL') {
+              return (
+                <img
+                  key={badge}
+                  src="/dutch-flag.png"
+                  alt="Dutch Flag"
+                  className="h-5 w-auto"
+                />
+              );
+            } else if (badge === 'EU') {
               return (
                 <img
                   key={badge}
@@ -76,6 +85,17 @@ export const ObligationHeader: React.FC<ObligationHeaderProps> = ({ obligation, 
                   variant="outline"
                   className="text-xs uppercase"
                   style={{ backgroundColor: '#E5FAFD', color: '#008A9E', borderColor: '#E5FAFD' }}
+                >
+                  {badge}
+                </Badge>
+              );
+            } else if (badge === 'GEBOUWEN') {
+              return (
+                <Badge
+                  key={badge}
+                  variant="outline"
+                  className="text-xs uppercase"
+                  style={{ backgroundColor: '#F4EDE6', color: '#5C4033', borderColor: '#F4EDE6' }}
                 >
                   {badge}
                 </Badge>
