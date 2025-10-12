@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { ObligationSection as SectionType, LegalReference } from '@/types/obligations';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown, ChevronUp, Lock } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { WarningAlert } from './WarningAlert';
 import { StepsList } from './StepsList';
@@ -19,15 +21,23 @@ interface ObligationSectionProps {
   defaultOpen?: boolean;
   showGppBadge?: boolean;
   legalReferences?: LegalReference[];
+  isAuthenticated?: boolean;
 }
 
 export const ObligationSection: React.FC<ObligationSectionProps> = ({
   section,
   defaultOpen = false,
   showGppBadge = false,
-  legalReferences = []
+  legalReferences = [],
+  isAuthenticated = true
 }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
+  const location = useLocation();
+
+  const handleRegisterClick = () => {
+    // Store the current URL so we can redirect back after authentication
+    sessionStorage.setItem('redirectAfterAuth', location.pathname + location.search);
+  };
 
   const getLevelColor = (level: string) => {
     switch (level.toLowerCase()) {
@@ -290,8 +300,10 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
         </CollapsibleTrigger>
 
         <CollapsibleContent>
-          <div className="px-4 pb-4 space-y-6 border-t border-gray-100 pt-4">
-            {(() => {
+          <div className={`px-4 pb-4 border-t border-gray-100 pt-4 relative ${!isAuthenticated ? 'min-h-[320px]' : ''}`}>
+            {/* Blurred content layer */}
+            <div className={`space-y-6 ${!isAuthenticated ? 'blur-sm' : ''}`}>
+              {(() => {
               // Default order if not specified
               const defaultOrder = ['intro', 'warnings', 'steps', 'example_texts', 'additional_warnings', 'tabbed_examples', 'gpp_specs', 'gpp_criteria_tabs', 'specs', 'gunningscriteria_tabs', 'contractual_conditions', 'contractual_conditions_tabs'];
               const order = section.content_order || defaultOrder;
@@ -395,6 +407,27 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                 </React.Fragment>
               ));
             })()}
+            </div>
+
+            {/* Overlay for unauthenticated users - NOT blurred */}
+            {!isAuthenticated && (
+              <div className="absolute inset-0 flex items-center justify-center bg-white/70 backdrop-blur-[2px] z-10 rounded-b-lg">
+                <div className="text-center p-6 max-w-sm bg-white rounded-lg shadow-lg border border-gray-200">
+                  <Lock className="w-12 h-12 mx-auto mb-4 text-blue-600" />
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Inloggen voor volledige inhoud
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-4">
+                    Maak een gratis account aan om de volledige verplichtingen en specificaties te bekijken.
+                  </p>
+                  <Link to="/auth/register" onClick={handleRegisterClick}>
+                    <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                      Gratis aanmelden
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            )}
           </div>
         </CollapsibleContent>
       </div>

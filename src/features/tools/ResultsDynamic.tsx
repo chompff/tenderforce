@@ -4,6 +4,7 @@ import { ArrowLeft, Info, CheckCircle, Building, Calculator, Star, Wrench } from
 import { getCpvName } from '../../utils/cpvLookup';
 import Confetti from '../../components/Confetti';
 import { useStealthMode } from '@/lib/utils';
+import { useAuth } from '@/hooks/useAuth';
 import { Obligation } from '@/types/obligations';
 import { ObligationService } from '@/services/obligationService';
 import { ObligationHeader } from '@/components/obligations/ObligationHeader';
@@ -17,6 +18,7 @@ const ResultsDynamic: React.FC = () => {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const { isStealthMode } = useStealthMode();
+  const { currentUser } = useAuth();
 
   const [cpvName, setCpvName] = useState('Laden...');
   const [obligations, setObligations] = useState<Obligation[]>([]);
@@ -329,6 +331,7 @@ const ResultsDynamic: React.FC = () => {
                       defaultOpen={false}
                       showGppBadge={obligation.badges?.includes('GPP')}
                       legalReferences={obligation.legal_references}
+                      isAuthenticated={!!currentUser}
                     />
                   ))}
                   
