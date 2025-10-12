@@ -52,7 +52,7 @@ export const obligations: Record<string, Obligation> = {
   tyres,
   furniture,
   ecodesign_products: ecodesign,
-  energy_label_products: energyLabel,
+  energy_label: energyLabel, // Changed from energy_label_products to match CSV mapping
   services_new_products: services,
   algemene_eed: algemeneEed,
   'gpp-furniture': gppFurniture,

@@ -2,9 +2,11 @@
 """
 Generate CPV to obligation mappings from multiple CSV files.
 
-This script reads multiple CSV files (GPP, Ecodesign, Services, Tyres, Buildings)
+This script reads multiple CSV files (Energy Label, Ecodesign, GPP, Services, Tyres, Buildings)
 and generates a single JSON file that maps CPV codes to obligation module IDs.
 The JSON can then be imported into TypeScript for use in the application.
+
+Module ordering: energy-label, ecodesign, GPP modules, services, buildings
 
 Usage:
     python scripts/generate-cpv-mapping.py
@@ -44,16 +46,51 @@ MANUAL_MAPPINGS = {
     '39130000-2': ['gpp-furniture'],
 }
 
+# Module ordering for consistent output
+# This defines the canonical order that modules should appear for each CPV code
+MODULE_ORDER = [
+    'energy_label',          # 1. Energy Label
+    'ecodesign_products',    # 2. Ecodesign
+    'tyres',                 # 2b. Tyres (also ecodesign-related)
+    # GPP modules (alphabetically)
+    'gpp-cleaning',
+    'gpp-computers',
+    'gpp-data-centres',
+    'gpp-electricity',
+    'gpp-food-catering',
+    'gpp-furniture',
+    'gpp-imaging-equipment',
+    'gpp-office-buildings',
+    'gpp-paints',
+    'gpp-public-space',
+    'gpp-road-design',
+    'gpp-road-lighting',
+    'gpp-road-transport',
+    'gpp-textiles',
+    'services_new_products', # 4. Services
+    'buildings',             # 5. Buildings
+    'algemene_eed',          # Last: general EED obligations
+]
+
+def get_module_sort_key(module_id):
+    """Return sort key for a module ID based on MODULE_ORDER."""
+    try:
+        return MODULE_ORDER.index(module_id)
+    except ValueError:
+        # Unknown modules go at the end
+        return len(MODULE_ORDER)
+
 # CSV sources to process
 # These files are kept in data/sources/ (not public/) to prevent web scraping
+# IMPORTANT: Process in order: Energy Label, Ecodesign, GPP, Services, Buildings
 CSV_SOURCES = [
     {
-        'file': 'data/sources/cpv-gpp-mapping.csv',
-        'name': 'GPP',
+        'file': 'data/sources/cpv-energylabel-mapping.csv',
+        'name': 'Energy Label',
         'cpv_column': 'CPV CODE',
-        'value_column': 'Mapped GPP',
-        'value_map': GPP_TO_MODULE_MAP,
-        'skip_values': ['GPP: Not applicable'],
+        'value_column': 'Producten met energielabel',
+        'module_id': 'energy_label',
+        'include_when': 'TRUE',
     },
     {
         'file': 'data/sources/cpv-ecodesign-mapping.csv',
@@ -62,6 +99,14 @@ CSV_SOURCES = [
         'value_column': 'Producten onder ecodesign',
         'module_id': 'ecodesign_products',
         'include_when': 'TRUE',
+    },
+    {
+        'file': 'data/sources/cpv-gpp-mapping.csv',
+        'name': 'GPP',
+        'cpv_column': 'CPV CODE',
+        'value_column': 'Mapped GPP',
+        'value_map': GPP_TO_MODULE_MAP,
+        'skip_values': ['GPP: Not applicable'],
     },
     {
         'file': 'data/sources/cpv-services-mapping.csv',
@@ -137,7 +182,8 @@ def process_csv_source(project_root, source_config, cpv_mappings, stats):
                     # Merge: add module if not already present
                     if module_id not in cpv_mappings[cpv_code]:
                         cpv_mappings[cpv_code].append(module_id)
-                        cpv_mappings[cpv_code].sort()
+                        # Sort using custom module order
+                        cpv_mappings[cpv_code].sort(key=get_module_sort_key)
                         source_stats['merged'] += 1
                 else:
                     # New CPV code
@@ -187,7 +233,8 @@ def main():
                 if module not in cpv_mappings[cpv]:
                     cpv_mappings[cpv].append(module)
                     manual_stats['merged'] += 1
-            cpv_mappings[cpv].sort()
+            # Sort using custom module order
+            cpv_mappings[cpv].sort(key=get_module_sort_key)
         else:
             # New CPV code
             cpv_mappings[cpv] = modules
