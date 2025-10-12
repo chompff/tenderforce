@@ -106,6 +106,12 @@ export function getObligationsByCpv(cpvCode: string): Obligation[] {
     }
   }
 
+  // If no specific obligations found, add algemene_eed (General EED obligations)
+  // This ensures all CPV codes have at least the general EED requirements
+  if (result.length === 0 && obligations.algemene_eed) {
+    result.push(obligations.algemene_eed);
+  }
+
   // Always append standard_obligations if there are any obligations
   if (result.length > 0 && obligations.standard_obligations) {
     result.push(obligations.standard_obligations);
