@@ -129,7 +129,7 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
         {/* Header with copy button */}
         <div className="flex items-center justify-between">
           <h4 className="text-sm font-semibold text-gray-900">
-            {categoryLabel} voor {currentMainTab?.label_short || currentMainTab?.label.replace(/^[📋🪑♻️]\s*/, '') || ''}
+            {categoryLabel} voor {currentMainTab?.label_short || currentMainTab?.label.replace(/^[\p{Emoji}\s]+/u, '') || ''}
           </h4>
           <button
             onClick={() => {

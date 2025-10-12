@@ -43,12 +43,13 @@ const Login = () => {
       } else {
         navigate('/');
       }
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error('Login error:', err);
+      const error = err as { code?: string };
       setError(
-        err.code === 'auth/user-not-found' || err.code === 'auth/wrong-password'
+        error.code === 'auth/user-not-found' || error.code === 'auth/wrong-password'
           ? 'Onjuist e-mailadres of wachtwoord'
-          : err.code === 'auth/too-many-requests'
+          : error.code === 'auth/too-many-requests'
           ? 'Te veel pogingen. Probeer het later opnieuw.'
           : 'Inloggen mislukt. Probeer het opnieuw.'
       );
@@ -71,7 +72,7 @@ const Login = () => {
       } else {
         navigate('/');
       }
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error('Google sign-in error:', err);
       setError('Google aanmelding mislukt. Probeer het opnieuw.');
     } finally {

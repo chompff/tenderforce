@@ -30,7 +30,7 @@ const mockSupabase = {
         })
       })
     }),
-    insert: (data: any) => Promise.resolve({
+    insert: (data: Record<string, unknown>) => Promise.resolve({
       data: [{ ...data, id: Date.now().toString(), created_at: new Date().toISOString() }],
       error: null
     })

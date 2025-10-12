@@ -4,6 +4,12 @@ export interface Suggestion {
   type_aanbesteding?: string;
 }
 
+interface CpvDataItem {
+  'CPV CODE': string;
+  'Omschrijving': string;
+  'type_aanbesteding'?: string;
+}
+
 export const fetchSuggestions = async (query: string): Promise<{ suggestions: Suggestion[] }> => {
   console.log('🔍 fetchSuggestions called with query:', query);
   
@@ -26,11 +32,11 @@ export const fetchSuggestions = async (query: string): Promise<{ suggestions: Su
     }
     
     // Filter the data based on the query
-    const filtered = cpvDataArray.filter((item: any) => {
+    const filtered = (cpvDataArray as CpvDataItem[]).filter((item) => {
       // Use the correct field names from the actual dataset
       const code = item['CPV CODE'];
       const description = item['Omschrijving'];
-      
+
       if (!description || !code) {
         // Only log a few examples to avoid spam
         if (Math.random() < 0.01) {
@@ -38,13 +44,13 @@ export const fetchSuggestions = async (query: string): Promise<{ suggestions: Su
         }
         return false;
       }
-      
+
       const queryLower = query.toLowerCase();
       const descriptionMatch = description.toLowerCase().includes(queryLower);
       const codeMatch = code.toLowerCase().includes(queryLower);
-      
+
       return descriptionMatch || codeMatch;
-    }).map((item: any) => ({
+    }).map((item) => ({
       code: item['CPV CODE'],
       description: item['Omschrijving'],
       type_aanbesteding: item['type_aanbesteding']

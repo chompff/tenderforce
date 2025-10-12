@@ -20,7 +20,7 @@ const EmailVerification = () => {
       await sendVerificationEmail(currentUser);
       setSent(true);
       setTimeout(() => setSent(false), 3000); // Reset after 3 seconds
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error('Resend email error:', err);
       setError('Kan verificatie-e-mail niet opnieuw verzenden. Probeer het later opnieuw.');
     } finally {

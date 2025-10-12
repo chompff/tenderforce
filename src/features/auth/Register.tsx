@@ -42,12 +42,13 @@ const Register = () => {
       await signup(data.email, data.password);
       setEmailSent(true);
       // Don't navigate immediately - show verification message
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error('Registration error:', err);
+      const error = err as { code?: string };
       setError(
-        err.code === 'auth/email-already-in-use'
+        error.code === 'auth/email-already-in-use'
           ? 'Dit e-mailadres is al in gebruik'
-          : err.code === 'auth/weak-password'
+          : error.code === 'auth/weak-password'
           ? 'Wachtwoord is te zwak'
           : 'Registratie mislukt. Probeer het opnieuw.'
       );
@@ -70,7 +71,7 @@ const Register = () => {
       } else {
         navigate('/');
       }
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error('Google sign-in error:', err);
       setError('Google aanmelding mislukt. Probeer het opnieuw.');
     } finally {
