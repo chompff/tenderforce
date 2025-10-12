@@ -17,7 +17,7 @@
       "title": "Technische specificaties",
       "requirement_level": "verplicht",
       "badges": ["ECODESIGN"],
-      "intro": "Aanbestedende diensten zijn verplicht te voldoen aan de geldende ecodesign vereisten. Deze eisen zijn vastgelegd in verschillende product-specifieke (uitvoerings)verordeningen.",
+      "intro": "U bent verplicht te voldoen aan de geldende Ecodesign vereisten. Deze eisen zijn vastgelegd in verschillende product-specifieke (uitvoerings)verordeningen.",
       "warnings": [
         {
           "severity": "red",
@@ -58,12 +58,12 @@
         {"label": "Huishoudelijke droogtrommels/wasdrogers", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32012R0932"},
         {"label": "Lokale ruimteverwarmers", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32015R1188"},
         {"label": "Verwarmingsketels op vaste brandstof", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32015R1189"},
-        {"label": "Verwarmingsinstallaties voor ruimten (boilers/warmtepompen/combi)", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32013R0813"},
-        {"label": "Stand-by en uit-modus (horizontale eis)", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32013R0801"}
+        {"label": "Verwarmingsinstallaties voor ruimten (boilers/warmtepompen/combi)", "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32013R0813"}
       ],
       "additional_steps": [
         "Kies hieronder welke product-specifieke (uitvoerings)verordeningen op uw aanbesteding van toepassing is.",
-        "Neem de ecodesign vereisten uit de relevante (uitvoerings)verordeningen op in de aanbestedingsdocumenten."
+        "Neem de ecodesign vereisten uit de relevante (uitvoerings)verordeningen op in de aanbestedingsdocumenten.",
+        "Vraag bij aanschaf of in de technische specificaties om een verklaring van conformiteit of productinformatie waaruit blijkt dat het apparaat voldoet aan de eisen van Verordening (EG) nr. 1275/2008 (zoals gewijzigd door 801/2013) inzake energieverbruik in [stand-by- en uit-modus](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32013R0801)."
       ],
       "content_order": ["intro", "warnings", "steps", "example_texts", "product_links", "additional_steps"]
     },

@@ -3,7 +3,7 @@
   "archetype": "standard",
   "title": "Standaard EED verplichtingen",
   "summary": "Op basis van de gekozen CPV-code moet u volgens de EED rekening houden met de volgende standaardverplichtingen.",
-  "badges": ["EED", "EU"],
+  "badges": ["NL", "EU"],
   "legal_references": [
     {
       "label": "Richtlijn (EU) 2023/1791",
@@ -16,20 +16,13 @@
       "key": "tenderned_reporting",
       "title": "Rapportage in TenderNed",
       "requirement_level": "Verplicht",
-      "intro": "U moet in TenderNed rapporteren:",
-      "steps": [
-        "Hoe het energie-efficiëntie-eerst-beginsel is toegepast.",
-        "OF",
-        "Waarom het energie-efficiëntie-eerst-beginsel niet is toegepast."
-      ],
-      "steps_ordered": false,
+      "intro": "U moet in TenderNed rapporteren hoe het energie-efficiëntie-eerst-beginsel is toegepast, of waarom het niet is toegepast.",
       "warnings": [
         {
           "severity": "red",
-          "text": "Let op: De rapportage in TenderNed over het (niet) toepassen van het energie-efficiëntie-eerst-beginsel is verplicht voor deze aanbesteding. Op basis van artikel 2.98 Aw 2012 controleert de Europese Commissie steekproefsgewijs of uw motivering steekhoudend is."
+          "text": "Let op: De rapportage in TenderNed over het (niet) toepassen van het energie-efficiëntie-eerst-beginsel is verplicht. Op basis van artikel 2.98 Aw 2012 controleert de Europese Commissie steekproefsgewijs of uw motivering steekhoudend is."
         }
-      ],
-      "example_texts": []
+      ]
     }
   ]
 }

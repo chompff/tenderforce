@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
-import { ArrowLeft, Info, CheckCircle, Building, Calculator, Star, Wrench } from 'lucide-react';
+import { ArrowLeft, CheckCircle, Building, Calculator, Star, Wrench } from 'lucide-react';
 import { getCpvName } from '../../utils/cpvLookup';
 import Confetti from '../../components/Confetti';
 import { useStealthMode } from '@/lib/utils';
@@ -8,9 +8,6 @@ import { useAuth } from '@/hooks/useAuth';
 import { Obligation } from '@/types/obligations';
 import { ObligationService } from '@/services/obligationService';
 import { ObligationHeader } from '@/components/obligations/ObligationHeader';
-import { LegalReferences } from '@/components/obligations/LegalReferences';
-import { ObligationSection } from '@/components/obligations/ObligationSection';
-import { WarningAlert } from '@/components/obligations/WarningAlert';
 import { TechnicalInfeasibility } from '@/components/TechnicalInfeasibility';
 
 const ResultsDynamic: React.FC = () => {
@@ -23,7 +20,6 @@ const ResultsDynamic: React.FC = () => {
   const [cpvName, setCpvName] = useState('Laden...');
   const [obligations, setObligations] = useState<Obligation[]>([]);
   const [loading, setLoading] = useState(true);
-  const [showLegalRefs, setShowLegalRefs] = useState<Set<string>>(new Set());
 
   // Extract URL parameters
   const organizationType = searchParams.get('org') || '';
@@ -154,18 +150,6 @@ const ResultsDynamic: React.FC = () => {
     }
   };
 
-  const toggleLegalReferences = (obligationId: string) => {
-    setShowLegalRefs(prev => {
-      const newSet = new Set(prev);
-      if (newSet.has(obligationId)) {
-        newSet.delete(obligationId);
-      } else {
-        newSet.add(obligationId);
-      }
-      return newSet;
-    });
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <div className="container mx-auto px-6 lg:px-8 pt-24 pb-8">
@@ -294,54 +278,16 @@ const ResultsDynamic: React.FC = () => {
         {estimationAnswer !== 'no' && obligations.length > 0 && (
           <div className="space-y-6">
             {obligations.map((obligation, index) => (
-              <div 
-                key={obligation.obligation_id} 
-                className="space-y-4 animate-fade-in" 
+              <div
+                key={obligation.obligation_id}
+                className="animate-fade-in"
                 style={{ animationDelay: `${600 + index * 200}ms`, animationDuration: '1200ms' }}
               >
-                {/* Obligation Banner */}
-                <div className="bg-gray-100 border border-gray-300 rounded-lg px-6 py-4">
-                  <ObligationHeader 
-                    obligation={obligation} 
-                    onToggleLegal={() => toggleLegalReferences(obligation.obligation_id)}
-                  />
-                  {showLegalRefs.has(obligation.obligation_id) && (
-                    <LegalReferences references={obligation.legal_references} />
-                  )}
-                  
-                  {/* Notes section if available */}
-                  {obligation.notes && obligation.notes.length > 0 && (
-                    <div className="mt-4 p-3 bg-blue-50 rounded border border-blue-200">
-                      <p className="text-sm text-blue-800 font-medium mb-1">Let op:</p>
-                      <ul className="list-disc list-inside space-y-1">
-                        {obligation.notes.map((note, noteIndex) => (
-                          <li key={noteIndex} className="text-sm text-blue-700">{note}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </div>
-                
-                {/* Render obligation sections */}
-                <div className="mt-6 space-y-4">
-                  {obligation.sections.map((section) => (
-                    <ObligationSection
-                      key={section.key}
-                      section={section}
-                      defaultOpen={false}
-                      showGppBadge={obligation.badges?.includes('GPP')}
-                      legalReferences={obligation.legal_references}
-                      isAuthenticated={!!currentUser}
-                    />
-                  ))}
-                  
-                  {/* Footer warnings if available */}
-                  {obligation.footer_warnings && obligation.footer_warnings.length > 0 && (
-                    <div className="mt-4">
-                      <WarningAlert warnings={obligation.footer_warnings} />
-                    </div>
-                  )}
-                </div>
+                {/* Nested Obligation Module */}
+                <ObligationHeader
+                  obligation={obligation}
+                  isAuthenticated={!!currentUser}
+                />
               </div>
             ))}
           </div>

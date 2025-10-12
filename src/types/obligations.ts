@@ -99,6 +99,7 @@ export interface Obligation {
   summary: string;
   badges: string[];
   warnings?: Warning[];
+  notes?: string[];
   footer_warnings?: Warning[];
   legal_references: LegalReference[];
   sections: ObligationSection[];
