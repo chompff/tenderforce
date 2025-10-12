@@ -1,0 +1,57 @@
+﻿CPV CODE,Omschrijving,Diensten
+45453100-8,Opknapwerkzaamheden,TRUE
+45454100-5,Restauratiewerkzaamheden,TRUE
+50300000-8,"Reparatie, onderhoud en aanverwante diensten in verband met pc's, kantooruitrusting, telecommunicatie- en audiovisuele uitrusting",TRUE
+50310000-1,Onderhoud en reparatie van kantoormachines,TRUE
+50320000-4,Reparatie en onderhoud van pc's,TRUE
+50321000-1,Reparatie van pc's,TRUE
+50322000-8,Onderhoud van pc's,TRUE
+50323000-5,Onderhoud en reparatie van randapparatuur,TRUE
+50323100-6,Onderhoud van randapparatuur,TRUE
+50340000-0,Reparatie en onderhoud van audiovisuele en optische uitrusting,TRUE
+50700000-2,Reparatie en onderhoud van uitrusting in gebouwen,TRUE
+50720000-8,Reparatie en onderhoud van centrale verwarming,TRUE
+50730000-1,Reparatie en onderhoud van koelinstallaties,TRUE
+50740000-4,Reparatie en onderhoud van roltrappen,TRUE
+55100000-1,Hoteldiensten,TRUE
+55500000-5,Kantine- en cateringdiensten,TRUE
+55520000-1,Cateringdiensten,TRUE
+55523000-2,"Catering voor ondernemingen of instellingen, uitgezonderd transportbedrijven",TRUE
+60000000-8,Vervoersdiensten (uitg. vervoer van afval),TRUE
+60100000-9,Wegvervoersdiensten,TRUE
+60112000-6,Openbaarvervoersdiensten,TRUE
+60120000-5,Taxidiensten,TRUE
+60130000-8,Diensten voor speciaal personenvervoer over land,TRUE
+60140000-1,Personenvervoer zonder dienstregeling,TRUE
+60160000-7,Postvervoer over de weg,TRUE
+60161000-4,Pakketvervoer,TRUE
+60170000-0,Verhuur van voertuigen voor personenvervoer met chauffeur,TRUE
+60171000-7,Verhuur van personenauto's met chauffeur,TRUE
+60172000-4,Bus- en autobusverhuur met chauffeur,TRUE
+60180000-3,Verhuur van voertuigen voor goederenvervoer met chauffeur,TRUE
+60181000-0,Verhuur van vrachtwagens met chauffeur,TRUE
+60182000-7,Verhuur van industriële voertuigen met chauffeur,TRUE
+60183000-4,Bestelwagenverhuur met chauffeur,TRUE
+64100000-7,Post- en koeriersdiensten,TRUE
+64110000-0,Postdiensten,TRUE
+70120000-8,Kopen en verkopen van onroerend goed,TRUE
+70121000-5,Kopen of verkopen van gebouwen,TRUE
+70121200-7,Kopen van gebouwen,TRUE
+71314000-2,Energie en aanverwante diensten,TRUE
+71314300-5,Advies inzake efficiënt energiegebruik,TRUE
+79710000-4,Beveiligingsdiensten,TRUE
+79993100-2,Faciliteitenbeheer,TRUE
+90510000-5,Afvalverzameling en –verwerking,TRUE
+90511000-2,Diensten voor ophalen van vuilnis,TRUE
+90511100-3,Ophalen van vast stadsafval,TRUE
+90511200-4,Ophalen van huisvuil,TRUE
+90511300-5,Diensten voor het verzamelen van straatafval,TRUE
+90511400-6,Diensten voor het verzamelen van oud papier,TRUE
+90512000-9,Diensten voor afvalvervoer,TRUE
+90513000-6,Diensten voor het verwerken en storten van ongevaarlijk afval en vuilnis,TRUE
+90513100-7,Verwijderen van huisvuil,TRUE
+90513200-8,Verwijderen van vast stadsafval,TRUE
+90910000-9,Reinigingsdiensten,TRUE
+90911200-8,Reiniging van gebouwen,TRUE
+98310000-9,Wasserij- en stomerijdiensten,TRUE
+98311000-6,Ophalen van wasgoed,TRUE
