@@ -83,51 +83,60 @@ export const GunningscriteriaTabs: React.FC<GunningscriteriaTabsProps> = ({
     description: string;
     points?: string[];
     legal_basis: string;
-  }>) => (
-    <div className="overflow-x-auto">
-      <table className="w-full border-collapse">
-        <thead>
-          <tr className="bg-gray-50 border-b border-gray-200">
-            <th className="text-left p-3 text-xs font-semibold text-gray-700 w-20">
-              GC-code
-            </th>
-            <th className="text-left p-3 text-xs font-semibold text-gray-700">
-              Criterium
-            </th>
-            <th className="text-left p-3 text-xs font-semibold text-gray-700 w-1/3">
-              Juridische basis
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {items.map((item, index) => (
-            <tr key={index} className="border-b border-gray-100 hover:bg-gray-50">
-              <td className="p-3 text-sm font-mono text-gray-600 align-top">
-                {item.code || '-'}
-              </td>
-              <td className="p-3 text-sm text-gray-700">
-                <div className="space-y-2">
-                  <div className="font-medium">{item.title}</div>
-                  <div>{item.description}</div>
-                  {item.points && item.points.length > 0 && (
-                    <div className="mt-2 pl-4">
-                      <p className="text-xs font-medium text-gray-600 mb-1">Punten worden toegekend op basis van:</p>
-                      <ul className="list-disc list-inside space-y-0.5">
-                        {item.points.map((point: string, idx: number) => (
-                          <li key={idx} className="text-sm text-gray-600">{point}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </div>
-              </td>
-              <td className="p-3 text-sm text-gray-600 italic align-top">{item.legal_basis}</td>
+  }>) => {
+    // Check if any item has a non-empty legal_basis
+    const hasLegalBasis = items.some(item => item.legal_basis && item.legal_basis.trim() !== '');
+
+    return (
+      <div className="overflow-x-auto">
+        <table className="w-full border-collapse">
+          <thead>
+            <tr className="bg-gray-50 border-b border-gray-200">
+              <th className="text-left p-3 text-xs font-semibold text-gray-700 w-20">
+                GC-code
+              </th>
+              <th className="text-left p-3 text-xs font-semibold text-gray-700">
+                Criterium
+              </th>
+              {hasLegalBasis && (
+                <th className="text-left p-3 text-xs font-semibold text-gray-700 w-1/3">
+                  Juridische basis
+                </th>
+              )}
             </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
+          </thead>
+          <tbody>
+            {items.map((item, index) => (
+              <tr key={index} className="border-b border-gray-100 hover:bg-gray-50">
+                <td className="p-3 text-sm font-mono text-gray-600 align-top">
+                  {item.code || '-'}
+                </td>
+                <td className="p-3 text-sm text-gray-700">
+                  <div className="space-y-2">
+                    <div className="font-medium">{item.title}</div>
+                    <div>{item.description}</div>
+                    {item.points && item.points.length > 0 && (
+                      <div className="mt-2 pl-4">
+                        <p className="text-xs font-medium text-gray-600 mb-1">Punten worden toegekend op basis van:</p>
+                        <ul className="list-disc list-inside space-y-0.5">
+                          {item.points.map((point: string, idx: number) => (
+                            <li key={idx} className="text-sm text-gray-600">{point}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                </td>
+                {hasLegalBasis && (
+                  <td className="p-3 text-sm text-gray-600 italic align-top">{item.legal_basis}</td>
+                )}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  };
 
   return (
     <div className="space-y-3">

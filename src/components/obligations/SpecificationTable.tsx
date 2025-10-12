@@ -22,6 +22,9 @@ export const SpecificationTable: React.FC<SpecificationTableProps> = ({
 
   const Icon = specifications ? FileCheck : ClipboardCheck;
 
+  // Check if any item has a non-empty legal_basis
+  const hasLegalBasis = items.some(item => item.legal_basis && item.legal_basis.trim() !== '');
+
   if (collapsible) {
     return (
       <div className="space-y-3">
@@ -45,9 +48,11 @@ export const SpecificationTable: React.FC<SpecificationTableProps> = ({
                   <th className="text-left p-3 text-xs font-semibold text-gray-700">
                     {specifications ? 'SPECIFICATIE' : 'CONTRACTUELE VOORWAARDE'}
                   </th>
-                  <th className="text-left p-3 text-xs font-semibold text-gray-700 w-1/3">
-                    BRONVERMELDING
-                  </th>
+                  {hasLegalBasis && (
+                    <th className="text-left p-3 text-xs font-semibold text-gray-700 w-1/3">
+                      BRONVERMELDING
+                    </th>
+                  )}
                 </tr>
               </thead>
               <tbody>
@@ -55,7 +60,9 @@ export const SpecificationTable: React.FC<SpecificationTableProps> = ({
                   <tr key={index} className="border-b border-gray-100 hover:bg-gray-50">
                     <td className="p-3 text-sm font-mono text-gray-600">{item.code}</td>
                     <td className="p-3 text-sm text-gray-700">{item.text}</td>
-                    <td className="p-3 text-sm text-gray-600 italic">{item.legal_basis}</td>
+                    {hasLegalBasis && (
+                      <td className="p-3 text-sm text-gray-600 italic">{item.legal_basis}</td>
+                    )}
                   </tr>
                 ))}
               </tbody>
@@ -82,9 +89,11 @@ export const SpecificationTable: React.FC<SpecificationTableProps> = ({
               <th className="text-left p-3 text-xs font-semibold text-gray-700">
                 {specifications ? 'SPECIFICATIE' : 'CONTRACTUELE VOORWAARDE'}
               </th>
-              <th className="text-left p-3 text-xs font-semibold text-gray-700 w-1/3">
-                BRONVERMELDING
-              </th>
+              {hasLegalBasis && (
+                <th className="text-left p-3 text-xs font-semibold text-gray-700 w-1/3">
+                  BRONVERMELDING
+                </th>
+              )}
             </tr>
           </thead>
           <tbody>
@@ -92,7 +101,9 @@ export const SpecificationTable: React.FC<SpecificationTableProps> = ({
               <tr key={index} className="border-b border-gray-100 hover:bg-gray-50">
                 <td className="p-3 text-sm font-mono text-gray-600">{item.code}</td>
                 <td className="p-3 text-sm text-gray-700">{item.text}</td>
-                <td className="p-3 text-sm text-gray-600 italic">{item.legal_basis}</td>
+                {hasLegalBasis && (
+                  <td className="p-3 text-sm text-gray-600 italic">{item.legal_basis}</td>
+                )}
               </tr>
             ))}
           </tbody>

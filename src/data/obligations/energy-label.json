@@ -64,18 +64,15 @@
       "contractual_conditions": [
         {
           "code": "CV1",
-          "text": "Bij levering moet de opdrachtnemer het energie-etiket en het productinformatiefiche uit de EPREL-database overleggen.",
-          "legal_basis": "Verordening (EU) 2017/1369, art. 7(2)"
+          "text": "Bij levering moet de opdrachtnemer het energie-etiket en het productinformatiefiche uit de EPREL-database overleggen."
         },
         {
-          "code": "",
-          "text": "De aanbestedende dienst verifieert via EPREL-link/QR-code dat het geleverde product behoort tot de hoogste twee energieklassen die feitelijk op de markt beschikbaar zijn.",
-          "legal_basis": "Richtlijn (EU) 2023/1791, Bijlage IV, sub a"
+          "code": "CV2",
+          "text": "De aanbestedende dienst verifieert via EPREL-link/QR-code dat het geleverde product behoort tot de hoogste twee energieklassen die feitelijk op de markt beschikbaar zijn."
         },
         {
-          "code": "",
-          "text": "Indien blijkt dat het product niet voldoet, of geen geldig bewijs wordt geleverd, kan de levering worden geweigerd en is de opdrachtnemer verplicht tot kosteloze vervanging of wordt een contractuele sanctie opgelegd.",
-          "legal_basis": "Aanbestedingsrichtlijn 2014/24/EU, art. 42(3) en art. 67(2) (ruimte voor milieucriteria, mits proportioneel)"
+          "code": "CV3",
+          "text": "Indien blijkt dat het product niet voldoet, of geen geldig bewijs wordt geleverd, kan de levering worden geweigerd en is de opdrachtnemer verplicht tot kosteloze vervanging of wordt een contractuele sanctie opgelegd."
         }
       ]
     }
