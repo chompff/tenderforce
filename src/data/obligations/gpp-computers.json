@@ -1,0 +1,37 @@
+{
+  "obligation_id": "gpp-computers",
+  "archetype": "GPP",
+  "title": "EU GPP criteria of nationaal gelijkwaardig",
+  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de EU-criteria inzake groene overheidsopdrachten voor computers, monitoren, tablets en smartphones toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
+  "badges": ["MVI", "GPP", "EED", "EU", "NL"],
+  "warnings": [],
+  "footer_warnings": [],
+  "legal_references": [
+    {
+      "label": "Richtlijn (EU) 2023/1791",
+      "citation": "Richtlijn (EU) 2023/1791, artikel 5",
+      "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32023L1791"
+    }
+  ],
+  "sections": [
+    {
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "intro": "De GPP criteria voor computers, monitoren, tablets en smartphones zijn nog in ontwikkeling. Deze module bevat voorlopig placeholder content.",
+      "warnings": [
+        {
+          "severity": "yellow",
+          "text": "Let op: De inhoud van deze module is nog niet compleet. De definitieve GPP criteria worden later toegevoegd."
+        }
+      ],
+      "steps": [
+        "Raadpleeg de EU GPP criteria voor computers, monitoren, tablets en smartphones wanneer deze beschikbaar komen.",
+        "Vergelijk met de Nederlandse MVI criteria op www.mvicriteria.nl.",
+        "Neem de strengste criteria op in uw aanbestedingsdocumenten."
+      ],
+      "steps_ordered": true,
+      "example_texts": []
+    }
+  ]
+}
