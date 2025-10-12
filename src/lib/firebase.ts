@@ -11,13 +11,20 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+// Check if Firebase credentials are configured
+const isFirebaseConfigured = firebaseConfig.apiKey && firebaseConfig.projectId;
+
+if (!isFirebaseConfigured) {
+  console.warn('Firebase credentials not configured. Authentication features will be disabled.');
+}
+
+// Initialize Firebase only if credentials are available
+const app = isFirebaseConfigured ? initializeApp(firebaseConfig) : null;
 
 // Initialize Firebase Authentication and get a reference to the service
-export const auth = getAuth(app);
+export const auth = app ? getAuth(app) : null;
 
 // Google Auth Provider
-export const googleProvider = new GoogleAuthProvider();
+export const googleProvider = app ? new GoogleAuthProvider() : null;
 
 export default app;

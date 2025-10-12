@@ -41,6 +41,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   // Sign up with email and password
   const signup = async (email: string, password: string): Promise<UserCredential> => {
+    if (!auth) throw new Error('Firebase not configured');
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
     // Send verification email
     if (userCredential.user) {
@@ -51,16 +52,19 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   // Login with email and password
   const login = (email: string, password: string): Promise<UserCredential> => {
+    if (!auth) throw new Error('Firebase not configured');
     return signInWithEmailAndPassword(auth, email, password);
   };
 
   // Login with Google
   const loginWithGoogle = (): Promise<UserCredential> => {
+    if (!auth || !googleProvider) throw new Error('Firebase not configured');
     return signInWithPopup(auth, googleProvider);
   };
 
   // Logout
   const logout = (): Promise<void> => {
+    if (!auth) throw new Error('Firebase not configured');
     return signOut(auth);
   };
 
@@ -71,6 +75,11 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   // Listen to auth state changes
   useEffect(() => {
+    if (!auth) {
+      setLoading(false);
+      return;
+    }
+
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setCurrentUser(user);
       setLoading(false);
