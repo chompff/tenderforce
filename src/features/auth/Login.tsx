@@ -7,7 +7,7 @@ import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { AlertCircle } from 'lucide-react';
+import { AlertCircle, Mail, X } from 'lucide-react';
 
 const loginSchema = z.object({
   email: z.string().email('Voer een geldig e-mailadres in'),
@@ -18,10 +18,14 @@ type LoginFormData = z.infer<typeof loginSchema>;
 
 const Login = () => {
   const navigate = useNavigate();
-  const { login, loginWithGoogle } = useAuth();
+  const { login, loginWithGoogle, resetPassword } = useAuth();
   const [error, setError] = useState('');
   const [showVerificationLink, setShowVerificationLink] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [showForgotPassword, setShowForgotPassword] = useState(false);
+  const [resetEmail, setResetEmail] = useState('');
+  const [resetSent, setResetSent] = useState(false);
+  const [resetError, setResetError] = useState('');
 
   const {
     register,
@@ -101,6 +105,31 @@ const Login = () => {
     }
   };
 
+  const handlePasswordReset = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!resetEmail) {
+      setResetError('Voer een e-mailadres in');
+      return;
+    }
+
+    try {
+      setResetError('');
+      setLoading(true);
+      await resetPassword(resetEmail);
+      setResetSent(true);
+    } catch (err: unknown) {
+      console.error('Password reset error:', err);
+      const error = err as { code?: string };
+      setResetError(
+        error.code === 'auth/user-not-found'
+          ? 'Geen account gevonden met dit e-mailadres'
+          : 'Kan wachtwoord reset niet verzenden. Probeer het opnieuw.'
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const handleGoogleSignIn = async () => {
     try {
       setError('');
@@ -122,6 +151,119 @@ const Login = () => {
       setLoading(false);
     }
   };
+
+  // Forgot password modal
+  if (showForgotPassword) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-indigo-50 px-4">
+        <div className="max-w-md w-full">
+          <div className="text-center mb-8">
+            <h1 className="text-3xl font-bold text-gray-900 flex items-center justify-center gap-2">
+              EED CHECK
+              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 border border-orange-200">
+                BETA
+              </span>
+            </h1>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
+            {resetSent ? (
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                  <Mail className="w-8 h-8 text-green-600" />
+                </div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                  E-mail verzonden
+                </h2>
+                <p className="text-gray-600 mb-6">
+                  We hebben een wachtwoord reset link verzonden naar <strong>{resetEmail}</strong>.
+                  Controleer uw inbox en volg de instructies.
+                </p>
+                <Button
+                  onClick={() => {
+                    setShowForgotPassword(false);
+                    setResetSent(false);
+                    setResetEmail('');
+                  }}
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                >
+                  Terug naar inloggen
+                </Button>
+              </div>
+            ) : (
+              <>
+                <div className="flex justify-between items-center mb-6">
+                  <h2 className="text-2xl font-bold text-gray-900">
+                    Wachtwoord vergeten?
+                  </h2>
+                  <button
+                    onClick={() => {
+                      setShowForgotPassword(false);
+                      setResetError('');
+                      setResetEmail('');
+                    }}
+                    className="text-gray-400 hover:text-gray-600"
+                  >
+                    <X className="w-6 h-6" />
+                  </button>
+                </div>
+
+                <p className="text-gray-600 mb-6">
+                  Voer uw e-mailadres in en we sturen u een link om uw wachtwoord opnieuw in te stellen.
+                </p>
+
+                {resetError && (
+                  <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-800">
+                    {resetError}
+                  </div>
+                )}
+
+                <form onSubmit={handlePasswordReset} className="space-y-4">
+                  <div>
+                    <Label htmlFor="resetEmail" className="text-sm font-medium text-gray-700">
+                      E-mailadres
+                    </Label>
+                    <Input
+                      id="resetEmail"
+                      type="email"
+                      placeholder="Voer uw e-mailadres in"
+                      value={resetEmail}
+                      onChange={(e) => setResetEmail(e.target.value)}
+                      className="mt-1"
+                      disabled={loading}
+                      autoFocus
+                    />
+                  </div>
+
+                  <Button
+                    type="submit"
+                    className="w-full h-11 bg-blue-600 hover:bg-blue-700 text-white font-medium"
+                    disabled={loading}
+                  >
+                    {loading ? 'Bezig...' : 'Wachtwoord reset verzenden'}
+                  </Button>
+
+                  <Button
+                    type="button"
+                    variant="outline"
+                    onClick={() => {
+                      setShowForgotPassword(false);
+                      setResetError('');
+                      setResetEmail('');
+                    }}
+                    className="w-full"
+                    disabled={loading}
+                  >
+                    Annuleren
+                  </Button>
+                </form>
+              </>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-indigo-50 px-4">
@@ -222,9 +364,18 @@ const Login = () => {
             </div>
 
             <div>
-              <Label htmlFor="password" className="text-sm font-medium text-gray-700">
-                Wachtwoord
-              </Label>
+              <div className="flex justify-between items-center">
+                <Label htmlFor="password" className="text-sm font-medium text-gray-700">
+                  Wachtwoord
+                </Label>
+                <button
+                  type="button"
+                  onClick={() => setShowForgotPassword(true)}
+                  className="text-sm text-blue-600 hover:text-blue-700 font-medium"
+                >
+                  Wachtwoord vergeten?
+                </button>
+              </div>
               <Input
                 id="password"
                 type="password"

@@ -7,6 +7,7 @@ import {
   onAuthStateChanged,
   signInWithPopup,
   sendEmailVerification,
+  sendPasswordResetEmail,
   UserCredential,
 } from 'firebase/auth';
 import { auth, googleProvider } from '@/lib/firebase';
@@ -19,6 +20,7 @@ interface AuthContextType {
   logout: () => Promise<void>;
   loginWithGoogle: () => Promise<UserCredential>;
   sendVerificationEmail: (user: User) => Promise<void>;
+  resetPassword: (email: string) => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -98,6 +100,12 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     return sendEmailVerification(user);
   };
 
+  // Reset password
+  const resetPassword = (email: string): Promise<void> => {
+    if (!auth) throw new Error('Firebase not configured');
+    return sendPasswordResetEmail(auth, email);
+  };
+
   // Listen to auth state changes
   useEffect(() => {
     if (!auth) {
@@ -121,6 +129,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     logout,
     loginWithGoogle,
     sendVerificationEmail,
+    resetPassword,
   };
 
   return (
