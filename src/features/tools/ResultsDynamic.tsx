@@ -206,8 +206,7 @@ const ResultsDynamic: React.FC = () => {
                     <Star className="h-4 w-4 text-blue-600" />
                     <span className="text-xs font-medium text-blue-900 uppercase tracking-wide">Aanbesteding</span>
                   </div>
-                  <p className="text-sm text-gray-900 font-semibold">{code}</p>
-                  <p className="text-xs text-gray-600">{cpvName}</p>
+                <p className="text-sm text-gray-900 font-semibold">{code} ({cpvName})</p>
                 </div>
 
                 {/* Organization Type */}
@@ -218,7 +217,6 @@ const ResultsDynamic: React.FC = () => {
                       <span className="text-xs font-medium text-blue-900 uppercase tracking-wide">Organisatie</span>
                     </div>
                     <p className="text-sm text-gray-900 font-semibold">{getOrganizationName(organizationType)}</p>
-                    <p className="text-xs text-gray-600">Type aanbestedende dienst</p>
                   </div>
                 )}
 
@@ -229,25 +227,10 @@ const ResultsDynamic: React.FC = () => {
                       <Calculator className="h-4 w-4 text-blue-600" />
                       <span className="text-xs font-medium text-blue-900 uppercase tracking-wide">Drempelwaarde</span>
                     </div>
-                    <p className="text-sm text-gray-900 font-semibold">{getEstimationText(estimationAnswer)}</p>
-                    {organizationType && estimationAnswer !== 'help' && (
-                      <p className="text-xs text-gray-600">Drempel: {getThresholdAmount(organizationType, 'Diensten')}</p>
-                    )}
+                    <p className="text-sm text-gray-900 font-semibold">{getEstimationText(estimationAnswer)} {getThresholdAmount(organizationType, 'Diensten')}</p>
                   </div>
                 )}
               </div>
-              
-              {/* Red Warning */}
-              {estimationAnswer !== 'no' && obligations.length > 0 && (
-                <div className="mt-6 p-4 bg-red-50 border border-red-200 rounded-lg">
-                  <p className="text-sm text-red-800 flex items-start gap-2">
-                    <span className="text-red-600">⚠️</span>
-                    <span>
-                      <strong>Let op:</strong> Bij niet-naleving kunnen benadeelde inschrijvers bij de rechter schorsing van de gunning en/of schadevergoeding vorderen wegens onrechtmatig handelen van de aanbestedende dienst.
-                    </span>
-                  </p>
-                </div>
-              )}
             </div>
           )}
         </div>
