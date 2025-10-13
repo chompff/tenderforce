@@ -57,8 +57,8 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
     // Check if email is verified
     if (!userCredential.user.emailVerified) {
-      // Sign the user out immediately
-      await signOut(auth);
+      // Don't sign the user out - keep them authenticated so they can resend verification email
+      // The ProtectedRoute component will handle blocking access to protected routes
       // Throw an error with a specific code for email verification
       const error: Error & { code?: string } = new Error('Email not verified');
       error.code = 'auth/email-not-verified';

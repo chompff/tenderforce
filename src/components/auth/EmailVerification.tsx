@@ -33,12 +33,20 @@ const EmailVerification = () => {
   }, [currentUser, navigate]);
 
   const handleResendEmail = async () => {
-    if (!currentUser) return;
+    console.log('Resend email clicked, currentUser:', currentUser);
+
+    if (!currentUser) {
+      console.error('No current user found');
+      setError('U bent niet ingelogd. Log eerst in om de verificatie-e-mail opnieuw te verzenden.');
+      return;
+    }
 
     try {
       setError('');
       setSending(true);
+      console.log('Sending verification email to:', currentUser.email);
       await sendVerificationEmail(currentUser);
+      console.log('Verification email sent successfully');
       setSent(true);
       setTimeout(() => setSent(false), 3000); // Reset after 3 seconds
     } catch (err: unknown) {
@@ -50,15 +58,24 @@ const EmailVerification = () => {
   };
 
   const handleCheckVerification = async () => {
-    if (!auth || !currentUser) return;
+    console.log('Check verification clicked, currentUser:', currentUser, 'auth:', !!auth);
+
+    if (!auth || !currentUser) {
+      console.error('Missing auth or currentUser');
+      setError('U bent niet ingelogd. Log eerst in om uw verificatiestatus te controleren.');
+      return;
+    }
 
     try {
       setError('');
       setChecking(true);
+      console.log('Reloading user to check verification status...');
       // Reload the user to get the latest verification status
       await currentUser.reload();
+      console.log('User reloaded, emailVerified:', currentUser.emailVerified);
 
       if (currentUser.emailVerified) {
+        console.log('Email is verified! Redirecting...');
         setVerified(true);
         // Redirect after showing success message
         setTimeout(() => {
@@ -71,6 +88,7 @@ const EmailVerification = () => {
           }
         }, 2000);
       } else {
+        console.log('Email still not verified');
         setError('E-mail nog niet geverifieerd. Klik op de link in uw e-mail en probeer het opnieuw.');
       }
     } catch (err: unknown) {
@@ -177,6 +195,14 @@ const EmailVerification = () => {
               <p className="mt-6 text-center text-sm text-gray-500">
                 Na verificatie kunt u inloggen met uw account.
               </p>
+
+              {/* Debug info - remove in production */}
+              <div className="mt-4 p-3 bg-gray-50 border border-gray-200 rounded text-xs">
+                <p><strong>Debug info:</strong></p>
+                <p>Current user: {currentUser ? currentUser.email : 'None'}</p>
+                <p>Email verified: {currentUser?.emailVerified ? 'Yes' : 'No'}</p>
+                <p>Auth initialized: {auth ? 'Yes' : 'No'}</p>
+              </div>
             </>
           )}
         </div>
