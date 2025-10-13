@@ -47,7 +47,13 @@ const Login = () => {
       }
     } catch (err: unknown) {
       console.error('Login error:', err);
-      const error = err as { code?: string };
+      console.error('Error type:', typeof err);
+      console.error('Error details:', JSON.stringify(err, null, 2));
+
+      const error = err as { code?: string; message?: string };
+      console.error('Error code:', error.code);
+      console.error('Error message:', error.message);
+
       if (error.code === 'auth/email-not-verified') {
         setError(
           'Uw e-mailadres is nog niet geverifieerd. Controleer uw inbox voor de verificatielink.'
@@ -55,13 +61,32 @@ const Login = () => {
         setShowVerificationLink(true);
       } else {
         setShowVerificationLink(false);
-        setError(
-          error.code === 'auth/user-not-found' || error.code === 'auth/wrong-password'
-            ? 'Onjuist e-mailadres of wachtwoord'
-            : error.code === 'auth/too-many-requests'
-            ? 'Te veel pogingen. Probeer het later opnieuw.'
-            : 'Inloggen mislukt. Probeer het opnieuw.'
-        );
+
+        // Provide more specific error messages based on Firebase error codes
+        let errorMessage = 'Inloggen mislukt. Probeer het opnieuw.';
+
+        switch (error.code) {
+          case 'auth/user-not-found':
+          case 'auth/wrong-password':
+          case 'auth/invalid-credential':
+          case 'auth/invalid-email':
+            errorMessage = 'Onjuist e-mailadres of wachtwoord';
+            break;
+          case 'auth/too-many-requests':
+            errorMessage = 'Te veel pogingen. Probeer het later opnieuw.';
+            break;
+          case 'auth/user-disabled':
+            errorMessage = 'Dit account is uitgeschakeld.';
+            break;
+          case 'auth/network-request-failed':
+            errorMessage = 'Netwerkfout. Controleer uw internetverbinding.';
+            break;
+          default:
+            // Include the error code and message for debugging
+            errorMessage = `Inloggen mislukt${error.code ? ` (${error.code})` : ''}. ${error.message || 'Probeer het opnieuw.'}`;
+        }
+
+        setError(errorMessage);
       }
     } finally {
       setLoading(false);
