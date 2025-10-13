@@ -68,9 +68,17 @@ const Login = () => {
         switch (error.code) {
           case 'auth/user-not-found':
           case 'auth/wrong-password':
-          case 'auth/invalid-credential':
           case 'auth/invalid-email':
             errorMessage = 'Onjuist e-mailadres of wachtwoord';
+            break;
+          case 'auth/invalid-credential':
+            // This might be due to unverified email - check the error message
+            if (error.message && error.message.includes('email')) {
+              errorMessage = 'Uw e-mailadres is nog niet geverifieerd, of uw inloggegevens zijn onjuist.';
+              setShowVerificationLink(true);
+            } else {
+              errorMessage = 'Onjuist e-mailadres of wachtwoord';
+            }
             break;
           case 'auth/too-many-requests':
             errorMessage = 'Te veel pogingen. Probeer het later opnieuw.';

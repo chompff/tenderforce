@@ -53,19 +53,32 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   // Login with email and password
   const login = async (email: string, password: string): Promise<UserCredential> => {
     if (!auth) throw new Error('Firebase not configured');
-    const userCredential = await signInWithEmailAndPassword(auth, email, password);
 
-    // Check if email is verified
-    if (!userCredential.user.emailVerified) {
-      // Don't sign the user out - keep them authenticated so they can resend verification email
-      // The ProtectedRoute component will handle blocking access to protected routes
-      // Throw an error with a specific code for email verification
-      const error: Error & { code?: string } = new Error('Email not verified');
-      error.code = 'auth/email-not-verified';
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+
+      console.log('Login successful, checking email verification...');
+      console.log('User:', userCredential.user.email);
+      console.log('Email verified:', userCredential.user.emailVerified);
+
+      // Check if email is verified
+      if (!userCredential.user.emailVerified) {
+        console.log('Email not verified, throwing custom error');
+        // Don't sign the user out - keep them authenticated so they can resend verification email
+        // The ProtectedRoute component will handle blocking access to protected routes
+        // Throw an error with a specific code for email verification
+        const error: Error & { code?: string } = new Error('Email not verified');
+        error.code = 'auth/email-not-verified';
+        throw error;
+      }
+
+      console.log('Email is verified, login complete');
+      return userCredential;
+    } catch (error) {
+      console.error('signInWithEmailAndPassword error:', error);
+      // Re-throw the original error if it's from Firebase
       throw error;
     }
-
-    return userCredential;
   };
 
   // Login with Google
