@@ -27,6 +27,8 @@ import ResultsPage from "@/pages/tools/results";
 import Login from "@/features/auth/Login";
 import Register from "@/features/auth/Register";
 import Dashboard from "@/features/auth/Dashboard";
+import EmailVerification from "@/components/auth/EmailVerification";
+import ProtectedRoute from "@/components/auth/ProtectedRoute";
 
 // Tender Dashboard
 import TenderDashboardPage from "@/pages/TenderDashboardPage";
@@ -89,13 +91,14 @@ const AppRoutes = () => {
       <Route path="/eed-check" element={<Layout><SectoraleVerplichtingencheckPage /></Layout>} />
       <Route path="/eed-results/:code" element={<Layout><ResultsPage /></Layout>} />
       
-      {/* Tender Dashboard */}
-      <Route path="/tender-dashboard" element={<Layout><TenderDashboardPage /></Layout>} />
+      {/* Tender Dashboard - Protected Route */}
+      <Route path="/tender-dashboard" element={<Layout><ProtectedRoute><TenderDashboardPage /></ProtectedRoute></Layout>} />
       
-      {/* Auth Routes (Future Implementation) */}
+      {/* Auth Routes */}
       <Route path="/auth/login" element={<Login />} />
       <Route path="/auth/register" element={<Register />} />
-      <Route path="/auth/dashboard" element={<Layout><Dashboard /></Layout>} />
+      <Route path="/auth/verify-email" element={<EmailVerification />} />
+      <Route path="/auth/dashboard" element={<Layout><ProtectedRoute><Dashboard /></ProtectedRoute></Layout>} />
       
       {/* Static Pages */}
               <Route path="/about-eed-tool" element={<Layout><AboutEEDTool /></Layout>} />

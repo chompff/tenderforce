@@ -7,6 +7,7 @@ import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { AlertCircle } from 'lucide-react';
 
 const loginSchema = z.object({
   email: z.string().email('Voer een geldig e-mailadres in'),
@@ -19,6 +20,7 @@ const Login = () => {
   const navigate = useNavigate();
   const { login, loginWithGoogle } = useAuth();
   const [error, setError] = useState('');
+  const [showVerificationLink, setShowVerificationLink] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const {
@@ -46,13 +48,21 @@ const Login = () => {
     } catch (err: unknown) {
       console.error('Login error:', err);
       const error = err as { code?: string };
-      setError(
-        error.code === 'auth/user-not-found' || error.code === 'auth/wrong-password'
-          ? 'Onjuist e-mailadres of wachtwoord'
-          : error.code === 'auth/too-many-requests'
-          ? 'Te veel pogingen. Probeer het later opnieuw.'
-          : 'Inloggen mislukt. Probeer het opnieuw.'
-      );
+      if (error.code === 'auth/email-not-verified') {
+        setError(
+          'Uw e-mailadres is nog niet geverifieerd. Controleer uw inbox voor de verificatielink.'
+        );
+        setShowVerificationLink(true);
+      } else {
+        setShowVerificationLink(false);
+        setError(
+          error.code === 'auth/user-not-found' || error.code === 'auth/wrong-password'
+            ? 'Onjuist e-mailadres of wachtwoord'
+            : error.code === 'auth/too-many-requests'
+            ? 'Te veel pogingen. Probeer het later opnieuw.'
+            : 'Inloggen mislukt. Probeer het opnieuw.'
+        );
+      }
     } finally {
       setLoading(false);
     }
@@ -103,8 +113,21 @@ const Login = () => {
           </p>
 
           {error && (
-            <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-800">
-              {error}
+            <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg">
+              <div className="flex items-start gap-2">
+                <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                <div className="flex-1">
+                  <p className="text-sm text-red-800">{error}</p>
+                  {showVerificationLink && (
+                    <Link
+                      to="/auth/verify-email"
+                      className="inline-block mt-2 text-sm font-medium text-blue-600 hover:text-blue-700 underline"
+                    >
+                      Ga naar verificatiepagina
+                    </Link>
+                  )}
+                </div>
+              </div>
             </div>
           )}
 

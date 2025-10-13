@@ -51,9 +51,21 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   };
 
   // Login with email and password
-  const login = (email: string, password: string): Promise<UserCredential> => {
+  const login = async (email: string, password: string): Promise<UserCredential> => {
     if (!auth) throw new Error('Firebase not configured');
-    return signInWithEmailAndPassword(auth, email, password);
+    const userCredential = await signInWithEmailAndPassword(auth, email, password);
+
+    // Check if email is verified
+    if (!userCredential.user.emailVerified) {
+      // Sign the user out immediately
+      await signOut(auth);
+      // Throw an error with a specific code for email verification
+      const error: Error & { code?: string } = new Error('Email not verified');
+      error.code = 'auth/email-not-verified';
+      throw error;
+    }
+
+    return userCredential;
   };
 
   // Login with Google

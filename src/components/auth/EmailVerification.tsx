@@ -1,15 +1,36 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
+import { auth } from '@/lib/firebase';
 import { Button } from '@/components/ui/button';
-import { Mail, CheckCircle } from 'lucide-react';
+import { Mail, CheckCircle, RefreshCw } from 'lucide-react';
 
 const EmailVerification = () => {
   const navigate = useNavigate();
   const { currentUser, sendVerificationEmail } = useAuth();
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
+  const [checking, setChecking] = useState(false);
   const [error, setError] = useState('');
+  const [verified, setVerified] = useState(false);
+
+  // Check if user is already verified on mount
+  useEffect(() => {
+    if (currentUser?.emailVerified) {
+      setVerified(true);
+      // Auto-redirect after 2 seconds
+      const timer = setTimeout(() => {
+        const redirectUrl = sessionStorage.getItem('redirectAfterAuth');
+        if (redirectUrl) {
+          sessionStorage.removeItem('redirectAfterAuth');
+          navigate(redirectUrl);
+        } else {
+          navigate('/');
+        }
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [currentUser, navigate]);
 
   const handleResendEmail = async () => {
     if (!currentUser) return;
@@ -28,6 +49,38 @@ const EmailVerification = () => {
     }
   };
 
+  const handleCheckVerification = async () => {
+    if (!auth || !currentUser) return;
+
+    try {
+      setError('');
+      setChecking(true);
+      // Reload the user to get the latest verification status
+      await currentUser.reload();
+
+      if (currentUser.emailVerified) {
+        setVerified(true);
+        // Redirect after showing success message
+        setTimeout(() => {
+          const redirectUrl = sessionStorage.getItem('redirectAfterAuth');
+          if (redirectUrl) {
+            sessionStorage.removeItem('redirectAfterAuth');
+            navigate(redirectUrl);
+          } else {
+            navigate('/');
+          }
+        }, 2000);
+      } else {
+        setError('E-mail nog niet geverifieerd. Klik op de link in uw e-mail en probeer het opnieuw.');
+      }
+    } catch (err: unknown) {
+      console.error('Check verification error:', err);
+      setError('Kan verificatiestatus niet controleren. Probeer het opnieuw.');
+    } finally {
+      setChecking(false);
+    }
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-indigo-50 px-4">
       <div className="max-w-md w-full">
@@ -41,53 +94,91 @@ const EmailVerification = () => {
         </div>
 
         <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
-          <div className="text-center mb-6">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-              <Mail className="w-8 h-8 text-blue-600" />
+          {verified ? (
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                <CheckCircle className="w-8 h-8 text-green-600" />
+              </div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                E-mail geverifieerd!
+              </h2>
+              <p className="text-gray-600 mb-4">
+                Uw e-mailadres is succesvol geverifieerd. U wordt doorgestuurd...
+              </p>
+              <div className="flex justify-center">
+                <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600"></div>
+              </div>
             </div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">
-              Verifieer uw e-mailadres
-            </h2>
-            <p className="text-gray-600">
-              We hebben een verificatie-e-mail verzonden naar{' '}
-              <strong>{currentUser?.email}</strong>. Controleer uw inbox en klik op de link om uw account te activeren.
-            </p>
-          </div>
+          ) : (
+            <>
+              <div className="text-center mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
+                  <Mail className="w-8 h-8 text-blue-600" />
+                </div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                  Verifieer uw e-mailadres
+                </h2>
+                <p className="text-gray-600">
+                  We hebben een verificatie-e-mail verzonden naar{' '}
+                  <strong>{currentUser?.email}</strong>. Controleer uw inbox en klik op de link om uw account te activeren.
+                </p>
+              </div>
 
-          {error && (
-            <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-800">
-              {error}
-            </div>
+              {error && (
+                <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-800">
+                  {error}
+                </div>
+              )}
+
+              {sent && (
+                <div className="mb-4 p-3 bg-green-50 border border-green-200 rounded-lg text-sm text-green-800 flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4" />
+                  Verificatie-e-mail opnieuw verzonden!
+                </div>
+              )}
+
+              <div className="space-y-3">
+                <Button
+                  onClick={handleCheckVerification}
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                  disabled={checking}
+                >
+                  {checking ? (
+                    <>
+                      <RefreshCw className="w-4 h-4 mr-2 animate-spin" />
+                      Controleren...
+                    </>
+                  ) : (
+                    <>
+                      <RefreshCw className="w-4 h-4 mr-2" />
+                      Verificatie controleren
+                    </>
+                  )}
+                </Button>
+
+                <Button
+                  onClick={handleResendEmail}
+                  variant="outline"
+                  className="w-full"
+                  disabled={sending}
+                >
+                  {sending ? 'Bezig met verzenden...' : 'E-mail opnieuw verzenden'}
+                </Button>
+
+                <Button
+                  onClick={() => navigate('/auth/login')}
+                  variant="outline"
+                  className="w-full"
+                >
+                  Terug naar inloggen
+                </Button>
+              </div>
+
+              <p className="mt-6 text-center text-sm text-gray-500">
+                Na verificatie kunt u inloggen met uw account.
+              </p>
+            </>
           )}
-
-          {sent && (
-            <div className="mb-4 p-3 bg-green-50 border border-green-200 rounded-lg text-sm text-green-800 flex items-center gap-2">
-              <CheckCircle className="w-4 h-4" />
-              Verificatie-e-mail opnieuw verzonden!
-            </div>
-          )}
-
-          <div className="space-y-3">
-            <Button
-              onClick={handleResendEmail}
-              variant="outline"
-              className="w-full"
-              disabled={sending}
-            >
-              {sending ? 'Bezig met verzenden...' : 'E-mail opnieuw verzenden'}
-            </Button>
-
-            <Button
-              onClick={() => navigate('/auth/login')}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white"
-            >
-              Ga naar inloggen
-            </Button>
-          </div>
-
-          <p className="mt-6 text-center text-sm text-gray-500">
-            Na verificatie kunt u inloggen met uw account.
-          </p>
         </div>
       </div>
     </div>
