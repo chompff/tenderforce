@@ -22,24 +22,36 @@ export const WarningAlert: React.FC<WarningAlertProps> = ({ warnings }) => {
               isPositive
                 ? 'border-[#4A9400]'
                 : isRed
-                ? 'bg-red-50 border-red-200'
+                ? 'border-[#C34B00]'
                 : 'bg-yellow-50 border-yellow-200'
             }`}
-            style={isPositive ? { backgroundColor: '#fafff4' } : undefined}
+            style={
+              isPositive
+                ? { backgroundColor: '#fafff4' }
+                : isRed
+                ? { backgroundColor: '#FCF1E9' }
+                : undefined
+            }
           >
             <div className="flex items-start gap-3">
               {isPositive ? (
                 <CheckCircle className="h-5 w-5 mt-0.5 flex-shrink-0" style={{ color: '#4A9400' }} />
               ) : isRed ? (
-                <AlertTriangle className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0" />
+                <AlertTriangle className="h-5 w-5 mt-0.5 flex-shrink-0" style={{ color: '#C34B00' }} />
               ) : (
                 <Info className="h-5 w-5 text-yellow-600 mt-0.5 flex-shrink-0" />
               )}
               <p
                 className={`text-sm whitespace-pre-line ${
-                  isPositive ? '' : isRed ? 'text-red-800' : 'text-yellow-800'
+                  isPositive ? '' : isRed ? '' : 'text-yellow-800'
                 }`}
-                style={isPositive ? { color: '#4A9400' } : undefined}
+                style={
+                  isPositive
+                    ? { color: '#4A9400' }
+                    : isRed
+                    ? { color: '#C34B00' }
+                    : undefined
+                }
               >
                 {warning.text}
               </p>
