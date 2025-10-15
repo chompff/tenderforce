@@ -55,34 +55,63 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
     { key: 'extended_criteria' as const, label: 'Uitgebreide criteria', color: 'bg-orange-500' }
   ];
 
-  // Parse text with markdown support (images and bold)
+  // Parse text with markdown support (images, bold, and italic)
   const parseTextWithMarkdown = (text: string) => {
     const lines = text.split('\n');
     const elements: React.ReactNode[] = [];
     let currentTextBlock: string[] = [];
 
-    const parseBoldText = (line: string) => {
-      // Parse **bold** syntax
-      const parts = line.split(/(\*\*.*?\*\*)/);
-      return parts.map((part, i) => {
-        if (part.startsWith('**') && part.endsWith('**')) {
-          return <strong key={i}>{part.slice(2, -2)}</strong>;
+    const parseInlineFormatting = (line: string) => {
+      // Parse **bold**, *italic*, and _italic_ syntax
+      // Use a more complex regex to handle both bold and italic
+      const parts: React.ReactNode[] = [];
+      let remaining = line;
+      let key = 0;
+
+      while (remaining.length > 0) {
+        // Try to match **bold**
+        const boldMatch = remaining.match(/^(\*\*)(.*?)\*\*/);
+        if (boldMatch) {
+          parts.push(<strong key={key++}>{boldMatch[2]}</strong>);
+          remaining = remaining.slice(boldMatch[0].length);
+          continue;
         }
-        return part;
-      });
+
+        // Try to match *italic* (single asterisk, not followed by another asterisk)
+        const italicAsteriskMatch = remaining.match(/^(\*)([^*]+?)\*/);
+        if (italicAsteriskMatch) {
+          parts.push(<em key={key++}>{italicAsteriskMatch[2]}</em>);
+          remaining = remaining.slice(italicAsteriskMatch[0].length);
+          continue;
+        }
+
+        // Try to match _italic_ (underscore)
+        const italicUnderscoreMatch = remaining.match(/^(_)([^_]+?)_/);
+        if (italicUnderscoreMatch) {
+          parts.push(<em key={key++}>{italicUnderscoreMatch[2]}</em>);
+          remaining = remaining.slice(italicUnderscoreMatch[0].length);
+          continue;
+        }
+
+        // No match, add the next character as plain text
+        parts.push(remaining[0]);
+        remaining = remaining.slice(1);
+      }
+
+      return parts;
     };
 
     const flushTextBlock = (keyPrefix: string) => {
       if (currentTextBlock.length > 0) {
-        const textWithBold = currentTextBlock.map((line, i) => (
+        const textWithFormatting = currentTextBlock.map((line, i) => (
           <React.Fragment key={i}>
-            {parseBoldText(line)}
+            {parseInlineFormatting(line)}
             {i < currentTextBlock.length - 1 && '\n'}
           </React.Fragment>
         ));
         elements.push(
           <div key={keyPrefix} className="whitespace-pre-line">
-            {textWithBold}
+            {textWithFormatting}
           </div>
         );
         currentTextBlock = [];

@@ -25,23 +25,1203 @@
   ],
   "sections": [
     {
-      "key": "technical_specs",
-      "title": "Technische specificaties",
+      "key": "selection_criteria",
+      "title": "Selectiecriteria",
       "requirement_level": "verplicht",
-      "intro": "De GPP criteria voor wegvervoer zijn nog in ontwikkeling. Deze module bevat voorlopig placeholder content.",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als selectiecriteria. Het doel is te waarborgen dat alleen leveranciers met aantoonbare kennis, middelen en procedures in aanmerking komen voor deelname.",
       "warnings": [
         {
-          "severity": "yellow",
-          "text": "Let op: De inhoud van deze module is nog niet compleet. De definitieve GPP criteria worden later toegevoegd."
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale selectiecriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
         }
       ],
       "steps": [
-        "Raadpleeg de EU GPP criteria voor wegvervoer wanneer deze beschikbaar komen.",
-        "Vergelijk met de Nederlandse MVI criteria op www.mvicriteria.nl.",
-        "Neem de strengste criteria op in uw aanbestedingsdocumenten."
+        "Ga na of het selectiecriterium van toepassing is. De GPP definieert een selectiecriterium voor:\n   Categorie 2: Mobiliteitsdiensten\n   Categorie 4: Wegvervoersdiensten\n   Categorie 5: Post-, koeriers- en verhuizingsdiensten",
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
       ],
       "steps_ordered": true,
-      "example_texts": []
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "mobiliteitsdiensten",
+            "label": "🎯 Mobiliteitsdiensten",
+            "label_short": "Mobiliteitsdiensten"
+          },
+          {
+            "key": "wegvervoersdiensten",
+            "label": "🎯 Wegvervoersdiensten",
+            "label_short": "Wegvervoersdiensten"
+          },
+          {
+            "key": "post-koeriers-verhuisdiensten",
+            "label": "🎯 Post-, koeriers- en verhuisdiensten",
+            "label_short": "Post-, koeriers- en verhuisdiensten"
+          }
+        ],
+        "default_main_tab": "mobiliteitsdiensten",
+        "data": {
+          "mobiliteitsdiensten": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "Uitgebreide voor road transport",
+                "label_short": "Uitgebreide"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "SC1",
+                "title": "Vakbekwaamheid van de inschrijver",
+                "specification": "De inschrijver moet relevante ervaring hebben op elk van de volgende gebieden:\n\n• het identificeren, evalueren en toepassen van de beschikbare technologieën en maatregelen voor het verminderen van broeikasgasemissies en emissies van luchtverontreinigende stoffen van bron tot wiel;\n• monitoring- en rapportageprocedures van de broeikasgasemissies.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Versie 1.0 - Pag. 50"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Bewijs in de vorm van informatie en referenties met betrekking tot relevante overeenkomsten (waar mogelijk van vergelijkbare omvang) die in de voorafgaande vijf jaar zijn uitgevoerd en waarbij de bovenstaande elementen betrokken waren."
+                }
+              }
+            ],
+            "extended_criteria": []
+          },
+          "wegvervoersdiensten": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "Uitgebreide voor road transport",
+                "label_short": "Uitgebreide"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "SC1",
+                "title": "Vakbekwaamheid van de inschrijver",
+                "specification": "De inschrijver moet relevante ervaring hebben op elk van de volgende gebieden:\n\n• het identificeren, evalueren en toepassen van de beschikbare technologieën en maatregelen voor het verminderen van broeikasgasemissies en emissies van luchtverontreinigende stoffen van bron tot wiel;\n• monitoring- en rapportageprocedures van de broeikasgasemissies.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Versie 1.0 - Pag. 50"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Bewijs in de vorm van informatie en referenties met betrekking tot relevante overeenkomsten (waar mogelijk van vergelijkbare omvang) die in de voorafgaande vijf jaar zijn uitgevoerd en waarbij de bovenstaande elementen betrokken waren."
+                }
+              }
+            ],
+            "extended_criteria": []
+          },
+          "post-koeriers-verhuisdiensten": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "Uitgebreide voor road transport",
+                "label_short": "Uitgebreide"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "SC1",
+                "title": "Vakbekwaamheid van de inschrijver",
+                "specification": "De inschrijver moet relevante ervaring hebben op elk van de volgende gebieden:\n\n• het identificeren, evalueren en toepassen van de beschikbare technologieën en maatregelen voor het verminderen van broeikasgasemissies en emissies van luchtverontreinigende stoffen van bron tot wiel;\n• monitoring- en rapportageprocedures van de broeikasgasemissies.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Versie 1.0 - Pag. 50"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Bewijs in de vorm van informatie en referenties met betrekking tot relevante overeenkomsten (waar mogelijk van vergelijkbare omvang) die in de voorafgaande vijf jaar zijn uitgevoerd en waarbij de bovenstaande elementen betrokken waren."
+                }
+              }
+            ],
+            "extended_criteria": []
+          }
+        }
+      }
+    },
+    {
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als technische specificaties. Ze vormen de ondergrens waaraan wegtransport moet voldoen. Door deze eisen expliciet in het bestek op te nemen, voldoe je aan de verplichting uit de Energie-Efficiëntierichtlijn (EED).",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale technische specificaties) uit de EU GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn dient u deze op te nemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie. De GPP onderscheidt vijf categorïen voor wegvervoer:\n   Categorie 1: Voertuigen\n   Categorie 2: Mobiliteitsdiensten\n   Categorie 3: Zware voertuigen\n   Categorie 4: Wegvervoersdiensten\n   Categorie 5: Post-, koeriers- en verhuizingsdiensten",
+        "Ga in de tabel hieronder na welke technische specificaties van toepassing zijn. Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarden op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "voertuigen",
+            "label": "🚗 Voertuigen",
+            "label_short": "Voertuigen"
+          },
+          {
+            "key": "mobiliteitsdiensten",
+            "label": "🎯 Mobiliteitsdiensten",
+            "label_short": "Mobiliteitsdiensten"
+          },
+          {
+            "key": "zware-voertuigen",
+            "label": "🚛 Zware voertuigen",
+            "label_short": "Zware voertuigen"
+          },
+          {
+            "key": "wegvervoersdiensten",
+            "label": "🎯 Wegvervoersdiensten",
+            "label_short": "Wegvervoersdiensten"
+          },
+          {
+            "key": "post-koeriers-verhuisdiensten",
+            "label": "🎯 Post-, koeriers- en verhuisdiensten",
+            "label_short": "Post-, koeriers- en verhuisdiensten"
+          }
+        ],
+        "default_main_tab": "voertuigen",
+        "data": {
+          "voertuigen": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟡 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "CO₂-waarde voor typegoedkeuring",
+                "specification": "De CO₂-waarden voor typegoedkeuring van de voertuigen mogen de volgende waarden niet overschrijden:\n\n![Voertuigtype CO₂ waarden](/voertuigtype.png)\n\nVoertuigen van categorie L moeten door elektrische batterijen worden gevoed.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 14"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het certificaat van overeenstemming van het voertuig overleggen."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification": "*Opmerking: dit criterium heeft betrekking op M1- en N1-voertuigen met een referentiemassa⁽¹⁾ van ten hoogste 2 610 kg. M1- en N1-voertuigen met een referentiemassa hoger dan 2 610 kg moeten voldoen aan TS2 Emissies van luchtverontreinigende stoffen van categorie 3 (punt 6.2).*\n\n**Tot en met 31 december 2025:**\nDe emissies onder reële rijomstandigheden (real driving emission, RDE) van alle nieuwe auto's en lichte bedrijfsvoertuigen mogen niet meer dan 0,8 keer de limietwaarden van Euro 6 voor NOx en PN bedragen (waarbij de toepasselijke meetmarge buiten beschouwing wordt gelaten(2)).\n\nDe uitlaatemissies van voertuigen die worden aangeschaft voor gebruik in gebieden waar er problemen met de luchtkwaliteit zijn(3), moeten gelijk zijn aan nul.\n\n**Vanaf januari 2026:**\nde uitlaatemissies moeten gelijk zijn aan nul.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 15"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het certificaat van overeenstemming van het voertuig overleggen."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Weergave van energieverbruik",
+                "specification": "De voertuigen moeten zijn uitgerust met een mechanisme waarop voor de bestuurder zichtbaar het brandstofverbruik wordt weergegeven.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 15"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van het voertuig verstrekken waarin deze informatie te vinden is."
+                }
+              },
+              {
+                "code": "TS5",
+                "title": "Minimumgarantie",
+                "specification": "De inschrijver moet een minimumgarantie van de batterij bieden van 160 000 km, of acht jaar met een capaciteit van ten minste 70 % van de oorspronkelijke nominale capaciteit bij levering overeenkomstig EN 626601, ook tegen normale geleidelijke verslechtering door gebruik.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 16"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moeten een verklaring bij de garantievoorwaarden overleggen."
+                }
+              },
+              {
+                "code": "TS6",
+                "title": "Bandenspanningscontrolesystemen (TPMS)",
+                "specification": "Lichte bedrijfsvoertuigen en zware voertuigen moeten zijn uitgerust met een bandenspanningscontrolesysteem, wat betekent een systeem dat de bandenspanning of de variatie ervan in de loop van de tijd kan meten en de bestuurder daarover informatie kan verstrekken terwijl het voertuig rijdt of, in het geval van bussen en vuilniswagens, een systeem dat deze informatie naar de exploitant verzendt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 47"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van het voertuig overleggen waarin deze informatie wordt vermeld."
+                }
+              },
+              {
+                "code": "TS7",
+                "title": "Voertuigbanden — rolweerstand",
+                "specification": "De voertuigen moeten zijn uitgerust met banden die beantwoorden aan A of B hieronder:\n\nA. Banden die voldoen aan de hoogste brandstofrendementsklasse voor rolweerstand uitgedrukt, zoals omschreven in Verordening (EU) 2020/740 van het Europees Parlement en de Raad van 25 mei 2020 inzake de etikettering van banden met betrekking tot hun brandstofefficiëntie en andere essentiële parameters, en die voldoen aan hetzij klasse \"A\", hetzij klasse \"B\" voor grip op nat wegdek, zoals gedefinieerd in diezelfde verordening en in overeenstemming met artikel 11, lid 2, van die verordening;\n\nB. Van een nieuw loopvlak voorziene luchtbanden (coverbanden)",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 47"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het etiket van de band verstrekken overeenkomstig Verordening (EU) 2020/740 voor banden in geval A of de kennisgeving van goedkeuring overeenkomstig Reglement nr. 108 (auto's en bestelwagens) en nr. 109 (zware voertuigen) voor coverbanden in geval B."
+                }
+              },
+              {
+                "code": "TS7",
+                "title": "Voertuigspecifieke informatie omtrent milieubewust rijden",
+                "specification": "De voertuigen moeten zijn uitgerust met informatie of instructies over milieubewust rijden.\n\n• Voor voertuigen met een verbrandingsmotor moet in de gebruiksaanwijzing (richtlijnen staan over:\n• vroegtidig schakelen,\n• een gelijkmatige snelheid aanhouden bij lage toerentallen,\n• anticiperen op verkeersstromen.\n• Voor hybride en elektrische voertuigen moet informatie aanwezig zijn over recuperatieremming (energie terugwinnen).\n• Voor plug-in hybrides en range-extender voertuigen moet de informatie specifieke instructies bevatten om de afstand te maximaliseren die op elektriciteit wordt gereden.\n\nDe overdracht van deze informatie of instructies kan ook plaatsvinden via opleidingssessies. Indien de overheidsinstantie hiervoor kiest, moet zij een minimumaantal uren aan te verstrekken opleiding voorschrijven.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 48"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van het voertuig waarin deze informatie wordt vermeld, of een beschrijving en de inhoud van de voorgeschreven opleidingssessies overleggen."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS1",
+                "title": "CO₂-waarde voor typegoedkeuring",
+                "specification": "De CO₂-waarden voor typegoedkeuring van de voertuigen mogen de volgende waarden niet overschrijden:\n\n| Voertuigtype | CO₂ g/km |\n|---|---|\n| Alle M1- en N1-voertuigen | 0 |\n\nVoertuigen van categorie L moeten door elektrische batterijen worden gevoed.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 14"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het certificaat van overeenstemming van het voertuig overleggen."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification": "De uitlaatemissies moeten gelijk zijn aan nul.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 15"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het certificaat van overeenstemming van het voertuig overleggen."
+                }
+              },
+              {
+                "code": "TS4",
+                "title": "Verkeersinformatie en routeoptimalisatie",
+                "specification": "*Opmerking: de aanbestedende diensten kunnen eisen dat dit criterium wordt vervuld indien het voertuig zal worden gebruikt in stedelijke gebieden met veel verkeersopstoppingen of naar plaatsen moet worden gereden die de bestuurders niet bekend zijn en er geen ander informatiesysteem (bv. smartphones) beschikbaar is.*\n\n*Opmerking: dit criterium is niet van toepassing op voertuigen die worden gebruikt voor speciale doeleinden waarvoor de gegevens van meerrijdende meetvoertuigen goed moeten worden beschermd, bv. voertuigen van veiligheidstroepen, officiële voertuigen gebruikt door leden van de regering enz.*\n\nVoertuigen moeten zijn uitgerust met systemen voor verkeersinformatie en routeoptimalisatie die de bestuurder voorafgaand aan de rit informatie verstrekken om hem te helpen opstoppingen te vermijden en keuzen te maken om de route van de rit te optimaliseren. Het systeem moet geïntegreerd zijn, hetgeen betekent een volledige communicatiemodule, die bestaat uit een modem en een subscriber identity module (SIM) die permanent deel uitmaakt van de auto.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 48"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van het voertuig verstrekken waarin deze informatie te vinden is."
+                }
+              },
+              {
+                "code": "TS8",
+                "title": "Bandenlawaai",
+                "specification": "De voertuigen moeten zijn uitgerust met:\n\na) Banden waarvan het externe emissieniveau van het rolgeluid tot de klasse \"A\" behoort, zoals omschreven in Verordening (EU) 2020/740 van het Europees Parlement en de Raad van 25 mei 2020 inzake de etikettering van banden met betrekking tot hun brandstofefficiëntie en andere essentiële parameters; of\n\nb) Coverbanden.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 48"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het etiket van de band verstrekken overeenkomstig Verordening (EU) 2020/740 voor banden (in geval van a), of de kennisgeving van goedkeuring overeenkomstig bijlage 1 bij Reglement nr. 109 van de Economische Commissie voor Europa van de Verenigde Naties (in geval van b, coverbanden)."
+                }
+              }
+            ]
+          },
+          "mobiliteitsdiensten": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟡 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "CO₂-waarde voor typegoedkeuring",
+                "specification": "**Auto's en bestelwagens:**\nHet wagenpark moet bestaan uit voertuigen die de volgende CO₂-waarden voor typegoedkeuring niet overschrijden:\n• Tot en met 31 december 2025: 50 (WLTP)\n• Vanaf 1 januari 2026: 0\n\nDit geldt voor de volgende delen van het wagenpark:\n• 1,25 × het aandeel van de openbare aanbestedingen zoals vastgesteld in de herziene richtlijn schone wegvoertuigen¹ voor het betrokken land.\n\nVoertuigen van categorie L moeten door elektrische batterijen worden gevoed.\n\n**Zware voertuigen:**\nHet volgende deel van het wagenpark moet zijn uitgerust met één van de in aanmerking komende technologieën die zijn vermeld bij de kerncriteria van TS1 Technologische opties voor het beperken van broeikasgasemissies van categorie 3:\n• 1,25 × het aandeel van de openbare aanbestedingen zoals vastgesteld in de herziene richtlijn schone wegvoertuigen voor het betrokken land.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de lijst van voertuigen van het wagenpark en de bijbehorende CO₂-emissietypegoedkeuring (gestaafd met de certificaten van overeenstemming) overleggen."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification": "Alle zware voertuigen waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan Euro VI. Indien voertuigen niet volgens certificering aan Euro V of hoger voldoen, maar via technische nabewerking wel aan de norm voldoen, moet dit in de offerte worden gedocumenteerd\n\nTot december 2026 moeten alle auto's en lichte bedrijfsvoertuigen waarmee de dienst wordt uitgevoerd, ten minste voldoen aan Euro 6c en:\n• 2021: 15% aan Euro 6d-TEMP of later.\n• 2022: 30% aan Euro 6d-TEMP of later.\n• 2023: 45% aan Euro 6d-TEMP of later.\n• 2024: 60% aan Euro 6d-TEMP of later.\n• 2025: 75% aan Euro 6d-TEMP of later.\n• 2026: 90% aan Euro 6d-TEMP of later.\n\nVanaf januari 2027 moeten alle voertuigen voldoen aan Euro 6d-TEMP of Euro 6d.\n\nAlle voertuigen van categorie L waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan Euro 5.\n\n*Voor stedelijke gebieden waar problemen met de luchtkwaliteit zijn:*\n\nLichte bedrijfsvoertuigen en voertuigen van categorie L moeten uitlaatemissies gelijk aan nul hebben. Indien geen oplaadinfrastructuur beschikbaar is of een groot actieradius vereist is, moeten de voertuigen ten minste 50 km kunnen afleggen zonder uitlaatemissies.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 23"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van de voertuigen overleggen waarin de emissienormen worden omschreven.\n\nVoertuigen die via technische verbetering aan de norm voldoen, moeten de metingen, na controle door een onafhankelijke derde, gedocumenteerd en in de offerte opgenomen hebben."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Maatregelen inzake milieubeheer",
+                "specification": "De inschrijver moet beschikken over schriftelijke procedures voor:\n\n1. het bijhouden en vastleggen van de emissies van broeikasgassen en luchtverontreinigende stoffen van de dienst. De gebruikte indicatoren moeten de emissies en het energieverbruik van de dienst weergeven als totaal per jaar en als totaal per passagier/ton/vervoerde eenheid/kilometer, dan wel een andere eenheid die een afspiegeling vormt van de prestaties van de dienst;\n\n2. het uitvoeren van een emissiereductieplan met maatregelen die ten doel hebben de broeikasgasemissies en de emissies van luchtverontreinigende stoffen te reduceren;\n\n3. het evalueren van de resultaten van het emissiereductieplan door veranderingen in de indicatoren bij te houden en bij te houden hoe de maatregelen van het plan worden uitgevoerd;\n\n4. het uitvoeren van de acties die nodig zijn om eventuele afwijkingen van het plan of eventuele stijging van de indicatoren te corrigeren en deze indien mogelijk in de toekomst te voorkomen.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de volgende zaken verstrekken:\n\n1. de procedure voor het bijhouden en vastleggen van de in TS1 genoemde indicatoren;\n\n2. het emissiereductieplan;\n\n3. de evaluatieprocedure waarmee de uitvoering van het emissiereductieplan wordt gewaarborgd;\n\n4. de correctieprocedure waarmee eventuele afwijkingen die bij de evaluatie zijn aangetroffen, worden gecorrigeerd en indien mogelijk in de toekomst worden voorkomen.\n\nMilieubeheersystemen met een ISO 14001- of EMAS-certificering worden geacht te voldoen, indien het reduceren van emissies van broeikasgassen en luchtverontreinigende stoffen van het wagenpark tot de milieudoelstellingen hiervan behoort. De inschrijver moet het milieubeleid verstrekken, waaruit blijkt dat hij toezegt deze doelstelling te bereiken, alsmede het door de certificeringsdienst afgegeven certificaat.\n\n*Opmerking: de aanbestedende dienst kan punten toekennen aan de offertes waarin aanzienlijke verbeteringen in de milieubeheermaatregen worden geoffreerd.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 51"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de volgende zaken verstrekken:\n\n1. de procedure voor het bijhouden en vastleggen van de in TS1 genoemde indicatoren;\n\n2. het emissiereductieplan;\n\n3. de evaluatieprocedure waarmee de uitvoering van het emissiereductieplan wordt gewaarborgd;\n\n4. de correctieprocedure waarmee eventuele afwijkingen die bij de evaluatie zijn aangetroffen, worden gecorrigeerd en indien mogelijk in de toekomst worden voorkomen."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS1",
+                "title": "CO₂-waarde voor typegoedkeuring",
+                "specification": "**Auto's en bestelwagens:**\nHet volgende deel van het wagenpark moet bestaan uit voertuigen die 0 g/km niet overschrijden:\n• 1,5 × het aandeel van de openbare aanbestedingen zoals vastgesteld in de herziene richtlijn schone wegvoertuigen voor het betrokken land.\n\nVoertuigen van categorie L moeten door elektrische batterijen worden gevoed.\n\n**Zware voertuigen:**\nHet volgende deel van het wagenpark moet zijn uitgerust met één van de in aanmerking komende technologieën die zijn vermeld bij de kerncriteria van TS1 Technologische opties voor het beperken van broeikasgasemissies van categorie 3:\n• 1,5 × het aandeel van de openbare aanbestedingen zoals vastgesteld in de herziene richtlijn schone wegvoertuigen voor het betrokken land.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de lijst van voertuigen van het wagenpark en de bijbehorende CO₂-emissietypegoedkeuring (gestaafd met certificaten van overeenstemming) overleggen."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification": "Tot december 2025 moeten alle auto's en lichte bedrijfsvoertuigen waarmee de dienst wordt uitgevoerd ten minste voldoen aan Euro 6c en:\n• 2021: 25 % van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2022: 40 % van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2023: 55 % van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2024: 70 % van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2025: 85 % van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n\nVanaf januari 2026 moeten alle auto's en lichte bedrijfsvoertuigen waarmee de dienst wordt uitgevoerd ten minste voldoen aan de norm Euro 6d-TEMP of Euro 6d.\n\nAlle voertuigen van categorie L waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan Euro 5.\n\n*Voor stedelijke gebieden waar problemen met de luchtkwaliteit zijn:*\n\nLichte bedrijfsvoertuigen en voertuigen van categorie L moeten uitlaatemissies gelijk aan nul hebben. Indien er geen oplaadinfrastructuur beschikbaar is of het verwachte gebruiksprofiel een grote actieradius vereist, moeten de voertuigen ten minste in staat zijn tot uitlaatemissies gelijk aan nul, hetgeen betekent dat het lichte bedrijfsvoertuig minimaal 50 km kan afleggen zonder uitlaatemissies.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 23"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie overleggen van de voertuigen, waarin de emissienormen worden omschreven, alsmede de samenwerkingsovereenkomst met het stedelijke consolidatiecentrum, waar van toepassing.\n\nVoor voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen."
+                }
+              }
+            ]
+          },
+          "zware-voertuigen": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟡 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Technologische opties voor het beperken van broeikasgasemissies",
+                "specification": "De voertuigen moeten zijn uitgerust met een van de volgende technologieën:\n• OEM-aardgasvoertuig voor twee soorten brandstof met een gas-energierelatie tijdens het warme gedeelte van de WHTC-testcyclus (World Harmonised Transient Cycle) van ten minste 50 %.\n• voertuigen met rechtstreekse inspuiting van aardgas onder hoge druk*\n• voertuigen enkel op aardgas*\n• volledig elektrische voertuigen\n• plug-in-hybridevoertuigen**\n• voertuig met waterstofcel*\n\n* Waterstof- en aardgasvoertuigen komen alleen in aanmerking bij een minimumpercentage van toelevering van hernieuwbare brandstof (zie onderstaande opmerking).\n** Plug-in-hybridetechnologie wordt momenteel niet toegepast in toer- en streekbussen, en hoewel het gebruik ervan in de toekomst niet valt uit te sluiten, is er momenteel geen duidelijk gebruikspatroon zichtbaar.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 28"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van het voertuig overleggen, waarin deze technologieën worden vermeld."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification": "Voertuigen met een referentiemassa hoger dan 2 610 kg moeten voldoen aan de Euro VI-norm, overeenkomstig Verordening (EG) nr. 595/2009 van het Europees Parlement.\n\nVoertuigen met een referentiemassa van ten hoogste 2 610 kg moeten voldoen aan TS2 Emissies van luchtverontreinigende stoffen van categorie 1.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 29"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het certificaat van overeenstemming van het voertuig overleggen. Voor voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Hulpeenheden",
+                "specification": "*Opmerking: dit criterium heeft betrekking op vuilniswagens.*\n\nDe emissies van de afzonderlijke motoren voor de hulpeenheden van het voertuig (bv. persinstallatie, liftmechanisme enz. zoals omschreven door de aanbestedende dienst) moeten voldoen aan de grenswaarden voor uitlaatemissies overeenkomstig Verordening (EU) 2016/1628², fase V.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 30"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een certificaat van typegoedkeuring of een testverslag van een onafhankelijk laboratorium overeenkomstig Verordening (EU) 2016/1628 overleggen."
+                }
+              },
+              {
+                "code": "TS4",
+                "title": "Uitlaatpijpen (locatie)",
+                "specification": "De uitlaatpijpen van de bussen moeten zich bevinden aan de andere kant ten opzichte van de reizigersedeur aan de achterzijde van het voertuig of op het dak.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 30"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van het voertuig overleggen."
+                }
+              },
+              {
+                "code": "TS5",
+                "title": "Bandenspanningscontrolesystemen (TPMS)",
+                "specification": "Lichte bedrijfsvoertuigen en zware voertuigen moeten zijn uitgerust met een bandenspanningscontrolesysteem, wat betekent een systeem dat de bandenspanning of de variatie ervan in de loop van de tijd kan meten en de bestuurder daarover informatie kan verstrekken terwijl het voertuig rijdt of, in het geval van bussen en vuilniswagens, een systeem dat deze informatie naar de exploitant verzendt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 47"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van het voertuig overleggen waarin deze informatie wordt vermeld."
+                }
+              },
+              {
+                "code": "TS6",
+                "title": "Voertuigbanden — rolweerstand",
+                "specification": "De voertuigen moeten zijn uitgerust met banden die beantwoorden aan A óf B hieronder:\n\nA. Banden die voldoen aan de hoogste brandstofrendementsklasse voor rolweerstand uitgedrukt, zoals omschreven in Verordening (EU) 2020/740 van het Europees Parlement en de Raad van 25 mei 2020 inzake de etikettering van banden met betrekking tot hun brandstofefficiëntie en andere essentiële parameters, én die voldoen aan hetzij klasse \"A\", hetzij klasse \"B\" voor grip op nat wegdek, zoals gedefinieerd in diezelfde verordening en in overeenstemming met artikel 11, lid 2, van die verordening;\n\nB. Van een nieuw loopvlak voorziene luchtbanden (coverbanden)",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 47"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het etiket van de band verstrekken overeenkomstig Verordening (EU) 2020/740 voor banden in geval A of de kennisgeving van goedkeuring overeenkomstig Reglement nr. 108 (auto's en bestelwagens) en nr. 109 (zware voertuigen) voor coverbanden in geval B."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS1",
+                "title": "Technologische opties voor het beperken van broeikasgasemissies",
+                "specification": "De voertuigen moeten zijn uitgerust met één van de volgende technologieën:\n• volledig elektrisch\n• voertuig met waterstofcel*\n\n* Waterstofvoertuigen komen alleen in aanmerking bij een minimumpercentage van toelevering van hernieuwbare brandstof (zie onderstaande opmerking).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 28"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van het voertuig overleggen, waarin deze technologieën worden vermeld."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification": "Voertuigen met een referentiemassa¹ hoger dan 2 610 kg moeten emissievrije voertuigen zijn, d.w.z. voertuigen zonder interne verbrandingsmotor, of met een interne verbrandingsmotor die minder dan 1 g CO₂/kWh uitstoot zoals gemeten overeenkomstig Verordening (EG) nr. 595/2009 van het Europees Parlement, of\n\nvoertuigen met een referentiemassa¹ van ten hoogste 2 610 kg moeten voldoen aan TS2 Emissies van luchtverontreinigende stoffen van categorie 1.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 29"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het certificaat van overeenstemming van het voertuig overleggen. Voor voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen."
+                }
+              },
+              {
+                "code": "TS7",
+                "title": "Bandenlawaai",
+                "specification": "De voertuigen moeten zijn uitgerust met:\n\na) Banden waarvan het externe emissieniveau van het rolgeluid tot de klasse \"A\" behoort, zoals omschreven in Verordening (EU) 2020/740 van het Europees Parlement en de Raad van 25 mei 2020 inzake de etikettering van banden met betrekking tot hun brandstofefficiëntie en andere essentiële parameters; of\n\nb) Coverbanden.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 48"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het etiket van de band verstrekken overeenkomstig Verordening (EU) 2020/740 voor banden (in geval van a), of de kennisgeving van goedkeuring overeenkomstig bijlage 1 bij Reglement nr. 109 van de Economische Commissie voor Europa van de Verenigde Naties (in geval van b, coverbanden)."
+                }
+              }
+            ]
+          },
+          "wegvervoersdiensten": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟡 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Technologische opties voor het beperken van broeikasgasemissies",
+                "specification": "Deze criteria zijn alleen van toepassing indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend.\n\n**Optie 1:**\n\nDe volgende delen van het wagenpark moeten zijn uitgerust met één van de in aanmerking komende technologieën die zijn vermeld bij de kerncriteria van TS1 Technologische opties voor het beperken van broeikasgasemissies van categorie 3 of in overeenstemming zijn met TS1 CO₂-emissies voor typegoedkeuring van categorie 1: 1,25 × aandeel van de openbare aanbestedingen zoals vastgesteld in de herziene richtlijn schone wegvoertuigen voor het betrokken land.\n\n**Optie 2:**\n\nHet dienstennetwerk moet geheel of gedeeltelijk worden bediend met voertuigen die op de volgende manieren aan de specificaties voldoen:\n\n• Zware voertuigen moeten zijn uitgerust met één van de in aanmerking komende technologieën die zijn vermeld bij de kerncriteria van TS1 Technologische opties voor het beperken van broeikasgasemissies van categorie 3.\n\n*De aanbestedende dienst kan de technologie/technologieën vaststellen die in aanmerking komen als een van de kerncriteria van TS1 Technologische opties voor het beperken van broeikasgasemissies van categorie 3, of zij kan deze keuze overlaten aan de inschrijver.*\n\nDe aanbestedende dienst kan ook beslissen of voor bepaalde specifieke routes specifieke technologieën moeten worden gebruikt.\n\n• Auto's en lichte bedrijfsvoertuigen moeten voldoen aan de kerncriteria van TS1 CO₂-emissies voor typegoedkeuring.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Idem TS1 Technologische opties voor het beperken van broeikasgasemissies van categorie 3 benevens de lijst en de technische documentatie van het gehele wagenpark."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Technologische opties voor het beperken van broeikasgasemissies",
+                "specification": "*Opmerking: deze technische specificaties zijn van toepassing op voertuigen die worden ingezet bij post- en koeriersbezorging in stedelijke gebieden. Een mogelijkheid is om voor te schrijven voor wat voor bezorgingen fietslogistiek moet worden ingezet (in steden met een geschikte stedelijke infrastructuur en een voldoende aantal exploitanten van fietslogistiek).*\n\nDe inschrijver moet beschikken over een voertuigenbestand dat fietsen, eventueel met trapondersteuning, en fietsaanhangwagens omvat. Hiermee wordt beoogd het gebruik van gemotoriseerde voertuigen te minimaliseren en vraagstukken in verband met de laatste fase van de bezorging aan te pakken, overeenkomstig het emissiereductieplan vastgesteld in TS1 Maatregelen op het gebied van milieubeheer, in de gemeenschappelijke criteria voor dienstcategorieën.\n\nAan dit criterium kan worden voldaan door middel van een samenwerkingsverband met een stedelijk consolidatiecentrum waarvan het voertuigenbestand uit fietsen en bakfietsen bestaat.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 36"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver legt de specificaties van het voertuigenbestand over evenals, waar van toepassing, de samenwerkingsovereenkomst met een stedelijk consolidatiecentrum."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Bandenspanningscontrolesystemen (TPMS)",
+                "specification": "Alle voertuigen moeten zijn uitgerust met systemen die voldoen aan TS1 aangaande bandenspanningscontrolesystemen, zoals omschreven in punt 9.2 van de gemeenschappelijke criteria voor voertuigcategorieën.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 36"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Idem TS1 aangaande bandenspanningscontrolesystemen in punt 10.2 van de gemeenschappelijke criteria voor voertuigcategorieën benevens de lijst en de technische documentatie van het gehele wagenpark."
+                }
+              },
+              {
+                "code": "TS4",
+                "title": "Voertuigbanden — rolweerstand",
+                "specification": "Alle voertuigen moeten zijn uitgerust met banden die voldoen aan TS2 aangaande voertuigbanden, zoals omschreven in punt 9.2 van de gemeenschappelijke criteria voor voertuigcategorieën.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 36"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Idem TS2 aangaande voertuigbanden in punt 10.2 van de gemeenschappelijke criteria voor voertuigcategorieën benevens de lijst en de technische documentatie van het gehele wagenpark."
+                }
+              },
+              {
+                "code": "TS5",
+                "title": "Brandstoffen",
+                "specification": "*Opmerking: dit criterium is uitsluitend van toepassing indien de aanbestedende dienst beslist dat een technologie in aanmerking komt overeenkomstig de toelichting bij TS1 Technologische opties voor het beperken van broeikasgasemissies van categorie 3 (punt 6.2) en de inschrijver die technologie biedt om aan TS1 te voldoen.*\n\nDe aanbestedende dienst kan hogere percentages van hernieuwbare brandstof vaststellen overeenkomstig het beschikbare aanbod op de nationale of regionale markt.\n\nHet aandeel hernieuwbare brandstof moet voldoen aan de percentages die zijn vastgesteld in de toelichting van TS1 Technologische opties voor het beperken van broeikasgasemissies van categorie 3 (punt 6.2).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 37"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een kopie verstrekken van de overeenkomst(en) die met de leverancier(s) is/zijn getekend en van de omschrijving en technische specificaties van de productie en het specifieke brandstoftoeleveringssysteem."
+                }
+              },
+              {
+                "code": "TS5",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification": "Tot december 2024 moeten alle zware voertuigen waarmee de dienst wordt uitgevoerd ten minste voldoen aan de Euro V-norm, en:\n• 2021: 64% van de zware voertuigen moet voldoen aan Euro VI.\n• 2022: 72% van de zware voertuigen moet voldoen aan Euro VI.\n• 2023: 80% van de zware voertuigen moet voldoen aan Euro VI.\n• 2024: 88% van de zware voertuigen moet voldoen aan Euro VI.\n\nHet toepasselijke niveau hangt af van het jaar waarin de aanbesteding wordt geïnitieerd.\n\nVanaf januari 2025: moeten alle zware voertuigen waarmee de dienst wordt uitgevoerd ten minste voldoen aan de Euro VI-norm. Als voertuigen volgens de certificering niet aan Euro V of hoger voldoen, maar door technische nabehandeling wel aan de norm voldoen, moet dit in de offerte worden gedocumenteerd.\n\nTot december 2026 moeten alle auto's en lichte bedrijfsvoertuigen waarmee de dienst wordt uitgevoerd ten minste voldoen aan Euro 6c en:\n• 2021: 15% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2022: 30% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2023: 45% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2024: 60% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2025: 75% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2026: 90% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n\nVanaf januari 2027 moeten alle auto's en lichte bedrijfsvoertuigen waarmee de dienst wordt uitgevoerd ten minste voldoen aan Euro 6d-TEMP of Euro 6d. Alle voertuigen van categorie L waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan Euro 5.\n\n*Voor stedelijke gebieden waar problemen met de luchtkwaliteit zijn:*\n\nLichte bedrijfsvoertuigen en voertuigen van categorie L moeten uitlaatemissies gelijk aan nul hebben. Indien er geen oplaadinfrastructuur beschikbaar is of het verwachte gebruiksprofiel een grote actieradius vereist, moeten de voertuigen ten minste in staat zijn tot uitlaatemissies gelijk aan nul, hetgeen betekent dat het voertuig minimaal 50 km kan afleggen zonder uitlaatemissies.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 37"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van de voertuigen overleggen, waarin de emissienormen worden omschreven. Voor voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS1",
+                "title": "Technologische opties voor het beperken van broeikasgasemissies",
+                "specification": "**Optie 1:**\n\nDe volgende delen van het wagenpark moeten zijn uitgerust met één van de in aanmerking komende technologieën die zijn vermeld bij de kerncriteria van TS1 Technologische opties voor het beperken van broeikasgasemissies van categorie 3 of in overeenstemming zijn met TS1 CO₂-emissies voor typegoedkeuring van categorie 1: 1,25 × aandeel van de openbare aanbestedingen zoals vastgesteld in de herziene richtlijn schone wegvoertuigen voor het betrokken land.\n\n**Optie 2:**\n\nHet dienstennetwerk moet geheel of gedeeltelijk worden bediend met voertuigen die op de volgende manieren aan de specificaties voldoen:\n\n• Zware voertuigen moeten zijn uitgerust met één van de in aanmerking komende technologieën die zijn vermeld bij de kerncriteria van TS1 Technologische opties voor het beperken van broeikasgasemissies van categorie 3.\n\nDe aanbestedende dienst kan de technologie/technologieën vaststellen die in aanmerking komen als een van de kerncriteria van TS1 Technologische opties voor het beperken van broeikasgasemissies van categorie 3, of zij kan deze keuze overlaten aan de inschrijver.\n\nDe aanbestedende dienst kan ook beslissen of voor bepaalde specifieke routes specifieke technologieën moeten worden gebruikt.\n\n• Auto's en lichte bedrijfsvoertuigen moeten voldoen aan de kerncriteria van TS1 CO₂-emissies voor typegoedkeuring.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van het gehele wagenpark overleggen, waarin deze technologieën worden vermeld."
+                }
+              },
+              {
+                "code": "TS5",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification": "Tot december 2022 moeten alle zware voertuigen waarmee de dienst wordt uitgevoerd ten minste voldoen aan Euro V en:\n• 2021: 84% van de zware voertuigen moet voldoen aan Euro VI.\n• 2022: 92% van de zware voertuigen moet voldoen aan Euro VI.\n\nHet toepasselijke niveau hangt af van het jaar waarin de aanbesteding wordt geïnitieerd.\n\nVanaf januari 2023 moeten alle zware voertuigen waarmee de dienst wordt uitgevoerd ten minste voldoen aan Euro VI. Als voertuigen niet volgens de certificering aan Euro V of hoger voldoen, maar door technische nabehandeling wel aan de norm voldoen, moet dit in de offerte worden gedocumenteerd.\n\nTot december 2025 moeten alle auto's en lichte bedrijfsvoertuigen waarmee de dienst wordt uitgevoerd ten minste voldoen aan Euro 6c en:\n• 2021: 25% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2022: 40% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2023: 55% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2024: 70% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2025: 85% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n\nVanaf januari 2026 moeten alle auto's en lichte bedrijfsvoertuigen waarmee de dienst wordt uitgevoerd ten minste voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n\nAlle voertuigen van categorie L waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan Euro 5.\n\n*Voor stedelijke gebieden waar problemen met de luchtkwaliteit zijn:* Lichte bedrijfsvoertuigen en voertuigen van categorie L moeten uitlaatemissies gelijk aan nul hebben. Indien er geen oplaadinfrastructuur beschikbaar is of het verwachte gebruiksprofiel een grote actieradius vereist, moeten de voertuigen ten minste in staat zijn tot uitlaatemissies gelijk aan nul, hetgeen betekent dat het voertuig minimaal 50 km kan afleggen zonder uitlaatemissies.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 37"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van de voertuigen overleggen, waarin de emissienormen worden omschreven, alsmede, waar van toepassing, de samenwerkingsovereenkomst met een stedelijk consolidatiecentrum.\n\nVoor voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering, moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen."
+                }
+              },
+              {
+                "code": "TS6",
+                "title": "Maatregelen inzake milieubeheer",
+                "specification": "De inschrijver moet beschikken over schriftelijke procedures voor:\n\n1. het bijhouden en vastleggen van de emissies van broeikasgassen en luchtverontreinigende stoffen van de dienst. De gebruikte indicatoren moeten de emissies en het energieverbruik van de dienst weergeven als totaal per jaar en als totaal per passagier/ton/vervoerde eenheid/kilometer, dan wel een andere eenheid die een afspiegeling vormt van de prestaties van de dienst;\n\n2. het uitvoeren van een emissiereductieplan met maatregelen die ten doel hebben de broeikasgasemissies en de emissies van luchtverontreinigende stoffen te reduceren;\n\n3. het evalueren van de resultaten van het emissiereductieplan door veranderingen in de indicatoren bij te houden en bij te houden hoe de maatregelen van het plan worden uitgevoerd;\n\n4. het uitvoeren van de acties die nodig zijn om eventuele afwijkingen van het plan of eventuele stijging van de indicatoren te corrigeren en deze indien mogelijk in de toekomst te voorkomen.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de volgende zaken verstrekken:\n\n1. de procedure voor het bijhouden en vastleggen van de in TS1 genoemde indicatoren;\n\n2. het emissiereductieplan;\n\n3. de evaluatieprocedure waarmee de uitvoering van het emissiereductieplan wordt gewaarborgd;\n\n4. de correctieprocedure waarmee eventuele afwijkingen die bij de evaluatie zijn aangetroffen, worden gecorrigeerd en indien mogelijk in de toekomst worden voorkomen.\n\nMilieubeheersystemen met een ISO 14001- of EMAS-certificering worden geacht te voldoen, indien het reduceren van emissies van broeikasgassen en luchtverontreinigende stoffen van het wagenpark tot de milieudoelstellingen hiervan behoort. De inschrijver moet het milieubeleid verstrekken, waaruit blijkt dat hij toezegt deze doelstelling te bereiken, alsmede het door de certificeringsdienst afgegeven certificaat.\n\n*Opmerking: de aanbestedende dienst kan punten toekennen aan de offertes waarin aanzienlijke verbeteringen in de milieubeheermaatregen worden geoffreerd.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 51"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de volgende zaken verstrekken:\n\n1. de procedure voor het bijhouden en vastleggen van de in TS1 genoemde indicatoren;\n\n2. het emissiereductieplan;\n\n3. de evaluatieprocedure waarmee de uitvoering van het emissiereductieplan wordt gewaarborgd;\n\n4. de correctieprocedure waarmee eventuele afwijkingen die bij de evaluatie zijn aangetroffen, worden gecorrigeerd en indien mogelijk in de toekomst worden voorkomen."
+                }
+              }
+            ]
+          },
+          "post-koeriers-verhuisdiensten": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟡 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "CO₂-waarde voor typegoedkeuring",
+                "specification": "Deze criteria zijn alleen van toepassing indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend.\n\nHet wagenpark moet bestaan uit voertuigen die de volgende CO₂-waarden voor typegoedkeuring niet overschrijden:\n• Tot en met 31 december 2025: 50 (WLTP)\n• Vanaf 1 januari 2026: 0\n\nDit geldt voor de volgende delen van het wagenpark:\n• 1,25 × aandeel van de openbare aanbestedingen zoals vastgesteld in de herziene richtlijn schone wegvoertuigen voor het betrokken land.\n\nVoertuigen van categorie L moeten door elektrische batterijen worden gevoed.\n\n**Zware voertuigen**\n\nHet volgende deel van het wagenpark moet zijn uitgerust met één van de in aanmerking komende technologieën die zijn vermeld bij de kerncriteria van TS1 Technologische opties voor het beperken van broeikasgasemissies van categorie 3: 1,25 × aandeel van de openbare aanbestedingen zoals vastgesteld in de herziene richtlijn schone wegvoertuigen voor het betrokken land.\n\nAan dit criterium kan worden voldaan door middel van een samenwerkingsverband met een stedelijk consolidatiecentrum waarvan het voertuigenbestand aan de technische specificatie voldoet.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 42"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een lijst van voertuigen van het wagenpark en de bijbehorende CO₂-emissietypegoedkeuring (gestaafd met de certificaten van overeenstemming) overleggen."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Fietslogistiek",
+                "specification": "_Opmerking: deze technische specificatie is van toepassing op voertuigen die worden ingezet bij post- en koeriersbezorging in stedelijke gebieden. Een mogelijkheid is om voor te schrijven voor wat voor bezorgingen fietslogistiek moet worden ingezet (in steden met een geschikte stedelijke infrastructuur en een voldoende aantal exploitanten van fietslogistiek)._\n\nDe inschrijver moet beschikken over een voertuigenbestand dat fietsen, eventueel met trapondersteuning, en fietsaanhangwagens omvat. Hiermee wordt beoogd het gebruik van gemotoriseerde voertuigen te minimaliseren en vraagstukken in verband met de laatste fase van de bezorging aan te pakken, overeenkomstig het emissiereductieplan vastgesteld in TS1 Maatregelen op het gebied van milieubeheer, in de gemeenschappelijke criteria voor dienstcategorieën (punt 10.2).\n\nAan dit criterium kan worden voldaan door middel van een samenwerkingsverband met een stedelijk consolidatiecentrum waarvan het voertuigenbestand uit fietsen en bakfietsen bestaat.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 42"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver legt de specificaties van het voertuigenbestand over, evenals waar van toepassing de samenwerkingsovereenkomst met het stedelijke consolidatiecentrum."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification": "Tot december 2024: Alle zware voertuigen waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan de Euro V-norm, en:\n• 2021: 64% van de zware voertuigen moet voldoen aan Euro VI.\n• 2022: 72% van de zware voertuigen moet voldoen aan Euro VI.\n• 2023: 80% van de zware voertuigen moet voldoen aan Euro VI.\n• 2024: 88% van de zware voertuigen moet voldoen aan Euro VI.\n\nHet toepasselijke niveau hangt af van het jaar waarin de aanbesteding wordt geïnitieerd.\n\nVanaf januari 2025:\n\nAlle zware voertuigen waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan Euro VI.\n\nAls voertuigen volgens de certificering niet aan Euro V of hoger voldoen, maar door technische nabehandeling wel aan de norm voldoen, moet dit in de offerte worden gedocumenteerd.\n\nTot december 2026 moeten alle auto's en lichte bedrijfsvoertuigen waarmee de dienst wordt uitgevoerd ten minste voldoen aan Euro 6c en:\n• 2021: 15% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2022: 30% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2023: 45% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2024: 60% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2025: 75% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2026: 90% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n\nVanaf januari 2027 moeten alle auto's en lichte bedrijfsvoertuigen waarmee de dienst wordt uitgevoerd ten minste voldoen aan Euro 6d-TEMP of Euro 6d.\n\nAlle voertuigen van categorie L waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan Euro 5.\n\n*Voor stedelijke gebieden waar problemen met de luchtkwaliteit zijn:*\n\nLichte bedrijfsvoertuigen en voertuigen van categorie L moeten uitlaatemissies gelijk aan nul hebben. Indien er geen oplaadinfrastructuur beschikbaar is of het verwachte gebruiksprofiel een grote actieradius vereist, moeten de voertuigen ten minste in staat zijn tot uitlaatemissies gelijk aan nul, hetgeen betekent dat het voertuig minimaal 50 km kan afleggen zonder uitlaatemissies.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 42"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van de voertuigen overleggen, waarin de emissienormen worden omschreven.\n\nVoor voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen."
+                }
+              },
+              {
+                "code": "TS4",
+                "title": "Fietslogistiek",
+                "specification": "De inschrijver moet beschikken over schriftelijke procedures voor:\n\n1. het bijhouden en vastleggen van de emissies van broeikasgassen en luchtverontreinigende stoffen van de dienst. De gebruikte indicatoren moeten de emissies en het energieverbruik van de dienst weergeven als totaal per passagier/ton/vervoerde eenheid/kilometer, dan wel een andere eenheid die een afspiegeling vormt van de prestaties van de dienst;\n\n2. het uitvoeren van een emissiereductieplan met maatregelen die ten doel hebben de broeikasgasemissies en de emissies van luchtverontreinigende stoffen te reduceren;\n\n3. het evalueren van de resultaten van het emissiereductieplan met veranderingen in de indicatoren bij te houden en bij te houden hoe de maatregelen van het plan worden uitgevoerd;\n\n4. het uitvoeren van de acties die nodig zijn om eventuele afwijkingen van het plan of eventuele stijging van de indicatoren te corrigeren en deze indien mogelijk in de toekomst te voorkomen.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de volgende zaken verstrekken:\n\n1. de procedure voor het bijhouden en vastleggen van de in TS1 genoemde indicatoren;\n\n2. het emissiereductieplan;\n\n3. de evaluatieprocedure waarmee de uitvoering van het emissiereductieplan wordt gewaarborgd;\n\n4. de correctieprocedure waarmee eventuele afwijkingen die bij de evaluatie zijn aangetroffen, worden gecorrigeerd en indien mogelijk in de toekomst worden voorkomen.\n\nMilieubeheersystemen met een ISO 14001- of EMAS-certificering worden geacht te voldoen, indien het reduceren van emissies van broeikasgassen en luchtverontreinigende stoffen van het wagenpark tot de milieu doelstellingen hiervan behoort. De inschrijver moet het milieubeleid verstrekken, waaruit blijkt dat hij toezegt deze doelstelling te bereiken, alsmede het door de certificeringsdienst afgegeven certificaat.\n\n*Opmerking: de aanbestedende dienst kan punten toekennen aan de offertes waarin aanzienlijke verbeteringen in de milieubeheermaatregen worden geoffreerd.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 51"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de volgende zaken verstrekken:\n\n1. de procedure voor het bijhouden en vastleggen van de in TS1 genoemde indicatoren;\n\n2. het emissiereductieplan;\n\n3. de evaluatieprocedure waarmee de uitvoering van het emissiereductieplan wordt gewaarborgd;\n\n4. de correctieprocedure waarmee eventuele afwijkingen die bij de evaluatie zijn aangetroffen, worden gecorrigeerd en indien mogelijk in de toekomst worden voorkomen."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS1",
+                "title": "CO₂-waarde voor typegoedkeuring",
+                "specification": "**Auto's en bestelwagens**\n\nHet volgende deel van het wagenpark moet bestaan uit voertuigen die 0 g/km niet overschrijden:\n• 1,5 × aandeel van de openbare aanbestedingen zoals vastgesteld in de herziene richtlijn schone wegvoertuigen voor het betrokken land.\n\nVoertuigen van categorie L moeten door elektrische batterijen worden gevoed.\n\n**Zware voertuigen**\n\nHet volgende deel van het wagenpark moet zijn uitgerust met één van de in aanmerking komende technologieën die zijn vermeld bij de kerncriteria van TS1 Technologische opties voor het beperken van broeikasgasemissies van categorie 3: 1,5 × aandeel van de openbare aanbestedingen zoals vastgesteld in de herziene richtlijn schone wegvoertuigen voor het betrokken land.\n\nAan dit criterium kan worden voldaan door middel van een samenwerkingsverband met een stedelijk consolidatiecentrum waarvan het voertuigenbestand aan de technische specificatie voldoet.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 42"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een lijst van voertuigen van het wagenpark en de bijbehorende CO₂-emissietypegoedkeuring (gestaafd met de certificaten van overeenstemming) overleggen."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification": "Tot december 2022: Alle zware voertuigen waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan de Euro V-norm, en:\n• 2021: 84% van de zware voertuigen moet voldoen aan Euro VI.\n• 2022: 92% van de zware voertuigen moet voldoen aan Euro VI.\n\nHet toepasselijke niveau hangt af van het jaar waarin de aanbesteding wordt geïnitieerd.\n\nVanaf januari 2023:\n\nAlle zware voertuigen waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan Euro VI.\n\nAls voertuigen volgens de certificering niet aan Euro V of hoger voldoen, maar door technische nabehandeling wel aan de norm voldoen, moet dit in de offerte worden gedocumenteerd.\n\nTot december 2025 moeten alle auto's en lichte bedrijfsvoertuigen waarmee de dienst wordt uitgevoerd ten minste voldoen aan Euro 6c en:\n• 2021: 25% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2022: 40% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2023: 55% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2024: 70% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n• 2025: 85% van de auto's en lichte bedrijfsvoertuigen moet voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n\nVanaf januari 2026 moeten alle auto's en lichte bedrijfsvoertuigen waarmee de dienst wordt uitgevoerd ten minste voldoen aan de norm Euro 6d-TEMP, Euro 6d of later.\n\nAlle voertuigen van categorie L waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan Euro 5.\n\n*Voor stedelijke gebieden waar problemen met de luchtkwaliteit zijn:*\n\nLichte bedrijfsvoertuigen en voertuigen van categorie L moeten uitlaatemissies gelijk aan nul hebben. Indien er geen oplaadinfrastructuur beschikbaar is of het verwachte gebruiksprofiel een grote actieradius vereist, moeten de voertuigen ten minste in staat zijn tot uitlaatemissies gelijk aan nul, hetgeen betekent dat het voertuig minimaal 50 km kan afleggen zonder uitlaatemissies.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 42"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van de voertuigen overleggen, waarin de emissienormen worden omschreven, alsmede, waar van toepassing, de samenwerkingsovereenkomst met een stedelijk consolidatiecentrum.\n\nVoor voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "gunningscriteria",
+      "title": "Gunningscriteria",
+      "requirement_level": "verplicht",
+      "intro": "De GPP-criteria voor wegtransport bevatten gunningscriteria. Deze helpen inschrijvers die op essentiële punten extra scoren. Door deze criteria expliciet in het bestek op te nemen, voldoe je aan de verplichting uit de Energie-Efficiëntierichtlijn (EED).",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "**Let op:** De kerncriteria (minimale Gunningscriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie. De GPP onderscheidt vijf categoriën voor wegvervoer:\n   Categorie 1: [Voertuigen](toggle:voertuigen)\n   Categorie 2: [Mobiliteitsdiensten](toggle:mobiliteitsdiensten)\n   Categorie 3: [Zware voertuigen](toggle:zware_voertuigen)\n   Categorie 4: [Wegvervoersdiensten](toggle:wegvervoersdiensten)\n   Categorie 5: [Post-, koeriers- en verhuizingsdiensten](toggle:post_koeriers_verhuizingsdiensten)",
+        "Ga in de tabel hieronder na welke gunningscriteria van toepassing zijn. Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarden op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het ambitieniveau op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit stengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "voertuigen",
+            "label": "🚗 Voertuigen",
+            "label_short": "Voertuigen"
+          },
+          {
+            "key": "mobiliteitsdiensten",
+            "label": "🎯 Mobiliteitsdiensten",
+            "label_short": "Mobiliteitsdiensten"
+          },
+          {
+            "key": "zware_voertuigen",
+            "label": "🚛 Zware voertuigen",
+            "label_short": "Zware voertuigen"
+          },
+          {
+            "key": "wegvervoersdiensten",
+            "label": "🚌 Wegvervoersdiensten",
+            "label_short": "Wegvervoersdiensten"
+          },
+          {
+            "key": "post_koeriers_verhuizingsdiensten",
+            "label": "📦 Post-, koeriers- en verhuizingsdiensten",
+            "label_short": "Post-, koeriers- en verhuizingsdiensten"
+          }
+        ],
+        "default_main_tab": "voertuigen",
+        "data": {
+          "voertuigen": {
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "Lagere CO₂-emissies",
+                "specification": "Tot en met 31 december 2025: er worden punten toegekend aan voertuigen met lagere CO₂-emissies voor typegoedkeuring dan vereist in TS1, in verhouding tot de behaalde reductie.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet het certificaat van overeenstemming van het voertuig overleggen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 16"
+                }
+              },
+              {
+                "code": "GC2",
+                "title": "Energie-efficiëntie",
+                "specification": "Er worden punten toegekend aan de voertuigen met het laagste energieverbruik uitgedrukt in kWh/100 km overeenkomstig de WLTP-testprocedure. De punten worden toegekend overeenkomstig de volgende formule:\n\n![Energie-efficiëntie formule](/energyefficiency.png)\n\nwaarbij\n\n• Punten_offerte is het aantal punten dat wordt toegekend aan de geëvalueerde offerte\n• Energie_hoogst en Energie_laagst zijn het hoogste en het laagste energieverbruik uitgedrukt in kWh/100 km binnen de ingediende offertes\n• Punten_max is het maximum aantal punten dat kan worden toegekend.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet het certificaat van overeenstemming van het voertuig overleggen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 16"
+                }
+              },
+              {
+                "code": "GC3",
+                "title": "Verbeterde emissies van luchtverontreinigende stoffen",
+                "specification": "*Opmerking: dit criterium heeft betrekking op M1- en N1-voertuigen met een referentiemassa van ten hoogste 2 610 kg. M1- en N1-voertuigen met een referentiemassa hoger dan 2 610 kg moeten voldoen aan GC3 Verbeterde emissies van luchtverontreinigende stoffen van categorie 3 (punt 6.2).*\n\nTot en met 31 december 2025: Er worden naar verhouding punten toegekend voor de emissies van luchtverontreinigende stoffen aan voertuigen met een beter RDE-niveau dan de grenswaarden van Euro 6 voor NOx en PN (waarbij de toepasselijke meetmarge buiten beschouwing wordt gelaten). De punten worden toegekend overeenkomstig de volgende formule:\n\n![Emissies formule](/emissiepunten.png)\n\nwaarbij\n\n• NOx_hoog en NOx_laag zijn de hoogste en de laagste NOx-emissies, uitgedrukt in mg/km onder de ingediende offertes\n• PN_hoog en PN_laag zijn de hoogste en de laagste PN-emissies, uitgedrukt in #/km onder de ingediende offertes\n• NOx en PN staan voor de NOx- en PN-emissies van de geëvalueerde offerte\n• PNOx_max en PPN_max staan voor het maximum aantal punten dat voor elke luchtverontreinigende stof kan worden toegekend.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet het certificaat van overeenstemming van het voertuig overleggen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 16"
+                }
+              },
+              {
+                "code": "GC4",
+                "title": "Uitlaatemissiecapaciteit gelijk aan nul",
+                "specification": "*Opmerking: dit criterium heeft betrekking op M1- en N1-voertuigen met een referentiemassa van ten hoogste 2 610 kg. M1- en N1-voertuigen met een referentiemassa hoger dan 2 610 kg moeten voldoen aan GC3 Verbeterde emissies van luchtverontreinigende stoffen van categorie 3 (punt 6.2).*\n\nTot en met 31 december 2025:\n\nEr worden punten toegekend aan de voertuigen die in staat zijn te rijden met een uitlaatemissie van nul, hetgeen betekent dat de auto volgens de WLTP-radius een langere afstand kan afleggen zonder enige uitlaatemissie dan de standaardradius die door de plaatselijke overheid is vastgesteld. De aanbestedende dienst stelt de referentiedrempelwaarde van de minimumradius voor nuluitlaatemissies overeenkomstig de WLTP-radius vast overeenkomstig de verwachte gebruiksprofielen in de aanbesteding (een voorgestelde standaardradius is bijvoorbeeld 50 km). Voertuigen die niet zijn uitgerust met een interne verbrandingsmotor zullen meer punten toegekend krijgen dan voertuigen met een interne verbrandingsmotor.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet het certificaat van overeenstemming van het voertuig overleggen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 18"
+                }
+              },
+              {
+                "code": "GC6",
+                "title": "Minimumgarantie",
+                "specification": "Er worden punten toegekend aan de offertes waarin een verlenging wordt geboden van de minimumgarantie van TS5 Minimumgarantie in verhouding tot de waarde van de verlenging.\n\n**Bijbehorende contractuele voorwaarde**\n\nDde inschrijver moet een verklaring bij de garantievoorwaarden overleggen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 16"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "GC5",
+                "title": "Snelheidsbegrenzer",
+                "specification": "Er worden punten toegekend aan de voertuigen die zijn uitgerust met een snelheidsbegrenzer: een apparaat in het voertuig dat de snelheid van het voertuig automatisch beperkt tot een bepaalde maximumsnelheid.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de technische documentatie van het voertuig verstrekken waarin deze informatie te vinden is.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 19"
+                }
+              },
+              {
+                "code": "GC7",
+                "title": "Lawaai van voertuigen",
+                "specification": "Er worden punten toegekend aan voertuigen waarvan de geluidsemissies voldoen aan de grenswaarden van fase 3 van Verordening (EU) nr. 540/2014. De geluidsemissies worden getest volgens de procedure die is omschreven in bijlage II bij Verordening (EU) nr. 540/2014.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet het certificaat van overeenstemming van het voertuig overleggen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 49"
+                }
+              }
+            ]
+          },
+          "mobiliteitsdiensten": {
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "CO₂-emissies",
+                "specification": "*Opmerking: in de aanbesteding stelt de aanbestedende dienst vast welke typen voertuigen vereist zijn om de dienst te verlenen.*\n\nVoor auto's en lichte bedrijfsvoertuigen:\n\nEr worden punten toegekend aan de offertes waarin een wagenpark wordt aangeboden waarvan het deel van de voertuigen dat aan TS1 voldoet, hoger is dan het deel dat is vastgesteld in TS1, in verhouding tot het deel van het wagenpark dat aan TS1 voldoet.\n\nVoor bussen:\n\nEr worden punten toegekend aan de offertes waarin een wagenpark wordt aangeboden dat bestaat uit een bepaald aantal voertuigen die zijn uitgerust met een van de in aanmerking komende technologieën in TS1 volgens de kerncriteria van categorie 3. De aanbestedende dienst kan dit aantal vaststellen als:\ni) een percentage,\nii) alle voertuigen van het wagenpark,\niii) specifieke (sub)categorieën van voertuigen, of\niv) de voertuigen die op specifieke routes worden ingezet. Zie de toelichting voor meer informatie.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet een spreadsheet overleggen met daarin de lijst van voertuigen in het wagenpark, de bijbehorende CO₂-emissietypegoedkeuring (ondersteund door de respectieve certificaten van overeenstemming) en/of, voor bussen, de technische documentatie van het voertuig waarin deze technologieën worden vermeld.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 19"
+                }
+              },
+              {
+                "code": "GC2",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification": "*Opmerking: Niet van toepassing indien uitlaatemissies van nul zijn vereist voor alle voertuigen in de technische specificatie TS2*\n\nEr worden punten toegekend aan offertes waarin een van het volgende wordt geboden:\n\na) een hoger percentage dan vastgesteld in TS2,\nb) auto's en bestelwagens met een gunstiger emissie dan de Euro 6-norm,\nc) voertuigen van categorie L met een gunstiger emissie dan Euro 5, of\nd) aardgasbussen en voertuigen die in staat zijn tot emissies gelijk aan nul, d.w.z. auto's en lichte bedrijfsvoertuigen met een actieradius van minimaal 50 km zonder enige uitlaatemissies, plug-in-hybridevoertuigen, batterijvoertuigen voor bussen en voertuigen van categorie L, en aardgasbussen voor bussen.\n\n*(De aanbestedende dienst werkt uit in hoeverre punten worden toegekend aan hogere percentages, betere prestaties en voertuigen met uitlaatemissies gelijk aan nul. Voertuigen met nuluitlaatemissies moeten meer punten krijgen dan voertuigen met betere prestaties dan Euro 6/5 en aardgasbussen.)*\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de technische documentatie van de voertuigen overleggen waarin de emissienormen worden omschreven. Voor voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 19"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "GC3",
+                "title": "Smeerolie, hydraulische vloeistoffen en vetten",
+                "specification": "Er worden punten toegekend aan de offertes waarin het onderhoud van de dienstvoertuigen het gebruik van het volgende omvat:\n\n• geregenereerde smeerolie, d.w.z. olie die voorkomt uit gebruikte olie die een proces heeft ondergaan waardoor de olie opnieuw een kwaliteit bereikt die geschikt is voor de oorspronkelijke toepassing;\n• hydraulische vloeistoffen en vetten waaraan geen aanduiding omtrent gezondheids- of milieugevaar verbonden was; het cumulatieve massapercentage van in de hydraulische vloeistoffen en vetten aanwezige stoffen die enerzijds niet biologisch afbreekbaar en anderzijds bioaccumuleerbaar zijn, mag niet meer dan 0,1 gewichtspercent bedragen.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de technische documentatie van de gebruikte smeermiddelen en hydraulische vloeistoffen en vetten verstrekken. Hydraulische vloeistoffen en vetten die voldoen aan het EU-milieukeur of een gelijkwaardig milieukeur van type I waarin de eisen van GC1 zijn opgenomen, worden geacht te voldoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 52"
+                }
+              }
+            ]
+          },
+          "zware_voertuigen": {
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "Technologische opties voor het beperken van broeikasgasemissies",
+                "specification": "Er worden punten toegekend aan de voertuigen die zijn uitgerust met één van de volgende technologieën:\n\n• volledig elektrische voertuigen\n• voertuigen met waterstofcel\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de technische documentatie van het voertuig overleggen, waarin deze technologieën worden vermeld.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 30"
+                }
+              },
+              {
+                "code": "GC3",
+                "title": "Verbeterde emissies van luchtverontreinigende stoffen",
+                "specification": "Er worden punten toegekend aan emissievrije voertuigen, d.w.z. voertuigen zonder interne verbrandingsmotor, of met een interne verbrandingsmotor die minder dan 1 g CO₂/kWh uitstoot zoals gemeten overeenkomstig Verordening (EG) nr. 595/2009 van het Europees Parlement.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet het certificaat van overeenstemming van het voertuig overleggen. Voor de voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 31"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "GC2",
+                "title": "Klimaatregelingsgassen",
+                "specification": "Er worden punten toegekend aan de voertuigen die zijn uitgerust met een klimaatregelingssysteem waarin een koelmiddel wordt gebruikt waarvan het aardopwarmingsvermogen (global warming potential, GWP), als factor van CO₂ en over een tijdhorizon van 100 jaar, lager is dan 150.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de naam, de formule en het GWP verstrekken van het koelgas dat in het klimaatregelingssysteem wordt gebruikt. Als wordt gebruikgemaakt van een mengsel van gassen (n aantal gassen), wordt het GWP berekend als volgt:\nGWP = Σ(stof X1 % × GWP(X1)) + (stof X2 % × GWP(X2)) + ... (stof Xn % × GWP(Xn))\nDaarbij is % de gewichtsbijdrage met een tolerantie in gewicht van ± 1 %.\n\nHet GWP van gassen is te vinden in bijlagen I en II bij Verordening (EU) nr. 517/2014",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 31"
+                }
+              },
+              {
+                "code": "GC4",
+                "title": "Elektrificatie van hulpmotoren",
+                "specification": "Er worden punten toegekend aan voertuigen die zijn uitgerust met elektrische hulpeenheden.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de technische documentatie van het voertuig overleggen, waarin deze informatie wordt vermeld.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 32"
+                }
+              },
+              {
+                "code": "GC5",
+                "title": "Lawaai van voertuigen",
+                "specification": "Er worden punten toegekend aan voertuigen waarvan de geluidsemissies voldoen aan de grenswaarden van fase 3 van Verordening (EU) nr. 540/2014. De geluidsemissies worden getest volgens de procedure die is omschreven in bijlage II bij Verordening (EU) nr. 540/2014.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet het certificaat van overeenstemming van het voertuig overleggen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 49"
+                }
+              }
+            ]
+          },
+          "wegvervoersdiensten": {
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "Technologische opties voor het beperken van broeikasgasemissies",
+                "specification": "Er worden punten toegekend aan offertes waarin het volgende wordt geboden:\n\nOptie 1: *(indien van toepassing)* op grond van de overeenkomst in te zetten wagenpark met een aandeel voertuigen (%) groter dan TS1 (zie boven), in verhouding tot het surplus boven TS1 (zie boven).\nOptie 2: *(indien van toepassing)* meer routes dan vastgesteld in TS1 (zie boven), die worden geëxploiteerd met voertuigen die voldoen aan de kerncriteria van TS1 van categorie 3.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de technische documentatie van het gehele wagenpark overleggen, waarin deze technologieën worden vermeld.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 39"
+                }
+              },
+              {
+                "code": "GC2",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification": "*Niet van toepassing indien uitlaatemissies van nul zijn vereist voor alle voertuigen in de technische specificatie TS5.*\n\nEr worden punten toegekend aan offertes waarin een van het volgende wordt geboden:\n\n(a) een hoger percentage dan vastgesteld in TS5 (zie boven),\n(b) auto's en bestelwagens met een gunstiger emissie dan de Euro 6-norm,\n(c) voertuigen van categorie L met een gunstiger emissie dan Euro 5, of\n(d) aardgasbussen en voertuigen die in staat zijn tot emissies gelijk aan nul, d.w.z. auto's en lichte bedrijfsvoertuigen met een actieradius van minimaal 50 km zonder enige uitlaatemissies, plug-in-hybridevoertuigen, batterijvoertuigen voor bussen en voertuigen van categorie L, en brandstofcelvoertuigen voor bussen.\n\n*(De aanbestedende dienst werkt uit in hoeverre punten worden toegekend aan hogere percentages, betere prestaties en voertuigen met uitlaatemissies gelijk aan nul. Voertuigen die in staat zijn tot nuluitlaatemissies moeten meer punten krijgen dan voertuigen met betere prestaties en Euro 6/5 en aardgasbussen.)*\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de technische documentatie van de voertuigen overleggen, waarin de emissienormen worden omschreven. Voor voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 39"
+                }
+              },
+              {
+                "code": "GC3",
+                "title": "Hulpeenheden",
+                "specification": "*Opmerking: dit gunningscriterium heeft betrekking op afvalinzamelingsdiensten*\n\nEr worden punten toegekend op basis van het aandeel voertuigen dat voldoet aan TS3 Hulpeenheden van categorie 3.\n\n**Bijbehorende contractuele voorwaarde**\n\nZie TS3 van categorie 3.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 40"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "GC4",
+                "title": "Geluidsemissies",
+                "specification": "Er worden punten toegekend aan offertes waarin een wagenpark wordt geboden waarvan alle voertuigen voldoen aan GC1 aangaande geluidsemissies van voertuigen, zoals vastgesteld in punt 9.2 van de gemeenschappelijke criteria voor voertuigcategorieën.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de lijst van voertuigen van het wagenpark en de bijbehorende certificaten van overeenstemming overleggen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 40"
+                }
+              },
+              {
+                "code": "GC5",
+                "title": "Smeerolie, hydraulische vloeistoffen en vetten",
+                "specification": "Er worden punten toegekend aan de offertes waarin het onderhoud van de dienstvoertuigen het gebruik van het volgende omvat:\n\n• geregenereerde smeerolie, d.w.z. olie die voorkomt uit gebruikte olie die een proces heeft ondergaan waardoor de olie opnieuw een kwaliteit bereikt die geschikt is voor de oorspronkelijke toepassing;\n• hydraulische vloeistoffen en vetten waaraan geen aanduiding omtrent gezondheids- of milieugevaar verbonden was; het cumulatieve massapercentage van in de hydraulische vloeistoffen en vetten aanwezige stoffen die enerzijds niet biologisch afbreekbaar en anderzijds bioaccumuleerbaar zijn, mag niet meer dan 0,1 gewichtspercent bedragen.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de technische documentatie van de gebruikte smeermiddelen en hydraulische vloeistoffen en vetten verstrekken. Hydraulische vloeistoffen en vetten die voldoen aan het EU-milieukeur of een gelijkwaardig milieukeur van type I waarin de eisen van GC1 zijn opgenomen, worden geacht te voldoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 52"
+                }
+              }
+            ]
+          },
+          "post_koeriers_verhuizingsdiensten": {
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "CO₂-emissies",
+                "specification": "*Alleen van toepassing op lichte bedrijfsvoertuigen en voertuigen van categorie L;*\n\nEr worden naar verhouding punten toegekend voor het deel van het wagenpark van lichte bedrijfsvoertuigen dat aan de criteria voldoet of het deel van de voertuigen dat is uitgerust met in aanmerking komende technologieën voor zware voertuigen.\n\n• Voor lichte bedrijfsvoertuigen en voertuigen van de categorie L worden naar verhouding punten toegekend voor de mate waarin het deel van het wagenpark van lichte bedrijfsvoertuigen hoger is dan het in TS1 vastgestelde deel.\n• Voor zware bedrijfsvoertuigen worden punten toegekend voor het deel van de voertuigen dat wordt aangedreven door de technologieën die in TS1 zijn opgenomen voor categorie 3 (aankoop en leasing van zware voertuigen).\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de lijst van voertuigen van het wagenpark en de bijbehorende CO₂-emissietypegoedkeuring (gestaafd met de certificaten van overeenstemming) overleggen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 46"
+                }
+              },
+              {
+                "code": "GC2",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification": "*Niet van toepassing indien uitlaatemissies van nul zijn vereist voor alle voertuigen in TS1.2*\n\nEr worden punten toegekend aan offertes waarin een van het volgende wordt geboden:\n\na) een hoger percentage dan vastgesteld in TS3,\nb) auto's en bestelwagens met een gunstiger emissie dan Euro 6,\nc) voertuigen van categorie L met een gunstiger emissie dan Euro 5, of\nd) aardgasbussen en voertuigen die in staat zijn tot emissies gelijk aan nul, hetgeen betekent auto's en lichte bedrijfsvoertuigen met een actieradius van minimaal 50 km zonder enige uitlaatemissies, plug-in-hybridevoertuigen, batterijvoertuigen voor bussen en voertuigen van categorie L, en brandstofcelvoertuigen voor bussen.\n\n*(De aanbestedende dienst werkt uit in hoeverre punten worden toegekend aan hogere percentages, betere prestaties en voertuigen met uitlaatemissies gelijk aan nul. Voertuigen met nulemissies moeten meer punten krijgen dan voertuigen met betere prestaties dan Euro 6/5 en aardgasbussen.)*\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de technische documentatie van de voertuigen overleggen, waarin de emissienormen worden omschreven. Voor voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 46"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "GC3",
+                "title": "Smeerolie, hydraulische vloeistoffen en vetten",
+                "specification": "Er worden punten toegekend aan de offertes waarin het onderhoud van de dienstvoertuigen het gebruik van het volgende omvat:\n\n• geregenereerde smeerolie, d.w.z. olie die voorkomt uit gebruikte olie die een proces heeft ondergaan waardoor de olie opnieuw een kwaliteit bereikt die geschikt is voor de oorspronkelijke toepassing;\n• hydraulische vloeistoffen en vetten waaraan geen aanduiding omtrent gezondheids- of milieugevaar verbonden was; het cumulatieve massapercentage van in de hydraulische vloeistoffen en vetten aanwezige stoffen die enerzijds niet biologisch afbreekbaar en anderzijds bioaccumuleerbaar zijn, mag niet meer dan 0,1 gewichtspercent bedragen.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de technische documentatie van de gebruikte smeermiddelen en hydraulische vloeistoffen en vetten verstrekken. Hydraulische vloeistoffen en vetten die voldoen aan het EU-milieukeur of een gelijkwaardig milieukeur van type I waarin de eisen van GC1 zijn opgenomen, worden geacht te voldoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 52"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "uitvoeringsvoorwaarden",
+      "title": "Uitvoeringsvoorwaarden",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als contractuele uitvoeringsvoorwaarden. Ze borgen dat de verplichtingen worden nagekomen. Door deze eisen expliciet in het bestek op te nemen, voldoe je aan de verplichting uit de Energie-Efficiëntierichtlijn (EED).",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "**Let op:** De kerncriteria (minimale uitvoeringsvoorwaarden) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie. De GPP bevat uitvoeringsvoorwaarden voor drie categoriën binnen wegvervoer:\n   Categorie 2: [Mobiliteitsdiensten](toggle:mobiliteitsdiensten)\n   Categorie 4: [Wegvervoersdiensten](toggle:wegvervoersdiensten)\n   Categorie 5: [Post-, koeriers- en verhuizingsdiensten](toggle:post_koeriers_verhuizingsdiensten)",
+        "Ga in de tabel hieronder na welke uitvoeringsvoorwaarden van toepassing zijn. Neem in ieder geval de kerncriteria op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "mobiliteitsdiensten",
+            "label": "🎯 Mobiliteitsdiensten",
+            "label_short": "Mobiliteitsdiensten"
+          },
+          {
+            "key": "wegvervoersdiensten",
+            "label": "🚌 Wegvervoersdiensten",
+            "label_short": "Wegvervoersdiensten"
+          },
+          {
+            "key": "post_koeriers_verhuizingsdiensten",
+            "label": "📦 Post-, koeriers- en verhuizingsdiensten",
+            "label_short": "Post-, koeriers- en verhuizingsdiensten"
+          }
+        ],
+        "default_main_tab": "mobiliteitsdiensten",
+        "data": {
+          "mobiliteitsdiensten": {
+            "core_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Opleiding van bestuurders",
+                "specification": "*Opmerking: deze contractuele uitvoeringsvoorwaarde is alleen van toepassing indien bij de dienst bestuurders zijn inbegrepen, aan wie niet de eis wordt gesteld van een getuigschrift van vakbekwaamheid als bestuurder overeenkomstig Richtlijn 2003/59/EG.*\n\nAlle bestuurders die gedurende de looptijd van de overeenkomst bij het verlenen van de dienst zijn betrokken, moeten met het oog op betere brandstofefficiëntie op gezette tijden in een erkende instelling worden opgeleid aangaande milieubewust rijden.\n\nAan alle nieuwe medewerkers die onder de overeenkomst werken, moet binnen vier weken na aanvang van het dienstverband voldoende opleiding, met een minimale tijdsduur van 16 uur, worden verstrekt, en aan alle overige medewerkers moet ten minste één keer per jaar een actualisatie aangaande bovenstaande punten worden verstrekt, met een minimale tijdsduur van 4 uur.\n\nDe dienstverlener moet jaarlijks aan de aanbestedende dienst de hoeveelheid uren en het onderwerp van de opleiding documenteren en rapporteren die wordt verstrekt aan elke medewerker die werkzaamheden in het kader van de overeenkomst verricht.\n\nAlle bestuurders die gedurende de looptijd van de overeenkomst bij het verlenen van de dienst zijn betrokken, moeten regelmatig (ten minste een keer per maand) informatie ontvangen aangaande de door hen bereikte brandstofefficiëntie.\n\nDe jaargegevens omtrent opleiding van medewerkers moeten voor verificatiedoeleinden beschikbaar worden gesteld aan de aanbestedende dienst.\n\nDe aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 53"
+                }
+              },
+              {
+                "code": "CUV2",
+                "title": "Opleiding van bestuurders",
+                "specification": "Tijdens de looptijd van de overeenkomst documenteert en rapporteert de dienstverlener de resultaten van:\n\n• de controle van indicatoren, en\n• de evaluatie en van de correctieve en preventieve maatregelen, indien van toepassing.\n\nDit gebeurt in overeenstemming met de schriftelijke procedures die zijn verstrekt voor het controleren van de milieubeheermaatregelen TS1.\n\nDeze verslagen worden voor verificatiedoeleinden beschikbaar gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving en het toekennen van bonussen bij het ruimschoots voldoen aan de doelstellingen van het emissiereductieplan.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 53"
+                }
+              },
+              {
+                "code": "CUV3",
+                "title": "Smeerolie met lage viscositeit",
+                "specification": "Tenzij de fabrikant van het voertuig een ander type smeermiddel aanbeveelt, moet de contractant de smeermiddelen van de voertuigen waarmee de dienst wordt verlened, vervangen door motorsmeerolie met lage viscositeit. Deze komen overeen met SAE-klasse 0W30 of 5W30 of gelijkwaardig.\n\nDe gegevens over de gebruikte smeermiddelen worden door de contractant bijgehouden en beschikbaar gesteld aan de aanbestedende dienst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 53"
+                }
+              },
+              {
+                "code": "CUV4",
+                "title": "Voertuigbanden — rolweerstand",
+                "specification": "De voertuigen moeten zijn uitgerust met banden die beantwoorden aan geval a) of b) hieronder:\n\na) banden\n\n• die goed zijn aangepast aan het beoogde gebruik, de beoogde weersomstandigheden en de montagepositie op voertuigen van de typen N2, N3, O3 en O4, en\n• die voldoen aan de hoogste brandstofrendementskiasse voor rolweerstand uitgedrukt, zoals omschreven in Verordening (EU) 2020/740 van het Europees Parlement en de Raad van 25 mei 2020 inzake de etikettering van banden met betrekking tot hun brandstofefficiëntie en andere essentiële parameters, en\n• die voldoen aan hetzij klasse \"A\", hetzij klasse \"B\" voor grip op nat wegdek, zoals gedefinieerd in diezelfde verordening en in overeenstemming met artikel 11, lid 2, van die verordening;\n\nOF\n\nb) van een nieuw loopvlak voorziene banden (coverbanden).\n\nDe gegevens over de gebruikte banden worden door de contractant bijgehouden en beschikbaar gesteld aan de aanbestedende dienst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 54"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "CUV5",
+                "title": "Voertuigbanden — rolweerstand",
+                "specification": "De contractant moet de versleten banden van de voertuigen waarmee de dienst wordt verleend, vervangen door hetzij:\n\na) nieuwe banden waarvan het externe emissieniveau van het rolgeluid tot de klasse \"A\" behoort, zoals omschreven in Verordening (EU) 2020/740 van het Europees Parlement en de Raad van 25 mei 2020 inzake de etikettering van banden met betrekking tot hun brandstofefficiëntie en andere essentiële parameters,\n\nhetzij\n\nb) van een nieuw loopvlak voorziene banden (coverbanden).\n\nHet externe geluidsniveau van het rolgeluid van het bandmodel moet zijn getest overeenkomstig de in bijlage I bij Verordening (EU) 2020/740 beschreven procedure.\n\nDe gegevens over de vervanging van versleten banden worden door de contractant bijgehouden en beschikbaar gesteld aan de aanbestedende dienst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 55"
+                }
+              }
+            ]
+          },
+          "wegvervoersdiensten": {
+            "core_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Opleiding van bestuurders",
+                "specification": "*Opmerking: deze contractuele uitvoeringsvoorwaarde is alleen van toepassing indien bij de dienst bestuurders zijn inbegrepen, aan wie niet de eis wordt gesteld van een getuigschrift van vakbekwaamheid als bestuurder overeenkomstig Richtlijn 2003/59/EG.*\n\nAlle bestuurders die gedurende de looptijd van de overeenkomst bij het verlenen van de dienst zijn betrokken, moeten met het oog op betere brandstofefficiëntie op gezette tijden in een erkende instelling worden opgeleid aangaande milieubewust rijden.\n\nAan alle nieuwe medewerkers die onder de overeenkomst werken, moet binnen vier weken na aanvang van het dienstverband voldoende opleiding, met een minimale tijdsduur van 16 uur, worden verstrekt, en aan alle overige medewerkers moet ten minste één keer per jaar een actualisatie aangaande bovenstaande punten worden verstrekt, met een minimale tijdsduur van 4 uur.\n\nDe dienstverlener moet jaarlijks aan de aanbestedende dienst de hoeveelheid uren en het onderwerp van de opleiding documenteren en rapporteren die wordt verstrekt aan elke medewerker die werkzaamheden in het kader van de overeenkomst verricht.\n\nAlle bestuurders die gedurende de looptijd van de overeenkomst bij het verlenen van de dienst zijn betrokken, moeten regelmatig (ten minste een keer per maand) informatie ontvangen aangaande de door hen bereikte brandstofefficiëntie.\n\nDe jaargegevens omtrent opleiding van medewerkers moeten voor verificatiedoeleinden beschikbaar worden gesteld aan de aanbestedende dienst.\n\nDe aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 53"
+                }
+              },
+              {
+                "code": "CUV2",
+                "title": "Opleiding van bestuurders",
+                "specification": "Tijdens de looptijd van de overeenkomst documenteert en rapporteert de dienstverlener de resultaten van:\n\n• de controle van indicatoren, en\n• de evaluatie en van de correctieve en preventieve maatregelen, indien van toepassing.\n\nDit gebeurt in overeenstemming met de schriftelijke procedures die zijn verstrekt voor het controleren van de milieubeheermaatregelen TS1.\n\nDeze verslagen worden voor verificatiedoeleinden beschikbaar gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving en het toekennen van bonussen bij het ruimschoots voldoen aan de doelstellingen van het emissiereductieplan.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 53"
+                }
+              },
+              {
+                "code": "CUV3",
+                "title": "Smeerolie met lage viscositeit",
+                "specification": "Tenzij de fabrikant van het voertuig een ander type smeermiddel aanbeveelt, moet de contractant de smeermiddelen van de voertuigen waarmee de dienst wordt verlened, vervangen door motorsmeerolie met lage viscositeit. Deze komen overeen met SAE-klasse 0W30 of 5W30 of gelijkwaardig.\n\nDe gegevens over de gebruikte smeermiddelen worden door de contractant bijgehouden en beschikbaar gesteld aan de aanbestedende dienst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 53"
+                }
+              },
+              {
+                "code": "CUV4",
+                "title": "Voertuigbanden — rolweerstand",
+                "specification": "De voertuigen moeten zijn uitgerust met banden die beantwoorden aan geval a) of b) hieronder:\n\na) banden\n\n• die goed zijn aangepast aan het beoogde gebruik, de beoogde weersomstandigheden en de montagepositie op voertuigen van de typen N2, N3, O3 en O4, en\n• die voldoen aan de hoogste brandstofrendementskiasse voor rolweerstand uitgedrukt, zoals omschreven in Verordening (EU) 2020/740 van het Europees Parlement en de Raad van 25 mei 2020 inzake de etikettering van banden met betrekking tot hun brandstofefficiëntie en andere essentiële parameters, en\n• die voldoen aan hetzij klasse \"A\", hetzij klasse \"B\" voor grip op nat wegdek, zoals gedefinieerd in diezelfde verordening en in overeenstemming met artikel 11, lid 2, van die verordening;\n\nOF\n\nb) van een nieuw loopvlak voorziene banden (coverbanden).\n\nDe gegevens over de gebruikte banden worden door de contractant bijgehouden en beschikbaar gesteld aan de aanbestedende dienst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 54"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "CUV5",
+                "title": "Voertuigbanden — rolweerstand",
+                "specification": "De contractant moet de versleten banden van de voertuigen waarmee de dienst wordt verleend, vervangen door hetzij:\n\na) nieuwe banden waarvan het externe emissieniveau van het rolgeluid tot de klasse \"A\" behoort, zoals omschreven in Verordening (EU) 2020/740 van het Europees Parlement en de Raad van 25 mei 2020 inzake de etikettering van banden met betrekking tot hun brandstofefficiëntie en andere essentiële parameters,\n\nhetzij\n\nb) van een nieuw loopvlak voorziene banden (coverbanden).\n\nHet externe geluidsniveau van het rolgeluid van het bandmodel moet zijn getest overeenkomstig de in bijlage I bij Verordening (EU) 2020/740 beschreven procedure.\n\nDe gegevens over de vervanging van versleten banden worden door de contractant bijgehouden en beschikbaar gesteld aan de aanbestedende dienst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 55"
+                }
+              }
+            ]
+          },
+          "post_koeriers_verhuizingsdiensten": {
+            "core_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Opleiding van bestuurders",
+                "specification": "*Opmerking: deze contractuele uitvoeringsvoorwaarde is alleen van toepassing indien bij de dienst bestuurders zijn inbegrepen, aan wie niet de eis wordt gesteld van een getuigschrift van vakbekwaamheid als bestuurder overeenkomstig Richtlijn 2003/59/EG.*\n\nAlle bestuurders die gedurende de looptijd van de overeenkomst bij het verlenen van de dienst zijn betrokken, moeten met het oog op betere brandstofefficiëntie op gezette tijden in een erkende instelling worden opgeleid aangaande milieubewust rijden.\n\nAan alle nieuwe medewerkers die onder de overeenkomst werken, moet binnen vier weken na aanvang van het dienstverband voldoende opleiding, met een minimale tijdsduur van 16 uur, worden verstrekt, en aan alle overige medewerkers moet ten minste één keer per jaar een actualisatie aangaande bovenstaande punten worden verstrekt, met een minimale tijdsduur van 4 uur.\n\nDe dienstverlener moet jaarlijks aan de aanbestedende dienst de hoeveelheid uren en het onderwerp van de opleiding documenteren en rapporteren die wordt verstrekt aan elke medewerker die werkzaamheden in het kader van de overeenkomst verricht.\n\nAlle bestuurders die gedurende de looptijd van de overeenkomst bij het verlenen van de dienst zijn betrokken, moeten regelmatig (ten minste een keer per maand) informatie ontvangen aangaande de door hen bereikte brandstofefficiëntie.\n\nDe jaargegevens omtrent opleiding van medewerkers moeten voor verificatiedoeleinden beschikbaar worden gesteld aan de aanbestedende dienst.\n\nDe aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 53"
+                }
+              },
+              {
+                "code": "CUV2",
+                "title": "Opleiding van bestuurders",
+                "specification": "Tijdens de looptijd van de overeenkomst documenteert en rapporteert de dienstverlener de resultaten van:\n\n• de controle van indicatoren, en\n• de evaluatie en van de correctieve en preventieve maatregelen, indien van toepassing.\n\nDit gebeurt in overeenstemming met de schriftelijke procedures die zijn verstrekt voor het controleren van de milieubeheermaatregelen TS1.\n\nDeze verslagen worden voor verificatiedoeleinden beschikbaar gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving en het toekennen van bonussen bij het ruimschoots voldoen aan de doelstellingen van het emissiereductieplan.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 53"
+                }
+              },
+              {
+                "code": "CUV3",
+                "title": "Smeerolie met lage viscositeit",
+                "specification": "Tenzij de fabrikant van het voertuig een ander type smeermiddel aanbeveelt, moet de contractant de smeermiddelen van de voertuigen waarmee de dienst wordt verlened, vervangen door motorsmeerolie met lage viscositeit. Deze komen overeen met SAE-klasse 0W30 of 5W30 of gelijkwaardig.\n\nDe gegevens over de gebruikte smeermiddelen worden door de contractant bijgehouden en beschikbaar gesteld aan de aanbestedende dienst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 53"
+                }
+              },
+              {
+                "code": "CUV4",
+                "title": "Voertuigbanden — rolweerstand",
+                "specification": "De voertuigen moeten zijn uitgerust met banden die beantwoorden aan geval a) of b) hieronder:\n\na) banden\n\n• die goed zijn aangepast aan het beoogde gebruik, de beoogde weersomstandigheden en de montagepositie op voertuigen van de typen N2, N3, O3 en O4, en\n• die voldoen aan de hoogste brandstofrendementskiasse voor rolweerstand uitgedrukt, zoals omschreven in Verordening (EU) 2020/740 van het Europees Parlement en de Raad van 25 mei 2020 inzake de etikettering van banden met betrekking tot hun brandstofefficiëntie en andere essentiële parameters, en\n• die voldoen aan hetzij klasse \"A\", hetzij klasse \"B\" voor grip op nat wegdek, zoals gedefinieerd in diezelfde verordening en in overeenstemming met artikel 11, lid 2, van die verordening;\n\nOF\n\nb) van een nieuw loopvlak voorziene banden (coverbanden).\n\nDe gegevens over de gebruikte banden worden door de contractant bijgehouden en beschikbaar gesteld aan de aanbestedende dienst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 54"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "CUV5",
+                "title": "Voertuigbanden — rolweerstand",
+                "specification": "De contractant moet de versleten banden van de voertuigen waarmee de dienst wordt verleend, vervangen door hetzij:\n\na) nieuwe banden waarvan het externe emissieniveau van het rolgeluid tot de klasse \"A\" behoort, zoals omschreven in Verordening (EU) 2020/740 van het Europees Parlement en de Raad van 25 mei 2020 inzake de etikettering van banden met betrekking tot hun brandstofefficiëntie en andere essentiële parameters,\n\nhetzij\n\nb) van een nieuw loopvlak voorziene banden (coverbanden).\n\nHet externe geluidsniveau van het rolgeluid van het bandmodel moet zijn getest overeenkomstig de in bijlage I bij Verordening (EU) 2020/740 beschreven procedure.\n\nDe gegevens over de vervanging van versleten banden worden door de contractant bijgehouden en beschikbaar gesteld aan de aanbestedende dienst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor wegtransport. Pag. 55"
+                }
+              }
+            ]
+          }
+        }
+      }
     }
   ]
 }
