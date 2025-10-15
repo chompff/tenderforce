@@ -1,7 +1,7 @@
 {
   "obligation_id": "gpp-road-transport",
   "archetype": "GPP",
-  "title": "EU GPP criteria of nationaal gelijkwaardig",
+  "title": "Verplichtingen onder EU GPP óf nationaal gelijkwaardig",
   "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de EU-criteria inzake groene overheidsopdrachten voor wegvervoer toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
   "badges": ["GPP", "NL", "EU"],
   "colors": {
@@ -16,6 +16,11 @@
       "label": "Richtlijn (EU) 2023/1791",
       "citation": "Richtlijn (EU) 2023/1791, artikel 5",
       "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32023L1791"
+    },
+    {
+      "label": "EU-criteria inzake groene overheidsopdrachten voor wegvervoer",
+      "citation": "EU GPP criteria voor wegvervoer",
+      "url": "https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/5ec44de1-19bf-4c1e-8e73-3884469605e5/details"
     }
   ],
   "sections": [
