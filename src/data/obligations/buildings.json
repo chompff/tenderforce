@@ -48,7 +48,6 @@
       "key": "technical_specs",
       "title": "Technische specificaties",
       "requirement_level": "verplicht",
-      "badges": ["GEBOUWEN"],
       "intro": "Het aan te kopen of te huren gebouw moet voldoen aan de eisen BENG, ofwewel Bijna Energie Neutraal Gebouw. De energieprestatie bij [BENG](https://www.rvo.nl/onderwerpen/wetten-en-regels-gebouwen/beng) wordt bepaald aan de hand van 3 individueel te behalen eisen:\n1. de maximale energiebehoefte in kWh per m2 gebruiksoppervlak per jaar (kWh/m2.jr)\n2. het maximale primair fossiel energiegebruik, eveneens in kWh per m2 gebruiksoppervlak per jaar (kWh/m2.jr)\n3. het minimale aandeel hernieuwbare energie in procenten (%)",
       "warnings": [
         {
@@ -72,7 +71,6 @@
       "key": "execution_conditions",
       "title": "Uitvoeringsvoorwaarden",
       "requirement_level": "verplicht",
-      "badges": ["GEBOUWEN"],
       "intro": "De BENG-eisen dekken de energieprestatie-inhoud af, maar er zijn aanvullende verplichtingen uit Nederlandse en Europese regelgeving die bij uitvoering en oplevering spelen.",
       "warnings": [
         {

@@ -26,7 +26,6 @@
       "key": "execution_conditions",
       "title": "Uitvoeringsvoorwaarden",
       "requirement_level": "verplicht",
-      "badges": ["DIENSTEN"],
       "intro": "De uitvoeringsvoorwaarden bepalen hoe de opdrachtnemer tijdens de uitvoering moet aantonen dat hij aan de EED-verplichting voldoet. Omdat de verplichting alleen geldt bij de aanschaf van nieuwe producten, moeten controle- en meldplichten specifiek daarop gericht zijn.",
       "warnings": [
         {

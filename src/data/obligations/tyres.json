@@ -36,7 +36,6 @@
       "key": "technical_specs",
       "title": "Technische specificaties",
       "requirement_level": "verplicht",
-      "badges": ["BANDEN"],
       "intro": "Bij de aankoop van voertuigen of banden (categorie C1, C2 of C3) moet de aanbestedende dienst nagaan of de banden – afzonderlijk of gemonteerd onder het voertuig – voldoen aan de etiketteringsverplichtingen van Verordening (EU) 2020/740. De verplichting ziet dus zowel op de rechtstreekse inkoop van banden als op de controle van de banden die bij de levering van een voertuig zijn gemonteerd.\n\nU mag hiervan alleen afwijken wanneer dat nodig is om redenen van veiligheid of volksgezondheid, bijvoorbeeld om banden te kiezen met betere grip op nat wegdek of minder rolgeluid.",
       "warnings": [
         {
@@ -62,7 +61,6 @@
       "key": "geschiktheidseisen",
       "title": "Geschiktheidseisen",
       "requirement_level": "verplicht",
-      "badges": ["BANDEN"],
       "intro": "Deze eis zorgt ervoor dat alleen leveranciers deelnemen die producten aanbieden die conform Europese regelgeving zijn geregistreerd en geëtiketteerd.",
       "warnings": [
         {
@@ -87,7 +85,6 @@
       "key": "execution_conditions",
       "title": "Uitvoeringsvoorwaarden",
       "requirement_level": "verplicht",
-      "badges": ["BANDEN"],
       "intro": "De uitvoeringsvoorwaarden bepalen hoe de opdrachtnemer tijdens de uitvoering moet aantonen dat hij aan de EED-verplichting voldoet.",
       "warnings": [
         {

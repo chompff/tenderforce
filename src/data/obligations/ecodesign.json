@@ -21,7 +21,6 @@
       "key": "technical_specs",
       "title": "Technische specificaties",
       "requirement_level": "verplicht",
-      "badges": ["ECODESIGN"],
       "intro": "U bent verplicht te voldoen aan de geldende Ecodesign vereisten. Deze eisen zijn vastgelegd in verschillende product-specifieke (uitvoerings)verordeningen.",
       "warnings": [
         {
@@ -76,7 +75,6 @@
       "key": "execution_conditions",
       "title": "Uitvoeringsvoorwaarden",
       "requirement_level": "optioneel",
-      "badges": ["ECODESIGN"],
       "intro": "Aanbestedende diensten zijn verplicht te voldoen aan de geldende ecodesign vereisten. Omdat de daadwerkelijke controle plaatsvindt bij de levering, moet dit via contractuele voorwaarden geborgd worden.",
       "warnings": [
         {
