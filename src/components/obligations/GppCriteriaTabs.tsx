@@ -217,6 +217,24 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
   const currentSpecs = data[mainTab]?.[subTab] || [];
   const currentMainTab = mainTabs.find(t => t.key === mainTab);
 
+  // Check which tabs have content for the current main tab
+  const hasCoreCriteria = data[mainTab]?.core_criteria && data[mainTab].core_criteria.length > 0;
+  const hasExtendedCriteria = data[mainTab]?.extended_criteria && data[mainTab].extended_criteria.length > 0;
+
+  // Filter visible sub-tabs based on available content
+  const visibleSubTabs = subTabs.filter(tab => {
+    if (tab.key === 'core_criteria') return hasCoreCriteria;
+    if (tab.key === 'extended_criteria') return hasExtendedCriteria;
+    return true;
+  });
+
+  // Auto-switch to first available tab if current tab is not visible
+  React.useEffect(() => {
+    if (visibleSubTabs.length > 0 && !visibleSubTabs.find(t => t.key === subTab)) {
+      setSubTab(visibleSubTabs[0].key);
+    }
+  }, [mainTab, visibleSubTabs, subTab]);
+
   return (
     <div className="space-y-4">
       {/* Main tabs - Product categories */}
@@ -236,20 +254,28 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
         {/* Sub tabs - Core/Extended criteria */}
         <div className="mt-4">
           <div className="flex items-center gap-4 mb-4">
-            {subTabs.map((tab) => (
-              <button
-                key={tab.key}
-                onClick={() => setSubTab(tab.key)}
-                className={`flex items-center gap-2 px-3 py-1.5 rounded text-sm transition-colors ${
-                  subTab === tab.key
-                    ? 'bg-gray-100 font-semibold'
-                    : 'text-gray-600 hover:bg-gray-50'
-                }`}
-              >
-                <div className={`w-2.5 h-2.5 rounded-full ${tab.color}`} />
-                {tab.label}
-              </button>
-            ))}
+            {subTabs.map((tab) => {
+              // Check if this tab has content
+              const hasContent = tab.key === 'core_criteria' ? hasCoreCriteria : hasExtendedCriteria;
+
+              // Don't render the tab if it has no content
+              if (!hasContent) return null;
+
+              return (
+                <button
+                  key={tab.key}
+                  onClick={() => setSubTab(tab.key)}
+                  className={`flex items-center gap-2 px-3 py-1.5 rounded text-sm transition-colors ${
+                    subTab === tab.key
+                      ? 'bg-gray-100 font-semibold'
+                      : 'text-gray-600 hover:bg-gray-50'
+                  }`}
+                >
+                  <div className={`w-2.5 h-2.5 rounded-full ${tab.color}`} />
+                  {tab.label}
+                </button>
+              );
+            })}
           </div>
 
           {/* Content */}

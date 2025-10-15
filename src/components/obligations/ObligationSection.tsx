@@ -138,24 +138,6 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                       }
                       return null;
                     })}
-                    {showGppBadge && (
-                      <>
-                        <Badge
-                          variant="outline"
-                          className="text-xs px-2 py-0.5"
-                          style={{ backgroundColor: '#4A9400', color: '#FFFFFF', borderColor: '#4A9400' }}
-                        >
-                          MVI
-                        </Badge>
-                        <Badge
-                          variant="outline"
-                          className="text-xs px-2 py-0.5"
-                          style={{ backgroundColor: '#3E6B3A', color: '#FFFFFF', borderColor: '#3E6B3A' }}
-                        >
-                          GPP
-                        </Badge>
-                      </>
-                    )}
                     <Badge
                       variant="outline"
                       className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}
@@ -166,24 +148,6 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                 )}
                 {section.key === 'gunningscriteria' && (
                   <>
-                    {showGppBadge && (
-                      <>
-                        <Badge
-                          variant="outline"
-                          className="text-xs px-2 py-0.5"
-                          style={{ backgroundColor: '#4A9400', color: '#FFFFFF', borderColor: '#4A9400' }}
-                        >
-                          MVI
-                        </Badge>
-                        <Badge
-                          variant="outline"
-                          className="text-xs px-2 py-0.5"
-                          style={{ backgroundColor: '#3E6B3A', color: '#FFFFFF', borderColor: '#3E6B3A' }}
-                        >
-                          GPP
-                        </Badge>
-                      </>
-                    )}
                     <Badge
                       variant="outline"
                       className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}
@@ -272,15 +236,6 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                       }
                       return null;
                     })}
-                    {showGppBadge && (
-                      <Badge
-                        variant="outline"
-                        className="text-xs px-2 py-0.5"
-                        style={{ backgroundColor: '#DCFCE7', color: '#166534', borderColor: '#DCFCE7' }}
-                      >
-                        GPP
-                      </Badge>
-                    )}
                     <Badge
                       variant="outline"
                       className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}

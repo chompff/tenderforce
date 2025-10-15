@@ -1,9 +1,9 @@
 {
   "obligation_id": "gpp-furniture",
   "archetype": "GPP",
-  "title": "EU GPP criteria of nationaal gelijkwaardig",
+  "title": "Verplichtingen onder EU GPP óf nationaal gelijkwaardig",
   "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de [EU-criteria inzake groene overheidsopdrachten voor meubilair](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/743867db-6635-4500-b042-d969300ad570/details) toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
-  "badges": ["MVI", "GPP", "EED", "EU", "NL"],
+  "badges": ["GPP", "NL", "EU"],
   "warnings": [],
   "footer_warnings": [],
   "legal_references": [

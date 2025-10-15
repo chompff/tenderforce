@@ -15,6 +15,7 @@ export const LegalBasisPopup: React.FC<LegalBasisPopupProps> = ({
   legalReference,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [positionAbove, setPositionAbove] = useState(false);
   const popupRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
@@ -37,6 +38,23 @@ export const LegalBasisPopup: React.FC<LegalBasisPopupProps> = ({
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
+  }, [isOpen]);
+
+  // Check if there's enough space below the button
+  useEffect(() => {
+    if (isOpen && buttonRef.current && popupRef.current) {
+      const buttonRect = buttonRef.current.getBoundingClientRect();
+      const popupHeight = popupRef.current.offsetHeight;
+      const spaceBelow = window.innerHeight - buttonRect.bottom;
+      const spaceAbove = buttonRect.top;
+
+      // If not enough space below but more space above, position above
+      if (spaceBelow < popupHeight && spaceAbove > spaceBelow) {
+        setPositionAbove(true);
+      } else {
+        setPositionAbove(false);
+      }
+    }
   }, [isOpen]);
 
   const parseMarkdown = (text: string) => {
@@ -90,8 +108,10 @@ export const LegalBasisPopup: React.FC<LegalBasisPopupProps> = ({
       {isOpen && (
         <div
           ref={popupRef}
-          className="absolute z-50 w-[400px] mt-2 bg-white rounded-lg shadow-xl border border-gray-200 p-4 left-0"
-          style={{ top: '100%' }}
+          className={`absolute z-50 w-[400px] max-h-[80vh] overflow-y-auto bg-white rounded-lg shadow-xl border border-gray-200 p-4 left-0 ${
+            positionAbove ? 'mb-2' : 'mt-2'
+          }`}
+          style={positionAbove ? { bottom: '100%' } : { top: '100%' }}
         >
           {/* Header */}
           <div className="flex items-start gap-3 mb-3">

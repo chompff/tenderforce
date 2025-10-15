@@ -1,9 +1,9 @@
 {
   "obligation_id": "gpp-textiles",
   "archetype": "GPP",
-  "title": "EU GPP criteria of nationaal gelijkwaardig",
-  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de EU-criteria inzake groene overheidsopdrachten voor textiel toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
-  "badges": ["MVI", "GPP", "EED", "EU", "NL"],
+  "title": "Verplichtingen onder EU GPP óf nationaal gelijkwaardig",
+  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de [EU-criteria inzake groene overheidsopdrachten voor textiel](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/0b8b8349-5a46-4399-bcb2-3b90e4a73279/details) toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
+  "badges": ["GPP", "NL", "EU"],
   "warnings": [],
   "footer_warnings": [],
   "legal_references": [
@@ -15,23 +15,496 @@
   ],
   "sections": [
     {
-      "key": "technical_specs",
-      "title": "Technische specificaties",
+      "key": "selection_criteria",
+      "title": "Selectiecriteria",
       "requirement_level": "verplicht",
-      "intro": "De GPP criteria voor textiel zijn nog in ontwikkeling. Deze module bevat voorlopig placeholder content.",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als selectiecriteria. Het doel is te waarborgen dat alleen leveranciers met aantoonbare kennis, middelen en procedures in aanmerking komen voor deelname.",
       "warnings": [
         {
-          "severity": "yellow",
-          "text": "Let op: De inhoud van deze module is nog niet compleet. De definitieve GPP criteria worden later toegevoegd."
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale selectiecriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
         }
       ],
       "steps": [
-        "Raadpleeg de EU GPP criteria voor textiel wanneer deze beschikbaar komen.",
-        "Vergelijk met de Nederlandse MVI criteria op www.mvicriteria.nl.",
-        "Neem de strengste criteria op in uw aanbestedingsdocumenten."
+        "Kies welk type opdracht het betreft. De GPP onderscheidt twee soorten:\n   A. Textielproducten\n   B. Textieldiensten",
+        "Ga in de tabel hieronder na welke selectiecriteria van toepassing zijn.",
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
       ],
       "steps_ordered": true,
-      "example_texts": []
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "textielproducten",
+            "label": "📋 Textielproducten",
+            "label_short": "Textielproducten"
+          },
+          {
+            "key": "textieldiensten",
+            "label": "🧺 Textieldiensten",
+            "label_short": "Textieldiensten"
+          }
+        ],
+        "default_main_tab": "textielproducten",
+        "data": {
+          "textielproducten": {
+            "core_criteria": [],
+            "extended_criteria": [
+              {
+                "code": "SC1",
+                "title": "Leveranciers van textielproducten",
+                "specification": "De inschrijvers moeten kunnen aantonen over welke hulpbronnen, expertise, gedocumenteerde procedures en managementsystemen zij beschikken om de volgende aspecten van het product en zijn toeleveringsketen aan te pakken:\n\n**Oorsprong van de textielvezel:**\nSystemen voor het traceren van de oorsprong, samenstelling en productiesystemen van natuurlijke en synthetische vezels waarvoor milieucriteria van toepassing zijn. Dit omvat certificaten en traceerbaarheid waarmee de oorsprong gecontroleerd en getraceerd kan worden van de grondstoffen die gebruikt worden voor de productie en verwerking van garen en ongebleekte stof. Hiervoor kunnen eventueel certificaten van derden met betrekking tot oorsprong en traceerbaarheid worden gebruikt.\n\n**Beheer van chemische stoffen:**\nDe invoering van een beperkte lijst met chemicaliën, inclusief communicatie van de lijst aan kleur-, druk- en afwerkingsvestigingen, monitoring van de conformiteit van de productievestigingen (voor zover relevant voor criterium P.3.2) en monitoring van de conformiteit van de eindproducten (voor zover relevant voor criterium P.3.1), inclusief het testen in laboratoria.\n\nVerder zijn vereist: inspecteurs die vestigingen bezoeken, regelingen voor de conformiteit van de textielproducten, en laboratoria die producten testen in overeenstemming met internationale normen (bv. ISO 17025, ISO 17065, ISO 19011 of gelijkwaardig).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 11"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten de systemen en capaciteiten beschrijven waarover zij beschikken voor het monitoren en controleren van de oorsprong van de textielvezels en het beheer van de chemische stoffen.\n\nDaarnaast moeten zij de documentatie-, audit- en analysemethoden beschrijven die worden gebruikt voor het monitoren van de conformiteit van de leveranciers en het eindproduct.\n\nDe aankooptmethodes en expertise die worden gebruikt om de conformiteit te beheren, moeten bevestigd worden. Er moeten relevante voorbeelden uit voorgaande contracten voor de levering van textielproducten worden verstrekt om aan te tonen hoe deze twee aspecten beheerd en gecontroleerd zijn."
+                }
+              }
+            ]
+          },
+          "textieldiensten": {
+            "core_criteria": [
+              {
+                "code": "SC1",
+                "title": "Leveranciers van textieldiensten",
+                "specification": "De inschrijvers moeten kunnen aantonen over welke hulpbronnen, expertise, gedocumenteerde procedures en beheerssystemen zij beschikken om de volgende aspecten van de te leveren diensten aan te pakken:\n\n*(Te selecteren naargelang van toepassing voor de inschrijving):*\n\n**Voor onderhoudsdiensten:**\n• De implementatie van systemen voor middelenbeheer voor textielvoorraden. Hierdoor worden gegevens en feedback van eindgebruikers over de staat en levensduur van textielproducten op continue basis verzameld. Deze systemen worden actief gebruikt om frequentie en oorzaken van problemen bij stoffen en kleding te identificeren.\n• Het beheer van diensten om kleding en stoffen te repareren en te handhaven, met het oog op een maximale levensduur.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 27"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten bevestigen dat zij over de vereiste systemen en capaciteiten beschikken. Er moeten relevante voorbeelden uit voorgaande contracten verzameld worden.\n\nVerder moeten zij de interne aankooptdienst, beheerssystemen en infrastructuur beschrijven die gebruikt zullen worden om de conformiteit te beheren en de diensten te leveren.\n\nWaar dat nodig wordt geacht, behoudt de aanbestedende dienst zich het recht voor om vestigingen te bezoeken en inspecties te doen, of om derden te vragen inspecties uit te voeren, om de capaciteiten van de inschrijver te bevestigen."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "SC1",
+                "title": "Leveranciers van textieldiensten",
+                "specification": "De inschrijvers moeten kunnen aantonen over welke hulpbronnen, expertise, gedocumenteerde procedures en beheerssystemen zij beschikken om de volgende aspecten van de te leveren diensten aan te pakken:\n\n*(Te selecteren naargelang van toepassing voor de inschrijving)*\n\n**Voor wasdiensten:**\nIn wasserijen de implementatie van energiebeheersystemen conform ISO 50001 of gelijkwaardig, met inbegrip van:\n• Personeelsopleiding en sensibiliseringsprogramma's in iedere vestiging;\n• Uitrusting en procedures in iedere vestiging om de energie-efficiëntie van de processen te maximaliseren;\n• Individuele bemetering die beheer en rapportering mogelijk maakt m.b.t. specifiek energieverbruik voor de wasprocessen en de soorten textiel die in elke vestiging behandeld worden (bv. elektriciteit, gasvormige en vloeibare brandstoffen, uitgedrukt in kWh per kg verwerkt textiel, toegewezen aan processen voor flatwear of werkkleding).\n\n**Voor onderhoudsdiensten:**\n• De implementatie van systemen voor middelenbeheer voor textielvoorraden. Hierdoor kunnen gegevens en feedback van eindgebruikers over de staat en levensduur van textielproducten op continue basis verzameld worden. Deze systemen worden actief gebruikt om de frequentie en oorzaken van problemen bij stoffen en kleding te identificeren.\n• Het beheer van diensten om kleding en stoffen te repareren en te handhaven, met het oog op een maximale levensduur.\n\n**Voor terugnamediensten (beheer aan het einde van de levenscyclus):**\n• De implementatie van systemen voor middelenbeheer en infrastructuur die de opsplitsing in verschillende specifieke stromen ondersteunen, evenals de opslag en verkoop van textielproducten om hergebruik en recycling te maximaliseren.\n• De levering van ontwerpadvies aan aanbestedende diensten om hergebruik en recycling te vergemakkelijken. Ook het verschaffen van opleiding aan werknemers van de aanbestedende dienst over hoe textiel aan het einde van de levenscyclus moet worden gescheiden.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 10 - Pag. 27"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten bevestigen dat zij over de vereiste systemen en capaciteiten beschikken. Er moeten relevante voorbeelden uit eerdere contracten verzameld worden.\n\nVerder moeten zij de interne aankooptdienst, beheerssystemen en infrastructuur beschrijven die gebruikt zullen worden om de conformiteit te beheren en de diensten te leveren.\n\nWaar dat nodig wordt geacht, behoudt de aanbestedende dienst zich het recht voor vestigingen te bezoeken en inspecties te doen, of om derden te vragen inspecties uit te voeren om de capaciteiten van de inschrijver te bevestigen."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als technische specificaties. Ze vormen de ondergrens waaraan geleverd meubilair moet voldoen. Door deze eisen expliciet in het bestek op te nemen, voldoe je aan de verplichting uit de Energie-Efficiëntierichtlijn (EED).",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale technische specificaties) uit de EU GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn dient u deze op te nemen."
+        }
+      ],
+      "steps": [
+        "Kies welk type opdracht het betreft. De GPP onderscheidt twee soorten:\n   A. Textielproducten\n   B. Textieldiensten",
+        "Ga in de tabel hieronder na welke technische specificaties van toepassing zijn.",
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit sterkere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "textielproducten",
+            "label": "📋 Textielproducten",
+            "label_short": "Textielproducten"
+          },
+          {
+            "key": "textieldiensten",
+            "label": "🧺 Textieldiensten",
+            "label_short": "Textieldiensten"
+          }
+        ],
+        "default_main_tab": "textielproducten",
+        "data": {
+          "textielproducten": {
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Katoenvezels",
+                "specification": "Minimaal 20 % van de samenstelling van katoenen producten die gebruikt worden in uitvoering van het contract moet zijn, hetzij:\n1. Biologisch: geteeld overeenkomstig de eisen van Verordening (EG) nr. 834/2007, het National Organic Programme (NOP) van de Verenigde Staten, of gelijkwaardige wettelijke verplichtingen die door handelspartners van de EU zijn vastgesteld; of\n2. Geïntegreerde gewasbescherming (IPM): geteeld in overeenstemming met de IPM-beginselen zoals gedefinieerd door het IPM-programma van de Food and Agricultural Organisation (FAO) van de Verenigde Naties of de Europese Richtlijn 2009/128/EG.\n\n*Als de aanbestedende dienst de groei van de biologische katoenmarkt verder wil ondersteunen en/of een tekort in de levering van gecertificeerd biologisch katoen vaststelt, kan niet-gecertificeerd of biologisch overgangkatoen worden toegestaan.*\n\nWanneer biologische etikettering voor de gebruikte producten wordt ondersteund, mag het biologische katoen dat wordt gebruikt om aan de eisen te voldoen niet gemengd zijn met genetisch gemodificeerd katoen. Er moet bewijs worden geleverd dat de product(en) afkomstig zijn uit landen waar genetisch gemodificeerd katoen niet is goedgekeurd voor gebruik.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 12"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De oorsprong en samenstelling van het in de goederen gebruikte katoen zal bij levering worden gecontroleerd aan de hand van een certificatieregeling voor IPM- of biologische katoenproductie van derden, samen met gedocumenteerde transactiedata waarmee de katoensamenstelling van individuele producten of goederenbatches gecontroleerd en getraceerd kan worden.\n\nDit omvat een geldig certificatie voor biologische of IPM-productie, alsook documentatie van transacties waaruit de aankoop van de beweerde katoensamenstelling blijkt en die voorziet in de nodige traceerbaarheid.\n\nIndien relevant, zal op aanvraag een screeningstest worden uitgevoerd voor de controle van niet-genetisch gemodificeerd katoen wanneer conventioneel en IPM-katoen gemengd is met biologisch katoen."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Wolvezels",
+                "specification": "*Het is raadzaam om dit criterium alleen te gebruiken in situaties waarbij de textielproducten meer dan 50% wol bevatten.*\n\nHet afvalwater dat geloosd wordt na het ontvetten van de wol, rechtstreeks als gevolg van de behandeling ter plaatse of onrechtstreeks na afvalwaterbehandeling elders, en dat gemeten wordt in g COD (chemisch zuurstofverbruik) per kg zweetwol, moet:\n• ≤ 25 g zijn voor grove wol\n• ≤ 45 g voor fijne wol.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 16"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De oorsprong en samenstelling van het in de goederen gebruikte katoen zal bij levering worden gecontroleerd aan de hand van een certificatieregeling voor IPM- of biologische katoenproductie van derden, samen met gedocumenteerde transactiedata waarmee de katoensamenstelling van individuele producten of goederenbatches gecontroleerd en getraceerd kan worden.\n\nDit omvat een geldig certificatie voor biologische of IPM-productie, alsook documentatie van transacties waaruit de aankoop van de beweerde katoensamenstelling blijkt en die voorziet in de nodige traceerbaarheid.\n\nIndien relevant, zal op aanvraag een screeningstest worden uitgevoerd voor de controle van niet-genetisch gemodificeerd katoen wanneer conventioneel en IPM-katoen gemengd is met biologisch katoen."
+                }
+              },
+              {
+                "code": "TS3.1",
+                "title": "Synthetische cellulosevezels (bv. viscose, modal, lyocell)",
+                "specification": "*Het is raadzaam om dit criterium alleen te gebruiken in situaties waarin de textielproducten meer dan 50% synthetische cellulosevezels bevatten.*\n\nVoor viscose- en modalvezels mag het zwavelgehalte in de emissies van zwavelstoffen in de lucht afkomstig van het vezelproductieproces, uitgedrukt als een jaarlijks gemiddelde, de waarden in onderstaande tabel niet overschrijden.\n\n![Vezelsoort tabel](/vezelsoort.png)",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 17"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver dient na de gunning de nodige monitoringgegevens, transactiegegevens en productiegegevens van partijen te bezorgen waaruit blijkt dat de leverancier(s) en bijbehorende productiesystemen die gebruikt worden om de vezels waarvan sprake is in het contract te maken, ook effectief zullen naleven.\n\nConforme monitoringgegevens worden ingediend voor de productievestigingen waar de specifieke vezelproducten worden gemaakt die bij de uitvoering van dit contract gebruikt zullen worden."
+                }
+              },
+              {
+                "code": "TS5",
+                "title": "Verklaring voor de REACH-lijst van kandidaatsstoffen",
+                "specification": "De inschrijver moet de aanwezigheid verklaren van stoffen op de REACH-lijst van kandidaatsstoffen met een concentratie van meer dan 0,1% (gewichtpercent) in het eindproduct.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 21"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet bij levering van het (de) eindartikel(en) een geldige REACH-verklaring volgens Artikel 33, lid 2 bezorgen.\n\nAls voor bepaalde stoffen op de kandidatenlijst wordt verklaard dat zij aanwezig zijn, moeten deze stoffen geïdentificeerd worden."
+                }
+              },
+              {
+                "code": "TS6",
+                "title": "Stoffen waarop het eindproduct getest moet worden",
+                "specification": "Het uiteindelijk geleverde product mag geen stoffen bevatten die vermeld worden in bijlage 1 in concentraties die groter zijn dan de individuele of totale concentratielimieten. Dat moet worden aangetoond via tests in laboratoria van stalen van elk producttype dat tijdens de uitvoering van het contract geleverd wordt.De aanbestedende dienst behoudt zich het recht voor om nog verdere steekproefcontroles te verzoeken.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Elk productstaal moet geanalyseerd worden door een erkend laboratorium dat bevoegd is voor de uitvoering van de relevante tests conform ISO 17025 of door een accreditatieorgaan voor textieltestrschema's waarvoor producttests vereist zijn.\n\nBij levering van de goederen moeten certifica(a)t(en) worden voorgelegd waaruit de conformiteit blijkt. In gevallen waarin de testmethodes hetzelfde zijn, moeten testresultaten van geldige Type I-ecolabels (inclusief het EU-milieukeur) en testregelingen voor textiel van derden aanvaard worden."
+                }
+              },
+              {
+                "code": "TS7",
+                "title": "Duurzaamheidsnormen",
+                "specification": "De textielproducten moeten beantwoorden aan de relevante duurzaamheidseisen zoals geïdentificeerd in bijlagen 2 en 3.\n\nIn het geval van functionele werkkleding waarbij inherente prestatiekenmerken blijken die de noodzaak voor water-, vuil- of vlekwerende producten en/of vlamvertragende behandelingen voor het textielmateriaal onnodig maken, zal het product vrijgesteld worden van de testvereisten 3.7 en/of 3.8 in bijlage 3.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 23"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver dient voor elk afzonderlijk productontwerp of werkkledingitem dat moet worden geleverd bij levering van de goederen verslagen te bezorgen die zijn opgesteld op basis van tests uitgevoerd volgens de normen in bijlage 3. De rapporten moeten aantonen dat elk producttype of model voldoet aan de gespecificeerde duurzaamheidseisen."
+                }
+              },
+              {
+                "code": "TS8",
+                "title": "Beschikbaarheid van onderdelen en accessoires",
+                "specification": "De inschrijver aan wie de opdracht gegund wordt, moet de nodige reservestukken beschikbaar stellen van alle onderdelen en accessoires (zoals ritssluitingen, knopen, clips) die deel uitmaken van de te leveren producten.\n\nDeze reservestukken moeten geleverd kunnen worden tot minimaal twee jaar na levering van het product of gedurende de looptijd van het leveringscontract (afhankelijk van wat het langst duurt). Verder moet voor die onderdelen en accessoires ook een informatieve prijslijst worden voorzien.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 24"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver dient bij de gunning een schriftelijke verbintenis te bezorgen waarin wordt verklaard dat hij de eisen zal naleven in het kader van de productgarantie, alsook een informatieve prijslijst voor de inventaris van onderdelen."
+                }
+              },
+              {
+                "code": "TS9",
+                "title": "Stofselectie ter beperking van het energieverbruik voor drogen en strijken",
+                "specification": "Voor textielproducten die dagelijks of wekelijks gewassen zullen worden: De stof wordt geselecteerd zodat zij na het centrifugeren een vochtretentiegehalte heeft van minder dan 35%, en een gladheid na het drogen van SA3 voor stoffen met ≥ 50% katoen en SA4 voor stoffen met < 50% katoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 24"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver zal bij levering van de goederen een testverslag voorleggen waaruit de prestaties van de stof(fen) met betrekking tot de volgende methodes blijken:\n• Vochtretentiegehalte: EN ISO 15797 (of gelijkwaardig) wasproces;\n• Onderhoudsvriendelijkheid: EN ISO 15487 (of gelijkwaardig) uitzicht na wassen en drogen."
+                }
+              },
+              {
+                "code": "TS10",
+                "title": "Etikettering inzake onderhoud",
+                "specification": "De etikettering inzake onderhoud voor textiel moet wassen op lagere temperaturen promoten, indien mogelijk op 30 °C of minder, alsook het gebruik van het energiebesparende programma van de wasmachine, tenzij er een andere technische reden is (bijv. hygiëne, veiligheid, bevuiling).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 25"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet voorbeelden bezorgen van de etikettering inzake onderhoud, alsook bijkomende instructies voor de gebruiker.\n\nVerder moet hij, indien van toepassing, informatie verschaffen over waarom textiel op hogere temperaturen dan 30 °C gewassen moet worden."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS1",
+                "title": "Katoenvezels",
+                "specification": "Minimaal 60 % van de samenstelling van katoenen producten die gebruikt worden in uitvoering van het contract moet zijn, hetzij:\n1. Biologisch: geteeld overeenkomstig de eisen van Verordening (EG) nr. 834/2007, het National Organic Programme (NOP) van de Verenigde Staten, of gelijkwaardige wettelijke verplichtingen die door handelspartners van de EU zijn vastgesteld; of\n2. Geïntegreerde gewasbescherming (IPM): geteeld in overeenstemming met de IPM-beginselen zoals gedefinieerd door het IPM-programma van de Food and Agricultural Organisation (FAO) van de Verenigde Naties of de Europese Richtlijn 2009/128/EG.\n\nAls de aanbestedende dienst de groei van de biologische katoenmarkt verder wil ondersteunen en/of een tekort in de levering van gecertificeerd biologisch katoen vaststelt, kan niet-gecertificeerd of biologisch overgangkatoen worden toegestaan.\n\nWanneer biologische etikettering voor de gebruikte producten wordt ondersteund, mag het biologische katoen dat wordt gebruikt om aan de eisen te voldoen niet gemengd zijn met genetisch gemodificeerd katoen. Er moet bewijs worden geleverd dat de product(en) afkomstig zijn uit landen waar genetisch gemodificeerd katoen niet is goedgekeurd voor gebruik.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair. Versie 1.0 - Pag. 14"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De oorsprong en samenstelling van het in de goederen gebruikte katoen zal bij levering worden gecontroleerd aan de hand van een certificatieregeling voor IPM- of biologische katoenproductie van derden, samen met gedocumenteerde transactiedata waarmee de katoensamenstelling van individuele producten of goederenbatches gecontroleerd en getraceerd kan worden.\n\nDit omvat een geldige certificatie voor biologische of IPM-productie, alsook documentatie van transacties waaruit de aankoop van de beweerde katoensamenstelling blijkt en die voorziet in de nodige traceerbaarheid.\n\nIndien relevant, zal op aanvraag een screeningstest worden uitgevoerd voor de controle van niet-genetisch gemodificeerd katoen wanneer conventioneel en IPM-katoen gemengd is met biologisch katoen."
+                }
+              },
+              {
+                "code": "TS3.2",
+                "title": "Gehalogeneerde emissie uit pulp",
+                "specification": "*Het is raadzaam om dit criterium alleen te gebruiken in situaties waarin de textielproducten meer dan 50% synthetische cellulosevezels bevatten.*\n\nPulp die gebruikt wordt voor de productie van het vezelproduct waarvan sprake is in het contract, zal zonder gebruik te maken van elementair chloor gebleekt worden.\n\nDe daaruit voortkomende totale hoeveelheid chloor en organisch gebonden chloor in de afgewerkte vezels (OX) mag niet hoger zijn dan 150 ppm, of in het afvalwater van de pulpproductie (AOX) niet meer dan 0,170 kg/t aan de luchtgedroogde pulp bedragen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair. Versie 1.0 - Pag. 17"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver dient na de gunning voor het specifieke vezelproduct en voor de productielijn ervan een testverslag te bezorgen waaruit blijkt dat de OX- of AOX-eis is nageleefd. Dit gebeurt aan de hand van de gepaste testmethode of een gelijkwaardige:\n• OX: ISO 11480 (gecontroleerde verbranding en microcoulometrie)\n• AOX: ISO 9562"
+                }
+              },
+              {
+                "code": "TS4",
+                "title": "Polyester gerecycled materiaal",
+                "specification": "*Er kunnen zich technische problemen voordoen bij pogingen om te voldoen aan andere kwaliteitsspecificaties die in het contract vereist zijn. Daarmee moet rekening worden gehouden bij de evaluatie van de inschrijvingen. Verder kan ook een beroep worden gedaan op marktonderzoeken of concurrentiegerichte dialoog (indien gebruikt).*\n\nPolyester vezelproduct(en) voor gebruik in uitvoering van het contract moeten worden geproduceerd met een minimale hoeveelheid gerecycled materiaal van 20%.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor meubilair. Versie 1.0 - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver dient bij de gunning aan te tonen dat de productielijn(en) voor het vezelproduct specifiek bestemd zijn voor productie met de minimale hoeveelheid gerecycled materiaal.\n\nDaarnaast moet een certificering door derden worden voorzien voor:\n• de hoeveelheid gerecycled materiaal,\n• de traceerbaarheid ervan,\nen dit voor zowel de productielijnen van de te leveren producten als de gerecycleerde grondstof.\n\nHiervoor kan gebruik worden gemaakt van ISO 14021, ISO 9001 of een gelijkwaardige norm.\nDe controle zal informatie verschaffen die in overeenstemming is met deel 4.4 van EN 15343."
+                }
+              }
+            ]
+          },
+          "textieldiensten": {
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Stofselectie ter beperking van het energieverbruik voor drogen en strijken",
+                "specification": "*Voor textielproducten die dagelijks of wekelijks gewassen zullen worden:*\n\nDe textielstoffen worden geselecteerd zodat zij na het centrifugeren een vochtretentiegehalte hebben van minder dan 35% en een gladheid na het drogen van SA3 voor stoffen met ≥ 50% katoen en SA4 voor stoffen met < 50% katoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 29"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een testverslag voorleggen waaruit de prestaties van de stof(fen) met betrekking tot de volgende methodes blijken:\n• Vochtretentiegehalte: EN ISO 15797 (of gelijkwaardig) wasproces;\n• Onderhoudsvriendelijkheid: EN ISO 15487 (of gelijkwaardig) uitzicht na wassen en drogen."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Onderhoud van de textielproducten",
+                "specification": "*Dit zou ook gecombineerd kunnen worden met of geformuleerd kunnen worden als een gunningscriterium waarmee men de meest ambitieuze onderhoudsaanpak beloont.*\n\nIn het kader van zijn plan voor middelenbeheer dient de inschrijver voor textieldiensten de nuttige levensduur van werkkleding en interieurtextiel uit te breiden door doorlopend onderhouds- en hersteldiensten aan te bieden. Dat zal minimaal het volgende omvatten (voor zover relevant voor de te leveren textielsoorten):\n• fundamenteel reparatiewerk, met inbegrip van het herstellen en hechten van gescheurde naden en stiksel, het vervangen van gebroken/verloren onderdelen en het aanbrengen/vervangen van ritssluitingen en clips;\n• vervanging van stroken stof voor werkkleding;\n• herbehandelen en waterdicht maken van functionele coatings.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 33"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver dient een gedetailleerde specificatie te voorzien voor de voorgestelde onderhoudsdiensten, waar nodig met inbegrip van gedocumenteerd bewijs van de onderhoudsvoorzieningen die hij zelf of via onderaanneming uitvoert."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS3",
+                "title": "Terugnamesysteem",
+                "specification": "*Dit zou ook gecombineerd kunnen worden met of geformuleerd kunnen worden als een gunningscriterium waarmee men de meest ambitieuze terugnameaanpak beloont.*\n\nIn het kader van zijn systeem voor middelenbeheer moet de inschrijver een terugnamesysteem opzetten of officiële afspraken maken met een terugnameregeling voor de textielproducten die in het kader van het contract geleverd worden, met inbegrip van de volgende elementen:\n• Ophaalsystemen voorzien in de eigen kantoren van de aanbestedende dienst om (waar van toepassing) het sorteren en classificeren van textiel te vergemakkelijken;\n• Opleidings- en begeleidend materiaal aanbieden om te verzekeren dat het personeel van de overheidsdienst duidelijk weet hoe het systeem gebruikt moet worden;\n• Sorteeractiviteiten na ophaling organiseren om de waarde uit hergebruik of recycling te maximaliseren. Dit moet minimaal ook een scheiding omvatten op basis van vezel, kleur en staat van de kleding.\n\nDe inschrijver dient ook een indicatie te geven van de eventuele eindmarkten voor het gerecupereerd textiel.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een beschrijving geven van het voorgestelde systeem, waar van toepassing met inbegrip van documentatie voor post-ophaalsystemen die hij onderhoudt, inclusief specificaties voor sorteerlijnen en fotografisch bewijsmateriaal."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "gunningscriteria",
+      "title": "Gunningscriteria",
+      "requirement_level": "verplicht",
+      "intro": "De toepasselijke GPP-criteria bevatten eisen voor gunningscriteria. Deze helpen inschrijvers die op essentiële punten extra scoren. Door deze criteria expliciet in het bestek op te nemen, voldoe je aan de verplichting uit de Energie-Efficiëntierichtlijn (EED).",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: Een paar gunningcriteria uit de GPP zijn verplicht voor deze aanbesteding."
+        }
+      ],
+      "steps": [
+        "Kies welk type opdracht het betreft. De GPP onderscheidt twee soorten:\n   A. Textielproducten\n   B. Textieldiensten",
+        "Ga in de tabel hieronder na welke gunningscriteria van toepassing zijn.",
+        "Neem in ieder geval de kerncriteria op in je aanbestedingsdocumenten. Als je ambitieuzer bent kan je de uitgebreide criteria opnemen."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "textielproducten",
+            "label": "📋 Textielproducten",
+            "label_short": "Textielproducten"
+          },
+          {
+            "key": "textieldiensten",
+            "label": "🧺 Textieldiensten",
+            "label_short": "Textieldiensten"
+          }
+        ],
+        "default_main_tab": "textielproducten",
+        "data": {
+          "textielproducten": {
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "Katoenvezels",
+                "specification": "Er worden punten toegekend voor iedere verbetering van 10% boven op de minimale technische specificatie van gecertificeerde IPM- of biologische katoensamenstelling.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 15"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De oorsprong en samenstelling van het in de goederen gebruikte katoen zal bij levering worden gecontroleerd aan de hand van een certificatieregeling voor IPM- of biologische katoenproductie van derden, samen met gedocumenteerde transactiedata waarmee de katoensamenstelling van individuele producten of goederenbatches gecontroleerd en getraceerd kan worden.\n\nDit omvat een geldige certificatie voor biologische of IPM-productie, alsook documentatie van transacties waaruit de aankoop van de beweerde katoensamenstelling blijkt en die voorziet in de nodige traceerbaarheid.\n\nIndien relevant, zal op aanvraag een screeningstest worden uitgevoerd voor de controle van niet-genetisch gemodificeerd katoen wanneer conventioneel en IPM-katoen gemengd is met biologisch katoen."
+                }
+              },
+              {
+                "code": "GC5",
+                "title": "Ontwerp voor hergebruik en recycling",
+                "specification": "Kledingstukken moeten zo ontworpen zijn dat eventuele logo's of opvallende identificatiekenmerken gemakkelijk verwijderd of overdrukt kunnen worden zonder het kledingstuk te beschadigen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 25"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet bij levering van de goederen duidelijke en gemakkelijk te begrijpen instructies voor hergebruikcontractanten bezorgen, waarin wordt vermeld hoe logo's of merktekens verwijderd of overdrukt kunnen worden."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "GC2",
+                "title": "Polyester en polyamide (nylon) gerecycled materiaal",
+                "specification": "*Er kunnen zich technische problemen voordoen bij pogingen om te voldoen aan andere kwaliteitsspecificaties die in het contract vereist zijn. Daarmee moet rekening worden gehouden bij de evaluatie van de inschrijvingen. Verder kan ook een beroep worden gedaan op marktonderzoeken of concurrentiegerichte dialoog (indien gebruikt).*\n\nEr zullen punten worden toegekend voor polyester en/of nylon vezelproduct(en) dat (die) gebruikt zal (zullen) worden ter uitvoering van het contract voor iedere bijkomende toename van 10% meer dan een minimale hoeveelheid gerecycled materiaal van 20% afval vóór consumptie en/of na consumptie.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 20"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver dient bij de gunning aan te tonen dat de productielijn(en) voor het vezelproduct specifiek bestemd zijn voor productie met de minimale hoeveelheid gerecycled materiaal.\n\nVerder moet een certificering door derden worden voorzien voor:\n• de hoeveelheid gerecycled materiaal,\n• de traceerbaarheid ervan,\nen dit zowel voor de productielijnen van de te leveren producten als voor de gerecycleerde grondstof.\n\nHiervoor kan gebruik worden gemaakt van ISO 14021, ISO 9001 of een gelijkwaardige norm.\nDe controle moet informatie verschaffen die in overeenstemming is met delen 4.4 en 6 van EN 15343."
+                }
+              },
+              {
+                "code": "GC3",
+                "title": "Recycling van polyester",
+                "specification": "Er zullen punten worden toegekend worden aan inschrijvers die het volgende kunnen aantonen:\n• dat het ontwerp van het uiteindelijke textielproduct ervoor zorgt dat de polyesterweefels aan het einde van de levensduur van het product gemakkelijk gescheiden kunnen worden;\n• de voorziening in een vrijwillige terugname voor het textielproduct zodat de aanbestedende dienst polyesterweefels kan terugsturen voor recycling of hergebruik.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 21"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet bij de gunning:\n• informatie verschaffen over de ontwerpmaatregelen en -functies die ervoor moeten zorgen dat de stof gemakkelijk gescheiden kan worden met het oog op recycling, en/of;\n• informatie verschaffen over de terugnamerregelingen en een schriftelijke verklaring met onbepaalde duur om het einde van de levenscyclus van de producten te dekken"
+                }
+              },
+              {
+                "code": "GC4",
+                "title": "Beperkingen voor stoffen die gecontroleerd moeten worden in de productievestigingen",
+                "specification": "Er zullen punten toegekend worden aan inschrijvers die het gebruik van stoffen vermeld in bijlage 2 in hun kleurings-, druk- en afwerkingsproductieprocessen voor het (de) geleverde product(en) beperken.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet bij levering van de goederen een geldig verslag van een bedrijfsaudit afleveren dat door derden werd uitgevoerd. In dit verslag moet de productieformule gecontroleerd zijn die gebruikt wordt bij het kleuren, bedrukken en afwerken van het product.\n\nHet auditverslag mag niet ouder zijn dan twee jaar en moet het volgende omvatten:\ni. bevindingen van inspecties van chemische opslagplaatsen en de werking van de productieprocessen;\nii. bevestiging van de gebruikte formuleringen; en\niii. resultaten van analytische onderzoeken (indien uitgevoerd) in iedere vestiging."
+                }
+              }
+            ]
+          },
+          "textieldiensten": {
+            "core_criteria": [],
+            "extended_criteria": [
+              {
+                "code": "GC1",
+                "title": "Specifiek energieverbruik",
+                "specification": "Aan de inschrijvers zullen punten toegekend worden in functie van het voorgestelde specifieke energieverbruik in kWh (elektriciteit plus gasvormige en vloeibare brandstoffen) per kg gewassen, gedroogd en afgewerkt textielmateriaal voor flatwear en werkkleding (naargelang van toepassing) dat tijdens de levering van de dienst gerealiseerd zal worden.\n\nDe punten worden lineair toegekend in verhouding tot de ontvangen voorstellen, gaande van het laagste (100% beschikbare punten) tot het hoogste (nul punten).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 30"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver dient specificaties te bezorgen voor het individueel bemeteren van elke was-, droog- en afwerkingsproces­lijn, waarbij een onderscheid wordt gemaakt tussen flatwear en werkkleding, dat gebruikt zal worden om de dienst te leveren.\n\nVerder dient hij ook de regelingen te beschrijven voor de verificatie van de aflezing van de individuele bemetingen."
+                }
+              },
+              {
+                "code": "GC2",
+                "title": "Milieueffecten van detergenten",
+                "specification": "Aan de inschrijvers zullen punten toegekend worden als zij zich engageren om bij uitvoering van het contract detergenten te gebruiken die voldoen aan de criteria inzake aquatische toxiciteit en biologische afbreekbaarheid van het EU-milieukeur voor wasmiddelen voor institutioneel gebruik of hun gelijkwaardige tegenhangers. Deze criteria vindt u hier:\n\nhttp://ec.europa.eu/environment/ecolabel/products-groups-and-criteria.html\n\nInschrijvers die zich hiertoe engageren, zullen het maximum beschikbare aantal punten toegekend krijgen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 31"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver dient specificaties te bezorgen voor het individueel bemeteren van elke was-, droog- en afwerkingsproces­lijn, waarbij een onderscheid wordt gemaakt tussen flatwear en werkkleding, dat gebruikt zal worden om de dienst te leveren.\n\nVerder dient hij ook de regelingen te beschrijven voor de verificatie van de aflezing van de individuele bemetingen."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "execution_conditions",
+      "title": "Uitvoeringsvoorwaarden",
+      "requirement_level": "optioneel",
+      "intro": "De uitvoeringsvoorwaarden uit de EU GPP-criteria voor textiel bepalen hoe de opdrachtnemer het contract uitvoert na gunning.",
+      "warnings": [
+        {
+          "severity": "yellow",
+          "text": "Let op: Het toepassen van deze contractuele voorwaarden is optioneel."
+        }
+      ],
+      "steps": [],
+      "steps_ordered": false,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "textieldiensten",
+            "label": "🧺 Textieldiensten",
+            "label_short": "Textieldiensten"
+          }
+        ],
+        "default_main_tab": "textieldiensten",
+        "data": {
+          "textieldiensten": {
+            "core_criteria": [],
+            "extended_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Voor textieldiensten met inbegrip van wassen",
+                "specification": "De inschrijver aan wie de opdracht gegund wordt, moet de diensten uitvoeren in overeenstemming met het voorgestelde specifieke energieverbruik en het conforme detergentgebruik waartoe hij zich heeft geëngageerd in zijn inschrijving.\n\nDe inschrijver moet de volgende vormen van controle bieden:\n• Maandelijks opgenomen gegevens over energieverbruik, verzameld via de individueel bemeterde proceslijnen in gerelateerde vestigingen, waaruit de soort stof/het gewicht naar voren komt en gedeeld wordt door het gewicht van de verwerkte textielproducten.\n• Kopieën van facturen voor detergentaankopen, samen met bewijsmateriaal dat het/de detergent(en):\ni) over het EU-milieukeur beschikt; of\nii) een Type I-ecolabel heeft dat gelijkwaardige criteria omvat; of\niii) voldoet aan de gespecificeerde criteria van het EU-milieukeur.\n\nHet bewijsmateriaal moet geldige Ecolabel-licenties voor ecolabels en/of door derden geverifieerde testgegevens omvatten voor de gebruikte detergenten.\n\nDe aanbestedende dienst behoudt zich het recht voor om op elk moment tijdens het contract controles door derden te vragen.\n\nDe contractant is verplicht om dit bewijsmateriaal op eigen kosten te bezorgen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 31"
+                }
+              },
+              {
+                "code": "CUV2",
+                "title": "Terugnamesysteem",
+                "specification": "De inschrijver moet over de prestaties van zijn terugnamesysteem rapporteren in overeenstemming met de volgende eisen:\n• Enquêtes zullen worden gevoerd voor het personeel in de voorzieningen van de aanbestedende dienst om te bepalen hoe gemakkelijk het is om de ophaal-/scheidingssystemen te gebruiken. Deze enquetes zullen uitgevoerd worden in de eerste zes maanden waarin de diensten worden geleverd, en de resultaten zullen worden gebruikt om mogelijke verbeteringsmaatregelen te identificeren en te implementeren.\n• De verhouding in gewicht van het opgehaalde textiel dat opnieuw gebruikt of gerecycled is, en de bijbehorende waarde per kilogram van textielmateriaal verkregen van de beoogde eindmarkten waarnaar zij verzonden zijn, zullen jaarlijks bepaald en geregistreerd worden.\n\nDe inschrijver dient een korte samenvatting te maken van de resultaten van de personeelsenquêtes, alsook van de geïdentificeerde mogelijke verbeteringsmaatregelen.\n\nJaarlijks zal een verslag worden opgesteld met daarin een uitsplitsing van de bestemming van de textielproducten en van de verkregen waarde van elke eindmarkt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor textiel. Versie 1.0 - Pag. 35"
+                }
+              }
+            ]
+          }
+        }
+      }
     }
   ]
 }
