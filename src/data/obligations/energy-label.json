@@ -1,9 +1,14 @@
 {
   "obligation_id": "energy_label",
   "archetype": "energy_label",
-  "title": "Energie-etikettering verplicht",
+  "title": "Verplichtingen onder Energie-etikettering",
   "summary": "Op basis van de gekozen CPV-code bent u [volgens de EED](popup:WETTELIJKE BASIS||Zij kopen, in het geval van producten die onder een gedelegeerde handeling krachtens Verordening (EU) 2017/1369 of een daaraan gerelateerde uitvoeringsrichtlijn van de Commissie vallen, alleen die producten aan welke voldoen aan het criterium van artikel 7, lid 2,[1] van die verordening.||Artikel 7, lid 2 (EU) 2017/1369) verplicht alleen producten aan te schaffen die behoren tot de hoogste twee significant bevolkte energie-efficiëntieklassen. Zie hiervoor het Europees productregister voor energie-etikettering [EPREL](https://eprel.ec.europa.eu/screen/home).",
-  "badges": ["ENERGIELABEL", "EED", "EU"],
+  "badges": ["ENERGIELABEL", "EU"],
+  "colors": {
+    "text": "#356534",
+    "badge_background": "#CCE2A3",
+    "border": "#CCE2A3"
+  },
   "legal_references": [
     {
       "label": "Verordening (EU) 2017/1369",

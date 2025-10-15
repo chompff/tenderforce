@@ -92,12 +92,19 @@ export interface ObligationSection {
   content_order?: ContentBlockType[];
 }
 
+export interface ObligationColors {
+  text: string;
+  badge_background: string;
+  border: string;
+}
+
 export interface Obligation {
   obligation_id: string;
   archetype: string;
   title: string;
   summary: string;
   badges: string[];
+  colors?: ObligationColors;
   warnings?: Warning[];
   notes?: string[];
   footer_warnings?: Warning[];

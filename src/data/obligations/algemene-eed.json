@@ -1,9 +1,14 @@
 {
   "obligation_id": "algemene_eed",
   "archetype": "general_eed",
-  "title": "Algemene EED verplichtingen (Energie-efficiëntie-eerstbeginsel)",
+  "title": "Verplichtingen onder het Energie-efficiëntie-eerstbeginsel",
   "summary": "Op basis van de gekozen CPV-code bent u [volgens de EED](popup:WETTELIJKE BASIS||De lidstaten zorgen er ook voor dat aanbestedende diensten en aanbestedende instanties bij het gunnen van overheidsopdrachten en concessies met een waarde gelijk aan of hoger dan de in de eerste alinea bedoelde drempelwaarden, het energie-efficiëntie-eerstbeginsel overeenkomstig artikel 3 toepassen, ook voor overheidsopdrachten en concessies waarvoor in bijlage IV geen specifieke eisen zijn opgenomen.||Art. 7 - (EU) 2023/1791) verplicht om het energie-efficiëntie eerstbeginsel toe te passen.",
-  "badges": ["ALGEMEEN", "EED", "EU"],
+  "badges": ["ALGEMEEN", "EU"],
+  "colors": {
+    "text": "#FFFFFF",
+    "badge_background": "#A8C69F",
+    "border": "#A8C69F"
+  },
   "legal_references": [],
   "sections": [
     {

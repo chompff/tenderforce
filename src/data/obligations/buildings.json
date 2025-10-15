@@ -1,9 +1,14 @@
 {
   "obligation_id": "buildings",
   "archetype": "buildings",
-  "title": "EED verplichtingen voor gebouwen",
+  "title": "Verplichtingen voor Gebouwen",
   "summary": "Op basis van de gekozen CPV-code valt deze opdracht onder de EED-verplichtingen voor overheidsgebouwen. Overheidinstanties aanschaffen/renoveren 3% van hun gebouwen tot bijna-energieneutraal of emissievrije gebouwen en mogen uitsluitend nieuwe gebouwen aankopen of huren die aan deze energieprestatie-eisen voldoen.",
-  "badges": ["GEBOUWEN", "EED", "NL", "EU"],
+  "badges": ["GEBOUWEN", "NL", "EU"],
+  "colors": {
+    "text": "#457B9D",
+    "badge_background": "#EEF8FF",
+    "border": "#457B9D"
+  },
   "legal_references": [
     {
       "label": "Richtlijn (EU) 2023/1791",

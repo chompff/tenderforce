@@ -1,9 +1,14 @@
 {
   "obligation_id": "services_new_products",
   "archetype": "services",
-  "title": "EED verplichtingen voor diensten",
+  "title": "Verplichtingen voor Diensten",
   "summary": "Op basis van de gekozen CPV-code is het aannemelijk dat deze dienst op grond van Bijlage IV sub e valt onder de EED-verplichtingen voor energiegerelateerde producten (sub a, b en d van Bijlage IV). U dient uw dienstverleners te verplichten dat de producten die zij aanschaffen voor de uitvoering van de dienst voldoen aan de eisen inzake energielabels, ecodesign en bandenetikettering.",
-  "badges": ["DIENSTEN", "EED", "EU"],
+  "badges": ["DIENSTEN", "EU"],
+  "colors": {
+    "text": "#747424",
+    "badge_background": "#FFFFEA",
+    "border": "#747424"
+  },
   "legal_references": [
     {
       "label": "Richtlijn (EU) 2023/1791",

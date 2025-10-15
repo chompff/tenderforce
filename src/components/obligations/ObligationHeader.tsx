@@ -21,7 +21,7 @@ const getObligationBorderColor = (archetype: string, badges: string[]): string =
     return '#9CA3AF'; // Grey for standard EED obligations (gray-400)
   }
 
-  // Priority 2: Check for specific badge types
+  // Priority 2: Check for specific badge types (fallback if colors not configured)
   if (badges.includes('ENERGIELABEL')) {
     return '#065F46'; // Green for energy label
   }
@@ -49,7 +49,45 @@ export const ObligationHeader: React.FC<ObligationHeaderProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showLegalRefs, setShowLegalRefs] = useState(false);
-  const borderColor = getObligationBorderColor(obligation.archetype, obligation.badges);
+
+  // Use colors from JSON if available, otherwise fall back to the helper function
+  const borderColor = obligation.colors?.border || getObligationBorderColor(obligation.archetype, obligation.badges);
+  const badgeTextColor = obligation.colors?.text;
+  const badgeBackgroundColor = obligation.colors?.badge_background;
+
+  // Helper function to get badge colors - uses configured colors if available, otherwise uses hardcoded defaults
+  const getBadgeColors = (badge: string): { backgroundColor: string; color: string; borderColor: string } => {
+    // If colors are configured in JSON, use them for all badges (except flags)
+    if (badgeTextColor && badgeBackgroundColor && !['NL', 'EU'].includes(badge)) {
+      return {
+        backgroundColor: badgeBackgroundColor,
+        color: badgeTextColor,
+        borderColor: badgeBackgroundColor
+      };
+    }
+
+    // Fallback to hardcoded colors if not configured
+    switch (badge) {
+      case 'ENERGIELABEL':
+        return { backgroundColor: '#D1FAE5', color: '#065F46', borderColor: '#D1FAE5' };
+      case 'ECODESIGN':
+        return { backgroundColor: '#f3e4ee', color: '#7d2352', borderColor: '#f3e4ee' };
+      case 'MVI':
+        return { backgroundColor: '#4A9400', color: '#FFFFFF', borderColor: '#4A9400' };
+      case 'GPP':
+        return { backgroundColor: '#3E6B3A', color: '#FFFFFF', borderColor: '#3E6B3A' };
+      case 'BANDEN':
+        return { backgroundColor: '#6C6C6C', color: '#FFFFFF', borderColor: '#6C6C6C' };
+      case 'DIENSTEN':
+        return { backgroundColor: '#E5FAFD', color: '#008A9E', borderColor: '#E5FAFD' };
+      case 'GEBOUWEN':
+        return { backgroundColor: '#F4EDE6', color: '#5C4033', borderColor: '#F4EDE6' };
+      case 'ALGEMEEN':
+        return { backgroundColor: '#FEF3C7', color: '#92400E', borderColor: '#FEF3C7' };
+      default:
+        return { backgroundColor: '#DBEAFE', color: '#1E40AF', borderColor: '#DBEAFE' };
+    }
+  };
 
   const toggleLegalReferences = () => {
     setShowLegalRefs(!showLegalRefs);
@@ -88,101 +126,14 @@ export const ObligationHeader: React.FC<ObligationHeaderProps> = ({
                   className="h-5 w-auto"
                 />
               );
-            } else if (badge === 'ENERGIELABEL') {
-              return (
-                <Badge
-                  key={badge}
-                  variant="outline"
-                  className="text-xs uppercase"
-                  style={{ backgroundColor: '#D1FAE5', color: '#065F46', borderColor: '#D1FAE5' }}
-                >
-                  {badge}
-                </Badge>
-              );
-            } else if (badge === 'ECODESIGN') {
-              return (
-                <Badge
-                  key={badge}
-                  variant="outline"
-                  className="text-xs uppercase"
-                  style={{ backgroundColor: '#f3e4ee', color: '#7d2352', borderColor: '#f3e4ee' }}
-                >
-                  {badge}
-                </Badge>
-              );
-            } else if (badge === 'MVI') {
-              return (
-                <Badge
-                  key={badge}
-                  variant="outline"
-                  className="text-xs uppercase"
-                  style={{ backgroundColor: '#4A9400', color: '#FFFFFF', borderColor: '#4A9400' }}
-                >
-                  {badge}
-                </Badge>
-              );
-            } else if (badge === 'GPP') {
-              return (
-                <Badge
-                  key={badge}
-                  variant="outline"
-                  className="text-xs uppercase"
-                  style={{ backgroundColor: '#3E6B3A', color: '#FFFFFF', borderColor: '#3E6B3A' }}
-                >
-                  {badge}
-                </Badge>
-              );
-            } else if (badge === 'BANDEN') {
-              return (
-                <Badge
-                  key={badge}
-                  variant="outline"
-                  className="text-xs uppercase"
-                  style={{ backgroundColor: '#6C6C6C', color: '#FFFFFF', borderColor: '#6C6C6C' }}
-                >
-                  {badge}
-                </Badge>
-              );
-            } else if (badge === 'DIENSTEN') {
-              return (
-                <Badge
-                  key={badge}
-                  variant="outline"
-                  className="text-xs uppercase"
-                  style={{ backgroundColor: '#E5FAFD', color: '#008A9E', borderColor: '#E5FAFD' }}
-                >
-                  {badge}
-                </Badge>
-              );
-            } else if (badge === 'GEBOUWEN') {
-              return (
-                <Badge
-                  key={badge}
-                  variant="outline"
-                  className="text-xs uppercase"
-                  style={{ backgroundColor: '#F4EDE6', color: '#5C4033', borderColor: '#F4EDE6' }}
-                >
-                  {badge}
-                </Badge>
-              );
-            } else if (badge === 'ALGEMEEN') {
-              return (
-                <Badge
-                  key={badge}
-                  variant="outline"
-                  className="text-xs uppercase"
-                  style={{ backgroundColor: '#FEF3C7', color: '#92400E', borderColor: '#FEF3C7' }}
-                >
-                  {badge}
-                </Badge>
-              );
             } else {
+              const colors = getBadgeColors(badge);
               return (
                 <Badge
                   key={badge}
                   variant="outline"
                   className="text-xs uppercase"
-                  style={{ backgroundColor: '#DBEAFE', color: '#1E40AF', borderColor: '#DBEAFE' }}
+                  style={colors}
                 >
                   {badge}
                 </Badge>

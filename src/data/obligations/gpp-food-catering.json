@@ -3,7 +3,12 @@
   "archetype": "GPP",
   "title": "EU GPP criteria of nationaal gelijkwaardig",
   "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de EU-criteria inzake groene overheidsopdrachten voor catering en automaten toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
-  "badges": ["MVI", "GPP", "EED", "EU", "NL"],
+  "badges": ["GPP", "NL", "EU"],
+  "colors": {
+    "text": "#356534",
+    "badge_background": "#E1FDEB",
+    "border": "#356534"
+  },
   "warnings": [],
   "footer_warnings": [],
   "legal_references": [
