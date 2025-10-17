@@ -118,25 +118,153 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
       }
     };
 
-    lines.forEach((line, index) => {
+    // Parse markdown tables and formulas
+    let i = 0;
+    while (i < lines.length) {
+      const line = lines[i];
+
       // Check for image syntax: ![alt text](url)
       const imageMatch = line.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
 
-      if (imageMatch) {
+      // Check for formula block: ```formula
+      const isFormulaStart = line.trim() === '```formula';
+
+      // Check if this line looks like a table header (contains |)
+      const isTableLine = line.trim().startsWith('|') && line.trim().endsWith('|');
+
+      if (isFormulaStart) {
+        // Parse formula block
+        flushTextBlock(`text-${i}`);
+
+        i++; // Skip the ```formula line
+        const formulaContent: string[] = [];
+
+        // Collect formula lines until we hit ```
+        while (i < lines.length && lines[i].trim() !== '```') {
+          formulaContent.push(lines[i]);
+          i++;
+        }
+
+        if (formulaContent.length > 0) {
+          // Parse formula text to handle subscripts (e.g., E_m becomes E with subscript m)
+          const parseFormula = (text: string) => {
+            const parts: React.ReactNode[] = [];
+            const regex = /([A-Z]+)_([a-z]+|[a-z]+)/g;
+            let lastIndex = 0;
+            let match;
+            let keyCounter = 0;
+
+            while ((match = regex.exec(text)) !== null) {
+              // Add text before the subscript
+              if (match.index > lastIndex) {
+                parts.push(<span key={`text-${keyCounter++}`}>{text.substring(lastIndex, match.index)}</span>);
+              }
+              // Add variable with subscript
+              parts.push(
+                <span key={`var-${keyCounter++}`}>
+                  <i>{match[1]}</i>
+                  <sub>{match[2]}</sub>
+                </span>
+              );
+              lastIndex = regex.lastIndex;
+            }
+
+            // Add remaining text
+            if (lastIndex < text.length) {
+              parts.push(<span key={`text-${keyCounter++}`}>{text.substring(lastIndex)}</span>);
+            }
+
+            return parts.length > 0 ? parts : text;
+          };
+
+          const formulaText = formulaContent.join('\n');
+          elements.push(
+            <div key={`formula-${i}`} className="my-4 text-center">
+              <div className="inline-block bg-gray-50 border border-gray-200 rounded px-6 py-4">
+                <div className="text-xl font-serif" style={{ letterSpacing: '0.05em' }}>
+                  {parseFormula(formulaText)}
+                </div>
+              </div>
+            </div>
+          );
+        }
+
+        i++; // Skip the closing ```
+      } else if (imageMatch) {
         // Flush any accumulated text with bold parsing
-        flushTextBlock(`text-${index}`);
+        flushTextBlock(`text-${i}`);
 
         // Add image
         const [, alt, src] = imageMatch;
         elements.push(
-          <div key={`img-${index}`} className="my-3">
+          <div key={`img-${i}`} className="my-3">
             <img src={src} alt={alt} className="max-w-full h-auto rounded border border-gray-200" />
           </div>
         );
+        i++;
+      } else if (isTableLine && i + 1 < lines.length && lines[i + 1].trim().match(/^\|[\s\-:]+\|/)) {
+        // This is a table! Flush text block first
+        flushTextBlock(`text-${i}`);
+
+        // Parse the table
+        const tableLines: string[] = [];
+        let j = i;
+
+        // Collect all table lines
+        while (j < lines.length && lines[j].trim().startsWith('|') && lines[j].trim().endsWith('|')) {
+          tableLines.push(lines[j]);
+          j++;
+        }
+
+        if (tableLines.length >= 2) {
+          // Parse header
+          const headerCells = tableLines[0]
+            .split('|')
+            .slice(1, -1)
+            .map(cell => cell.trim());
+
+          // Parse rows (skip the separator line at index 1)
+          const rows = tableLines.slice(2).map(row =>
+            row.split('|')
+              .slice(1, -1)
+              .map(cell => cell.trim())
+          );
+
+          // Render table
+          elements.push(
+            <div key={`table-${i}`} className="my-4 overflow-x-auto">
+              <table className="min-w-full border-collapse border border-gray-300">
+                <thead className="bg-gray-100">
+                  <tr>
+                    {headerCells.map((cell, idx) => (
+                      <th key={idx} className="border border-gray-300 px-4 py-2 text-left font-semibold">
+                        {cell}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {rows.map((row, rowIdx) => (
+                    <tr key={rowIdx} className={rowIdx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                      {row.map((cell, cellIdx) => (
+                        <td key={cellIdx} className="border border-gray-300 px-4 py-2">
+                          {cell}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
+
+        i = j;
       } else {
         currentTextBlock.push(line);
+        i++;
       }
-    });
+    }
 
     // Flush remaining text with bold parsing
     flushTextBlock('text-final');

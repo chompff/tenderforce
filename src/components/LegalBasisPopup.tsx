@@ -87,8 +87,34 @@ export const LegalBasisPopup: React.FC<LegalBasisPopupProps> = ({
         );
       }
 
-      // Regular text
-      return <div key={lineIndex}>{line}</div>;
+      // Parse bold text (**text**)
+      const parseBoldText = (text: string) => {
+        const parts: (string | JSX.Element)[] = [];
+        let lastIndex = 0;
+        const boldRegex = /\*\*(.+?)\*\*/g;
+        let match;
+        let keyCounter = 0;
+
+        while ((match = boldRegex.exec(text)) !== null) {
+          // Add text before the bold part
+          if (match.index > lastIndex) {
+            parts.push(text.substring(lastIndex, match.index));
+          }
+          // Add bold text
+          parts.push(<strong key={`bold-${lineIndex}-${keyCounter++}`}>{match[1]}</strong>);
+          lastIndex = boldRegex.lastIndex;
+        }
+
+        // Add remaining text
+        if (lastIndex < text.length) {
+          parts.push(text.substring(lastIndex));
+        }
+
+        return parts.length > 0 ? parts : text;
+      };
+
+      // Regular text with potential bold formatting
+      return <div key={lineIndex}>{parseBoldText(line)}</div>;
     });
   };
 

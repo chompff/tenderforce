@@ -1,8 +1,8 @@
 {
   "obligation_id": "gpp-road-lighting",
   "archetype": "GPP",
-  "title": "EU GPP criteria of nationaal gelijkwaardig",
-  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerssignalering toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
+  "title": "Verplichtingen onder EU GPP óf nationaal gelijkwaardig",
+  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de [EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/a05c8d7c-086a-41b1-b0af-d836c1263762/details) toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
   "badges": ["GPP", "NL", "EU"],
   "colors": {
     "text": "#356534",
@@ -20,23 +20,817 @@
   ],
   "sections": [
     {
-      "key": "technical_specs",
-      "title": "Technische specificaties",
+      "key": "selection_criteria",
+      "title": "Selectiecriteria",
       "requirement_level": "verplicht",
-      "intro": "De GPP criteria voor straatverlichting en verkeerssignalering zijn nog in ontwikkeling. Deze module bevat voorlopig placeholder content.",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als selectiecriteria. Het doel is te waarborgen dat alleen leveranciers met aantoonbare kennis, middelen en procedures in aanmerking komen voor deelname.",
       "warnings": [
         {
-          "severity": "yellow",
-          "text": "Let op: De inhoud van deze module is nog niet compleet. De definitieve GPP criteria worden later toegevoegd."
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale selectiecriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
         }
       ],
       "steps": [
-        "Raadpleeg de EU GPP criteria voor straatverlichting en verkeerssignalering wanneer deze beschikbaar komen.",
-        "Vergelijk met de Nederlandse MVI criteria op www.mvicriteria.nl.",
-        "Neem de strengste criteria op in uw aanbestedingsdocumenten."
+        "Kies de categorie in de tabel hieronder. De GPP definieert selectiecriteria voor:\n   Categorie 1: [Straatverlichting](popup:TOELICHTING||**Categorie 1: \"Straatverlichting\":**\n\nDeze criteria hebben betrekking op aanbestedingen voor de aankoop van verlichtingsapparatuur voor:\n\n• straatverlichting in nieuwe verlichtingsinstallaties;\n• retrofits van andere armaturen in bestaande verlichtingsinstallaties;\n• retrofits van andere lichtbronnen of -regelingen in bestaande armaturen; of\n• de eenvoudige vervanging van lichtbronnen, lampen of armaturen door hetzelfde type in bestaande verlichtingsinstallaties.\n\nIn overeenstemming met de norm EN 13201-1 verwijst de term \"straatverlichting\" naar vaste verlichtingsinstallaties die zijn bedoeld om verkeersdeelnemers een goed zicht te bieden in het donker ten behoeve van de verkeersveiligheid, het verkeersverloop en de openbare veiligheid.\n\nVerlichtingsinstallaties voor tunnels, tolstations, kanalen, sluizen, parkeerterreinen, commerciële terreinen, industrieterreinen, sportaccommodaties, monumenten en gevels van gebouwen vallen hier uitdrukkelijk buiten.\n\nDe volgende technische definities dienen ter ondersteuning bij het toepassen van de criteria (zie het technisch rapport voor bijzonderheden en meer technische definities):\n\n\"armatuurefficiëntie\": verhouding tussen de afgegeven lichtstroom (in lumen) en het energieverbruik (in watt) van de armatuur\n\n*EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten*||)\n   Categorie 2: [Verkeerslichten](popup:TOELICHTING||**Categorie 2: \"Verkeerslichten\":**\n\nDeze criteria hebben betrekking op driekleurige (rood, geel en groen) signaallichten voor het wegverkeer met een diameter van 200 mm of 300 mm, in overeenstemming met de norm EN 12368. Draagbare signaallichten zijn uitdrukkelijk uitgesloten.\n\n*EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten*||)",
+        "Neem in ieder geval de kerncriteria en de bijbehorende uitvoeringsvoorwaarden op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
       ],
       "steps_ordered": true,
-      "example_texts": []
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "straatverlichting",
+            "label": "📋 Straatverlichting",
+            "label_short": "Straatverlichting"
+          },
+          {
+            "key": "verkeerslichten",
+            "label": "🚦 Verkeerslichten",
+            "label_short": "Verkeerslichten"
+          }
+        ],
+        "default_main_tab": "straatverlichting",
+        "data": {
+          "straatverlichting": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "Uitgebreide criteria",
+                "label_short": "Uitgebreide"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "SC1",
+                "title": "Competenties van het ontwerpteam",
+                "subtitle": "Geldt als in de aanbesteding een verlichtingsontwerp wordt gevraagd.",
+                "specification": "De inschrijver moet aantonen dat het ontwerp zal worden gecontroleerd en goedgekeurd door personeel met de volgende minimale ervaring en kwalificaties:\n\n• ten minste drie jaar ervaring op het gebied van verlichtingsontwerp, dimensionering van elektrische circuits en elektrische distributienetten,\n• betrokkenheid bij het ontwerp van ten minste drie verschillende buitenverlichtingsinstallaties,\n• een gecertificeerd competentieniveau in het gebruik van verlichtingsontwerpssoftware voor berekeningen van de indicator voor de vermogensdichtheid (PDI) en de indicator voor het jaarlijkse energieverbruik (AECI) (bijv. Europees certificaat van verlichtingsexpert),\n• ervaring met het gebruik van gevalideerde software voor verlichtingsberekeningen (bijv. volgens CIE 171, wegdekreflectietabellen of andere relevante normen), en\n• in het bezit zijn van een passende beroepskwalificatie op het gebied van verlichtingstechniek of lid zijn van een beroepsorganisatie voor verlichtingsontwerp.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 11"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een lijst indienen van de persoon (personen) die verantwoordelijk zal (zullen) zijn voor het project indien de inschrijving wordt geselecteerd, met vermelding van zijn/haar (hun) onderwijs- en beroepskwalificaties, relevante ontwerpervaring in reële projecten en, indien relevant, ervaring met en naam van alle gebruikte software voor verlichtingsontwerp. Dit geldt ook voor personen die in dienst zijn van onderaannemers indien ontwerpwerkzaamheden zullen worden uitbesteed.\n\nDe aanbestedende dienst mag naar eigen goeddunken aanvragen met minder dan drie ontwerpen van verlichtingsinstallaties aanvaarden indien het (de) ontwerpproject(en) groot genoeg was (waren) (d.w.z. ten minste 70% van de omvang van het ontwerpproject waarvoor de aanbesteding is uitgeschreven) en lang genoeg duurde(n) (d.w.z. ten minste drie jaar)."
+                }
+              },
+              {
+                "code": "SC2",
+                "title": "Competenties van het installatieteam",
+                "subtitle": "Geldt als de verantwoordelijkheid voor de installatie niet wordt overgenomen door het eigen onderhoudspersoneel van de aanbestedende dienst.",
+                "specification": "De inschrijver moet aantonen dat de installatiewerkzaamheden zullen worden gepland, gecontroleerd en goedgekeurd door personeel met de volgende minimale ervaring en kwalificaties:\n\n• ten minste drie jaar relevante ervaring met de installatie van buitenverlichtingssystemen,\n• betrokkenheid bij de installatie van ten minste drie verschillende installatieprojecten,\n• een passende beroepskwalificatie op het gebied van elektrotechniek en lidmaatschap van een beroepsorganisatie die relevant is voor het werk dat het personeel zal verrichten (bijv. gecertificeerd verlichtingstechnicus). De lijst van relevante geïnstalleerde verlichtingssystemen met de relatieve \"omvang van het project\" moet worden gerapporteerd.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 12"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een lijst indienen van de persoon (personen) die verantwoordelijk is (zijn) voor de installatiewerkzaamheden indien de inschrijving wordt geselecteerd, met vermelding van zijn/haar (hun) onderwijs- en beroepskwalificaties, opleidingslogboeken en relevante installatie-ervaring in reële projecten. Dit geldt ook voor personen die in dienst zijn van onderaannemers indien installatiewerkzaamheden zullen worden uitbesteed.\n\nDe aanbestedende dienst mag naar eigen goeddunken ervaring met de installatie van minder dan drie verlichtingsinstallaties aanvaarden indien de werken groot genoeg waren (d.w.z. ten minste 70% van de omvang van het ontwerpproject waarvoor de aanbesteding is uitgeschreven) en lang genoeg duurden (d.w.z. ten minste drie jaar)."
+                }
+              }
+            ],
+            "extended_criteria": []
+          },
+          "verkeerslichten": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "Uitgebreide criteria",
+                "label_short": "Uitgebreide"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [],
+            "extended_criteria": []
+          }
+        }
+      }
+    },
+    {
+      "key": "award_criteria",
+      "title": "Gunningscriteria",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als gunningscriteria. Daarmee wordt vastgelegd op basis waarvan de inschrijvingen inhoudelijk worden beoordeeld en de economisch meest voordelige inschrijving wordt vastgesteld.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale gunningscriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Kies een categorie in de tabel hieronder. De GPP definieert een gunningscriteria voor:\n   Categorie 1: [Straatverlichting](popup:TOELICHTING||**Categorie 1: \"Straatverlichting\":**\n\nDeze criteria hebben betrekking op aanbestedingen voor de aankoop van verlichtingsapparatuur voor:\n\n• straatverlichting in nieuwe verlichtingsinstallaties;\n• retrofits van andere armaturen in bestaande verlichtingsinstallaties;\n• retrofits van andere lichtbronnen of -regelingen in bestaande armaturen; of\n• de eenvoudige vervanging van lichtbronnen, lampen of armaturen door hetzelfde type in bestaande verlichtingsinstallaties.\n\nIn overeenstemming met de norm EN 13201-1 verwijst de term \"straatverlichting\" naar vaste verlichtingsinstallaties die zijn bedoeld om verkeersdeelnemers een goed zicht te bieden in het donker ten behoeve van de verkeersveiligheid, het verkeersverloop en de openbare veiligheid.\n\nVerlichtingsinstallaties voor tunnels, tolstations, kanalen, sluizen, parkeerterreinen, commerciële terreinen, industrieterreinen, sportaccommodaties, monumenten en gevels van gebouwen vallen hier uitdrukkelijk buiten.\n\nDe volgende technische definities dienen ter ondersteuning bij het toepassen van de criteria (zie het technisch rapport voor bijzonderheden en meer technische definities):\n\n\"armatuurefficiëntie\": verhouding tussen de afgegeven lichtstroom (in lumen) en het energieverbruik (in watt) van de armatuur\n\n*EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten*||)\n   Categorie 2: [Verkeerslichten](popup:TOELICHTING||**Categorie 2: \"Verkeerslichten\":**\n\nDeze criteria hebben betrekking op driekleurige (rood, geel en groen) signaallichten voor het wegverkeer met een diameter van 200 mm of 300 mm, in overeenstemming met de norm EN 12368. Draagbare signaallichten zijn uitdrukkelijk uitgesloten.\n\n*EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten*||)",
+        "Neem in ieder geval de kerncriteria en bijbehorende uitvoeringsvoorwaarden op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "straatverlichting",
+            "label": "📋 Straatverlichting",
+            "label_short": "Straatverlichting"
+          },
+          {
+            "key": "verkeerslichten",
+            "label": "🚦 Verkeerslichten",
+            "label_short": "Verkeerslichten"
+          }
+        ],
+        "default_main_tab": "straatverlichting",
+        "data": {
+          "straatverlichting": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "Uitgebreide criteria",
+                "label_short": "Uitgebreide"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "Verbeterde armatuurefficiëntie",
+                "subtitle": "Geldt voor TS1",
+                "specification": "Aan inschrijvingen met lichtbronnen/armaturen met een efficiëntie die hoger is dan de minimale drempel die in TS1 is gespecificeerd, worden punten toegekend.\n\nDe maximale score moet worden toegekend aan de inschrijving met de hoogste efficiëntie, waarbij de hoogste biedingen naar verhouding meer punten worden toegekend dan biedingen dichter bij de minimumdrempel.\n\nWanneer de minimale criteria volgens TS1 worden veralgemeniseerd voor gebruik in het gehele lichtpark van de aanbestedende dienst, moeten de minimumdrempels die aan de locatiekenmerken kunnen worden gekoppeld duidelijk zijn afgebakend, bijvoorbeeld:\n\n*\"De minimaal toegestane efficiëntie is 130 lm/W voor de vijftig verkeerslichten in het stadscentrum waar een CCT van 2700 K moet worden toegepast, en 150 lm/W op alle andere locaties\", waarbij een afzonderlijke minimumscore voor elke sub-locatie moet worden gebruikt die wordt bepaald door de limiet die op de respectieve locaties van toepassing is.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 36"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet voor alle armatuurmodellen een standaard fotometrisch bestand verstrekken dat compatibel is met gangbare lichtplanningssoftware en dat de technische specificaties van de lichtopbrengst en het energieverbruik van de armatuur bevat, gemeten met behulp van betrouwbare, nauwkeurige, reproduceerbare en geavanceerde meetmethoden. De methoden moeten in overeenstemming zijn met relevante internationale normen, indien beschikbaar."
+                }
+              },
+              {
+                "code": "GC2",
+                "title": "Verbeterde AECI",
+                "subtitle": "Geldt voor TS4",
+                "specification": "Aan inschrijvingen met ontwerpen waarvoor berekend is dat zij een lagere totale hoeveelheid energie per jaar gebruiken (zoals in TS4 met de AECI-berekeningsformule is bepaald), worden punten toegekend.\n\nDe maximale score moet worden toegekend aan de inschrijving met de laagste AECI en de hoogste biedingen moeten naar verhouding meer punten worden toegekend dan biedingen die dichter bij de TS4-drempel liggen (ongeacht of voor de kerncriteria óf de uitgebreide criteria is gekozen).\n\nWanneer de minimale criteria volgens TS4 worden veralgemeniseerd voor gebruik in het gehele lichtpark van de aanbestedende dienst, moeten de minimumdrempels die aan de locatiekenmerken kunnen worden gekoppeld duidelijk zijn afgebakend, bijvoorbeeld:\n\n*\"In totaal moeten 60 armaturen worden geïnstalleerd in een gebied dat wonen en werken combineert waar de energie-index van het ontwerp die volgens TS4 voor elk afzonderlijk gebied moet worden gebruikt om het maximale aantal AECI-punten te berekenen 2 300 kWh per jaar is. Voor dit gebied geldt de PDI in technische bijlage I die overeenkomt met het brede trottoir, want het is een winkelgebied met veel voetgangers. Op kruispunten zal PDI in technische bijlage I die bij het brede trottoir hoort worden gebruikt als ten minste twee van de vier straatverlichtershoeken vlakbij kruispunten zijn waar voetgangers regelmatig oversteken.\"*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 36"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet vermelden welke verlichtingssoftware is gebruikt om de AECI-waarde te berekenen en moet een duidelijke berekening geven, met vermelding van de waarden voor de armatuurefficiëntie, behoudsfactor en uitlatingfactor van zijn voorgestelde ontwerp. De berekeningsresultaten moeten netonstroer en de berekende verlichtingssterkte/luminantiewaarden bevatten."
+                }
+              },
+              {
+                "code": "GC3",
+                "title": "Verlengde garantie",
+                "subtitle": "Geldt voor TS12.",
+                "specification": "Er worden maximaal X punten toegekend aan inschrijvers die bereid zijn hun oorspronkelijke garantietermijnen te geven die langer zijn dan de in TS12 vermelde minimale garantietermijnen en waarvan de kosten reeds in de offerteprijs zijn inbegrepen.\n\nDe punten zullen worden toegekend afhankelijk van de termijn waarmee de garantie de minimaal vereiste garantietermijn overschrijdt, en wel als volgt:\n• Minimum + 1 jaar: 0,2X punten\n• Minimum + 2 jaar: 0,4X punten\n• Minimum + 3 jaar: 0,6X punten\n• Minimum + 4 jaar: 0,8X punten\n• Minimum + 5 jaar of meer: X punten\n\nInschrijvers kunnen ook optioneel offertes indienen voor verlengde garanties die niet in de offerteprijs zijn opgenomen, maar daar worden geen punten voor toegekend. In dergelijke gevallen is geen betaling voor een verlengde garantie vereist tot het laatste jaar van de oorspronkelijke garantie, waarna de aanbestedende dienst aan het begin van elk jaar van de verlengde garantie jaarlijkse betalingen zal verrichten aan de geselecteerde inschrijver.\n\nBovendien zal de aanbestedende dienst tot het laatste jaar van de oorspronkelijke garantie de mogelijkheid hebben om al dan niet op het aanbod van een verlengde garantie in te gaan; de kosten van de verlengde garantie zullen de initieel voorgestelde kosten zijn, verhoogd met de inflatie.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 37"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de garantietermijnen opgeven die hij bereid is te verstrekken, zowel opgenomen in de oorspronkelijke offerteprijs als optioneel beschikbaar tegen een jaarlijkse kostenverhoging."
+                }
+              }
+            ],
+            "extended_criteria": []
+          },
+          "verkeerslichten": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "Uitgebreide criteria",
+                "label_short": "Uitgebreide"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "Laagste levenscycluskosten",
+                "subtitle": "Geldt voor TS1.",
+                "specification": "Er worden maximaal X punten toegekend aan de inschrijver wiens voorstel aantoonbaar de laagste levenscycluskosten heeft.\n\nEr worden punten toegekend aan andere inschrijvers afhankelijk van de mate waarin hun levenscycluskosten de laagste levenscycluskosten overschrijden, waarbij gebruik wordt gemaakt van de volgende formule:\n\n```formula\nPunten aanbesteding A = X × (laagste levenscycluskosten van alle aanbestedingen / levenscycluskosten van aanbesteding A)\n```",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 43"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Zodra alle inschrijvingen zijn ontvangen, kan de aanbestedende dienst bepalen welke inschrijving de laagste levenscycluskosten biedt en aan de hand daarvan bepalen hoeveel punten aan elke inschrijving moeten worden toegekend."
+                }
+              },
+              {
+                "code": "GC2",
+                "title": "Verlengde garantie",
+                "subtitle": "Geldt voor TS2.",
+                "specification": "Er worden maximaal X punten toegekend aan inschrijvers die bereid zijn oorspronkelijke garantietermijnen te geven die langer zijn dan de in TS2 vermelde minimale garantietermijnen en waarvan de kosten reeds in de offerteprijs zijn inbegrepen. De punten zullen worden toegekend afhankelijk van de termijn waarmee de garantie de minimaal vereiste garantietermijn overschrijdt, en wel als volgt:\n• Minimum + 1 jaar: 0,2X punten\n• Minimum + 2 jaar: 0,4X punten\n• Minimum + 3 jaar: 0,6X punten\n• Minimum + 4 jaar: 0,8X punten\n• Minimum + 5 jaar of meer: X punten\n\nInschrijvers kunnen ook optioneel offertes indienen voor verlengde garanties die niet in de offerteprijs zijn opgenomen, maar daar worden geen punten voor toegekend. In dergelijke gevallen is geen betaling voor een verlengde garantie vereist tot het laatste jaar van de oorspronkelijke garantie, waarna de aanbestedende dienst aan het begin van elk jaar van de verlengde garantie jaarlijkse betalingen zal verrichten aan de geselecteerde inschrijver.\n\nBovendien zal de aanbestedende dienst tot het laatste jaar van de oorspronkelijke garantie de mogelijkheid hebben om al dan niet op het aanbod van een verlengde garantie in te gaan; de kosten van de verlengde garantie zullen de initieel voorgestelde kosten zijn, verhoogd met de inflatie.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 43"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de garantietermijnen opgeven die hij bereid is te verstrekken, zowel opgenomen in de oorspronkelijke offerteprijs als optioneel beschikbaar tegen een jaarlijkse kostenverhoging."
+                }
+              },
+              {
+                "code": "GC3",
+                "title": "Dimregelingen",
+                "subtitle": "Van toepassing op alle aanbestedingen, tenzij het duidelijk is dat dimregelingen tot hogere totale eigendomskosten zouden leiden. Aanbestedende diensten moeten de gewenste dimprestaties duidelijk omschrijven in de uitnodiging tot inschrijving.",
+                "specification": "Er worden punten toegekend aan inschrijvers die lichtbronnen en armaturen met volledig functionele dimregelingen specificeren die kunnen worden geprogrammeerd om de verlichting 's nachts te dimmen op momenten dat er weinig verkeer op de weg is.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 44"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie van de fabrikant(en) van de door hem voorgestelde lichtbronnen en armaturen verstrekken waaruit blijkt dat zij compatibel zijn met dimregelingen.\n\nIn de documentatie moet ook een vermogenscurve van de lichtopbrengst versus het energieverbruik worden opgenomen, moet de maximaal mogelijke dimming worden vermeld en moeten instructies voor het programmeren en herprogrammeren van de regelingen worden gegeven."
+                }
+              }
+            ],
+            "extended_criteria": []
+          }
+        }
+      }
+    },
+    {
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als technische specificaties. Daarmee worden de inhoudelijke eisen vastgelegd die aan het werk, de levering of de dienst worden gesteld.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale technische specificaties) uit de EU GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn dient u deze op te nemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie. De GPP definieert technische specificaties voor:\n   Categorie 1: [Straatverlichting](popup:TOELICHTING||**Categorie 1: \"Straatverlichting\":**\n\nDeze criteria hebben betrekking op aanbestedingen voor de aankoop van verlichtingsapparatuur voor:\n\n• straatverlichting in nieuwe verlichtingsinstallaties;\n• retrofits van andere armaturen in bestaande verlichtingsinstallaties;\n• retrofits van andere lichtbronnen of -regelingen in bestaande armaturen; of\n• de eenvoudige vervanging van lichtbronnen, lampen of armaturen door hetzelfde type in bestaande verlichtingsinstallaties.\n\nIn overeenstemming met de norm EN 13201-1 verwijst de term \"straatverlichting\" naar vaste verlichtingsinstallaties die zijn bedoeld om verkeersdeelnemers een goed zicht te bieden in het donker ten behoeve van de verkeersveiligheid, het verkeersverloop en de openbare veiligheid.\n\nVerlichtingsinstallaties voor tunnels, tolstations, kanalen, sluizen, parkeerterreinen, commerciële terreinen, industrieterreinen, sportaccommodaties, monumenten en gevels van gebouwen vallen hier uitdrukkelijk buiten.\n\nDe volgende technische definities dienen ter ondersteuning bij het toepassen van de criteria (zie het technisch rapport voor bijzonderheden en meer technische definities):\n\n\"armatuurefficiëntie\": verhouding tussen de afgegeven lichtstroom (in lumen) en het energieverbruik (in watt) van de armatuur\n\n*EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten*||)\n   Categorie 2: [Verkeerslichten](popup:TOELICHTING||**Categorie 2: \"Verkeerslichten\":**\n\nDeze criteria hebben betrekking op driekleurige (rood, geel en groen) signaallichten voor het wegverkeer met een diameter van 200 mm of 300 mm, in overeenstemming met de norm EN 12368. Draagbare signaallichten zijn uitdrukkelijk uitgesloten.\n\n*EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten*||)",
+        "Neem in ieder geval de kerncriteria en bijbehorende uitvoeringsvoorwaarden op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "straatverlichting",
+            "label": "📋 Straatverlichting",
+            "label_short": "Straatverlichting"
+          },
+          {
+            "key": "verkeerslichten",
+            "label": "🚦 Verkeerslichten",
+            "label_short": "Verkeerslichten"
+          }
+        ],
+        "default_main_tab": "straatverlichting",
+        "data": {
+          "straatverlichting": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "Uitgebreide criteria",
+                "label_short": "Uitgebreide"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Armatuurefficiëntie",
+                "subtitle": "Van toepassing als lichtbronnen of armaturen in een bestaande verlichtingsinstallatie moeten worden vervangen en er geen herinstallatie of nieuw ontwerp wordt uitgevoerd. Deze ambitieniveaus mogen niet worden toegepast als de opgegeven CCT van de lichtbronnen niet meer dan 2700 K mag bedragen.",
+                "specification": "De te installeren verlichtingsapparatuur moet een armatuurefficiëntie hebben die hoger is dan de hieronder vermelde relevante referentiewaarde.\n\n| Jaar van uitnodiging tot inschrijving* | Efficiëntie (lm/W) |\n|---|---|\n| 2018-19 | 120 |\n| 2020-21 | 137 |\n| 2022-23 | 155 |",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 14"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een standaard fotometrisch bestand indienen dat compatibel is met gangbare lichtplanningssoftware en dat technische specificaties bevat over de lichtopbrengst en het energieverbruik van de armatuur, gemeten met behulp van betrouwbare, nauwkeurige, reproduceerbare en geavanceerde meetmethoden. De methoden moeten in overeenstemming zijn met relevante internationale normen, indien beschikbaar.\n\n*Gezien de snelle technologische ontwikkelingen op het gebied van de armatuurefficiëntie van ledverlichting wordt voorgesteld om de hier vermelde referentiewaarden voor uitnodigingen tot inschrijving in de komende zes jaar te verhogen teneinde te vermijden dat ze verouderd raken voordat de EU-criteria voor groene overheidsopdrachten moeten worden herzien."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Compatibiliteit van dimregelingen",
+                "subtitle": "Van toepassing op alle aanbestedingen.",
+                "specification": "De verlichtingsinstallatie moet compatibel zijn met dimregelingen en het moet mogelijk zijn om te programmeren dat de verlichting 's nachts wordt uitgeschakeld op momenten dat er weinig verkeer op de weg is.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 16"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet uitleggen hoe de voorgestelde verlichtingsinstallatie compatibel is met programmeerbare dimming en uitschakeling en moet bij deze uitleg alle relevante documentatie van de fabrikant(en) van de door de hem voorgestelde lichtbronnen en armaturen voegen.\n\nIndien de regelingen niet in de armatuur zijn ingebouwd, moet in de documentatie worden vermeld welke interfaces kunnen worden gebruikt voor de dimregeling.\n\nIn de documentatie moet ook worden aangegeven welke dimmethoden compatibel zijn, bijvoorbeeld:\n• dimmen op basis van een voorgeprogrammeerde tijdelijke periode waarin er naar verwachting weinig verkeer op de weg is,\n• initieel dimmen van verlichtingsinstallaties die te zwaar zijn ontworpen om de geleidelijke afname van de lumenopbrengst te compenseren,\n• variabel dimmen om bij wisselende weersomstandigheden een bepaalde verlichtingssterkte te behouden."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Minimale dimprestaties",
+                "subtitle": "Van toepassing op alle aanbestedingen, tenzij het duidelijk is dat dimregelingen tot hogere totale eigendomskosten zouden leiden. Aanbestedende diensten moeten de gewenste dimprestaties duidelijk omschrijven in de uitnodiging tot inschrijving.",
+                "specification": "Alle lichtbronnen en armaturen moeten worden geïnstalleerd met volledig functionele dimregelingen die het mogelijk maken om ten minste één dimniveau voor te programmeren waarbij de verlichting minstens wordt gedimd tot 50% van de maximale lichtopbrengst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 16"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie van de fabrikant(en) van de door hem voorgestelde lichtbronnen en armaturen verstrekken waaruit blijkt dat zij compatibel zijn met dimregelingen.\n\nIn de documentatie moet ook worden vermeld welke dimregelingen zijn opgenomen, bijvoorbeeld:\n• voorgeprogrammeerd dimmen, of\n• variabel dimmen op basis van de weersomstandigheden of verkeersintensiteit.\n\nIn de documentatie moet ook een vermogenscurve van de lichtopbrengst versus het energieverbruik worden opgenomen, moeten de maximaal mogelijke dimniveaus worden vermeld en moeten instructies voor het programmeren en herprogrammeren van de regelingen worden gegeven."
+                }
+              },
+              {
+                "code": "TS4",
+                "title": "Indicator voor het jaarlijkse energieverbruik (AECI)",
+                "subtitle": "Van toepassing wanneer een nieuwe verlichtingsinstallatie wordt ontworpen of wanneer een herontwerp nodig is in verband met de renovatie van een bestaande verlichtingsinstallatie of het retrofitting van nieuwe armaturen. Aanbestedende diensten moeten bijzondere aandacht schenken aan de door de ontwerper/inschrijver ingediende cijfers voor de behoudsfactor en uitlating en ervoor zorgen dat deze realistisch en verantwoord zijn.",
+                "specification": "Geen onderscheid tussen kerncriteria en uitgebreide criteria, hoewel de PDI-referentiewaarden hoger zijn voor een uitgebreide benadering – zie technische bijlage I\n\nDe aanbestedende dienst moet technische tekeningen van het wegontwerp verstrekken, samen met de te verlichten gebieden en de eisen inzake verlichtingssterkte/luminantie.\n\nVoor klasse M-wegen moet de aanbestedende dienst opgeven welke wegdekreflectiecoëfficiënt de inschrijvers bij hun luminantieberekeningen moeten gebruiken.\n\nOm de inschrijvers te helpen bij hun veronderstellingen met betrekking tot de behoudsfactoren van het ontwerp, moet de aanbestedende dienst opgeven hoe vaak de armaturen zullen worden gereinigd.\n\nVoor de aanbestedende dienst wordt de gemiddelde te behouden verlichtingssterkte/luminantie berekend met de volgende vergelijking:\n\n```formula\nAECI_ontwerp ≤ PDI_ref × E_m × F_D × T × 0,001\n```\n\nWaarbij:\n• PDI de indicator voor de vermogensdichtheid is, in eenheden van W·lx⁻¹·m²\n• E_m de maximale te behouden verlichtingssterkte (lx) is\n• F_D de dimfactor voor geprogrammeerd dimmen is\n• T de bedrijfsduur (h·jr⁻¹) is\n• 0,001 het aantal kWh in 1 Wh is\n\nDe gebruikte PDI_ref-waarde hangt af van de breedte van de weg en het jaar, zoals vermeld in technische bijlage I. Lagere PDI_ref-waarden dan die welke in technische bijlage I zijn vermeld, zijn gerechtvaardigd in gevallen waarin ook lichtbronnen met een CCT ≤ 2700K zijn gespecificeerd.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 17"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet vermelden welke verlichtingssoftware is gebruikt om de PDI-waarde te berekenen en moet een duidelijke berekening geven, met vermelding van de waarden voor de armatuurefficiëntie, behoudsfactor en uitlatingfactor van zijn voorgestelde ontwerp. De berekeningsresultaten moeten netonstroer en de berekende verlichtingssterkte/luminantiewaarden bevatten."
+                }
+              },
+              {
+                "code": "TS5",
+                "title": "Meting",
+                "subtitle": "Van toepassing op alle inschrijvingen waarbij nog geen speciale meter voor de verlichtingsinstallatie aanwezig is.",
+                "specification": "De aanbestedende dienst moet in de uitnodiging tot inschrijving alle specifieke technische eisen voor het metersysteem vermelden.\n\nDe inschrijver moet details verstrekken over de voorgestelde meetapparatuur en alle hulpapparatuur die nodig is voor het monitoren van het elektriciteitsverbruik op het niveau van de verlichtingsinstallatie voor dezelfde verlichtingsinstallatie die het onderwerp van de uitnodiging tot inschrijving is.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische specificaties van het meter- en meetsysteem verstrekken, samen met duidelijke instructies voor de bediening en het onderhoud van dit systeem. Voor elke regelzone moet een kalibratiecertificaat conform Richtlijn 2004/22/EG (de meetinstrumentenrichtlijn) worden verstrekt."
+                }
+              },
+              {
+                "code": "TS6",
+                "title": "Vermogensfactor",
+                "subtitle": "Van toepassing bij de aankoop van ledarmaturen.",
+                "specification": "De vermogensfactor voor de te installeren armatuur moet ≥ 0,90 zijn.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet schriftelijk verklaren dat de verlichtingsapparatuur die hij voornemens is te leveren voldoet aan het criterium, gestaafd met een verklaring van de fabrikant en de resultaten van de overeenkomstig IEC 61000-3-2 uitgevoerde tests."
+                }
+              },
+              {
+                "code": "TS7",
+                "title": "Opwaartse-lichtopbrengstverhouding (RULO) en hinderlijk licht",
+                "subtitle": "Van toepassing op alle contracten waarbij nieuwe armaturen worden aangekocht.",
+                "specification": "Alle aangekochte armatuurmodellen moeten een opgegeven RULO van 0,0 % hebben.\n\nAls het nodig is een giekhoek te gebruiken, hetzij om de lichtmastverdeling te optimaliseren, hetzij als gevolg van beperkingen in de positionering van de lichtmasten, moet een RULO van 0,0 % worden gehandhaafd, zelfs als de armatuur onder de vereiste hoek wordt gekanteld.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 26"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het (de) fotometrische bestand(en) verstrekken, dat (die) de tabel moet(en) bevatten met gegevens over de fotometrische intensiteit op basis waarvan de RULO is berekend overeenkomstig EN 13032-1, EN 13032-2, EN 13032-4, bijlage D van IEC 62722-1 of andere relevante internationale normen.\n\nIndien armaturen niet horizontaal zijn geïnstalleerd, moet uit het fotometrische bestand blijken dat ofwel:\n• de toepassing van dezelfde kantelhoek op de data als die waarin de armatuur moet worden geplaatst, resulteert nog steeds in een RULO van 0,0 %, ofwel\n• de armatuur is voorzien van een extra afscherming en de afgeschermde armatuur een RULO van 0,0 % heeft wanneer ze onder de ontwerpinstallatiehoek is gekanteld."
+                }
+              },
+              {
+                "code": "TS8",
+                "title": "Opwaartse-lichtopbrengstverhouding (RULO) en hinderlijk licht",
+                "subtitle": "De CCT-waarde houdt rechtstreeks verband met de menselijke perceptie en moet dus worden gespecificeerd wanneer hinder voor de mens een punt van zorg is.",
+                "specification": "In woongebieden moet, om het risico van hinder voor de mens te beperken, de CCT van lichtbronnen ≤ 3000 K en moet een dim- of uitschakelprogramma worden geïmplementeerd. Dit volgens de specificaties van de aanbestedende dienst (eventueel gedefinieerd in TS3 als dat in de uitnodiging tot inschrijving is opgenomen).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 27"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Op verzoek moet de inschrijver de lichtspectra van alle te leveren lampen verstrekken.\n\nDe inschrijver moet de resultaten van CCT-metingen verstrekken, gerapporteerd in overeenstemming met CIE 15.\n\nBij dimverlichting moet de inschrijver details verstrekken over de voorgestelde dimregelingen en het bereik van de dimmogelijkheden, waarbij het ten minste mogelijk moet zijn om de verlichting op basis van een astronomische klok te dimmen of uit te schakelen."
+                }
+              },
+              {
+                "code": "TS9",
+                "title": "Ecologische lichtvervuiling en zichtbaarheid van sterren",
+                "subtitle": "De G-indexwaarde is direct gerelateerd aan de hoeveelheid blauw licht en moet dus worden gespecificeerd wanneer de effecten van lichtvervuiling op in het wild levende dieren of op de zichtbaarheid van sterren een punt van zorg zijn.",
+                "specification": "In parken, tuinen en gebieden die door de aanbestedende dienst als ecologisch gevoelig worden beschouwd, moet de G-index ≥ 1,5*.\n\nVoor parken en tuinen die 's nachts geopend zijn, moet een dimprogramma** worden geïmplementeerd.\n\nEr moet een uitschakelprogramma worden voorzien voor alle relevante sluitingsuren van parken en tuinen.\n\nVoor alle andere ecologisch gevoelige gebieden moet een dim- en/of uitschakelprogramma** worden geïmplementeerd.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 28"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de resultaten van metingen van de G-index*** verstrekken.\n\n* Als het niet mogelijk is om de G-index te berekenen, kan de CCT als oriëntatie worden gebruikt, met dien verstande dat het gebruik ervan als maatstaf voor blauw licht niet perfect is. Een G-index van ≥ 1,5 zou in het algemeen (maar niet altijd) gelijkstaan aan een CCT van ≤ 3000 K.\n** Volgens de specificaties van de aanbestedende dienst (eventueel gedefinieerd in TS3 als dat in de uitnodiging tot inschrijving is opgenomen).\n*** De G-index kan met behulp van dezelfde fotometrische gegevens die voor de berekening van de CCT worden gebruikt snel en eenvoudig worden berekend."
+                }
+              },
+              {
+                "code": "TS10",
+                "title": "Verstrekking van instructies",
+                "subtitle": "Van toepassing wanneer de apparatuur en/of regelingen in de specifieke verlichtingsinstallatie die in de uitnodiging tot inschrijving wordt gevraagd, verschillen van de normale apparatuur die elders op het bredere verlichtingsnet van de aanbestedende dienst is geïnstalleerd.",
+                "specification": "De inschrijver moet de volgende informatie verstrekken bij de installatie van nieuwe of gerenoveerde verlichtingssystemen:\n\n• instructies voor het demonteren van armaturen;\n• instructies voor het vervangen van lichtbronnen (indien van toepassing) en informatie over het type lampen die in de armaturen kunnen worden gebruikt zonder de energie-efficiëntie te doen dalen;\n• instructies voor de bediening en het onderhoud van de verlichtingsregelingen;\n• voor daglichtafhankelijke regelingen, instructies voor het opnieuw kalibreren en afstellen van deze systemen; en\n• voor tijdschakelaars, instructies voor het instellen van de uitschakeltijden en advies over hoe dit het beste kan worden gedaan om aan de visuele behoeften te voldoen zonder overmatige toename van het energieverbruik.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 30"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een verklaring van conformiteit met dit criterium verstrekken, gestaafd met voorbeelden van schriftelijke instructies die aan de aanbestedende dienst moeten worden verstrekt indien de inschrijving wordt geselecteerd."
+                }
+              },
+              {
+                "code": "TS10",
+                "title": "Terugwinning van afval",
+                "subtitle": "De inschrijver moet passende milieumaatregelen nemen om het afval dat bij de installatie van een nieuw of gerenoveerd verlichtingssysteem ontstaat te beperken en terug te winnen.",
+                "specification": "Alle afgedankte lampen, armaturen en verlichtingsregelingen moeten worden gescheiden en voor terugwinning worden afgevoerd overeenkomstig de AEEA-richtlijn⁶. Alle andere afvalmaterialen die naar verwachting zullen worden gegenereerd en die kunnen worden gerecycled, moeten worden ingezameld en afgeleverd bij passende inzamelpunten.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 31"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet details verstrekken over de bestaande afvalverwerkingsprocedures en moet geschikte locaties opgeven waarnaar AEEA en andere recyclebare materialen kunnen worden gebracht voor scheiding, recycling en warmteterugwinning, in voorkomend geval."
+                }
+              },
+              {
+                "code": "TS11",
+                "title": "Levensduur van producten, reserveonderdelen en garantie",
+                "subtitle": "De hier opgegeven drempels zijn van toepassing op ledlichtbronnen, -lampen en -armaturen.",
+                "specification": "Alle ledlichtbronnen moeten bij 25 °C een opgegeven levensduur hebben van:\n• L96: 6 000 uren,\n• L70: 50 000 uren (geraamd),\n• C0: 3 000 uren of C10: 6 000 uren,\n• C50: 50 000 uren (geraamd).\n\nDe reparatie van, of de levering van relevante vervangingsonderdelen voor, ledmodules die abrupt defect raken, moet worden gedekt door een garantie van 5 jaar vanaf de datum van installatie.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 32"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Testgegevens met betrekking tot de te behouden lumenopbrengst van de lichtbronnen moeten worden verstrekt door een laboratorium dat door de International Laboratory Accreditation Cooperation is geaccrediteerd en dat voldoet aan IES LM-80 voor feitelijke gegevens en IES TM-21 voor geraamde gegevens.\n\nDe inschrijver moet een kopie van de minimumgarantie van 5 jaar verstrekken die moet worden ondertekend indien de inschrijving wordt geselecteerd.\n\nDe aannemer moet een kopie verstrekken van de garantie die van toepassing zal zijn als zijn inschrijving wordt geselecteerd en moet de nodige contactgegevens (minimaal telefoonnummer en e-mailadres) voor de afhandeling van gerelateerde vragen of mogelijke claims verstrekken.\n\nVoor de duidelijkheid: de garantie moet ten minste de kosten van de reparatie of vervanging van defecte onderdelen van ledmodules dekken binnen een redelijke termijn na melding van het defect (door de aanbestedende dienst te specificeren in de uitnodiging tot inschrijving), hetzij rechtstreeks, hetzij via andere aangewezen agenten. De vervangingsonderdelen moeten dezelfde zijn als de originele onderdelen, maar als dat niet mogelijk is, mogen gelijkwaardige reserveonderdelen worden gebruikt die dezelfde functie vervullen op hetzelfde of een hoger prestatieniveau.\n\nDe garantie dekt niet de volgende zaken:\na) gebrekkige werking als gevolg van vandalisme, ongevallen of extreme weersgebeurtenissen;\nb) lampen of armaturen die al geruime tijd onder abnormale omstandigheden werken (bijv. gebruikt met de verkeerde netspanning), voor zover dit door de aannemer kan worden aangetoond.\n\n* Te actualiseren naar LM-84 en TM-28 wanneer deze versies worden gepubliceerd."
+                }
+              },
+              {
+                "code": "TS12",
+                "title": "Repareerbaarheid",
+                "subtitle": "De hier opgegeven drempels zijn van toepassing op ledlichtbronnen, -lampen en -armaturen.",
+                "specification": "De inschrijver moet ervoor zorgen dat het voor een vakman haalbaar en praktisch is om toegang te krijgen tot onderdelen (bijv. lichtbron, lamp, ledmodule, sturing) nadat de armatuur in gebruik is genomen.\n\nDe onderdelen moeten identificeerbaar, toegankelijk en demonteerbaar zijn zonder het onderdeel of de armatuur te beschadigen.\n\nOnderdelen moeten ter plaatse (d.w.z. op de montagehoogte van de armatuur) kunnen worden vervangen zonder gereedschap (d.w.z. plug-and-play) of met een van de volgende typen schroevendraaiers:\n• standaardschroevendraaier, pozidrivschroevendraaier, phillipsschroevendraaier, torxsleutel, inbussleutel of combinatiesleutel.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een technische handleiding verstrekken. De handleiding moet een explosietekening van de armatuur bevatten waarin de toegankelijke en vervangbare delen worden geïllustreerd. Ook de onderdelen die onder de servicegarantie vallen, moeten worden aangegeven."
+                }
+              },
+              {
+                "code": "TS13",
+                "title": "Indeling voor binnendringingsbescherming",
+                "subtitle": "De hier opgegeven drempels zijn van toepassing op ledlichtbronnen, -lampen en -armaturen.",
+                "specification": "Armaturen voor klasse M- en klasse C-wegen moeten een optisch systeem met binnendringingsbeschermingscode IP65 of hoger hebben, afhankelijk van de plaatselijke omstandigheden.\n\nArmaturen voor klasse P-wegen moeten een systeem met binnendringingsbeschermingscode IP55 of hoger hebben, afhankelijk van de plaatselijke omstandigheden.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische specificaties verstrekken en aantonen dat aan dit criterium is voldaan overeenkomstig IEC 60598-1 clausule 9.\n\nOpmerking: De tests voor het binnendringen van stof, vaste voorwerpen en vocht, zoals gespecificeerd in IEC 60598-1, zijn niet allemaal identiek aan de tests in IEC 60529 vanwege de technische kenmerken van armaturen. Het IP-nummeringssysteem wordt toegelicht in bijlage J van de norm."
+                }
+              },
+              {
+                "code": "TS14",
+                "title": "Storingspercentage van voorschakelapparatuur",
+                "subtitle": "Het gespecificeerde storingspercentage van voorschakelapparatuur moet lager zijn dan 0,2% per 1 000 uren en voorschakelapparatuur moet worden gedekt door een garantie van 8 jaar.",
+                "specification": "",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 35"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet voor elk voorschakelapparaat dat hij voornemens is te leveren een verklaring van overeenstemming met het bovengenoemde storingspercentage verstrekken. De verklaring moet worden gestaafd met relevante testprocedures die aan de industrienormen voldoen."
+                }
+              },
+              {
+                "code": "TS15",
+                "title": "Etikettering van ledarmaturen",
+                "subtitle": "Van toepassing bij de installatie van nieuwe ledarmaturen.",
+                "specification": "Voor de armaturen die de inschrijver voorstelt te installeren, moet ten minste de volgende technische informatie worden verstrekt:\n\n• naam van de fabrikant, code, serienummer en productiedatum;\n• toegevoerd vermogen;\n• lichtstroom bij 25 °C;\n• opwaartse-lichtopbrengstverhouding;\n• CIE-fluxcodes;\n• toegevoegde kleurtemperatuur (CCT);\n• G-index;\n• indicatie van de dimregelingstechnologie (indien van toepassing).\n\nDe informatie moet worden opgenomen in de armatuur en, indien mogelijk, ook in een deel van de lichtmast dat vanaf de grond toegankelijk is. De inschrijver moet specificeren hoe deze informatie precies zal worden weergegeven (bijv. op een etiket met een QR-code, een etiket met schriftelijke informatie of een metalen plaat met daarin gegraveerde informatie).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 35"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een voorbeeldbeschrijving verstrekken van het etiket dat hij bij zijn verlichtingsapparatuur zou leveren indien zijn inschrijving wordt geselecteerd."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS1",
+                "title": "Armatuurefficiëntie",
+                "subtitle": "Van toepassing als lichtbronnen of armaturen in een bestaande verlichtingsinstallatie moeten worden vervangen en er geen herontwerp wordt uitgevoerd. Deze ambitieniveaus mogen niet worden toegepast als de opgegeven CCT van de lichtbronnen niet meer dan 2700 K mag bedragen.",
+                "specification": "De te installeren verlichtingsapparatuur moet een armatuurefficiëntie hebben die hoger is dan de hieronder vermelde relevante referentiewaarde.\n\n| Jaar van uitnodiging tot inschrijving* | Efficiëntie (lm/W) |\n|---|---|\n| 2018-19 | 130 |\n| 2020-21 | 147 |\n| 2022-23 | 165 |",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 14"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een standaard fotometrisch bestand indienen dat compatibel is met gangbare lichtplanningssoftware en dat technische specificaties bevat over de lichtopbrengst en het energieverbruik van de armatuur, gemeten met behulp van betrouwbare, nauwkeurige, reproduceerbare en geavanceerde meetmethoden. De methoden moeten in overeenstemming zijn met relevante internationale normen, indien beschikbaar.\n\n*Gezien de snelle technologische ontwikkelingen op het gebied van de armatuurefficiëntie van ledverlichting wordt voorgesteld om de hier vermelde referentiewaarden voor uitnodigingen tot inschrijving in de komende zes jaar te verhogen teneinde te vermijden dat ze verouderd raken voordat de EU-criteria voor groene overheidsopdrachten moeten worden herzien."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Minimale dimprestaties",
+                "subtitle": "Van toepassing op alle aanbestedingen, tenzij het duidelijk is dat dimregelingen tot hogere totale eigendomskosten zouden leiden. Aanbestedende diensten moeten de gewenste dimprestaties duidelijk omschrijven in de uitnodiging tot inschrijving.",
+                "specification": "Alle lichtbronnen en armaturen moeten worden geïnstalleerd met volledig functionele dimregelingen die het mogelijk maken om ten minste twee dimniveaus voor te programmeren waarbij de verlichting minstens wordt gedimd tot 10% van de maximale lichtopbrengst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 16"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie van de fabrikant(en) van de door hem voorgestelde lichtbronnen en armaturen verstrekken waaruit blijkt dat zij compatibel zijn met dimregelingen.\n\nIn de documentatie moet ook worden vermeld welke dimregelingen zijn opgenomen, bijvoorbeeld:\n• voorgeprogrammeerd dimmen, of\n• variabel dimmen op basis van de weersomstandigheden of verkeersintensiteit.\n\nIn de documentatie moet ook een vermogenscurve van de lichtopbrengst versus het energieverbruik worden opgenomen, moeten de maximaal mogelijke dimniveaus worden vermeld en moeten instructies voor het programmeren en herprogrammeren van de regelingen worden gegeven."
+                }
+              },
+              {
+                "code": "TS5",
+                "title": "Meting",
+                "subtitle": "Van toepassing op alle inschrijvingen waarbij nog geen speciale meter voor de verlichtingsinstallatie aanwezig is.",
+                "specification": "De aanbestedende dienst moet in de uitnodiging tot inschrijving alle specifieke technische eisen voor het metersysteem vermelden.\n\nDe inschrijver moet details verstrekken over de voorgestelde meetapparatuur en alle hulpapparatuur die nodig is voor het monitoren van het elektriciteitsverbruik op het niveau van de verlichtingsinstallatie voor dezelfde verlichtingsinstallatie die het onderwerp van de uitnodiging tot inschrijving is.\n\nHet meetapparaat moet in staat zijn om 24 uur per dag gegevens te registreren die later handmatig of op afstand kunnen worden gedownload.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische specificaties van het meter- en meetsysteem verstrekken, samen met duidelijke instructies voor de bediening en het onderhoud van dit systeem. Voor elke regelzone moet een kalibratiecertificaat conform Richtlijn 2004/22/EG (de meetinstrumentenrichtlijn) worden verstrekt."
+                }
+              },
+              {
+                "code": "TS6",
+                "title": "Vermogensfactor",
+                "subtitle": "Van toepassing bij de aankoop van ledarmaturen.",
+                "specification": "De vermogensfactor voor de te installeren armatuur moet ≥ 0,95 zijn.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 20"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet schriftelijk verklaren dat de verlichtingsapparatuur die hij voornemens is te leveren voldoet aan het criterium, gestaafd met een verklaring van de fabrikant en de resultaten van de overeenkomstig IEC 61000-3-2 uitgevoerde tests."
+                }
+              },
+              {
+                "code": "TS7",
+                "title": "Opwaartse-lichtopbrengstverhouding (RULO) en hinderlijk licht",
+                "subtitle": "Van toepassing op alle contracten waarbij nieuwe armaturen worden aangekocht. In situaties waarin verblinding of hinderlijk licht een punt van zorg is, moeten aanbestedende diensten overwegen om een vereiste voor C3-fluxcodes te specificeren.",
+                "specification": "Alle aangekochte armatuurmodellen moeten een opgegeven RULO van 0,0 % hebben met een C3-fluxcode van ≥ 97 volgens fotometrische gegevens.\n\nAls het nodig is een giekhoek te gebruiken, hetzij om de lichtmastverdeling te optimaliseren, hetzij als gevolg van beperkingen in de positionering van de lichtmasten, moet een RULO van 0,0 % worden gehandhaafd, zelfs als de armatuur onder de vereiste hoek wordt gekanteld.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 26"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het (de) fotometrische bestand(en) verstrekken, dat (die) de tabel moet(en) bevatten met gegevens over de fotometrische intensiteit op basis waarvan de RULO is berekend overeenkomstig EN 13032-1, EN 13032-2, EN 13032-4, bijlage D van IEC 62722-1 of andere relevante internationale normen.\n\nIndien armaturen niet horizontaal zijn geïnstalleerd, moet uit het fotometrische bestand blijken dat ofwel:\n• de toepassing van dezelfde kantelhoek op de data als die waarin de armatuur moet worden geplaatst, resulteert nog steeds in een RULO van 0,0 % en een C3-fluxcode van ≥ 97, ofwel\n• de armatuur is voorzien van een extra afscherming en de afgeschermde armatuur een RULO van 0,0 % heeft alsmede een C3-fluxcode van ≥ 97 wanneer ze onder de ontwerpinstallatiehoek is gekanteld."
+                }
+              },
+              {
+                "code": "TS9",
+                "title": "Ecologische lichtvervuiling en zichtbaarheid van sterren",
+                "subtitle": "De G-indexwaarde is direct gerelateerd aan de hoeveelheid blauw licht en moet dus worden gespecificeerd wanneer de effecten van lichtvervuiling op in het wild levende dieren of op de zichtbaarheid van sterren een punt van zorg zijn. Aanbestedende diensten moeten zich ervan bewust zijn dat armaturen die aan deze eis voldoen, waarschijnlijk niet aan TS1 voor de armatuurefficiëntie voldoen.",
+                "specification": "In parken, tuinen, gebieden die door de aanbestedende dienst als ecologisch gevoelig worden beschouwd of gebieden binnen een straal van 30 km rond een stedelijk sterrenkundig observatorium met een optische telescoop of binnen een straal van 100 km rond een groot sterrenkundig observatorium met een optische telescoop, moet de G-index ≥ 2,0*.\n\nVoor parken en tuinen die 's nachts geopend zijn, moet een dimprogramma** worden geïmplementeerd. Er moet een uitschakelprogramma worden voorzien voor alle relevante sluitingsuren van parken en tuinen.\n\nVoor alle andere ecologisch gevoelige gebieden of gebieden binnen de vastgestelde stralen van relevante observatoria met optische telescopen moet een dim- en/of uitschakelprogramma** worden geïmplementeerd.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 28"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de resultaten van metingen van de G-index*** verstrekken.\n\n* Als het niet mogelijk is om de G-index te berekenen, kan de CCT als oriëntatie worden gebruikt, met dien verstande dat het gebruik ervan als maatstaf voor blauw licht niet perfect is. Een G-index van ≥ 2,0 zou in het algemeen (maar niet altijd) gelijkstaan aan een CCT van ≤ 2700 K.\n** Volgens de specificaties van de aanbestedende dienst (eventueel gedefinieerd in TS3 als dat in de uitnodiging tot inschrijving is opgenomen).\n*** De G-index kan met behulp van dezelfde fotometrische gegevens die voor de berekening van de CCT worden gebruikt snel en eenvoudig worden berekend."
+                }
+              },
+              {
+                "code": "TS12",
+                "title": "Levensduur van producten, reserveonderdelen en garantie",
+                "subtitle": "De hier opgegeven drempels zijn van toepassing op ledlichtbronnen, -lampen en -armaturen.",
+                "specification": "Alle ledlichtbronnen moeten bij 25 °C een opgegeven levensduur hebben van:\n• L96: 6 000 uren,\n• L70: 100 000 uren (geraamd),\n• C0: 3 000 uren of C10: 6 000 uren,\n• C50: 100 000 uren (geraamd).\n\nDe reparatie van, of de levering van relevante vervangingsonderdelen voor, ledmodules die abrupt defect raken, moet worden gedekt door een garantie van 7 jaar vanaf de datum van installatie.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 32"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Testgegevens met betrekking tot de te behouden lumenopbrengst van de lichtbronnen moeten worden verstrekt door een laboratorium dat door de International Laboratory Accreditation Cooperation is geaccrediteerd en dat voldoet aan IES LM-80* voor feitelijke gegevens en IES TM-21* voor geraamde gegevens.\n\nDe inschrijver moet een kopie van de minimumgarantie van 7 jaar verstrekken die moet worden ondertekend indien de inschrijving wordt geselecteerd.\n\nDe aannemer dient een kopie te verstrekken van de garantie die van toepassing zal zijn als zijn inschrijving wordt geselecteerd en moet de nodige contactgegevens (minimaal telefoonnummer en e-mailadres) voor de afhandeling van gerelateerde vragen of mogelijke claims verstrekken.\n\nVoor de duidelijkheid: de garantie moet ten minste de kosten van de reparatie of vervanging van defecte onderdelen van ledmodules dekken binnen een redelijke termijn na melding van het defect (door de aanbestedende dienst te specificeren in de uitnodiging tot inschrijving), hetzij rechtstreeks, hetzij via andere aangewezen agenten. De vervangingsonderdelen moeten dezelfde zijn als de originele onderdelen, maar als dat niet mogelijk is, mogen gelijkwaardige reserveonderdelen worden gebruikt die dezelfde functie vervullen op hetzelfde of een hoger prestatieniveau.\n\nDe garantie dekt niet de volgende zaken:\na) gebrekkige werking als gevolg van vandalisme, ongevallen of extreme weersgebeurtenissen;\nb) lampen of armaturen die al geruime tijd onder abnormale omstandigheden werken (bijv. gebruikt met de verkeerde netspanning), voor zover dit door de aannemer kan worden aangetoond.\n\n* Te actualiseren naar LM-84 en TM-28 wanneer deze versies worden gepubliceerd."
+                }
+              },
+              {
+                "code": "TS15",
+                "title": "Storingspercentage van voorschakelapparatuur",
+                "subtitle": "Het gespecificeerde storingspercentage van voorschakelapparatuur moet lager zijn dan 0,1% per 1 000 uren en voorschakelapparatuur moet worden gedekt door een garantie van 10 jaar.",
+                "specification": "",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 35"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet voor elk voorschakelapparaat dat hij voornemens is te leveren een verklaring van overeenstemming met het bovengenoemde storingspercentage verstrekken. De verklaring moet worden gestaafd met relevante testprocedures die aan de industrienormen voldoen."
+                }
+              }
+            ]
+          },
+          "verkeerslichten": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "Uitgebreide criteria",
+                "label_short": "Uitgebreide"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Levenscycluskosten",
+                "subtitle": "",
+                "specification": "De levenscycluskosten zullen worden berekend op basis van de door de aanbestedende dienst vastgestelde specificaties, die het volgende moeten omvatten:\n\n• het tijdsbestek (bijv. 8 jaar);\n• een inventaris van de vereiste verkeerslichten (bijv. rode lichten, oranje lichten, groene lichten, lichten met groene pijl, stoplichten voor voetgangers en oversteeklichten voor voetgangers);\n• de gemiddelde inschakelduur van elk verkeerslicht (bijv. rood licht 55 %, oranje licht 2 %, groen licht 43 %); en\n• het elektriciteitstarief (bijv. 0,12 EUR/kWh).\n\nDe inschrijver moet de volgende gegevens verstrekken om de beoordeling van de levenscycluskosten te voltooien:\n\n• de periode gedurende welke de garantie voor abrupte uitval van lampen geldt;\n• de opgegeven levensduur van de lamp (d.w.z. hoelang het naar verwachting zal duren tot de lumenopbrengst van de lamp afgenomen is tot 70 % van de oorspronkelijke opbrengst);\n• de aankoopkosten voor lampen (zowel bij het begin als voor noodzakelijke vervangingen tijdens de vastgestelde periode);\n• de aankoopkosten voor hulpapparatuur;\n• de aankoopkosten voor eventuele masten, funderingen en nieuwe elektrische aansluitingen; en\n• de installatiekosten (arbeidsuren vermenigvuldigd met uurtarieven, vermeerderd met eventuele kosten voor hefapparatuur enz.).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 39"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De aanbestedende dienst moet de inschrijvers een gangbare calculator voor de levenscycluskosten verstrekken die is gebaseerd op een spreadsheet waarin de van de aanbestedende dienst verlangde informatie reeds is ingevuld.\n\nDe inschrijver moet een kopie van de ingevulde spreadsheet indienen, samen met een verklaring waarin wordt bevestigd dat deze kosten ten minste geldig zijn voor een vastgestelde periode die het oorspronkelijke tijdsbestek bestrijkt dat gepland is voor de uitvoering van het contract na de selectie van de inschrijver."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS2",
+                "title": "Levensduur van producten, reserveonderdelen en garantie",
+                "subtitle": "De hier opgegeven drempels zijn van toepassing op ledlichtbronnen, -lampen en -armaturen.",
+                "specification": "Alle ledlichtbronnen moeten bij 25 °C een opgegeven levensduur hebben van:\n\n• L96: 6 000 uren,\n• L70: 100 000 uren (geraamd),\n• L0C0: 3 000 uren of C10: 6 000 uren,\n• C50: 100 000 uren (geraamd).\n\nDe reparatie van, of de levering van relevante vervangingsonderdelen voor, ledmodules die abrupt defect raken, moet worden gedekt door een garantie van 7 jaar vanaf de datum van installatie.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 41"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het testen en verifiëren moeten worden uitgevoerd door een laboratorium dat door de International Laboratory Accreditation Cooperation is geaccrediteerd en dat voldoet aan IES LM-80* voor feitelijke gegevens en IES TM-21* voor geraamde gegevens.\n\nDe inschrijver moet een kopie van de minimumgarantie van 7 jaar verstrekken die moet worden ondertekend indien de inschrijving wordt geselecteerd.\n\nDe aannemer dient een kopie te verstrekken van de garantie die van toepassing zal zijn als zijn inschrijving wordt geselecteerd en moet de nodige contactgegevens (minimaal telefoonnummer en e-mailadres) voor de afhandeling van gerelateerde vragen of mogelijke claims verstrekken.\n\nVoor de duidelijkheid: de garantie moet ten minste de kosten van de reparatie of vervanging van defecte onderdelen van ledmodules dekken binnen een redelijke termijn na melding van het defect (door de aanbestedende dienst te specificeren in de uitnodiging tot inschrijving), hetzij rechtstreeks, hetzij via andere aangewezen agenten. De vervangingsonderdelen moeten dezelfde zijn als de originele onderdelen, maar als dat niet mogelijk is, mogen gelijkwaardige reserveonderdelen worden gebruikt die dezelfde functie vervullen op hetzelfde of een hoger prestatieniveau.\n\nDe garantie dekt niet de volgende zaken:\na) gebrekkige werking als gevolg van vandalisme, ongevallen of extreme weersgebeurtenissen;\nb) lampen of armaturen die al geruime tijd onder abnormale omstandigheden werken (bijv. gebruikt met de verkeerde netspanning), voor zover dit door de aannemer kan worden aangetoond.\n\n*Te actualiseren naar LM-84 en TM-28 wanneer deze versies worden gepubliceerd."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "contract_performance_clauses",
+      "title": "Uitvoeringsvoorwaarden",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als contractuele uitvoeringsvoorwaarden. Ze borgen dat de verplichtingen worden nagekomen.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale uitvoeringsvoorwaarden) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie. Let op: De GPP bevat alleen uitvoeringsvoorwaarden de categorie straatverlichting.",
+        "Ga in de tabel hieronder na welke uitvoeringsvoorwaarden van toepassing zijn. Neem in ieder geval de kerncriteria op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "straatverlichting",
+            "label": "📋 Straatverlichting",
+            "label_short": "Straatverlichting"
+          }
+        ],
+        "default_main_tab": "straatverlichting",
+        "data": {
+          "straatverlichting": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "Uitgebreide criteria",
+                "label_short": "Uitgebreide"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Voorlopige beoordeling van bestaande verlichtingsinfrastructuur en installatie van speciale meters",
+                "subtitle": "Dit criterium heeft specifiek betrekking op de beoordeling en controle van bestaande straatverlichtsinfrastructuur, lampen, hulpapparatuur, onderhoudsgegevens en gegevens over het elektriciteitsverbruik.",
+                "specification": "Dit contract moet worden beschouwd als een op zichzelf staande voorafgaande procedure. Het is niet rechtstreeks gekoppeld aan latere aanbestedingen voor de aankoop van straatverlichtsapparatuur of aan de EU-criteria voor groene overheidsopdrachten die later in dit document worden uiteengezet. Deze voorafgaande beoordeling moet alleen van toepassing zijn wanneer de aanbestedende dienst vaststelt dat de kennis over zijn bestaande geïnstalleerde straatverlichtsinfrastructuur moet worden verbeterd; wanneer er behoefte is aan de installatie van straatverlichtsspecifieke elektriciteitsmeters; of wanneer de aanbestedende dienst besluit om voor de uitvoering van deze beoordeling geen gebruik te maken van eigen personeel.\n\nDe actueel geïnstalleerde straatverlichtsinfrastructuur die door de aanbestedende dienst binnen een bepaald gebied is geïdentificeerd, moet op de volgende aspecten worden beoordeeld:\n• in kaart brengen van lichtpunten en toekenning van unieke lichtpuntidentificatienummers (indien nog niet gebeurd);\n• armatuurmodel, efficiëntie, opwaartse-lichtopbrengstverhouding en installatiejaar (indien informatie beschikbaar is);\n• lamptechnologie, nominaal vermogen, toegevoegde kleurtemperatuur (CCT) en installatiejaar;\n• aanwezigheid/afwezigheid van dimregelingen.\n\nHet volledige verlichtingssysteem moet worden opgesplitst in deelgebieden (als dat al niet door de aanbestedende dienst is gedaan) en elk deelgebied moet worden beoordeeld om te bepalen of er specifieke meters voor het elektriciteitsverbruik van de straatverlichting zijn.\n\nAls dat niet het geval is, moeten nieuwe meters en, indien nodig, aftakkasten worden geïnstalleerd. Zodra de juiste meters zijn geïnstalleerd, moet het elektriciteitsverbruik van de straatverlichting in elk bepaald deelgebied worden geregistreerd. De aanbestedende dienst moet deze informatie vervolgens gebruiken als basis voor toekomstige kosten-batenanalyses bij de aankoop van nieuwe verlichtingsapparatuur.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 9"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een gedetailleerd voorstel indienen waarin wordt beschreven hoe de beoordeling zal worden uitgevoerd, inclusief methodologie, tijdlijn en benodigde middelen voor het in kaart brengen van de infrastructuur en het installeren van meters."
+                }
+              },
+              {
+                "code": "CUV2",
+                "title": "Garantie van voldoende gekwalificeerd personeel voor de uitvoering van uitbestede taken",
+                "subtitle": "Geldt voor SC1 en SC2.",
+                "specification": "De geselecteerde inschrijver (aannemer) moet ervoor zorgen dat het personeel dat wordt vermeld in de documentatie die is verstrekt om aan te tonen dat aan SC1 en/of SC2 is voldaan, inderdaad betrokken is bij de werken waarop het contract betrekking heeft.\n\nIndien het oorspronkelijk aan het project toegewezen personeel niet beschikbaar is, moet de aannemer de aanbestedende dienst hiervan op de hoogte brengen en één of meer vervangers met gelijkwaardige of meer ervaring en deskundigheid ter beschikking stellen.\n\nHet bewijs van de kwalificaties van vervangend personeel moet op dezelfde wijze worden geleverd als beschreven in SC1 en/of SC2, naargelang het geval.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 13"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De aannemer moet de aanbestedende dienst onmiddellijk informeren indien oorspronkelijk toegewezen personeel niet beschikbaar is en vervangers met gelijkwaardige of betere kwalificaties aandragen."
+                }
+              },
+              {
+                "code": "CUV3",
+                "title": "Dimregeling",
+                "subtitle": "Geldt voor TS2 en TS3.",
+                "specification": "Als de aannemer om welke reden dan ook kiest voor andere lichtbronnen en/of armaturen dan die welke in de geselecteerde inschrijving zijn gespecificeerd, moeten de nieuwe lichtbronnen en/of armaturen ten minste\n• even compatibel met dimregelingen zijn als de originele lichtbronnen en/of armaturen,\n• dezelfde programmeerbare flexibiliteit bieden,\n• dezelfde maximale dimming kunnen bereiken, en\n• een soortgelijke vermogenscurve hebben.\n\nOvereensteming hierover zal worden bereikt door verstrekking van soortgelijke documentatie van de fabrikant(en) van de nieuwe lichtbronnen en/of armaturen die de keuze van de nieuwe armaturen en/of lichtbronnen rechtvaardigt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Bij wijzigingen in de lichtbronnen of armaturen moet de aannemer documentatie van de fabrikant verstrekken die aantoont dat de nieuwe componenten voldoen aan dezelfde of betere specificaties wat betreft dimcompatibiliteit."
+                }
+              },
+              {
+                "code": "CUV4",
+                "title": "Inbedrijfstelling en correcte werking van verlichtingsregelingen",
+                "subtitle": "Geldt voor TS2 en TS3.",
+                "specification": "De geselecteerde inschrijver (aannemer) moet ervoor zorgen dat nieuwe of gerenoveerde verlichtingssystemen en -regelingen naar behoren functioneren.\n• Alle daglichtafhankelijke regelingen moeten zodanig worden gekalibreerd dat zij de verlichting uitschakelen wanneer er voldoende daglicht is.\n• Alle verkeerssensoren moeten worden getest om na te gaan of zij voertuigen, fietsen en voetgangers, in voorkomend geval, detecteren.\n• Voor alle tijdschakelaars, CLO-sturingen en dimregelingen moet worden aangetoond dat zij kunnen voldoen aan alle relevante specificaties die door de aanbestedende dienst in de uitnodiging tot inschrijving zijn vastgesteld.\n\nIndien na de inbedrijfstelling van het systeem de verlichtingsregelingen niet blijken te voldoen aan de bovenstaande relevante eisen, is de aannemer verplicht de regelingen zonder extra kosten voor de aanbestedende dienst aan te passen en/of opnieuw te kalibreren.\n\nDe aannemer moet een rapport aanleveren waarin in detail wordt aangegeven hoe de relevante aanpassingen en kalibraties zijn uitgevoerd en hoe de instellingen kunnen worden gebruikt.\n\n*Opmerking: Voor grote installaties kan het zijn dat de nieuwe of gerenoveerde installatie eenvoudigweg compatibel moet zijn met de bestaande regelsystemen die voor het bredere verlichtingsnet worden gebruikt. In deze situatie zou deze contractuele uitvoeringsvoorwaarde ook betrekking hebben op de compatibiliteit van de regelingen met het bestaande regelsysteem.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De aannemer moet een rapport aanleveren waarin in detail wordt aangegeven hoe de relevante aanpassingen en kalibraties zijn uitgevoerd en hoe de instellingen kunnen worden gebruikt."
+                }
+              },
+              {
+                "code": "CUV5",
+                "title": "Dimregeling",
+                "subtitle": "Geldt voor TS1-6 en GC1-2",
+                "specification": "De aannemer moet ervoor zorgen dat de verlichtingsapparatuur (met inbegrip van de lichtbronnen, armaturen en verlichtingsregelingen) wordt geïnstalleerd zoals in de oorspronkelijke inschrijving gespecificeerd.\n\nAls de aannemer uiteindelijk kiest voor andere verlichtingsapparatuur dan die welke in de oorspronkelijke inschrijving is gespecificeerd, moet deze wijziging schriftelijk worden toegelicht en moet alle vervangende apparatuur voldoen aan of verder gaan dan de technische specificaties van de oorspronkelijke verlichtingsapparatuur (bijv. armatuurefficiëntie, dimfunctie, opwaartse-lichtopbrengstverhouding (RULO) enz.).\n\nIn elk geval zal de aannemer een schema van de daadwerkelijk geïnstalleerde verlichtingsapparatuur moeten verstrekken, samen met de facturen of leveringsbonnen van de fabrikant en een bijlage.\n\nAls er alternatieve verlichtingsapparatuur is geïnstalleerd, moeten testrapporten voor en rapporten over de lichtrendementen van de fabrikant(en) van alle nieuwe lichtbronnen en armaturen worden verstrekt, samen met relevante documentatie waarin de prestaties van alle nieuwe verlichtingsregelingen worden vermeld.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 23"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Bij wijziging van apparatuur moet de aannemer schriftelijke toelichting, testrapporten en documentatie verstrekken die aantoont dat de vervangende apparatuur voldoet aan of de oorspronkelijke specificaties overtreft."
+                }
+              },
+              {
+                "code": "CUV7",
+                "title": "Verbintenis tot terugwinning van afval en vervoer naar geschikte locaties",
+                "subtitle": "Geldt voor TS11.",
+                "specification": "De aannemer moet een schema van het tijdens het project ingezamelde afval indienen. Daarnaast moet de aannemer nadere bijzonderheden verstrekken over de sortering die wordt toegepast voorafgaand aan het vervoer naar geschikte locaties die in de oorspronkelijke inschrijving zijn geïdentificeerd of naar andere geschikte locaties waar afval kan worden gesorteerd, verwerkt en gerecycled en, indien van toepassing, worden gebruikt voor warmteterugwinning.\n\nAls bewijs van levering moeten leveringsfacturen worden ingediend.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 38"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De aannemer moet een schema van het ingezamelde afval indienen en leveringsfacturen verstrekken als bewijs dat afval naar geschikte locaties is getransporteerd voor recycling."
+                }
+              },
+              {
+                "code": "CUV8",
+                "title": "Verbintenis tot terugwinning van afval en vervoer naar geschikte locaties",
+                "subtitle": "Geldt voor TS16.",
+                "specification": "De aannemer moet zich ertoe verbinden om voor de door hem geleverde armaturen etiketten te verstrekken die ten minste de in TS16 gespecificeerde minimuminformatie bevatten.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 38"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De aannemer moet etiketten op armaturen aanbrengen die voldoen aan de minimuminformatie-eisen uit TS16."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "CUV6",
+                "title": "Overeenstemming van de werkelijke energie-efficiëntie- en verlichtingsniveaus met de in het ontwerp opgegeven niveaus",
+                "subtitle": "Alleen aanbevolen voor grote installaties met een aanzienlijk geïnstalleerd vermogen in niet-stedelijke omgevingen.",
+                "specification": "Indien relevant kiest de aanbestedende dienst een geschikt deelgebied buiten de bebouwde kom waar de plaatsing van de armaturen in overeenstemming is met de fotometrische PDI-studie voor fotometrische in-situmetingen (overeenkomstig EN 13032-2) en metingen van het energieverbruik (overeenkomstig EN 13201-5) gedurende een overeengekomen periode van één week.\n\nHet gekozen deelgebied moet vrij zijn van significante verstoring van de verlichting door bomen, bushaltes of geparkeerde voertuigen en van achtergrondverlichting veroorzaakt door reclameborden of gebouwen.\n\nVoor klasse M-wegen met luminantie-eisen is het aanvaardbaar om in plaats daarvan gegevens over de verlichtingssterkte te verstrekken indien er een gerechtvaardigde bezorgdheid bestaat over het effect van een aanzienlijke afwijking tussen de reële reflectie van het wegdek en de veronderstellingen in het ontwerp.\n\nEr moet rekening worden gehouden met de parameters die van invloed zijn op de onzekerheid van de metingen van de verlichtingssterkte zoals vermeld in bijlage F bij EN 13201-4. Het is raadzaam om geautomatiseerde systemen voor het meten van de verlichtingssterkte te gebruiken en om voorafgaand aan het project overeenstemming te bereiken over toleranties wat de verlichtingssterkte en gegevenspunten betreft (± 10 % wordt voorgesteld).\n\nGedurende dezelfde periode van één week worden het piekvermogen [W] en het energieverbruik [kWh] gemeten en/of berekend voor de relevante lichtpunten.\n\nDe in situ gemeten PDI- en AECI-waarden moeten ± 10 % van de AECI-ontwerpwaarde en ± 15 % van de PDI-ontwerpwaarde bedragen.\n\n*Opmerking: De gevolgen van het niet naleven van de ontwerpwaarden voor PDI en/of AECI moeten in de uitnodiging tot inschrijving worden vastgesteld.*\n\nMogelijke opties zijn onder meer:\n• Reparatiewerkzaamheden moeten worden uitgevoerd zonder extra kosten voor de aanbestedende dienst.\n• Financiële sancties in verhouding tot de mate van niet-naleving (mogelijk in verband met te verwachten extra elektriciteitskosten gedurende een bepaalde periode als gevolg van de slechter presterende installatie).\n\nAls de niet-naleving wordt betwist, kan de contractant de metingen op hetzelfde deelgebied herhalen of, indien kan worden aangetoond dat het deelgebied niet geschikt was voor de meting, een ander deelgebied kiezen. De aanbestedende dienst is niet aansprakelijk voor de kosten van eventuele extra metingen.\n\nAls de prestaties daadwerkelijk beter zijn dan de voorspellingen in het ontwerp, kunnen financiële bonussen van toepassing zijn indien de aanbestedende dienst ervoor kiest om deze in de uitnodiging tot inschrijving vast te stellen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor straatverlichting en verkeerslichten - Pag. 24"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De aannemer moet in situ metingen uitvoeren volgens EN 13032-2 en EN 13201-5, en de gemeten PDI- en AECI-waarden moeten binnen ± 10-15% van de ontwerpwaarden liggen."
+                }
+              }
+            ]
+          }
+        }
+      }
     }
   ]
 }
