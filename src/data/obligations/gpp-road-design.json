@@ -1,8 +1,8 @@
 {
   "obligation_id": "gpp-road-design",
   "archetype": "GPP",
-  "title": "EU GPP criteria of nationaal gelijkwaardig",
-  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de EU-criteria inzake groene overheidsopdrachten voor wegontwerp, -aanleg en -onderhoud toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
+  "title": "Verplichtingen onder EU GPP óf nationaal gelijkwaardig",
+  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de [EU-criteria inzake het ontwerp, de bouw en het onderhoud van wegen](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/8a79ac59-8ac3-421c-99d5-1fee60c88ece/details) toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
   "badges": ["GPP", "NL", "EU"],
   "colors": {
     "text": "#356534",
@@ -20,23 +20,830 @@
   ],
   "sections": [
     {
-      "key": "technical_specs",
-      "title": "Technische specificaties",
+      "key": "selectiecriteria",
+      "title": "Selectiecriteria",
       "requirement_level": "verplicht",
-      "intro": "De GPP criteria voor wegontwerp, -aanleg en -onderhoud zijn nog in ontwikkeling. Deze module bevat voorlopig placeholder content.",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als selectiecriteria. Het doel is te waarborgen dat alleen leveranciers met aantoonbare kennis, middelen en procedures in aanmerking komen voor deelname.\n\nDeze criteria kunnen onderdeel uitmaken van een voorselectie waarin de aanbestedende dienst een aanbesteding uitschrijft voor de diensten van een ontwerpteam. Het aantal en de omvang van de uitgevoerde projecten waaruit de vereiste ervaring moet blijken, moeten in verhouding staan tot het aan te besteden project.",
       "warnings": [
         {
-          "severity": "yellow",
-          "text": "Let op: De inhoud van deze module is nog niet compleet. De definitieve GPP criteria worden later toegevoegd."
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale selectiecriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
         }
       ],
       "steps": [
-        "Raadpleeg de EU GPP criteria voor wegontwerp, -aanleg en -onderhoud wanneer deze beschikbaar komen.",
-        "Vergelijk met de Nederlandse MVI criteria op www.mvicriteria.nl.",
-        "Neem de strengste criteria op in uw aanbestedingsdocumenten."
+        "Neem in ieder geval de kerncriteria en de bijbehorende uitvoeringsvoorwaarden op in de aanbestedingsdocumenten. Zie de tabel hieronder.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
       ],
       "steps_ordered": true,
-      "example_texts": []
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "wegontwerp",
+            "label": "Kerncriteria voor het ontwerp, de bouw en het onderhoud van wegen",
+            "label_short": "het ontwerp, de bouw en het onderhoud van wegen"
+          }
+        ],
+        "default_main_tab": "wegontwerp",
+        "data": {
+          "wegontwerp": {
+            "core_criteria": [
+              {
+                "code": "A1",
+                "title": "Competenties van de projectmanager en het ontwerpteam",
+                "subtitle": "Deze criteria kunnen onderdeel uitmaken van een voorselectie waarin de aanbestedende dienst een aanbesteding uitschrijft voor de diensten van een projectmanager en/of een ontwerpteam.",
+                "specification": "Het consortium bestaande uit de projectmanager, ingenieurs, architecten, de adviseur en/of het ontwerpteam beschikt over relevante bekwaamheden en ervaring op elk van de volgende gebieden waarvoor het op grond van het contract verantwoordelijk is (selecteer de voor het contract relevante gebieden):\n\n• Het projectmanagement van contracten voor de bouw en het onderhoud van wegen die hebben geleid tot verbeterde milieuprestaties;\n• Beoordeling van de weg-gerelateerde milieuprestaties met behulp van certificatiestelsels op grond van meerdere criteria en instrumenten van de koolstofvoetafdruk in overeenstemming met ISO 14067 of een gelijkwaardige norm;\n• De specificatie, aanbesteding en het gebruik van bouwmaterialen met weinig milieueffecten;\n• Het gebruik van bouwmaterialen met een hoog gehalte aan gerecyclede of hergebruikte inhoud en bijproducten in de aanleg en het onderhoud van wegen;\n• Plannen voor de beperking van verkeerscongestie en LCC-analyse om de kostenoptimale oplossing te identificeren;\n• Praktijkoplossingen voor het beperken van lawaai door wegverkeer door middel van geluidsarme verharding en geluidsschermen;\n• Verbeterde duurzaamheid van de samenstellende lagen van de verharding, met capaciteits- en vermoeiingssterkte;\n• Ontwikkeling en uitvoering van monitoring- en onderhoudsplannen in praktijkcases;\n• Ontwerp en installatie van componenten voor de beperking van waterverontreiniging en componenten voor regenwatervasthoudend vermogen, in het beste geval met inbegrip van \"soft engineered\"-oplossingen in het drainagesysteem.\n\nMet speciale aandacht voor relevante projectervaring en permanente beroepsontwikkeling op deze gebieden.\n\n*De aanbestedende dienst kan het aantal jaren dat nodig is voor het verzamelen van het technische bewijsmateriaal verhogen en naargelang de aard van het project bewijs vragen van een minimum aantal contracten.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 9"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Bewijsstukken in de vorm van informatie en referenties die verband houden met de desbetreffende contracten in de afgelopen vijf jaar waarbij de voornoemde elementen zijn uitgevoerd. Dit wordt ondersteund door cv's van de medewerkers die werkzaam zullen zijn voor het project."
+                }
+              },
+              {
+                "code": "A2",
+                "title": "Competenties van de hoofdcontractant voor de bouw",
+                "subtitle": "Deze criteria kunnen onderdeel uitmaken van een voorselectie van de hoofdaannemer.",
+                "specification": "De hoofdcontractant voor de bouw beschikt over relevante bekwaamheden en ervaring op het gebied van de voltooiing van contracten voor de aanleg en het onderhoud van wegen, waarbij is aangetoond dat deze hebben geleid tot verbeterde milieuprestaties.\n\nIn het geval van \"ontwerp-plus-bouw\"-contracten (DB) of \"ontwerp, bouw plus exploitatie\"-contracten (DBO) is criterium A2 ook relevant voor het ingeschakelde ontwerpteam.\n\nRelevante ervaringsgebieden omvatten (afhankelijk van het project en de geselecteerde criteria voor groene overheidsopdrachten):\n\n• Het opdracht geven tot monitoringsactiviteiten en periodieke onderhoudswerkzaamheden op de macrotextuur (gemiddelde profieldiepte);\n• Beoordeling van duurzaamheid met betrekking tot bouwmaterialen;\n• Het opdracht geven tot een plan voor de beperking van verkeerscongestie en het beheer van verkeerscongestie tijdens de bouw en het onderhoud, met oplossingen zoals alternatieve routes, (automatische) wisseling van rijrichting op een strook, vluchtstroken, ITS-apparaten en de beoordeling daarvan door middel van LCC-analyses;\n• De aankoop en het gebruik van bouwmaterialen met weinig milieueffecten en de verificatie van hun prestaties. Ketenintegratie om de naleving van alle relevante systemen voor effectbeoordeling en certificering van wegen, zoals CEEQUAL of Greenroads, enz., te waarborgen;\n• De aankoop en het gebruik van bouwmaterialen met een hoog gehalte aan gerecyclede of hergebruikte inhoud en bijproducten in de aanleg en het onderhoud van wegen;\n• De succesvolle uitvoering van beheersplannen op het gebied van sloopafval, uitgegraven materiaal en grond om de afvalproductie te minimaliseren. Selectie en kennis van zuiveringsopties ter plaatse of elders gelegen;\n• Ervaring met lage-temperatuur-asfalt met name inzake beste technieken in verband met de gezondheid en de veiligheid van arbeiders;\n• Aanleg van geluidsarme verharding;\n• Langdurige verharding en verhoging van de duurzaamheid van de bovenlagen van de verharding;\n• Bouw van en opdracht geven tot componenten voor de beperking van waterverontreiniging en componenten voor regenwatervasthoudend vermogen, in het beste geval met inbegrip van \"soft engineered\"-componenten.\n\nMet speciale aandacht voor relevante projectervaring en permanente beroepsontwikkeling op deze gebieden.\n\n*De aanbestedende dienst kan het aantal jaren dat nodig is voor het verzamelen van het technische bewijsmateriaal verhogen en naargelang de aard van het project een minimum aantal contracten eisen.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 10"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Bewijsstukken in de vorm van informatie en referenties die verband houden met de desbetreffende contracten in de afgelopen vijf jaar waarbij de voornoemde elementen zijn uitgevoerd. Dit wordt ook ondersteund door cv's van de medewerkers die werkzaam zullen zijn voor het project."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "A1",
+                "title": "Competenties van de projectmanager en het ontwerpteam",
+                "subtitle": "Deze criteria kunnen onderdeel uitmaken van een voorselectie waarin de aanbestedende dienst een aanbesteding uitschrijft voor de diensten van een projectmanager en/of een ontwerpteam.",
+                "specification": "Het consortium bestaande uit de projectmanager, ingenieurs, architecten, de adviseur en/of het ontwerpteam beschikt over relevante bekwaamheden en ervaring op elk van de volgende gebieden waarvoor het op grond van het contract verantwoordelijk is (selecteer de voor het contract relevante gebieden):\n\n• Het projectmanagement van contracten voor de bouw en het onderhoud van wegen met verbeterde milieuprestaties;\n• Beoordeling van de effecten van oneffenheden en macrotextuur op de rolweerstand en dus ook op het brandstofverbruik en het verband met stroefheid. Beoordeling van macrotextuur (uitgedrukt in gemiddelde profieldiepte) en duurzaamheid met betrekking tot bouwmaterialen. Gebruik van het MIRAVEC-instrument of, eventueel, andere beoordelingsinstrumenten voor de beoordeling van het brandstofverbruik;\n• Het gebruik van holistische beoordelingsinstrumenten bij het ontwerp en de specificatie van milieuvriendelijkere wegen, waaronder levenscycluskostenberekening (LCC) en levenscyclusanalyse (LCA). Vergelijkende onderzoeken conform ISO 14040 en ISO 14044;\n• De specificatie, aanbesteding en het gebruik van bouwmaterialen met weinig milieueffecten;\n• Het gebruik van bouwmaterialen met een hoog gehalte aan gerecyclede of hergebruikte inhoud en bijproducten in de aanleg en het onderhoud van wegen;\n• Plannen voor de beperking van verkeerscongestie en LCC-analyse om de kostenoptimale oplossing te identificeren;\n• Praktijkoplossingen voor het beperken van lawaai door wegverkeer door middel van geluidsarme verharding en geluidsschermen;\n• Verbeterde duurzaamheid van de samenstellende lagen van de verharding, met capaciteits- en vermoeiingssterkte. Ervaring met langdurige en eeuwigdurende verharding;\n• Ontwikkeling en uitvoering van monitoring- en onderhoudsplannen in praktijkcases;\n• Ontwerp en installatie van componenten voor de beperking van waterverontreiniging en componenten voor regenwatervasthoudend vermogen, in het beste geval met inbegrip van \"soft engineered\"-oplossingen in het drainagesysteem.\n\nMet speciale aandacht voor relevante projectervaring en permanente beroepsontwikkeling op deze gebieden.\n\n*De aanbestedende dienst kan het aantal jaren dat nodig is voor het verzamelen van het technische bewijsmateriaal verhogen en naargelang de aard van het wegenbouwkundige project bewijs vragen van een minimum aantal contracten.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 9"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Bewijsstukken in de vorm van informatie en referenties die verband houden met de desbetreffende contracten in de afgelopen vijf jaar waarbij de voornoemde elementen zijn uitgevoerd. Dit wordt ondersteund door cv's van de medewerkers die werkzaam zullen zijn voor het project."
+                }
+              },
+              {
+                "code": "A2",
+                "title": "Competenties van de hoofdcontractant voor de bouw",
+                "subtitle": "Deze criteria kunnen onderdeel uitmaken van een voorselectie van de hoofdaannemer.",
+                "specification": "De hoofdcontractant voor de bouw beschikt over relevante bekwaamheden en ervaring op het gebied van de voltooiing van contracten voor de aanleg en het onderhoud van wegen, waarbij is aangetoond dat deze hebben geleid tot verbeterde milieuprestaties.\n\nIn het geval van \"ontwerp-plus-bouw\"-contracten (DB) of \"ontwerp, bouw plus exploitatie\"-contracten (DBO) is criterium A2 ook relevant voor het ingeschakelde ontwerpteam.\n\nRelevante ervaringsgebieden omvatten (afhankelijk van het project en de geselecteerde criteria voor groene overheidsopdrachten):\n\n• Het opdracht geven tot monitoringsactiviteiten en periodieke onderhoudswerkzaamheden op de macrotextuur (gemiddelde profieldiepte) en de beoordeling van het brandstofverbruik als gevolg van de gemiddelde profieldiepte, oneffenheden en oppervlaktetekenen;\n• Beoordeling van duurzaamheid met betrekking tot bouwmaterialen. Gebruik van het MIRAVEC-instrument of, eventueel, andere beoordelingsinstrumenten voor de beoordeling van het brandstofverbruik;\n• Het opdracht geven tot een plan voor de beperking van verkeerscongestie en het beheer van verkeerscongestie tijdens de bouw en het onderhoud, met oplossingen zoals alternatieve routes, (automatische) wisseling van rijrichting op een strook, vluchtstroken, ITS-apparaten en de beoordeling daarvan door middel van LCC-analyses;\n• De aankoop en het gebruik van bouwmaterialen met weinig milieueffecten en de verificatie van hun prestaties. Ketenintegratie om de naleving van alle relevante systemen voor effectbeoordeling en certificering van wegen, zoals CEEQUAL of Greenroads, enz., te waarborgen. Ervaring met LCA- en LCC-instrumenten;\n• De aankoop en het gebruik van bouwmaterialen met een hoog gehalte aan gerecyclede of hergebruikte inhoud en bijproducten in de aanleg en het onderhoud van wegen;\n• De succesvolle uitvoering van beheersplannen op het gebied van sloopafval, uitgegraven materiaal en grond om de afvalproductie te minimaliseren. Selectie en kennis van zuiveringsopties ter plaatse of elders gelegen;\n• Ervaring met lage-temperatuur-asfalt met name inzake beste technieken in verband met de gezondheid en de veiligheid van arbeiders;\n• Aanleg en monitoring van geluidsarme verharding, analyse van de duurzaamheid van de geluidsdempingsprestaties;\n• Langdurige verharding en verhoging van de duurzaamheid van de bovenlagen van de verharding;\n• Bouw van en opdracht geven tot componenten voor de beperking van waterverontreiniging en componenten voor regenwatervasthoudend vermogen, met inbegrip van \"soft engineered\"-componenten.\n\nMet speciale aandacht voor relevante projectervaring en permanente beroepsontwikkeling op deze gebieden.\n\n*De aanbestedende dienst kan het aantal jaren dat nodig is voor het verzamelen van het technische bewijsmateriaal verhogen en naargelang de aard van het project een minimum aantal contracten eisen.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 10"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Bewijsstukken in de vorm van informatie en referenties die verband houden met eerdere contracten in de afgelopen vijf jaar waarbij de voornoemde elementen zijn uitgevoerd. Dit wordt ondersteund door bewijstukken en gegevens van:\n\n• Audits door derden (bijv. afkomstig uit de audit van sloopafval);\n• LCA-/LCC-analyse van de belangrijkste wegelementen en/of;\n• De gegevens die gehaald worden uit de monitoring van, bijvoorbeeld, de productie en het beheer van bouw- en sloopafval en uitgegraven materialen en grond, de prestatieparameters voor regulier onderhoud en periodiek onderhoud en renovatie, enz.\n\nDit wordt ook ondersteund door cv's van de medewerkers die werkzaam zullen zijn voor het project."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als technische specificaties. Daarmee worden de inhoudelijke eisen vastgelegd die aan het werk, de levering of de dienst worden gesteld.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale technische specificaties) uit de EU GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn dient u deze op te nemen."
+        }
+      ],
+      "steps": [
+        "Neem in ieder geval de kerncriteria en bijbehorende uitvoeringsvoorwaarden op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "wegontwerp",
+            "label": "Kerncriteria voor het ontwerp, de bouw en het onderhoud van wegen",
+            "label_short": "het ontwerp, de bouw en het onderhoud van wegen"
+          }
+        ],
+        "default_main_tab": "wegontwerp",
+        "data": {
+          "wegontwerp": {
+            "core_criteria": [
+              {
+                "code": "B1",
+                "title": "Lage-temperatuur-asfalt",
+                "specification": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver passen beste praktijken en technieken toe voor het leggen van bitumineuze mengsels om de temperatuur bij de productie en het aanbrengen van het asfalt te verlagen.\n\nDe maximale temperatuur voor het leggen van bitumineuze mengsels voor dek- en bindlagen is niet hoger dan 140 °C. Alleen in gevallen van hogere viscositeit worden speciale bitumineuze mengsels, met temperaturen van hoger dan 140 °C, maar minder dan 155 °C, toegelaten.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 13"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekken een technisch verslag en een werkplan van de ontwerpprojectactiviteiten, met vermelding van de gebruikte technieken voor het mengen en het leggen en de maximale vereiste temperatuur door deze technieken, met inbegrip van door de producent(en) verstrekte technische gegevensbladen over de formulering van het bindmiddel en de asfaltmix."
+                }
+              },
+              {
+                "code": "B2",
+                "title": "Beheersplan op het gebied van uitgegraven materiaal en grond",
+                "subtitle": "Afvalproductie tijdens graafwerk, met uitzondering van bouw- en sloopafval, moet worden geregistreerd.",
+                "specification": "Een beheersplan op het gebied van uitgegraven materiaal en grond wordt voorbereid en voert systemen in voor de gescheiden inzameling van:\n\n(i) uitgegraven materialen als gevolg van graafwerken (bijvoorbeeld van de inrichting van het terrein en egaliseren, uitgraven van funderingen, kelders en greppels), meestal grond en stenen, met inbegrip van de ondergrond;\n\n(ii) teelaarde.\n\nHet hergebruik ter plaatse in een gesloten systeem, zowel voor uitgegraven materialen als voor teelaarde, moet worden gemaximaliseerd overeenkomstig de resultaten van de koolstofvoetafdruk- of LCA-prestatiebeoordeling (zie criterium B14). Bij de gescheiden inzameling van uitgegraven materialen voor hergebruik, recycling en terugwinning wordt de afvalhiërarchie van Richtlijn 2008/98/EG in acht genomen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 13"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt een beheersplan op het gebied van uitgegraven materiaal en teelaarde, bestaande uit:\n\n(i) Een opmetingsstaat met ramingen voor uitgegraven materialen op basis van goede praktijken, zoals gedefinieerd in de gedragscode inzake bodembeheer van DEFRA (2009) en/of het ENCODE-Protocol (2013);\n\n(ii) Ramingen van alle niet gestorte materialen en de identificatie van potentieel gevaarlijke stoffen;\n\n(iii) Ramingen van het gewichtspercentage van hergebruikte en/of gerecyclede materialen ter plaatse;\n\n(iv) Ramingen van het gewichtspercentage van hergebruikte en/of gerecyclede materialen elders;\n\n(v) Totale hoeveelheid teelaarde en strategieën om de kwaliteit ervan te behouden."
+                }
+              },
+              {
+                "code": "B3",
+                "title": "Prestatievereisten voor componenten voor de beperking van waterverontreiniging in drainagesystemen",
+                "subtitle": "*Tenzij afvoerverbindingen uitdrukkelijk vereist zijn door de lokale regelgeving of omwille van specifieke omstandigheden.*",
+                "specification": "Drainagesystemen van wegen worden niet aangesloten op hoofdrioleringen.\n\nHet drainagesysteem omvat drainagecomponenten die een bijdrage leveren aan het verwijderen van sediment en vaste deeltjes van regenwater.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 14"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver geeft duidelijk aan waar drainagewater naartoe wordt afgevoerd en waar en welke sedimentverwijderingsinrichtingen worden opgenomen in het drainagesysteem."
+                }
+              },
+              {
+                "code": "B4",
+                "title": "Prestatievereisten voor het regenwatervasthoudend vermogen in drainagesystemen",
+                "subtitle": "*Wanneer wetgeving dit voorschrijft of wanneer het van bijzonder belang voor de specifieke locatie.*",
+                "specification": "Het drainagesysteem moet zo zijn ontworpen dat het tot het volgende in staat is:\n\n• vasthouden van de neerslag van een bui gebruikt bij ontwerpen met een herhalingsperiode (frequentie) van eens om de X jaar en met een duur van Y minuten in een bepaald gedraineerd gebied;\n• beperken van maximale afvoerintensiteit van het drainagesysteem tot niet meer dan die van een gelijkwaardig ongebruikt terrein of een andere specifieke waarde die door de aanbestedende dienst duidelijk wordt omschreven in de uitnodiging tot inschrijving.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 14"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver ontvangen van de aanbestedende dienst de passende neerslaggegevens voor de bui gebruikt bij ontwerpen.\n\nAan de hand van deze gegevens voeren zij een hydraulische simulatie uit met behulp van passende modelleringssoftware die door de aanbestedende dienst wordt vastgesteld. De simulatie toont aan dat:\n\n• de capaciteit van het drainagesysteem op geen enkel moment wordt overschreden tijdens de bui gebruikt bij ontwerpen;\n• de door de aanbestedende dienst bepaalde waarde voor de afvoerintensiteit op geen enkel moment wordt overschreden tijdens de bui gebruikt bij ontwerpen."
+                }
+              },
+              {
+                "code": "B5",
+                "title": "Plan voor milieu-integratie en -herstel",
+                "subtitle": "*Dit criterium is van toepassing wanneer er grond beschikbaar is die geschikt is voor het beplanten, hetgeen beplanting kan omvatten van \"soft-engineered\" drainage-infrastructuur, zoals bassins voor waterretentie, vijvers of kunstmatige watergebieden.*",
+                "specification": "Een plan voor milieu-integratie en -herstel wordt voorzien als onderdeel van het wegontwerp met inbegrip van de volgende gegevens:\n\n• Een standplaatskaart met vermelding van het type, de locatie en de hoeveelheden/dichtheden van alle plantensoorten (alleen niet-invasieve en inheemse plantensoorten worden opgenomen);\n• Een beschrijving van de procedure op basis waarvan plantensoorten worden gekozen en een korte motivering waarom elke soort geschikt is voor de specifieke omgevingscondities op de locatie;\n• Vereisten voor het plantbed: gebruikte bodem/compost/groeimedia en de diepte ervan, initiële bemesting, gebruik van mulch, zaaien van graszaden;\n• Geplande maatregelen ter voorkoming van bodemerosi zowel voorafgaand aan als na de aanleg van het plantendek;\n• Verwachte onderhoudsvereisten van de beplante oppervlaktes. Met inbegrip van irrigatie, grasmaaien, snoeien of vervanging van planten.\n\nHet plan moet worden opgesteld overeenkomstig de richtsnoeren van de beste praktijken zoals beschreven in het COST 341-verslag of andere soortgelijke literatuur.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 15"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt een kopie van het plan voor milieu-integratie en -herstel aan de aanbestedende dienst."
+                }
+              },
+              {
+                "code": "B6",
+                "title": "Monitoring van geluidsemissie tijdens de bouw- en onderhoudsfase",
+                "subtitle": "*Wanneer vereist voor bouwvergunning of door plaatselijke/nationale wetgeving, of op nadrukkelijke vraag van de aanbestedende dienst.*",
+                "specification": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt gegevens over hoe tijdelijke geluidsschermen (of permanente als zij deel uitmaken van het definitieve ontwerp) worden geplaatst om de geluidsniveaus te verminderen in het bepaalde ontvangstgebied tot minder dan X dB(A) als gemiddeld L_{DEN}- en Y dB(A) als gemiddeld L_{night}-waarden zoals vastgesteld in bijlage I bij de richtlijn inzake omgevingslawaai (2002/49/EG).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 15"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt:\n\n• een plan van de plaats van de werkzaamheden en het ontvangstgebied zoals omschreven in de milieueffectbeoordeling, wetgeving of door de aanbestedende dienst, indien van toepassing;\n• een tijdschema van de werken, waarin wordt aangeduid wanneer de meest lawaaierige werkzaamheden plaatsvinden;\n• specificatie van de locatie van het geluidsscherm en de geschatte eigenschappen, samen met eenvoudige akoestische berekeningen die aantonen dat de geluidsbeperking in het ontvangstgebied haalbaar is."
+                }
+              },
+              {
+                "code": "B7",
+                "title": "Minimale vereiste voor het ontwerp van geluidarme verharding",
+                "subtitle": "*Wanneer vereist door lokale of nationale wetgeving, of wanneer het lage geluidsniveau van deze weg als een prioriteit wordt beschouwd.*",
+                "specification": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verklaren dat de voorgestelde geluidarme verharding in overeenstemming is met de volgende toegestane geluidsniveaus voor de omgeving (CPX) overeenkomstig ISO/DIS 11819-2, afhankelijk van de maximale toegestane snelheid op het wegvak:\n\n• 90 dB(A) met 50 km/h, en/of\n• 95 dB(A) met 70 km/h, en/of\n• 98 dB(A) met 90 km/h.\n\nTestgegevens ter ondersteuning van het ontwerp en alle aannames dienen rekening te houden met het gebruik van CPX-testvoertuigen en/of -aanhangwagens die gebruik maken van radiaalbanden met staalgordel en met afmetingscode P225/60 R16, zoals gedefinieerd in ASTM F2493-14, met een profiel van minimaal 5 mm.\n\nAlle testgegevens worden gecorrigeerd voor een luchttemperatuur van 20 °C. Onzekerheidsanalyses van testgegevens worden geëvalueerd op basis van de richtsnoeren voor de uitdrukking van de onzekerheid van metingen (ISO/IEC Richtsnoer 98-3:2008), en de testen tonen aan dat de resultaten, met inbegrip van hun onzekerheid, de hierboven vermelde waarden, of, indien lager, de in het ontwerp beweerde waarden, niet overschrijden met meer dan 1 dB(A).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 15"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver omschrijft het karakter van de voorgestelde geluidarme verharding zoals gradering van het steenmengsel, maximale korrelgrootte, gebruikt bindmiddel, verwacht poriënvolume en verwachte CPX-geluidsemissie van testvoertuigen die zich met de gepaste snelheid op de weg voortbewegen.\n\nDe verwachte waarden van de geluidsreductieprestaties van de nieuwe verharding zijn gebaseerd op metingen in een laboratorium en/of ter plaatse op testvakken en kunnen worden vergeleken met andere bekende geluidarme referentieprojecten. Gegevens en informatie kunnen door de inschrijver worden gegenereerd aan de hand van collegiaal getoetste gepubliceerde literatuur of aan de hand van ondertekende verklaringen van bevoegde autoriteiten op het gebied van geluidsemissie van het wegdek.\n\nNa het openen moet een door een bevoegde instantie ondertekend testverslag worden verstrekt waarin de resultaten zijn opgenomen van CPX-geluidsmetingstests op overeengekomen wegvakken met een afgesproken voertuigsnelheid of -snelheden en waarin de naleving van de relevante grenswaarden voor geluidsemissies wordt aangetoond.\n\nRuimtelijke variatie van het geteste wegvak toont aan dat op geen enkel afzonderlijk testvak deze algemene grenswaarden met meer dan 2 dB(A) worden overschreden."
+                }
+              },
+              {
+                "code": "B8",
+                "title": "Prestatievereisten voor verlichtingsinstallaties",
+                "subtitle": "Voor dit criterium, zie de criteria van de Europese criteria voor groene overheidsopdrachten voor straatverlichting en verkeerslichten",
+                "specification": "Zie de desbetreffende documenten met Europese criteria voor groene overheidsopdrachten.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 16"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Zie de desbetreffende documenten met Europese criteria voor groene overheidsopdrachten."
+                }
+              },
+              {
+                "code": "B9",
+                "title": "Prestatievereisten voor verlichtingsinstallaties",
+                "subtitle": "Voor dit criterium, zie de criteria van de Europese criteria voor groene overheidsopdrachten voor verf, vernis en wegmarkeringen.",
+                "specification": "Zie de desbetreffende documenten met Europese criteria voor groene overheidsopdrachten.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 16"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Zie de desbetreffende documenten met Europese criteria voor groene overheidsopdrachten."
+                }
+              },
+              {
+                "code": "B10",
+                "title": "Plan voor de beperking van verkeerscongestie",
+                "specification": "Het plan voor de beperking van verkeerscongestie, dat moet worden uitgevoerd tijdens de bouw- en onderhoudsactiviteiten, wordt samen met het wegontwerp voorgelegd en omvat:\n\n• Een tijdslijn met verwachte bouw- en/of onderhoudsactiviteiten voor de levensduur van de weg;\n• Alternatieve routes voor omgeleid verkeer tijdens dergelijke activiteiten, indien nodig.\n\nIndien het ontwerpteam of de DB-inschrijver of de DBO-inschrijver oplossingen voorziet voor verkeerscongestie tijdens de gebruiksfase en onderhoudswerkzaamheden op basis van (automatische) wisseling van rijrichting op een strook of vluchtstroken te gebruiken als rijstroken, dienen zij een LCC-analyse, met inbegrip van de effecten voor gebruikerskosten als gevolg van de verkeerscongestie in te dienen.\n\nVoor wegen waar intelligente verkeerssystemen (ITS) worden geïmplementeerd voor verkeersregeling, wordt de weg uitgerust met de apparaten die nodig zijn ter ondersteuning van ITS: camera's, verkeerslichten, informatieschermen en variabele verkeersborden.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 17"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt het gedetailleerde plan voor de beperking van verkeerscongestie, de LCC-analyse overeenkomstig ISO 15686-5 (indien vereist) en de omschrijvingen van de ITS-apparaten (indien vereist)."
+                }
+              },
+              {
+                "code": "B11",
+                "title": "Prestatievereisten voor de duurzaamheid van verharding",
+                "specification": "De nominale minimale levensduur van de wegverharding, met uitzondering van de deklagen, wordt door de aanbestedende dienst gespecificeerd maar mag niet korter zijn dan:\n\n• 15 jaar voor de bindlaag, met de mogelijkheid tot vermindering tot ten minste 10 jaar in het geval van specifieke omstandigheden (zoals een agressief klimaat - te specificeren in de uitnodiging tot inschrijving);\n• 20 jaar voor de funderingslaag voor asfaltverharding/samengestelde verharding en voor de betonnen deklaag voor betonverharding;\n• 40 jaar voor de ondergrond.\n\n*Bovendien kan de aanbestedende dienst een minimale nominale levensduur voor de deklaag opgeven als de specifieke omstandigheden van de verharding toelaten een drempelwaarde te stellen.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 17"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt een technisch verslag met daarin de minimale nominale levensduur van de bind- en funderingslagen en de ondergrond, die niet korter mag zijn dan hierboven aangegeven. Het verslag omvat de beoordeling van de capaciteits- en vermoeiingssterkte, en de kritische spanningen en vervormingen in de lagen van de verharding. Het verslag omvat relevante gegevens en informatie, die specifiek betrekking hebben op: het fysiek-mechanische gedrag van materialen, de gebruikte bouwtechnieken en -processen, en het werkprogramma van de bouwwerkzaamheden."
+                }
+              },
+              {
+                "code": "B12",
+                "title": "Onderhouds- en renovatieplan",
+                "specification": "**Optie 1: Voor DBO-contracten**\n\nDe DBO-inschrijver voegt een onderhouds- en renovatieplan bij het gedetailleerde ontwerp.\n\nVoor elk wegdeel, gekenmerkt door specifieke bouwmethodes, materiaal, omgevingsfactoren, meteorologische omstandigheden en gebruik, zal het onderhouds- en renovatieplan ten minste:\n\n• reguliere, periodieke en renovatieactiviteiten omvatten;\n• de verhouding tussen de kosten en de baten van de onderhoudswerkzaamheden optimaliseren;\n• de milieuprestaties van alle reguliere, periodieke en renovatieactiviteiten/strategieën die zijn opgenomen in de koolstofvoetafdruk (overeenkomstig het criterium B14 indien van toepassing) vermelden;\n• voor elke activiteit de kosten, de verwachte intervallen tussen onderhoudsactiviteiten, het plan voor de beperking van verkeerscongestie (overeenkomstig het criterium B10) en het beheersplan op het gebied van sloopafval (overeenkomstig criterium E2) omvatten.\n\n**Optie 2: voor aparte \"ontwerp-plus-bouw\"-contracten of DB-contracten**\n\nHet ontwerpteam of de DB-inschrijver voegt een onderhouds- en renovatieplan bij het gedetailleerde ontwerp.\n\nVoor elk wegdeel, gekenmerkt door specifieke bouwmethodes, materiaal, omgevingsfactoren, meteorologische omstandigheden en gebruik, omvat het globaal onderhouds- en renovatieplan het volgende:\n\n• de milieuprestaties van de reguliere, periodieke en renovatieactiviteiten (overeenkomstig het criterium B14 van de koolstofvoetafdruk, indien van toepassing);\n• de gemiddelde intervallen van alle reguliere, periodieke en renovatieactiviteiten (als dit niet door de aanbestedende dienst is ingesteld);\n• voor elke activiteit het plan voor de beperking van verkeerscongestie (overeenkomstig het criterium B10) en het beheersplan op het gebied van sloopafval (overeenkomstig criterium E2) omvatten.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 18"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt een technisch verslag met relevante gegevens en informatie en het werkprogramma van de ontwerpactiviteiten."
+                }
+              },
+              {
+                "code": "D1",
+                "title": "Duurzaamheid van de prestaties van geluidsarme verharding",
+                "subtitle": "*Wanneer vereist door lokale of nationale wetgeving, of wanneer het lage geluidsniveau van deze weg als een prioriteit wordt beschouwd.*",
+                "specification": "De geluidsemissie van een geluidsarm wegdek, gemeten door CPX-methode die wordt omschreven in ISO/DIS 11819-2, mag de volgende limieten niet overschrijden, afhankelijk van de maximale toegestane snelheid op het wegvak, tijdens de periode van 5 jaar na het testen van de conformiteit van productie.\n\n• 93 dB(A) met 50 km/h, en/of\n• 98 dB(A) met 70 km/h, en/of\n• 101 dB(A) met 90 km/h.\n\nTesten moeten ten minste eenmaal per 30 maanden na de ingebruikname van de weg worden uitgevoerd.\n\nDe voor de CPX-test gebruikte voertuigen en/of aanhangwagens moeten gebruik maken van radiaalbanden met staalgordel en met afmetingscode P225/60 R16, zoals gedefinieerd in ASTM F2493-14, met een profiel van minimaal 5 mm.\n\nTestgegevens worden gecorrigeerd voor een luchttemperatuur van 20 °C. Onzekerheidsanalyses van testgegevens worden geëvalueerd op basis van de richtsnoeren voor de uitdrukking van de onzekerheid van metingen (ISO/IEC Richtsnoer 98-3:2008), en de testen tonen aan dat de resultaten, met inbegrip van hun onzekerheid, de hierboven vermelde waarden of ambitieuzere in het ontwerp beweerde waarden, niet overschrijden met meer dan 1 dB(A).\n\nRuimtelijke variatie van het geteste wegvak toont aan dat op geen enkel afzonderlijk testvak deze algemene grenswaarden met meer dan 2 dB(A) worden overschreden.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Testverslagen van door onafhankelijke en bevoegde autoriteiten uitgevoerde CPX-testen overeenkomstig ISO/DIS 11819-2 worden voorgelegd aan de aanbestedende dienst en moeten voldoen aan de bovengenoemde grenswaarden, voor zover van toepassing."
+                }
+              },
+              {
+                "code": "E1",
+                "title": "Teerhoudend asfalt",
+                "subtitle": "*De aanbestedende dienst kan dit criterium toepassen als het teergehalte van oppervlaktelagen (de klaag + bindlaag) en funderingsla(a)g(en) de door de nationale wetgeving bepaalde limiet overschrijdt.*",
+                "specification": "Als het teergehalte van het terug te winnen asfalt de door de nationale wetgeving bepaalde limiet overschrijdt, worden de beste beschikbare technieken *(volgens wat in elke lidstaat als de beste beschikbare technieken wordt beschouwd met verwijzing naar de lokale situatie)* voor de behandeling van teruggewonnen teerhoudend asfalt toegepast en de toepassing ervan wordt beschreven in een technisch verslag.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 36"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant verstrekt een technisch verslag bestaande uit de beste beschikbare technieken voor de behandeling van teruggewonnen teerhoudend asfalt door middel van mogelijkheden op het gebied van koude vermenging op het terrein en/of elders.\n\nEr wordt een systeem gebruikt voor het controleren en administratief verwerken van teruggewonnen teerhoudend asfalt, en voor het traceren van de elders gelegen bestemming en het hergebruik ter plaatse, waarbij de hoeveelheid materialen en de locaties worden gespecificeerd (kaarten, GIS). De controlegegevens worden aan de aanbestedende dienst verstrekt."
+                }
+              },
+              {
+                "code": "E2",
+                "title": "Audit- en beheersplan voor sloopafval",
+                "specification": "Minimaal 70 gewichtsprocent van niet-gevaarlijke afvalstoffen die worden gegenereerd tijdens de sloop, met inbegrip van opvullen, wordt voorbereid voor hergebruik, recycling en andere vormen van materiaalterugwinning. Dit omvat:\n\n(i) Van de belangrijkste wegelementen teruggewonnen beton, (teruggewonnen) asfalt, toeslagmaterialen;\n\n(ii) Uit aanvullende elementen teruggewonnen materialen.\n\nOpvullen is niet toegestaan in ongebruikte terreinen buiten de rijweg. Opvullen in waterdoorlatende delen van de rijweg wordt gerealiseerd met afgegraven materialen en grond. Hergebruikte, gerecyclede en teruggewonnen materialen mogen uitsluitend worden gebruikt voor opvullen in ondoordringbare gebieden van de rijweg.\n\nDe hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant voert voorafgaand aan de sloop een controle uit om vast te stellen wat kan worden hergebruikt, gerecycled of herwonnen. Deze controle bestaat uit:\n\n(i) Identificatie en risicobeoordeling van gevaarlijke afvalstoffen;\n\n(ii) Een hoeveelhedenlijst met een uitsplitsing van de verschillende wegmaterialen;\n\n(iii) Een schatting van het percentage materialen dat kan worden hergebruikt en gerecycled op basis van voorstellen voor systemen van gescheiden inzameling tijdens het sloopproces.\n\n• De geïdentificeerde materialen, producten en elementen worden afzonderlijk vermeld op een hoeveelhedenlijst van de sloop.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 36"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant dient een verslag van een controle voorafgaand aan de sloop in die de vermelde informatie bevat. Er wordt een systeem ingesteld voor de controle en verantwoording van geproduceerd afval. De bestemming van afvalzendingen en afgedankte materialen wordt getraceerd met behulp van vrachtbrieven en facturen. De controlegegevens worden aan de aanbestedende dienst verstrekt."
+                }
+              },
+              {
+                "code": "F1",
+                "title": "Audit- en beheersplan voor sloopafval",
+                "subtitle": "Hetzelfde als E2.",
+                "specification": "Hetzelfde als E2.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 39"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Hetzelfde als E2."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "B1",
+                "title": "Lage-temperatuur-asfalt",
+                "specification": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver passen beste praktijken en technieken toe voor het leggen van bitumineuze mengsels om de temperatuur bij de productie en het aanbrengen van het asfalt te verlagen.\n\nDe maximale temperatuur voor het leggen van bitumineuze mengsels voor dek- en bindlagen is niet hoger dan 120 °C. Alleen in gevallen van hogere viscositeit worden speciale bitumineuze mengsels, met temperaturen van hoger dan 120 °C, maar minder dan 155 °C, toegelaten.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 13"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekken een technisch verslag en een werkplan van de ontwerpactiviteiten, met vermelding van de gebruikte technieken voor het mengen en het leggen en de maximale vereiste temperatuur door deze technieken, met inbegrip van door de producent(en) verstrekte technische gegevensbladen over de formulering van het bindmiddel en de asfaltmix."
+                }
+              },
+              {
+                "code": "B3",
+                "title": "Prestatievereisten voor componenten voor de beperking van waterverontreiniging in drainagesystemen",
+                "subtitle": "*Tenzij afvoerverbindingen uitdrukkelijk vereist zijn door de lokale regelgeving of omwille van specifieke omstandigheden*",
+                "specification": "Drainagesystemen van wegen worden niet aangesloten op hoofdrioleringen.\n\nHet drainagesysteem omvat drainagecomponenten die een bijdrage leveren aan het verwijderen van sediment en vaste deeltjes van regenwater. Dergelijke \"hard engineered\"-drainagecomponenten worden gecombineerd met de \"soft engineered\"-componenten (vaak aangeduid als SuDS).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 14"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver geeft duidelijk aan waar drainagewater naartoe wordt afgevoerd en waar en welke sedimentverwijderingscomponenten/inrichtingen worden opgenomen in het drainagesysteem en welke van deze componenten/inrichtingen aansluiten bij de SuDS-beginselen."
+                }
+              },
+              {
+                "code": "B7",
+                "title": "Minimale vereiste voor het ontwerp van geluidarme verharding",
+                "subtitle": "*Wanneer vereist door lokale of nationale wetgeving, of wanneer het lage geluidsniveau van deze weg als een prioriteit wordt beschouwd,*",
+                "specification": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verklaren dat de voorgestelde geluidarme verharding in overeenstemming is met de volgende toegestane geluidsniveaus voor de omgeving (CPX) overeenkomstig ISO/DIS 11819-2, afhankelijk van de maximale toegestane snelheid op het wegvak:\n\n• 87 dB(A) met 50 km/h, en/of\n• 92 dB(A) met 70 km/h, en/of\n• 95 dB(A) met 90 km/h.\n\nTestgegevens ter ondersteuning van het ontwerp en alle aannames dienen rekening te houden met het gebruik van CPX-testvoertuigen en/of -aanhangwagens die gebruik maken van radiaalbanden met staalgordel en met afmetingscode P225/60 R16, zoals gedefinieerd in ASTM F2493-14, met een profiel van minimaal 5 mm.\n\nAlle testgegevens worden gecorrigeerd voor een luchttemperatuur van 20 °C. Onzekerheidsanalyses van testgegevens worden geëvalueerd op basis van de richtsnoeren voor de uitdrukking van de onzekerheid van metingen (ISO/IEC Richtsnoer 98-3:2008), en de testen tonen aan dat de resultaten, met inbegrip van hun onzekerheid, de hierboven vermelde waarden, of, indien lager, de in het ontwerp beweerde waarden, niet overschrijden met meer dan 1 dB(A).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 15"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver omschrijft het karakter van de voorgestelde geluidarme verharding zoals gradering van het steenmengsel, maximale korrelgrootte, gebruikt bindmiddel, verwacht poriënvolume en verwachte CPX-geluidsemissie van testvoertuigen die zich met de gepaste snelheid op de weg voortbewegen.\n\nDe verwachte waarden van de geluidsreductieprestaties van de nieuwe verharding zijn gebaseerd op metingen in een laboratorium en/of ter plaatse op testvakken en kunnen worden vergeleken met andere bekende geluidarme referentieoppervlakken. Gegevens en informatie kunnen door de inschrijver worden gegenereerd aan de hand van collegiaal getoetste gepubliceerde literatuur of aan de hand van ondertekende verklaringen van bevoegde autoriteiten op het gebied van geluidsemissie van het wegdek.\n\nNa het openen moet een door een bevoegde instantie ondertekend testverslag worden verstrekt waarin de resultaten zijn opgenomen van CPX-geluidsmetingstesten op overeengekomen wegvakken met een afgesproken voertuigsnelheid of -snelheden en waarin de naleving van de relevante grenswaarden voor geluidsemissies wordt aangetoond.\n\nRuimtelijke variatie van het geteste wegvak toont aan dat op geen enkel afzonderlijk testvak deze algemene grenswaarden met meer dan 2 dB(A) worden overschreden."
+                }
+              },
+              {
+                "code": "B11",
+                "title": "Prestatievereisten voor de duurzaamheid van verharding",
+                "specification": "De nominale minimale levensduur van de wegverharding, met uitzondering van de deklagen, wordt door de aanbestedende dienst gespecificeerd maar mag niet korter zijn dan:\n\n• 15 jaar voor de bindlaag, met de mogelijkheid tot vermindering tot ten minste 10 jaar in het geval van specifieke omstandigheden (zoals een agressief klimaat - te specificeren in de uitnodiging tot inschrijving);\n• 40 jaar voor de funderingslaag voor asfaltverharding/samengestelde verharding en voor de betonnen deklaag voor betonverharding;\n• 60 jaar voor de ondergrond.\n\n*Bovendien kan de aanbestedende dienst een minimale nominale levensduur voor de deklaag opgeven als de specifieke omstandigheden van de verharding toelaten een drempelwaarde te stellen.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 17"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt een technisch verslag met daarin de minimale nominale levensduur van de bind- en funderingslagen en de ondergrond, die niet korter mag zijn dan hierboven aangegeven. Het verslag omvat de beoordeling van de capaciteits- en vermoeiingssterkte, en de kritische spanningen en vervormingen in de lagen van de verharding. Het verslag omvat relevante gegevens en informatie, die specifiek betrekking hebben op: het fysiek-mechanische gedrag van materialen, de gebruikte bouwtechnieken en -processen, en het werkprogramma van de bouwwerkzaamheden."
+                }
+              },
+              {
+                "code": "B12",
+                "title": "Onderhouds- en renovatieplan",
+                "specification": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver voegt een onderhouds- en renovatieplan bij het gedetailleerde ontwerp. Voor elk wegdeel, gekenmerkt door specifieke bouwmethodes, materiaal, omgevingsfactoren, meteorologische omstandigheden en gebruik, is het onderhouds- en renovatieplan een minimum:\n\n• reguliere, periodieke en renovatieactiviteiten omvatten;\n• de verhouding tussen de kosten en de baten van de onderhoudswerkzaamheden optimaliseren;\n• de milieuprestaties van alle reguliere, periodieke en renovatieactiviteiten/strategieën die zijn opgenomen in de LCA (overeenkomstig het criterium, B14 indien van toepassing) vermelden;\n• voor elke activiteit de kosten, de verwachte intervallen tussen onderhoudsactiviteiten, het plan voor de beperking van verkeerscongestie (overeenkomstig het criterium B10) en het beheersplan op het gebied van sloopafval (overeenkomstig criterium E2) omvatten.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 18"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt een technisch verslag met relevante gegevens en informatie en het werkprogramma van de ontwerpactiviteiten."
+                }
+              },
+              {
+                "code": "D1",
+                "title": "Duurzaamheid van de prestaties van geluidarme verharding",
+                "subtitle": "*Wanneer vereist door lokale of nationale wetgeving, of wanneer het lage geluidsniveau van deze weg als een prioriteit wordt beschouwd.*",
+                "specification": "De geluidsemissie van een geluidsarm wegdek, gemeten door CPX-methode die wordt omschreven in ISO/DIS 11819-2, mag de volgende limieten niet overschrijden, afhankelijk van de maximale toegestane snelheid op het wegvak, tijdens de periode van 5 jaar na het testen van de conformiteit van productie.\n\n• 90 dB(A) met 50 km/h, en/of\n• 95 dB(A) met 70 km/h, en/of\n• 98 dB(A) met 90 km/h.\n\nTesten moeten ten minste eenmaal per 30 maanden na de ingebruikname van de weg worden uitgevoerd.\n\nDe voor de CPX-test gebruikte voertuigen en/of aanhangwagens moeten gebruik maken van radiaalbanden met staalgordel en met afmetingscode P225/60 R16, zoals gedefinieerd in ASTM F2493-14, met een profiel van minimaal 5 mm.\n\nTestgegevens worden gecorrigeerd voor een luchttemperatuur van 20 °C. Onzekerheidsanalyses van testgegevens worden geëvalueerd op basis van de richtsnoeren voor de uitdrukking van de onzekerheid van metingen (ISO/IEC Richtsnoer 98-3:2008), en de testen tonen aan dat de resultaten, met inbegrip van hun onzekerheid, de hierboven vermelde waarden of ambitieuzere in het ontwerp beweerde waarden, niet overschrijden met meer dan 1 dB(A).\n\nRuimtelijke variatie van het geteste wegvak toont aan dat op geen enkel afzonderlijk testvak deze algemene grenswaarden met meer dan 2 dB(A) worden overschreden.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Testverslagen van door onafhankelijke en bevoegde autoriteiten uitgevoerde CPX-testen overeenkomstig ISO/DIS 11819-2 worden voorgelegd aan de aanbestedende dienst en moeten voldoen aan de bovengenoemde grenswaarden, voor zover van toepassing."
+                }
+              },
+              {
+                "code": "E2",
+                "title": "Audit- en beheersplan voor sloopafval",
+                "specification": "Minimaal 90 gewichtsprocent van niet-gevaarlijke afvalstoffen die worden gegenereerd tijdens de sloop, met inbegrip van opvullen, wordt voorbereid voor hergebruik, recycling en andere vormen van materiaalterugwinning. Dit omvat:\n\n(i) Van de belangrijkste wegelementen teruggewonnen beton, steenstorting, toeslagmaterialen;\n\n(ii) Uit aanvullende elementen teruggewonnen materialen.\n\nOpvullen is niet toegestaan in ongebruikte terreinen buiten de rijweg. Opvullen in waterdoorlatende delen van de rijweg wordt gerealiseerd met afgegraven materialen en grond. Hergebruikte, gerecyclede en teruggewonnen materialen mogen uitsluitend worden gebruikt voor opvullen in ondoordringbare gebieden van de rijweg.\n\nDe hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant voert voorafgaand aan de sloop een controle uit om vast te stellen wat kan worden hergebruikt, gerecycled of herwonnen.\n\nDeze controle bestaat uit:\n\n(i) Identificatie en risicobeoordeling van gevaarlijke afvalstoffen;\n\n(ii) Een hoeveelhedenlijst met een uitsplitsing van de verschillende wegmaterialen;\n\n(iii) Een schatting van het percentage materialen dat kan worden hergebruikt en gerecycled op basis van voorstellen voor systemen van gescheiden inzameling tijdens het sloopproces.\n\n• De geïdentificeerde materialen, producten en elementen worden afzonderlijk vermeld op een hoeveelhedenlijst van de sloop.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant dient een verslag van een controle voorafgaand aan de sloop in die de vermelde informatie bevat. Er wordt een systeem ingesteld voor de controle en verantwoording van geproduceerd afval. De bestemming van afvalzendingen en afgedankte materialen wordt getraceerd met behulp van vrachtbrieven en facturen. De controlegegevens worden aan de aanbestedende dienst verstrekt."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "gunningscriteria",
+      "title": "Gunningscriteria",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als gunningscriteria. Daarmee wordt vastgelegd op basis waarvan de inschrijvingen inhoudelijk worden beoordeeld en de economisch meest voordelige inschrijving wordt vastgesteld.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale gunningscriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarden op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "wegontwerp",
+            "label": "Kerncriteria voor het ontwerp, de bouw en het onderhoud van wegen",
+            "label_short": "het ontwerp, de bouw en het onderhoud van wegen"
+          }
+        ],
+        "default_main_tab": "wegontwerp",
+        "data": {
+          "wegontwerp": {
+            "core_criteria": [
+              {
+                "code": "B14",
+                "title": "LCA-prestaties van de belangrijkste wegelementen",
+                "subtitle": "*Indien de effecten van de gebruiksfase van de weg in acht worden genomen, wordt dit criterium gebruikt in combinatie met het gunningscriterium B13 prestatie-eisen op brandstofverbruik als gevolg van rolweerstand.*",
+                "specification": "Dit criterium mag alleen worden toegepast wanneer er aan de inschrijvers een hoeveelheid is voor een referentieweg wordt verstrekt als basis voor een vergelijking of wanneer tijdens een mededingingsprocedure de door de verschillende inschrijvers ingediende ontwerpen worden vergeleken.\n\nTijdens de aanbestedingsprocedure moeten aanvullende technische richtsnoeren worden gevolgd, zoals opgenomen in bijlage A (koolstofvoetafdrukcoptie).\n\nEen technisch beoordelaar die is gespecialiseerd in koolstofvoetafdruk, verleent bijstand bij het opstellen van de uitnodiging tot inschrijving en voert een kritische beoordeling uit van de inschrijvingen. Punten worden toegekend op basis van de verbetering van de koolstofvoetafdruk (CF) van de weg met inbegrip van ten minste de in de tabel (a) vermelde belangrijkste wegelementen in vergelijking met een referentieweg of andere concurrerende ontwerpen.\n\nDe basis voor de vergelijking wordt vermeld in de uitnodiging tot inschrijving.\n\n*Tabel (a) Omvang van de te beoordelen wegelementen:*\n\n| Nieuwbouw of grote uitbreiding | Onderhoud en renovatie |\n|---|---|\n| • Onderbouw, met inbegrip van grondverzet en grondwerken<br>• Ondergrond<br>• Fundering, bindlaag en oppervlak *of* betonnen deklaag<br>• Extra aanvullende wegelementen *(optioneel)* | • Fundering, bindlaag en oppervlak *of* betonnen deklaag |\n\nDe prestaties worden beoordeeld door de uitvoering van een koolstofvoetafdruk (CF) van de weg in overeenstemming met ISO 14067 of een soortgelijke norm. De uitnodiging tot inschrijving vermeldt de methode die wordt gebruikt voor de beoordeling (zie bijlage A).\n\nDe inschrijver die de laagste koolstofvoetafdruk vermeldt, zal het hoogst gerangschikt worden.\n\nWanneer een analyse met behulp van de CF-optie wordt uitgevoerd vóór de aanbesteding van de hoofdaannemer, stelt de uitgekozen inschrijver een overdrachtsdocument op waarin de belangrijkste aannames en resultaten worden opgenomen met betrekking tot:\n\n• oplossingen voor grondverzet en grondwerk;\n• voorgestelde te gebruiken materialen, toegepaste technieken zoals WMA, HWMA, CMA en gerecyclede materialen, hergebruikte materialen en/of bijproducten;\n• CO₂-emissies per ton vervoerde materialen van de productielocatie tot aan het werkterrein (basisplan grondverzet);\n• % recycling, hergebruik van afgegraven grond en bouw- en sloopafval ter plaatse en elders;\n• onderhoudsactiviteiten en frequenties.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt een materiaallijst voor het voorgestelde ontwerp en de CF-resultaten, die worden gerapporteerd overeenkomstig ISO 14067 of een soortgelijke norm. De vergelijking met de referentieweg wordt schriftelijk vastgelegd in een kort technisch verslag waarin de voorgestelde ontwerptypen worden vergeleken en het verbeteringspotentieel wordt berekend. In het technische verslag wordt beschreven hoe de \"te behandelen technische punten\" (zoals beschreven in bijlage A) zijn gedekt.\n\n*Het overdrachtsdocument zal door de aanbestedende dienst worden gebruikt voor de toekomstige uitnodiging tot inschrijving in geval van aparte \"ontwerp-plus-bouw\"-contracten (DB) of worden bijgewerkt en verder verbeterd door de hoofdaannemer vóór de bouw of de DB-contractant of de DBO-contractant vóór het begin van de bouwfase.*\n\n*De uitgekozen inschrijver sluit de ontwerpfase af met het opstellen van het overdrachtsdocument. De uitgekozen DB-inschrijver of DBO-inschrijver stelt het overdrachtsdocument op vóór het begin van de bouwfase.*\n\n*Het technische verslag vormt het onderwerp van een kritische beoordeling door de technische LCA-beoordelaar die door de aanbestedende dienst is aangesteld. De kritische beoordeling wordt uitgevoerd overeenkomstig de in bijlage C opgenomen richtsnoeren.*"
+                }
+              },
+              {
+                "code": "B15",
+                "title": "Opname van gerecycled materiaal",
+                "subtitle": "*Er wordt aangeraden om dit criterium te combineren met criterium B16, maar het mag niet worden gebruikt als criterium B14 is geselecteerd.*",
+                "specification": "De aanbestedende dienst kent punten toe aan inschrijvers die een waarde aan gerecycled materiaal, hergebruikt materiaal en/of gerecyclede bijproducten bereiken van meer dan of gelijk aan 15% voor de som van de in de tabel (c) genoemde belangrijkste bouwelementen.\n\nHet minimale gehalte voor toekenning kan hoger worden vastgesteld als er overeenstemming wordt bereikt met het ontwerpteam voorafgaand aan het plaatsen van de opdracht voor de hoofdaannemer. De aanbestedende dienst kan ervoor kiezen meer punten toe te kennen aan het hergebruikte materiaal in plaats van aan het gerecyclede, overeenkomstig de lokale omstandigheden.\n\n*Tabel (c) Omvang van de te beoordelen bouwelementen*\n\n| Nieuwbouw of grote uitbreiding | Onderhoud en renovatie |\n|---|---|\n| • Onderbouw, met inbegrip van grondverzet en grondwerken:<br>• Ondergrond:<br>• Fundering, bindlaag en oppervlak *of* betonnen deklaag. | • Fundering, bindlaag en oppervlak *of* betonnen deklaag. |\n\nHet gerecyclede en het hergebruikte materiaal wordt berekend op basis van een gemiddelde massabalans van hergebruikte, gerecyclede materialen en/of bijproducten overeenkomstig de productiewijze en de manier waarop ze worden aangeleverd op de locatie (zoals van toepassing):\n\n• Voor elke reeds gemengde partij waarvan leveringen worden gezonden naar de bouwlocatie, in overeenstemming met normen betreffende:\n  • toeslagmaterialen EN 13242, EN 13285;\n  • asfaltverhardingen EN 13043, EN 13108-1, EN 13108-2, EN 13108-3, EN 13108-4, EN 13108-5, EN 13108-6, EN 13108-7, EN 13108-8;\n  • betonverharding EN 206, EN 12620, EN 13877;\n  • gestabiliseerde bodem EN 14227 deel 10 tot en met 15.\n• Op jaarbasis voor in de fabriek vervaardigde platen en elementen met opgegeven materiaalniveaus, in overeenstemming met EN 12620 en EN 206, EN 13877 en nationale wetgeving.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 24"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver doet een voorstel voor de totale hoeveelheid gerecyclede, hergebruikte materialen en/of bijproducten waarin de proportionele bijdrage van het totale gerecyclede materiaal en/of hergebruikte materiaal aan het totale gewicht van de gespecificeerde wegelementen wordt gekwantificeerd op basis van informatie verstrekt door de producent(en) van het bouwproduct.\n\nHet ontwerpteam of de DB-inschrijver of de DBO-inschrijver beschrijft hoe het gerecyclede materiaal wordt berekend en geverifieerd, met inbegrip van, ten minste, partijdocumenten zoals het typebeproevingsverslag, documentatie over productiecontrole in de fabriek en leveringsdocumentatie, en de manier waarop externe verificatie zal worden uitgevoerd tijdens de bouwfase."
+                }
+              },
+              {
+                "code": "B16",
+                "title": "Prestatievereisten voor CO₂e-uitstoot afkomstig van het vervoer van toeslagmaterialen",
+                "subtitle": "*Dit criterium mag niet worden gebruikt wanneer criterium B14 wordt toegepast. Het wordt aanbevolen te overwegen dit criterium te combineren met criterium B15 om zo een algeheel milieuvoordeel te behalen. Dit wordt altijd gebaseerd op inzicht in de lokale marktomstandigheden en door het vaststellen en duidelijk in de uitnodiging tot inschrijving vermelden van wegen waarop de twee criteria de een daadwerkelijke meerwaarde verzekeren en inschrijvingen belonen die de beste totale milieuprestaties bieden.*",
+                "specification": "Er worden punten toegekend aan de vermindering van de CO₂e-uitstoot/ton toeslagmaterialen voor gebruik in de productie van de in tabel (e) vermelde belangrijkste wegelementen. De methode en het instrument die moeten worden gebruikt voor de berekening van CO₂e-uitstoot van vervoer, wordt vermeld in de uitnodiging tot inschrijving.\n\n*In sommige lidstaten bestaan er mogelijk al vergunningsvoorschriften of vergelijkbare instrumenten die beschikbaar zijn voor de berekening van transportgerelateerde CO₂-equivalente uitstoot. In dat geval geven de inschrijvers de uitstoot op basis van deze voorschriften op.*\n\nEr kan een maximaal streefcijfer voor CO₂e-uitstoot/ton vervoerde toeslagmaterialen worden vastgesteld door de aanbestedende dienst op basis van de informatie van het ontwerpteam. Dit wordt, samen met de aannames en voorschriften, opgenomen in de uitnodiging tot inschrijving voor de hoofdaannemer.\n\n*Tabel (e) Omvang van de te beoordelen bouwelementen:*\n\n| Nieuwbouw of grote uitbreiding | Onderhoud en renovatie |\n|---|---|\n| • Onderbouw, met inbegrip van grondverzet en grondwerken;<br><br>• Ondergrond;<br><br>• Fundering, bindlaag en oppervlak of betonnen deklaag;<br><br>• Extra aanvullende wegelementen *(optioneel)*. | • Fundering, bindlaag en oppervlak of betonnen deklaag. |",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 24"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt een schatting van de CO₂e/ton voor toeslagmaterialen die worden gebruikt in de gespecificeerde wegelementen met behulp van het in de uitnodiging tot inschrijving vermelde berekensinstrument. De vervoerswijze(n) wordt (worden) vermeld en de emissiefactor voor elke vervoerswijze wordt vermenigvuldigd met de desbetreffende materiaalhoeveelheden die zijn vermeld op de hoeveelhedenlijst."
+                }
+              },
+              {
+                "code": "B17",
+                "title": "Vereisten voor \"soft engineered\"-componenten voor de beperking van waterverontreiniging in drainagesystemen",
+                "specification": "Punten worden als volgt toegekend aan ontwerpen van drainagesystemen waarin soft engineered-componenten zijn opgenomen (vaak aangeduid als SuDS):\n\n• Filtergreppels met lage (<25 mm) of zonder trottoirband aan de kant van de weg, die ten minste 40 % van de weg dekken (0,25× punten);\n• Verlande geulen begroeid met gras die ten minste 40 % van de weg dekken (0,5× punten);\n• Begroeide bassins voor waterretentie met niet-beklede bodems voor infiltratie waarlangs alle drainage wordt geleid voordat het de lokale waterloop bereikt (0,5× punten);\n• Begroeide retentievijvers met bekleding om kunstmatig drassige gronden en/of een permanent waterlichaam te creëren in het gehele of een gedeelte van het bassin waarlangs alle drainage wordt geleid voordat het de lokale waterloop bereikt (0,75× punten).\n\nEr mag meer dan één SuDS-kenmerk in het drainageontwerp worden opgenomen.\n\nDeze systemen zijn ontworpen in overeenstemming met richtsnoeren inzake beste praktijken, bijvoorbeeld zoals beschreven in \"De SuDS-handleiding C697\" (2007), gepubliceerd door CIRIA of andere soortgelijke meer recente literatuur.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 26"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt gegevens over deze drainageoplossingen en geeft deze duidelijk aan op het ontwerp. In voorkomend geval wordt verwezen naar de gegevens inzake beste praktijken voor het ontwerpen en hoe deze worden opgenomen in het ontwerp."
+                }
+              },
+              {
+                "code": "B18",
+                "title": "Vereisten voor regenwatervasthoudend vermogen in drainagesystemen met \"soft engineered\"-componenten",
+                "specification": "Punten worden als volgt toegekend voor drainagesystemen met \"soft engineered\"-componenten (vaak aangeduid als SuDS) waarin regenwatervasthoudende inrichtingen zijn opgenomen die bijdragen aan een verbeterde esthetiek van de locatie en aan een potentiële habitatontwikkeling:\n\n• Verlande geulen met controledammen en een doorstroomopening aan de onderzijde die fungeren als retentie-inrichtingen tijdens hevige regенval maar die normaliter droog zijn (0,50× punten);\n• Begroeide retentiebassins voor waterretentie met niet-beklede bodems voor infiltratie en overlopen voor zware omstandigheden waarlangs alle drainage wordt geleid voordat het de lokale waterloop bereikt (0,50× punten);\n• Begroeide retentievijvers met bekleding om kunstmatig drassige gronden en/of een permanent waterlichaam te creëren in het gehele of een gedeelte van het bassin waarlangs alle drainage wordt geleid voordat het de lokale waterloop bereikt (0,75× punten).\n\nEen of alle voorzieningen kunnen worden opgenomen in de drainageontwerp en gecombineerd met andere \"hard engineered\" drainagecomponenten zoals vereist per locatie.\n\nDeze systemen zijn ontworpen in overeenstemming met richtsnoeren inzake beste praktijken, bijvoorbeeld zoals beschreven in \"De SuDS-handleiding C697\" in 2007 gepubliceerd door CIRIA of andere soortgelijke maar recentere literatuur.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 27"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt gegevens over deze drainage-oplossingen en geeft deze duidelijk aan op het ontwerp. In voorkomend geval wordt verwezen naar de gegevens inzake beste praktijken voor het ontwerpen en hoe deze worden opgenomen in het ontwerp."
+                }
+              },
+              {
+                "code": "B19",
+                "title": "Prestatievereisten voor faunapassages naar de andere kant van de weg",
+                "specification": "Punten worden toegekend voor drainage-infrastructuur (duikers of onderdoorgangen) die de veilige doorgang faciliteren van kleine fauna en amfibische of ongewervelde diersoorten naar de andere kant van de weg. Punten worden als volgt toegekend:\n\n• Filtergreppels met lage (<25 mm) of zonder trottoirband aan de kant van de weg, die ten minste 40 % van de weg dekken (0,5× punten);\n• Minstens 50 % van alle duikers voor de doorgang van oppervlaktewater naar de overkant van de weg voorzien van vlakke en droge paden voor kleine fauna (0,5× punten);\n• Alle duikers die permanente oppervlaktewateren kanaliseren, beletten de stroomopwaartse migratie van vissen of amfibieën niet (0,5× punten).\n\nDuikers die de doorgang van kleine fauna of aquatische soorten mogelijk maken, worden ontworpen volgens richtsnoeren met beste praktijken, zoals bijvoorbeeld in de COST 341-handleiding of soortgelijke documenten die door de aanbestedende dienst worden voorgesteld.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 28"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt de gegevens over trottoirbanden, filtergreppels of duikers en deze vergelijken met de richtsnoeren voor beste praktijken die door de aanbestedende dienst worden vastgesteld."
+                }
+              },
+              {
+                "code": "B20",
+                "title": "Prestatieclaim voor het ontwerp van geluidarme verharding",
+                "specification": "Punten worden toegekend als het wegdekontwerp beweert CPX-geluidsemissies te bereiken die >1 dB(A) lager liggen dan de minimale technische vereisten (zie B7). Punten worden toegekend in verhouding tot het aantal decibels (dB(A)) dat de raming beter presteert dan de minimale technische vereisten.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 28"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver omschrijft het karakter van de voorgestelde geluidarme verharding zoals gradering van het steenmengsel, maximale korrelgrootte, gebruikt bindmiddel, verwacht poriënvolume en verwachte CPX-geluidsemissie van testvoertuigen die zich met de gepaste snelheid op de weg voortbewegen.\n\nDe verwachte waarden van de geluidsreductieprestaties van de nieuwe verharding zijn gebaseerd op metingen in een laboratorium en/of ter plaatse op testvakken en kunnen worden vergeleken met andere bekende geluidarme referentieprojecten. Gegevens en informatie kunnen door de inschrijver worden gegenereerd aan de hand van collegiaal getoetste gepubliceerde literatuur of aan de hand van ondertekende verklaringen van bevoegde autoriteiten op het gebied van geluidsemissie van het wegdek.\n\nNa het openen moet een door een bevoegde instantie ondertekend testverslag worden verstrekt waarin de resultaten zijn opgenomen van CPX-geluidsmetingstests op overeengekomen wegvakken met een afgesproken voertuigsnelheid of -snelheden en waarin de naleving van de relevante grenswaarden voor geluidsemissies wordt aangetoond.\n\nRuimtelijke variatie van het geteste wegvak toont aan dat op geen enkel afzonderlijk testvak deze algemene grenswaarden met meer dan 2 dB(A) worden overschreden."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "B13",
+                "title": "Prestatie-eisen op brandstofverbruik als gevolg van rolweerstand",
+                "subtitle": "*Alleen voor autowegen en snelwegen, hoofdwegen of rijkswegen die bedoeld zijn om een hoog jaarlijks dagelijks verkeersvolume te verdragen bij constante snelheid.*",
+                "specification": "De aanbestedende dienst kan uit één van de onderstaande opties kiezen om dit criterium uit te voeren. Voor alle drie de opties moet als vereiste worden opgenomen dat de gemiddelde profieldiepte waarborgt dat wordt voldaan aan de stroefheid en natte wrijving zoals voorgeschreven door nationale, regionale en/of lokale wetgeving.\n\n**Optie 1**\n\nPunten worden toegekend aan de inschrijvingen die zich verbinden tot een lagere gemiddelde profieldiepte van het wegdek, binnen het bereik van de veiligheidsvoorwaarden zoals bepaald door de stroefheid en natte wrijving.\n\n**Optie 2**\n\nPunten worden toegekend aan de inschrijvingen die zich verbinden tot een lagere rolweerstand van het wegdek. Deze optie mag alleen worden gebruikt als aan de volgende drie voorwaarden wordt voldaan:\n\n1. De aanbestedende dienst bepaalt in de uitnodiging tot inschrijving de testmethode die moet worden gebruikt voor de rechtstreekse meting van de rolweerstand, en;\n2. De inschrijvers hebben toegang tot laboratoria die rolweerstand testen volgens die testmethode, en;\n3. De testmethode is goedgekeurd overeenkomstig de bepalingen van ISO 17025.\n\n**Optie 3**\n\nPunten worden toegekend aan de inschrijvingen die zich verbinden tot een wegdek dat het brandstofverbruik vermindert.\n\nDe aanbestedende dienst zal de inschrijvers voorzien van het instrument met de planningsgegevens (route, verkeersstroom, gemiddelde ronding, verticale beweging/gradient). De inschrijver voegt de ontwerpparameters toe die invloed hebben op het brandstofverbruik en vermeldt deze waarden samen met de mate van onzekerheid, en de mate waarin de raming van het brandstofverbruik onzeker is.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "**Alle opties:**\n\nHet ontwerpteam, de DB-inschrijver of de DBO-inschrijver verstrekt het gedetailleerde ontwerp met inbegrip van de gemeten prestatieparameters samen met testresultaten op een representatief analysemoment van het oppervlak. Testen worden verricht door een onafhankelijk laboratorium en moeten voldoen aan de algemene beginselen van ISO 17025.\n\n**Optie 1:**\n\nDe gemiddelde profieldiepte moet worden gemeten volgens de norm ISO 13473-1.\n\n**Optie 2:**\n\nDe rolweerstand wordt gemeten door middel van de testmethode die door de aanbestedende dienst in de uitnodiging tot inschrijving wordt bepaald.\n\n**Optie 3:**\n\nHet ontwerpteam, de DB-inschrijver of de DBO-inschrijver verstrekt de resultaten van het verwachte brandstofverbruik door middel van het MIRAVEC-instrument, of eventueel andere beoordelingsinstrumenten voor de beoordeling van het brandstofverbruik. Om als gelijkwaardig te worden beschouwd, omvatten deze instrumenten de volgende parameters:\n\n• Model voor brandstofverbruik voor doorstroming van het verkeer op basis van:\n  • Voertuigkenmerken (type, gebruikte brandstof, Euro-categorie);\n  • Rolweerstand, luchtweerstand, de gemiddelde niveau van ronding, verticale beweging/gradient, snelheid;\n• Rolweerstand afhankelijk van de omgevingstemperatuur, IRI, gemiddelde profieldiepte;\n• Voertuigsnelheid, op basis van maximumsnelheid, voertuigtype, verkeersintensiteit, gradient, IRI en aanwezige spoorvorming;\n• Verliestijd."
+                }
+              },
+              {
+                "code": "B14",
+                "title": "LCA-prestaties van de belangrijkste wegelementen",
+                "subtitle": "*Indien de effecten van de gebruiksfase van de weg in acht worden genomen, wordt dit criterium gebruikt in combinatie met het gunningscriterium B13 prestatie-eisen op brandstofverbruik als gevolg van rolweerstand.*",
+                "specification": "Dit criterium mag alleen worden toegepast wanneer er aan de inschrijvers een hoeveelhedenlijst voor een referentieweg wordt verstrekt als basis voor een vergelijking of wanneer tijdens een mededingingsprocedure de door de verschillende inschrijvers ingediende ontwerpen worden vergeleken.\n\nTijdens de aanbestedingsprocedure moeten aanvullende technische richtsnoeren worden gevolgd, zoals opgenomen in bijlage B (LCA-optie).\n\nEen technisch beoordelaar die is gespecialiseerd in LCA, verleent bijstand bij het opstellen van de uitnodiging tot inschrijving en voert een kritische beoordeling uit van de inschrijvingen.\n\nPunten worden toegekend op basis van de verbetering van de levenscyclusanalyse (LCA)-prestatie van de weg met inbegrip van ten minste de in de tabel (b) vermelde belangrijkste wegelementen in vergelijking met een referentieweg of andere concurrerende ontwerpen.\n\n*De basis voor de te gebruiken vergelijking wordt vermeld in de uitnodiging tot inschrijving.*\n\n*Tabel (b) Omvang van de te beoordelen bouwelementen*\n\n| Nieuwbouw of grote uitbreiding | Onderhoud en renovatie |\n|---|---|\n| • Onderbouw, met inbegrip van grondverzet en grondwerken<br>• Ondergrond<br>• Fundering, bindlaag en oppervlak *of* betonnen deklaag<br>• Extra aanvullende wegelementen *(optioneel)* | • Fundering, bindlaag en oppervlak *of* betonnen deklaag |\n\nDe prestaties worden beoordeeld door de uitvoering van een levenscyclusanalyse (LCA) van de weg in overeenstemming met ISO 14040/14044. In de uitnodiging tot inschrijving wordt vermeld welke van de volgende methoden wordt gebruikt voor de beoordeling (zie bijlage B):\n\n(i) resultaten van de effectcategorie: de geaggregeerde kenmerkende resultaten voor elke indicator die zijn verkregen met behulp van de gespecificeerde LCA-methode;\n\nof\n\n(ii) score op basis van het LCA-instrument: één score afkomstig van een nationaal of regionaal LCA-instrument dat wordt gebruikt door overheidsinstanties;\n\nDe methode omvat in elk geval, ten minste, de in bijlage B opgenomen indicatoren voor effectcategorieën van de levensduur.\n\nTechnologieën voor energiewinning uit externe bronnen worden opgenomen in de LCA overeenkomstig bijlage B punt d.\n\nWanneer een LCA-analyse wordt uitgevoerd vóór de aanbesteding van de hoofdaannemer, stelt de uitgekozen inschrijver een overdrachtsdocument op waarin de belangrijkste aannames en resultaten worden opgenomen met betrekking tot:\n\n• oplossingen voor grondverzet en grondwerk;\n• voorgestelde te gebruiken materialen, toegepaste technieken zoals WMA, HWMA, CMA en gerecyclede materialen, hergebruikte materialen en/of bijproducten;\n• CO₂-emissies per ton vervoerde materialen van de productielocatie tot aan het werkterrein (grondlijnplan voor omvangrijk vervoer);\n• % recycling, hergebruik van afgegraven grond en bouw- en sloopafval ter plaatse en elders;\n• onderhoudsactiviteiten en frequenties.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt een materiaallijst voor het voorgestelde ontwerp en de LCA-resultaten, die worden gerapporteerd overeenkomstig ISO 14044. De vergelijking met de referentieweg wordt schriftelijk vastgelegd in een kort technisch verslag waarin de voorgestelde ontwerptypen worden vergeleken en het verbeteringspotentieel wordt berekend. In het technische verslag wordt beschreven hoe de \"te behandelen technische punten\" (zoals beschreven in bijlage B) zijn gedekt.\n\n*Het overdrachtsdocument zal door de aanbestedende dienst worden gebruikt voor de toekomstige uitnodiging tot inschrijving in geval van aparte \"ontwerp-plus-bouw\"-contracten (DB) of worden bijgewerkt en verder verbeterd door de hoofdaannemer vóór de bouw of de DB-contractant of de DBO-contractant vóór het begin van de bouwfase.*\n\n*De uitgekozen inschrijver sluit de ontwerpfase af met het opstellen van het overdrachtsdocument. De uitgekozen DB-inschrijver of DBO-inschrijver stelt het overdrachtsdocument op vóór het begin van de bouwfase.*\n\n*Het technische verslag vormt het onderwerp van een kritische beoordeling door de technische LCA-beoordelaar die door de aanbestedende dienst is aangesteld. De kritische beoordeling wordt uitgevoerd overeenkomstig de in bijlage C opgenomen richtsnoeren.*"
+                }
+              },
+              {
+                "code": "B15",
+                "title": "Opname van gerecycled materiaal",
+                "subtitle": "*Er wordt aangeraden om dit criterium te combineren met criterium B16, maar het mag niet worden gebruikt als criterium B14 is geselecteerd.*",
+                "specification": "De aanbestedende dienst kent punten toe aan inschrijvers die een waarde aan gerecycled materiaal, hergebruikt materiaal en/of gerecyclede bijproducten bereiken van meer dan of gelijk aan 30% voor de som van de in de tabel (d) genoemde belangrijkste bouwelementen.\n\nHet minimale gehalte voor toekenning kan hoger worden vastgesteld als er overeenstemming wordt bereikt met het ontwerpteam voorafgaand aan het plaatsen van de opdracht voor de hoofdaannemer. De aanbestedende dienst kan ervoor kiezen meer punten toe te kennen aan het hergebruikte materiaal in plaats van aan het gerecyclede, overeenkomstig de lokale omstandigheden.\n\n*Tabel (d) Omvang van de te beoordelen bouwelementen*\n\n| Nieuwbouw of grote uitbreiding | Onderhoud en renovatie |\n|---|---|\n| • Onderbouw, met inbegrip van grondverzet en grondwerken;<br>• Ondergrond;<br>• Fundering, bindlaag en oppervlak *of* betonnen deklaag. | • Fundering, bindlaag en oppervlak *of* betonnen deklaag. |\n\nHet gerecyclede en het hergebruikte materiaal wordt berekend op basis van een gemiddelde massabalans van hergebruikte, gerecyclede materialen en/of bijproducten overeenkomstig de productiewijze en de manier waarop ze worden aangeleverd op de locatie (zoals van toepassing):\n\n• Voor elke reeds gemengde partij waarvan leveringen worden gezonden naar de bouwlocatie, in overeenstemming met normen betreffende:\n  • toeslagmaterialen EN 13242, EN 13285;\n  • asfaltverhardingen EN 13043, EN 13108-1, EN 13108-2, EN 13108-3, EN 13108-4, EN 13108-5, EN 13108-6, EN 13108-7, EN 13108-8;\n  • betonverharding EN 206, EN 12620, EN 13877;\n  • hydraulisch gebonden korrelige mengsels EN 14227 deel 10 tot en met 15.\n• Op jaarbasis voor in de fabriek vervaardigde platen en elementen met opgegeven materiaalniveaus, in overeenstemming met EN 12620 en EN 206, EN 13877 en nationale wetgeving.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 24"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver doet een voorstel voor de totale hoeveelheid gerecyclede, hergebruikte materialen en/of bijproducten waarin de proportionele bijdrage van het totale gerecyclede materiaal en/of hergebruikte materiaal aan het totale gewicht van de gespecificeerde wegelementen wordt gekwantificeerd op basis van informatie verstrekt door de producent(en) van het bouwproduct.\n\nHet ontwerpteam of de DB-inschrijver of de DBO-inschrijver beschrijft hoe het gerecyclede materiaal wordt berekend en geverifieerd, met inbegrip van, ten minste, partijdocumenten zoals het typebeproevingsverslag, documentatie over productiecontrole in de fabriek en leveringsdocumentatie, en de manier waarop externe verificatie zal worden uitgevoerd tijdens de bouwfase."
+                }
+              },
+              {
+                "code": "B19",
+                "title": "Prestatievereisten voor faunapassages naar de andere kant van de weg",
+                "specification": "Punten worden toegekend voor drainage-infrastructuur (duikers of onderdoorgangen) die de veilige doorgang mogelijk maakt van kleine fauna en amfibische of ongewervelde diersoorten naar de andere kant van de weg. Punten worden als volgt toegekend:\n\n• Filtergreppels zonder trottoirband aan de kant van de weg, die ten minste 60 % van de weg dekken (0,5× punten);\n• Alle duikers voor de doorgang van oppervlaktewater naar de overkant van de weg voorzien van vlakke en droge paden voor kleine fauna (0,5× punten);\n• Alle duikers die permanente oppervlaktewateren kanaliseren, beletten de stroomopwaartse migratie van vissen of amfibieën niet (0,5× punten).\n\nDuikers die de doorgang van kleine fauna of aquatische soorten mogelijk maken, worden ontworpen volgens richtsnoeren met beste praktijken, zoals bijvoorbeeld in de COST 341-handleiding of soortgelijke documenten die door de aanbestedende dienst worden voorgesteld.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 28"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt de gegevens over trottoirbanden, filtergreppels of duikers en deze vergelijken met de richtsnoeren voor beste praktijken die door de aanbestedende dienst worden vastgesteld."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "uitvoeringsvoorwaarden",
+      "title": "Uitvoeringsvoorwaarden",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als contractuele uitvoeringsvoorwaarden. Ze borgen dat de verplichtingen worden nagekomen.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale uitvoeringsvoorwaarden) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie. Let op: De GPP bevat alleen uitvoeringsvoorwaarden de categorie straatverlichting.",
+        "Ga in de tabel hieronder na welke uitvoeringsvoorwaarden van toepassing zijn. Neem in ieder geval de kerncriteria op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "wegontwerp",
+            "label": "Kerncriteria voor het ontwerp, de bouw en het onderhoud van wegen",
+            "label_short": "het ontwerp, de bouw en het onderhoud van wegen"
+          }
+        ],
+        "default_main_tab": "wegontwerp",
+        "data": {
+          "wegontwerp": {
+            "core_criteria": [
+              {
+                "code": "C1",
+                "title": "Opdracht geven tot bouw van de weg",
+                "specification": "De hoofdcontractant voor de bouw of de DB-aannemer of de DBO-contractant moet ervoor zorgen dat het opdracht geven tot de wegenbouw in overeenstemming is met de overeengekomen ontwerpen en specificaties. Bijzondere aandacht moet worden geschonken aan de volgende aspecten:\n\n• CF/LCA-prestaties van de belangrijkste wegelementen (criterium B14) of de CO₂-emissies per ton vervoerde materialen (criterium B16);\n• Beheersplan op het gebied van afgegraven materiaal en grond (criterium B2);\n• Componenten voor de beperking van waterverontreiniging, regenwatervasthoudend vermogen en plan voor milieu-integratie en -herstel en ontwerp voor doorgang van in het wild levende dieren in het drainagesysteem (criteria B3, B4, B5, B17, B18, B19);\n• Duurzaamheid van de verharding (criterium B11);\n• Uitvoering van het plan voor de beperking van verkeerscongestie (criterium B10).\n\nDe hoofdcontractant voor de bouw of de DB-aannemer of de DBO-contractant informeert, ingeval een aanzienlijke afwijking van de ontwerpen tijdens de bouwfase noodzakelijk wordt geacht, de aanbestedende dienst en stemt in, indien gerechtvaardigd, met eventuele afwijkingen.\n\nVoor de gevallen waarin geen overeenkomst wordt bereikt, moeten de contractbepalingen een vooraf vastgestelde procedure voorschrijven ter bepaling van passende en evenredige sancties voor niet-naleving en/of corrigerende of beperkende maatregelen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 29"
+                }
+              },
+              {
+                "code": "C3",
+                "title": "Opname van gerecycled materiaal",
+                "specification": "Wanneer materialen op de locatie worden gebracht, worden verklaringen betreffende het gerecyclede materiaal met duidelijke traceerbaarheid voor elke productpartij<sup>12</sup> geverifieerd.\n\nDe hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant verifieert beweringen door het verstrekken van ofwel:\n\n• een onafhankelijke certificering door derden betreffende de traceerbaarheid en de materiaalbalans van het product en/of recyclaat;\n• of gelijkwaardige documenten die door de producent(en) worden verstrekt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 30"
+                }
+              },
+              {
+                "code": "C4",
+                "title": "Monitoring van het lage-temperatuur-asfalt",
+                "specification": "De legtemperatuur van de lage-temperatuur-asfalt wordt voor elke partij<sup>13</sup> van het product op het bouwterrein gecontroleerd.\n\nDe hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant verstrekt ofwel:\n\n• een onafhankelijke laboratoriumcertificatie betreffende de maximale legtemperatuur van het asfalt;\n• of gelijkwaardige documenten die door de asfaltproducent(en) worden verstrekt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 30"
+                }
+              },
+              {
+                "code": "C5",
+                "title": "Opdracht geven tot het beheersplan op het gebied van afgegraven materiaal en grond",
+                "specification": "De hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant legt een systeem ten uitvoer voor monitoring en rapportage van activiteiten inzake de bouwwerkzaamheden op het terrein afgegraven materialen en grond. Dit systeem omvat boekhoudkundige gegevens voor de gegenereerde hoeveelheden (teelaarde en afgegraven materialen), de percentages voor hergebruik/recycling ter plaatse en percentages voor hergebruik en/of recycling elders.\n\nTevens wordt de bestemming van de verzonden afgegraven materialen getraceerd en geverifieerd. De controle- en traceringsgegevens worden op overeengekomen periodieke basis verstrekt aan de aanbestedende dienst.\n\nDe hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant informeert, ingeval een aanzienlijke afwijking van het tijdens de ontwerpfase voorgestelde beheersplan op het gebied van afgegraven materiaal en grond noodzakelijk wordt geacht, de aanbestedende dienst en stemt in, indien gerechtvaardigd, met eventuele afwijkingen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 30"
+                }
+              },
+              {
+                "code": "C6",
+                "title": "Inspectie van componenten voor de beperking van waterverontreiniging in drainagesystemen",
+                "specification": "De aannemer voert inspecties ter plaatse uit tot vaststelling van de afmetingen van het drainagesysteem, paden en verbindingen tussen drainagecomponenten, en of deze in overeenstemming zijn met de ontwerpplannen. Gegevens worden op basis van een overeengekomen tijdschema naar de aanbestedende dienst verzonden.\n\nIngeval de resultaten onbevredigend zijn of niet voldoen, zie de tekst in de algemene contractuele uitvoeringsvoorwaarde in C1.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 31"
+                }
+              },
+              {
+                "code": "C7",
+                "title": "Bouw van \"soft engineered\"-componenten voor de beperking van waterverontreiniging in drainagesystemen",
+                "specification": "De contractant voert controles uit ter plaatse, zowel tijdens als na de aanleg van de begroeide drainagecomponenten en ziet erop toe dat er passende maatregelen worden genomen in overeenstemming met richtsnoeren voor beste praktijken voor de aanleg van een plantendek in SuDS-drainagecomponenten. Gegevens worden op basis van een overeengekomen tijdschema naar de aanbestedende dienst verzonden.\n\nIngeval de resultaten onbevredigend zijn of niet voldoen, zie de tekst in de algemene contractuele uitvoeringsvoorwaarde in C1.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 31"
+                }
+              },
+              {
+                "code": "C8",
+                "title": "Inspectie van het regenwatervasthoudend vermogen in drainagesystemen",
+                "specification": "De hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant inspecteert het drainagesysteem tijdens de bouwfase om ervoor te zorgen dat het overeengekomen ontwerp wordt nageleefd en ziet erop toe dat het voldoet aan de afmetingen, hellingsgraad en aan andere technische details in het ontwerp.\n\nIngeval de resultaten onbevredigend zijn of niet voldoen, zie de tekst in de algemene contractuele uitvoeringsvoorwaarde in C1.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 31"
+                }
+              },
+              {
+                "code": "C9",
+                "title": "Inspectie van het regenwatervasthoudend vermogen in drainagesystemen met \"soft engineered\"-componenten",
+                "specification": "De hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant voert controles uit ter plaatse, zowel tijdens als na de aanleg van de begroeide drainagecomponenten en ziet erop toe dat er passende maatregelen worden genomen in overeenstemming met richtsnoeren voor beste praktijken voor de aanleg van een plantendek in SuDS-drainagecomponenten.\n\nIngeval de resultaten onbevredigend zijn of niet voldoen, zie de tekst in de algemene contractuele uitvoeringsvoorwaarde in C1.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 31"
+                }
+              },
+              {
+                "code": "C10",
+                "title": "Opdracht geven tot het plan voor milieu-integratie en -herstel",
+                "specification": "Tijdens de werken staat de hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant inspecties toe op de plaats van de werkzaamheden om ervoor te zorgen dat het plan wordt uitgevoerd.\n\nBij voltooiing van de werken laat de hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant een laatste inspectie toe op de plaats van de werkzaamheden om ervoor te zorgen dat het plan, en eventuele overeengekomen afwijkingen van het plan, werd(en) uitgevoerd.\n\nIngeval de resultaten onbevredigend zijn of niet voldoen, zie de tekst in de algemene contractuele uitvoeringsvoorwaarde in C1.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 31"
+                }
+              },
+              {
+                "code": "C11",
+                "title": "Inspectie van faunapassages naar de andere kant van de weg en andere maatregelen",
+                "specification": "De hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant inspecteert alle filtergreppels of duikers die deel uitmaken van zijn inschrijving zowel tijdens en onmiddellijk na de bouw en ziet erop toe dat zij voldoen aan de minimumeisen van de technische gegevens in het ontwerp en dat zij voldoen aan de voorwaarden voor de toekenning van punten.\n\nIngeval de resultaten onbevredigend zijn of niet voldoen, zie de tekst in de algemene contractuele uitvoeringsvoorwaarde in C1.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 32"
+                }
+              },
+              {
+                "code": "C12",
+                "title": "Monitoring van geluidsemissie tijdens de bouw",
+                "specification": "Tijdens de bouw-/onderhoudswerkzaamheden ziet de hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant erop toe dat:\n\n• een geschikte geluidsafscherming is geplaatst in overeenstemming met, of beter dan, het ontwerp;\n• geluidsniveaus in het ontvangstgebied worden gecontroleerd volgens het met de opdrachtgever afgesproken tijdschema;\n• geluidsgegevens wordt verwerkt tot singuliere L_den- en L_night-waarden voor elke dag tijdens het werkschema ter vergelijking met de grenswaarden die zijn overeengekomen met de aanbestedende dienst.\n\nWanneer wordt vastgesteld dat de L_den- en/of L_night-waarden gedurende de overeengekomen periode voor verkeerscongestiecontrole de grenswaarden die zijn bepaald in de aanvaarde inschrijving overschrijden, dan kan de aanbestedende dienst de werken stilleggen of sancties opleggen zoals bepaald in de uitnodiging tot inschrijving. Eventuele sancties nemen toe in verhouding tot het product van het aantal dB(A) waarmee de limieten overschreden werden en de tijd waarin niet-naleving zich heeft voorgedaan.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 32"
+                }
+              },
+              {
+                "code": "C13",
+                "title": "Testen van de conformiteit van productie van geluidarme verhardingen",
+                "specification": "Na voltooiing van de werken, 4-12 weken na ingebruikname van de weg, staat de hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant de uitvoering toe van CPX-testen voor conformiteit van productie met de beweringen in het ontwerp inzake geluidsemissies van het wegdek door onafhankelijke en competente derden.\n\nDe testen worden uitgevoerd met behulp van een aangepast voertuig en overeenkomstig ISO/DIS| 11819-2. De tijdens deze testen te gebruiken referentiebanden zijn P225/60R16 radiale standaardreferentietestbanden zoals omschreven in ASTM F2493-14 en dit moet duidelijk worden meegedeeld in de uitnodiging tot inschrijving.\n\nDe testen dienen te worden uitgevoerd onder droge omstandigheden en voor poreuze ondergronden, ten vroegste 2 dagen na de laatste regenval.\n\nAls de CPX-gegevens niet voldoen aan de beweringen van het ontwerp, wordt de DB-contractant of de DBO-contractant beboet en/of verplicht om corrigerend werkzaamheden uit te voeren zonder bijkomende kosten voor de aanbestedende dienst.\n\nAls uit ruimtelijke analyse blijkt dat slechts een klein gedeelte van het traject niet aan de geluidsgrenzen voldoet, zijn eventuele corrigerende maatregelen uitsluitend van toepassing op dat gebied. Het kader voor eventuele toepasselijke sancties of herstelmaatregelen moet duidelijk worden vermeld in de uitnodiging tot inschrijving.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 32"
+                }
+              },
+              {
+                "code": "C14",
+                "title": "Opdracht geven tot het plan voor de beperking van verkeerscongestie",
+                "specification": "De hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant verstrekken bewijzen van de correcte uitvoering van het plan voor de beperking van verkeerscongestie.\n\nDe aanbestedende dienst controleert de specifieke eisen voor verkeerscongestie (ITS-apparaten, (automatische) wisseling van rijrichting op een strook en vluchtstrook) na de aanleg voor de ingebruikname van de weg en 6 maanden na de ingebruikname (in gebruik zijnde weg).\n\nDe hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant informeert, ingeval een aanzienlijke afwijking van het tijdens de ontwerpfase voorgestelde plan voor de beperking van verkeerscongestie noodzakelijk wordt geacht, de aanbestedende dienst en stemt in, indien gerechtvaardigd, met eventuele afwijkingen.\n\nIngeval de resultaten onbevredigend zijn of niet voldoen, zie de tekst in de algemene contractuele uitvoeringsvoorwaarde in C1.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 32"
+                }
+              },
+              {
+                "code": "D2",
+                "title": "Duurzaamheid van de prestaties van geluidarme verharding",
+                "specification": "Tijdens de periode van 5 jaar na de test inzake conformiteit van productie staat de hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant de uitvoering toe van CPX-testen inzake geluidsemissies van het wegdek door onafhankelijke en competente derden volgens de in de technische specificatie vastgestelde methode D1.\n\nDe testen dienen te worden uitgevoerd onder droge omstandigheden en voor poreuze ondergronden, ten vroegste 2 dagen na de laatste regenval.\n\nAls de CPX-gegevens niet voldoen aan de betreffende grenswaarden van het criterium inzake duurzaamheid van de prestaties, wordt de DB-contractant of de DBO-contractant beboet en/of verplicht om corrigerend werkzaamheden uit te voeren zonder bijkomende kosten voor de aanbestedende dienst.\n\nHet kader voor eventuele toepasselijke sancties of herstelmaatregelen moet duidelijk worden vermeld in de uitnodiging tot inschrijving.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 35"
+                }
+              },
+              {
+                "code": "D3",
+                "title": "Opdracht geven tot het onderhouds- en renovatieplan",
+                "subtitle": "*Deze optie geldt in geval van DBO-contracten, waar de controle wordt verricht door de DBO-contractant.*",
+                "specification": "De DBO-contractant informeert, ingeval een aanzienlijke afwijking van het tijdens de ontwerpfase voorgestelde onderhouds- en renovatieplan noodzakelijk wordt geacht, de aanbestedende dienst en stemt in, indien gerechtvaardigd, met eventuele afwijkingen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 35"
+                }
+              },
+              {
+                "code": "E3",
+                "title": "Opdracht geven tot het onderhouds- en renovatieplan",
+                "specification": "De hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant verbindt zich tot het onderhouden van de weg overeenkomstig het onderhouds- en renovatieplan (zie criterium B12).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 37"
+                }
+              },
+              {
+                "code": "E4",
+                "title": "Opdracht geven tot het wegenonderhoud",
+                "specification": "De belangrijkste onderhoudscontractant of de DB-aannemer of de DBO-contractant moet ervoor zorgen dat het opdracht geven tot het wegenonderhoud in overeenstemming is met de overeengekomen ontwerpen en specificaties. Bijzondere aandacht moet worden geschonken aan de volgende aspecten:\n\n• CF/LCA-prestaties van de belangrijkste wegelementen (criterium B14) of de CO₂-emissies per ton vervoerde materialen (criterium B16);\n• Componenten voor de beperking van waterverontreiniging, regenwatervasthoudend vermogen en plan voor milieu-integratie en -herstel en ontwerp voor doorgang van in het wild levende dieren in het drainagesysteem (criteria B3, B4, B5, B17, B18, B19);\n• Duurzaamheid van de verharding (criterium B11);\n• Uitvoering van het plan voor de beperking van verkeerscongestie (criterium B10).\n\nDe hoofdcontractant voor de bouw of de DB-aannemer of de DBO-contractant informeert, ingeval een aanzienlijke afwijking van de ontwerprevisies tijdens de bouwfase noodzakelijk wordt geacht, de aanbestedende dienst en stemt in, indien gerechtvaardigd, met eventuele afwijkingen.\n\nVoor de gevallen waarin geen overeenkomst wordt bereikt, moet de aanbestedende dienst een beslissingsboom hebben ingesteld ter bepaling van passende en evenredige sancties voor niet-naleving en/of corrigerende of beperkende maatregelen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 37"
+                }
+              },
+              {
+                "code": "E5",
+                "title": "Opname van gerecycled materiaal",
+                "specification": "Wanneer materialen op de locatie worden gebracht, worden verklaringen betreffende het gerecyclede materiaal met duidelijke traceerbaarheid voor elke productpartij<sup>12</sup> geverifieerd.\n\nDe hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant verifieert beweringen door het verstrekken van ofwel:\n\n• een onafhankelijke certificering door derden betreffende de traceerbaarheid en de materiaalbalans van het product en/of recyclaat;\n• of gelijkwaardige documenten die door de producent(en) worden verstrekt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 38"
+                }
+              },
+              {
+                "code": "E6",
+                "title": "Monitoring van het lage-temperatuur-asfalt",
+                "specification": "De legtemperatuur van de lage-temperatuur-asfalt wordt voor elke partij<sup>13</sup> van het product op het bouwterrein gecontroleerd.\n\nDe hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant verstrekt ofwel:\n\n• een onafhankelijke laboratoriumcertificatie betreffende de maximale legtemperatuur van het asfalt;\n• of gelijkwaardige documenten die door de asfaltproducent(en) worden verstrekt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 38"
+                }
+              },
+              {
+                "code": "E7",
+                "title": "Opdracht geven tot het plan voor milieu-integratie en -herstel",
+                "specification": "Tijdens de bouwwerkzaamheden ziet de hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant erop toe dat alle nodige maatregelen worden genomen zodat de aangelegde beplanting en de kwaliteit van de habitat kan worden gehandhaafd. Deze omvatten, zonder daartoe beperkt te zijn: de toepassing van mulch/compost, snoeien, vervanging van dode planten enz....\n\nIngeval de resultaten onbevredigend zijn of niet voldoen, zie de tekst in de algemene contractuele uitvoeringsvoorwaarde in E4.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 38"
+                }
+              },
+              {
+                "code": "E8",
+                "title": "Monitoring van geluidsemissie tijden onderhoud",
+                "specification": "Tijdens de bouw-/onderhoudswerkzaamheden ziet de hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant erop toe dat:\n\n• een geschikte geluidsafscherming is geplaatst in overeenstemming met, of beter dan, het ontwerp;\n• geluidsniveaus in het ontvangstgebied worden gecontroleerd volgens het met de opdrachtgever afgesproken tijdschema;\n• geluidsgegevens wordt verwerkt tot singuliere L_den- en L_night-waarden voor elke dag tijdens het werkschema ter vergelijking met de grenswaarden die zijn overeengekomen met de aanbestedende dienst.\n\nWanneer wordt vastgesteld dat de L_den- en/of L_night-waarden gedurende de overeengekomen periode voor verkeerscongestiecontrole de grenswaarden die zijn bepaald in de aanvaarde inschrijving overschrijden, dan kan de aanbestedende dienst de werken stilleggen of sancties opleggen zoals bepaald in de uitnodiging tot inschrijving. Eventuele sancties nemen toe in verhouding tot het product van het aantal dB(A) waarmee de limieten overschreden werden en de tijd waarin niet-naleving zich heeft voorgedaan.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 38"
+                }
+              },
+              {
+                "code": "E9",
+                "title": "Opdracht geven tot het plan voor de beperking van verkeerscongestie",
+                "specification": "De hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant verstrekken bewijzen van de correcte uitvoering van het plan voor de beperking van verkeerscongestie.\n\nDe aanbestedende dienst controleert de specifieke eisen voor verkeerscongestie (ITS-apparaten, (automatische) wisseling van rijrichting op een strook en vluchtstrook) na de aanleg voor de ingebruikname van de weg en 6 maanden na de ingebruikname (in gebruik zijnde weg).\n\nDe hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant informeert, ingeval een aanzienlijke afwijking van het tijdens de ontwerpfase voorgestelde plan voor de beperking van verkeerscongestie noodzakelijk wordt geacht, de aanbestedende dienst en stemt in, indien gerechtvaardigd, met eventuele afwijkingen.\n\nIngeval de resultaten onbevredigend zijn of niet voldoen, zie de tekst in de algemene contractuele uitvoeringsvoorwaarde in C1.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 38"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "C1",
+                "title": "Opdracht geven tot bouw van de weg",
+                "specification": "De hoofdcontractant voor de bouw of de DB-aannemer of de DBO-contractant moet ervoor zorgen dat het opdracht geven tot de wegenbouw in overeenstemming is met de overeengekomen ontwerpen en specificaties. Bijzondere aandacht moet worden geschonken aan de volgende aspecten:\n\n• Macrotextuur van de verharding (gemiddelde profieldiepte) (zie criterium B13);\n• CF/LCA-prestaties van de belangrijkste wegelementen (criterium B14) of de CO₂-emissies per ton vervoerde materialen (criterium B16);\n• Beheersplan op het gebied van afgegraven materiaal en grond (criterium B2);\n• Componenten voor de beperking van waterverontreiniging, regenwatervasthoudend vermogen en plan voor milieu-integratie en -herstel en ontwerp voor doorgang van in het wild levende dieren in het drainagesysteem (criteria B3, B4, B5, B17, B18, B19);\n• Duurzaamheid van de verharding (criterium B11);\n• Uitvoering van het plan voor de beperking van verkeerscongestie (criterium B10).\n\nDe hoofdcontractant voor de bouw of de DB-aannemer of de DBO-contractant informeert, ingeval een aanzienlijke afwijking van de ontwerpen tijdens de bouwfase noodzakelijk wordt geacht, de aanbestedende dienst en stemt in, indien gerechtvaardigd, met eventuele afwijkingen.\n\nVoor de gevallen waarin geen overeenkomst wordt bereikt, moeten de contractbepalingen een vooraf vastgestelde procedure voorschrijven ter bepaling van passende en evenredige sancties voor niet-naleving en/of corrigerende of beperkende maatregelen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 29"
+                }
+              },
+              {
+                "code": "C2",
+                "title": "De kwaliteit van het voltooide weg – monitoring van de prestatieparameters",
+                "specification": "De hoofdcontractant voor de bouw of de DB-contractant of de DBO-contractant controleert na de aanleg, vóór de ingebruikname en zes maanden na de ingebruikname van de weg (in gebruik zijnde weg) de overeengekomen prestatieparameters van het brandstofverbruik als gevolg van rolweerstand, en geeft een kopie van testresultaten.\n\nIngeval de resultaten niet voldoen, zie de tekst in de algemene contractuele uitvoeringsvoorwaarde in C1.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 29"
+                }
+              },
+              {
+                "code": "E4",
+                "title": "Opdracht geven tot het wegenonderhoud",
+                "specification": "De belangrijkste onderhoudscontractant of de DB-aannemer of de DBO-contractant moet ervoor zorgen dat het opdracht geven tot het wegenonderhoud in overeenstemming is met de overeengekomen ontwerpen en specificaties. Bijzondere aandacht moet worden geschonken aan de volgende aspecten:\n\n• Macrotextuur van de verharding (gemiddelde profieldiepte) (zie criterium B13);\n• CF/LCA-prestaties van de belangrijkste wegelementen (criterium B14) of de CO₂-emissies per ton vervoerde materialen (criterium B16);\n• Componenten voor de beperking van waterverontreiniging, regenwatervasthoudend vermogen en plan voor milieu-integratie en -herstel en ontwerp voor doorgang van in het wild levende dieren in het drainagesysteem (criteria B3, B4, B5, B17, B18, B19);\n• Duurzaamheid van de verharding (criterium B11);\n• Uitvoering van het plan voor de beperking van verkeerscongestie (criterium B10).\n\nDe hoofdcontractant voor de bouw of de DB-aannemer of de DBO-contractant informeert, ingeval een aanzienlijke afwijking van de ontwerprevisies tijdens de bouwfase noodzakelijk wordt geacht, de aanbestedende dienst en stemt in, indien gerechtvaardigd, met eventuele afwijkingen.\n\nVoor de gevallen waarin geen overeenkomst wordt bereikt, moet de aanbestedende dienst een beslissingsboom hebben ingesteld ter bepaling van passende en evenredige sancties voor niet-naleving en/of corrigerende of beperkende maatregelen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 37"
+                }
+              }
+            ]
+          }
+        }
+      }
     }
   ]
 }

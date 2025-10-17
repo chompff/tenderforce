@@ -69,208 +69,39 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
                     GPP
                   </Badge>
                 )}
-                {section.key === 'scope' && (
+                {/* Render category badges if they exist */}
+                {section.badges?.map((badge) => {
+                  const badgeStyles: Record<string, { backgroundColor: string; color: string; borderColor: string }> = {
+                    'ENERGIELABEL': { backgroundColor: '#D1FAE5', color: '#065F46', borderColor: '#D1FAE5' },
+                    'ECODESIGN': { backgroundColor: '#f3e4ee', color: '#7d2352', borderColor: '#f3e4ee' },
+                    'BANDEN': { backgroundColor: '#6C6C6C', color: '#FFFFFF', borderColor: '#6C6C6C' },
+                    'DIENSTEN': { backgroundColor: '#E5FAFD', color: '#008A9E', borderColor: '#E5FAFD' },
+                    'GEBOUWEN': { backgroundColor: '#F4EDE6', color: '#5C4033', borderColor: '#F4EDE6' },
+                    'ALGEMEEN': { backgroundColor: '#FEF3C7', color: '#92400E', borderColor: '#FEF3C7' },
+                  };
+
+                  const style = badgeStyles[badge];
+                  if (!style) return null;
+
+                  return (
+                    <Badge
+                      key={badge}
+                      variant="outline"
+                      className="text-xs px-2 py-0.5 uppercase"
+                      style={style}
+                    >
+                      {badge}
+                    </Badge>
+                  );
+                })}
+                {/* Always render requirement_level badge if it exists */}
+                {section.requirement_level && (
                   <Badge
                     variant="outline"
                     className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}
                   >
                     {section.requirement_level}
                   </Badge>
-                )}
-                {section.key === 'selection_criteria' && (
-                  <Badge
-                    variant="outline"
-                    className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}
-                  >
-                    {section.requirement_level}
-                  </Badge>
-                )}
-                {section.key === 'technical_specs' && (
-                  <>
-                    {section.badges?.map((badge) => {
-                      if (badge === 'ENERGIELABEL') {
-                        return (
-                          <Badge
-                            key={badge}
-                            variant="outline"
-                            className="text-xs px-2 py-0.5 uppercase"
-                            style={{ backgroundColor: '#D1FAE5', color: '#065F46', borderColor: '#D1FAE5' }}
-                          >
-                            {badge}
-                          </Badge>
-                        );
-                      } else if (badge === 'ECODESIGN') {
-                        return (
-                          <Badge
-                            key={badge}
-                            variant="outline"
-                            className="text-xs px-2 py-0.5 uppercase"
-                            style={{ backgroundColor: '#f3e4ee', color: '#7d2352', borderColor: '#f3e4ee' }}
-                          >
-                            {badge}
-                          </Badge>
-                        );
-                      } else if (badge === 'BANDEN') {
-                        return (
-                          <Badge
-                            key={badge}
-                            variant="outline"
-                            className="text-xs px-2 py-0.5 uppercase"
-                            style={{ backgroundColor: '#6C6C6C', color: '#FFFFFF', borderColor: '#6C6C6C' }}
-                          >
-                            {badge}
-                          </Badge>
-                        );
-                      } else if (badge === 'GEBOUWEN') {
-                        return (
-                          <Badge
-                            key={badge}
-                            variant="outline"
-                            className="text-xs px-2 py-0.5 uppercase"
-                            style={{ backgroundColor: '#F4EDE6', color: '#5C4033', borderColor: '#F4EDE6' }}
-                          >
-                            {badge}
-                          </Badge>
-                        );
-                      } else if (badge === 'ALGEMEEN') {
-                        return (
-                          <Badge
-                            key={badge}
-                            variant="outline"
-                            className="text-xs px-2 py-0.5 uppercase"
-                            style={{ backgroundColor: '#FEF3C7', color: '#92400E', borderColor: '#FEF3C7' }}
-                          >
-                            {badge}
-                          </Badge>
-                        );
-                      }
-                      return null;
-                    })}
-                    <Badge
-                      variant="outline"
-                      className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}
-                    >
-                      {section.requirement_level}
-                    </Badge>
-                  </>
-                )}
-                {section.key === 'gunningscriteria' && (
-                  <>
-                    <Badge
-                      variant="outline"
-                      className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}
-                    >
-                      {section.requirement_level}
-                    </Badge>
-                  </>
-                )}
-                {section.key === 'award_criteria' && (
-                  <>
-                    <Badge
-                      variant="outline"
-                      className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}
-                    >
-                      {section.requirement_level}
-                    </Badge>
-                  </>
-                )}
-                {section.key === 'contract_performance_clauses' && (
-                  <>
-                    <Badge
-                      variant="outline"
-                      className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}
-                    >
-                      {section.requirement_level}
-                    </Badge>
-                  </>
-                )}
-                {section.key === 'tenderned_reporting' && (
-                  <Badge
-                    variant="outline"
-                    className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}
-                  >
-                    {section.requirement_level}
-                  </Badge>
-                )}
-                {section.key === 'execution_conditions' && (
-                  <>
-                    {section.badges?.map((badge) => {
-                      if (badge === 'ENERGIELABEL') {
-                        return (
-                          <Badge
-                            key={badge}
-                            variant="outline"
-                            className="text-xs px-2 py-0.5 uppercase"
-                            style={{ backgroundColor: '#D1FAE5', color: '#065F46', borderColor: '#D1FAE5' }}
-                          >
-                            {badge}
-                          </Badge>
-                        );
-                      } else if (badge === 'ECODESIGN') {
-                        return (
-                          <Badge
-                            key={badge}
-                            variant="outline"
-                            className="text-xs px-2 py-0.5 uppercase"
-                            style={{ backgroundColor: '#f3e4ee', color: '#7d2352', borderColor: '#f3e4ee' }}
-                          >
-                            {badge}
-                          </Badge>
-                        );
-                      } else if (badge === 'BANDEN') {
-                        return (
-                          <Badge
-                            key={badge}
-                            variant="outline"
-                            className="text-xs px-2 py-0.5 uppercase"
-                            style={{ backgroundColor: '#6C6C6C', color: '#FFFFFF', borderColor: '#6C6C6C' }}
-                          >
-                            {badge}
-                          </Badge>
-                        );
-                      } else if (badge === 'DIENSTEN') {
-                        return (
-                          <Badge
-                            key={badge}
-                            variant="outline"
-                            className="text-xs px-2 py-0.5 uppercase"
-                            style={{ backgroundColor: '#E5FAFD', color: '#008A9E', borderColor: '#E5FAFD' }}
-                          >
-                            {badge}
-                          </Badge>
-                        );
-                      } else if (badge === 'GEBOUWEN') {
-                        return (
-                          <Badge
-                            key={badge}
-                            variant="outline"
-                            className="text-xs px-2 py-0.5 uppercase"
-                            style={{ backgroundColor: '#F4EDE6', color: '#5C4033', borderColor: '#F4EDE6' }}
-                          >
-                            {badge}
-                          </Badge>
-                        );
-                      } else if (badge === 'ALGEMEEN') {
-                        return (
-                          <Badge
-                            key={badge}
-                            variant="outline"
-                            className="text-xs px-2 py-0.5 uppercase"
-                            style={{ backgroundColor: '#FEF3C7', color: '#92400E', borderColor: '#FEF3C7' }}
-                          >
-                            {badge}
-                          </Badge>
-                        );
-                      }
-                      return null;
-                    })}
-                    <Badge
-                      variant="outline"
-                      className={`text-xs px-2 py-0.5 uppercase ${getLevelColor(section.requirement_level)}`}
-                    >
-                      {section.requirement_level}
-                    </Badge>
-                  </>
                 )}
                 {isOpen ? (
                   <ChevronUp className="h-5 w-5 text-gray-400" />

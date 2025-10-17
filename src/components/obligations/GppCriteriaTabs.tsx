@@ -238,7 +238,7 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
                   <tr>
                     {headerCells.map((cell, idx) => (
                       <th key={idx} className="border border-gray-300 px-4 py-2 text-left font-semibold">
-                        {cell}
+                        {parseInlineFormatting(cell)}
                       </th>
                     ))}
                   </tr>
@@ -246,11 +246,20 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
                 <tbody>
                   {rows.map((row, rowIdx) => (
                     <tr key={rowIdx} className={rowIdx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                      {row.map((cell, cellIdx) => (
-                        <td key={cellIdx} className="border border-gray-300 px-4 py-2">
-                          {cell}
-                        </td>
-                      ))}
+                      {row.map((cell, cellIdx) => {
+                        // Parse HTML breaks and convert to React elements
+                        const cellParts = cell.split(/<br\s*\/?>/i);
+                        return (
+                          <td key={cellIdx} className="border border-gray-300 px-4 py-2">
+                            {cellParts.map((part, partIdx) => (
+                              <React.Fragment key={partIdx}>
+                                {parseInlineFormatting(part)}
+                                {partIdx < cellParts.length - 1 && <br />}
+                              </React.Fragment>
+                            ))}
+                          </td>
+                        );
+                      })}
                     </tr>
                   ))}
                 </tbody>
@@ -392,24 +401,29 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
     }
   }, [mainTab, visibleSubTabs, subTab]);
 
+  // Hide main tabs if there's only one tab
+  const showMainTabs = mainTabs.length > 1;
+
   return (
     <div className="space-y-4">
       {/* Main tabs - Product categories */}
       <Tabs value={mainTab} onValueChange={setMainTab} className="w-full">
-        <TabsList className="flex flex-row gap-1 w-full h-auto p-1 justify-start bg-gray-100">
-          {mainTabs.map((tab) => (
-            <TabsTrigger
-              key={tab.key}
-              value={tab.key}
-              className="px-4 py-2 text-sm data-[state=active]:bg-white data-[state=active]:text-blue-600 data-[state=active]:font-semibold"
-            >
-              {tab.label}
-            </TabsTrigger>
-          ))}
-        </TabsList>
+        {showMainTabs && (
+          <TabsList className="flex flex-row gap-1 w-full h-auto p-1 justify-start bg-gray-100">
+            {mainTabs.map((tab) => (
+              <TabsTrigger
+                key={tab.key}
+                value={tab.key}
+                className="px-4 py-2 text-sm data-[state=active]:bg-white data-[state=active]:text-blue-600 data-[state=active]:font-semibold"
+              >
+                {tab.label}
+              </TabsTrigger>
+            ))}
+          </TabsList>
+        )}
 
         {/* Sub tabs - Core/Extended criteria */}
-        <div className="mt-4">
+        <div className={showMainTabs ? "mt-4" : ""}>
           <div className="flex items-center gap-4 mb-4">
             {subTabs.map((tab) => {
               // Check if this tab has content
