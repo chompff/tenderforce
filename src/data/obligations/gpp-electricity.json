@@ -1,8 +1,8 @@
 {
   "obligation_id": "gpp-electricity",
   "archetype": "GPP",
-  "title": "EU GPP criteria of nationaal gelijkwaardig",
-  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de EU-criteria inzake groene overheidsopdrachten voor elektriciteit toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
+  "title": "Verplichtingen onder EU GPP óf nationaal gelijkwaardig",
+  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de [EU-criteria inzake groene overheidsopdrachten voor elektriciteit](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/35960afd-464e-4e7d-873a-56fabc4ed305/details) toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
   "badges": ["GPP", "NL", "EU"],
   "colors": {
     "text": "#356534",
@@ -23,20 +23,255 @@
       "key": "technical_specs",
       "title": "Technische specificaties",
       "requirement_level": "verplicht",
-      "intro": "De GPP criteria voor elektriciteit zijn nog in ontwikkeling. Deze module bevat voorlopig placeholder content.",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- of nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als technische specificaties. Daarmee worden de inhoudelijke eisen vastgelegd die aan het werk, de levering of de dienst worden gesteld.",
       "warnings": [
         {
-          "severity": "yellow",
-          "text": "Let op: De inhoud van deze module is nog niet compleet. De definitieve GPP criteria worden later toegevoegd."
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale technische specificaties) uit de EU GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn dient u deze op te nemen."
         }
       ],
       "steps": [
-        "Raadpleeg de EU GPP criteria voor elektriciteit wanneer deze beschikbaar komen.",
-        "Vergelijk met de Nederlandse MVI criteria op www.mvicriteria.nl.",
-        "Neem de strengste criteria op in uw aanbestedingsdocumenten."
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens vast of de geldende nationale criteria strenger zijn via [www.mvicriteria.nl](https://www.mvicriteria.nl):\n  a. Ga naar de tool en kies de relevante productcategorie.\n  b. Zet het [ambitieniveau](https://www.mvicriteria.nl) op BASIS.\n  c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n  d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
       ],
       "steps_ordered": true,
-      "example_texts": []
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "electricity",
+            "label": "⚡ Elektriciteit",
+            "label_short": "Elektriciteit"
+          }
+        ],
+        "default_main_tab": "electricity",
+        "data": {
+          "electricity": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟠 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+          {
+            "code": "TS1",
+            "title": "Hernieuwbare elektriciteit",
+            "specification": "Ten minste 50% van de geleverde elektriciteit moet zijn opgewekt met hernieuwbare energiebronnen en/of hoogrenderende warmtekrachtkoppeling als omschreven in respectievelijk Richtlijn 2009/28/EG en Richtlijn 2004/8/EG.\n\nDe inschrijver moet aangeven welk aandeel van de geleverde elektriciteit wordt opgewekt uit hernieuwbare energiebronnen.",
+            "source": {
+              "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor elektriciteit - Pag. 3"
+            },
+            "contractual_condition": {
+              "title": "Bijbehorende contractuele voorwaarde",
+              "text": "Er moet relevante documentatie in het kader van de regelingen voor de garantie van oorsprong worden overgelegd. Als alternatief worden ook andere gelijkwaardige bewijzen aanvaard."
+            },
+            "explanation": {
+              "title": "Toelichting",
+              "sections": [
+                {
+                  "subtitle": "Garantie van oorsprong:",
+                  "content": "Alle EU-landen zijn krachtens de Richtlijnen 2009/28/EG en 2004/8/EG wettelijk verplicht een regeling in te voeren voor de garantie van oorsprong voor elektriciteit uit hernieuwbare bronnen en voor het gebruik van hoogrenderende warmtekrachtkoppeling bij de productie ervan.\n\nDeze richtlijnen bieden een goede juridische basis voor controle. Merk op dat de situatie ten aanzien van de verplichte toepassing van regelingen voor de garantie van oorsprong naargelang van de lidstaat kan verschillen. Een andere mogelijkheid is dat de leverancier met door de overheid goedgekeurd, onafhankelijk bewijs aantoont dat de desbetreffende hoeveelheid elektriciteit is opgewekt uit te benoemen hernieuwbare bronnen of hoogrenderende warmtekrachtkoppeling (bijvoorbeeld een verhandelbaar certificaat van een onafhankelijke organisatie zoals RECS — Renewable Energy Certificates System: [www.recs.org](https://www.recs.org)).\n\nEen andere mogelijkheid is dat de levering van elektriciteit geschiedt met een milieukeur van ISO-type I die minstens even strenge eisen stelt als Richtlijn 2009/28/EG."
+                },
+                {
+                  "subtitle": "Type I- of ISO 14024-milieukeuren:",
+                  "content": "De Type I- of ISO 14024-milieukeuren zijn gebaseerd op criteria die zijn vastgesteld door een onafhankelijke instantie en worden gecontroleerd in certificerings- en auditprocessen. Ze zijn zeer transparant en betrouwbaar en verschaffen objectieve informatie.\n\nDeze milieukeuren moeten aan de volgende voorwaarden voldoen:\n\n• De vereisten voor de keur zijn gebaseerd op wetenschappelijke gegevens;\n• De milieukeuren zijn aangenomen via een proces waaraan alle betrokkenen, zoals regeringsinstanties, consumenten, fabrikanten, kleinhandel en milieuorganisaties hebben deelgenomen;\n• De keuren zijn toegankelijk voor alle betrokken partijen.\n\nDe afnemers mogen bij overheidsopdrachten eisen dat aan de criteria van een bepaalde milieukeur wordt voldaan en dat dit door middel van de milieukeur wordt aangetoond. Ze mogen echter niet eisen dat een product een milieukeur draagt. Bovendien mogen afnemers enkel milieucriteria gebruiken die betrekking hebben op de eigenschappen van het product of de dienst zelf of de productieprocessen, maar niet op het algemene beheer van het bedrijf."
+                },
+                {
+                  "subtitle": "Bewijsmiddelen waaruit blijkt dat aan de criteria is voldaan:",
+                  "content": "Waar bij de controle van de criteria wordt vermeld dat andere passende bewijsmiddelen kunnen worden gebruikt, kan dit een technisch dossier van de fabrikant, een testverslag van een erkende organisatie of ander relevant bewijsmateriaal zijn.\n\nDe aanbestedende dienst moet er zich geval per geval van vergewissen of het voorgelegde bewijsmateriaal als passend kan worden beschouwd."
+                },
+                {
+                  "subtitle": "Energieaudits:",
+                  "content": "Energieaudits kunnen erg waardevol zijn bij het bepalen van mogelijke manieren om de energie-efficiëntie van openbare gebouwen en installaties te verbeteren. In veel gevallen zal een aanbestedende dienst al zijn eigen audits laten uitvoeren en de medewerkers hebben aangewezen om een energiebesparende strategie uit te voeren. Als dergelijke maatregelen echter ontbreken, worden overheidsdiensten aangemoedigd een dergelijke audit te laten uitvoeren."
+                }
+              ]
+            }
+          }
+        ],
+        "extended_criteria": [
+          {
+            "code": "TS1",
+            "title": "Hernieuwbare elektriciteit",
+            "specification": "100% van de geleverde elektriciteit moet zijn opgewekt met hernieuwbare energiebronnen als omschreven in Richtlijn 2009/28/EG.",
+            "source": {
+              "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor elektriciteit - Pag. 3"
+            },
+            "contractual_condition": {
+              "title": "Bijbehorende contractuele voorwaarde",
+              "text": "Er moet relevante documentatie in het kader van de regelingen voor de garantie van oorsprong worden overgelegd. Als alternatief worden ook andere gelijkwaardige bewijzen aanvaard."
+            },
+            "explanation": {
+              "title": "Toelichting",
+              "sections": [
+                {
+                  "subtitle": "Garantie van oorsprong:",
+                  "content": "Alle EU-landen zijn krachtens de Richtlijnen 2009/28/EG en 2004/8/EG wettelijk verplicht een regeling in te voeren voor de garantie van oorsprong voor elektriciteit uit hernieuwbare bronnen en voor het gebruik van hoogrenderende warmtekrachtkoppeling bij de productie ervan.\n\nDeze richtlijnen bieden een goede juridische basis voor controle. Merk op dat de situatie ten aanzien van de verplichte toepassing van regelingen voor de garantie van oorsprong naargelang van de lidstaat kan verschillen. Een andere mogelijkheid is dat de leverancier met door de overheid goedgekeurd, onafhankelijk bewijs aantoont dat de desbetreffende hoeveelheid elektriciteit is opgewekt uit te benoemen hernieuwbare bronnen of hoogrenderende warmtekrachtkoppeling (bijvoorbeeld een verhandelbaar certificaat van een onafhankelijke organisatie zoals RECS — Renewable Energy Certificates System: [www.recs.org](https://www.recs.org)).\n\nEen andere mogelijkheid is dat de levering van elektriciteit geschiedt met een milieukeur van ISO-type I die minstens even strenge eisen stelt als Richtlijn 2009/28/EG."
+                },
+                {
+                  "subtitle": "Type I- of ISO 14024-milieukeuren:",
+                  "content": "De Type I- of ISO 14024-milieukeuren zijn gebaseerd op criteria die zijn vastgesteld door een onafhankelijke instantie en worden gecontroleerd in certificerings- en auditprocessen. Ze zijn zeer transparant en betrouwbaar en verschaffen objectieve informatie.\n\nDeze milieukeuren moeten aan de volgende voorwaarden voldoen:\n\n• De vereisten voor de keur zijn gebaseerd op wetenschappelijke gegevens;\n• De milieukeuren zijn aangenomen via een proces waaraan alle betrokkenen, zoals regeringsinstanties, consumenten, fabrikanten, kleinhandel en milieuorganisaties hebben deelgenomen;\n• De keuren zijn toegankelijk voor alle betrokken partijen.\n\nDe afnemers mogen bij overheidsopdrachten eisen dat aan de criteria van een bepaalde milieukeur wordt voldaan en dat dit door middel van de milieukeur wordt aangetoond. Ze mogen echter niet eisen dat een product een milieukeur draagt. Bovendien mogen afnemers enkel milieucriteria gebruiken die betrekking hebben op de eigenschappen van het product of de dienst zelf of de productieprocessen, maar niet op het algemene beheer van het bedrijf."
+                },
+                {
+                  "subtitle": "Bewijsmiddelen waaruit blijkt dat aan de criteria is voldaan:",
+                  "content": "Waar bij de controle van de criteria wordt vermeld dat andere passende bewijsmiddelen kunnen worden gebruikt, kan dit een technisch dossier van de fabrikant, een testverslag van een erkende organisatie of ander relevant bewijsmateriaal zijn.\n\nDe aanbestedende dienst moet er zich geval per geval van vergewissen of het voorgelegde bewijsmateriaal als passend kan worden beschouwd."
+                },
+                {
+                  "subtitle": "Energieaudits:",
+                  "content": "Energieaudits kunnen erg waardevol zijn bij het bepalen van mogelijke manieren om de energie-efficiëntie van openbare gebouwen en installaties te verbeteren. In veel gevallen zal een aanbestedende dienst al zijn eigen audits laten uitvoeren en de medewerkers hebben aangewezen om een energiebesparende strategie uit te voeren. Als dergelijke maatregelen echter ontbreken, worden overheidsdiensten aangemoedigd een dergelijke audit te laten uitvoeren."
+                }
+              ]
+            }
+          }
+        ]
+          }
+        }
+      }
+    },
+    {
+      "key": "award_criteria",
+      "title": "Gunningscriteria",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- of nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als gunningscriteria. Daarmee wordt vastgelegd op basis waarvan de inschrijvingen inhoudelijk worden beoordeeld en de economisch meest voordelige inschrijving wordt vastgesteld.",
+      "warnings": [
+        {
+          "severity": "yellow",
+          "text": "Let op: De kerncriteria (minimale gunningscriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n  a. Ga naar de tool en kies de relevante productcategorie.\n  b. Zet het [ambitieniveau](https://www.mvicriteria.nl) op BASIS.\n  c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n  d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "electricity",
+            "label": "⚡ Elektriciteit",
+            "label_short": "Elektriciteit"
+          }
+        ],
+        "default_main_tab": "electricity",
+        "data": {
+          "electricity": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "GS1",
+                "title": "Hernieuwbare elektriciteit",
+                "specification": "Extra punten worden toegekend voor aanvullende elektriciteit uit hernieuwbare energiebronnen (HE-E) en/of uit hoogrenderende warmtekrachtkoppeling.\n\n1. Extra punten worden toegekend in verhouding tot het aandeel van de geleverde elektriciteit dat is opgewekt uit hernieuwbare energiebronnen boven het in de specificatie vereiste minimum.\n\n2. Extra punten worden toegekend in verhouding tot het aandeel van de geleverde elektriciteit dat is opgewekt uit hoogrenderende WKK boven het in de specificatie vereiste minimum.\n\n3. Als elektriciteit wordt geleverd uit hoogrenderende WKK op basis van hernieuwbare energiebronnen, kunnen voor beide aspecten extra punten worden toegekend.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor elektriciteit - Pag. 3"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Er moet relevante documentatie in het kader van de regelingen voor de garantie van oorsprong worden overgelegd. Als alternatief worden ook andere gelijkwaardige bewijzen aanvaard."
+                },
+                "explanation": {
+                  "title": "Toelichting",
+                  "sections": [
+                    {
+                      "subtitle": "Garantie van oorsprong:",
+                      "content": "Alle EU-landen zijn krachtens de Richtlijnen 2009/28/EG en 2004/8/EG wettelijk verplicht een regeling in te voeren voor de garantie van oorsprong voor elektriciteit uit hernieuwbare bronnen en voor het gebruik van hoogrenderende warmtekrachtkoppeling bij de productie ervan.\n\nDeze richtlijnen bieden een goede juridische basis voor controle. Merk op dat de situatie ten aanzien van de verplichte toepassing van regelingen voor de garantie van oorsprong naargelang van de lidstaat kan verschillen. Een andere mogelijkheid is dat de leverancier met door de overheid goedgekeurd, onafhankelijk bewijs aantoont dat de desbetreffende hoeveelheid elektriciteit is opgewekt uit te benoemen hernieuwbare bronnen of hoogrenderende warmtekrachtkoppeling (bijvoorbeeld een verhandelbaar certificaat van een onafhankelijke organisatie zoals RECS — Renewable Energy Certificates System: [www.recs.org](https://www.recs.org)).\n\nEen andere mogelijkheid is dat de levering van elektriciteit geschiedt met een milieukeur van ISO-type I die minstens even strenge eisen stelt als Richtlijn 2009/28/EG."
+                    },
+                    {
+                      "subtitle": "Type I- of ISO 14024-milieukeuren:",
+                      "content": "De Type I- of ISO 14024-milieukeuren zijn gebaseerd op criteria die zijn vastgesteld door een onafhankelijke instantie en worden gecontroleerd in certificerings- en auditprocessen. Ze zijn zeer transparant en betrouwbaar en verschaffen objectieve informatie.\n\nDeze milieukeuren moeten aan de volgende voorwaarden voldoen:\n\n• De vereisten voor de keur zijn gebaseerd op wetenschappelijke gegevens;\n• De milieukeuren zijn aangenomen via een proces waaraan alle betrokkenen, zoals regeringsinstanties, consumenten, fabrikanten, kleinhandel en milieuorganisaties hebben deelgenomen;\n• De keuren zijn toegankelijk voor alle betrokken partijen.\n\nDe afnemers mogen bij overheidsopdrachten eisen dat aan de criteria van een bepaalde milieukeur wordt voldaan en dat dit door middel van de milieukeur wordt aangetoond. Ze mogen echter niet eisen dat een product een milieukeur draagt. Bovendien mogen afnemers enkel milieucriteria gebruiken die betrekking hebben op de eigenschappen van het product of de dienst zelf of de productieprocessen, maar niet op het algemene beheer van het bedrijf."
+                    },
+                    {
+                      "subtitle": "Bewijsmiddelen waaruit blijkt dat aan de criteria is voldaan:",
+                      "content": "Waar bij de controle van de criteria wordt vermeld dat andere passende bewijsmiddelen kunnen worden gebruikt, kan dit een technisch dossier van de fabrikant, een testverslag van een erkende organisatie of ander relevant bewijsmateriaal zijn.\n\nDe aanbestedende dienst moet er zich geval per geval van vergewissen of het voorgelegde bewijsmateriaal als passend kan worden beschouwd."
+                    },
+                    {
+                      "subtitle": "Energieaudits:",
+                      "content": "Energieaudits kunnen erg waardevol zijn bij het bepalen van mogelijke manieren om de energie-efficiëntie van openbare gebouwen en installaties te verbeteren. In veel gevallen zal een aanbestedende dienst al zijn eigen audits laten uitvoeren en de medewerkers hebben aangewezen om een energiebesparende strategie uit te voeren. Als dergelijke maatregelen echter ontbreken, worden overheidsdiensten aangemoedigd een dergelijke audit te laten uitvoeren."
+                    }
+                  ]
+                }
+              }
+            ],
+            "extended_criteria": []
+          }
+        }
+      }
+    },
+    {
+      "key": "execution_conditions",
+      "title": "Uitvoeringsvoorwaarden",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- of nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als contractuele uitvoeringsvoorwaarden. Ze borgen dat de verplichtingen worden nagekomen.",
+      "warnings": [
+        {
+          "severity": "red",
+          "text": "Let op: De kerncriteria (minimale uitvoeringsvoorwaarden) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Neem in ieder geval de kerncriteria op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n  a. Ga naar de tool en kies de relevante productcategorie.\n  b. Zet het [ambitieniveau](https://www.mvicriteria.nl) op BASIS.\n  c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n  d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "electricity",
+            "label": "⚡ Elektriciteit",
+            "label_short": "Elektriciteit"
+          }
+        ],
+        "default_main_tab": "electricity",
+        "data": {
+          "electricity": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟠 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Hernieuwbare elektriciteit",
+                "specification": "Aan het einde van elk contractjaar moet de contractant de herkomst van de geleverde elektriciteit bekendmaken om aan te tonen dat ten minste 50% afkomstig was uit hernieuwbare energiebronnen en/of hoogrenderende warmtekrachtkoppeling.\n\nEr moet relevante documentatie in het kader van de regelingen voor de garantie van oorsprong worden overgelegd. Als alternatief worden ook andere gelijkwaardige bewijzen aanvaard.\n\nDeze eis is niet van toepassing op gecertificeerde leveranciers van 100% groene elektriciteit (d.w.z. met een milieukeur van ISO-type I die ten aanzien van HE-E minstens even strenge eisen stelt als Richtlijn 2009/28/EG).",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor elektriciteit - Pag. 4"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Hernieuwbare elektriciteit",
+                "specification": "Aan het einde van elk contractjaar moet de contractant de herkomst van de geleverde elektriciteit bekendmaken om aan te tonen dat 100% afkomstig was uit hernieuwbare energiebronnen.\n\nControle:\n\nEr moet relevante documentatie in het kader van de regelingen voor de garantie van oorsprong worden overgelegd. Als alternatief worden ook andere gelijkwaardige bewijzen aanvaard.\n\nDeze eis is niet van toepassing op gecertificeerde leveranciers van 100% groene elektriciteit (d.w.z. met een milieukeur van ISO-type I die ten aanzien van HE-E minstens even strenge eisen stelt als Richtlijn 2009/28/EG).",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor elektriciteit - Pag. 4"
+                }
+              }
+            ]
+          }
+        }
+      }
     }
   ]
 }
