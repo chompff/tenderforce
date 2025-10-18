@@ -1,8 +1,8 @@
 {
   "obligation_id": "gpp-public-space",
   "archetype": "GPP",
-  "title": "EU GPP criteria of nationaal gelijkwaardig",
-  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de EU-criteria inzake groene overheidsopdrachten voor onderhoud openbare ruimte toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
+  "title": "Verplichtingen onder EU GPP óf nationaal gelijkwaardig",
+  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de [EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/9680b99d-95b6-49ba-86a3-5d867809233a/details) toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
   "badges": ["GPP", "NL", "EU"],
   "colors": {
     "text": "#356534",
@@ -20,23 +20,1463 @@
   ],
   "sections": [
     {
-      "key": "technical_specs",
-      "title": "Technische specificaties",
+      "key": "selection_criteria",
+      "title": "Selectiecriteria",
       "requirement_level": "verplicht",
-      "intro": "De GPP criteria voor onderhoud openbare ruimte zijn nog in ontwikkeling. Deze module bevat voorlopig placeholder content.",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- of nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als selectiecriteria. Het doel is te waarborgen dat alleen leveranciers met aantoonbare kennis, middelen en procedures in aanmerking komen voor deelname.",
       "warnings": [
         {
           "severity": "yellow",
-          "text": "Let op: De inhoud van deze module is nog niet compleet. De definitieve GPP criteria worden later toegevoegd."
+          "text": "Let op: De kerncriteria (minimale selectiecriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
         }
       ],
       "steps": [
-        "Raadpleeg de EU GPP criteria voor onderhoud openbare ruimte wanneer deze beschikbaar komen.",
-        "Vergelijk met de Nederlandse MVI criteria op www.mvicriteria.nl.",
-        "Neem de strengste criteria op in uw aanbestedingsdocumenten."
+        "Kies de categorie in de tabel hieronder. De GPP definieert alleen selectiecriteria voor:\nCategorie 1: [Buitenschoonmaak](https://mvicriteria.nl/nl/webtool)\nCategorie 2: [Hovenierswerk](https://mvicriteria.nl/nl/webtool)",
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n  a. Ga naar de tool en kies de relevante productcategorie.\n  b. Zet het [ambitieniveau](https://www.mvicriteria.nl) op BASIS.\n  c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n  d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
       ],
       "steps_ordered": true,
-      "example_texts": []
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "buitenschoonmaak",
+            "label": "📋 Buitenschoonmaak",
+            "label_short": "Buitenschoonmaak"
+          },
+          {
+            "key": "hovenierswerk",
+            "label": "🪴 Hovenierswerk",
+            "label_short": "Hovenierswerk"
+          }
+        ],
+        "default_main_tab": "buitenschoonmaak",
+        "data": {
+          "buitenschoonmaak": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "SC1",
+                "title": "Vakbekwaamheid van de inschrijver",
+                "specification_title": "Alleen van toepassing op de inkoop van schoonmaakdiensten.",
+                "specification": "De inschrijver beschikt over relevante vakbekwaamheid en ervaring met het verlenen van milieubewuste onderhoudsdiensten die minimaal het volgende omvatten:\n\n• gebruik van producten met de EU-milieukeur of een andere EN ISO 14024-milieukeur type I die nationaal of regionaal officieel is erkend in de lidstaten, voor de krachtens een overeenkomst uitgevoerde schoonmaaktaken;\n• interne of externe scholing van medewerkers in milieuaspecten zoals de juiste verdunning en dosering van producten, de verwijdering van afvalwater en de scheiding van afval;\n• het identificeren, evalueren en toepassen van de beste beschikbare technologieën en maatregelen (indien van toepassing op de specifieke verleende dienst) gericht op:\n  • het zoveel mogelijk beperken van het water- en energieverbruik;\n  • het zoveel mogelijk beperken van emissies van broeikasgassen en luchtverontreinigende stoffen;\n  • het zoveel mogelijk beperken van de productie van afvalstoffen;\n  • het optimaliseren van het beheer van afvalstoffen;\n  • het zoveel mogelijk beperken van het gebruik van bestrijdingsmiddelen, met inbegrip van herbiciden;\n  • het zoveel mogelijk beperken van het gebruik van meststoffen;\n  • het zoveel mogelijk beperken van het gebruik van schoonmaakproducten;\n  • het zoveel mogelijk beperken van het gebruik van ontijzingsproducten;\n  • het beschermen en vergroten van de biodiversiteit;\n• monitoring- en rapportageprocedures van de hierboven genoemde milieuaspecten.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 18"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten bewijs verstrekken in de vorm van informatie en verwijzingen in overeenkomsten met voornoemde elementen die in de afgelopen vijf jaar zijn uitgevoerd. Het bewijs wordt ondersteund met gegevens over scholingsactiviteiten van medewerkers, onder vermelding van de behandelde onderwerpen."
+                }
+              }
+            ]
+          },
+          "hovenierswerk": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "SC1",
+                "title": "Vakbekwaamheid van de inschrijver",
+                "specification_title": "Alleen van toepassing op de inkoop van hoveniersdienten.",
+                "specification": "De inschrijver beschikt over relevante vakbekwaamheid en ervaring met het verlenen van milieubewuste onderhoudsdiensten die minimaal het volgende omvatten:\n\n• gebruik van producten met de EU-milieukeur of een andere EN ISO 14024-milieukeur type I die nationaal of regionaal officieel is erkend in de lidstaten, voor de krachtens een overeenkomst uitgevoerde schoonmaaktaken;\n• interne of externe scholing van medewerkers in milieuaspecten zoals de juiste verdunning en dosering van producten, de verwijdering van afvalwater en de scheiding van afval;\n• het identificeren, evalueren en toepassen van de beste beschikbare technologieën en maatregelen (indien van toepassing op de specifieke verleende dienst) gericht op:\n  • het zoveel mogelijk beperken van het water- en energieverbruik;\n  • het zoveel mogelijk beperken van emissies van broeikasgassen en luchtverontreinigende stoffen;\n  • het zoveel mogelijk beperken van de productie van afvalstoffen;\n  • het optimaliseren van het beheer van afvalstoffen;\n  • het zoveel mogelijk beperken van het gebruik van bestrijdingsmiddelen, met inbegrip van herbiciden;\n  • het zoveel mogelijk beperken van het gebruik van meststoffen;\n  • het zoveel mogelijk beperken van het gebruik van schoonmaakproducten;\n  • het zoveel mogelijk beperken van het gebruik van ontijzingsproducten;\n  • het beschermen en vergroten van de biodiversiteit;\n• monitoring- en rapportageprocedures van de hierboven genoemde milieuaspecten.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 18"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten bewijs verstrekken in de vorm van informatie en verwijzingen in overeenkomsten met voornoemde elementen die in de afgelopen vijf jaar zijn uitgevoerd. Het bewijs wordt ondersteund met gegevens over scholingsactiviteiten van medewerkers, onder vermelding van de behandelde onderwerpen."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als technische specificaties. Daarmee worden de inhoudelijke eisen vastgelegd die aan het werk, de levering of de dienst worden gesteld.",
+      "warnings": [
+        {
+          "severity": "red",
+          "text": "Let op: De kerncriteria (minimale technische specificaties) uit de EU GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn dient u deze op te nemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie in de tabel hieronder. De GPP definieert technische specificaties voor:\nCategorie 1: [Buitenschoonmaak](https://mvicriteria.nl/nl/webtool)\nCategorie 2: [Hovenierswerk](https://mvicriteria.nl/nl/webtool)\nCategorie 3: [Machines](https://mvicriteria.nl/nl/webtool)\nCategorie 4: [Voertuigen](https://mvicriteria.nl/nl/webtool)",
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n  a. Ga naar de tool en kies de relevante productcategorie.\n  b. Zet het [ambitieniveau](https://www.mvicriteria.nl) op BASIS.\n  c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n  d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "buitenschoonmaak",
+            "label": "📋 Buitenschoonmaak",
+            "label_short": "Buitenschoonmaak"
+          },
+          {
+            "key": "hovenierswerk",
+            "label": "🪴 Hovenierswerk",
+            "label_short": "Hovenierswerk"
+          },
+          {
+            "key": "machines",
+            "label": "🎯 Machines",
+            "label_short": "Machines"
+          },
+          {
+            "key": "voertuigen",
+            "label": "🎯 Voertuigen",
+            "label_short": "Voertuigen"
+          }
+        ],
+        "default_main_tab": "buitenschoonmaak",
+        "data": {
+          "buitenschoonmaak": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟠 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Gebruik van buitenschoonmaakproducten met gering milieu-effect",
+                "specification": "1. Geen van de gebruikte schoonmaakproducten mag zijn ingedeeld en geëtiketteerd als acuut toxisch, toxisch voor specifieke doelorganen, inhalatie- of huidallergenen, kankerverwekkend, mutageen of giftig voor de voortplanting, of gevaarlijk voor het milieu, of ontvlambaar overeenkomstig Verordening (EG) nr. 1272/2008 betreffende de indeling, etikettering en verpakking van stoffen en mengsels (\"de CLP-verordening\"), zoals aangegeven in tabel 1 hieronder.\n\n**Tabel 1**\n\n| Acute toxiciteit (Acute Tox.) | Acute Tox. 1, Acute Tox. 2, Acute Tox. 3 |\n|---|---|\n| Specifieke doelorgaantoxiciteit – herhaalde blootstelling (STOT RE) | STOT RE 1 of 2 |\n| Specifieke doelorgaantoxiciteit – eenmalige blootstelling (STOT SE) | STOT SE 1, 2 of 3 |\n| Kankerverwekkendheid (Carc.) | Carc. 1A, Carc. 1B, Carc. 2 |\n| Mutageniteit in geslachtscellen (Muta.) | Muta. 1A, Muta. 1B, Muta. 2 |\n| Voortplantingstoxiciteit (Repr.) | Repr. 1A, Repr. 1B, Repr. 2 |\n| Gevaar voor het aquatisch milieu (Aquatic) | Aquatic Acute 1, Aquatic Chronic 1 of 2 |\n| Sensibilisatie van de luchtwegen (Resp. Sens.) | Resp. Sens. 1, 1A of 1B |\n| Sensibilisatie van de huid (Skin Sens.) | Skin Sens. 1, 1A of 1B |\n\n2. Schoonmaakproducten moeten worden geleverd met de aanbevolen doseringssystemen (bv. pomp, maatcilinder), indien van toepassing. De informatie op het technisch gegevensblad van het doseringssysteem moet de dosis en de dispenser specificeren.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 13"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "1. De inschrijver moet een verklaring over naleving van dit criterium met de ondersteunende veiligheidsinformatiebladen verstrekken. Producten met een ISO-milieukeur type I die dezelfde eisen bestrijkt, worden geacht aan dit criterium te voldoen.\n2. De inschrijver moet een verklaring over naleving van dit criterium met de ondersteunende technische gegevensbladen verstrekken."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Ontijzings- en sneeuwverwijderingsproducten",
+                "specification": "1. Ontijzings- en sneeuwverwijderingsproducten ([type](popup:TYPE||De EU GPP criteria bevatten de volgende definitie van 'type':\n\n**Type:** een onderscheid tussen verschillende soorten producten, zoals:\n- producten die natriumchloride bevatten;\n- producten die calciumchloride bevatten;\n- producten die calciummagnesiumacetaat of magnesiumchloride bevatten;\n- producten die ureum bevatten;\n- producten die kaliumformiaat bevatten.||)) mogen ten hoogste 1 % chloride (Cl-) bevatten.\n2. Ontijzings- en sneeuwverwijderingsproducten mogen niet zijn ingedeeld en geëtiketteerd als acuut toxisch, bijtend voor metalen, toxisch voor specifieke doelorganen, inhalatie- of huidallergenen, kankerverwekkend, mutageen of giftig voor de voortplanting, of gevaarlijk voor het milieu, overeenkomstig Verordening (EG) nr. 1272/2008 betreffende de indeling, etikettering en verpakking van stoffen en mengsels (\"de CLP-verordening\"), zoals aangegeven in tabel 2.\n\n**Tabel 2**\n\n| Eigenschap | Classificatie |\n|---|---|\n| Acute toxiciteit | Acute Tox. 1, Acute Tox. 2, Acute Tox. 3 |\n| Specifieke doelorgaantoxiciteit – herhaalde blootstelling | STOT RE 1 of 2 |\n| Specifieke doelorgaantoxiciteit – eenmalige blootstelling | STOT SE 1, 2 of 3 |\n| Kankerverwekkendheid | Carc. 1A, Carc. 1B, Carc. 2 |\n| Mutageniteit in geslachtscellen | Muta. 1A, Muta. 1B, Muta. 2 |\n| Voortplantingstoxiciteit | Repr. 1A, Repr. 1B, Repr. 2 |\n| Gevaar voor het aquatisch milieu | Aquatic Acute 1, Aquatic Chronic 1 of 2, Aquatic Chronic 3 |\n| Sensibilisatie van de luchtwegen | Resp. Sens. 1, 1A of 1B |\n| Sensibilisatie van de huid | Skin Sens. 1, 1A of 1B |",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 16"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet gegevens (veiligheidsinformatieblad en hoeveelheid) verstrekken van de producten die in het kader van de uitvoering van de opdracht worden geleverd. Producten met een ISO-milieukeur type I die dezelfde eisen bestrijkt, worden geacht aan dit criterium te voldoen."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Schoonmaak-, ontijzings- en sneeuwverwijderingsproducten die worden gebruikt voor het verlenen van schoonmaakdiensten",
+                "specification": "1. De schoonmaakproducten die worden gebruikt voor het verlenen van de schoonmaakdiensten, moeten voldoen aan de eisen van de toepasselijke technische specificaties (TS1) op kernniveau.\n2. De ontijzings- en sneeuwverwijderingsproducten die worden gebruikt voor het verlenen van de schoonmaakdiensten, moeten voldoen aan de eisen van de toepasselijke technische specificaties (TS2) op kernniveau.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 18"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Zie de verificatie van de toepasselijke technische specificaties."
+                }
+              },
+              {
+                "code": "TS4",
+                "title": "Ontijzing en sneeuwverwijdering",
+                "specification": "De inschrijvers moeten beschikken over schriftelijke procedures voor het ontijzen en verwijderen van sneeuw die moeten worden uitgevoerd door de volgende technieken te combineren:\n\n• mechanisch verwijderen van sneeuw (combinaties van schuiven, borstelen, ploegen en schrapen);\n• preventieve ijsbestrijding;\n• van tevoren bevochtigen (gebaseerd op aanpassing aan de variabele toedieningsdosis).",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten schriftelijke procedures en een plan voor het ontijzen en verwijderen van sneeuw overleggen (in overeenstemming met de toepasselijke aspecten van de gemeenschappelijke criteria voor dienstcategorieën TS1. Maatregelen op het gebied van milieubeheer), met inbegrip van de uitrusting en producten die worden gebruikt bij de uitvoering van de opdracht."
+                }
+              },
+              {
+                "code": "TS5",
+                "title": "Vermindering van PM10-straatsstof",
+                "specification": "• de inschrijvers moeten beschikken over schriftelijke procedures betreffende maatregelen ter vermindering van PM10-straatsstof die moeten worden uitgevoerd door de volgende beste praktijken (of andere relevante maatregelen):\n\nTractiecontrolepraktijken (zandstrooien met nat gezeefd en slijtvast steenmateriaal ten behoeve van de tractie);\n\n• stofbestrijdingspraktijken (stofbestrijdingsoplossingen, dispersietechnieken);\n• straatreinigingspraktijken (mechanische en vacuümveegmachines, straatschrobbers, combinaties).",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten schriftelijke procedures en een schoonmaakdienstenplan voor het verminderen van PM10-straatsstof overleggen (in overeenstemming met de toepasselijke aspecten van de gemeenschappelijke criteria voor dienstcategorieën TS1. Maatregelen op het gebied van milieubeheer), met inbegrip van de uitrusting en producten die worden gebruikt bij de uitvoering van de opdracht."
+                }
+              },
+              {
+                "code": "TS6",
+                "title": "Maatregelen op het gebied van milieubeheer",
+                "specification_title": "Alleen van toepassing op de inkoop van schoonmaakdiensten.",
+                "specification": "De inschrijvers moeten beschikken over schriftelijke procedures voor:\n\n1. het bijhouden, vastleggen en uitvoeren van maatregelen voor:\n  • het zoveel mogelijk beperken van het energieverbruik;\n  • het zoveel mogelijk beperken van emissies van broeikasgassen en luchtverontreinigende stoffen;\n  • het zoveel mogelijk beperken van het waterverbruik;\n  • het zoveel mogelijk beperken van het gebruik van producten (bv. schoonmaakproducten, minerale en biologische meststoffen, bestrijdingsmiddelen, ontijzingsproducten);\n  • het zoveel mogelijk beperken van de productie van afvalstoffen;\n  • het vergroten van de biodiversiteit;\n2. het onderhouden van het wagenpark en de machines volgens de aanbevelingen van de fabrikant;\n3. het evalueren van de resultaten van het plan en de operationele procedures door veranderingen in de indicatoren bij te houden en bij te houden hoe de maatregelen en procedures in de praktijk worden uitgevoerd;\n4. het uitvoeren van de acties die nodig zijn om eventuele afwijkingen van het plan te corrigeren, en deze indien mogelijk in de toekomst te voorkomen.\n\n**Toelichting**\n\n¹Het verdient aanbeveling de indicatoren ter controle van de milieuaspecten te baseren op de functionele eenheid \"m² onderhouden oppervlak\" (bv. het verbruikte aantal liters water per m², het aantal liters verbruiksgoed per m²). De aanbevolen minimumfrequentie voor de controle is één keer per seizoen (vier keer per jaar) in representatieve weken. Een representatieve week betekent een week waarin het activiteitsniveau ongeveer gelijk is aan het gemiddelde van het seizoen.\n\nIn het geval van biodiversiteit kan het moeilijk zijn om bruikbare indicatoren voor de controle van dit milieuaspect te selecteren. De ideale indicator is gebaseerd op een doelstelling. Een doelstelling kan bijvoorbeeld zijn de populatie zangvogels te vergroten, en de indicator zou dan de verandering in het aantal zangvogels kunnen zijn. Dit aantal moet worden geraamd door steekproeven te nemen, wat te duur kan zijn. In dat geval wordt aangeraden indicatoren vast te stellen voor de acties die worden ondernomen om de doelstelling te bereiken: het aantal bezette nestkasten, de verandering in de boomdichtheid en het biotoopnetwerk enz.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 87"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een kopie van de genoemde schriftelijke procedures verstrekken.\n\nMilieubeheer­systemen met een EMAS- (EU-milieubeheer- en milieuauditsysteem) of ISO 14001-certificering worden geacht te voldoen, indien ze de milieudoelstellingen in de technische specificaties bestrijken en de diensten die het onderwerp van de aanbesteding zijn, binnen hun toepassingsgebied vallen. De inschrijver moet een milieubeleid verstrekken waaruit blijkt dat hij toezegt deze doelstellingen te bereiken, alsmede het door de certificeringsdienst afgegeven certificaat waarin het toepassingsgebied staat vermeld."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS1",
+                "title": "Gebruik van buitenschoonmaakproducten met gering milieu-effect",
+                "specification": "1. Alle schoonmaakproducten per jaar, naar volume bij inkoop, moeten voldoen aan criterium 4 met betrekking tot verboden en beperkte stoffen van de [EU-milieukeur](popup:EU-MILIEUKEUR||De EU-milieukeur is een vrijwillig keurmerk dat producten en diensten aangeeft die een lagere milieu-impact hebben gedurende hun hele levenscyclus.\n\nMeer informatie: [EU Ecolabel website](https://environment.ec.europa.eu/topics/circular-economy/eu-ecolabel-home_en)||) voor schoonmaakproducten voor harde oppervlakken.\n2. Schoonmaakproducten moeten worden geleverd met de aanbevolen doseringssystemen (bv. pomp, maatcilinder), indien van toepassing. De informatie op het technisch gegevensblad van het doseringssysteem moet de dosis en de dispenser specificeren.\n\n**Toelichting**\n\nDe aanbestedende dienst specificeert hoe het percentage van de aankopen wordt berekend: aan de hand van het aantal of de waarde. De dienst kan ook eisen dat voor bepaalde plantensoorten alle planten biologisch moeten zijn om de verificatie te vergemakkelijken. Als er op de nationale/regionale markt geen biologische sierplanten verkrijgbaar zijn, mag de aanbestedende dienst het percentage biologische planten op nul stellen.\n\nᵃ⁾ De drempels X % en Y % / Z % en W % worden vastgesteld door de aanbestedende dienst.\n\nᵇ⁾ Op het moment dat dit document werd opgesteld, zijn beginselen van IPM in de certificeringsregeling MPS-GAP en de certificeringsregeling GLOBALG.A.P. voor bloemen en planten als eist ingebouwd en worden deze regelingen geacht voldoende zekerheid van productie volgens IPM-beginselen te bieden. MPS-GAP is een basiscertificering voor goede landbouwpraktijken die is gericht op het waarborgen van veilige werkomstandigheden en verbeterde veiligheid voor het milieu.\n\nHet MPS-GAP-certificaat is ontwikkeld voor bedrijven die leveren aan detailhandelaren, en bestaat uit een reeks productievoorschriften met betrekking tot traceerbaarheid, duurzaamheid, veiligheid en hygiëne. De certificeringsregeling is gebenchmarkt met GLOBALG.A.P. en voldoet daarom aan de eisen voor het initiatief voor duurzaamheid in de bloementeelt (Floriculture Sustainability Initiative – FSI). GLOBALG.A.P. is een wereldwijde, vrijwillige norm voor de certificering van landbouwproducten in de hele wereld – G.A.P. (good agricultural practice) staat voor goede landbouwpraktijken.\n\nHet National Organic Program (NOP) van de Verenigde Staten of soortgelijke wettelijke verplichtingen die zijn vastgesteld door handelspartners van de EU, worden erkend als gelijkwaardig met het biologische programma van de Europese Unie (zie bijlage III bij Verordening (EG) nr. 1235/2008 van de Commissie houdende bepalingen ter uitvoering van Verordening (EG) nr. 834/2007 van de Raad wat de regeling voor de invoer van biologische producten uit derde landen betreft). Verordening (EG) nr. 1235/2008 van de Commissie is gewijzigd bij Uitvoeringsverordening (EU) 2019/39 van de Commissie van 10 januari 2019.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 13"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "1. De inschrijver moet een verklaring over naleving van dit criterium met de ondersteunende veiligheidsinformatiebladen verstrekken. Producten met een ISO-milieukeur type I die dezelfde eisen bestrijkt, worden geacht aan dit criterium te voldoen.\n2. De inschrijver moet een verklaring over naleving van dit criterium met de ondersteunende technische gegevensbladen verstrekken."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Schoonmaak-, ontijzings- en sneeuwverwijderingsproducten die worden gebruikt voor het verlenen van schoonmaakdiensten",
+                "specification": "1. De schoonmaakproducten die worden gebruikt voor het verlenen van de schoonmaakdiensten, moeten voldoen aan de eisen van de toepasselijke technische specificaties (TS1) op het uitgebreide niveau.\n2. De ontijzings- en sneeuwverwijderingsproducten die worden gebruikt voor het verlenen van de schoonmaakdiensten, moeten voldoen aan de eisen van de toepasselijke technische specificaties (TS2) op het uitgebreide niveau.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 16"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Zie de verificatie van de toepasselijke technische specificaties."
+                }
+              }
+            ]
+          },
+          "hovenierswerk": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟠 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Sierplanten",
+                "specification": "De aangekochte sierplanten moeten inheems zijn.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 25"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet informatie (naam en hoeveelheid) verstrekken over de sierplanten die bij de uitvoering van de opdracht worden geleverd."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Invasieve uitheemse soorten",
+                "specification": "Opmerking: de voorkeur moet worden gegeven aan plantensoorten die inheems zijn voor het gebied. Indien uitheemse soorten worden geplant, moet worden nagegaan dat ze niet invasief worden, en moet rekening worden gehouden met lokale of nationale beleidsmaatregelen ter beheersing van invasieve uitheemse soorten en met Europese beleidsmaatregelen betreffende invasieve uitheemse soorten (Verordening (EU) nr. 1143/2014).\n\nDe aangekochte sierplanten moeten inheems zijn. Indien uitheemse soorten worden geplant, moet worden nagegaan dat ze niet invasief worden.\n\n**Toelichting**\n\nEr moeten deskundigen worden geraadpleegd om na te gaan of de plantensoorten inheems zijn en, indien ze uitheems zijn, dat ze niet invasief worden, indien er beperkte informatie over de soort beschikbaar is. Daarnaast moet worden nagegaan dat de plantensoorten passen bij de lokale omstandigheden (bodems, hydrologie, neerslag, drainage, zonverdeling enz.). Lokale of nationale lijsten van invasieve plantensoorten en de in de Verordening (EU) nr. 1143/2014 bedoelde lijst van invasieve uitheemse soorten die als zorgwekkend voor de Unie worden beschouwd, moeten ook worden geraadpleegd.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 28"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet informatie verstrekken over (de naam van) de sierplanten die worden geleverd."
+                }
+              },
+              {
+                "code": "TS4",
+                "title": "Organische bestanddelen van bodemverbeteraars en strooisel",
+                "specification": "De volgende materialen zijn niet toegestaan als organische bestanddelen van een eindproduct:\n\n– turf;\n\n– materialen die geheel of gedeeltelijk zijn verkregen uit de organische fractie van gemengd stedelijk en huishoudelijk afval die is gescheiden door een mechanische, fysicochemische, biologische en/of manuele behandeling;\n\n– materialen die geheel of gedeeltelijk zijn verkregen uit slib afkomstig van de behandeling van stedelijk afvalwater en van de papierindustrie;\n\n– materialen die geheel of gedeeltelijk zijn verkregen uit dierlijke bijproducten van de categorie 1 overeenkomstig Verordening (EG) nr. 1069/2009.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 29"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten de gedetailleerde productsamenstelling, de herkomst van het organische materiaal en een verklaring over naleving van bovenstaande eisen verstrekken.\n\nProducten met de EU-milieukeur voor groeimedia, bodemverbeteraars en strooisel overeenkomstig Besluit (EU) 2015/2099 van de Commissie1 of andere relevante milieukeur type I die aan de gespecificeerde criteria voldoet, worden geacht aan de eisen te voldoen. Andere passende vormen van bewijs, zoals een technisch dossier van de fabrikant of een keuringsrapport van een onafhankelijke instantie, worden ook aanvaard."
+                }
+              },
+              {
+                "code": "TS5",
+                "title": "Gevaarlijke stoffen (zware metalen) in bodemverbeteraars",
+                "specification": "Het gehalte aan de volgende elementen in het eindproduct of het bestanddeel, gemeten op basis van het droge gewicht (dg) van het product, mag de hieronder aangegeven waarden niet overschrijden.\n\n**Tabel 3**\n\n| Element | mg/kg (droog gewicht) |\n|---|---|\n| Cadmium (Cd) | 1 |\n| Totaal chroom (Cr) | 100 |\n| Koper (Cu) | 100 |\n| Kwik (Hg) | 1 |\n| Nikkel (Ni) | 50 |\n| Lood (Pb) | 100 |\n| Zink (Zn) | 300 |",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten aan de hand van keuringsrapporten (EN 13650 of gelijkwaardig; EN 16175 of gelijkwaardig voor Hg) aantonen dat aan bovenstaand criterium wordt voldaan.\n\nProducten met de EU-milieukeur voor groeimedia, bodemverbeteraars en strooisel overeenkomstig Besluit (EU) 2015/2099 van de Commissie of andere relevante milieukeur type I die aan de gespecificeerde criteria voldoet, worden geacht aan de eisen te voldoen. Andere passende vormen van bewijs, zoals een technisch dossier van de fabrikant of een keuringsrapport van een onafhankelijke instantie, worden ook aanvaard."
+                }
+              },
+              {
+                "code": "TS9",
+                "title": "Automatische besproeiing",
+                "specification_title": "Opmerking: de aanbestedende dienst verschaft richtsnoeren op basis van de beschikbaarheid van de watervoorraden die kenmerkend is voor het klimaat en de locatie van de besproeiingsinstallatie.",
+                "specification": "De automatische besproeiingsinstallaties moeten gedetailleerde parametrisatie toestaan, om:\n\n– verschillende besproeiingszones in te stellen;\n– het volume toegediend water per zone aan te passen;\n– besproeiingstijden per zone te programmeren;\n– per zone de grondvochtigheid te meten en de besproeiing automatisch te blokkeren wanneer de grondvochtigheid hoog genoeg is (zoals bepaald door de aanbestedende dienst), bijvoorbeeld na regen.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 37"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten aan de hand van passende documentatie aantonen dat aan deze criteria wordt voldaan."
+                }
+              },
+              {
+                "code": "TS10",
+                "title": "Sierplanten en bodemverbeteraars die worden gebruikt voor het verlenen van hoveniersdiensten",
+                "specification": "De sierplanten die bij het verlenen van de hoveniersdiensten worden geleverd, moeten voldoen aan de eisen van de toepasselijke technische specificaties (TS1 tot en met TS3) op kernniveau.\n\nDe bodemverbeteraars die voor het verlenen van de hoveniersdiensten worden gebruikt, moeten voldoen aan de eisen van de toepasselijke technische specificaties (TS4 en TS5) op kernniveau.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 38"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Zie de verificatie van de toepasselijke technische specificaties."
+                }
+              },
+              {
+                "code": "TS11",
+                "title": "Bestrijding van plaagorganismen en beheersing van invasieve uitheemse soorten",
+                "specification": "De inschrijver moet een jaarlijks fytosanitair behandelplan overleggen.\n\n(Deze eis mag worden gecombineerd met een gunningscriterium ter beoordeling van de kwaliteit van een dergelijk plan.)\n\nIn dit plan wordt rekening gehouden met lokale en nationale beleidsmaatregelen voor de beheersing van invasieve uitheemse soorten en met Europese beleidsmaatregelen betreffende invasieve uitheemse soorten (Verordening (EU) nr. 1143/2014). Het plan moet voldoen aan de bepalingen van Richtlijn 2009/128/EG tot vaststelling van een kader voor communautaire actie ter verwezenlijking van een duurzaam gebruik van pesticiden en moet in overeenstemming zijn met lokale beleidsmaatregelen voor het gebruik van chemische stoffen.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 39"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het fytosanitair behandelplan overleggen."
+                }
+              },
+              {
+                "code": "TS12",
+                "title": "Maatregelen op het gebied van milieubeheer",
+                "specification_title": "Alleen van toepassing op de inkoop van hoveniersdienten.",
+                "specification": "De inschrijvers moeten beschikken over schriftelijke procedures voor:\n\n1. het bijhouden, vastleggen en uitvoeren van maatregelen voor:\n  • het zoveel mogelijk beperken van het energieverbruik;\n  • het zoveel mogelijk beperken van emissies van broeikasgassen en luchtverontreinigende stoffen;\n  • het zoveel mogelijk beperken van het waterverbruik;\n  • het zoveel mogelijk beperken van het gebruik van producten (bv. schoonmaakproducten, minerale en biologische meststoffen, bestrijdingsmiddelen, ontijzingsproducten);\n  • het zoveel mogelijk beperken van de productie van afvalstoffen;\n  • het vergroten van de biodiversiteit;\n2. het onderhouden van het wagenpark en de machines volgens de aanbevelingen van de fabrikant;\n3. het evalueren van de resultaten van het plan en de operationele procedures door veranderingen in de indicatoren bij te houden en bij te houden hoe de maatregelen en procedures in de praktijk worden uitgevoerd;\n4. het uitvoeren van de acties die nodig zijn om eventuele afwijkingen van het plan te corrigeren, en deze indien mogelijk in de toekomst te voorkomen.\n\n**Toelichting**\n\n¹Het verdient aanbeveling de indicatoren ter controle van de milieuaspecten te baseren op de functionele eenheid \"m² onderhouden oppervlak\" (bv. het verbruikte aantal liters water per m², het aantal liters verbruiksgoed per m²). De aanbevolen minimumfrequentie voor de controle is één keer per seizoen (vier keer per jaar) in representatieve weken. Een representatieve week betekent een week waarin het activiteitsniveau ongeveer gelijk is aan het gemiddelde van het seizoen.\n\nIn het geval van biodiversiteit kan het moeilijk zijn om bruikbare indicatoren voor de controle van dit milieuaspect te selecteren. De ideale indicator is gebaseerd op een doelstelling. Een doelstelling kan bijvoorbeeld zijn de populatie zangvogels te vergroten, en de indicator zou dan de verandering in het aantal zangvogels kunnen zijn. Dit aantal moet worden geraamd door steekproeven te nemen, wat te duur kan zijn. In dat geval wordt aangeraden indicatoren vast te stellen voor de acties die worden ondernomen om de doelstelling te bereiken: het aantal bezette nestkasten, de verandering in de boomdichtheid en het biotoopnetwerk enz.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 87"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een kopie van de genoemde schriftelijke procedures verstrekken.\n\nMilieubeheer­systemen met een EMAS- (EU-milieubeheer- en milieuauditsysteem) of ISO 14001-certificering worden geacht te voldoen, indien ze de milieudoelstellingen in de technische specificaties bestrijken en de diensten die het onderwerp van de aanbesteding zijn, binnen hun toepassingsgebied vallen. De inschrijver moet een milieubeleid verstrekken waaruit blijkt dat hij toezegt deze doelstellingen te bereiken, alsmede het door de certificeringsdienst afgegeven certificaat waarin het toepassingsgebied staat vermeld."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS1",
+                "title": "Sierplanten",
+                "specification_title": "Opmerking: om het verbruik van water en meststoffen te beperken, moeten aangekochte planten van een soort zijn die geschikt is voor de lokale groeiomstandigheden (bv. zuurgraad van de bodem, gemiddelde regenval, temperatuurbereik in de loop van het jaar enz.). De lokale autoriteit moet een lijst van plantensoorten waarvan is vastgesteld dat ze geschikt zijn voor de lokale groeiomstandigheden, verstrekken.",
+                "specification": "De aangekochte sierplanten moeten:\n\n1. Z %ᵃ biologisch zijn: geteeld volgens de voorschriften in Verordening (EG) nr. 834/2007, of gelijkwaardig; en/of\n\n2. W %ᵃ geïntegreerde gewasbescherming (IPM) hebben: geteeld volgens de IPM-beginselen zoals beschreven in het IPM-programma van de Voedsel- en Landbouworganisatie van de Verenigde Naties (FAO) of Richtlijn 2009/128/EG.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 25"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet informatie (naam en hoeveelheid) verstrekken over de sierplanten die bij de uitvoering van de opdracht worden geleverd, waaruit specifiek blijkt welke producten voldoen aan het voorschrift voor IPM of biologische teelt.\n\nGedocumenteerde transactiesgegevens die het mogelijk maken de naleving te controleren voor afzonderlijke planten of batches van planten en ze te traceren tot het punt van certificering, moeten worden geaccepteerd. Dit omvat geldige certificering voor biologische of IPM-productieᵇ."
+                }
+              },
+              {
+                "code": "TS1",
+                "title": "Plantenpotten en -verpakkingen",
+                "specification": "Planten moeten worden geleverd in potten (of kratten of dozen in het geval van kleine planten) die (in volgorde van prioriteit):\n\n– herbruikbaar zijn (de inschrijver moet een terugnamesysteem hebben); of\n– recycleebaar zijn, indien er gemeentelijke inzamelvoorzieningen voor recycling zijn; of\n– composteerbaar zijn overeenkomstig norm EN 14995:2007 of norm EN 13432:2000, indien er gemeentelijke composteringsvoorzieningen zijn die dergelijke artikelen accepteren.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 25"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Indien de potten herbruikbaar zijn, moeten de inschrijvers een beschrijving van het terugnamesysteem geven. De inschrijvers moeten ook een kopie van de ondertekende overeenkomst met de kwekerij verstrekken, indien zij niet zelf de kweker zijn.\n\nIndien de potten recycleebaar zijn, moet een verklaring over naleving van dit criterium worden verstrekt. Indien de potten composteerbaar zijn, moeten de inschrijvers testrapporten verstrekken waaruit blijkt dat de samenstelling van de materialen voldoet aan de eisen volgens norm EN 14995:2007, norm EN 13432:2000 of gelijkwaardig."
+                }
+              },
+              {
+                "code": "TS4",
+                "title": "Organische bestanddelen van bodemverbeteraars en strooisel",
+                "specification": "De volgende materialen zijn toegestaan als organische bestanddelen van een eindproduct:\n\n– materialen die zijn verkregen door het recycleren van bioafval van gescheiden inzameling, zoals gedefinieerd in artikel 3 van Richtlijn 2008/98/EG van het Europees Parlement en de Raad;\n\n– materialen die zijn verkregen uit dierlijke bijproducten van de categorieën 2 en 3 zoals vastgesteld in artikel 32 van Verordening (EG) nr. 1069/2009 van het Europees Parlement en de Raad en in technische normen die zijn vastgesteld bij de uitvoering van Verordening (EU) nr. 142/2011;\n\n– materialen die zijn verkregen uit uitwerpselen, stro en ander natuurlijk, niet-gevaarlijk materiaal rechtstreeks afkomstig uit de land- of bosbouw zoals gedefinieerd in artikel 2, lid 1, onder f), van Richtlijn 2008/98/EG;\n\n– materialen die zijn verkregen uit enige andere bijproducten van biomassa, zoals gedefinieerd in artikel 5 van Richtlijn 2008/98/EG, die hierboven niet zijn vermeld, behoudens het bepaalde in 2) en 3) hieronder;\n\n– materialen die zijn verkregen door het recycleren of terugwinnen van ander hierboven niet vermeld biomassafval, behoudens het bepaalde in 2) en 3) hieronder.\n\n2) De volgende materialen zijn niet toegestaan als organische bestanddelen van een eindproduct:\n\n– turf;\n\n– materialen die geheel of gedeeltelijk zijn verkregen uit de organische fractie van gemengd stedelijk en huishoudelijk afval die is gescheiden door een mechanische, fysicochemische, biologische en/of manuele behandeling;\n\n– materialen die geheel of gedeeltelijk zijn verkregen uit slib afkomstig van de behandeling van stedelijk afvalwater en van de papierindustrie;\n\n– materialen die geheel of gedeeltelijk zijn verkregen uit dierlijke bijproducten van de categorie 1 overeenkomstig Verordening (EG) nr. 1069/2009;\n\n– materialen die geheel of gedeeltelijk zijn verkregen uit niet in 3) hieronder toegestaan slib.\n\n3) Materialen die zijn verkregen door het recycleren of terugwinnen van slib, zijn alleen toegestaan als het slib voldoet aan de volgende eisen:\n\na) Het slib is overeenkomstig de Europese lijst van afvalstoffen, zoals opgenomen in Beschikking 2000/532/EG van de Commissie, geïdentificeerd als een van de volgende typen afvalstoffen:\n\n– 020305 – slib van de behandeling ter plaatse van afvalwater van de bereiding en verwerking van fruit, groente, granen, spijsolie, cacao, koffie, thee en tabak; de productie van conserven; de productie van gist en gistextracten en de bereiding en fermentatie van melasse;\n\n– 020403 – slib van de behandeling ter plaatse van afvalwater van de suikerverwerking;\n\n– 020502 – slib van de behandeling ter plaatse van afvalwater van de zuivelindustrie;\n\n– 020603 – slib van de behandeling ter plaatse van afvalwater van bakkerijen en de banketbakkersindustrie;\n\n– 020705 – slib van de behandeling ter plaatse van afvalwater van de productie van alcoholische en niet-alcoholische dranken (exclusief koffie, thee en cacao).\n\nb) Het slib wordt per individuele bron gescheiden gehouden, hetgeen betekent dat het niet is vermengd met afvalwater of slib dat van buiten een specifiek productieproces afkomstig is.\n\n**Toelichting**\n\n¹⁾ Besluit (EU) 2015/2099 van de Commissie zal naar verwachting in de toekomst worden herzien. Wanneer het is herzien, zal de nieuwe versie worden bekendgemaakt en wordt van de aanbestedende diensten verwacht dat zij in het kader van dit criterium de nieuwe versie raadplegen.\n\nDe formulering van de technische specificatie aangaande organische bestanddelen van bodemverbeteraars is aangepast aan de terminologie die wordt gebruikt in de kaderrichtlijn afvalstoffen. Deze termen bepalen de wettelijke status van materialen, d.w.z. afvalstoffen, bijproducten, landbouwmateriaal enz., die wettelijke gevolgen heeft voor hun behandeling en verwijdering.\n\nHieronder volgen enkele definities en voorbeelden om deze begrippen te helpen toepassen:\n\n• \"materialen die zijn verkregen\" betekent dat de bestanddelen het resultaat moeten zijn van stabilisatie- en conditioneringsbehandelingen van de afvalstoffen, dierlijke bijproducten enz. Bij deze behandelingen kan het gaan om anaerobe vergisting, compostering, pyrolyse of combinaties van verschillende behandelingen;\n\n• \"het recycleren van bioafval van gescheiden inzameling, zoals gedefinieerd in artikel 3 van Richtlijn 2008/98/EG van het Europees Parlement en de Raad\" betekent compostering of anaerobe vergisting van het biologisch afbreekbaar tuin- en plantenafval, levensmiddelen- en keukenafval van huishoudens, restaurants, cateringfaciliteiten en winkels, dat gescheiden is ingezameld;\n\n• \"dierlijke bijproducten van de categorieën 2 en 3 zoals vastgesteld in artikel 32 van Verordening (EG) nr. 1069/2009 van het Europees Parlement en de Raad en in technische normen die zijn vastgesteld bij de uitvoering van Verordening (EU) nr. 142/2011\" betekent kadavers of delen van dieren, producten van dierlijke oorsprong enz., niet bestemd voor menselijke consumptie, die mogen worden behandeld door middel van compostering en anaerobe vergisting;\n\n• \"uitwerpselen, stro en ander natuurlijk, niet-gevaarlijk materiaal rechtstreeks afkomstig uit de land- of bosbouw zoals gedefinieerd in artikel 2, lid 1, onder f), van Richtlijn 2008/98/EG\" betekent de overblijfselen van landbouw- en bosbouwactiviteiten die niet de wettelijke status van afvalstof of bijproduct hebben. Ze vormen geen milieu- of gezondheidsrisico en worden doorgaans binnen dezelfde landbouw- of bosbouwactiviteit hergebruikt;\n\n• \"organische fractie van gemengd stedelijk en huishoudelijk afval die is gescheiden door een mechanische, fysicochemische, biologische en/of manuele behandeling\" betekent bioafval dat niet gescheiden is ingezameld;\n\n• \"dierlijke bijproducten van de categorie 1 overeenkomstig Verordening (EG) nr. 1069/2009\" leveren gezondheids- en milieurisico's op die verband houden met ziekten en verontreinigingen, en specifieke behandelingen vereisen.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 29"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten de gedetailleerde productsamenstelling, de herkomst van het organische materiaal en een verklaring over naleving van bovenstaande eisen verstrekken.\n\nProducten met de EU-milieukeur voor groeimedia, bodemverbeteraars en strooisel overeenkomstig Besluit (EU) 2015/2099 van de Commissie of andere relevante milieukeur type I die aan de gespecificeerde criteria voldoet, worden geacht aan de eisen te voldoen. Andere passende vormen van bewijs, zoals een technisch dossier van de fabrikant of een keuringsrapport van een onafhankelijke instantie, worden ook aanvaard."
+                }
+              },
+              {
+                "code": "TS5",
+                "title": "Gevaarlijke stoffen (zware metalen) in bodemverbeteraars",
+                "specification": "Het gehalte aan de volgende elementen in het eindproduct of het bestanddeel, gemeten op basis van het droge gewicht (dg) van het product, mag de hieronder aangegeven waarden niet overschrijden.\n\n**Tabel 3**\n\n| Element | mg/kg (droog gewicht) |\n|---|---|\n| Cadmium (Cd) | 1 |\n| Totaal chroom (Cr) | 100 |\n| Koper (Cu) | 100 |\n| Kwik (Hg) | 1 |\n| Nikkel (Ni) | 50 |\n| Lood (Pb) | 100 |\n| Zink (Zn) | 300 |",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten aan de hand van keuringsrapporten (EN 13650 of gelijkwaardig; EN 16175 of gelijkwaardig voor Hg) aantonen dat aan bovenstaand criterium wordt voldaan.\n\nProducten met de EU-milieukeur voor groeimedia, bodemverbeteraars en strooisel overeenkomstig Besluit (EU) 2015/2099 van de Commissie of andere relevante milieukeur type I die aan de gespecificeerde criteria voldoet, worden geacht aan de eisen te voldoen. Andere passende vormen van bewijs, zoals een technisch dossier van de fabrikant of een keuringsrapport van een onafhankelijke instantie, worden ook aanvaard."
+                }
+              },
+              {
+                "code": "TS6",
+                "title": "Fysische verontreinigingen in bodemverbeteraars",
+                "specification": "Het gehalte aan glas, metaal en plastic met een maaswijdte van > 2 mm (de som van alle bijdragen) in het eindproduct mag niet meer dan 0,5 % bedragen, gemeten op basis van het droge gewicht.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 35"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten aan de hand van keuringsrapporten (CEN/TS 16202 of gelijkwaardig) aantonen dat aan bovenstaand criterium wordt voldaan.\n\nProducten met de EU-milieukeur voor groeimedia, bodemverbeteraars en strooisel overeenkomstig Besluit (EU) 2015/2099 van de Commissie of andere relevante milieukeur type I die aan de gespecificeerde criteria voldoet, worden geacht aan de eisen te voldoen. Andere passende vormen van bewijs, zoals een technisch dossier van de fabrikant of een keuringsrapport van een onafhankelijke instantie, worden ook aanvaard."
+                }
+              },
+              {
+                "code": "TS7",
+                "title": "Productprestaties van bodemverbeteraars",
+                "specification": "a) De producten mogen geen nadelig effect hebben op het opkomen of de daaropvolgende groei van planten.\n\nb) De organische stof als gloeiverlies van het eindproduct moet ten minste 15 % van het droge gewicht (% dg) bedragen.\n\nc) Het gehalte droge stof van het eindproduct moet ten minste 25 % van het verse gewicht (% vg) bedragen.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 35"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten aan de hand van keuringsrapporten (a: EN 16086-1 of gelijkwaardig; b: EN 13039 of gelijkwaardig; c: EN 13040 of gelijkwaardig) aantonen dat aan bovenstaand criterium wordt voldaan.\n\nProducten met de EU-milieukeur voor groeimedia, bodemverbeteraars en strooisel overeenkomstig Besluit (EU) 2015/2099 van de Commissie of andere relevante milieukeur type I die aan de gespecificeerde criteria voldoet, worden geacht aan de eisen te voldoen. Andere passende vormen van bewijs, zoals een technisch dossier van de fabrikant of een keuringsrapport van een onafhankelijke instantie, worden ook aanvaard."
+                }
+              },
+              {
+                "code": "TS8",
+                "title": "Productprestaties van bodemverbeteraars",
+                "specification": "Het gehalte aan primaire ziekteverwekkers in het eindproduct mag niet hoger zijn dan de volgende waarden:\n\na) Salmonella spp: afwezig in 25 g vers gewicht;\n\nb) E. coli: < 1000 kve/g vers gewicht (kve: kolonievormende eenheden).",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 36"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten aan de hand van keuringsrapporten (a: ISO 6579 of gelijkwaardig; b: CEN/TR 16193) aantonen dat aan bovenstaand criterium wordt voldaan.\n\nProducten met de EU-milieukeur voor groeimedia, bodemverbeteraars en strooisel overeenkomstig Besluit (EU) 2015/2099 van de Commissie of andere relevante milieukeur type I die aan de gespecificeerde criteria voldoet, worden geacht aan de eisen te voldoen. Andere passende vormen van bewijs, zoals een technisch dossier van de fabrikant of een keuringsrapport van een onafhankelijke instantie, worden ook aanvaard."
+                }
+              },
+              {
+                "code": "TS10",
+                "title": "Sierplanten en bodemverbeteraars die worden gebruikt voor het verlenen van hoveniersdienten",
+                "specification": "De sierplanten die bij het verlenen van de hoveniersdienten worden geleverd, moeten voldoen aan de eisen van de toepasselijke technische specificaties (TS1 tot en met TS3) op het uitgebreide niveau.\n\nDe bodemverbeteraars die voor het verlenen van de hoveniersdienten worden gebruikt, moeten voldoen aan de eisen van de toepasselijke technische specificaties (TS4 tot en met TS9) op het uitgebreide niveau.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 38"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Zie de verificatie van de toepasselijke technische specificaties."
+                }
+              },
+              {
+                "code": "TS11",
+                "title": "Bestrijding van plaagorganismen en beheersing van invasieve uitheemse soorten",
+                "specification": "De inschrijver moet een jaarlijks fytosanitair behandelplan overleggen dat uitsluitend niet-chemische behandelmethoden zoals thermische, mechanische of biologische behandelingen omvat.\n\n(Deze eis mag worden gecombineerd met een gunningscriterium ter beoordeling van de kwaliteit van een dergelijk plan.)\n\nIn dit plan wordt rekening gehouden met lokale en nationale beleidsmaatregelen voor de beheersing van invasieve uitheemse soorten en met Europese beleidsmaatregelen betreffende invasieve uitheemse soorten (Verordening (EU) nr. 1143/2014).",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 39"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het fytosanitair behandelplan overleggen."
+                }
+              }
+            ]
+          },
+          "machines": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟠 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Bestrijding van plaagorganismen en beheersing van invasieve uitheemse soorten",
+                "specification": "De uitlaatemissies van de motoren van de mobiele machines moeten voldoen aan ten minste een van de volgende:\n\ni. Euro 6 - Verordening (EG) nr. 715/2007;\n\nii. Euro VI - Verordening (EG) nr. 595/2009;\n\niii. Fase V - Verordening (EU) 2016/1628.\n\nDe inschrijver moet de gevallen documenteren waarin de motor van de mobiele machine niet is gecertificeerd als een fase V-motor of hoger maar na een technische nabehandeling* wel aan de norm voldoet.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 46"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een testverslag of certificaat van typegoedkeuring van de motor overleggen om aan te tonen dat de grenswaarden van de emissieprestaties van de motor in overeenstemming zijn met dit criterium. Het testverslag moet zijn opgesteld door een onafhankelijke instantie die voldoet aan de eisen van EN-ISO/IEC 17025. In het certificaat van typegoedkeuring moet het typegoedkeuringsnummer van de motor worden vermeld."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Distributieprestaties",
+                "specification": "Het model strooimachine moet voldoen aan de door EN 15597-2 vastgestelde eisen met betrekking tot de distributieprestaties, die de volgende parameters betreffen:\n\ni. dosering;\n\nii. start van strooimachine;\n\niii. zijwaartse distributie.\n\nDe test moet zijn uitgevoerd door een onafhankelijk laboratorium.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 47"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het testverslag overeenkomstig norm EN 15597-2 overleggen waaruit blijkt dat de testresultaten op het punt van:\n\ni. dosering;\n\nii. start van strooimachine;\n\niii. zijwaartse distributie (dynamische test)\n\nzodanig zijn dat de \"strooimachine is gekwalificeerd\"."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Oplaadbaarheid en kwaliteit van batterijen",
+                "specification": "De batterij moet voldoen aan de hieronder gespecificeerde prestatie-eisen:\n\n1. EN 61951-2 – nikkel-metallisch-hydridebatterijen;\n\n2. EN 61960 – lithium-ionbatterijen.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 48"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten een testverslag overleggen waaruit blijkt dat de kwaliteit en prestaties van de batterij voldoen aan EN 61951-2 in geval van nikkel-metallisch-hydridebatterijen of aan EN 61960 in geval van lithium-ionbatterijen. Testverslagen waaruit blijkt dat de kwaliteit en prestaties van de batterij voldoen aan gelijkwaardige normen, worden geacht te voldoen. Het testverslag moet zijn opgesteld door een onafhankelijk testlaboratorium dat voldoet aan de eisen voor de competentie van test- en kalibratielaboratoria volgens EN ISO/IEC 17025."
+                }
+              },
+              {
+                "code": "TS4",
+                "title": "Smeermiddelen voor machines",
+                "specification_title": "Opmerking: dit criterium is uitsluitend van toepassing indien de betreffende smeermiddelen bij aankoop worden meegeleverd.",
+                "specification": "Aan hydraulische vloeistoffen, transmissie-oliën, kettingzaagoliën, tweetaktoliën en vetten die worden gebruikt in machines voor het onderhoud van de openbare ruimte, mag ten tijde van de inschrijving geen aanduiding omtrent gezondheids- of milieugevaar verbonden zijn (ondergrens van de indeling in Verordening (EG) nr. 1272/2008). Het cumulatieve massapercentage van in de hydraulische vloeistoffen en vetten aanwezige stoffen die enerzijds niet biologisch afbreekbaar en anderzijds bioaccumulerend zijn, mag niet meer dan 0,1 % (g/g) bedragen.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 48"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van het betreffende te leveren smeermiddel overleggen. Producten met de EU-milieukeur of gelijkwaardige milieukeur type I die aan de bovenstaande eisen voldoet, worden geacht aan de eisen te voldoen.\n\nTenzij de fabrikant van de machines een ander type smeermiddel aanbeveelt, moet het smeermiddel van de machines, in geval van viertaktsmeermiddelen, motorsmeerolie met lage viscositeit (LVL) of geregenereerde smeerolie zijn, met ten minste 25 % geregenereerde basisoliën. LVL-oliën komen overeen met SAE-klasse 0W30 of 5W30 of gelijkwaardig.\n\nDe inschrijver moet voor alle producten die bij de uitvoering van de opdracht worden geleverd, een verklaring over naleving van dit criterium met de ondersteunende veiligheidsinformatiebladen verstrekken."
+                }
+              },
+              {
+                "code": "TS5",
+                "title": "Bedienings- en onderhoudsinstructies",
+                "specification": "De machines moeten worden geleverd met de technische specificaties en gebruikersinformatie die van belang is om de machines met een lager brandstof- en energieverbruik te laten werken en van belang is voor hun onderhoud en het verlengen van hun levensduur.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 48"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet gebruiksaanwijzingen verstrekken die informatie bevatten over de werking en het onderhoud van de machines."
+                }
+              },
+              {
+                "code": "TS6",
+                "title": "Uitlaatemissies van motoren van machines",
+                "specification_title": "Opmerking: dit criterium is niet van toepassing op compacte veegmachines en strooimachines.",
+                "specification": "Mobiele machines die worden gebruikt bij het uitvoeren van de dienst, moeten:\n\n1. voldoen aan ten minste fase V;\n\n2. emissieloos zijn\n\n– 2019: 25 % van de machines moet emissieloos zijn;\n\n– 2020: 35 % van de machines moet emissieloos zijn;\n\n– 2021: 45 % van de machines moet emissieloos zijn;\n\n– 2022: 55 % van de machines moet emissieloos zijn.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 52"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Als TS1, met daarbij de lijst van machines bestemd om te worden gebruikt voor het verlenen van de dienst, hun certificaten van overeenstemming, en kopieën van de typegoedkeuringscertificaten van de motoren van de machines."
+                }
+              },
+              {
+                "code": "TS7",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification_title": "Opmerking: dit criterium is uitsluitend van toepassing op compacte veegmachines en strooimachines.",
+                "specification": "De prestaties van de motoren van het veeg- en strooimachinepark die bij de uitvoering van de dienst worden gebruikt, moeten op het gebied van emissies van luchtverontreinigende stoffen:\n\n1. voldoen aan ten minste fase IV;\n\n2. voldoen aan fase V of Euro 6/VI:\n\n  – 2019: 30 % van de veegmachines en strooimachines moet voldoen aan fase V of Euro 6/VI;\n\n  – 2020: 40 % van de veegmachines en strooimachines moet voldoen aan fase V of Euro 6/VI;\n\n  – 2021: 50 % van de veegmachines en strooimachines moet voldoen aan fase V of Euro 6/VI;\n\n  – 2022: 60 % van de veegmachines en strooimachines moet voldoen aan fase V of Euro 6/VI;\n\n3. emissieloos zijn\n\n  – 2019: 20 % van de veegmachines en strooimachines moet emissieloos zijn;\n\n  – 2020: 25 % van de veegmachines en strooimachines moet emissieloos zijn;\n\n  – 2021: 30 % van de veegmachines en strooimachines moet emissieloos zijn;\n\n  – 2022: 35 % van de veegmachines en strooimachines moet emissieloos zijn.\n\nHet toepasselijke niveau hangt af van het jaar waarin de aanbesteding is geïnitieerd.\n\nDe inschrijver moet de gevallen documenteren waarin veegmachines en strooimachines niet zijn gecertificeerd als fase IV-machines of hoger maar na een technische nabehandeling* wel aan de norm voldoen.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 54"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Als TS1, met daarbij de lijst van machines bestemd om te worden gebruikt voor het verlenen van de dienst, hun certificaten van overeenstemming, en kopieën van de typegoedkeuringscertificaten van de motoren van de machines. Voor de voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering, moeten de metingen, na controle door een onafhankelijke derde die voldoet aan de eisen van EN-ISO/IEC 17025, worden gedocumenteerd en in de offerte worden opgenomen."
+                }
+              },
+              {
+                "code": "TS8",
+                "title": "Oplaadbaarheid en kwaliteit van batterijen van machines",
+                "specification": "Alle machines moeten zijn uitgerust met batterijsystemen die voldoen aan de technische specificatie TS3.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 56"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Als TS3, met daarbij de lijst en de technische gegevensbladen van de machines die worden gebruikt voor het verlenen van de dienst."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS1",
+                "title": "Uitlaatemissies van motoren",
+                "specification": "De machines moeten emissieloos functioneren.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 46"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een kopie van het certificaat van typegoedkeuring van de motor van de machines overleggen."
+                }
+              },
+              {
+                "code": "TS6",
+                "title": "Uitlaatemissies van motoren van machines",
+                "specification_title": "Opmerking: dit criterium is niet van toepassing op compacte veegmachines en strooimachines.",
+                "specification": "Mobiele machines die worden gebruikt bij het uitvoeren van de dienst, moeten:\n\n1. voldoen aan ten minste fase V;\n\n2. emissieloos zijn\n\n– 2019: 50 % van de machines moet emissieloos zijn;\n\n– 2020: 60 % van de machines moet emissieloos zijn;\n\n– 2021: 70 % van de machines moet emissieloos zijn;\n\n– 2022: 80 % van de machines moet emissieloos zijn.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 52"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Als TS1, met daarbij de lijst van machines bestemd om te worden gebruikt voor het verlenen van de dienst, hun certificaten van overeenstemming, en kopieën van de typegoedkeuringscertificaten van de motoren van de machines."
+                }
+              },
+              {
+                "code": "TS7",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification_title": "Opmerking: dit criterium is uitsluitend van toepassing op compacte veegmachines en strooimachines.",
+                "specification": "De prestaties van de motoren van het veeg- en strooimachinepark die bij de uitvoering van de dienst worden gebruikt, moeten op het gebied van emissies van luchtverontreinigende stoffen:\n\n1. voldoen aan ten minste fase IV;\n\n2. voldoen aan fase V of Euro 6/VI:\n\n– 2019: 30 % van de veegmachines en strooimachines moet voldoen aan fase V of Euro 6/VI;\n\n– 2020: 40 % van de veegmachines en strooimachines moet voldoen aan fase V of Euro 6/VI;\n\n– 2021: 50 % van de veegmachines en strooimachines moet voldoen aan fase V of Euro 6/VI;\n\n– 2022: 60 % van de veegmachines en strooimachines moet voldoen aan fase V of Euro 6/VI.\n\n3. emissieloos zijn:\n\n– 2019: 20 % van de veegmachines en strooimachines moet emissieloos zijn;\n\n– 2020: 25 % van de veegmachines en strooimachines moet emissieloos zijn;\n\n– 2021: 30 % van de veegmachines en strooimachines moet emissieloos zijn;\n\n– 2022: 35 % van de veegmachines en strooimachines moet emissieloos zijn.\n\nHet toepasselijke niveau hangt af van het jaar waarin de aanbesteding is geïnitieerd.\n\nDe inschrijver moet de gevallen documenteren waarin veegmachines en strooimachines niet zijn gecertificeerd als fase IV-machines of hoger maar na een technische nabehandeling* wel aan de norm voldoen.\n\n**Toelichting**\n\nMotoren die voldoen aan een lagere emissiefase dan fase V, overeenkomstig de vrijstellingen en overgangsbepalingen in artikel 10, lid 7, van Richtlijn 97/68/EG, artikel 34, lid 7, artikel 34, lid 8, of artikel 58, lid 5 tot en met lid 11, van Verordening (EU) 2016/1628, en artikel 11, lid 4, en artikel 14 van Gedelegeerde Verordening (EU) 2015/96 van de Commissie of artikel 13, lid 3 tot en met lid 6, van Gedelegeerde Verordening (EU) 2018/985 van de Commissie, mogen worden geïnstalleerd, mits er achteraf een dieseldeeltjesfilter is aangebracht dat is gecertificeerd overeenkomstig een van de volgende certificaten, en mits ze een gravimetrische scheidingsefficiëntie van ten minste 90 % hebben:\n\n– Anlage XXVII Nummer 3 StVZO;\n\n– VN/ECE-reglement nr. 132; reductiefase 01, klasse I of II;\n\n– FAD e.V. Siegel (status februari 2015 of nieuwer);\n\n– VERT-filterlijst (status september 2016 of nieuwer);\n\n– BAFU-filterlijst.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 54"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Als TS1, met daarbij de lijst van machines bestemd om te worden gebruikt voor het verlenen van de dienst, hun certificaten van overeenstemming, en kopieën van de typegoedkeuringscertificaten van de motoren van de machines. Voor de voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering, moeten de metingen, na controle door een onafhankelijke derde die voldoet aan de eisen van EN-ISO/IEC 17025, worden gedocumenteerd en in de offerte worden opgenomen."
+                }
+              }
+            ]
+          },
+          "voertuigen": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟠 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Technologische opties voor het beperken van broeikasgasemissies",
+                "specification_title": "Opmerking: dit criterium is van toepassing op zware voertuigen (HDV's) en voertuigen voor speciale doeleinden.",
+                "specification": "Het voertuig moet zijn uitgerust met een van de volgende technologieën die leiden tot vermindering van broeikasgasemissies van bron tot wiel:\n\n• verbetering van de aerodynamica: actieve stroomgeleiding (alleen voor vrachtwagens die worden gebruikt in regionale bedrijfscyclus);\n• verbetering van de aerodynamica: taps toelopende achterkant (alleen voor vrachtwagens die worden gebruikt in regionale bedrijfscyclus);\n• hybride voertuigen, zowel diesel als aardgas;\n• volledig elektrische voertuigen;\n• waterstofcelvoertuigen;\n• OEM-aardgasvoertuig (Original Equipment Manufacturer) voor twee soorten brandstof met een gasenergieverhouding tijdens het warme gedeelte van de WHTC-testcyclus (World Harmonised Transient Cycle) van ten minste 50 %;\n• voertuigen met rechtstreekse inspuiting van aardgas onder hoge druk;\n• plug-in-hybride: voertuig uitgerust met een batterijpakket dat kan worden opgeladen via het elektriciteitsnet en dat de energie levert voor de elektrische aandrijving van de carrosserie en de uitrusting;\n• lastafhankelijk hydraulisch systeem (voor veegmachines): de doorstroomcapaciteit van de pomp wordt geregeld door de lastafhankelijke druk;\n• voertuigen enkel op aardgas in de omstandigheden van onderstaande opmerking.\n\nOpmerking: de aanbestedende dienst kan voertuigen in aanmerking nemen die enkel op aardgas rijden indien deze beschikken over een toevoer van hernieuwbaar methaan die voldoet aan ten minste 15 % van de vraag.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 63"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van het voertuig overleggen waarin deze technische of brandstoftechnologische specificaties worden vermeld."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Bandenspanningscontrolesystemen",
+                "specification_title": "Opmerking: dit criterium is niet van toepassing op voertuigen voor speciale doeleinden, d.w.z. op een vrachtwagen gemonteerde veegmachines.",
+                "specification": "Lichte bedrijfsvoertuigen (LCV's) en zware voertuigen (HDV's) moeten zijn uitgerust met bandenspanningscontrolesystemen of met sensoren die het mogelijk maken de bandenspanning vanaf de plaats van de bestuurder te controleren.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 65"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van het voertuig overleggen waarin deze informatie wordt vermeld."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Voertuigbanden – rolweerstand",
+                "specification_title": "Opmerking: dit criterium is niet van toepassing op voertuigen voor speciale doeleinden, d.w.z. op een vrachtwagen gemonteerde veegmachines.",
+                "specification": "De voertuigen moeten zijn uitgerust met:\n\na) banden die voldoen aan de hoogste brandstofrendementklasse voor rolweerstand uitgedrukt in kg/ ton, zoals omschreven in Verordening (EG) nr. 1222/2009 van het Europees Parlement en de Raad van 25 november 2009 inzake de etikettering van banden met betrekking tot hun brandstofefficiëntie en andere essentiële parameters. Deze verplichting belet de overheidsinstantie niet uit overwegingen van veiligheid banden aan te kopen met de beste grip op nat wegdek;\n\nOF\n\nb) van een nieuw loopvlak voorziene banden (coverbanden).\n\nOpmerking: in het kader van de herziening van Verordening (EG) nr. 1222/2009 heeft de Europese Commissie voorstel COM(2018) 296 final ingediend. Dit criterium moet worden aangepast aan de nieuwe wetgeving, wanneer deze van kracht is.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 65"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het etiket van de band verstrekken overeenkomstig Verordening (EG) nr. 1222/2009 voor banden in geval a) of de kennisgeving van goedkeuring overeenkomstig bijlage 1 bij Reglement nr. 109 van de Economische Commissie voor Europa van de Verenigde Naties voor coverbanden in geval b)."
+                }
+              },
+              {
+                "code": "TS4",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification": "N₃- en N₂-voertuigen met een referentiemassa¹ hoger dan 2 610 kg moeten voldoen aan Euro VI.\n\nN₂-voertuigen met een referentiemassa¹ van ten hoogste 2 610 kg moeten voldoen aan TS2 Emissies van luchtverontreinigende stoffen van de EU-criteria voor groene overheidsopdrachten voor wegvervoer voor auto's en lichte bedrijfsvoertuigen (categorie 1).\n\nOp een voertuig gemonteerde veegmachines moeten voldoen aan Euro VI of Euro 6, afhankelijk van de referentiemassa van het voertuig waarop de machine is gemonteerd.\n\n**Toelichting**\n\n¹ \"Referentiemassa\" is de massa van het voertuig in rijklare toestand zoals vermeld in het certificaat van overeenstemming, minus de forfaitaire massa van de bestuurder van 75 kg, plus een forfaitaire massa van 100 kg.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 65"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het certificaat van overeenstemming van het voertuig overleggen. Voor de voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering, moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen."
+                }
+              },
+              {
+                "code": "TS7",
+                "title": "Broeikasgasemissies",
+                "specification_title": "Alleen van toepassing bij de inkoop van wagenparkdiensten én indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend.",
+                "specification": "Voor zware voertuigen (HDV's) en voertuigen voor speciale doeleinden:\n\nDe volgende delen van het wagenpark moeten zijn uitgerust met één van de in aanmerking komende technologieën genoemd in de kerncriteria van TS1 Technologische opties voor het beperken van broeikasgasemissies van voertuigen:\n\n• 2019: 20 %\n• 2020: 28 %\n• 2021: 36 %\n• 2022: 44 %\n\nVoor voertuigen van categorie L:\n\nDe volgende delen van het wagenpark moeten bestaan uit elektrische voertuigen:\n\n• 2019: 25 %\n• 2020: 35 %\n• 2021: 45 %\n• 2022: 55 %\n\nVoor lichte bedrijfsvoertuigen:\n\n12 % van het wagenpark dat op grond van de overeenkomst wordt ingezet, moet voldoen aan de kerncriteria van TS1 CO₂-emissies voor de categorie \"Aankoop, leasing of huur van lichte bedrijfsvoertuigen\" van de EU-criteria voor groene overheidsopdrachten voor wegvervoer.\n\nHet toepasselijke niveau hangt af van het jaar waarin de aanbesteding is geïnitieerd.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 74"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Als TS1 aangaande voertuigen, met daarbij de lijst en de technische documentatie of certificaten van overeenstemming van het gehele wagenpark."
+                }
+              },
+              {
+                "code": "TS8",
+                "title": "Fietslogistiek",
+                "specification_title": "(In steden met een geschikte stedelijke infrastructuur)",
+                "specification": "Alleen van toepassing bij de inkoop van wagenparkdiensten én indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend.\n\nDe inschrijver moet beschikken over een voertuigenbestand dat fietsen, eventueel met trapondersteuning, en fietsaanhangwagens omvat, teneinde het gebruik van gemotoriseerde voertuigen te minimaliseren, overeenkomstig de in TS1 Maatregelen op het gebied van milieubeheer, in de gemeenschappelijke criteria voor dienstcategorieën, vastgestelde maatregelen om de milieuproblemen zoveel mogelijk te beperken.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 76"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt de specificaties van het voertuigenbestand, alsmede de beschrijving van de wijze waarop fietsen en fietsaanhangwagens worden ingezet om het gebruik van gemotoriseerde voertuigen te minimaliseren."
+                }
+              },
+              {
+                "code": "TS9",
+                "title": "Voertuigbanden – rolweerstand",
+                "specification_title": "Alleen van toepassing bij de inkoop van wagenparkdiensten én indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend. Opmerking: dit criterium is niet van toepassing op voertuigen voor speciale doeleinden, d.w.z. op een vrachtwagen gemonteerde veegmachines.",
+                "specification": "Alle voertuigen moeten zijn uitgerust met banden die voldoen aan TS3 aangaande voertuigbanden.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 65"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het etiket van de band verstrekken overeenkomstig Verordening (EG) nr. 1222/2009 voor banden in geval a) of de kennisgeving van goedkeuring overeenkomstig bijlage 1 bij Reglement nr. 109 van de Economische Commissie voor Europa van de Verenigde Naties voor coverbanden in geval van een nieuw loopvlak voorziene banden (coverbanden), met daarbij de lijst en de technische documentatie van het gehele wagenpark."
+                }
+              },
+              {
+                "code": "TS10",
+                "title": "Bandenspanningscontrolesystemen",
+                "specification_title": "Alleen van toepassing bij de inkoop van wagenparkdiensten én indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend. Dit criterium is niet van toepassing op voertuigen voor speciale doeleinden, d.w.z. op een vrachtwagen gemonteerde veegmachines.",
+                "specification": "Alle lichte bedrijfsvoertuigen (LCV's) en zware voertuigen (HDV's) moeten zijn uitgerust met systemen die voldoen aan TS2 aangaande bandenspanningscontrolesystemen.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 76"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van het voertuig overleggen waarin deze informatie wordt vermeld, met daarbij de lijst en de technische documentatie van het gehele wagenpark."
+                }
+              },
+              {
+                "code": "TS11",
+                "title": "Brandstof",
+                "specification_title": "Alleen van toepassing bij de inkoop van wagenparkdiensten én indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend.",
+                "specification": "Opmerking: dit criterium is uitsluitend van toepassing indien de aanbestedende dienst aardgasvoertuigen kwalificeert als in aanmerking komende technologie en de inschrijver aardgasvoertuigen offereert om aan TS1 aangaande voertuigen te voldoen (zie punt 5.1.1.2). De aanbestedende dienst kan hogere percentages van hernieuwbare brandstof vaststellen overeenkomstig het beschikbare aanbod op de nationale of regionale markt.\n\nTen minste 15 % van de toevoer van methaan moet bestaan uit hernieuwbaar methaan.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 77"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de overeenkomst(en) die met leverancier(s) is/zijn getekend en de omschrijving en technische specificaties van de productie en het specifieke brandstoftoeleveringssysteem overleggen."
+                }
+              },
+              {
+                "code": "TS12",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification_title": "Alleen van toepassing bij de inkoop van wagenparkdiensten én indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend.",
+                "specification": "Alle zware voertuigen (HDV's) waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan Euro V.\n\n• 2019: 48 % van de zware voertuigen moet voldoen aan Euro VI;\n• 2020: 56 % van de zware voertuigen moet voldoen aan Euro VI;\n• 2021: 64 % van de zware voertuigen moet voldoen aan Euro VI;\n• 2022: 72 % van de zware voertuigen moet voldoen aan Euro VI.\n\nDe inschrijver moet de gevallen documenteren waarin voertuigen niet zijn gecertificeerd als voertuigen die voldoen aan Euro V of hoger maar na een technische nabehandeling wel aan de norm voldoen.\n\nAlle lichte voertuigen (LDV's) waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan Euro 5.\n\n• 2019: 50 % van de lichte voertuigen moet voldoen aan Euro 6;\n• 2020: 60 % van de lichte voertuigen moet voldoen aan Euro 6;\n• 2021: 70 % van de lichte voertuigen moet voldoen aan Euro 6;\n• 2022: 80 % van de lichte voertuigen moet voldoen aan Euro 6.\n\nAlle voertuigen van categorie L waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan Euro 3.\n\n• 2019: 50 % van de voertuigen van categorie L moet voldoen aan Euro 4;\n• 2020: 60 % van de voertuigen van categorie L moet voldoen aan Euro 4;\n• 2021: 70 % van de voertuigen van categorie L moet voldoen aan Euro 4;\n• 2022: 80 % van de voertuigen van categorie L moet voldoen aan Euro 4.\n\nHet toepasselijke niveau hangt af van het jaar waarin de aanbesteding is geïnitieerd.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 77"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie overleggen van de voertuigen, waarin de emissienormen worden omschreven. Voor de voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering, moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS1",
+                "title": "Technologische opties voor het beperken van broeikasgasemissies",
+                "specification_title": "Opmerking: dit criterium is van toepassing op zware voertuigen (HDV's) en voertuigen voor speciale doeleinden.",
+                "specification": "Het voertuig moet zijn uitgerust met een van de volgende technologieën die leiden tot vermindering van broeikasgasemissies van bron tot wiel:\n\n• volledig elektrische voertuigen;\n• waterstofcelvoertuigen;\n• OEM-aardgasvoertuig voor twee soorten brandstof met een gasenergieverhouding tijdens het warme gedeelte van de WHTC-testcyclus (World Harmonised Transient Cycle) van ten minste 50 %;\n• voertuigen met rechtstreekse inspuiting van aardgas onder hoge druk;\n• plug-in-hybride: voertuig uitgerust met een batterijpakket dat kan worden opgeladen via het elektriciteitsnet en dat de energie levert voor de elektrische aandrijving van de carrosserie en de uitrusting;\n• lastafhankelijk hydraulisch systeem (voor veegmachines): de doorstroomcapaciteit van de pomp wordt geregeld door de lastafhankelijke druk;\n• voertuigen enkel op aardgas in de omstandigheden van onderstaande opmerking.\n\nOpmerking: de aanbestedende dienst kan voertuigen in aanmerking nemen die enkel op aardgas rijden indien deze beschikken over een toevoer van hernieuwbaar methaan die voldoet aan ten minste 15 % van de vraag.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 63"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie van het voertuig overleggen waarin deze technische of brandstoftechnologische specificaties worden vermeld."
+                }
+              },
+              {
+                "code": "TS5",
+                "title": "Technologische opties voor het beperken van broeikasgasemissies",
+                "specification_title": "Indien de aanbestedende dienst veegmachines vereist die water gebruiken voor stofbestrijding.",
+                "specification": "Veegmachines moeten zijn uitgerust met een waterrecirculatiesysteem, hetgeen betekent een systeem dat een deel van het water dat wordt gebruikt voor stofbestrijding, recirculeert. Het water wordt gesproeid en daarna samen met het stof door de veegmachine verwijderd. De machine filtert het afvalwater, dat vervolgens wordt gerecirculeerd naar de watertank.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 67"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie overleggen waarin het waterrecirculatiesysteem wordt beschreven."
+                }
+              },
+              {
+                "code": "TS6",
+                "title": "Technologische opties voor het beperken van broeikasgasemissies",
+                "specification_title": "Geldt niet indien om redenen van veiligheid banden met de beste grip op nat wegdek, sneeuwbanden of ijsbanden zijn vereist. Dit criterium is niet van toepassing op voertuigen voor speciale doeleinden.",
+                "specification": "Zware voertuigen (HDV's) moeten zijn uitgerust met:\n\na) banden waarvan het externe emissieniveau van het rolgeluid 3 dB lager is dan de maximumwaarde die is vastgesteld in bijlage II, deel C, bij Verordening (EG) nr. 661/2009. Dit is gelijkwaardig aan de bovenste categorie (van de drie beschikbare categorieën) van de externe-rolgeluidsklasse van bandetiketten van de EU;\n\nOF\n\nb) van een nieuw loopvlak voorziene banden (coverbanden).\n\nOpmerking: in het kader van de herziening van Verordening (EG) nr. 1222/2009 heeft de Europese Commissie voorstel COM(2018) 296 final ingediend. Dit criterium moet worden aangepast aan de nieuwe wetgeving, wanneer deze van kracht is.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 68"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet het etiket van de band verstrekken overeenkomstig Verordening (EG) nr. 1222/2009 voor banden in geval a) of de kennisgeving van goedkeuring overeenkomstig bijlage 1 bij Reglement nr. 109 van de Economische Commissie voor Europa van de Verenigde Naties voor coverbanden in geval b)."
+                }
+              },
+              {
+                "code": "TS7",
+                "title": "Broeikasgasemissies",
+                "specification_title": "Alleen van toepassing bij de inkoop van wagenparkdiensten én indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend.",
+                "specification": "De volgende delen van het wagenpark moeten zijn uitgerust met één van de in aanmerking komende technologieën genoemd in de kerncriteria van TS1 Technologische opties voor het beperken van broeikasgasemissies van voertuigen:\n\n• 2019: 32 %\n• 2020: 40 %\n• 2021: 48 %\n• 2022: 56 %\n\nVoor voertuigen van categorie L:\n\nDe volgende delen van het wagenpark moeten bestaan uit elektrische voertuigen:\n\n• 2019: 40 %\n• 2020: 50 %\n• 2021: 60 %\n• 2022: 70 %\n\nVoor lichte bedrijfsvoertuigen:\n\n• 12 % van het wagenpark dat op grond van de overeenkomst wordt ingezet, moet voldoen aan de uitgebreide criteria van TS1 CO₂-emissies voor de categorie \"Aankoop, leasing of huur van lichte bedrijfsvoertuigen\" van de EU-criteria voor groene overheidsopdrachten voor wegvervoer;\n• 25 % van het wagenpark moet voldoen aan de kerncriteria van TS1 CO₂-emissies voor dezelfde categorie.\n\nHet toepasselijke niveau hangt af van het jaar waarin de aanbesteding is geïnitieerd.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 74"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Als TS1 aangaande voertuigen, met daarbij de lijst en de technische documentatie of certificaten van overeenstemming van het gehele wagenpark."
+                }
+              },
+              {
+                "code": "TS12",
+                "title": "Brandstof",
+                "specification_title": "Alleen van toepassing bij de inkoop van wagenparkdiensten én indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend.",
+                "specification": "**TS12.1.**\n\nAlle zware voertuigen (HDV's) waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan Euro V.\n\n• 2019: 68 % van de zware voertuigen moet voldoen aan Euro VI;\n• 2020: 76 % van de zware voertuigen moet voldoen aan Euro VI;\n• 2021: 84 % van de zware voertuigen moet voldoen aan Euro VI;\n• 2022: 92 % van de zware voertuigen moet voldoen aan Euro VI.\n\nDe inschrijver moet de gevallen documenteren waarin voertuigen niet zijn gecertificeerd als voertuigen die voldoen aan Euro V of hoger maar na een technische nabehandeling wel aan de norm voldoen.\n\nAlle lichte voertuigen (LDV's) waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan Euro 5.\n\n• 2018: 60 % van de lichte voertuigen moet voldoen aan Euro 6;\n• 2019: 70 % van de lichte voertuigen moet voldoen aan Euro 6;\n• 2020: 80 % van de lichte voertuigen moet voldoen aan Euro 6;\n• 2021: 90 % van de lichte voertuigen moet voldoen aan Euro 6;\n• 2022: 100 % van de lichte voertuigen moet voldoen aan Euro 6.\n\nDaarnaast:\n\n• 2019: 15 % van de lichte voertuigen moet voldoen aan de norm Euro 6d-TEMP of Euro 6d;\n• 2020: 20 % van de lichte voertuigen moet voldoen aan de norm Euro 6d-TEMP of Euro 6d;\n• 2021: 25 % van de lichte voertuigen moet voldoen aan de norm Euro 6d-TEMP of Euro 6d;\n• 2022: 35 % van de lichte voertuigen moet voldoen aan de norm Euro 6d-TEMP of Euro 6d.\n\nAlle voertuigen van categorie L waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan Euro 3.\n\n• 2019: 70 % van de voertuigen van categorie L moet voldoen aan Euro 4;\n• 2020: 80 % van de voertuigen van categorie L moet voldoen aan Euro 4;\n• 2021: 90 % van de voertuigen van categorie L moet voldoen aan Euro 4;\n• 2022: 100 % van de voertuigen van categorie L moet voldoen aan Euro 4.\n\nHet toepasselijke niveau hangt af van het jaar waarin de aanbesteding is geïnitieerd.\n\n**TS12.2.**\n\nIn geval van stedelijke gebieden waar problemen met de luchtkwaliteit zijn:\n\nLichte voertuigen (LDV's) en voertuigen van categorie L moeten uitlaatemissies gelijk aan nul hebben. Indien er geen oplaadinfrastructuur beschikbaar is of het verwachte gebruiksprofiel een grote actieradius vereist: de voertuigen moeten ten minste in staat zijn tot uitlaatemissies gelijk aan nul, hetgeen betekent dat het lichte bedrijfsvoertuig minimaal 40 km kan afleggen zonder uitlaatemissies.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 77"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de technische documentatie overleggen van de voertuigen, waarin de emissienormen worden omschreven, alsmede waar van toepassing de samenwerkingsovereenkomst met het stedelijke consolidatiecentrum."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "award_criteria",
+      "title": "Gunningscriteria",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als gunningscriteria. Daarmee wordt vastgelegd op basis waarvan de inschrijvingen inhoudelijk worden beoordeeld en de economisch meest voordelige inschrijving wordt vastgesteld.",
+      "warnings": [
+        {
+          "severity": "red",
+          "text": "Let op: De kerncriteria (minimale gunningscriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Ga na of het selectiecriterium van toepassing is. De GPP definieert technische specificaties voor:\nCategorie 1: [Buitenschoonmaak](https://mvicriteria.nl/nl/webtool)\nCategorie 2: [Hovenierswerk](https://mvicriteria.nl/nl/webtool)\nCategorie 3: [Machines](https://mvicriteria.nl/nl/webtool)\nCategorie 4: [Voertuigen](https://mvicriteria.nl/nl/webtool)",
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n  a. Ga naar de tool en kies de relevante productcategorie.\n  b. Zet het [ambitieniveau](https://www.mvicriteria.nl) op BASIS.\n  c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n  d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "buitenschoonmaak",
+            "label": "📋 Buitenschoonmaak",
+            "label_short": "Buitenschoonmaak"
+          },
+          {
+            "key": "hovenierswerk",
+            "label": "🪴 Hovenierswerk",
+            "label_short": "Hovenierswerk"
+          },
+          {
+            "key": "machines",
+            "label": "🎯 Machines",
+            "label_short": "Machines"
+          },
+          {
+            "key": "voertuigen",
+            "label": "🎯 Voertuigen",
+            "label_short": "Voertuigen"
+          }
+        ],
+        "default_main_tab": "buitenschoonmaak",
+        "data": {
+          "buitenschoonmaak": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟠 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "Composteerbare vuilniszakken",
+                "specification_title": "Opmerking: dit criterium is van toepassing wanneer bioafval gescheiden wordt ingezameld en wordt verwerkt door industriële compostproductiebedrijven die composteerbare zakken accepteren.",
+                "specification": "Er worden punten toegekend aan voor het inzamelen van bioafval gebruikte vuilniszakken die composteerbaar zijn volgens norm EN 14995:2007, norm EN 13432:2000 of gelijkwaardig.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 17"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Inschrijvers moeten bewijs van certificering door derden overleggen overeenkomstig EN 14995:2007, EN 13432:2000 of gelijkwaardig."
+                }
+              }
+            ],
+            "extended_criteria": []
+          },
+          "hovenierswerk": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟠 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "Aanvullende sierplanten",
+                "specification": "Er worden punten toegekend voor elke 10 % verbetering ten opzichte van de minimale technische specificatie aangaande gecertificeerde IPM- of biologisch geproduceerde sierplanten.\n\n(Uitgewerkt moet worden in hoeverre meer punten zullen worden toegekend voor de verbetering op het gebied van biologisch geteelde planten, waarvoor meer punten moeten worden gegeven dan voor IPM.)",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 38"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet informatie (naam en hoeveelheid) verstrekken over de sierplanten die bij de uitvoering van de opdracht worden geleverd, waaruit specifiek blijkt welke producten voldoen aan het voorschrift voor IPM of biologische teelt.\n\nGedocumenteerde transactiesgegevens die het mogelijk maken de naleving te controleren voor afzonderlijke planten of batches van planten en ze te traceren tot het punt van certificering, moeten worden geaccepteerd. Dit omvat geldige certificering voor biologische of IPM-productie."
+                }
+              }
+            ],
+            "extended_criteria": []
+          },
+          "machines": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟠 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "Uitlaatemissies gelijk aan nul",
+                "specification": "Er worden punten toegekend aan machines die aantoonbaar in staat zijn tot uitlaatemissies gelijk aan nul, hetgeen betekent dat de machines kunnen werken zonder dat de motor enige directe uitlaatemissies produceert.\n\n**Verificatie**\n\nMotoren die voldoen aan een lagere emissiefase dan fase V, overeenkomstig de vrijstellingen en overgangsbepalingen in artikel 10, lid 7, van Richtlijn 97/68/EG, artikel 34, lid 7, artikel 34, lid 8, of artikel 58, lid 5 tot en met lid 11, van Verordening (EU) 2016/1628, en artikel 11, lid 4, en artikel 14 van Gedelegeerde Verordening (EU) 2015/96 van de Commissie of artikel 13, lid 3 tot en met lid 6, van Gedelegeerde Verordening (EU) 2018/985 van de Commissie, mogen worden geïnstalleerd, mits er achteraf een dieseldeeltjesfilter is aangebracht dat is gecertificeerd overeenkomstig een van de volgende certificaten, en mits ze een gravimetrische scheidingsefficiëntie van ten minste 90 % hebben:\n\n– Anlage XXVII Nummer 3 StVZO;\n\n– VN/ECE-reglement nr. 132; reductiefase 01, klasse I of II;\n\n– FAD e.V. Siegel (status februari 2015 of nieuwer);\n\n– VERT-filterlijst (status september 2016 of nieuwer);\n\n– BAFU-filterlijst.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 49"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een kopie van het certificaat van typegoedkeuring van de motor van de machines overleggen."
+                }
+              },
+              {
+                "code": "GC2",
+                "title": "Gehalte aan zware metalen in batterijen",
+                "specification": "Er worden punten toegekend voor de levering van door batterijen gevoede machines die gebruikmaken van oplaadbare batterijen met een lagere concentratie aan zware metalen dan hieronder is gespecificeerd:\n\n1. kwik < 0,1 ppm;\n2. cadmium < 1,0 ppm;\n3. lood < 5 ppm.\n\n**Verificatie**\n\nDe inschrijvers moeten een testverslag overleggen waaruit blijkt dat de kwaliteit en prestaties van de batterij voldoen aan EN 61951-2 in geval van nikkel-metallisch-hydridebatterijen of aan EN 61960 in geval van lithium-ionbatterijen. Testverslagen waaruit blijkt dat de kwaliteit en prestaties van de batterij voldoen aan gelijkwaardige normen, worden geacht te voldoen. Het testverslag moet zijn opgesteld door een onafhankelijk testlaboratorium dat voldoet aan de eisen voor de competentie van test- en kalibratielaboratoria volgens EN ISO/IEC 17025.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 49"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijvers moeten een testverslag overleggen waaruit blijkt dat de kwaliteit en prestaties van de batterij voldoen aan EN 61951-2 in geval van nikkel-metallisch-hydridebatterijen of aan EN 61960 in geval van lithium-ionbatterijen."
+                }
+              },
+              {
+                "code": "GC3",
+                "title": "Uitlaatemissies van motoren van machines",
+                "specification": "Er worden aan de inschrijver punten toegekend in verhouding tot het percentage machines dat de vereisten van TS6 te boven gaat.\n\n**Verificatie**\n\nAls TS1, met daarbij de lijst van machines bestemd om te worden gebruikt voor het verlenen van de dienst, hun certificaten van overeenstemming, en kopieën van de typegoedkeuringscertificaten van de motoren van de machines.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 56"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Als TS1, met daarbij de lijst van machines bestemd om te worden gebruikt voor het verlenen van de dienst, hun certificaten van overeenstemming, en kopieën van de typegoedkeuringscertificaten van de motoren van de machines."
+                }
+              },
+              {
+                "code": "GC4",
+                "title": "Verbeterde emissies van luchtverontreinigende stoffen",
+                "specification": "Er worden punten toegekend in verhouding tot het aantal procenten verbetering dat de in TS7 vereiste minimale technische specificatie te boven gaat.\n\n**Verificatie**\n\nAls TS1, met daarbij de lijst van machines bestemd om te worden gebruikt voor het verlenen van de dienst, hun certificaten van overeenstemming, en kopieën van de typegoedkeuringscertificaten van de motoren van de machines. Voor de voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering, moeten de metingen, na controle door een onafhankelijke derde die voldoet aan de eisen van EN-ISO/IEC 17025, worden gedocumenteerd en in de offerte worden opgenomen.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 57"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Als TS1, met daarbij de lijst van machines bestemd om te worden gebruikt voor het verlenen van de dienst, hun certificaten van overeenstemming, en kopieën van de typegoedkeuringscertificaten van de motoren van de machines. Voor de voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering, moeten de metingen, na controle door een onafhankelijke derde die voldoet aan de eisen van EN-ISO/IEC 17025, worden gedocumenteerd en in de offerte worden opgenomen."
+                }
+              },
+              {
+                "code": "GC5",
+                "title": "Distributieprestaties van strooimachines",
+                "specification": "Aan de inschrijvers die een machinepark voor het verlenen van de dienst bieden, worden punten toegekend in verhouding tot het percentage strooimachines dat voldoet aan EN 15597-2.\n\n**Verificatie**\n\nDe inschrijver moet de lijst van de voertuigen van het wagenpark en hun door een onafhankelijk laboratorium opgestelde testverslagen volgens EN 15597-2 overleggen.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 57"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de lijst van de voertuigen van het wagenpark en hun door een onafhankelijk laboratorium opgestelde testverslagen volgens EN 15597-2 overleggen."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "GC6",
+                "title": "Distributieprestaties van strooimachines",
+                "specification": "Aan de inschrijvers die een machinepark voor het verlenen van de dienst bieden, moeten punten worden toegekend in verhouding tot het percentage machines dat is uitgerust met batterijsystemen die voldoen aan GC2 aangaande de concentratie zware metalen in de batterijen van de machines.\n\n**Verificatie**\n\nAls GC2, met daarbij de lijst en de technische gegevensbladen van de machines die worden gebruikt voor het verlenen van de dienst.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 57"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Als GC2, met daarbij de lijst en de technische gegevensbladen van de machines die worden gebruikt voor het verlenen van de dienst."
+                }
+              }
+            ]
+          },
+          "voertuigen": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟠 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "GC3",
+                "title": "Verbeterde emissies van luchtverontreinigende stoffen",
+                "specification": "N₃- en N₂-voertuigen met een referentiemassa¹) hoger dan 2 610 kg en voertuigen voor speciale doeleinden: er worden punten toegekend aan de volgende technologieën:\n• aardgas;\n• plug-in-hybridevoertuigen;\n• batterijvoertuigen; en\n• waterstofcelvoertuigen.\n\n(Uitgewerkt moet worden in hoeverre meer punten worden toegekend aan voertuigen die in staat zijn tot uitlaatemissies gelijk aan nul, d.w.z. plug-in-hybridevoertuigen, batterijvoertuigen en brandstofcelvoertuigen. Aan voertuigen die in staat zijn tot uitlaatemissies gelijk aan nul, moeten meer punten worden toegekend dan aan aardgasvoertuigen.)\n\nN₂-voertuigen met een referentiemassa van ten hoogste¹) 2 610 kg: de formule van GC3 Verbeterde emissies van luchtverontreinigende stoffen en GC4 Uitlaatemissiecapaciteit gelijk aan nul van de EU-criteria voor groene overheidsopdrachten voor wegvervoer voor auto's en lichte bedrijfsvoertuigen (categorie 1) wordt toegepast.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 70"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De inschrijver moet het certificaat van overeenstemming van het voertuig overleggen. Voor de voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering, moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen."
+                },
+                "notes": "1) \"Referentiemassa\" is de massa van het voertuig in rijklare toestand zoals vermeld in het certificaat van overeenstemming, minus de forfaitaire massa van de bestuurder van 75 kg, plus een forfaitaire massa van 100 kg."
+              },
+              {
+                "code": "GC4",
+                "title": "Waterrecirculatiesystemen",
+                "specification": "Indien de aanbestedende dienst veegmachines vereist die water gebruiken voor stofbestrijding.\n\nEr worden punten toegekend aan veegmachines die zijn uitgerust met een waterrecirculatiesysteem, hetgeen betekent een systeem dat een deel van het water dat voor stofbestrijding wordt gebruikt, recirculeert. Het water wordt gesproeid en daarna samen met het stof door de veegmachine verwijderd. De machine filtert het afvalwater, dat vervolgens wordt gerecirculeerd naar de watertank.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 71"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De inschrijver moet de technische documentatie overleggen waarin het waterrecirculatiesysteem wordt beschreven."
+                }
+              },
+              {
+                "code": "GC7",
+                "title": "Broeikasgasemissies",
+                "specification": "Alleen van toepassing bij de inkoop van wagenparkdiensten én indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend.\n\nEr worden punten toegekend aan een op grond van de overeenkomst in te zetten wagenpark met een aandeel voertuigen (%) groter dan TS1 Broeikasgasemissies, in verhouding tot het surplus boven TS12.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 80"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De inschrijver moet de technische documentatie van de voertuigen overleggen, waarin de emissienormen worden omschreven. Voor de voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering, moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen."
+                }
+              },
+              {
+                "code": "GC8",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification": "Alleen van toepassing bij de inkoop van wagenparkdiensten én indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend. Niet van toepassing indien uitlaatemissies gelijk aan nul zijn vereist voor alle voertuigen in de technische specificatie TS12.2\n\nEr worden punten toegekend aan de offertes waarin het volgende wordt geboden:\na) een hoger percentage dan vastgesteld in TS12 (zie boven); of\nb) lichte voertuigen (LDV's) en voertuigen van categorie L met een gunstiger emissie dan Euro 6/4; of\nc) zware voertuigen (HDV's) op aardgas en voertuigen die in staat zijn tot emissies gelijk aan nul, hetgeen betekent met een actieradius van minimaal 40 km zonder enige uitlaatemissies voor auto's en lichte bedrijfsvoertuigen (LCV's), en plug-in-hybridevoertuigen, batterijvoertuigen en brandstofcelvoertuigen voor bussen.\n\nVoor het op grond van de overeenkomst in te zetten wagenpark, in verhouding tot het surplus boven TS12 (zie boven). (Uitgewerkt moet worden in hoeverre punten worden toegekend aan hogere percentages, betere prestaties en voertuigen met uitlaatemissies gelijk aan nul. Aan voertuigen die in staat zijn tot uitlaatemissies gelijk aan nul, moeten meer punten worden toegekend dan aan aardgasvoertuigen).",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 81"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De inschrijver moet de technische documentatie overleggen van de voertuigen, waarin de emissienormen worden omschreven, alsmede waar van toepassing de samenwerkingsovereenkomst met het stedelijke consolidatiecentrum."
+                }
+              },
+              {
+                "code": "GC9",
+                "title": "Waterrecirculatie",
+                "specification": "Alleen van toepassing bij de inkoop van wagenparkdiensten én indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend. Indien de aanbestedende dienst veegmachines vereist die water gebruiken voor stofbestrijding.\n\nEr worden punten toegekend aan offerten waarin een wagenpark wordt geboden, in verhouding tot het aandeel voertuigen dat is uitgerust met een waterrecirculatiesysteem.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 81"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De inschrijver moet de lijst van voertuigen van het wagenpark waarmee de dienst wordt verleend, en de bijbehorende technische documentatie overleggen."
+                }
+              },
+              {
+                "code": "GC9",
+                "title": "Geluidsemissies",
+                "specification": "Alleen van toepassing bij de inkoop van wagenparkdiensten én indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend.\n\nEr worden punten toegekend aan de offertes waarin een wagenpark wordt geboden waarvan alle voertuigen voldoen aan GC5 aangaande geluidsemissies van voertuigen.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 82"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De inschrijver moet de lijst van voertuigen van het wagenpark waarmee de dienst wordt verleend, en de bijbehorende technische documentatie overleggen."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "GC1",
+                "title": "Klimaatregelingsgassen",
+                "specification": "Er worden punten toegekend aan de voertuigen die zijn uitgerust met een klimaatregelingssysteem waarin een koelmiddel wordt gebruikt waarvan het aardopwarmingsvermogen (global warming potential, GWP), als factor van CO₂ en over een tijdshorizon van 100 jaar, lager is dan 150.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 69"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De inschrijver moet de naam, de formule en het GWP verstrekken van het koelgas dat in het klimaatregelingssysteem wordt gebruikt. Als wordt gebruikgemaakt van een mengsel van gassen (n aantal gassen), wordt het GWP berekend als volgt:\nGWP = Σ (stof X1 % × GWP(X1)) + (stof X2 % × GWP(X2)) + ... (stof Xn % × GWP(Xn)).\nDaarbij is % de gewichtsbijdrage met een tolerantie in gewicht van +/- 1 %.\n\nHet GWP van gassen is te vinden in bijlagen I en II bij Verordening (EU) nr. 517/2014."
+                }
+              },
+              {
+                "code": "GC2",
+                "title": "Voertuigbanden – van een nieuw loopvlak voorziene banden (coverbanden)",
+                "specification": "Er worden punten toegekend aan voertuigen voor speciale doeleinden die zijn uitgerust met van een nieuw loopvlak voorziene banden (coverbanden).",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 69"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De inschrijver moet de kennisgeving van goedkeuring overeenkomstig bijlage 1 bij Reglement nr. 109 van de Economische Commissie voor Europa van de Verenigde Naties (VN/ECE) voor coverbanden overleggen."
+                }
+              },
+              {
+                "code": "GC5",
+                "title": "Lawaai van voertuigen",
+                "specification_title": "Opmerking: dit criterium is niet van toepassing op voertuigen voor speciale doeleinden.",
+                "specification": "Er worden punten toegekend aan de voertuigen waarvan de geluidsemissies voldoen aan de grenswaarden van fase 3 van Verordening (EU) nr. 540/2014. De geluidsemissies worden getest overeenkomstig bijlage II bij Verordening (EU) nr. 540/2014.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 72"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De inschrijver moet het certificaat van overeenstemming van het voertuig overleggen."
+                }
+              },
+              {
+                "code": "GC6",
+                "title": "Veegmachines",
+                "specification": "Er worden punten toegekend aan veegmachines met een lager gewaarborgd geluidsvermogensniveau, overeenkomstig Richtlijn 2000/14/EG.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte - Pag. 73"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De inschrijver moet een kopie van de CE-markering met de aanduiding van het gewaarborgde geluidsvermogensniveau van de veegmachine overeenkomstig Richtlijn 2000/14/EG verstrekken."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "contractual_conditions",
+      "title": "Uitvoeringsvoorwaarden",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als contractuele uitvoeringsvoorwaarden. Ze borgen dat de verplichtingen worden nagekomen.",
+      "warnings": [
+        {
+          "severity": "red",
+          "text": "Let op: De kerncriteria (minimale uitvoeringsvoorwaarden) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie in de tabel hieronder. De GPP definieert technische specificaties voor:\nCategorie 1: [Buitenschoonmaak](https://mvicriteria.nl/nl/webtool)\nCategorie 2: [Hovenierswerk](https://mvicriteria.nl/nl/webtool)\nCategorie 3: [Machines](https://mvicriteria.nl/nl/webtool)\nCategorie 4: [Voertuigen](https://mvicriteria.nl/nl/webtool)",
+        "Neem in ieder geval de kerncriteria op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n  a. Ga naar de tool en kies de relevante productcategorie.\n  b. Zet het [ambitieniveau](https://www.mvicriteria.nl) op BASIS.\n  c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n  d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "buitenschoonmaak",
+            "label": "📋 Buitenschoonmaak",
+            "label_short": "Buitenschoonmaak"
+          },
+          {
+            "key": "hovenierswerk",
+            "label": "🪴 Hovenierswerk",
+            "label_short": "Hovenierswerk"
+          },
+          {
+            "key": "machines",
+            "label": "🎯 Machines",
+            "label_short": "Machines"
+          },
+          {
+            "key": "voertuigen",
+            "label": "🎯 Voertuigen",
+            "label_short": "Voertuigen"
+          }
+        ],
+        "default_main_tab": "buitenschoonmaak",
+        "data": {
+          "buitenschoonmaak": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟠 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Onkruidbestrijding",
+                "specification": "Behalve de eisen die door lokale verordeningen aan de toepassing van chemische herbiciden worden gesteld, mogen chemische herbiciden niet worden toegepast:\n\n• in de vier dagen voordat het gebied wordt geveegd en de vier dagen nadat het gebied is geveegd; en\n• in geval van (of een hoge waarschijnlijkheid dat er sprake zal zijn van) neerslag of dauw, om te voorkomen dat de herbiciden van de planten worden gespoeld.\n\nDaarnaast moeten herbiciden worden gebruikt in overeenstemming met de meest recente geldige versie van de methode voor duurzame onkruidbestrijding op verhardingen1.\n\nEr moeten gegevens van de gebruikte herbiciden en de toedieningsdoses en -schema's worden bijgehouden en deze moeten voor verificatiedoeleinden beschikbaar worden gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 20"
+                },
+                "contractual_condition": {
+                  "title": "Toelichting",
+                  "text": "Opmerking met betrekking tot duurzame onkruidbestrijding op verhardingen: De herbiciden moeten worden toegepast in overeenstemming met de meest recente geldige versie van de methode voor duurzame onkruidbestrijding op verhardingen."
+                }
+              },
+              {
+                "code": "CUV2",
+                "title": "Onkruidbestrijding",
+                "specification_title": "Opmerking: dit criterium is uitsluitend van toepassing indien de graffiti wordt verwijderd van andere oppervlakken dan gevels van gebouwen en er een hogedrukreiniger met water moet worden gebruikt.",
+                "specification": "De contractant mag een hogedrukreiniger met water (en reinigingsvloeistoffen, indien nodig) gebruiken om graffiti te verwijderen van andere oppervlakken dan de gevels van gebouwen, mits er een apart systeem beschikbaar is om het vuile water terug te winnen en daarna te behandelen. Dit kan bijvoorbeeld een waterrecyclingsysteem zijn dat het water opvangt, filtert en hergebruikt.\n\nDe contractant moet gegevens over het volume en de wijze van verwijdering van het afvalwater en het afval van de graffitiverwijdering documenteren als bewijs dat aan de hierboven gestelde eisen is voldaan. Gegevens over de graffitiverwijderingshandelingen, met inbegrip van de operationele omstandigheden en de gebruikte producten, moeten worden bewaard en voor verificatiedoeleinden beschikbaar worden gesteld aan de aanbestedende dienst.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 20"
+                },
+                "contractual_condition": {
+                  "title": "Toelichting",
+                  "text": "De aanbestedende dienst kan selecteren welke graffitiverwijderingshandeling het meest geschikt is voor het te reinigen oppervlak. Voor de volgende typen oppervlakken worden in het algemeen de volgende methoden voor het verwijderen van graffiti aanbevolen:\na. ondergrond van metselwerk – gebruik voor het verwijderen een straalsysteem;\nb. houten ondergrond – schilder over;\nc. niet-poreuze ondergrond – gebruik chemische verwijderaars;\nd. graffiti of etsen op glas – gebruik chemische verwijderaars;\ne. verkeersborden – pas chemische graffitiverwijderaars voor kwetsbare ondergronden toe (de werkzaamheid hangt echter af van de graffiti)."
+                }
+              },
+              {
+                "code": "CUV3",
+                "title": "Onkruidbestrijding",
+                "specification_title": "Alleen van toepassing op de inkoop van schoonmaakdiensten.",
+                "specification": "De contractant zorgt tijdens de overeenkomst voor een intern programma voor personeelsopleiding* of stelt medewerkers in staat deel te nemen aan een extern opleidingsprogramma over de volgende onderwerpen, voor zover die relevant zijn voor de door de medewerker in het kader van de overeenkomst uit te voeren taken.\n\nVoor het verlenen van hoveniersdiensten:\n• Het personeel moet voor uitvoering van de dienst geschoold zijn in hovenierspraktijken met een minder zware belasting voor het milieu.\n  Deze scholing moet ten minste omvatten:\n  • water- en energiebesparende methoden;\n  • reductie, beheer en selectieve inzameling van afvalstoffen;\n  • bescherming van de biodiversiteit;\n  • gebruik van producten op basis van hernieuwbare grondstoffen;\n  • verwerking en beheer van chemische producten en hun verpakking;\n  • veilig en legaal gebruik van bestrijdingsmiddelen, met inbegrip van herbiciden;\n  • training in kritische toepassingen, waaronder het gebruik van chemische stoffen, moet zijn gevolgd voordat het personeel toestemming krijgt om dergelijke werkzaamheden te verrichten.\n\nDe contractant moet na gunning van het contract een opleidingsplan overleggen.\nVoor het verlenen van schoonmaakdiensten:\n• Het personeel moet voor uitvoering van de dienst geschoold zijn in schoonmaakpraktijken met een minder zware belasting voor het milieu.\n  Deze scholing moet omvatten:\n  • water- en energiebesparende methoden;\n  • afvalreductie;\n  • reductie van PM10-stof;\n  • reductie van verbruiksgoederen;\n  • veilig gebruik van chemische stoffen;\n  • training in kritische toepassingen, waaronder het gebruik van chemische stoffen, moet zijn gevolgd voordat het personeel toestemming krijgt om dergelijke werkzaamheden te verrichten.\n\nDe contractant moet na gunning van het contract een opleidingsplan overleggen.\nVoor het bedienen van machines en voertuigen:\n• Alle bedieners van machines en voertuigen die bij het verlenen van de dienst zijn betrokken, moeten voldoende geschoold zijn om de contractueel overeengekomen diensten op ecologisch verantwoorde wijze te leveren door een efficiënt gebruik van toepasselijke machines en voertuigen.\n• Alle bedieners van machines en voertuigen die gedurende de looptijd van de overeenkomst bij het verlenen van de dienst zijn betrokken, moeten regelmatig (ten minste één keer per maand) informatie ontvangen aangaande de door hen bereikte brandstofefficiëntie.\n\nDe jaargegevens omtrent opleiding van medewerkers moeten voor verificatiedoeleinden beschikbaar worden gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 90"
+                },
+                "contractual_condition": {
+                  "title": "Toelichting",
+                  "text": "Medewerkers die de relevante opleiding hebben genoten binnen een formeel onderwijssysteem, kunnen van deze verplichting worden vrijgesteld.\n\nAanbevolen waarden\n• Voor vast personeel en tijdelijke medewerkers met een overeenkomst van meer dan een jaar: 16 uur initiële opleiding; ieder jaar 8 uur nascholing.\n• Voor tijdelijke medewerkers met een overeenkomst van niet meer dan een jaar: 8 uur initiële opleiding.\n\nDe duur van de opleiding kan worden aangepast aan de behoeften en voorwaarden van de inschrijvingen."
+                }
+              },
+              {
+                "code": "CUV4",
+                "title": "Maatregelen op het gebied van milieubeheer",
+                "specification_title": "Alleen van toepassing op de inkoop van schoonmaakdiensten.",
+                "specification": "Tijdens de looptijd van de overeenkomst documenteert en rapporteert de dienstverlener:\n• de resultaten van de controle van indicatoren;\n• de onderhoudsactiviteiten; en\n• de resultaten van de evaluatie en van de correctieve en preventieve maatregelen, indien van toepassing,\n\nin overeenstemming met de schriftelijke procedures die zijn verstrekt voor het controleren van de milieubeheermaatregelen van TS1.\n\nDeze verslagen worden voor verificatiedoeleinden beschikbaar gesteld aan de aanbestedende dienst.\n\nDe aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving en het toekennen van bonussen bij het ruimschoots voldoen aan de doelstellingen van de procedures om de milieuaspecten te optimaliseren.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 92"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Onkruidbestrijding",
+                "specification": "De onkruidbestrijding moet worden uitgevoerd door toepassing van niet-chemische behandelmethoden (behalve voor azijn van biologische oorsprong), zoals thermische, mechanische of biologische behandelingen.\n\nEr moeten gegevens van de gebruikte niet-chemische behandelmethoden en toedieningsschema's worden bijgehouden en deze moeten voor verificatiedoeleinden beschikbaar worden gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 20"
+                },
+                "contractual_condition": {
+                  "title": "Toelichting",
+                  "text": "Opmerking met betrekking tot duurzame onkruidbestrijding op verhardingen: De herbiciden moeten worden toegepast in overeenstemming met de meest recente geldige versie van de methode voor duurzame onkruidbestrijding op verhardingen."
+                }
+              }
+            ]
+          },
+          "hovenierswerk": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Bewateringspraktijken",
+                "specification_title": "Opmerking: de aanbestedende dienst specificeert het gebruik van lokaal teruggewonnen waterbronnen (als een combinatie van regenwater, grondwater en gefilterd grijs water) op basis van de beschikbaarheid van infrastructuur om de contractant in staat te stellen aan deze contractuele uitvoeringsvoorwaarde te voldoen.",
+                "specification": "De bewateringspraktijken moeten:\n– gebruikmaken van regen, teruggewonnen afvalwater, gerecycled water of freatisch grondwater, wanneer dit technisch mogelijk is;\n– het gebruik van drinkwater tot een minimum beperken;\n– mulching toepassen om verdamping te voorkomen in de door de aanbestedende dienst vastgestelde zones;\n– gebruikmaken van automatische besproeiingsinstallaties zoals door de aanbestedende dienst verschaft, en het volume toegediend water aanpassen aan de behoeften van de planten. In dit geval wordt de contractant belast met het onderhoud van de genoemde besproeiingsinstallatie;\n– water rechtstreeks aan de wortelzone toedienen, indien mogelijk;\n– bewatering van het oppervlak op de heetste uren van de dag, wanneer de verdamping het grootst is, vermijden, in het bijzonder in de zomer.\n\nGegevens van de bewateringspraktijken moeten worden bijgehouden en voor verificatiedoeleinden beschikbaar worden gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 40"
+                }
+              },
+              {
+                "code": "CUV2",
+                "title": "Maatregelen op het gebied van afvalstoffenbeheer",
+                "specification_title": "Opmerking: de aanbestedende dienst specificeert het gebruik van lokaal teruggewonnen waterbronnen (als een combinatie van regenwater, grondwater en gefilterd grijs water) op basis van de beschikbaarheid van infrastructuur om de contractant in staat te stellen aan deze contractuele uitvoeringsvoorwaarde te voldoen.",
+                "specification": "Afvalstoffen die worden geproduceerd bij het uitvoeren van hoveniersdiensten, moeten gescheiden worden ingezameld en als volgt worden beheerd (de aanbestedende dienst kan/moet de beheersopties beperken naar gelang van de plaatselijke omstandigheden):\n\n• al het organische afval (droge bladeren, snoeihout, gras) moet worden gecomposteerd, ter plekke, op het terrein van de contractant of middels uitbesteding aan een afvalverwerkingsbedrijf;\n• takken en ander organisch houtafval moeten ter plekke of op het terrein van de contractant worden verwerkt tot strooisel voor de overeengekomen zones:\n  • verpakkingsafval moet worden gescheiden in de bestaande fracties stedelijk afval en door vergunninghoudende stedelijke afvalbeheerders naar een door de lokale autoriteiten goedgekeurd afvalrecyclingcentrum worden vervoerd om de verschillende fracties afvalstoffen te hanteren en verwerken (papier, plastic en overige – beschikbare afvalstromen in te voegen). Verpakkingsafval van gevaarlijke stoffen, zoals gewasbeschermingsmiddelen, moet echter veilig worden verwijderd door het voor verdere verwerking aan te bieden bij goedgekeurde inzamelpunten of aan een bevoegde afvalbeheerder.\n\nEr moeten gegevens worden bijgehouden over het beheer van afvalstoffen die tijdens hoveniersactiviteiten worden geproduceerd, en deze moeten voor verificatiedoeleinden beschikbaar worden gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 41"
+                }
+              },
+              {
+                "code": "CUV3",
+                "title": "Bestrijding van plaagorganismen en beheersing van invasieve uitheemse soorten",
+                "specification_title": "Opmerking: de aanbestedende dienst specificeert het gebruik van lokaal teruggewonnen waterbronnen (als een combinatie van regenwater, grondwater en gefilterd grijs water) op basis van de beschikbaarheid van infrastructuur om de contractant in staat te stellen aan deze contractuele uitvoeringsvoorwaarde te voldoen.",
+                "specification": "De contractant voert de dienst uit volgens het fytosanitair behandelplan overeenkomstig Richtlijn 2009/128/EG betreffende een duurzaam gebruik van pesticiden.\nDe aanwezigheid van planten of dieren waarvan wordt vermoed dat zij invasief zijn, moet worden gemeld aan de aanbestedende dienst en er moeten in onderling overleg passende beheersmaatregelen worden vastgesteld.\n\nProfessionele gebruikers moeten registers bijhouden van de gewasbeschermingsoperaties voor de bestrijding van plaagorganismen en de maatregelen voor de beheersing van invasieve uitheemse soorten, met inbegrip van de gebruikte specifieke technieken en producten, overeenkomstig Verordening (EG) nr. 1107/2009, en deze registers moeten voor verificatiedoeleinden beschikbaar worden gesteld aan de aanbestedende dienst.\n\nDe aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 42"
+                }
+              },
+              {
+                "code": "CUV4",
+                "title": "Bestrijding van plaagorganismen en beheersing van invasieve uitheemse soorten",
+                "specification_title": "Opmerking: de aanbestedende dienst moet de contractant de praktijken verschaffen die moeten worden uitgevoerd om de biodiversiteit te vergroten.",
+                "specification": "Teneinde de biodiversiteit te vergroten, moet de contractant hovenierspraktijken volgen die een combinatie van de volgende elementen kunnen inhouden:\n• waarborgen dat geen enkele soort meer dan X % van alle aangeplante sierplanten of bomen uitmaakt;\n• ontwikkelen van spontane natuurlijke flora en fauna**;\n• uitvoeren van de beste maatregelen voor landschaps- en bosbouwactiviteiten+.\n\nEr moeten gegevens over de geïntroduceerde plantensoorten en de uitgevoerde landschaps- en bosbouwactiviteiten worden bijgehouden, en deze moeten voor verificatiedoeleinden beschikbaar worden gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 42"
+                },
+                "contractual_condition": {
+                  "title": "Toelichting",
+                  "text": "De aanbestedende dienst moet voor elke soort het maximumpercentage van alle aangeplante sierplanten of bomen specificeren dat niet mag worden overschreden. De aanbevolen waarde X = 15 %.\n\n* Er moeten deskundigen worden geraadpleegd om na te gaan of de plantensoorten inheems zijn en, indien ze uitheems zijn, dat ze niet invasief worden. Lokale of nationale lijsten van invasieve plantensoorten en de in Verordening (EU) nr. 1143/2014 bedoelde lijst van invasieve uitheemse soorten die als zorgwekkend voor de Unie worden beschouwd, moeten ook worden geraadpleegd.\n\n** Indien mogelijk moeten de volgende praktijken worden gevolgd om de ontwikkeling van spontane natuurlijke flora en fauna te bevorderen:\n• nectarrijke inheemse planten gebruiken die een gunstig effect kunnen hebben op de natuurlijke fauna;\n• uitsluitend organische middelen ter bestrijding van plaagorganismen gebruiken;\n• waar dat passend is, rottend hout ter plaatse laten staan om de natuurlijke fauna een habitat te bieden;\n• het welzijn van gewenste inheemse soorten bevorderen;\n• in enkele van de meest zichtbare zones informatieborden met uitleg over het doel van deze maatregelen plaatsen.\n\n+ Bij landschaps- en bosbouwactiviteiten moet rekening worden gehouden met de natuurlijke cyclus van de planten en met het welzijn van de lokale fauna door te waarborgen dat:\n• natuurlijke graszones worden gemaaid en onderhouden als \"weide\";\n• snoeiwerkzaamheden plaatsvinden buiten het broedseizoen;\n• habitats, indien mogelijk, niet worden afgesloten, zodat er continuïteit is in de natuurlijke systemen."
+                }
+              },
+              {
+                "code": "CUV5",
+                "title": "Onkruidbestrijding",
+                "specification_title": "Alleen van toepassing op de inkoop van hoveniersdiensten.",
+                "specification": "De contractant zorgt tijdens de overeenkomst voor een intern programma voor personeelsopleiding* of stelt medewerkers in staat deel te nemen aan een extern opleidingsprogramma over de volgende onderwerpen, voor zover die relevant zijn voor de door de medewerker in het kader van de overeenkomst uit te voeren taken.\n\nVoor het verlenen van hoveniersdiensten:\n• Het personeel moet voor uitvoering van de dienst geschoold zijn in hovenierspraktijken met een minder zware belasting voor het milieu.\n  Deze scholing moet ten minste omvatten:\n  • water- en energiebesparende methoden;\n  • reductie, beheer en selectieve inzameling van afvalstoffen;\n  • bescherming van de biodiversiteit;\n  • gebruik van producten op basis van hernieuwbare grondstoffen;\n  • verwerking en beheer van chemische producten en hun verpakking;\n  • veilig en legaal gebruik van bestrijdingsmiddelen, met inbegrip van herbiciden;\n  • training in kritische toepassingen, waaronder het gebruik van chemische stoffen, moet zijn gevolgd voordat het personeel toestemming krijgt om dergelijke werkzaamheden te verrichten.\n\nDe contractant moet na gunning van het contract een opleidingsplan overleggen.\nVoor het verlenen van schoonmaakdiensten:\n• Het personeel moet voor uitvoering van de dienst geschoold zijn in schoonmaakpraktijken met een minder zware belasting voor het milieu.\n  Deze scholing moet omvatten:\n  • water- en energiebesparende methoden;\n  • afvalreductie;\n  • reductie van PM10-stof;\n  • reductie van verbruiksgoederen;\n  • veilig gebruik van chemische stoffen;\n  • training in kritische toepassingen, waaronder het gebruik van chemische stoffen, moet zijn gevolgd voordat het personeel toestemming krijgt om dergelijke werkzaamheden te verrichten.\n\nDe contractant moet na gunning van het contract een opleidingsplan overleggen.\nVoor het bedienen van machines en voertuigen:\n• Alle bedieners van machines en voertuigen die bij het verlenen van de dienst zijn betrokken, moeten voldoende geschoold zijn om de contractueel overeengekomen diensten op ecologisch verantwoorde wijze te leveren door een efficiënt gebruik van toepasselijke machines en voertuigen.\n• Alle bedieners van machines en voertuigen die gedurende de looptijd van de overeenkomst bij het verlenen van de dienst zijn betrokken, moeten regelmatig (ten minste één keer per maand) informatie ontvangen aangaande de door hen bereikte brandstofefficiëntie.\n\nDe jaargegevens omtrent opleiding van medewerkers moeten voor verificatiedoeleinden beschikbaar worden gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 90"
+                },
+                "contractual_condition": {
+                  "title": "Toelichting",
+                  "text": "Medewerkers die de relevante opleiding hebben genoten binnen een formeel onderwijssysteem, kunnen van deze verplichting worden vrijgesteld.\n\nAanbevolen waarden\n• Voor vast personeel en tijdelijke medewerkers met een overeenkomst van meer dan een jaar: 16 uur initiële opleiding; ieder jaar 8 uur nascholing.\n• Voor tijdelijke medewerkers met een overeenkomst van niet meer dan een jaar: 8 uur initiële opleiding.\n\nDe duur van de opleiding kan worden aangepast aan de behoeften en voorwaarden van de inschrijvingen."
+                }
+              },
+              {
+                "code": "CUV6",
+                "title": "Maatregelen op het gebied van milieubeheer",
+                "specification_title": "Alleen van toepassing op de inkoop van hoveniersdiensten.",
+                "specification": "Tijdens de looptijd van de overeenkomst documenteert en rapporteert de dienstverlener:\n• de resultaten van de controle van indicatoren;\n• de onderhoudsactiviteiten; en\n• de resultaten van de evaluatie en van de correctieve en preventieve maatregelen, indien van toepassing,\n\nin overeenstemming met de schriftelijke procedures die zijn verstrekt voor het controleren van de milieubeheermaatregelen van TS1.\n\nDeze verslagen worden voor verificatiedoeleinden beschikbaar gesteld aan de aanbestedende dienst.\n\nDe aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving en het toekennen van bonussen bij het ruimschoots voldoen aan de doelstellingen van de procedures om de milieuaspecten te optimaliseren.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 92"
+                }
+              }
+            ]
+          },
+          "machines": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Uitlaatemissies van motoren van machines",
+                "specification_title": "Opmerking: dit criterium is uitsluitend van toepassing indien de vervangende machine voorziet in operationele behoeften zoals vastgesteld door de aanbestedende dienst en overeengekomen met de dienstverlener.",
+                "specification": "Indien een voor de dienst gebruikte machine tijdens de contractperiode moet worden vervangen, moet de vervanging een machine zonder uitlaatemissies zijn (wanneer dergelijke producten op de markt verkrijgbaar zijn).\n\nDe jaargegevens omtrent het onderhouds- en vervangingsschema van machines moeten voor verificatiedoeleinden beschikbaar worden gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 59"
+                },
+                "contractual_condition": {
+                  "title": "Toelichting",
+                  "text": "Vervanging van een machine wordt aanbevolen wanneer de machine het einde van haar nuttige levensduur nadert of in geval van onherstelbare schade.\n\nMachines met uitlaatemissies gelijk aan nul kunnen werken zonder dat de motor enige directe uitlaatemissies produceert."
+                }
+              },
+              {
+                "code": "CUV2",
+                "title": "Smeermiddelen van machines",
+                "specification": "De contractant moet waarborgen dat de hydraulische vloeistoffen, transmissie-oliën, kettingzaagoliën, tweetaktoliën en vetten die worden gebruikt in machines voor het onderhoud van de openbare ruimte, voldoen aan TS4 aangaande smeermiddelen voor machines.\n\nDe gegevens hieromtrent worden door de contractant bijgehouden en beschikbaar gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.\n\nTenzij de fabrikant van de machines een ander type smeermiddel aanbeveelt, moet de contractant de smeermiddelen die worden gebruikt in machines waarmee de dienst wordt verleend, in geval van viertaktsmotoren door smeermiddelen die voldoen aan TS4 aangaande smeermiddelen voor machines voor viertaktmotoren.\n\nDe gegevens hieromtrent worden door de contractant bijgehouden en beschikbaar gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 59"
+                }
+              }
+            ]
+          },
+          "voertuigen": {
+            "sub_tabs": [
+              {
+                "key": "core",
+                "label": "🔴 Kerncriteria",
+                "label_short": "Kerncriteria"
+              },
+              {
+                "key": "extended",
+                "label": "🟠 Uitgebreide criteria",
+                "label_short": "Uitgebreide criteria"
+              }
+            ],
+            "default_sub_tab": "core",
+            "core_criteria": [
+              {
+                "code": "CUV2",
+                "title": "Voertuigbanden – rolweerstand",
+                "specification_title": "Alleen van toepassing bij de inkoop van wagenparkdiensten én indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend.",
+                "specification": "De contractant moet de versleten banden van de voertuigen waarmee de dienst wordt verleend, vervangen door:\n\na) nieuwe banden die voldoen aan de hoogste brandstofrendementklasse voor rolweerstand uitgedrukt in kg/ton, zoals omschreven in Verordening (EG) nr. 1222/2009 van het Europees Parlement en de Raad van 25 november 2009 inzake de etikettering van banden met betrekking tot hun brandstofefficiëntie en andere essentiële parameters. Deze contractuele uitvoeringsvoorwaarde belet niet het gebruik van banden met de beste grip op nat wegdek uit overwegingen van veiligheid;\n\nOF\n\nb) van een nieuw loopvlak voorziene banden (coverbanden).\n\nDe gegevens hieromtrent worden door de contractant bijgehouden en beschikbaar gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 82"
+                }
+              },
+              {
+                "code": "CUV3",
+                "title": "Bandenlawaai",
+                "specification_title": "Alleen van toepassing bij de inkoop van wagenparkdiensten én indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend. Opmerking: deze contractuele uitvoeringsvoorwaarde is niet van toepassing op voertuigen met van een nieuw loopvlak voorziene banden.",
+                "specification": "De contractant moet de versleten banden van de voertuigen waarmee de dienst wordt verleend, vervangen door nieuwe banden waarvan het externe emissieniveau van het rolgeluid 3 dB lager is dan de maximumwaarde die is vastgesteld in bijlage II, deel C, bij Verordening (EG) nr. 661/2009. Dit is gelijkwaardig aan de bovenste categorie (van de drie beschikbare categorieën) van de externe-rolgeluidsklasse van bandenetiketten van de EU.\nHet externe emissieniveau van het rolgeluid wordt getest overeenkomstig bijlage I bij Verordening (EG) nr. 1222/2009.\n\nDe gegevens hieromtrent worden door de contractant bijgehouden en beschikbaar gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 82"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Smeerolie met lage viscositeit",
+                "specification_title": "Alleen van toepassing bij de inkoop van wagenparkdiensten én indien de exploitanten eigenaar of huurder zijn van het wagenpark waarmee de dienst wordt verleend.",
+                "specification": "Tenzij de fabrikant van het voertuig andere typen smeermiddel aanbeveelt, moet de contractant de smeermiddelen van de voertuigen waarmee de dienst wordt verleend, vervangen door motorsmeerölie met lage viscositeit. Deze komen overeen met SAE-klasse 0W30 of 5W30 of gelijkwaardig.\n\nDe gegevens hieromtrent worden door de contractant bijgehouden en beschikbaar gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.",
+                "source": {
+                  "text": "🇪🇺 EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het onderhoud van wegen - Pag. 82"
+                }
+              }
+            ]
+          }
+        }
+      }
     }
   ]
 }
