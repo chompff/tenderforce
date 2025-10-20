@@ -27,12 +27,6 @@
       "title": "Uitvoeringsvoorwaarden",
       "requirement_level": "verplicht",
       "intro": "De uitvoeringsvoorwaarden bepalen hoe de opdrachtnemer tijdens de uitvoering moet aantonen dat hij aan de EED-verplichting voldoet. Omdat de verplichting alleen geldt bij de aanschaf van nieuwe producten, moeten controle- en meldplichten specifiek daarop gericht zijn.",
-      "warnings": [
-        {
-          "severity": "red",
-          "text": "Let op: Zonder duidelijke uitvoeringsvoorwaarden is naleving niet te controleren en ontbreekt een afdwingbare basis om bewijsstukken of meldingen tijdens de uitvoering te eisen."
-        }
-      ],
       "steps_title": "Neem de volgende stappen:",
       "steps": [
         "Leg vast dat de opdrachtnemer verantwoordelijk is voor naleving van de eisen uit Richtlijn (EU) 2023/1791, bijlage IV (sub a, b en d) bij alle nieuwe producten die hij voor de uitvoering van de dienst aanschaft.",
@@ -45,7 +39,7 @@
           "text": "De opdrachtnemer waarborgt dat de nieuwe producten die hij aanschaft voor de uitvoering van de dienst voldoen aan de energie-efficiëntie-eisen genoemd in Richtlijn (EU) 2023/1791, bijlage IV (sub a, b en d).\n\nOp verzoek van de aanbestedende dienst overlegt de opdrachtnemer passende bewijsstukken, zoals energielabels of conformiteitsverklaringen, waaruit blijkt dat aan deze eisen is voldaan.\n\nIndien dergelijke bewijsstukken ontbreken of niet voldoen, kan de aanbestedende dienst passende maatregelen treffen, waaronder het stellen van een hersteldrempel of de vervanging van niet-conforme producten."
         }
       ],
-      "content_order": ["intro", "warnings", "steps", "example_texts"]
+      "content_order": ["intro", "steps", "example_texts"]
     }
   ]
 }

@@ -22,12 +22,6 @@
       "title": "Technische specificaties",
       "requirement_level": "verplicht",
       "intro": "U bent verplicht te voldoen aan de geldende Ecodesign vereisten. Deze eisen zijn vastgelegd in verschillende product-specifieke (uitvoerings)verordeningen.",
-      "warnings": [
-        {
-          "severity": "red",
-          "text": "Als de ecodesignvereisten niet worden opgenomen in de aanbestedingsstukken, kan het voorkomen dat producten worden toegelaten die later niet blijken te voldoen aan de EU-regels."
-        }
-      ],
       "steps": [
         "Neem op in de aanbestedingsdocumenten dat het product valt onder de toepassingsfeer van de Ecodesign-richtlijn 2009/125/EG."
       ],
@@ -69,19 +63,13 @@
         "Neem de ecodesign vereisten uit de relevante (uitvoerings)verordeningen op in de aanbestedingsdocumenten.",
         "Vraag bij aanschaf of in de technische specificaties om een verklaring van conformiteit of productinformatie waaruit blijkt dat het apparaat voldoet aan de eisen van Verordening (EG) nr. 1275/2008 (zoals gewijzigd door 801/2013) inzake energieverbruik in [stand-by- en uit-modus](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32013R0801)."
       ],
-      "content_order": ["intro", "warnings", "steps", "example_texts", "product_links", "additional_steps"]
+      "content_order": ["intro", "steps", "example_texts", "product_links", "additional_steps"]
     },
     {
       "key": "execution_conditions",
       "title": "Uitvoeringsvoorwaarden",
       "requirement_level": "optioneel",
       "intro": "Aanbestedende diensten zijn verplicht te voldoen aan de geldende ecodesign vereisten. Omdat de daadwerkelijke controle plaatsvindt bij de levering, moet dit via contractuele voorwaarden geborgd worden.",
-      "warnings": [
-        {
-          "severity": "yellow",
-          "text": "Let op: Zonder expliciete uitvoeringsvoorwaarden ontbreekt een toetsingskader voor naleving, waardoor u risico loopt bij audits of Europese rapportages."
-        }
-      ],
       "steps_title": "Neem de volgende stappen:",
       "steps": [
         "Leg ecodesignvereisten contractueel vast: beschrijf in de opdrachtovereenkomst dat geleverde producten moeten voldoen aan de toepasselijke ecodesignverordening(en) genoemd in Richtlijn 2009/125/EG.",
@@ -104,7 +92,7 @@
           "legal_basis": "Richtlijn (EU) 2023/1791, art. 31 jo. Bijlage IV(b)"
         }
       ],
-      "content_order": ["intro", "warnings", "steps", "contractual_conditions"]
+      "content_order": ["intro", "steps", "contractual_conditions"]
     }
   ]
 }

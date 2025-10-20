@@ -22,12 +22,6 @@
       "title": "Technische specificaties",
       "requirement_level": "verplicht",
       "intro": "Volgens de herziene EED moet bij bovendrempelige aanbestedingen alleen worden gevraagd naar producten met een energie-efficiëntieklasse die behoort tot de hoogste twee [significant bevolkte](popup:BEGRIPPEN||De term \"significant bevolkt\" verwijst naar energie-efficiëntieklassen die een aanzienlijk aantal producten bevatten. Bijvoorbeeld, als producten in de klassen A en B slechts 2% van de markt uitmaken, worden deze niet als significant bevolkt beschouwd. In dat geval zouden de klassen D en E als de twee hoogst bevolkte klassen worden beschouwd en dus de minimale vereiste zijn voor aanbestedingen.||) klassen. U moet daarom in de technische specificaties vastleggen dat uitsluitend de meest energie-efficiënte producten worden toegelaten.",
-      "warnings": [
-        {
-          "severity": "red",
-          "text": "Let op: Indien in de aanbestedingsstukken niet wordt vastgelegd dat uitsluitend de hoogst beschikbare energieklassen worden toegestaan, kan een niet-conform product onterecht worden toegelaten. Dit is in strijd met de EED."
-        }
-      ],
       "steps": [
         "Vermeld dat de levering onder de reikwijdte van de [energie-etiketteringsregels valt](popup:WETTELIJKE BASIS||Zij kopen, in het geval van producten die onder een gedelegeerde handeling krachtens Verordening (EU) 2017/1369 of een daaraan gerelateerde uitvoeringsrichtlijn van de Commissie vallen, alleen die producten aan welke voldoen aan het criterium van artikel 7, lid 2,[1] van die verordening.||Artikel 7, lid 2 (EU) 2017/1369).",
         "Ga naar de [EPREL website](https://eprel.ec.europa.eu/screen/home).",
@@ -52,13 +46,7 @@
       "title": "Uitvoeringsvoorwaarden",
       "requirement_level": "optioneel",
       "intro": "De contractuele uitvoeringsvoorwaarden borgen dat de opdrachtnemer bij levering aantoont dat de producten daadwerkelijk behoren tot de hoogste twee energieklassen die feitelijk op de markt beschikbaar zijn.",
-      "content_order": ["intro", "warnings", "steps", "contractual_conditions"],
-      "warnings": [
-        {
-          "severity": "yellow",
-          "text": "Let op: Zonder duidelijke uitvoeringsvoorwaarden is naleving niet te controleren en ontbreekt de basis om bewijsstukken of meldingen tijdens de uitvoering te eisen."
-        }
-      ],
+      "content_order": ["intro", "steps", "contractual_conditions"],
       "steps": [
         "Verplicht bewijs bij levering: opdrachtnemer levert het energie-etiket en productinformatiefiche uit de EPREL-database.",
         "Stel vast dat producten zonder geldig etiket/fiche, of met een lagere energieklasse, worden geweigerd.",
