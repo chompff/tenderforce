@@ -2,7 +2,7 @@
   "obligation_id": "gpp-imaging-equipment",
   "archetype": "GPP",
   "title": "EU GPP criteria of nationaal gelijkwaardig",
-  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de EU-criteria inzake groene overheidsopdrachten voor beeldvormende apparatuur, verbruiksartikelen en printdiensten toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
+  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de [EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/6e860430-c64a-4444-9561-b42b2ec412ab/details) toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
   "badges": ["GPP", "NL", "EU"],
   "colors": {
     "text": "#356534",
@@ -20,23 +20,1007 @@
   ],
   "sections": [
     {
+      "key": "preliminary_assessment",
+      "title": "Voorlopige beoordeling van bestaande apparatuur en aankoopbehoeften",
+      "requirement_level": "optioneel",
+      "intro": "De voorlopige beoordeling van bestaande apparatuur is bedoeld als een voorbereidende stap vóór een mogelijke aanbesteding of aankoop van nieuwe [grafische apparatuur](popup:TOELICHTING||**Categorie 1: Grafische apparatuur**\n\nProducten die op de markt worden gebracht voor gebruik op kantoor of huishoudelijk gebruik, of beide, en die een van de volgende doeleinden, of beide, dienen:\n\n• een afgedrukte afbeelding in de vorm van een papieren document of foto produceren met behulp van een markeringsproces op basis van een digitaal beeld dat wordt geleverd door een netwerk-/kaartinterface of een fysiek document, met behulp van een scan- of kopieerproces;\n\n• een digitale afbeelding produceren op basis van een fysiek document, met behulp van een scan- of kopieerproces.\n\n**Hieronder vallen geen:**\n\n• copyprinters,\n\n• frankeerapparaten,\n\n• facsimile-apparaten en faxapparaten.\n\nDit document is niet van toepassing op grafische apparatuur die op grond van artikel 1, lid 2, onder a, van Richtlijn 93/42/EEG wordt beschouwd als medisch hulpmiddel.\n\nEU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten||) zoals printers, kopieerapparaten en multifunctionals.",
+      "warnings": [],
+      "intro_continuation": "Deze voorlopige beoordeling gebeurt vóórdat een aanbesteding of aankoop van nieuwe apparatuur wordt gestart, maar alleen als:\n1. De aanbestedende dienst besluit het bestaande apparaatgebruik te optimaliseren vóór vervanging, én\n2. De aanbestedende dienst niet zelf (met eigen personeel) deze beoordeling wil of kan uitvoeren.\n\nDe voorlopige beoordeling wordt uitgevoerd door een andere leverancier dan de potentiële leverancier.",
+      "steps": [
+        "Bepaal of optimalisatie van bestaande apparatuur gewenst is vóór vervanging.",
+        "Kies of de beoordeling intern wordt uitgevoerd of wordt uitbesteed aan een externe dienstverlener. *Als de beoordeling extern wordt uitgevoerd, neem dan de onderstaande CPC1-clausule met prestatie-eisen op.*",
+        "Verzamel per locatie gegevens over type, aantal, model en leeftijd van apparaten.",
+        "Classificeer elk apparaat als behouden, retourneren, hergebruiken, reviseren of recyclen.",
+        "Analyseer de resultaten en stel een kort rapport op (of laat dit doen door de externe partij) met aanbevelingen voor vervanging of herinzet.",
+        "Beslis op basis van het rapport welke apparatuur wordt behouden, vervangen of verwijderd."
+      ],
+      "steps_ordered": true,
+      "example_texts": [
+        {
+          "label": "Toon clausule met prestatie-eisen voor externe beoordelaars",
+          "text": "**CPC1: Clausule met prestatie-eisen**\n\nDe dienstverlener moet alle bestaande grafische apparatuur op de locatie(s) van de aanbestedende dienst beoordelen en de resultaten hiervan aan de aanbestedende dienst verstrekken. De beoordeling moet de volgende elementen bevatten:\n• aantal modellen van grafische apparaten op elke locatie;\n• naam, modelnummer en type van elk model van grafisch apparaat;\n• leeftijdsschatting van elk model van grafisch apparaat.\n\nDe dienstverlener moet elk model van grafisch apparaat indelen in een categorie die aangeeft wat er mee moet gebeuren. Hierbij baseert hij zich op de voornaamste printbehoeften, opgegeven door de aanbesteders (of naar voren gekomen uit de analyse van de gegevens, geregistreerd door de bestaande apparaten) en op de resultaten van de bovengenoemde beoordeling. Een aantal voorbeelden van categorieën:\n• behouden: product moet worden behouden om langer op de locatie van de aanbestedende dienst te worden gebruikt;\n• retourneren: product moet worden geretourneerd aan huidige of eerdere leverancier (indien van toepassing);\n• hergebruiken: product moet worden verkocht voor hergebruik elders dan op de locatie van de aanbestedende dienst;\n• reviseren: aan het product moet worden gewerkt om de prestaties en/of functionaliteit te verbeteren of herstellen of om te voldoen aan de toepasselijke technische normen of wettelijke eisen, zodat het opnieuw een volledig functioneel product wordt dat voor het oorspronkelijk beoogde doel kan worden gebruikt;\n• recyclen: het product moet worden ingezonden voor afdanking.\n\nOp basis van de bovengenoemde elementen moet de dienstverlener een kort rapport opstellen waarin hij de aanbesteders informeert over het bijkomende aantal nieuwe producten dat moet worden aangeschaft en de kenmerken ervan."
+        }
+      ]
+    },
+    {
       "key": "technical_specs",
       "title": "Technische specificaties",
       "requirement_level": "verplicht",
-      "intro": "De GPP criteria voor beeldvormende apparatuur, verbruiksartikelen en printdiensten zijn nog in ontwikkeling. Deze module bevat voorlopig placeholder content.",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als technische specificaties. Daarmee worden de inhoudelijke eisen vastgelegd die aan het werk, de levering of de dienst worden gesteld.",
       "warnings": [
         {
-          "severity": "yellow",
-          "text": "Let op: De inhoud van deze module is nog niet compleet. De definitieve GPP criteria worden later toegevoegd."
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale technische specificaties) uit de EU GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn dient u deze op te nemen."
         }
       ],
       "steps": [
-        "Raadpleeg de EU GPP criteria voor beeldvormende apparatuur, verbruiksartikelen en printdiensten wanneer deze beschikbaar komen.",
-        "Vergelijk met de Nederlandse MVI criteria op www.mvicriteria.nl.",
-        "Neem de strengste criteria op in uw aanbestedingsdocumenten."
+        "Kies de categorie in de tabel hieronder. De GPP definieert technische specificaties voor:\nCategorie 1: [Grafische apparatuur](popup:TOELICHTING||**Categorie 1: Grafische apparatuur**\n\nProducten die op de markt worden gebracht voor gebruik op kantoor of huishoudelijk gebruik, of beide, en die een van de volgende doeleinden, of beide, dienen:\n\n• een afgedrukte afbeelding in de vorm van een papieren document of foto produceren met behulp van een markeringsproces op basis van een digitaal beeld dat wordt geleverd door een netwerk-/kaartinterface of een fysiek document, met behulp van een scan- of kopieerproces;\n\n• een digitale afbeelding produceren op basis van een fysiek document, met behulp van een scan- of kopieerproces.\n\n**Hieronder vallen geen:**\n\n• copyprinters,\n\n• frankeerapparaten,\n\n• facsimile-apparaten en faxapparaten.\n\nDit document is niet van toepassing op grafische apparatuur die op grond van artikel 1, lid 2, onder a, van Richtlijn 93/42/EEG wordt beschouwd als medisch hulpmiddel.\n\nEU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten||)\nCategorie 2: [Verbruiksartikelen](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/6e860430-c64a-4444-9561-b42b2ec412ab/details)\nCategorie 3: [Printdiensten](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/6e860430-c64a-4444-9561-b42b2ec412ab/details)",
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
       ],
       "steps_ordered": true,
-      "example_texts": []
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "grafische_apparatuur",
+            "label": "📋 Grafische apparatuur",
+            "label_short": "Grafische apparatuur"
+          },
+          {
+            "key": "verbruiksartikelen",
+            "label": "🖨️ Verbruiksartikelen",
+            "label_short": "Verbruiksartikelen"
+          },
+          {
+            "key": "printdiensten",
+            "label": "🖨️ Printdiensten",
+            "label_short": "Printdiensten"
+          }
+        ],
+        "default_main_tab": "grafische_apparatuur",
+        "data": {
+          "grafische_apparatuur": {
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Minimale energie-efficiëntie grafische apparatuur",
+                "specification": "**Van toepassing op grafische apparatuur waarvoor de Energy Star-vereisten met betrekking tot energie-efficiëntie gelden.**\n\nGrafische apparatuur moet voldoen aan alle vereisten met betrekking tot energie-efficiëntie en -beheer die worden vermeld in de meest recent gepubliceerde ENERGY STAR-specificatie (versie moet worden gespecificeerd in de openbare aanbesteding, met inachtneming van de toelichting).\n\nBij publicatie is de geldende ENERGY STAR-versie 3.0. Updates kunnen via [deze link](https://www.energystar.gov/products/imaging_equipment) worden geraadpleegd.\n\n**Toelichting**\n\nTijdens het eerste jaar na publicatie van een nieuwe versie van ENERGY STAR: om de beschikbaarheid van producten voor de aanbestedingsprocedure te garanderen, moeten in TS1 tijdens deze periode zowel de nieuwe als de voorgaande versie van ENERGY STAR worden toegelaten.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 18"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet rapporten verstrekken van tests die zijn uitgevoerd volgens de testmethodes, beschreven in de versie(s) van ENERGY STAR die in de openbare aanbesteding wordt of worden vermeld. Apparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Mogelijkheid van dubbelzijdig kopiëren",
+                "specification": "**Van toepassing op grafische apparatuur waarvoor de Energie Star-vereisten voor dubbelzijdig kopiëren gelden.**\n\nGrafische apparatuur moet voldoen aan de vereisten voor dubbelzijdig printen, vermeld in de meest recent gepubliceerde ENERGY STAR-specificatie (de versie moet worden gespecificeerd in de openbare aanbesteding) en dubbelzijdig printen moet als standaard worden ingesteld.\n\nBij publicatie is de geldende ENERGY STAR-versie 3.0. Updates kunnen via [deze link](https://www.energystar.gov/products/imaging_equipment) worden geraadpleegd.\n\n**Toelichting**\n\nTijdens het eerste jaar na publicatie van een nieuwe versie van ENERGY STAR: om de beschikbaarheid van producten voor de aanbestedingsprocedure te garanderen, moeten in TS1 tijdens deze periode zowel de nieuwe als de voorgaande versie van ENERGY STAR worden toegelaten.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Apparatuur die is geregistreerd in de ENERGY STAR-database of beschikt over een relevante Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht. Een verklaring van de fabrikant waarin wordt aangetoond dat aan deze vereisten is voldaan, wordt ook aanvaard."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Meerdere pagina's op één vel printen",
+                "specification": "Grafische apparatuur moet standaard de mogelijkheid bieden twee of meer pagina's van een document op één vel papier te printen wanneer het product wordt bestuurd met behulp van de oorspronkelijke, door de fabrikant geleverde software (printerstuursoftware).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie verschaffen waarmee wordt aangetoond dat aan deze vereiste wordt voldaan. Producten met een toepasselijke Type I-milieukeur die voldoet aan de vermelde vereisten, worden conform geacht."
+                }
+              },
+              {
+                "code": "TS4",
+                "title": "Mogelijkheid om gerecycled papier te gebruiken",
+                "specification": "In grafische apparatuur moet gerecycled papier kunnen worden gebruikt dat voldoet aan de kwaliteitseisen van EN 12281:Papier voor drukwerk en kantoor voor kopieerprocessen met droïere toner.\n\nScanners vallen niet onder het toepassingsgebied van dit criterium.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een verklaring overleggen waarin hij bevestigt of aantoont dat in het product gerecycled papier kan worden gebruikt dat voldoet aan de vereisten van EN 12281. Producten met een toepasselijke Type 1-milieukeur die voldoet aan de vermelde vereisten, worden conform geacht."
+                }
+              },
+              {
+                "code": "TS5",
+                "title": "Mogelijkheid om gereviseerde cartridges te gebruiken",
+                "specification": "De producten mogen niet zijn ontworpen op een manier die het gebruik van gereviseerde toner- en/of inktcartridges en recipiënten belemmert. Er mogen geen constructiegerelateerde, op software gebaseerde of andere maatregelen aanwezig zijn of worden getroffen die het gebruik van gereviseerde cartridges en recipiënten belemmeren.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 20"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een verklaring overleggen waarin hij bevestigt of aantoont dat in het product gereviseerde cartridges en recipiënten kunnen worden gebruikt. Producten met een toepasselijke Type 1-milieukeur die voldoet aan de vermelde vereisten, worden conform geacht."
+                }
+              },
+              {
+                "code": "TS8a",
+                "title": "Beschikbaarheid van reserveonderdelen",
+                "specification": "De hieronder vermelde reserveonderdelen moeten ten minste gedurende 3 jaar na de aankoopdatum door de fabrikant ter beschikking worden gesteld.\n• Printkoppen (indien niet beschouwd als verbruiksartikel)\n• Laser (indien niet beschouwd als verbruiksartikel)\n• Fusereenheid (indien niet beschouwd als verbruiksartikel)\n• Drumeenheden (indien niet beschouwd als verbruiksartikel)\n\nDe fabrikant, importeur of bevoegde vertegenwoordigers moeten garanderen dat de bovengenoemde reserveonderdelen binnen 15 werkdagen na ontvangst van het verzoek worden geleverd.\n\n**Toelichting**\n\nReserveonderdelen zijn alle componenten of samenstellen die defect kunnen raken en/of naar verwachting binnen de levensduur van het product zullen moeten worden vervangen. Andere onderdelen die normaliter een langere levensduur hebben dan de gebruikelijke levensduur van het product, zijn geen reserveonderdelen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie overleggen waarin wordt bevestigd dat de reserveonderdelen beschikbaar zullen zijn gedurende de in de criteria vermelde termijnen.\n\nApparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              },
+              {
+                "code": "TS8b",
+                "title": "Ontwerp voor demontage en reparatie",
+                "specification": "Grafische apparatuur moet worden ontworpen om demontage en reparatie te vergemakkelijken. Er moet worden voldaan aan de volgende vereisten:\n• Onderdelen van de behuizing, het chassis, elektrische/elektronische eenheden en cartridges/recipiënten moeten kunnen worden gescheiden of gekoppeld met behulp van scheidingshulpmiddelen(1).\n• Elektrische/elektronische eenheden en componenten als accu's en condensatoren waarvan de bestanddelen mogelijik gevaarlijke stoffen bevatten, evenals fluorescentielampen die kwik bevatten, moeten gemakkelijk kunnen worden gevonden en verwijderd.\n• De behuizing, het chassis en de elektrische/elektronische eenheden moeten kunnen worden gedemonteerd met gereedschap uit de categorieën A, B en C van de EN 45554:2020-norm(2).\n• De schroefverbindingen en onderdelen van de behuizing, het chassis en elektrische/elektronische eenheden vast te zetten, moeten kunnen worden verwijderd met drie of minder verschillende gereedschappen.\n• Voor de behuizing en het chassis zijn alleen herbruikbare bevestigingsmiddelen toegestaan(3).\n• Eén persoon moet de gehele eenheid kunnen demonteren (er hoeft bijv. niet meer dan één klikverbindingstuk tegelijk te worden losgemaakt).\n• De onderdelen van de behuizing mogen geen chemische samenstellen bevatten.\n• De fabrikant heeft een voorbeelddemontage uitgevoerd waarin hij verwijst naar de bovengenoemde ontwerpkenmerken en heeft hiervan een opname gemaakt, met extra aandacht voor de zwakke punten.\n• In de servicehandleiding moet worden vermeld hoe de onderdelen moeten worden vervangen. De handleiding moet een explosietekening van het apparaat bevatten, met vermelding van de onderdelen die kunnen worden bereikt en vervangen en de gereedschappen die hiervoor nodig zijn. De servicehandleiding moet door iedereen gratis online kunnen worden geraadpleegd.\n\n(1): met de term 'scheidingshulpmiddelen' wordt bijvoorbeeld verwezen naar voorbewerkte breekpunten.\n\n(2): gereedschappen uit de categorieën A, B en C, als gedefinieerd in Tabel A.2 - Classificatie van processen op basis van de benodigde gereedschappen.\n\nDit betekent dat alle gereedschappen behalve bedrijfsgebonden gereedschappen zijn toegestaan. Bedrijfsgebonden gereedschappen zijn gereedschappen die niet beschikbaar zijn voor aanschaf door alle algemene publiek of waarop patenten rusten waarvoor op eerlijke, redelijke en niet-discriminerende voorwaarden geen licentie kan worden verkregen.\n\n(3): een oorspronkelijke bevestigingssysteem dat volledig kan worden hergebruikt, of elementen van het bevestigingssysteem die niet kunnen worden hergebruikt, maar wel worden geleverd met het nieuwe onderdeel voor een reparatie-, revisie- of upgrade-proces.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 23"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een verklaring van conformiteit met de eerder genoemde vereisten overleggen, evenals een reparatiehandleiding (fysiek document of een koppeling naar een onlinelocatie waar het document kan worden geraadpleegd). Deze handleiding moet een explosietekening van het product bevatten, met vermelding van de onderdelen die kunnen worden bereikt en vervangen en het gereedschap dat daarvoor nodig is.\n\nDe reparatie-informatie moet worden verstrekt overeenkomstig EN 45559 (methodes voor het verstrekken van informatie over elementen van de materiaal efficiëntie en energiegerelateerde producten). Apparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              },
+              {
+                "code": "TS8c",
+                "title": "Ontwerpen voor recycling",
+                "specification": "Grafische apparatuur moet worden ontworpen met de volgende ontwerpelementen die recycling vergemakkelijken:\n• kunststof onderdelen die meer dan 25 g wegen en een plat oppervlak hebben van ten minste 200 mm², moeten worden geleverd met een duurzame markering op het materiaal conform de ISO 11469-norm (met inachtneming van ISO 1043) of een gelijkwaardige norm;\n• in onderdelen van de behuizing en cartridges/recipiënten mogen op kunststof onderdelen geen galvanische coatings worden gebruikt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 24"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie overleggen die aantoont dat is voldaan aan alle vereisten met betrekking tot recyclevriendelijk ontwerp. Apparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              },
+              {
+                "code": "TS9",
+                "title": "Ontwerpen voor recycling",
+                "specification": "Grafische apparatuur moet (bij tests met de OEM-cartridge) aan de volgende vereisten voor stofemissiewaarden voldoen bij metingen volgens de testprocedure, toegelicht in Blue Angel-specificatie RAL-UZ 205:\n\n**Toegestane testwaarden voor emissies als bepaald overeenkomstig bijlage S-M(1) voor elektrofotografische apparaten**\n\n| Parameter | Eenheid (mg/u) | Monochroom printen<br>1. Desktopapparaten<br>2. Op de vloer gemonteerde apparaten (<250 l) | Printen in kleur<br>1. Desktopapparaten<br>2. Op de vloer gemonteerde apparaten (>250 l) |\n|-----------|---------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|\n| TVOC (2) (voorafgaand aan gebruik) | mg/u | — | — |\n| TVOC (2) (tijdens printen) | mg/u | 10.0 | 18.0 |\n| Benzeen | mg/u | < 0.05 | < 0.05 |\n| Styreen | mg/u | 1,0 | 1,8 |\n| Ozon | mg/u | 1,5 | 3,0 |\n| Stof | mg/u | 4,0 | 4,0 |\n\nPrinters van groot formaat (large format printers, LFP), professionele grafische apparaten en scanners worden uitgesloten van het toepassingsgebied.\n\n(1) Bijlage S-M van Blue Angel-specificatie RAL-UZ 205 (editie van januari 2017, Printers en multifunctionele apparaten).\n\n(2) De lijst met vluchtige organische stoffen die moeten worden gebruikt bij metingen van de emissies van grafische apparatuur met een printfunctie moet worden vastgesteld overeenkomstig Blue Angel-specificatie RAL-UZ 205 (editie van januari 2017) – (bijlage S-M – para. 4.5 Vluchtige organische stoffen).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 27"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet testresultaten overleggen waarin voor elk van de vermelde stoffen de emissiewaarden tijdens het printen worden aangegeven, evenals gedetailleerde informatie over de testprocedure die is gebruikt om de emissiewaarden te meten. Testrapporten voor apparaten met een identieke constructie worden ook aanvaard. De definitie van 'identieke constructie' is gelijk aan de definitie die wordt vermeld in Blue Angel RAL-UZ 205 bijlage B-M bij de elementaire gunningscriteria.\n\nApparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              },
+              {
+                "code": "TS10",
+                "title": "Geluidsemissies",
+                "specification": "Het A-gewogen geluidsvermogensniveau A moet worden gemeten overeenkomstig ISO 7779. Apparaten die in kleur kunnen printen, moeten zowel in monochrome (A,M) als kleurenmodus (A,F) worden getest.\n• Geluidsmetingen moeten worden uitgevoerd zonder optionele randapparatuur.\n• Voor de testactiviteiten moet papier van A4-formaat met een gewicht van 60 g/m² tot 80 g/m² worden gebruikt.\n• Het Adobe Reader-bestand van vier pagina's uit het testpakket van Office moet overeenkomstig B.1 van ISO/IEC 24734 dienen als testpatroon.\n• Er mogen alleen metingen worden uitgevoerd bij enkelzijdig printopdrachten.\n• De geluidsmeting mag alleen worden uitgevoerd bij herhaalde operationele printcycli. Het tijdsinterval van de metingen moet ten minste drie volledige uitvoerrreeksen van het testpatroon van vier pagina's (12 pagina's) omvatten. Het interval moet beginnen na de voorbereiding van het printproces.\n\nVan elk model moeten ten minste drie apparaten worden getest. Het opgegeven A-gewogen geluidsvermogensniveau Ad moet worden gemeten overeenkomstig de procedure van ISO 9296:1988. Het moet worden opgegeven in decibel (dB), met één decimaal. Als de meting van de geluidsemissies alleen kan worden uitgevoerd met één apparaat, mag ter vervanging alleen de volgende formule worden gebruikt om het opgegeven A-gewogen geluidsvermogensniveau Ad te bepalen:\n\n**Ad = A1 + 3,0 dB**\n\n(A1 = A-gewogen geluidsvermogensniveau van één apparaat, in dB met één decimaal)\n\nHet (de) A-gewogen geluidsvermogensniveau(s) van de monochrome modus Ad,mo (en de volledige kleurenmodus A,co, indien van toepassing) mag (mogen) de limiet niet overschrijden. De limiet A,lim moet worden bepaald aan de hand van de paginadoorvoer van de monochrome modus sM en, indien van toepassing, de kleurenmodus sF, met één decimaal en volgens de volgende formule:\n\n**LWA,lim = 47 + 15 * lg (sM/F + 10) dB**\n\nDe waarden van het opgegeven A-gewogen geluidsvermogensniveau Ad in dB met één decimaal en de paginadoorvoer sM/F in ppm moeten in de informatie en op het gegevensblad worden vermeld onder 'Milieu- en gezondheidsspecifieke verklaringen'. Voor apparaten die in kleur kunnen printen, moeten de A-gewogen geluidsvermogensniveaus Ad,M en Ad,F en de overeenkomstige paginadoorvoer M en F zowel voor de monochrome als voor de kleurnemodus worden aangegeven.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 27"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "de inschrijver moet documentatie overleggen, bijvoorbeeld een testrapport, waarin de geluidsemissiewaarden tijdens het printen worden vermeld, gemeten in overeenstemming met de gecombineerde vereisten van ECMA-74 en ECMA-109. De testlaboratoria moeten overeenkomstig zowel ISO/IEC 17025 als ISO 7779 of een gelijkwaardige norm zijn geaccrediteerd voor de desbetreffende metingen. In de documentatie moet ook worden aangegeven of is voldaan aan alle vereisten met betrekking tot het A-gewogen geluidsvermogensniveau.\n\nApparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              },
+              {
+                "code": "TS11",
+                "title": "Zeer zorgwekkende stoffen",
+                "specification": "Stoffen op de kandidatenlijst van REACH mogen niet opzettelijk als component worden toegevoegd aan de kunststoffen in behuizingen en onderdelen van behuizingen.\n\nDeze vereisten gelden ook voor gerecycled materiaal.\n\nHet product moet gegarandeerd conform zijn met de laatste versie van de lijst met zeer zorgwekkende stoffen die één jaar voor de productiedatum beschikbaar was.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 29"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een verklaring van conformiteit met dit criterium overleggen.\n\nApparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              },
+              {
+                "code": "TS14",
+                "title": "Garantie",
+                "specification": "**Dit criterium is niet van toepassing op contracten met een onderhoudsclausule**\n\nZonder hiervoor aanvullende kosten in rekening te brengen, moet de inschrijver minstens een garantie van twee jaar verschaffen, die ingaat op het moment van levering van het product. De garantie moet reparatie of vervanging dekken.\n\nDe garantie moet waarborgen dat de producten zonder extra kosten voldoen aan de in het contract vermelde specificaties.\n\nDe garantie mag niet komen te vervallen als in de grafische apparatuur gebruik wordt gemaakt van hergebruikte/gereviseerde verbruiksartikelen, tenzij kan worden aangetoond dat een slechte werking of schade rechtstreeks is veroorzaakt door het gebruik van een hergebruikt/gereviseerd verbruiksartikel.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 31"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een exemplaar van de garantie- en van de serviceovereenkomst overleggen. De inschrijver moet verklaren dat hij op eigen kosten de conformiteit van de goederen met die in het contract vermelde specificaties zal waarborgen."
+                }
+              },
+              {
+                "code": "TS15a",
+                "title": "Levering van kopieer- en grafisch papier dat voldoet aan de GPP-criteria van de EU",
+                "specification": "**Als de levering van kopieer- en grafisch papier deel uitmaakt van het leveringscontract van de grafische apparatuur.**\n\nKopieer- en grafisch papier dat door de inschrijver wordt aangeboden in het kader van de levering van grafische apparatuur, moet voldoen aan de technische kernspecificaties van de [EU-criteria voor groene overheidsopdrachten voor kopieer- en grafisch papier](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/6e860430-c64a-4444-9561-b42b2ec412ab/details).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 32"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria."
+                }
+              },
+              {
+                "code": "TS15b",
+                "title": "Levering van kopieer- en grafisch papier dat voldoet aan de GPP-criteria van de EU",
+                "specification": "**Indien de levering van verbruiksartikelen voor grafische apparatuur deel uitmaakt van het leveringscontract voor de grafische apparatuur**\n\nVerbruiksartikelen die door de inschrijver worden aangeboden in het kader van de levering van grafische apparatuur, moeten voldoen aan de technische kernspecificaties die zijn opgenomen in de GPP-criteria van de EU, categorie 2: verbruiksartikelen voor grafische apparatuur.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 33"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria."
+                }
+              },
+              {
+                "code": "TS25a",
+                "title": "Gegarandeerde levering van verbruiksartikelen tijdens looptijd contract",
+                "specification": "**Van toepassing op aanbestedingen die de aanschaf van verbruiksartikelen omvatten.**\n\nDe inschrijver moet garanderen dat voor alle grafische apparatuur die tijdens de looptijd van het contract wordt behouden verbruiksartikelen zullen worden geleverd.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 59"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een verklaring van conformiteit met dit criterium overleggen."
+                }
+              },
+              {
+                "code": "TS25b",
+                "title": "Gegarandeerde levering van reserveonderdelen tijdens looptijd contract",
+                "specification": "**Van toepassing op aanbestedingen die de aanschaf van reparatiediensten omvatten.**\n\nDe dienstverlening moet de levering omvatten van reserveonderdelen voor alle bestaande en geïnstalleerde grafische apparatuur die tijdens de looptijd van het contract wordt behouden.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 60"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie overleggen waarin wordt bevestigd dat reserveonderdelen zullen worden geleverd voor alle bestaande en geïnstalleerde grafische apparatuur die tijdens de looptijd van het contract wordt behouden."
+                }
+              },
+              {
+                "code": "TS26",
+                "title": "Gebruiksinstructies voor het beheer van milieuprestaties",
+                "specification": "Er moet een fysieke of online training worden gegeven over, enerzijds, hoe de milieuprestaties van de door de fabrikant geleverde specifieke grafische apparatuur maximaal kan worden benut en, anderzijds, over de beste werkwijzen voor het gebruik van de desbetreffende verbruiksartikelen. In plaats daarvan kan ook een handleiding voor het beheer van de milieuprestaties worden verstrekt. De instructies hiervoor kunnen als specifieke rubriek worden opgenomen in de gebruikshandleiding en/of in digitale vorm geraadpleegd kunnen worden via de website van de fabrikant.\n\nOngeacht de gekozen optie moet deze informatie minstens de volgende elementen bevatten: functies voor papierbeheer, energie-efficiëntie, een efficiënter gebruik en een beter beheer van gebruikte verbruiksartikelen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 60"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Producten met een toepasselijke Type 1-milieukeur die voldoet aan de vermelde vereisten, worden conform geacht. Ook ander gepast bewijs dat wordt voldaan aan de bovengenoemde clausule zal worden aanvaard. Het gaat hier bijvoorbeeld om verklaringen van de fabrikant bij de levering van de apparatuur."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS6",
+                "title": "Beperkt aantal materialen",
+                "specification": "Het aantal materialen dat is gebruikt voor kunststof componenten met een gelijkaardige functie is beperkt tot één materiaal. Van toepassing op:\n– onderdelen van de behuizing, chassis\n– mechanische onderdelen (≥ 25 g).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 21"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een productschema overleggen waarin de toepasselijke kunststof onderdelen en het gebruikte type polymeer worden toegelicht.\n\nApparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              },
+              {
+                "code": "TS7",
+                "title": "Informatie over hoeveelheid na gebruik gerecycleerde kunststof",
+                "specification": "De hoeveelheid na gebruik gerecycleerde kunststof moet worden opgegeven. Deze wordt berekend als percentage van de totale hoeveelheid kunststof (naar gewicht). De percentages moeten worden vermeld in stappen van x <1%; 1% ≤ x < 5%, 5% ≤ x < 10%, 10% ≤ x < 15%, 15% ≤ x < 20% enz. (in intervallen van 5%).\n\nDe volgende onderdelen mogen worden uitgesloten van de berekening: printplaten, kabels, verbindingsstukken, elektronische componenten, optische componenten, elektrostatische-ontladingscomponenten, elektromagnetische-interferentiecomponenten en materialen van bioplastic.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 21"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie overleggen waarin het percentage na gebruik gerecycleerde kunststof wordt gespecificeerd dat is gebruikt in het model van grafisch apparaat (de modellen van grafische apparaten), berekend in overeenstemming met EN 45557. De documentatie kan bestaan uit een verklaring van de fabrikant, een bewijs van conformiteit met een passende milieuregeling die dezelfde ontwerpkenmerken van het product omvat of een ander bewijs­stuk waarin de hoeveelheid na gebruik gerecycleerde kunststof wordt vermeld.\n\nApparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              },
+              {
+                "code": "TS8a",
+                "title": "Beschikbaarheid van reserveonderdelen",
+                "specification": "De hieronder vermelde reserveonderdelen moeten ten minste gedurende 5 jaar na de aankoopdatum door de fabrikant beschikbaar worden gesteld.\n• Opslagapparaten\n• Scaneenheden\n• Printkoppen (indien niet beschouwd als verbruiksartikel)\n• Lasereeenheden (indien niet beschouwd als verbruiksartikel)\n• Fusereeenheden (indien niet beschouwd als verbruiksartikel)\n• Drumeenheden (indien niet beschouwd als verbruiksartikel)\n• Overdrachtsriemen/-sets (indien niet beschouwd als verbruiksartikel)\n• Onderhoudssets (indien niet beschouwd als verbruiksartikel)\n• Onderdelen voor papierinvoer\n• Densiteitssensoren\n• Printplaten voor voeding en bediening\n• Bevestigingsonderdelen van cartridges/recipiënten\n• Externe stroomvoorzieningen\n• Scharnieren.\n\nDe fabrikant, importeur of bevoegde vertegenwoordigers moeten garanderen dat de bovengenoemde reserveonderdelen binnen 15 werkdagen na ontvangst van het verzoek worden geleverd.\n\n**Toelichting**\n\nReserveonderdelen zijn alle componenten of samenstellen die defect kunnen raken en/of naar verwachting binnen de levensduur van het product zullen moeten worden vervangen. Andere onderdelen die normaliter een langere levensduur hebben dan de gebruikelijke levensduur van het product, zijn geen reserveonderdelen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie overleggen waarin wordt bevestigd dat de reserveonderdelen beschikbaar zullen zijn gedurende de in de criteria vermelde termijnen.\n\nApparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              },
+              {
+                "code": "TS8c",
+                "title": "Ontwerpen voor recycling",
+                "specification": "Grafische apparatuur moet worden ontworpen met de volgende ontwerpelementen die recycling vergemakkelijken:\n• kunststof onderdelen die meer dan 25 g wegen en een plat oppervlak hebben van ten minste 200 mm², moeten worden geleverd met een duurzame markering op het materiaal conform de ISO 11469-norm (met inachtneming van ISO 1043) of een gelijkwaardige norm;\n• in onderdelen van de behuizing en cartridges/recipiënten mogen op kunststof onderdelen geen galvanische coatings worden gebruikt;\n• bij tests overeenkomstig ISO 180 of een gelijkwaardige norm mag de aanwezigheid van verf en (niet-galvanische) coatings in onderdelen van de behuizing geen aanzienlijke effecten hebben op de bestendigheid van het kunststofrecyclaat dat van deze onderdelen wordt gemaakt door recycling.\n\n**Toelichting**\n\nVoor de toepassing van dit criterium worden 'aanzienlijke effecten' gedefinieerd als een reductie van > 25% in de lzod-kerfslaagproof van gerecycleerd hars, gemeten volgens ISO 180.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 24"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie overleggen waarin wordt aangetoond dat is voldaan aan alle vereisten voor recyclevriendelijk ontwerp.\n\nVoor de verfvereisten moet een rapport worden overlegd van een geldige mechanische/fysieke test die is uitgevoerd overeenkomstig ISO 180 of een gelijkwaardige norm. Ook testrapporten van derden die zijn verkregen van bedrijven die kunststof recyclen, fabrikanten van hars, of die zijn opgesteld naar aanleiding van onafhankelijke proeftests, worden aanvaard.\n\nApparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              },
+              {
+                "code": "TS9",
+                "title": "Ontwerpen voor recycling",
+                "specification": "Grafische apparatuur moet (bij tests met de OEM-cartridge) aan de volgende vereisten voor stofemissiewaarden voldoen bij metingen volgens de testprocedure, toegelicht in Blue Angel-specificatie RAL-UZ 205.\n\n**Toegestane testwaarden voor emissies als bepaald overeenkomstig bijlage S-M(1) voor elektrofotografische apparaten:**\n\n**Alle waarden in mg/u, behalve voor deeltjesemissies**\n\n| Fase | Parameter | Eenheid | Monochroom printen<br>1. Desktopapparaten<br>2. Op de vloer gemonteerde apparaten (<250 l) | Printen in kleur<br>1. Desktopapparaten<br>2. Op de vloer gemonteerde apparaten (>250 l) |\n|------|-----------|---------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|\n| Voorafgaand aan gebruik | TVOC(2) | mg/u | – | – |\n| Tijdens het printen (= voorafgaand aan gebruik + tijdens printen) | TVOC(2) | mg/u | 10,0 | 18,0 |\n| | Benzeen | mg/u | < 0,05 | < 0,05 |\n| | Styreen | mg/u | 1,0 | 1,8 |\n| | Niet-geïdentificeerde enkelvoudige stoffen (VOS) | mg/u | 0,9 | 0,9 |\n| | Ozon | mg/u | 1,5 | 3,0 |\n| | Stof | mg/u | 4,0 | 4,0 |\n| Tijdens het printen | PER10 PW (deeltjes/10 min) | – | 3,5 × 10¹¹ | 3,5 × 10¹¹ |\n\n**Toegestane testwaarden voor emissies, bepaald overeenkomstig bijlage S-M(1) voor inkjetapparaten**\n\n**Alle waarden in mg/u**\n\n| Fase | Parameter | Eenheid | Monochroom printen<br>1. Desktopapparaten<br>2. Op de vloer gemonteerde apparaten (<250 l) | Printen in kleur<br>1. Desktopapparaten<br>2. Op de vloer gemonteerde apparaten (>250 l) |\n|------|-----------|---------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|\n| Voorafgaand aan gebruik | TVOC(2) | mg/u | – | – |\n| Tijdens het printen (= voorafgaand aan gebruik + tijdens printen) | TVOC(2) | mg/u | 10,0 | 18,0 |\n| | Benzeen | mg/u | < 0,05 | < 0,05 |\n| | Styreen | mg/u | 1,0 | 1,8 |\n| | Niet-geïdentificeerde enkelvoudige stoffen (VOS) | mg/u | 0,9 | 0,9 |\n| | Ozon | mg/u | 1,5 | 3,0 |\n| | Stof | mg/u | 4,0 | 4,0 |\n| Tijdens het printen | PER10 PW (deeltjes/10 min) | – | 3,5 × 10¹¹ | 3,5 × 10¹¹ |\n\nPrinters van groot formaat (large format printers, LFP), professionele grafische apparaten en scanners worden uitgesloten van het toepassingsgebied.\n\n(1) Bijlage S-M van Blue Angel-specificatie RAL-UZ 205 (editie van januari 2017, Printers en multifunctionele apparaten).\n\n(2) De lijst met vluchtige organische stoffen die moeten worden gebruikt bij metingen van de emissies van grafische apparatuur met een printfunctie moet worden vastgesteld overeenkomstig Blue Angel-specificatie RAL-UZ 205 (editie van januari 2017) – (bijlage S-M – para. 4.5 Vluchtige organische stoffen).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 25"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet testresultaten overleggen waarin voor elk van de vermelde stoffen de emissiewaarden tijdens het printen worden aangegeven, evenals gedetailleerde informatie over de testprocedure die is gebruikt om de emissiewaarden te meten. Testrapporten voor producten met een identieke constructie worden ook aanvaard. De definitie van 'identieke constructie' is gelijk aan de definitie die wordt vermeld in Blue Angel RAL-UZ 205 bijlage B-M bij de elementaire gunningscriteria.\n\nApparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              },
+              {
+                "code": "TS12",
+                "title": "Gehalte gevaarlijke stoffen",
+                "specification": "Gehalogeneerde polymeren en gehalogeneerde organische verbindingen mogen niet worden gebruikt als vlamvertragers. Van de vereiste zijn uitgesloten:\n• gefluoreerde biologische additieven (bijvoorbeeld als antidrupmiddel) die worden gebruikt om de fysische kenmerken van kunststoffen te verbeteren, mits de waarde van 0,5% w/w niet overschrijden;\n• gefluoreerde polymeren, zoals PTFE;\n• onderdelen van kunststof met een massa van 25 gram of minder. Deze mogen echter geen PBB's (polybroombifenylen), PBDE's (polybromdi­fenyIethers) of gechloreerde paraffine bevatten. (Deze vrijstelling geldt niet voor toetsen op het bedieningspaneel.);\n• bijzondere kunststof onderdelen die zich in de nabijheid van verwarmingselementen en fuseer eenheden bevinden. Deze onderdelen mogen echter geen PBBs, PBDE's of gechloreerde paraffine bevatten.\n\nStoffen die ten minste een van de kenmerken uit de volgende tabel vertonen, mogen niet opzettelijk als component worden toegevoegd aan de kunststoffen:\n\n**Voorwaarden voor de uitsluiting van bepaalde stoffen van de materialen voor behuizingen en voor onderdelen van behuizingen.**\n\n| Gevarenklasse | Gevarencategorie | CLP-verordening (EG) nr. 1272/2008 |\n|---------------|------------------|-------------------------------------|\n| Carcinogeniteit | Carc. 1A, 1B | H350 Kan kanker veroorzaken |\n| Carcinogeniteit | Carc. 1A, 1B | H350i Kan kanker veroorzaken bij inademing |\n| Mutageniteit kiemcellen | Muta. 1A, 1B | H340 Kan genetische schade veroorzaken |\n| Reproductieve toxiciteit | Repr. 1A, 1B | H360 Kan de vruchtbaarheid of het ongeboren kind schaden |\n\nDeze vereisten gelden ook voor gerecycled materiaal.\n• Het ondersteunende materiaal van printplaten mag geen PBB's (polybroombifenylen), PBDE's (polybroom­difenyIethers) of gechloreerde paraffine bevatten.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 29"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie overleggen waarin wordt aangetoond dat is voldaan aan de vereiste. Apparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              },
+              {
+                "code": "TS13",
+                "title": "Controle over firmware-updates",
+                "specification": "Geen enkele firmware-update mag het gebruik van hergebruikte/gereviseerde verbruiksartikelen belemmeren.\n\nDe grafische apparatuur moet een functie hebben waarmee firmware-updates kunnen worden teruggezet naar eerder geïnstalleerde versies. Deze functie kan zowel worden aangeboden via een met het netwerk verbonden computer als in het grafische apparaat zelf. In de technische documentatie moet in detail worden uitgelegd hoe firmware-updates kunnen worden teruggezet. Als de vorige versie van de firmware van bij de vorige vrij beschikbaar is gesteld op het internet en de gebruikers duidelijke instructies hebben ontvangen over waar ze deze kunnen vinden, dan wordt voldaan aan het criterium.\n\nIn het tegengestelde geval, dus als een software-update het gebruik van hergebruikte/gereviseerde verbruiksartikelen belemmert, moet de inschrijver zich ertoe verbinden dat hij voor een oplossing zal zorgen die het verdere gebruik van de hergebruikte/gereviseerde verbruiksartikelen mogelijk maakt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 31"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie overleggen waaruit blijkt dat is voldaan aan de vereiste. Deze documentatie kan bestaan uit een verklaring van de fabrikant of andere documentatie die de noodzakelijke informatie bevat."
+                }
+              },
+              {
+                "code": "TS14",
+                "title": "Garantie- en serviceovereenkomsten",
+                "specification": "**Dit criterium is niet van toepassing op contracten met een onderhoudsclausule**\n\nDe inschrijver moet minstens een garantie van drie jaar verschaffen, zonder extra kosten, die ingaat op het moment van levering van het product. Deze garantie moet reparatie of vervanging dekken en een serviceovereenkomst bevatten met opties voor ophalen en terugbrengen of voor reparatie ter plekke.\n\nDe garantie moet waarborgen dat de producten zonder extra kosten voldoen aan de in het contract vermelde specificaties.\n\nDe garantie mag niet komen te vervallen als in de grafische apparatuur gebruik wordt gemaakt van hergebruikte/gereviseerde verbruiksartikelen, tenzij kan worden aangetoond dat een slechte werking of schade rechtstreeks is veroorzaakt door het gebruik van een hergebruikt/gereviseerd verbruiksartikel.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 31"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een exemplaar van de garantie- en van de serviceovereenkomst overleggen. De inschrijver moet verklaren dat hij op eigen kosten de conformiteit van de goederen met die in het contract vermelde specificaties zal waarborgen."
+                }
+              },
+              {
+                "code": "TS15a",
+                "title": "Levering van kopieer- en grafisch papier dat voldoet aan de GPP-criteria van de EU",
+                "specification": "**Als de levering van kopieer- en grafisch papier deel uitmaakt van het leveringscontract van de grafische apparatuur.**\n\nKopieer- en grafisch papier dat door de inschrijver wordt aangeboden in het kader van de levering van grafische apparatuur, moet voldoen aan de uitgebreide technische specificaties van de [EU-criteria voor groene overheidsopdrachten voor kopieer- en grafisch papier](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/6e860430-c64a-4444-9561-b42b2ec412ab/details).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 32"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria."
+                }
+              },
+              {
+                "code": "TS15b",
+                "title": "Levering van kopieer- en grafisch papier dat voldoet aan de GPP-criteria van de EU",
+                "specification": "**Indien de levering van verbruiksartikelen voor grafische apparatuur deel uitmaakt van het leveringscontract voor de grafische apparatuur**\n\nVerbruiksartikelen die door de inschrijver worden aangeboden in het kader van de levering van grafische apparatuur, moeten voldoen aan de uitgebreide technische specificaties die zijn opgenomen in de GPP-criteria van de EU, categorie 2: verbruiksartikelen voor grafische apparatuur.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 33"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria."
+                }
+              }
+            ]
+          },
+          "verbruiksartikelen": {
+            "core_criteria": [
+              {
+                "code": "TS16",
+                "title": "Levering van kopieer- en grafisch papier dat voldoet aan de GPP-criteria van de EU",
+                "specification": "Voor alle cartridges/recipiënten die worden geleverd voor gebruik in de desbetreffende grafische apparatuur moet het verwachte paginarendement worden opgegeven.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet documentatie verstrekken met informatie over het paginarendement en de aanverwante testprocedures die worden gebruikt om deze waarden af te leiden. De metingen van het paginarendement voor inkjet- en tonerverbruiksartikelen moeten worden uitgevoerd overeenkomstig de laatste versie van de volgende normen:\n– ISO/IEC 24711,\n– ISO/IEC 19752,\n– ISO/IEC 19798,\n– DIN 33870-1,\n– DIN 33870-2,\nof aan de hand van andere betrouwbare, nauwkeurige en reproduceerbare meetprocedures die rekening houden met de algemeen erkende stand van de techniek.\n\n**Paginarendement:** gemeten aantal afbeeldingen dat kan worden geproduceerd door de cartridge/recipiënt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 39"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie verstrekken met informatie over het paginarendement en de aanverwante testprocedures die worden gebruikt om deze waarden af te leiden. De metingen van het paginarendement voor inkjet- en tonerverbruiksartikelen moeten worden uitgevoerd overeenkomstig de laatste versie van de volgende normen:\n– ISO/IEC 24711,\n– ISO/IEC 19752,\n– ISO/IEC 19798,\n– DIN 33870-1,\n– DIN 33870-2,\nof aan de hand van andere betrouwbare, nauwkeurige en reproduceerbare meetprocedures die rekening houden met de algemeen erkende stand van de techniek.\n\nPaginarendement: gemeten aantal afbeeldingen dat kan worden geproduceerd door de cartridge/recipiënt."
+                }
+              },
+              {
+                "code": "TS19",
+                "title": "Ontworpen voor hergebruik/revisie",
+                "specification": "Cartridges en recipiënten moeten zo worden ontworpen dat de mogelijkheden voor hergebruik/revisie niet worden beperkt.\n\nVoorbeelden van kenmerken waarvan wordt geacht dat ze de mogelijkheden voor revisie beperken of hergebruik ontmoedigen, zijn onder meer de volgende:\n• tekst op de cartridge, recipiënt of verpakking die aangeeft of impliceert dat het product niet is ontworpen om te worden gereviseerd.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet documentatie overleggen waarin expliciet wordt vermeld dat cartridges of recipiënten niet zijn ontworpen om de mogelijkheden voor hergebruik/revisie te beperken.\n\nApparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 44"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie overleggen waarin expliciet wordt vermeld dat cartridges of recipiënten niet zijn ontworpen om de mogelijkheden voor hergebruik/revisie te beperken.\n\nApparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              },
+              {
+                "code": "TS20",
+                "title": "Kwaliteit van verbruiksartikelen",
+                "specification": "Alle cartridges of recipiënten moeten voldoen aan alle eisen van ten minste één breed aanvaarde kwaliteitsnorm voor cartridges/recipiënten.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet documentatie overleggen waarin wordt aangetoond dat cartridges of recipiënten voldoen aan ten minste één erkende kwaliteitsnorm, zoals de DIN 33870-1-reeks, DIN 33870-2-reeks, DIN 33871-1-reeks of het equivalent voor nieuwe cartridges en recipiënten, en de DIN 33871-2-reeks of het equivalent voor gereviseerde cartridges en recipiënten. Apparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 45"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie overleggen waarin wordt aangetoond dat cartridges of recipiënten voldoen aan ten minste één erkende kwaliteitsnorm, zoals de DIN 33870-1-reeks, DIN 33870-2-reeks, DIN 33871-1-reeks of het equivalent voor nieuwe cartridges en recipiënten, en de DIN 33871-2-reeks of het equivalent voor gereviseerde cartridges en recipiënten. Apparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              },
+              {
+                "code": "TS21",
+                "title": "Terugnamesysteem voor cartridges en recipiënten en AEEA-registratie",
+                "specification": "**Dit criterium moet worden toegepast in combinatie met clausule CPC4 over prestatie-eisen.**\n\nAan de aanbestedende dienst moet kosteloos een terugnamesysteem voor gebruikte cartridges en recipiënten worden aangeboden dat erop is gericht cartridges en recipiënten of onderdelen ervan af te voeren voor hergebruik of materiaalrecycling.\n\nDe inschrijver moet de aanbestedende dienst inzamelbakken verschaffen die geschikt zijn voor de inzameling van gebruikte cartridges en recipiënten.\n\nDe inschrijver kan zelf of via een geschikte externe organisatie aan deze verplichtingen voldoen. Voorts moet bij cartridges waarvoor de AEEA-richtlijn geldt een bewijs van AEEA-registratie van de producent worden overlegd (indien van toepassing).\n\n**Toelichting**\n\nPrintercartridges die elektrische/elektronische onderdelen bevatten en elektrische stromen of elektromagnetische velden vereisen om naar behoren te kunnen werken, voldoen aan de definitie van EEA en vallen daarom binnen het toepassingsgebied van de AEEA-richtlijn.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet een verklaring overleggen waarin wordt aangegeven dat er een kosteloos terugnamesysteem voor cartridges en recipiënten ter beschikking zal worden gesteld.\n\nCartridges en recipiënten met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, worden conform geacht.\n\nVoorts moet de inschrijver voor cartridges waarvoor de AEEA-richtlijn geldt, bewijs verschaffen dat de producent is geregistreerd (bijv. een AEEA-registratienummer of -registratiecertificaat of een ander document waaruit blijkt dat de producent op dat moment geregistreerd staat).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 45"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een verklaring overleggen waarin wordt aangegeven dat er een kosteloos terugnamesysteem voor cartridges en recipiënten ter beschikking zal worden gesteld.\n\nCartridges en recipiënten met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, worden conform geacht.\n\nVoorts moet de inschrijver voor cartridges waarvoor de AEEA-richtlijn geldt, bewijs verschaffen dat de producent is geregistreerd (bijv. een AEEA-registratienummer of -registratiecertificaat of een ander document waaruit blijkt dat de producent op dat moment geregistreerd staat)."
+                }
+              },
+              {
+                "code": "TS25a",
+                "title": "Gegarandeerde levering van verbruiksartikelen tijdens looptijd contract",
+                "specification": "**Van toepassing op aanbestedingen die de aanschaf van verbruiksartikelen omvatten.**\n\nDe inschrijver moet garanderen dat voor alle grafische apparatuur die tijdens de looptijd van het contract wordt behouden verbruiksartikelen zullen worden geleverd.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet een verklaring van conformiteit met dit criterium overleggen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 59"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een verklaring van conformiteit met dit criterium overleggen."
+                }
+              },
+              {
+                "code": "TS25b",
+                "title": "Gegarandeerde levering van reserveonderdelen tijdens looptijd contract",
+                "specification": "**Van toepassing op aanbestedingen die de aanschaf van reparatiediensten omvatten.**\n\nDe dienstverlening moet de levering omvatten van reserveonderdelen voor alle bestaande en geïnstalleerde grafische apparatuur die tijdens de looptijd van het contract wordt behouden.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet documentatie overleggen waarin wordt bevestigd dat reserveonderdelen zullen worden geleverd voor alle bestaande en geïnstalleerde grafische apparatuur die tijdens de looptijd van het contract wordt behouden.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 60"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie overleggen waarin wordt bevestigd dat reserveonderdelen zullen worden geleverd voor alle bestaande en geïnstalleerde grafische apparatuur die tijdens de looptijd van het contract wordt behouden."
+                }
+              },
+              {
+                "code": "TS26",
+                "title": "Gebruiksinstructies voor het beheer van milieuprestaties",
+                "specification": "Er moet een fysieke of online training worden gegeven over, enerzijds, hoe de milieuprestaties van de door de fabrikant geleverde specifieke grafische apparatuur maximaal kan worden benut en, anderzijds, over de beste werkwijzen voor het gebruik van de desbetreffende verbruiksartikelen. In plaats daarvan kan ook een handleiding voor het beheer van de milieuprestaties worden verstrekt. De instructies hiervoor kunnen als specifieke rubriek worden opgenomen in de gebruikshandleiding en/of in digitale vorm geraadpleegd kunnen worden via de website van de fabrikant.\n\nOngeacht de gekozen optie moet deze informatie minstens de volgende elementen bevatten: functies voor papierbeheer, energie-efficiëntie, een efficiënter gebruik en een beter beheer van gebruikte verbruiksartikelen.\n\n**Bijbehorende contractuele voorwaarde**\n\nProducten met een toepasselijke Type 1-milieukeur die voldoet aan de vermelde vereisten, worden conform geacht. Ook ander gepast bewijs dat wordt voldaan aan de bovengenoemde clausule zal worden aanvaard. Het gaat hier bijvoorbeeld om verklaringen van de fabrikant bij de levering van de apparatuur.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 60"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Producten met een toepasselijke Type 1-milieukeur die voldoet aan de vermelde vereisten, worden conform geacht. Ook ander gepast bewijs dat wordt voldaan aan de bovengenoemde clausule zal worden aanvaard. Het gaat hier bijvoorbeeld om verklaringen van de fabrikant bij de levering van de apparatuur."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS17",
+                "title": "Hulpbronnenefficiëntie van de massa verbruiksartikelen",
+                "specification": "De hulpbronnenefficiëntie van de massa verbruiksartikelen [het gemeten aantal afbeeldingen dat kan worden geproduceerd door een verbruiksartikel per gram gebruiksmateriaal], berekend aan de hand van vergelijking (1), mag niet lager zijn dan de in de tabel hieronder aangegeven drempel:\n\n| Soort verbruiksartikel | Minimale hulpbronnenefficiëntie van de massa verbruiksartikelen |\n|------------------------|------------------------------------------------------------------|\n| Tonercartridge of recipiënt en drum | (≥ [10 × tanh (0,1 + 0,0003 × (C_mass – 10))+0,5]+1) |\n| Inktcartridge of recipiënt | (≥ [15 × tanh (0,2+0,0004 × (C_mass – 8))+1]+2) |\n\n*Tanh = hyperbolische tangens*\n\n```formula\nConsumable mass resource efficiency = Page Yield / C_MASS\n```\n(1)\n\nWaarbij:\n• paginarendement verwijst naar het gemeten aantal afbeeldingen dat kan worden geproduceerd door het verbruiksartikel,\n• massa verbruiksartikel (C_mass) de massa (g) is van elke cartridge of recipiënt (plus drum-eenheid, indien van toepassing), gemeten bij installatie (d.w.z. vol met inkt of toner).\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de resultaten verstrekken van de hulpbronnenefficiëntieberekening van de massa verbruiksartikelen, vergezeld van documentatie met de volgende informatie:\n• alle paginarendementen;\n• de testprocedures, gebruikt om deze waarden af te leiden;\n• de massa van alle cartridges, recipiënten en drum-eenheden, ontworpen voor gebruik in elk model van grafisch apparaat.\n\nDeze documentatie kan bestaan uit een verklaring van de fabrikant of anderssoortige documentatie die de vereiste informatie bevat.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 40"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de resultaten verstrekken van de hulpbronnenefficiëntieberekening van de massa verbruiksartikelen, vergezeld van documentatie met de volgende informatie:\n• alle paginarendementen;\n• de testprocedures, gebruikt om deze waarden af te leiden;\n• de massa van alle cartridges, recipiënten en drum-eenheden, ontworpen voor gebruik in elk model van grafisch apparaat.\n\nDeze documentatie kan bestaan uit een verklaring van de fabrikant of anderssoortige documentatie die de vereiste informatie bevat."
+                }
+              },
+              {
+                "code": "TS18",
+                "title": "Gehalte gevaarlijke stoffen in verbruiksartikelen",
+                "specification": "Kleurmiddelen en toners, inkt, vaste inkt en vergelijkbare middelen mogen als opzettelijk toegevoegd component geen stoffen bevatten die een van de kenmerken uit de tabel hieronder vertonen.\n\n| Gevarenklasse | Gevarencategorie | CLP-verordening (EG) nr. 1272/2008 |\n|---------------|------------------|-------------------------------------|\n| Carcinogeniteit | Carc. 1A, 1B | H350 Kan kanker veroorzaken |\n| Carcinogeniteit | Carc. 1A, 1B | H350i Kan kanker veroorzaken bij inademing |\n| Carcinogeniteit | Carc. 2 | H351 Verdacht van het veroorzaken van kanker |\n| Mutageniteit kiemcellen | Muta. 1A, 1B | H340 Kan genetische schade veroorzaken |\n| Mutageniteit kiemcellen | Muta. 2 | H341 Verdacht van het veroorzaken van genetische schade |\n| Reproductieve toxiciteit | Repr. 1A, 1B | H360 Kan de vruchtbaarheid of het ongeboren kind schaden |\n| Reproductieve toxiciteit | Repr. 2 | H361 Kan de vruchtbaarheid of het ongeboren kind schaden |\n| Specifieke doelorgaantoxiciteit (eenmalige blootstelling) | STOT SE 1 | H370 Veroorzaakt schade aan organen |\n| Specifieke doelorgaantoxiciteit (eenmalige blootstelling) | STOT SE 2 | H371 Kan schade aan organen veroorzaken |\n| Specifieke doelorgaantoxiciteit (herhaalde blootstelling) | STOT RE 1 | H372 Veroorzaakt schade aan organen bij langdurige of herhaalde blootstelling |\n| Specifieke doelorgaantoxiciteit (herhaalde blootstelling) | STOT RE 2 | H373 Kan schade aan organen veroorzaken bij langdurige of herhaalde blootstelling |\n\nDaarnaast mogen kleurmiddelen geen stoffen bevatten als opzettelijk toegevoegd component die op grond van bijlage 1 bij Verordening (EG) nr. 1272/2008 de etikettering van het mengsel met H-formuleringen vereisen of die voldoen aan de criteria voor de aanverwante classificatie.\n\nVerbruiksartikelen moeten ook voldoen aan de volgende vereisten met betrekking tot gevaarlijke materialen:\n• ze mogen geen concentratie van meer dan 0,1% (naar gewicht) aanvullende stoffen bevatten die op de kandidatenlijst van REACH staan;\n• toners en inkt mogen geen opzettelijk toegevoegde kwik-, cadmium-, lood-, nikkel- of chroom-(VI)-verbindingen bevatten. Complexe nikkelverbindingen met een hoog moleculair gewicht die worden gebruikt als kleurmiddel zijn vrijgesteld;\n• toners en inkt mogen geen azokleurstofken (kleurstoflen of pigmenten) bevatten die in bijlage XVII, appendix 8, van Verordening (EG) nr. 1907/2006 (REACH-verordening) vermelde kankerverwekkende aromatische amines kunnen afgevens;\n• aan toners of inkt mogen geen biociden worden toegevoegd tenzij er een dossier van werkzame stoffen is ingediend voor conserveermiddelen voor producten tijdens opslag (producttype 6), zoals gedefinieerd in het kader van de verordening betreffende het op de markt aanbieden en het gebruik van biociden (Verordening (EU) 528/2012). Als stoffen zijn geweigerd voor opname op de lijst van goedgekeurde stoffen voor producttype 6, mogen zij niet worden gebruikt;\n• fotogevoeige drums mogen geen opzettelijk toegevoegde selenium-, lood-, kwik- of cadmiumverbindingen bevatten.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet documentatie, bijvoorbeeld veiligheidsinformatiebladen (VIBs), overleggen waaruit blijkt dat het aangeboden product (de aangeboden producten) aan de vereisten voldoet.\n\nUit deze documentatie moet duidelijk blijken dat aan elk aspect van het criterium is voldaan. Bewijs van conformiteit kan bestaan uit testrapporten van derden of rapporten van de door de fabrikant zelf uitgevoerde tests, waaruit blijkt dat de artikelen geen in het criterium genoemde niet-toegestane stoffen bevatten.\n\nApparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 41"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie, bijvoorbeeld veiligheidsinformatiebladen (VIBs), overleggen waaruit blijkt dat het aangeboden product (de aangeboden producten) aan de vereisten voldoet.\n\nUit deze documentatie moet duidelijk blijken dat aan elk aspect van het criterium is voldaan. Bewijs van conformiteit kan bestaan uit testrapporten van derden of rapporten van de door de fabrikant zelf uitgevoerde tests, waaruit blijkt dat de artikelen geen in het criterium genoemde niet-toegestane stoffen bevatten.\n\nApparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              }
+            ]
+          },
+          "printdiensten": {
+            "core_criteria": [
+              {
+                "code": "TS22a",
+                "title": "Verbintenis tot hergebruik van de grafische apparatuur",
+                "specification": "Inschrijvers gaan ermee akkoord dat volledig functionele grafische apparatuur die eigendom is van de aanbestedende dienst en aanwezig is op de locaties van de aanbestedende dienst moet worden behouden voor verder gebruik in plaats van te worden vervangen door nieuwe producten (na goedkeuring van de aanbestedende dienst).\n\nDeze vereiste is niet van toepassing als er in totaal minder grafische apparaten worden geïnstalleerd. Deze vereiste is niet van toepassing als de leverancier bewijsmateriaal overlegt waaruit blijkt dat het vervangen van een bestaand product door een efficiënter product (of efficiëntere producten) de algehele milieudruk verlaagt.\n\nDeze vereiste is niet van toepassing als de leverancier met gepaste argumenten aantoont dat het gebruik van oudere apparaten niet kan worden ondersteund.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet een verklaring van conformiteit met deze vereiste overleggen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 51"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een verklaring van conformiteit met deze vereiste overleggen."
+                }
+              },
+              {
+                "code": "TS22b",
+                "title": "Verbintenis tot de reparatie van de grafische apparatuur",
+                "specification": "Leveranciers stemmen ermee in om grafische apparatuur die tijdens de looptijd van het contract stopt met werken, opnieuw volledig operationeel te zullen maken met reserveonderdelen (na goedkeuring van de aanbestedende overheidsdienst).\n\nDeze vereiste geldt niet:\n• voor grafische apparatuur die niet meer het noodzakelijke functionaliteitsniveau kan bieden dat door de aanbestedende dienst werd gespecificeerd;\n• voor grafische apparatuur die redelijkerwijis niet opnieuw volledig operationeel kan worden gemaakt door vervanging van de niet-werkende onderdelen omdat de reserveonderdelen niet beschikbaar zijn of omdat dit buitensporige kosten met zich meebrengt;\n• als de aanbestedende dienst het totale aantal gebruikte modellen van grafische apparaten wil verminderen.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet een verklaring van conformiteit met deze vereiste overleggen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 52"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een verklaring van conformiteit met deze vereiste overleggen."
+                }
+              },
+              {
+                "code": "TS23",
+                "title": "Levering van grafische apparatuur die voldoet aan de GPP-criteria van de EU",
+                "specification": "**Als de levering van grafische apparatuur deel uitmaakt van het contract voor printdiensten.**\n\nGrafische apparatuur die in het kader van de levering van printdiensten door de inschrijver wordt aangeboden, moet voldoen aan de technische kernspecificaties die zijn opgenomen in de GPP-criteria van de EU, categorie 1: grafische apparatuur.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 52"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria."
+                }
+              },
+              {
+                "code": "TS24a",
+                "title": "Levering van grafische apparatuur die voldoet aan de GPP-criteria van de EU",
+                "specification": "**Als de levering van kopieer- en grafisch papier deel uitmaakt van het leveringscontract van printdiensten.**\n\nKopieer- en grafisch papier dat in het kader van de levering van printdiensten door de inschrijver wordt aangeboden, moet voldoen aan de technische kernspecificaties van de EU-criteria voor groene overheidsopdrachten voor kopieer- en grafisch papier⁴.\n\n⁴Beschikbaar op: http://ec.europa.eu/environment/gpp/eu_gpp_criteria_en.htm\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 53"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria."
+                }
+              },
+              {
+                "code": "TS24b",
+                "title": "Levering van verbruiksartikelen die voldoen aan de GPP-criteria van de EU",
+                "specification": "**Als de levering van verbruiksartikelen voor grafische apparatuur deel uitmaakt van de printdiensten.**\n\nVerbruiksartikelen die door de inschrijver worden aangeboden in het kader van de levering van printdiensten, moeten voldoen aan de technische kernspecificaties die zijn opgenomen in de GPP-criteria van de EU, categorie 2: verbruiksmaterialen voor grafische apparatuur.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 53"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria."
+                }
+              },
+              {
+                "code": "TS25a",
+                "title": "Gegarandeerde levering van verbruiksartikelen tijdens looptijd contract",
+                "specification": "**Van toepassing op aanbestedingen die de aanschaf van verbruiksartikelen omvatten.**\n\nDe inschrijver moet garanderen dat voor alle grafische apparatuur die tijdens de looptijd van het contract wordt behouden verbruiksartikelen zullen worden geleverd.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet een verklaring van conformiteit met dit criterium overleggen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 59"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een verklaring van conformiteit met dit criterium overleggen."
+                }
+              },
+              {
+                "code": "TS25b",
+                "title": "Gegarandeerde levering van reserveonderdelen tijdens looptijd contract",
+                "specification": "**Van toepassing op aanbestedingen die de aanschaf van reparatiediensten omvatten.**\n\nDe dienstverlening moet de levering omvatten van reserveonderdelen voor alle bestaande en geïnstalleerde grafische apparatuur die tijdens de looptijd van het contract wordt behouden.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet documentatie overleggen waarin wordt bevestigd dat reserveonderdelen zullen worden geleverd voor alle bestaande en geïnstalleerde grafische apparatuur die tijdens de looptijd van het contract wordt behouden.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 60"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie overleggen waarin wordt bevestigd dat reserveonderdelen zullen worden geleverd voor alle bestaande en geïnstalleerde grafische apparatuur die tijdens de looptijd van het contract wordt behouden."
+                }
+              },
+              {
+                "code": "TS26",
+                "title": "Gebruiksinstructies voor het beheer van milieuprestaties",
+                "specification": "Er moet een fysieke of online training worden gegeven over, enerzijds, hoe de milieuprestaties van de door de fabrikant geleverde specifieke grafische apparatuur maximaal kan worden benut en, anderzijds, over de beste werkwijzen voor het gebruik van de desbetreffende verbruiksartikelen. In plaats daarvan kan ook een handleiding voor het beheer van de milieuprestaties worden verstrekt. De instructies hiervoor kunnen als specifieke rubriek worden opgenomen in de gebruikshandleiding en/of in digitale vorm geraadpleegd kunnen worden via de website van de fabrikant.\n\nOngeacht de gekozen optie moet deze informatie minstens de volgende elementen bevatten: functies voor papierbeheer, energie-efficiëntie, een efficiënter gebruik en een beter beheer van gebruikte verbruiksartikelen.\n\n**Bijbehorende contractuele voorwaarde**\n\nProducten met een toepasselijke Type 1-milieukeur die voldoet aan de vermelde vereisten, worden conform geacht. Ook ander gepast bewijs dat wordt voldaan aan de bovengenoemde clausule zal worden aanvaard. Het gaat hier bijvoorbeeld om verklaringen van de fabrikant bij de levering van de apparatuur.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 60"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Producten met een toepasselijke Type 1-milieukeur die voldoet aan de vermelde vereisten, worden conform geacht. Ook ander gepast bewijs dat wordt voldaan aan de bovengenoemde clausule zal worden aanvaard. Het gaat hier bijvoorbeeld om verklaringen van de fabrikant bij de levering van de apparatuur."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS23",
+                "title": "Levering van grafische apparatuur die voldoet aan de GPP-criteria van de EU",
+                "specification": "**Als de levering van grafische apparatuur deel uitmaakt van het contract voor printdiensten.**\n\nGrafische apparatuur die door de inschrijver wordt aangeboden in het kader van de levering van printdiensten, moet voldoen aan de uitgebreide technische specificaties die zijn opgenomen in de GPP-criteria van de EU, categorie 1: grafische apparatuur.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 52"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria."
+                }
+              },
+              {
+                "code": "TS24a",
+                "title": "Levering van grafische apparatuur die voldoet aan de GPP-criteria van de EU",
+                "specification": "**Als de levering van kopieer- en grafisch papier deel uitmaakt van het leveringscontract van printdiensten.**\n\nKopieer- en grafisch papier dat in het kader van de levering van printdiensten door de inschrijver wordt aangeboden, moet voldoen aan de uitgebreide technische specificaties van de EU-criteria voor groene overheidsopdrachten voor kopieer- en grafisch papier⁴.\n\n⁴Beschikbaar op: http://ec.europa.eu/environment/gpp/eu_gpp_criteria_en.htm\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 52"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria."
+                }
+              },
+              {
+                "code": "TS24b",
+                "title": "Levering van verbruiksartikelen die voldoen aan de GPP-criteria van de EU",
+                "specification": "**Als de levering van verbruiksartikelen voor grafische apparatuur deel uitmaakt van de printdiensten.**\n\nVerbruiksartikelen die door de inschrijver worden aangeboden in het kader van de levering van printdiensten, moeten voldoen aan de uitgebreide technische specificaties die zijn opgenomen in de GPP-criteria van de EU, categorie 2: verbruiksmaterialen voor grafische apparatuur.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 53"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "award_criteria",
+      "title": "Selectiecriteria",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als selectiecriteria. Het doel is te waarborgen dat alleen leveranciers met aantoonbare kennis, middelen en procedures in aanmerking komen voor deelname.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale selectiecriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie in de tabel hieronder. De GPP definieert alleen selectiecriteria voor:\nCategorie 1: Grafische apparatuur",
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "grafische_apparatuur",
+            "label": "📋 Grafische apparatuur",
+            "label_short": "Grafische apparatuur"
+          }
+        ],
+        "default_main_tab": "grafische_apparatuur",
+        "data": {
+          "grafische_apparatuur": {
+            "core_criteria": [],
+            "extended_criteria": [
+              {
+                "code": "SC1",
+                "title": "Controles op aan beperkingen onderworpen stoffen",
+                "specification": "De inschrijver moet aantonen dat hij een kader heeft opgezet voor de uitvoering van controles op aan beperkingen onderworpen stoffen (Restricted Substance Controls, RSC's) in de aanvoerketen van de te leveren producten.\n\nDe productbeoordelingen op basis van de RSC's moeten minimaal de volgende gebieden bestaan:\n• planning/ontwerp van het product;\n• naleving door de leverancier;\n• analytische testen.\n\nDe RSC's moeten minstens van toepassing zijn op stoffen op de kandidatenlijst van REACH en op beperkte stoffen onder de BGG's-richtlijn. Voor het identificeren, opvolgen en aangeven van specifieke informatie over de samenstelling van de te leveren producten, moet men zich baseren op de IEC 62474-database voor materiaalverklaring*. De RSC's dienen als garantie dat de inschrijver op de hoogte is van de aan- of afwezigheid van stoffen uit de IEC 62474-database.\n\nDe verklaringen van de leverancier inzake de naleving van de RSC's moeten voor de relevante materialen, onderdelen en subsystemen van van de te leveren producten worden opgevraagd en bijgewerkt. In voorkomend geval mogen ze worden gestaafd door audits van de leverancier en analytische tests. De RSC-procedures moeten verzekeren dat de conformiteit van het product en de leverancier opnieuw wordt beoordeeld als:\n• vereisten voor beperkte stoffen veranderen;\n• geleverde materialen, onderdelen en subsystemen veranderen;\n• productie- en assemblage-activiteiten veranderen.\n\nDe implementatie van de RSC's vindt plaats onder de richtlijnen in IEC 62476 of daarmee vergelijkbaar en de IEC 62474-database voor materiaalverklaring.\n\n*Internationale Elektrotechnische Commissie (IEC), IEC 62474: Materiaalverklaring voor elektrotechnische producten en voor de elektrotechnische branche, http://std.iec.ch/iec62474",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 17"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver stelt documentatie ter beschikking waarin het systeem en de procedures worden beschreven en de implementatie ervan wordt aangetoond.\n\nApparatuur met een relevante Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "uitvoeringsvoorwaarden",
+      "title": "Uitvoeringsvoorwaarden",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als contractuele uitvoeringsvoorwaarden. Ze borgen dat de verplichtingen worden nagekomen.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale uitvoeringsvoorwaarden) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie in de tabel hieronder. De GPP definieert contractuele uitvoeringsvoorwaarden voor:\nCategorie 1: [Grafische apparatuur](popup:TOELICHTING||**Categorie 1: Grafische apparatuur**\n\nProducten die op de markt worden gebracht voor gebruik op kantoor of huishoudelijk gebruik, of beide, en die een van de volgende doeleinden, of beide, dienen:\n\n• een afgedrukte afbeelding in de vorm van een papieren document of foto produceren met behulp van een markeringsproces op basis van een digitaal beeld dat wordt geleverd door een netwerk-/kaartinterface of een fysiek document, met behulp van een scan- of kopieerproces;\n\n• een digitale afbeelding produceren op basis van een fysiek document, met behulp van een scan- of kopieerproces.\n\n**Hieronder vallen geen:**\n\n• copyprinters,\n\n• frankeerapparaten,\n\n• facsimile-apparaten en faxapparaten.\n\nDit document is niet van toepassing op grafische apparatuur die op grond van artikel 1, lid 2, onder a, van Richtlijn 93/42/EEG wordt beschouwd als medisch hulpmiddel.\n\nEU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten||)\nCategorie 2: [Verbruiksartikelen](popup:TOELICHTING||**Categorie 2: Verbruiksartikelen**\n\nComponenten die worden gebruikt om afgedrukte afbeeldingen in de vorm van een papieren document of foto te produceren met behulp van een grafisch apparaat.\n\nEU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten||)\nCategorie 3: [Printdiensten](popup:TOELICHTING||**Categorie 3: Printdiensten**\n\nDiensten die in eigen beheer of uitbesteed worden georganiseerd en die betrekking hebben op het afdrukken, kopiëren of het scannen van documenten.\n\nEU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten||)",
+        "Neem in ieder geval de kerncriteria op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "grafische_apparatuur",
+            "label": "📋 Grafische apparatuur",
+            "label_short": "Grafische apparatuur"
+          },
+          {
+            "key": "verbruiksartikelen",
+            "label": "🖨️ Verbruiksartikelen",
+            "label_short": "Verbruiksartikelen"
+          },
+          {
+            "key": "printdiensten",
+            "label": "🖨️ Printdiensten",
+            "label_short": "Printdiensten"
+          }
+        ],
+        "default_main_tab": "grafische_apparatuur",
+        "data": {
+          "grafische_apparatuur": {
+            "core_criteria": [
+              {
+                "code": "CPC2",
+                "title": "Rapportage over hergebruik-/recycling van grafische apparatuur",
+                "subtitle": "(Dit criterium moet worden toegepast in combinatie met gunningscriterium 3.)",
+                "specification": "De contractant moet gegevens verstrekken over de afdanking van gebruikte grafische apparatuur.\n\nIn deze gegevens moet met name worden ingegaan op de volgende aspecten:\n• het aantal apparaten dat is teruggenomen van de aanbestedende dienst,\n• waar nodig het aantal apparaten/onderdelen dat is afgevoerd voor hergebruik,\n• waar nodig het aantal apparaten/onderdelen dat is afgevoerd voor materiaalrecycling.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 37"
+                }
+              },
+              {
+                "code": "CPC3",
+                "title": "Rapportage over geleverde verbruiksartikelen",
+                "subtitle": "(Als de levering van cartridges of kopieer- en grafisch papier deel uitmaakt van het leveringscontract van de grafische apparatuur.)",
+                "specification": "Waar nodig moet de contractant informatie verstrekken over de levering van de verbruiksmaterialen, gespecificeerd in de TS \"Levering van verbruiksmaterialen\". Het gaat hier om:\n• kopieer- en grafisch papier dat voldoet aan de GPP-criteria van de EU (TS15 (a)),\n• verbruiksartikelen die voldoen aan de GPP-criteria van de EU (TS15 (b)),\n• gereviseerde cartridges en recipiënten (AC5).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 38"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "CPC3",
+                "title": "Rapportage over geleverde verbruiksartikelen",
+                "subtitle": "(Als de levering van cartridges of kopieer- en grafisch papier deel uitmaakt van het leveringscontract van de grafische apparatuur)",
+                "specification": "Waar nodig moet de contractant informatie verstrekken over de levering van de verbruiksmaterialen, gespecificeerd in de TS \"Levering van verbruiksmaterialen\". Het gaat hier om:\n• kopieer- en grafisch papier dat voldoet aan de GPP-criteria van de EU (TS15 (a)),\n• verbruiksartikelen die voldoen aan de GPP-criteria van de EU (TS15(b)),\n• gereviseerde cartridges en recipiënten (AC5),\n• het aantal pagina's dat is afgedrukt met gereviseerde cartridges/recipiënten die voldoen aan de GPP-criteria van de EU, categorie 2.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 38"
+                }
+              }
+            ]
+          },
+          "verbruiksartikelen": {
+            "core_criteria": [
+              {
+                "code": "CPC4",
+                "title": "Rapportage over hergebruik/recycling van verbruiksartikelen",
+                "specification": "Voor massale verzendingen (niet voor enkelvoudige retourzendingen van verbruiksartikelen) moet de contractant informatie verstrekken over het gratis terugamesysteem voor gebruikte verbruiksartikelen.\n\nDit systeem moet erop gericht zijn de apparatuur of de onderdelen ervan af te voeren voor hergebruik of materiaalrecycling, met een voorkeur voor hergebruik.\n\nIn deze gegevens moet met name worden ingegaan op de volgende aspecten:\n• het aantal verbruiksartikelen dat is teruggenomen van de aanbestedende dienst,\n• waar nodig het aantal en type onderdelen dat is afgevoerd voor hergebruik/revisie,\n• waar nodig het aantal en type onderdelen dat is afgevoerd voor materiaalrecycling.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 49"
+                }
+              }
+            ],
+            "extended_criteria": []
+          },
+          "printdiensten": {
+            "core_criteria": [
+              {
+                "code": "CPC5",
+                "title": "Rapportage over geleverde verbruiksartikelen",
+                "subtitle": "(Als de levering van verbruiksartikelen voor grafische apparatuur of kopieer- en grafisch papier deel uitmaakt van de printdiensten.)",
+                "specification": "Waar nodig moet de contractant informatie verschaffen over de levering van verbruiksartikelen, gespecificeerd in de TS \"Levering van verbruiksartikelen\". Het gaat hier om:\n- kopieer- en grafisch papier dat voldoet aan de GPP-criteria van de EU (TS24 (a)),\n- verbruiksartikelen die voldoen aan de GPP-criteria van de EU (TS24 (b)),\n- hergebruikte/gereviseerde cartridges/recipiënten (AC5).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 56"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "CPC6",
+                "title": "Informatie verstrekken over het gebruik van verbruiksartikelen",
+                "specification": "Bij het verlenen van printdiensten moet de aanbestedende dienst tijdens de looptijd van de serviceovereenkomst regelmatig of op verzoek worden ingelicht. Dit gebeurt aan de hand van gedetailleerde statistieken over het gebruik van verbruiksartikelen. Deze informatie over het gebruik van verbruiksartikelen moet waar nodig de volgende elementen omvatten:\n\n• papierverbruik voor elk afzonderlijk model van grafisch apparaat, met de volgende gegevens:\n— het aantal vellen/rollen papier en hun afmeting (bijv. A4, A3 enz.),\n— de papiersoort (bijv. gerecycleerd, nieuw, papiergewicht, enz.),\n• aantal cartridges en recipiënten dat is gebruikt voor elk afzonderlijk model van grafisch apparaat,\n• rendement per cartridge/recipiënt/drumeenheid voor elk afzonderlijk model grafisch apparaat,\n• hoeveelheid van andere verbruiksartikelen die is gebruikt voor elk afzonderlijk model van grafisch apparaat,\n• aantal gebruikte nieuwe en gereviseerde verbruiksartikelen,\n• aantal gebruikte verbruiksartikelen voor monochroom en kleur (per kleurtype),\n• aantal verbruiksartikelen dat vroegtijdig defecten vertoonde of bij aankomst niet werkte (per type).\n\n**Verificatie**\n\nDe inschrijver moet documentatie verschaffen die de vermelde informatie bevat.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 56"
+                }
+              },
+              {
+                "code": "CPC7",
+                "title": "Milieu-informatie verstrekken tijdens looptijd serviceovereenkomst",
+                "specification": "In het kader van de dienstverlening moet op verzoek van de aanbestedende dienst ook de volgende informatie worden verstrekt:\n\ngedetailleerde informatie over het beheer van afgedankte grafische apparatuur en aanverwante componenten. Hierbij moet de volgende informatie worden verstrekt:\n• eerste bestemming van de afgedankte producten,\n• bevestiging dat de verwerkers van de afgedankte apparatuur permanent door onafhankelijke certificatie-instanties worden getoetst aan een norm voor recycling,\n• aantal producten dat is verzonden voor:\n• hergebruik,\n• revisie,\n• recycling,\n• andere opties voor het beheer van afgedankte producten (nog te bepalen, bijv. energieterugwinning, stortplaats).\n\n**Verificatie**\n\nDe inschrijver moet documentatie overleggen waarin wordt bevestigd dat tijdens de looptijd van het contract en op verzoek van de aanbestedende dienst de vereiste milieu-informatie zal worden verstrekt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 58"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "gunning_criteria",
+      "title": "Gunningscriteria",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als gunningscriteria. Daarmee wordt vastgelegd op basis waarvan de inschrijvingen inhoudelijk worden beoordeeld en de economisch meest voordelige inschrijving wordt vastgesteld.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale gunningscriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie in de tabel hieronder. De GPP definieert gunningscriteria voor:\nCategorie 1: [Grafische apparatuur](popup:TOELICHTING||**Categorie 1: Grafische apparatuur**\n\nProducten die op de markt worden gebracht voor gebruik op kantoor of huishoudelijk gebruik, of beide, en die een van de volgende doeleinden, of beide, dienen:\n\n• een afgedrukte afbeelding in de vorm van een papieren document of foto produceren met behulp van een markeringsproces op basis van een digitaal beeld dat wordt geleverd door een netwerk-/kaartinterface of een fysiek document, met behulp van een scan- of kopieerproces;\n\n• een digitale afbeelding produceren op basis van een fysiek document, met behulp van een scan- of kopieerproces.\n\n**Hieronder vallen geen:**\n\n• copyprinters,\n\n• frankeerapparaten,\n\n• facsimile-apparaten en faxapparaten.\n\nDit document is niet van toepassing op grafische apparatuur die op grond van artikel 1, lid 2, onder a, van Richtlijn 93/42/EEG wordt beschouwd als medisch hulpmiddel.\n\nEU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten||)\nCategorie 2: [Verbruiksartikelen](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/6e860430-c64a-4444-9561-b42b2ec412ab/details)\nCategorie 3: [Printdiensten](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/6e860430-c64a-4444-9561-b42b2ec412ab/details)",
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "grafische_apparatuur",
+            "label": "📋 Grafische apparatuur",
+            "label_short": "Grafische apparatuur"
+          },
+          {
+            "key": "verbruiksartikelen",
+            "label": "🖨️ Verbruiksartikelen",
+            "label_short": "Verbruiksartikelen"
+          },
+          {
+            "key": "printdiensten",
+            "label": "🖨️ Printdiensten",
+            "label_short": "Printdiensten"
+          }
+        ],
+        "default_main_tab": "grafische_apparatuur",
+        "data": {
+          "grafische_apparatuur": {
+            "core_criteria": [
+              {
+                "code": "AC1",
+                "title": "De energie-efficiëntie van grafische apparatuur is beter dan TS1",
+                "specification": "**Van toepassing op grafische apparatuur waarvoor de Energy Star-vereisten met betrekking tot energie-efficiëntie gelden.**\n\nAls de grafische apparatuur energie-efficiënter is dan de TEC MAX-waarde die wordt vermeld in de ENERGY STAR TEC-specificatie, worden punten toegekend. De punten moeten worden berekend door de TEC-waarde te vergelijken met het maximale standaardenergieverbruik (TEC_MAX) dat wordt toegestaan in het kader van de in TS1 gespecificeerde versie(s) van ENERGY STAR.\n\nEr kan een maximum van x punten [nog te bepalen] worden toegekend. De punten moeten worden toegekend op basis van de verbetering in energie-efficiëntie ten opzichte van de TEC_MAX-waarde:\n• meer dan 80% lager: x punten\n• 60-79% lager: 0,8 x punten\n• 40-59% lager: 0,6 x punten\n• 20-39% lager: 0,4 x punten\n• 10-19% lager: 0,2 x punten",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 33"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet rapporten overleggen van tests die zijn uitgevoerd overeenkomstig de testmethoden die worden vermeld in de in TS1 gespecificeerde versie(s) van ENERGY STAR. De inschrijver moet gedetailleerde informatie verschaffen over de gemeten TEC-waarde en de TEC_MAX-waarde voor elk toepasselijk product en over de berekening van de verbetering in energie-efficiëntie. Deze informatie moet worden overlegd bij de gunning van het contract of eerder, als daarom wordt verzocht."
+                }
+              },
+              {
+                "code": "AC2",
+                "title": "De energie-efficiëntie van grafische apparatuur is beter dan TS1",
+                "specification": "**Optie 1: Langere garanties**\n\nEr zullen punten worden toegekend voor elk extra jaar garantie dat wordt aangeboden boven de technische minimumspecificatie. Er kan een maximum van x punten [nog te bepalen] worden toegekend.\n• +4 jaar of meer: x punten\n• +3 jaar: 0,75 x punten\n• +2 jaar: 0,5 x punten\n\n**Optie 2: AC2(b) De langste garantie**\n\nEr worden punten toegekend aan de inschrijver die van alle inschrijvers de langste garantie biedt. Er kan een maximum van x punten [nog te bepalen] worden toegekend.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een exemplaar van de garantie overleggen."
+                }
+              },
+              {
+                "code": "AC3",
+                "title": "Terugnamesysteem voor grafische apparatuur",
+                "specification": "**Dit criterium moet worden toegepast in combinatie met clausule CPC2 over contractuele prestatie-eisen.**\n\nEr moeten punten worden toegekend aan inschrijvers die de aanbestedende dienst kosteloos een terugnamesysteem aanbieden voor gebruikte grafische apparatuur dat erop is gericht deze apparatuur beschikbaar te maken voor hergebruik van het hele apparaat of onderdelen ervan of voor materiaalrecycling, waarbij de voorkeur uitgaat naar hergebruik.\n\nDe inschrijver kan zelf of via een geschikte externe organisatie aan deze verplichtingen voldoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie overleggen waarin wordt vermeld dat er een kosteloos terugnamesysteem ter beschikking wordt gesteld. Apparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht."
+                }
+              },
+              {
+                "code": "AC4",
+                "title": "Levering van gereviseerde cartridges/recipiënten",
+                "specification": "**Als de levering van cartridges en recipiënten deel uitmaakt van het leveringscontract van de grafische apparatuur.**\n\nEr moeten punten worden toegekend aan de inschrijver die zich ertoe verbindt het hoogste percentage (grootste aandeel) gereviseerde cartridges/recipiënten te verschaffen dat voldoet aan de technische kernspecificaties die zijn opgenomen in de GPP-criteria van de EU, categorie 2: verbruiksartikelen voor grafische apparatuur.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 37"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "AC3",
+                "title": "Beheer van afgedankte grafische apparatuur",
+                "specification": "**Dit criterium moet worden toegepast in combinatie met clausule CPC2 over contractuele prestatie-eisen.**\n\nEr moeten punten worden toegekend aan een inschrijver die de aanbestedende dienst kosteloos een dienst voor hergebruik en recycling van het hele product aanbiedt en/of de selectieve behandeling van componenten garandeert overeenkomstig bijlage VII bij de AEEA-richtlijn voor afgedankte apparatuur. De dienstverlening moet de volgende activiteiten omvatten:\n• inzameling;\n• vertrouwelijke verwerking en beveiliigde gegevensverwijdering (tenzij dit intern wordt uitgevoerd);\n• functioneel testen, onderhouden, repareren en upgraden om producten voor te bereiden op hergebruik [1];\n• de remarketing van producten voor hergebruik;\n• demontage voor hergebruik, recycling en/of verwijdering van componenten.\n\nBij het leveren van de dienst moet worden meegedeeld welk deel van de apparatuur is voorbereid op hergebruik of hiervoor opnieuw op de markt is gebracht en welk deel van de apparatuur is voorbereid voor recycling.\n\nDe voorbereidende handelingen voor hergebruik, recycling en verwijdering moeten worden verricht met volledige naleving van de eisen in artikel 8 en bijlagen VII [2] en VIII van de (herziene) AEEA-richtlijn 2012/19/EU en met verwijzing naar de lijst met componenten voor selectieve behandeling [zie bijbehorende toelichting].\n\nDe inschrijver kan zelf of via een geschikte externe organisatie aan deze verplichtingen voldoen. Als de dienst wordt verleend buiten de EU, op een locatie waar de AEEA-richtlijn niet geldt, vindt de verwerking van de afgedankte componenten plaats onder omstandigheden die gelijkwaardig zijn aan de vereisten van deze richtlijn [3].\n\n**Toelichting**\n\n[1] Een aantal lidstaten heeft normen en/of regelingen uitgewerkt waaraan overheidsdiensten kunnen verwijzen om meer details te verstrekken over hoe de apparatuur geschikt kan worden gemaakt voor hergebruik en doorverkoop.\n\n[2] Componenten die selectieve behandeling vereisen in overeenstemming met bijlage VII van de AEEA-richtlijn:\n• componenten die kwik bevatten,\n• accu's,\n• printplaten groter dan 10 cm²,\n• broomhoudende vlamvertragers die plastic bevatten,\n• chloorfluorkoolstoffen (CFC), chloorfluorkoolwaterstoffen (HCFC) of fluorkoolwaterstoffen (HFC), koolwaterstoffen (HC),\n• externe elektrische kabels,\n• condensatoren die polychloorbifenylen (PCB) bevatten,\n• componenten die vuurvaste keramische vezels bevatten,\n• elektrolietcondensatoren die zorgwekkende stoffen bevatten,\n• apparatuur die ozonafbrekende gassen bevat of gassen die een aardopwarmingspotentieel (GWP) van meer dan 15 hebben,\n• ozonafbrekende gassen moeten worden behandeld in overeenstemming met Verordening (EG) nr. 1005/2009.\n\n[3] Bij het opstellen van dit werkdocument van de diensten van de Commissie was de Commissie van plan om een gedelegeerde handeling aan te nemen met de criteria voor de beoordeling van gelijkwaardige omstandigheden.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt gedetailleerde informatie over de regelingen voor inzameling, gegevensbeveiliging, voorbereiding voor hergebruik, remarketing voor hergebruik, recycling/verwijdering. Zo moet hij onder meer een geldig bewijs van conformiteit verstrekken voor de AEEA-verwerkingsfaciliteiten die tijdens de looptijd van het contract zullen worden ingezet (indien van toepassing).\n\nApparatuur met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, wordt conform geacht.\n\nOp het moment van schrijven wordt geacht dat de volgende nalevingsregelingen voldoen aan deze vereisten:\n• WEEELABEX:2011-vereiste inzake 'behandeling van AEEA';\n• 'Responsible Recycling' (R2:2013)-norm voor elektronicarecyclers;\n• eStewards-norm 2.0 voor Responsible Recycling and Reuse of Electronic Equipment;\n• Australische/Nieuw-Zeelandse norm AS/NZS 5377:2013 inzake 'Collection, storage, transport and treatment of end-of-life electrical and electronic equipment'."
+                }
+              }
+            ]
+          },
+          "verbruiksartikelen": {
+            "core_criteria": [
+              {
+                "code": "AC5",
+                "title": "Hulpbronnenefficiëntie van de massa verbruiksartikelen van elektrofotografische verbruiksartikelen",
+                "specification": "Er moeten punten worden toegekend voor elektrofotografische verbruiksartikelen (cartridges, recipiënten en drumeenheden) die het materiaalgebruik per uitvoerpagina tot een minimum herleiden. Er kan een maximum van x punten [nog te bepalen] worden toegekend aan de inschrijver die voor alle elektrofotografische verbruiksartikelen voor elk model van grafisch apparaat de hoogste totale hulpbronnenefficiëntie van de massa verbruiksartikelen biedt.\n\nDe hulpbronnenefficiëntie moet worden berekend met de vergelijking vermeld onder TS17.\n\nDe resultaten voor alle verbruiksartikelen moeten bij elkaar worden opgeteld om de eindwaarde te verkrijgen. Als er verschillende verbruiksartikelen worden aangeschaft, is de waarde het gemiddelde van de waarden van alle te leveren producten.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 46"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de resultaten verstrekken van de hulpbronnenefficiëntieberekening van de massa verbruiksartikelen, vergezeld van documentatie waarin voor alle cartridges/recipiënten en alle afzonderlijke drumeenheden die in deze elektrofotografische grafische apparatuur worden gebruikt, het volgende wordt vermeld:\n• paginarendement,\n• massa van volle cartridges/recipiënten,\n• massa van afzonderlijke drumeenheden.\n\nDeze documentatie kan bestaan uit een verklaring van de fabrikant of anderssoortig bewijsmateriaal dat de noodzakelijke informatie bevat."
+                }
+              },
+              {
+                "code": "AC6",
+                "title": "Bevordering van hergebruik/revisie",
+                "specification": "Er kan een maximum van x punten [nog te bepalen] worden toegekend aan de inschrijver die verbruiksartikelen aanbiedt die aan de volgende vereiste voldoen:\n• de verbruiksartikelen kunnen handmatig worden ontmanteld, zo nodig met behulp van algemeen beschikbaar gereedschap (bijv. gemakkelijk te verkrijgen schroefkoppen, tangen of pincetten), zodat versleten onderdelen kunnen worden vervangen of toner of inkt kan worden bijgevuld.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 46"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie overleggen waarin wordt toegelicht hoe aan deze vereiste is voldaan."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "AC6",
+                "title": "Bevordering van hergebruik/revisie",
+                "specification": "Er kan een maximum van x punten [nog te bepalen] worden toegekend aan de inschrijver die aan minstens één van de volgende technische kenmerken voldoet of minstens één van de volgende werkwijzen toepast:\n• verbruiksartikelen zijn zo ontworpen dat hergebruik/revisie wordt vergemakkelijkt door technische kenmerken die revisie aanmoedigen, namelijk:\n  • vermijden van een chip in het verbruiksartikel die de grafische functies bestuurt; of\n  • alle geïnstalleerde chips hebben een functie die het mogelijk maakt het grafische apparaat volledig te resetten via de bedieningselementen op het apparaat of vanaf een met het netwerk verbonden computer, zonder dat hiervoor aanvullende producten nodig zijn.\n• OEM biedt niet-OEM-organisaties de mogelijkheid tegen redelijke kosten de rechten te verkrijgen om een chip van een verbruiksartikel opnieuw te programmeren zodat de volledige functionaliteit van de grafische apparatuur wordt ondersteund.\n• Vanaf het moment dat een verbruiksartikel voor het eerst in de EU op de markt wordt gebracht, zijn vervangende chips die de volledige functionaliteit van de grafische apparatuur ondersteunen, beschikbaar op de vrije markt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 46"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie verschaffen waarin wordt toegelicht welke technische aspecten van de hierboven genoemde praktijken zijn toegepast."
+                }
+              },
+              {
+                "code": "AC7",
+                "title": "Beheer van afgedankte cartridges",
+                "specification": "**Dit criterium moet worden toegepast in combinatie met clausule CPC4 over contractuele prestatie-eisen.**\n\nEr moeten punten worden toegekend aan een inschrijver die de aanbestedende dienst kosteloos een dienst aanbiedt voor hergebruik/revisie en recycling van gebruikte cartridges die selectieve behandeling vereisen overeenkomstig bijlage VII bij de AEEA-richtlijn voor afgedankte producten.\n\nDe dienstverlening moet de volgende activiteiten omvatten:\n• inzameling,\n• demontage voor hergebruik/revisie, recycling en/of verwijdering van componenten.\n\nDe inschrijver moet de aanbestedende dienst inzamelbakken verschaffen die geschikt zijn voor de inzameling van gebruikte cartridges.\n\nDe voorbereidende handelingen voor hergebruik, recycling en verwijdering moeten worden verricht met volledige naleving van de eisen in artikel 8 en bijlagen VII en VIII van de (herziene) AEEA-richtlijn 2012/19/EU.\n\nDe leverancier kan zelf of via een geschikte externe organisatie aan deze verplichtingen voldoen. Als de dienst wordt verleend buiten de EU, op een locatie waar de AEEA-richtlijn niet geldt, vindt verwerking van de afgedankte componenten plaats onder omstandigheden die gelijkwaardig zijn aan de vereisten van deze richtlijn [1].\n\n[1] Bij het opstellen van dit werkdocument van de diensten van de Commissie was de Commissie van plan om een gedelegeerde handeling aan te nemen met de criteria voor de beoordeling van gelijkwaardige omstandigheden.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 47"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt gedetailleerde informatie over de regelingen voor verzameling, voorbereiding voor hergebruik/revisie en recycling/verwijdering. Zo moet hij onder meer een geldig bewijs van conformiteit verstrekken voor de AEEA-verwerkingsfaciliteiten en tijdens de looptijd van het contract zullen worden ingezet (indien van toepassing).\n\nCartridges met een toepasselijke Type I-milieukeur die voldoet aan de gespecificeerde vereisten, worden conform geacht.\n\nOp het moment van schrijven wordt geacht dat de volgende nalevingsregelingen voldoen aan deze vereisten:\n• WEEELABEX:2011-vereiste inzake 'behandeling van AEEA';\n• 'Responsible Recycling' (R2:2013)-norm voor elektronicarecyclers;\n• eStewards-norm 2.0 voor Responsible Recycling and Reuse of Electronic Equipment;\n• Australische/Nieuw-Zeelandse norm AS/NZS 5377:2013 inzake 'Collection, storage, transport and treatment of end-of-life electrical and electronic equipment'."
+                }
+              }
+            ]
+          },
+          "printdiensten": {
+            "core_criteria": [
+              {
+                "code": "AC8",
+                "title": "Levering van hergebruikte/gereviseerde cartridges en recipiënten",
+                "specification": "**Als de levering van cartridges en recipiënten deel uitmaakt van de printdiensten.**\n\nEr moeten punten worden toegekend aan de inschrijver die zich ertoe verbindt het hoogste percentage (grootste aandeel) hergebruikte/gereviseerde cartridges/recipiënten te verschaffen dat voldoet aan de technische kernspecificaties die zijn opgenomen in de GPP-criteria van de EU, categorie 2: verbruiksartikelen voor grafische apparatuur.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 54"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet ondersteunende documentatie overleggen waaruit blijkt dat de te leveren producten voldoen aan de hierboven gespecificeerde criteria."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "AC9",
+                "title": "Levering van beheerde printdiensten",
+                "specification": "Er zullen punten worden toegekend aan inschrijvers die beheerde printdiensten (managed print services, MPS) aanbieden.\n\nMPS moet de volgende terreinen bestrijken:\n-evaluatie: een evaluatie van de huidige printomgeving van een organisatie, om aanbevelingen te doen voor een beter beheer van de apparatuur,\n-optimalisering: het consolideren en rationaliseren van apparaten en zakelijke processen om een alomvattende MPS-strategie te formuleren,\n-beheer: omvat systematische evaluaties, toezicht op de dienstenniveauovereenkomsten en beheer op afstand. Met MPS wordt beoogd de bestaande processen en werkstromen te verbeteren.\n\n**Toelichting**\n\nBeheerde printdiensten (managed print services, MPS) worden gedefinieerd als \"het actieve beheer en de actieve optimalisering van documentuitvoerapparaten en verwante zakelijke processen\".",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor grafische apparatuur, verbruiksartikelen en printdiensten - Pag. 55"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie verschaffen waarin de MPS-voorwaarden in detail worden beschreven."
+                }
+              }
+            ]
+          }
+        }
+      }
     }
   ]
 }
