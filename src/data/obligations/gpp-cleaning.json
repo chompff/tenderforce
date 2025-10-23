@@ -1,8 +1,8 @@
 {
   "obligation_id": "gpp-cleaning",
   "archetype": "GPP",
-  "title": "EU GPP criteria of nationaal gelijkwaardig",
-  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de EU-criteria inzake groene overheidsopdrachten voor schoonmaakproducten en -diensten toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
+  "title": "Verplichtingen onder EU GPP óf nationaal gelijkwaardig",
+  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de [EU-criteria inzake groene overheidsopdrachten voor  binnenschoonmaakdiensten](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/259c461a-958b-4d11-9a82-cbc2083b3211/details) toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
   "badges": ["GPP", "NL", "EU"],
   "colors": {
     "text": "#356534",
@@ -20,23 +20,409 @@
   ],
   "sections": [
     {
-      "key": "technical_specs",
-      "title": "Technische specificaties",
+      "key": "selectiecriteria",
+      "title": "Selectiecriteria",
       "requirement_level": "verplicht",
-      "intro": "De GPP criteria voor schoonmaakproducten en -diensten zijn nog in ontwikkeling. Deze module bevat voorlopig placeholder content.",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als selectiecriteria. Het doel is te waarborgen dat alleen leveranciers met aantoonbare kennis, middelen en procedures in aanmerking komen voor deelname.",
       "warnings": [
         {
-          "severity": "yellow",
-          "text": "Let op: De inhoud van deze module is nog niet compleet. De definitieve GPP criteria worden later toegevoegd."
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale selectiecriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
         }
       ],
       "steps": [
-        "Raadpleeg de EU GPP criteria voor schoonmaakproducten en -diensten wanneer deze beschikbaar komen.",
-        "Vergelijk met de Nederlandse MVI criteria op www.mvicriteria.nl.",
-        "Neem de strengste criteria op in uw aanbestedingsdocumenten."
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
       ],
       "steps_ordered": true,
-      "example_texts": []
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "schoonmaakdiensten",
+            "label": "Kerncriteria voor schoonmaakdiensten",
+            "label_short": "schoonmaakdiensten"
+          }
+        ],
+        "default_main_tab": "schoonmaakdiensten",
+        "data": {
+          "schoonmaakdiensten": {
+            "core_criteria": [
+              {
+                "code": "SC1",
+                "title": "Vakbekwaamheid van de inschrijver",
+                "specification": "De inschrijver beschikt over relevante vakbekwaamheid en ervaring met het milieubewust verrichten van binnenschoonmaakdiensten die minimaal het volgende omvatten:\n\n• bij ten minste 50 % van de krachten en overeenkomst uitgevoerde schoonmaaktaken werd gebruikgemaakt van schoonmaakproducten met de EU-milieukeur voor harde oppervlakken of een andere EN ISO 14024-milieukeur type I die nationaal of regionaal officieel is erkend in de lidstaten;\n• medewerkers werden door interne of externe opleiders geschoold in milieuaspecten zoals de juiste verdunning en dosering van schoonmaakproducten, de verwijdering van afvalwater en de scheiding van afval.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 8"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Bewijs in de vorm van informatie en verwijzingen in overeenkomsten met voornoemde elementen die in de afgelopen vijf jaar zijn uitgevoerd. Het bewijs wordt ondersteund met gegevens over scholingsactiviteiten van medewerkers, onder vermelding van de behandelde onderwerpen. Bedrijven met de EU-milieukeur voor binnenschoonmaakdiensten of een andere relevante EN ISO 14024-milieukeur type I die nationaal of regionaal officieel is erkend in de lidstaten, worden geacht aan de eisen te voldoen."
+                }
+              }
+            ],
+            "extended_criteria": []
+          }
+        }
+      }
+    },
+    {
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als technische specificaties. Daarmee worden de inhoudelijke eisen vastgelegd die aan het werk, de levering of de dienst worden gesteld.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale technische specificaties) uit de EU GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn dient u deze op te nemen."
+        }
+      ],
+      "steps": [
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "schoonmaakproducten",
+            "label": "Kerncriteria voor schoonmaakdiensten",
+            "label_short": "schoonmaakdiensten"
+          }
+        ],
+        "default_main_tab": "schoonmaakproducten",
+        "data": {
+          "schoonmaakproducten": {
+            "core_criteria": [
+              {
+                "code": "TS1.1",
+                "title": "Gebruik van schoonmaakproducten met een milieukeur",
+                "subtitle": "Optie A (eenvoudiger te verifiëren tijdens de uitvoering van de overeenkomst)",
+                "specification": "De volgende soorten schoonmaakproducten [opsomming van door de aanbestedende dienst te bepalen schoonmaakproducten — bv. allesreinigers, sanitairreinigers] voor de verrichting van taken krachtens de overeenkomst moeten voldoen aan criterium 1 en criterium 4 van het EU-milieukeur voor schoonmaakproducten voor harde oppervlakken¹ met betrekking tot toxiciteit voor in het water levende organismen en respectievelijk verboden en beperkte stoffen.\n\n**Optie B (lastiger te verifiëren tijdens uitvoering van de overeenkomst)**\n\nTen minste [A %](popup:TOELICHTING||**Aanbevolen waarden voor (A %) — Gebruik van schoonmaakproducten met milieukeur.**\n\n50-70 % van alle voor de uitvoering van de overeenkomst benodigde schoonmaakproducten, naar volume bij inkoop, voldoet aan de criteria met betrekking tot toxiciteit voor in het water levende organismen en met betrekking tot verboden en beperkte stoffen van de EU-milieukeur voor schoonmaakproducten voor harde oppervlakken.\n\n• De aanbestedende dienst bepaalt de drempel\n• Er kunnen uitzonderingen worden gemaakt als de overheidsdiensten speciale schoonmaakeisen stellen en het inherent aan de benodigde schoonmaakproducten is dat zij niet kunnen voldoen aan de criteria.\n• Er kan vrijstelling van de eisen worden verleend als wordt aangetoond dat er geen producten verkrijgbaar zijn op de markt.\n\nEU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 12||) van alle voor de uitvoering van de overeenkomst benodigde schoonmaakproducten, naar volume bij inkoop, voldoet aan criterium 1 met betrekking tot toxiciteit voor in het water levende organismen en criterium 4 met betrekking tot verboden en beperkte stoffen van de EU-milieukeur voor schoonmaakproducten voor harde oppervlakken¹.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 9"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een lijst van de schoonmaakproducten die voor de uitvoering van de overeenkomst zullen worden gebruikt en documentatie waaruit blijkt dat die schoonmaakproducten aan de eisen voldoen. Producten met de [EU-milieukeur voor schoonmaakproducten voor harde oppervlakken](popup:TOELICHTING||De criteria zijn hier te vinden op blz. 45–62: https://eurlex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32017D1217&from=NL.\n\nBesluit (EU) 2017/1217 van de Commissie van 23 juni 2017 inzake EU-milieukeurcriteria voor schoonmaakproducten voor harde oppervlakken (PB L 180, 12.7.2017).||) worden geacht te voldoen aan de eisen."
+                }
+              },
+              {
+                "code": "TS2.1",
+                "title": "Gebruik van microvezelproducten",
+                "specification": "Ten minste [C %](popup:TOELICHTING||**Aanbevolen waarden voor (C %) — Gebruik van microvezelproducten.**\n\n80-100 %\n\nEU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 13||) van alle voor uitvoering van de overeenkomst te gebruiken van textiel vervaardigde schoonmaakaccessoires (bv. doeken, dweilen) is van microvezel. Voor het productonderhoud is er een technisch gegevensblad waarin wordt uitgelegd hoe het product moet worden gebruikt en gereinigd.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 13"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een lijst van de voor uitvoering van de overeenkomst te gebruiken van textiel vervaardigde schoonmaakaccessoires, en vermeldt daarbij specifiek welke artikelen zijn gemaakt van microvezel en vergezeld gaan van een technisch gegevensblad met onderhoudsinstructies."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Maatregelen en praktijken op het gebied van milieubeheer",
+                "specification": "De inschrijver beschikt over operationele procedures die tijdens de uitvoering van de overeenkomst worden gevolgd om:\n\n1. de in de inschrijving te specificeren indicatoren te controleren en te registreren. De controle vindt ten minste één keer in de vier maanden op een representatieve dag plaats aan de hand van de volgende indicatoren:\n   • hoeveelheid gebruikte schoonmaakproducten (met vermelding of zij voorzien zijn van een milieukeur en, indien van toepassing, van de verdunningsverhouding);\n   • gebruikte schoonmaakaccessoires (soort en of artikel wel of niet herbruikbaar is);\n   • hoeveelheid water gebruikt voor het schoonmaken en plaats van waterafvoer;\n   • gebruikte apparatuur (onder vermelding van energieklasse) en gebruiksduur;\n   • hoeveelheid vast afval geproduceerd bij het schoonmaken, en de scheiding ervan;\n2. de milieueffecten in verband met de onder 1 gecontroleerde en geregistreerde indicatoren zoveel mogelijk te beperken volgens een vastgesteld streefdoel. De procedures zijn er met name op gericht om:\n   • zo min mogelijk gebruik te maken van schoonmaakproducten;\n   • meer gebruik te maken van schoonmaakproducten met een milieukeur;\n   • het gebruik van schoonmaakaccessoires voor eenmalig gebruik te beperken;\n   • het watergebruik te beperken;\n   • de energieklasse van de gebruikte apparatuur te verbeteren;\n   • de hoeveelheid bij het schoonmaken geproduceerd vast afval te beperken en de scheiding/ recycling ervan te vergroten.\n3. de uitvoering van de punten 1 en 2 te evalueren door veranderingen in de indicatoren bij te houden en de procedures te implementeren;\n4. bij afwijkingen de benodigde maatregelen te treffen om die afwijkingen te corrigeren en zo mogelijk in de toekomst te voorkomen;\n5. een jaarverslag over de veranderingen van die indicatoren op te stellen.\n\nMilieubeheersystemen die zijn gecertificeerd volgens [ISO 14001](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32009R1221&from=NL) of geregistreerd volgens het milieubeheer- en milieuauditsysteem van de EU ([EMAS](popup:TOELICHTING||De verordening is [hier](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32009R1221&from=NL) te vinden op blz. 1–45\n\nVerordening (EG) nr. 1221/2009 van het Europees Parlement en de Raad van 25 november 2009 inzake de vrijwillige deelneming van organisaties aan een communautair milieubeheer- en milieuauditsysteem (EMAS), tot intrekking van Verordening (EG) nr. 761/2001 en van de Beschikkingen 2001/681/EG en 2006/193/EG van de Commissie (PB L 342, 22.12.2009).||)) en diensten die zijn voorzien van de EU-milieukeur voor binnenschoonmaakdiensten, worden geacht te voldoen als zij beantwoorden aan de rapportage-eis en het doel het milieueffect zoveel mogelijk te beperken.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 17"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver geeft een schriftelijk uiteenzetting van de procedure voor:\n\n1. het minstens één keer in de twee maanden controleren en registreren van de onder 1 genoemde indicatoren; er is tevens een beschrijving van de te nemen maatregelen om de milieueffecten van de onder 1 genoemde indicatoren zoveel mogelijk te beperken overeenkomstig de onder 2 genoemde criteria;\n2. het waarborgen van de implementatie van de operationele procedures;\n3. het corrigeren van de in de evaluatie gevonden afwijkingen en zo mogelijk het voorkomen daarvan in de toekomst."
+                }
+              },
+              {
+                "code": "TS4.1",
+                "title": "Handzeep",
+                "specification": "Ten minste [E %](popup:TOELICHTING||**Aanbevolen waarden voor (E %) — handzeep.**\n\n70 % van alle handzeep, naar volume bij inkoop, die de inschrijver krachtens de overeenkomst aan de aanbestedende dienst levert, voldoet aan de eisen van de EU-milieukeur voor cosmetische producten die worden af-, uit- of weggespoeld.\n\n• De aanbestedende dienst bepaalt de drempel.\n• De aanbestedende dienst specificeert hoe het percentage wordt beoordeeld, bv. naar volume, waarde.\n• Er kunnen uitzonderingen worden gemaakt als de overheidsdiensten speciale schoonmaakeisen stellen.\n• Als producten niet verkrijgbaar zijn op de markt, kan vrijstelling van de eisen worden verleend.\n\nEU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 22||) van alle handzeep, naar volume bij inkoop, die de inschrijver krachtens de overeenkomst aan de aanbestede dienst levert, voldoet aan de technische eisen van de [EU-milieukeur voor cosmetische producten](popup:TOELICHTING||De criteria zijn [hier](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32014D0893&from=NL) te vinden op blz. 47–61.\n\nBesluit (EU) 2014/893 van de Commissie van 9 december 2014 tot vaststelling van de milieucriteria voor de toekenning van de EU-milieukeur voor cosmetische producten die worden af-, uit- of weggespoeld (PB L 354, 11.12.2014).||) die worden af-, uit- of weggespoeld.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 21"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een lijst van de voor uitvoering van de overeenkomst te gebruiken van textiel vervaardigde schoonmaakaccessoires, en vermeldt daarbij specifiek welke artikelen zijn gemaakt van microvezel en vergezeld gaan van een technisch gegevensblad met onderhoudsinstructies."
+                }
+              },
+              {
+                "code": "TS4.2",
+                "title": "Textielen handdoeken",
+                "specification": "Ten minste [F %](popup:TOELICHTING||**Aanbevolen waarden voor (F %) — textielen handdoek**\n\n50-75 % van alle textielhanddoekrollen, uitgedrukt in aantal rollen, die de inschrijver krachtens de overeenkomst aan de aanbestedende dienst levert, voldoet aan de eisen van de EU-milieukeur voor textielproducten.\n\n• De aanbestedende dienst bepaalt de drempel.\n• De aanbestedende dienst specificeert hoe het percentage wordt beoordeeld, bv. naar volume, waarde.\n• Er kunnen uitzonderingen worden gemaakt als de overheidsdiensten speciale schoonmaakeisen stellen.\n• Als producten niet verkrijgbaar zijn op de markt, kan vrijstelling van de eisen worden verleend.\n\nEU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 22||) van alle textielhanddoekrollen, uitgedrukt in aantal rollen, die de inschrijver krachtens de overeenkomst aan de aanbestedende dienst levert, voldoet aan de technische eisen van de [EU-milieukeur voor textielproducten](popup:TOELICHTING||De criteria zijn [hier](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32014D0350&from=NL) te vinden op blz. 45–83.\n\nBesluit (EU) 2014/350 van de Commissie van 5 juni 2014 inzake EU-milieukeurcriteria voor textielproducten (PB L 174, 13.6.2014).||).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 21"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een lijst van de voor uitvoering van de overeenkomst te gebruiken van textiel vervaardigde schoonmaakaccessoires, en vermeldt daarbij specifiek welke artikelen zijn gemaakt van microvezel en vergezeld gaan van een technisch gegevensblad met onderhoudsinstructies."
+                }
+              },
+              {
+                "code": "TS4.3",
+                "title": "Textielen handdoeken",
+                "specification": "Alle tissuepapierproducten die de inschrijver in het kader van de overeenkomst aan de aanbestedende dienst levert, zijn in overeenstemming met de eisen van [een door de aanbestedende dienst te bepalen EN ISO 14024-milieukeur type I](popup:TOELICHTING||[Type I milieukeuren](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32019D0070) zijn officiële ecolabels die door onafhankelijke instanties worden beheerd, zoals:\n\n• Milieukeur (NL)\n• EU Ecolabel\n• Nordic Swan\n• Blauer Engel\n\nDeze keurmerken garanderen dat het product voldoet aan strenge milieucriteria (energieverbruik, grondstoffen, chemicaliën, recyclage, enz.).\n\nBesluit (EU) 2019/70 van de Commissie van 19 december 2018||).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een lijst van de krachtens de overeenkomst te leveren producten, inclusief documentatie waaruit blijkt dat zij voldoen aan de eisen."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS1.1",
+                "title": "Gebruik van schoonmaakproducten met een milieukeur",
+                "specification": "Alle schoonmaakproducten voor de verrichting van taken krachtens de overeenkomst moeten voldoen aan criterium 1 en criterium 4 van de [EU-milieukeur voor schoonmaakproducten voor harde oppervlakken](popup:TOELICHTING||De criteria zijn [hier](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32017D1217&from=NL) te vinden op blz. 45–62\n\nBesluit (EU) 2017/1217 van de Commissie van 23 juni 2017 inzake EU-milieukeurcriteria voor schoonmaakproducten voor harde oppervlakken (PB L 180, 12.7.2017).||) met betrekking tot toxiciteit voor in het water levende organismen respectievelijk verboden en beperkte stoffen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 3"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt technische specificaties van alle schoonmaakproducten die krachtens de overeenkomst worden gebruikt; bovendien verklaart hij dat de producten voldoen aan de eisen. In geval van twijfel kan om bewijzen van conformiteit worden gevraagd."
+                }
+              },
+              {
+                "code": "TS1.2",
+                "title": "Gebruik van geconcentreerde onverdunde schoonmaakproducten",
+                "specification": "**Optie A (eenvoudiger te verifiëren tijdens de uitvoering van de overeenkomst)**\n\nDe volgende voor de uitvoering van de overeenkomst benodigde schoonmaakproducten [opsomming van door de aanbestedende dienst te bepalen schoonmaakproducten — bv. allesreinigers, sanitairreinigers] hebben een verdunningsverhouding van minstens 1:80.\n\n**Optie B (lastiger te verifiëren tijdens uitvoering van de overeenkomst)**\n\nTen minste [B %](popup:TOELICHTING||**Aanbevolen waarden voor (B %) — Gebruik van geconcentreerde onverdunde producten.**\n\n30-50 % van alle voor de uitvoering van de overeenkomst benodigde schoonmaakproducten, naar volume bij inkoop, heeft een verdunningsverhouding van minstens 1:80.\n\n• De aanbestedende dienst bepaalt de drempel.\n• Er kunnen uitzonderingen worden gemaakt als de overheidsdiensten speciale schoonmaakeisen stellen en het inherent aan de benodigde schoonmaakproducten is dat zij niet kunnen voldoen aan de criteria.\n• Er kan vrijstelling van de eisen worden verleend als wordt aangetoond dat er geen producten verkrijgbaar zijn op de markt.\n\nEU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 12||) van alle voor de uitvoering van de overeenkomst benodigde schoonmaakproducten, naar volume bij inkoop, hebben een verdunningsverhouding van minstens 1:80.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 10"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een lijst van de schoonmaakproducten die voor de uitvoering van de overeenkomst zullen worden gebruikt en documentatie waaruit blijkt dat die schoonmaakproducten aan de eisen voldoen.\n\nVoor elk product wordt documentatie over de verdunningsverhouding verstrekt (veiligheidsinformatiebladen, gebruiksaanwijzingen of andere relevante middelen). Kan een product in verschillende verdunningsverhoudingen worden gebruikt, dan wordt de meest gangbare verdunningsverhouding, zoals gestaafd met interne personeelsinstructies, opgegeven. De verdunningsverhouding voor gebruiksklare producten wordt als 1:1 aangegeven."
+                }
+              },
+              {
+                "code": "TS2.1",
+                "title": "Gebruik van microvezelproducten",
+                "specification": "Alle van textiel vervaardigde schoonmaakaccessoires (bv. doeken, dweilen) die worden gebruikt om taken in verband met de overeenkomst te verrichten, zijn van microvezel of voldoen aan de eisen van de [EU-milieukeur voor textielproducten](popup:TOELICHTING||De criteria zijn [hier](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32014D0350&from=NL) te vinden op blz. 45–83.\n\nBesluit (EU) 2014/350 van de Commissie van 5 juni 2014  inzake EU-milieukeurcriteria voor textielproducten (PB L 174, 13.6.2014).||).\n\nVoor het productonderhoud is er een technisch gegevensblad waarin wordt uitgelegd hoe het product moet worden gebruikt en gereinigd.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 13"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een lijst van de voor uitvoering van de overeenkomst te gebruiken van textiel vervaardigde schoonmaakaccessoires, en vermeldt daarbij specifiek welke artikelen zijn gemaakt van microvezel of de EU-milieukeur voor textielproducten hebben en vergezeld gaan van een technisch gegevensblad met onderhoudsinstructies."
+                }
+              },
+              {
+                "code": "TS2.2",
+                "title": "Het gebruik van schoonmaakaccessoires met een milieukeur",
+                "specification": "Ten minste [D %](popup:TOELICHTING||**Aanbevolen waarden voor (D %) — Gebruik van schoonmaakaccessoires met milieukeur**\n\n20-50 % van alle voor uitvoering van de overeenkomst te gebruiken van textiel vervaardigde schoonmaakaccessoires (bv. doeken, dweilen) voldoet aan de eisen van de EU-milieukeur voor textielproducten.\n\n• De aanbestedende dienst bepaalt de drempel.\n• De aanbestedende dienst specificeert hoe het percentage wordt beoordeeld: aan de hand van het aantal van textiel vervaardigde accessoires of de waarde.\n• Er kunnen uitzonderingen worden gemaakt als de overheidsdiensten speciale schoonmaakeisen stellen.\n• Er kan vrijstelling van de eisen worden verleend als wordt aangetoond dat er geen producten verkrijgbaar zijn op de markt.\n\nEU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 16||) van alle voor uitvoering van de overeenkomst te gebruiken van textiel vervaardigde schoonmaakaccessoires (bv. doeken, dweilen) voldoet aan de technische eisen van de [EU-milieukeur voor textielproducten](popup:TOELICHTING||De criteria zijn [hier](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32014D0350&from=NL) te vinden op blz. 45–83.\n\nBesluit (EU) 2014/350 van de Commissie van 5 juni 2014  inzake EU-milieukeurcriteria voor textielproducten (PB L 174, 13.6.2014).||).\n\nVoor het productonderhoud is er een technisch gegevensblad waarin wordt uitgelegd hoe het product moet worden gebruikt en gereinigd.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 14"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een lijst van de voor uitvoering van de overeenkomst te gebruiken van textiel vervaardigde schoonmaakaccessoires, inclusief documentatie waaruit blijkt dat die voldoen aan de eisen.\n\nProducten met de EU-milieukeur voor textielproducten of gelijkwaardige milieukeur die vergezeld gaan van een technisch gegevensblad met onderhoudsinstructies, worden geacht te voldoen aan de eisen."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "gunningscriteria",
+      "title": "Gunningscriteria",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als gunningscriteria. Daarmee wordt vastgelegd op basis waarvan de inschrijvingen inhoudelijk worden beoordeeld en de economisch meest voordelige inschrijving wordt vastgesteld.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale gunningscriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "1. Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "2. Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](https://www.mvicriteria.nl) op BASIS.\n   c. Is een MVI [basiscriterium](https://www.mvicriteria.nl) strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "gunningscriteria",
+            "label": "Kerncriteria voor elektriciteit",
+            "label_short": "elektriciteit"
+          }
+        ],
+        "default_main_tab": "gunningscriteria",
+        "data": {
+          "gunningscriteria": {
+            "core_criteria": [
+              {
+                "code": "GC1.1",
+                "title": "Gebruik van schoonmaakproducten met een milieukeur",
+                "subtitle": "Alleen van toepassing in verband met TS 1.1 — Optie B",
+                "specification": "Er worden proportioneel punten toegekend aan inschrijvingen waarvoor meer dan [A %](popup:TOELICHTING||**Aanbevolen waarden voor (A %) — Gebruik van schoonmaakproducten met milieukeur.**\n\n50-70 % van alle voor de uitvoering van de overeenkomst benodigde schoonmaakproducten, naar volume bij inkoop, voldoet aan de criteria met betrekking tot toxiciteit voor in het water levende organismen en met betrekking tot verboden en beperkte stoffen van de EU-milieukeur voor schoonmaakproducten voor harde oppervlakken.\n\nEU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 12||) van alle voor de uitvoering van de overeenkomst benodigde schoonmaakproducten, naar volume bij inkoop, moet voldoen aan criterium 1 en criterium 4 van de [EU-milieukeur voor schoonmaakproducten voor harde oppervlakken](popup:TOELICHTING||De criteria zijn hier te vinden: https://eurlex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32017D1217&from=NL.\n\nBesluit (EU) 2017/1217 van de Commissie van 23 juni 2017 inzake EU-milieukeurcriteria voor schoonmaakproducten voor harde oppervlakken (PB L 180, 12.7.2017, blz. 45–62).||) met betrekking tot toxiciteit voor in het water levende organismen respectievelijk verboden en beperkte stoffen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 11"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een lijst van de schoonmaakproducten die voor de uitvoering van de overeenkomst zullen worden gebruikt en documentatie waaruit blijkt dat die schoonmaakproducten aan de eisen voldoen. Producten met de EU-milieukeur voor schoonmaakproducten voor harde oppervlakken¹ worden geacht te voldoen aan de eisen."
+                }
+              },
+              {
+                "code": "GC1.2",
+                "title": "Gebruik van geconcentreerde onverdunde schoonmaakproducten",
+                "specification": "Er worden punten toegekend aan inschrijvingen in verhouding tot het percentage van alle voor de uitvoering van de overeenkomst benodigde schoonmaakproducten, naar volume bij inkoop, met een verdunningsverhouding van minstens 1:80.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 12"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een lijst van de schoonmaakproducten die voor de uitvoering van de overeenkomst zullen worden gebruikt en documentatie waaruit blijkt dat die schoonmaakproducten aan de eisen voldoen.\n\nVoor elk product wordt documentatie over de verdunningsverhouding verstrekt (veiligheidsinformatiebladen, gebruiksaanwijzingen of andere relevante middelen). Kan een product in verschillende verdunningsverhoudingen worden gebruikt, dan wordt de meest gangbare verdunningsverhouding, zoals gestaafd met interne personeelsinstructies, opgegeven. De verdunningsverhouding voor gebruiksklare producten wordt als 1:1 aangegeven."
+                }
+              },
+              {
+                "code": "GC2.1",
+                "title": "Gebruik van microvezelproducten",
+                "specification": "Er worden proportioneel punten toegekend aan inschrijvingen waarin meer dan [C %](popup:TOELICHTING||**Aanbevolen waarden voor (C %) — Gebruik van microvezelproducten.**\n\n50-75 % van alle in het kader van de overeenkomst te gebruiken van textiel vervaardigde schoonmaakaccessoires (bv. doeken, dweilen) is van microvezel.\n\n• De aanbestedende dienst specificeert hoe het percentage wordt beoordeeld: aan de hand van het aantal van textiel vervaardigde accessoires of de waarde.\n• Er kunnen uitzonderingen worden gemaakt als de overheidsdiensten speciale schoonmaakeisen stellen.\n• Er kan vrijstelling van de eisen worden verleend als wordt aangetoond dat er geen producten verkrijgbaar zijn op de markt.\n\nEU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 16||) van alle voor uitvoering van de overeenkomst te gebruiken van textiel vervaardigde schoonmaakaccessoires (bv. doeken, dweilen) van microvezel is.\n\nVoor het productonderhoud is er een technisch gegevensblad waarin wordt uitgelegd hoe het product moet worden gebruikt en gereinigd.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 15"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een lijst van de voor uitvoering van de overeenkomst te gebruiken van textiel vervaardigde schoonmaakaccessoires, en vermeldt daarbij specifiek welke artikelen zijn gemaakt van microvezel en vergezeld gaan van een technisch gegevensblad met onderhoudsinstructies."
+                }
+              },
+              {
+                "code": "GC2.2",
+                "title": "Het gebruik van schoonmaakaccessoires met een milieukeur",
+                "specification": "Er worden proportioneel punten toegekend aan inschrijvingen waarin een percentage van alle voor uitvoering van de overeenkomst te gebruiken van textiel vervaardigde schoonmaakaccessoires (bv. doeken, dweilen) voldoet aan de technische eisen van de [EU-milieukeur voor textielproducten](popup:TOELICHTING||De criteria zijn [hier](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32014D0350&from=NL) te vinden op blz. 45–83.\n\nBesluit (EU) 2014/350 van de Commissie van 5 juni 2014  inzake EU-milieukeurcriteria voor textielproducten (PB L 174, 13.6.2014).||).\n\nVoor het productonderhoud is er een technisch gegevensblad waarin wordt uitgelegd hoe het product moet worden gebruikt en gereinigd.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 15"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een lijst van de voor uitvoering van de overeenkomst te gebruiken van textiel vervaardigde schoonmaakaccessoires, inclusief documentatie waaruit blijkt dat die voldoen aan de eisen.\n\nProducten met de EU-milieukeur voor textielproducten² die vergezeld gaan van een technisch gegevensblad met onderhoudsinstructies, worden geacht te voldoen aan de eisen."
+                }
+              },
+              {
+                "code": "GC3",
+                "title": "Milieubeheersystemen",
+                "specification": "Er worden punten toegekend in verhouding tot de kwaliteit van het milieubeheersysteem dat de inschrijver zegt te zullen hanteren om de overeenkomst uit te voeren.\n\nDe evaluatie van het systeem is gebaseerd op het volgende:\n\na) vaststelling van belangrijke directe en indirecte milieuaspecten (op basis van het milieueffect ervan) en van passende maatregelen om het effect ervan zoveel mogelijk te beperken;\n\nb) een in detail uitgewerkt actieprogramma dat ervoor zorgt dat de vastgestelde maatregelen op de juiste manier worden toegepast op de verstrekte diensten. In het actieprogramma worden doelen gesteld voor de milieuprestaties in verband met de vastgestelde milieuaspecten (bv. beperking van de hoeveelheid gebruikte schoonmaakproducten);\n\nc) een jaarlijks uit te voeren interne evaluatie die het mogelijk maakt de prestaties van de organisatie te verifiëren op basis van de in het actieprogramma gestelde doelen. De uitkomst van de evaluatie wordt door de directie van de organisatie gebruikt om doorlopende verbetering te realiseren via bijwerking van het milieuactieprogramma (doelen en maatregelen);\n\nd) evaluatie door een externe met de conformiteitsbeoordeling belaste instantie, d.w.z. een instantie met een krachtens EU-wetgeving of internationale normen verleende accreditatie of vergunning om milieubeheersystemen te beoordelen op conformiteit;\n\ne) de mogelijkheid om door een derde geverifieerde materiële of schriftelijke bewjsstukken te verstrekken waaruit blijkt dat er geen sprake is van niet-naleving van de toepasselijke wettelijke milieuvoorschriften;\n\nf) het streven naar voortdurende verbetering van de milieuprestaties van vastgestelde milieuaspecten, in het bijzonder door middel van de periodieke controle van, en openbare rapportage over de milieuprestatie van de organisatie. De milieuprestaties worden geëvalueerd op grond van generieke en sectorspecifieke indicatoren voor belangrijke milieugebieden die specifiek betrekking hebben op cruciale milieuaspecten. De milieu-indicatoren zijn van dien aard dat de resulterende informatie relevant en vergelijkbaar is en dat de organisatie haar milieuprestatie zowel over verschillende verslagperioden als met de milieuprestaties van andere organisaties of ijkpunten in de sector kan vergelijken;\n\ng) ten minste één keer in de vier jaar de verplichte publicatie van een door een derde-verificateur gevalideerde milieuverklaring met een beschrijving van het volgende:\n\n• de structuur en activiteiten van de organisatie;\n• het milieubeleid en het milieubeheersysteem;\n• milieuaspecten en milieueffecten;\n• het milieuprogramma, inclusief maatregelen en streefdoelen;\n• de milieuprestaties en naleving van de toepasselijke wettelijke milieuvoorschriften;\n\nh) actieve betrokkenheid van het personeel, waarbij medewerkers en hun vertegenwoordigers zowel inspraak hebben als informatie ontvangen. Dat betekent dat de medewerkers deelnemen aan het proces om de milieuprestaties van de organisatie voortdurend te verbeteren door mee te werken aan alle stappen van het milieubeheersysteem.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver geeft een beschrijving van de maatregelen die worden genomen om te voldoen aan voornoemde eisen.\n\nMilieubeheersystemen die zijn gecertificeerd volgens ISO 14001 worden geacht te beantwoorden aan a), b), c) en d). Milieubeheersystemen die zijn geregistreerd in het kader van het EMAS worden geacht te beantwoorden aan alle voornoemde punten."
+                }
+              },
+              {
+                "code": "GC4",
+                "title": "Energie-efficiëntie van stofzuigers",
+                "specification": "Er worden proportioneel punten toegekend aan inschrijvingen waarin een percentage van alle voor de uitvoering van de overeenkomst benodigde stofzuigers bij inkoop overeenstemt met ten minste de volgende in Gedelegeerde Verordening (EU) nr. 665/2013 van de Commissie vastgestelde energie-efficiëntieklassen:\n\n• klasse A voor stofzuigers die vóór 1.9.2017 zijn aangekocht;\n• klasse A+ voor stofzuigers die na 1.9.2017 zijn aangekocht.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 23"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een lijst van de voor uitvoering van de overeenkomst te gebruiken stofzuigers, inclusief documentatie waaruit blijkt dat zij voldoen aan de eisen."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "GC2.2",
+                "title": "Het gebruik van schoonmaakaccessoires met een milieukeur",
+                "specification": "Er worden proportioneel punten toegekend aan inschrijvingen waarin meer dan [D %](popup:TOELICHTING||**Aanbevolen waarden voor (D %) — Gebruik van schoonmaakaccessoires met milieukeur**\n\n20-50 % van alle voor uitvoering van de overeenkomst te gebruiken van textiel vervaardigde schoonmaakaccessoires (bv. doeken, dweilen) voldoet aan de eisen van de EU-milieukeur voor textielproducten.\n\n• De aanbestedende dienst specificeert hoe het percentage wordt beoordeeld: aan de hand van het aantal van textiel vervaardigde accessoires of de waarde.\n• Er kunnen uitzonderingen worden gemaakt als de overheidsdiensten speciale schoonmaakeisen stellen.\n• Er kan vrijstelling van de eisen worden verleend als wordt aangetoond dat er geen producten verkrijgbaar zijn op de markt.\n\nEU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 16||) van alle voor uitvoering van de overeenkomst te gebruiken van textiel vervaardigde schoonmaakaccessoires (bv. doeken, dweilen) voldoet aan de technische eisen van de [EU-milieukeur voor textielproducten](popup:TOELICHTING||De criteria zijn [hier](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32014D0350&from=NL) te vinden op blz. 45–83.\n\nBesluit (EU) 2014/350 van de Commissie van 5 juni 2014  inzake EU-milieukeurcriteria voor textielproducten (PB L 174, 13.6.2014).||).\n\nVoor het productonderhoud is er een technisch gegevensblad waarin wordt uitgelegd hoe het product moet worden gebruikt en gereinigd.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 15"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt een lijst van de voor uitvoering van de overeenkomst te gebruiken van textiel vervaardigde schoonmaakaccessoires, inclusief documentatie waaruit blijkt dat die voldoen aan de eisen.\n\nProducten met de EU-milieukeur voor textielproducten die vergezeld gaan van een technisch gegevensblad met onderhoudsinstructies, worden geacht te voldoen aan de eisen."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "uitvoeringsvoorwaarden",
+      "title": "Uitvoeringsvoorwaarden",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als contractuele uitvoeringsvoorwaarden. Ze borgen dat de verplichtingen worden nagekomen.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale uitvoeringsvoorwaarden) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "1. Neem in ieder geval de kerncriteria op in de aanbestedingsdocumenten.",
+        "2. Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](https://www.mvicriteria.nl) op BASIS.\n   c. Is een MVI [basiscriterium](https://www.mvicriteria.nl) strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "uitvoeringsvoorwaarden",
+            "label": "Kerncriteria voor uitvoeringsvoorwaarden",
+            "label_short": "uitvoeringsvoorwaarden"
+          }
+        ],
+        "default_main_tab": "uitvoeringsvoorwaarden",
+        "data": {
+          "uitvoeringsvoorwaarden": {
+            "core_criteria": [
+              {
+                "code": "CUV1.1",
+                "title": "Gebruikte schoonmaakproducten en -toebehoren",
+                "specification": "De aannemer documenteert tijdens de overeenkomst de volgende aspecten en brengt er minstens twee keer per jaar verslag over uit aan de aanbestedende dienst:\n\n1. Soort, verdunningsverhouding en volume bij aankoop van de voor de schoonmaakdiensten gebruikte schoonmaakproducten, onder vermelding van welke producten voldoen aan de eisen van TS1.1, TS1.2, GC1.1 c.q. GC1.2.\n\n2. Soort en hoeveelheid van de voor de schoonmaakdiensten gebruikte schoonmaakaccessoires, met opgave van de producten die voldoen aan de eisen van TS2.1, TS2.2, GC2.1 c.q. GC2.2.\n\n**De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.**",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 24"
+                }
+              },
+              {
+                "code": "CUV1.2",
+                "title": "Dosering van schoonmaakproducten",
+                "specification": "De aannemer stelt het schoonmaakpersoneel op de schoonmaaklocatie c.q. op de locatie van de aannemer de voor de gebruikte schoonmaakproducten geschikte doserings- en verdunningsapparaten ter beschikking (bv. automatische dispensers, maatbekers/doseerdoppen, handpompen, verstuivers), samen met de instructies voor het correct doseren en verdunnen.\n\n**De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.**",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 24"
+                }
+              },
+              {
+                "code": "CUV2",
+                "title": "Opleiding van personeel",
+                "specification": "De aannemer zorgt tijdens de overeenkomst voor een intern programma voor personeelsopleiding of stelt medewerkers in staat deel te nemen aan een extern opleidingsprogramma over de volgende onderwerpen, voor zover die relevant zijn voor de in het kader van de overeenkomst uit te voeren taken:\n\n**Schoonmaakproducten:**\n\n— Medewerkers worden opgeleid om voor elke schoonmaaktaak de juiste productdosering te gebruiken.\n\n— Medewerkers worden opgeleid om de juiste verdunningsverhouding voor onverdunde schoonmaakproducten te gebruiken en om het geschikte doseringsapparaat te gebruiken.\n\n— Medewerkers worden opgeleid om schoonmaakproducten op passende wijze te bewaren.\n\n— Teneinde het risico op overdadig en verkeerd gebruik van schoonmaakproducten tot een minimum te beperken, komt in de opleiding aan bod hoe het gamma gebruikte schoonmaakproducten kan worden verkleind.\n\n**Energiebesparing:**\n\n— Medewerkers worden opgeleid om producten te verdunnen met onverwarmd water, tenzij anders aangegeven door de fabrikant van het product.\n\n— Indien nodig worden medewerkers opgeleid om voor zowel industriële als huishoudelijke wasmachines de passende cyclus en temperatuur te gebruiken.\n\n— Indien nodig worden medewerkers opgeleid om het licht uit te doen wanneer zij klaar zijn met hun taken.\n\n**Waterbesparing:**\n\n— Medewerkers worden opgeleid om waar passend gebruik te maken van microvezelproducten, teneinde het gebruik van water en schoonmaakproducten tot een minimum te beperken.\n\n**Afval:**\n\n— Medewerkers worden opgeleid om gebruik te maken van duurzame en herbruikbare schoonmaakaccessoires en om zo min mogelijk gebruik te maken van schoonmaakbenodigdheden voor eenmalig gebruik (bv. handschoenen), mits de veiligheid van het personeel en de hygiënevoorschriften daardoor niet in het gedrang komen.\n\n— Medewerkers worden opgeleid om afvalwater correct te verwijderen.\n\n— Medewerkers ontvangen specifieke opleiding voor het scheiden van tijdens schoonmaakactiviteiten geproduceerd afval. De opleiding omvat het beheer van vast afval in zowel de bedrijfsruimten en/of op de terreinen van de onderneming als op de schoonmaaklocaties.\n\n**Gezondheid en veiligheid:**\n\n— Medewerkers worden voorgelicht over gezondheids-, veiligheids- en milieukwesties met betrekking tot schoonmaaktaken en worden aangemoedigd om beste praktijken over te nemen. Dit moet informatie omvatten over:\n\n• veiligheidsinformatiebladen en de behandeling van chemische stoffen;\n• ergonomie en toepasselijke nationale wetgeving inzake gezondheid en veiligheid op het werk;\n• verwijdering, schoonmaak en opslag van herbruikbare handschoenen (indien van toepassing); en\n• veiligheid in het verkeer en ecorijden (van toepassing op aanvragers met eigen medewerkers die in het kader van de schoonmaakdienst een voertuig besturen).\n\nDe aannemer ziet erop toe dat alle nieuwe (vaste en tijdelijke) medewerkers die krachtens de overeenkomst schoonmaaktaken verrichten, binnen zes weken na indiensttreding een passende opleiding krijgen. Alle medewerkers die krachtens de overeenkomst schoonmaaktaken verrichten, krijgen minstens eenmaal per jaar een nascholingscursus. De nascholing hoeft geen volledige herhaling van de initiële opleiding te zijn, maar moet wel ingaan op alle vermelde milieukwesties en ervoor zorgen dat de betrokken medewerkers doordrongen zijn van hun verantwoordelijkheden.\n\nDe aannemer meldt de aangeboden opleiding aan de aanbestedende dienst.\n\n**De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.**\n\n**Aanbevolen waarden**\n\n• Voor vast personeel en tijdelijke medewerkers met een overeenkomst van meer dan een jaar: 16 uur initiële opleiding; ieder jaar 8 uur nascholing.\n• Voor tijdelijke medewerkers met een overeenkomst van niet meer dan een jaar: 8 uur initiële opleiding.\n• De duur van de opleiding kan worden aangepast aan de behoeften en voorwaarden van de inschrijvingen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 25"
+                }
+              },
+              {
+                "code": "CUV3",
+                "title": "Maatregelen en praktijken op het gebied van milieubeheer",
+                "specification": "Tijdens de overeenkomst documenteert en rapporteert de aannemer:\n\n• de resultaten van de controle van indicatoren; en\n• de resultaten van de evaluatie en, indien van toepassing, de correctieve en preventieve maatregelen overeenkomstig de schriftelijke procedures voor verificatie van de TS3.\n\nDeze verslagen worden voor verificatiedoeleinden beschikbaar gesteld aan de aanbestedende dienst.\n\n**De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.**",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 27"
+                }
+              },
+              {
+                "code": "CUV4",
+                "title": "Verbruiksgoederen",
+                "subtitle": "Alleen van toepassing als de aanbestedende dienst in het kader van de inschrijving verzoekt om de levering van verbruiksgoederen.",
+                "specification": "De aannemer documenteert tijdens de overeenkomst de soort en de hoeveelheid van de in het kader van TS4.1, TS4.2 en TS4.3 verstrekte verbruiksgoederen, voor zover van toepassing, en brengt er minstens twee keer per jaar verslag over uit aan de aanbestedende dienst.\n\n**De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.**",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 28"
+                }
+              },
+              {
+                "code": "CUV5",
+                "title": "Aankoop van nieuwe stofzuigers",
+                "specification": "Alle nieuwe stofzuigers die de aannemer aanschaft voor de uitvoering van taken in verband met de overeenkomst, stemmen bij aankoop overeen met energie-efficiëntieklasse A+ of hoger, zoals bepaald in Gedelegeerde Verordening (EU) nr. 665/2013 van de Commissie.\n\nDe aannemer meldt de aanschaf van nieuwe stofzuigers bij de aanbestedende dienst.\n\n**De aanbestedende dienst kan regels opstellen voor het opleggen van boeten bij niet-naleving.**",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor binnenschoonmaak - Pag. 29"
+                }
+              }
+            ],
+            "extended_criteria": []
+          }
+        }
+      }
     }
   ]
 }

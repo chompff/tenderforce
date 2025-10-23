@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { Scale, Search } from 'lucide-react';
 
 interface LegalBasisPopupProps {
@@ -16,6 +17,7 @@ export const LegalBasisPopup: React.FC<LegalBasisPopupProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [positionAbove, setPositionAbove] = useState(false);
+  const [position, setPosition] = useState({ top: 0, left: 0 });
   const popupRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
@@ -40,20 +42,26 @@ export const LegalBasisPopup: React.FC<LegalBasisPopupProps> = ({
     };
   }, [isOpen]);
 
-  // Check if there's enough space below the button
+  // Calculate popup position when opened
   useEffect(() => {
-    if (isOpen && buttonRef.current && popupRef.current) {
+    if (isOpen && buttonRef.current) {
       const buttonRect = buttonRef.current.getBoundingClientRect();
-      const popupHeight = popupRef.current.offsetHeight;
+      const popupHeight = 400; // Approximate max height
       const spaceBelow = window.innerHeight - buttonRect.bottom;
       const spaceAbove = buttonRect.top;
 
-      // If not enough space below but more space above, position above
-      if (spaceBelow < popupHeight && spaceAbove > spaceBelow) {
-        setPositionAbove(true);
-      } else {
-        setPositionAbove(false);
-      }
+      // Determine if we should position above or below
+      const shouldPositionAbove = spaceBelow < popupHeight && spaceAbove > spaceBelow;
+      setPositionAbove(shouldPositionAbove);
+
+      // Calculate position
+      const top = shouldPositionAbove
+        ? buttonRect.top - 8 // 8px spacing above button
+        : buttonRect.bottom + 8; // 8px spacing below button
+
+      const left = buttonRect.left;
+
+      setPosition({ top, left });
     }
   }, [isOpen]);
 
@@ -87,34 +95,51 @@ export const LegalBasisPopup: React.FC<LegalBasisPopupProps> = ({
         );
       }
 
-      // Parse bold text (**text**)
-      const parseBoldText = (text: string) => {
+      // Parse bold text and links
+      const parseInlineElements = (text: string) => {
         const parts: (string | JSX.Element)[] = [];
-        let lastIndex = 0;
-        const boldRegex = /\*\*(.+?)\*\*/g;
-        let match;
+        let remaining = text;
         let keyCounter = 0;
 
-        while ((match = boldRegex.exec(text)) !== null) {
-          // Add text before the bold part
-          if (match.index > lastIndex) {
-            parts.push(text.substring(lastIndex, match.index));
+        while (remaining.length > 0) {
+          // Try to match [text](url)
+          const linkMatch = remaining.match(/^\[([^\]]+)\]\(([^)]+)\)/);
+          if (linkMatch) {
+            const [fullMatch, linkText, url] = linkMatch;
+            parts.push(
+              <a
+                key={`link-${lineIndex}-${keyCounter++}`}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 underline"
+              >
+                {linkText}
+              </a>
+            );
+            remaining = remaining.slice(fullMatch.length);
+            continue;
           }
-          // Add bold text
-          parts.push(<strong key={`bold-${lineIndex}-${keyCounter++}`}>{match[1]}</strong>);
-          lastIndex = boldRegex.lastIndex;
-        }
 
-        // Add remaining text
-        if (lastIndex < text.length) {
-          parts.push(text.substring(lastIndex));
+          // Try to match **bold**
+          const boldMatch = remaining.match(/^\*\*(.+?)\*\*/);
+          if (boldMatch) {
+            const [fullMatch, boldText] = boldMatch;
+            parts.push(<strong key={`bold-${lineIndex}-${keyCounter++}`}>{boldText}</strong>);
+            remaining = remaining.slice(fullMatch.length);
+            continue;
+          }
+
+          // No match, add next character
+          parts.push(remaining[0]);
+          remaining = remaining.slice(1);
         }
 
         return parts.length > 0 ? parts : text;
       };
 
-      // Regular text with potential bold formatting
-      return <div key={lineIndex}>{parseBoldText(line)}</div>;
+      // Regular text with potential bold/link formatting
+      return <div key={lineIndex}>{parseInlineElements(line)}</div>;
     });
   };
 
@@ -122,7 +147,7 @@ export const LegalBasisPopup: React.FC<LegalBasisPopupProps> = ({
   const Icon = title === 'VOORBEELD' ? Search : Scale;
 
   return (
-    <span className="relative inline-block">
+    <>
       <button
         ref={buttonRef}
         onClick={() => setIsOpen(!isOpen)}
@@ -131,13 +156,15 @@ export const LegalBasisPopup: React.FC<LegalBasisPopupProps> = ({
         {triggerText}
       </button>
 
-      {isOpen && (
+      {isOpen && createPortal(
         <div
           ref={popupRef}
-          className={`absolute z-50 w-[400px] max-h-[80vh] overflow-y-auto bg-white rounded-lg shadow-xl border border-gray-200 p-4 left-0 ${
-            positionAbove ? 'mb-2' : 'mt-2'
-          }`}
-          style={positionAbove ? { bottom: '100%' } : { top: '100%' }}
+          className="fixed z-[9999] w-[400px] max-h-[80vh] overflow-y-auto bg-white rounded-lg shadow-xl border border-gray-200 p-4"
+          style={{
+            top: positionAbove ? 'auto' : `${position.top}px`,
+            bottom: positionAbove ? `${window.innerHeight - position.top}px` : 'auto',
+            left: `${position.left}px`,
+          }}
         >
           {/* Header */}
           <div className="flex items-start gap-3 mb-3">
@@ -160,8 +187,9 @@ export const LegalBasisPopup: React.FC<LegalBasisPopupProps> = ({
               {legalReference}
             </p>
           )}
-        </div>
+        </div>,
+        document.body
       )}
-    </span>
+    </>
   );
 };

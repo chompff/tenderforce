@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { Copy, ExternalLink } from 'lucide-react';
+import { LegalBasisPopup } from '../LegalBasisPopup';
 
 interface GppCriterion {
   code: string;
@@ -55,20 +56,146 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
     { key: 'extended_criteria' as const, label: 'Uitgebreide criteria', color: 'bg-orange-500' }
   ];
 
+  // Parse popups first (before splitting by lines) since they can span multiple lines
+  const parsePopups = (text: string): React.ReactNode[] => {
+    const parts: React.ReactNode[] = [];
+    let remaining = text;
+    let key = 0;
+
+    while (remaining.length > 0) {
+      // Look for [text](popup:...)
+      const bracketIndex = remaining.indexOf('[');
+      if (bracketIndex === -1) {
+        // No more popups, add remaining text
+        if (remaining.length > 0) {
+          parts.push(remaining);
+        }
+        break;
+      }
+
+      // Add text before the bracket
+      if (bracketIndex > 0) {
+        parts.push(remaining.substring(0, bracketIndex));
+      }
+
+      // Find the closing ] for link text
+      const linkTextEnd = remaining.indexOf(']', bracketIndex + 1);
+      if (linkTextEnd === -1 || remaining[linkTextEnd + 1] !== '(') {
+        // Not a valid link, add the [ and continue
+        parts.push(remaining[bracketIndex]);
+        remaining = remaining.slice(bracketIndex + 1);
+        continue;
+      }
+
+      const linkText = remaining.substring(bracketIndex + 1, linkTextEnd);
+      const actionStart = linkTextEnd + 2;
+
+      // Find matching closing parenthesis, counting nested ones
+      let parenCount = 1;
+      let actionEnd = actionStart;
+      while (actionEnd < remaining.length && parenCount > 0) {
+        if (remaining[actionEnd] === '(') parenCount++;
+        else if (remaining[actionEnd] === ')') parenCount--;
+        if (parenCount > 0) actionEnd++;
+      }
+
+      if (parenCount !== 0) {
+        // No matching closing paren, not a valid link
+        parts.push(remaining[bracketIndex]);
+        remaining = remaining.slice(bracketIndex + 1);
+        continue;
+      }
+
+      const action = remaining.substring(actionStart, actionEnd);
+
+      if (action.startsWith('popup:')) {
+        // Parse popup parameters: popup:title||content||reference
+        const popupData = action.substring(6); // Remove 'popup:' prefix
+        const parts_split = popupData.split('||');
+        const title = parts_split[0] || '';
+        const content = parts_split[1] || '';
+        const reference = parts_split[2] || '';
+
+        parts.push(
+          <LegalBasisPopup
+            key={`popup-${key++}`}
+            triggerText={linkText}
+            title={title}
+            content={content}
+            legalReference={reference}
+          />
+        );
+      } else if (action.startsWith('http://') || action.startsWith('https://')) {
+        // Regular external link
+        parts.push(
+          <a
+            key={`link-${key++}`}
+            href={action}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 underline cursor-pointer inline"
+          >
+            {linkText}
+          </a>
+        );
+      } else {
+        // Unknown link format, treat as text
+        parts.push(remaining.substring(bracketIndex, actionEnd + 1));
+      }
+
+      remaining = remaining.slice(actionEnd + 1);
+    }
+
+    return parts;
+  };
+
   // Parse text with markdown support (images, bold, and italic)
   const parseTextWithMarkdown = (text: string) => {
-    const lines = text.split('\n');
+    // First, parse popups since they can span multiple lines
+    const popupParsedParts = parsePopups(text);
+
+    // Now we need to process the parts, but keep inline elements on the same line
+    // We'll rebuild the text with placeholders for React elements
+    const reactElements: { [key: string]: React.ReactElement } = {};
+    let textWithPlaceholders = '';
+    let elementCounter = 0;
+
+    popupParsedParts.forEach((part) => {
+      if (React.isValidElement(part)) {
+        // Store the React element and use a placeholder
+        const placeholder = `__REACT_ELEMENT_${elementCounter}__`;
+        reactElements[placeholder] = part;
+        textWithPlaceholders += placeholder;
+        elementCounter++;
+      } else {
+        // It's a string, add it directly
+        textWithPlaceholders += part as string;
+      }
+    });
+
+    // Now parse the text with placeholders for markdown
+    const lines = textWithPlaceholders.split('\n');
     const elements: React.ReactNode[] = [];
     let currentTextBlock: string[] = [];
 
     const parseInlineFormatting = (line: string) => {
-      // Parse **bold**, *italic*, and _italic_ syntax
-      // Use a more complex regex to handle both bold and italic
+      // Parse **bold**, *italic*, _italic_, and replace placeholders with React elements
       const parts: React.ReactNode[] = [];
       let remaining = line;
       let key = 0;
 
       while (remaining.length > 0) {
+        // Try to match placeholder for React element
+        const placeholderMatch = remaining.match(/^__REACT_ELEMENT_(\d+)__/);
+        if (placeholderMatch) {
+          const placeholder = placeholderMatch[0];
+          if (reactElements[placeholder]) {
+            parts.push(React.cloneElement(reactElements[placeholder], { key: `react-el-${key++}` }));
+          }
+          remaining = remaining.slice(placeholder.length);
+          continue;
+        }
+
         // Try to match **bold**
         const boldMatch = remaining.match(/^(\*\*)(.*?)\*\*/);
         if (boldMatch) {
@@ -278,7 +405,7 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
     // Flush remaining text with bold parsing
     flushTextBlock('text-final');
 
-    return elements.length > 0 ? <>{elements}</> : <div className="whitespace-pre-line">{text}</div>;
+    return elements.length > 0 ? <>{elements}</> : <div className="whitespace-pre-line">{textWithPlaceholders}</div>;
   };
 
   const renderTable = (specs: GppCriterion[], categoryLabel: string) => {
