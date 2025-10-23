@@ -1,8 +1,8 @@
 {
   "obligation_id": "gpp-paints",
   "archetype": "GPP",
-  "title": "EU GPP criteria of nationaal gelijkwaardig",
-  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de EU-criteria inzake groene overheidsopdrachten voor verven, lakken en wegmarkeringen toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
+  "title": "Verplichtingen onder EU GPP óf nationaal gelijkwaardig",
+  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de [EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/03c84b99-a91e-4029-bed5-31ea7250558f/details) toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
   "badges": ["GPP", "NL", "EU"],
   "colors": {
     "text": "#356534",
@@ -23,20 +23,748 @@
       "key": "technical_specs",
       "title": "Technische specificaties",
       "requirement_level": "verplicht",
-      "intro": "De GPP criteria voor verven, lakken en wegmarkeringen zijn nog in ontwikkeling. Deze module bevat voorlopig placeholder content.",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als technische specificaties. Daarmee worden de inhoudelijke eisen vastgelegd die aan het werk, de levering of de dienst worden gesteld.",
       "warnings": [
         {
-          "severity": "yellow",
-          "text": "Let op: De inhoud van deze module is nog niet compleet. De definitieve GPP criteria worden later toegevoegd."
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale technische specificaties) uit de EU GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn dient u deze op te nemen."
         }
       ],
       "steps": [
-        "Raadpleeg de EU GPP criteria voor verven, lakken en wegmarkeringen wanneer deze beschikbaar komen.",
-        "Vergelijk met de Nederlandse MVI criteria op www.mvicriteria.nl.",
-        "Neem de strengste criteria op in uw aanbestedingsdocumenten."
+        "Kies de categorie in de tabel hieronder. De GPP definieert technische specificaties voor:\n\nCategorie 1: [Verf & vernis](popup:TOELICHTING||**Categorie 1: Verf & vernis**\n\nDe subgroep \"verf en vernis\" (ook \"verven\" genoemd) omvat verven en vernissen voor gebruik binnenshuis en buitenshuis, houtbeitsen en aanverwante producten, zoals hieronder gedefinieerd, bestemd voor gebruik door professionele gebruikers (niet voor industrieel gebruik).\n\nVerf- en vernisproducten zijn onder meer: vloerverven, producten die door distributeurs op verzoek van beroepsschilders worden gekleurd, kleursystemen, decoratieve verven in de vorm van vloeibare of pasteuze mengsels die eventueel zijn voorbehandeld, gekleurd of voorbereid door de fabrikant om aan de behoeften van de consument te voldoen, met inbegrip van houtverven, houtbeitsen en dekkende beitsen, muurcoatings en aflakken voor metaal alsook de primers en grondverven van dergelijke productsystemen.\n\nEU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen||)\n\nCategorie 2: [Schilderwerken](popup:TOELICHTING||**Categorie 2: Schilderwerken**\n\nOnder \"schilderwerken\" wordt verstaan wanneer contractanten, gewoonlijk \"schilders en decorateurs\" genoemd, rechtstreeks betrokken zijn bij het verven van binnen- of buitenoppervlakken op eenmalige, afroepende of cyclische basis, met inbegrip van lopende onderhouds- en herstelwerkzaamheden.\n\nEU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte||)\n\nCategorie 3: [Wegmarkeringen](popup:TOELICHTING||**Categorie 3: Wegmarkeringen**\n\nDe subgroep \"wegmarkeringen\" omvat producten zoals verf- of structurele kunststofsystemen die op het wegdek worden aangebracht om rijbanen, vakken en tekens af te bakenen en te zorgen voor wrijvingseigenschappen en nachtzichtbaarheid in droge, natte en regenomstandigheden.\n\nZij bestaan over het algemeen uit een gepigmenteerd wegmarkeringsmateriaal en glasparels die samen al dan niet een folie over de ondergrond vormen. Voorgevormde wegmarkeringsproducten die gedefinieerd zijn als tape, voorgevormde koudeplastwegmarkering of voorgevormde thermoplastwegmarkeringen met of zonder opbouwmateriaal vallen eveneens onder het toepassingsgebied, evenals primers en kleefstoffen die nodig zijn voor het aanbrengen van de wegmarkeringen.\n\nEU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen||)\n\nCategorie 4: [Wegmarkeringswerkzaamheden](popup:TOELICHTING||**Categorie 4: Wegmarkeringswerkzaamheden**\n\n\"Wegmarkeringswerkzaamheden\" zijn werkzaamheden waarbij contractanten, gewoonlijk \"wegmarkeerders\" genoemd, rechtstreeks betrokken zijn om op eenmalige of cyclische basis wegmarkeringen aan te brengen, met inbegrip van onderhouds- en herstelwerkzaamheden.\n\nEU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen||)",
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
       ],
       "steps_ordered": true,
-      "example_texts": []
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "verf_vernis",
+            "label": "📋 Verf & vernis",
+            "label_short": "Verf & vernis"
+          },
+          {
+            "key": "schilderwerken",
+            "label": "🎨 Schilderwerken",
+            "label_short": "Schilderwerken"
+          },
+          {
+            "key": "wegmarkeringen",
+            "label": "🛣️ Wegmarkeringen",
+            "label_short": "Wegmarkeringen"
+          },
+          {
+            "key": "wegmarkeringswerkzaamheden",
+            "label": "🚧 Wegmarkeringswerkzaamheden",
+            "label_short": "Wegmarkeringswerkzaamheden"
+          }
+        ],
+        "default_main_tab": "verf_vernis",
+        "data": {
+          "verf_vernis": {
+            "core_criteria": [
+              {
+                "code": "TS1.1",
+                "title": "Gehalte aan witte pigmenten",
+                "specification": "*(Deze eis is niet van toepassing op transparante en semitransparante coatings.)*\n\nVerven moeten een gehalte aan witte pigmenten (witte anorganische pigmenten met een brekingsindex die hoger is dan 1,8) per m² droge film hebben van ten hoogste:\n• 38 g/m² voor verven voor gebruik binnenshuis, met uitzondering van binnenmuurverven met een natte schrobweerstand van klasse 1 waarvoor 40 g/m² geldt;\n• 40 g/m² voor alle verven voor gebruik buitenshuis.\n\nGrondverven en primers moeten een gehalte aan witte pigmenten (witte anorganische pigmenten met een brekingsindex die hoger is dan 1,8) per m² droge film hebben van ten hoogste 25 g/m².",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 10"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie verstrekken over de verfformulering waaruit het gehalte aan witte pigmenten blijkt. Indien nodig moet de natte schrobweerstand van klasse 1 worden aangetoond op basis van een testrapport dat is uitgevoerd overeenkomstig EN 13300 met gebruikmaking van de methode EN ISO 11998 (Test voor reinigbaarheid en schrobweerstand).\n\nProducten waaraan de EU-milieukeur voor verven en vernissen is toegekend, zoals vastgesteld bij [Besluit 2014/312/EU](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32014D0312) van de Commissie, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "TS1.2",
+                "title": "Gehalte aan vluchtige organische stoffen",
+                "specification": "Het maximumgehalte aan vluchtige organische stoffen (VOS) mag de grenswaarden in tabel 1 niet overschrijden.\n\nHet VOS-gehalte moet worden bepaald voor het gebruiksklare product, inclusief alle kleurmiddelen en/of verdunners waarvan toevoeging voor gebruik wordt aanbevolen.\n\n**Tabel 1 Grenswaarden van VOS-gehalten**\n\n| Productbeschrijving (met de bijbehorende subcategorielettercde uit Richtlijn 2004/42/EG) | VOS-grenswaarden (g/l met inbegrip van water) |\n|---|---|\n| a. Matte coatings voor wanden en plafonds voor gebruik binnenshuis (glans < 25 @ 60°) | 15 |\n| b. Glanzende coatings voor wanden en plafonds voor gebruik binnenshuis (glans > 25 @ 60°) | 60 |\n| c. Buitenmuren met minerale ondergrond | 30 |\n| d. Hout- en metaalverven voor binnen- en buitendecoratie en voor interieur- en gevelbekleding | 90 |\n| e. Vernissen en beitsen voor binnenhoutwerk, met inbegrip van dekkende beitsen | 75 |\n| e. Vernissen en beitsen voor buitenhoutwerk, met inbegrip van dekkende beitsen | 90 |\n| f. Houtbeitsen met minimale laagdikte voor binnen en buiten | 75 |\n| g. Primers | 15 |\n| h. Hechtprimers | 15 |\n| i. Eencomponentcoatings met bijzondere eigenschappen | 100 |\n| j. Tweecomponentencoatings met bijzondere eigenschappen, bestemd voor specifieke toepassingen zoals vloeren | 100 |\n| Coatings met decoratief effect | 90 |\n| Roestwerende verven | 80 |",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 12"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet of:\na) een berekening van het VOS-gehalte, indien beschikbaar, ondersteund door veiligheidsinformatiebladen, of\nb) een testrapport overeenkomstig ISO 11890-2 verstrekken. Producten met een VOS-gehalte van minder dan 1,0 g/l moeten worden getest overeenkomstig ISO 17895.\n\nProducten waaraan de EU-milieukeur voor verven en vernissen is toegekend, zoals vastgesteld bij [Besluit 2014/312/EU](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32014D0312) van de Commissie, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "TS1.3",
+                "title": "Gevarenetikettering van het product",
+                "specification": "Het eindproduct mag niet zijn ingedeeld als acuut toxisch, toxisch voor specifieke doelorganen, kankerverwekkend, mutageen of giftig voor de voortplanting, of gevaarlijk voor het milieu, overeenkomstig Verordening (EG) nr. 1272/2008 (CLP-verordening) zoals aangegeven in tabel 3.\n\n**Tabel 3 Indeling van eindproducten**\n\n| Acute toxiciteit | Acute Tox. 1 / Acute Tox. 2 / Acute Tox. 3 |\n|---|---|\n| Specifieke doelorgaantoxiciteit — herhaalde blootstelling | STOT RE 1 of 2 |\n| Specifieke doelorgaantoxiciteit — eenmalige blootstelling | STOT SE 1, 2 of 3 |\n| Kankerverwekkendheid | Carc. 1A<br>Carc. 1B<br>Carc. 2 |\n| Mutageniteit in geslachtscellen | Muta. 1A<br>Muta. 1B<br>Muta. 2 |\n| Voortplantingstoxiciteit | Repr. 1A<br>Repr. 1B<br>Repr. 2 |\n| Gevaar voor het aquatisch milieu | Aquatic Acute 1<br>Aquatic Chronic 1 of 2 |",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 13"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet passende documentatie verstrekken waaruit blijkt dat de te leveren producten niet zijn ingedeeld met de vermelde gevaren.\n\nDe documentatie over de indeling van het mengsel moet worden verstrekt overeenkomstig de voorschriften van Verordening (EG) nr. 1272/2008 (CLP-verordening) en/of veiligheidsinformatiebladen.\n\nProducten waaraan de EU-milieukeur voor verven en vernissen is toegekend, zoals vastgesteld bij [Besluit 2014/312/EU](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32014D0312) van de Commissie, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "TS1.4",
+                "title": "Gevaarlijke ingrediënten",
+                "specification": "De verf moet voldoen aan de beperkingen in tabel 5, die de aanwezigheid van de aangegeven gevaarlijke stoffen in de verf of de concentratie ervan beperken.\n\n**Tabel 5 Eisen voor gevaarlijke ingrediënten in verven**\n\n| Ingrediënt | Beperking of bovenste concentatiegrens |\n|---|---|\n| Conserveringsmiddelen: | Conserveringsmiddelen mogen niet-bioaccumulerend zijn¹. |\n| Droge-filmconserveringsmiddelen: | Droge-filmconserveringsmiddelen mogen niet opzettelijk worden gebruikt, met uitzondering van:<br>- verven voor gebruik binnenshuis die specifiek nodig zijn voor gebruik in zeer vochtige ruimten met een bovenste concentratiegrens van 0,10 % m/m;<br>- verven voor gebruik buitenshuis met een bovenste concentratiegrens van 0,30 % m/m. |\n| Alkylfenolethoxylaten: | Mogen niet opzettelijk worden gebruikt.<br>Alkylfenolethoxylaten (APEO's) en hun derivaten mogen niet worden gebruikt in verf- of vernispreparaten of -formuleringen. |\n| Ftalaten: | 0,1 % m/m<br>Ftalaten² die als zeer zorgwekkende stoffen zijn geïdentificeerd en in de kandidatenlijst van zeer zorgwekkende stoffen van de REACH-verordening zijn opgenomen³ mogen niet aanwezig zijn in verf- of vernispreparaten of formuleringen daarvan. |\n| Formaldehyde: | Vrije formaldehyde in de witte basis, aankleurbare basis en kleurtint²: 0,010 % m/m |\n| Metalen: | Cadmium, lood, chroom VI, kwik, arseen, seleen: 0,010 % m/m per metaal of metaalcomplex/zout, al naar gelang het geval. |\n\n¹ Een ingrediënt wordt als bioaccumulerend beschouwd wanneer Log Kow ≤ 4,0 of bioconcentratiefactor (BCF) ≤ 500.\n\n² Wanneer een breed scala van kleurtinten moet worden gebruikt, moet de inschrijver aangeven welke kleurtint de meeste kans op formaldehydevrijgave heeft. Vervolgens wordt dan alleen voor deze tint een testrapport gevraagd. Om aan deze eis te voldoen, moeten inschrijvers en/of hun leveranciers de REACH-kandidatenlijst op ftalaten screenen. Hoewel ftalaten gemakkelijk als ingrediënt kunnen worden geïdentificeerd en in over het algemeen als weekmaker fungeren, zijn niet alle ftalaten die op de kandidatenlijst voorkomen gemakkelijk herkenbaar aan hun chemische naam. Daarom kan het nuttig zijn de inschrijvers een chemische omschrijving te geven. Hiertoe worden zij gedefinieerd als \"een groep chemische verbindingen waarvan de structuurbasis een ester van ftaalzuur (1,2-benzeendicarbon­zuur) is\".\n\n³ ECHA, kandidatenlijst van zeer zorgwekkende stoffen voor autorisatie, https://echa.europa.eu/candidate-list-table",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 16"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet passende documentatie verstrekken waaruit blijkt dat de het criterium is voldaan, namelijk:\n• voor conserveringsmiddelen en APEO's: een veiligheidsinformatieblad voor het productmengsel;\n• voor ftalaten: een veiligheidsinformatieblad voor het productmengsel;\n• daarnaast voor conserveringsmiddelen: een testrapport aan de hand van de OESO 305-test richtsnoer kan als alternatief voor het veiligheidsinfomatieblad worden gebruikt, uitsluitend om te bevestigen dat de gebruikte conserveringsmiddelen niet-bioaccumulerend zijn);\n• voor formaldehyde: een testrapport op basis van de Merckquant-methode of hogedrukvibeistof-chromatografische methode (HPLC) (zie bijlage 2);\n• voor metalen: een testrapport op basis van de ISO 3856-serie of gelijkwaardig.\n\nProducten waaraan de EU-milieukeur voor verven en vernissen is toegekend, zoals vastgesteld bij [Besluit 2014/312/EU](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32014D0312) van de Commissie, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "TS2.1",
+                "title": "Spreidend vermogen",
+                "specification": "*(Niet van toepassing op vernissen, houtbeitsen, transparante zelfhechtende primers of andere transparante/semitransparante coatings.)*\n\nDe verf moet een efficiënt spreidend vermogen hebben conform tabel 7:\n\n| Type verf | Spreidend vermogen¹ (m²/l) |\n|---|---|\n| Witte en lichtgekleurde verven (met inbegrip van afwerkingslagen en tussenproducten) | - binnenshuis: 8<br>- buitenshuis: 6<br>- voor gebruik binnenshuis en buitenshuis: 8 |\n| Kleursystemen² | 8 |\n| Primers en grondverven | |\n| a. ondoorzichtig | 8 |\n| b. met specifieke afschermende/afdichtende of doordringende/bindende eigenschappen | 6 |\n| c. met bijzondere hechtingseigenschappen | 6 |\n| Dikke decoratieve coatings | 1 m² per kg product |\n| Elastomere verven voor gebruik buitenshuis | 4 |\n\n**Opmerkingen:**\n¹ Het spreidend vermogen geldt bij een dekkracht van 98%.\n² Alleen de basis moet worden getest.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een testrapport verstrekken volgens één van de volgende methoden (of een equivalent):\n• ISO 6504/1 – Vaststelling van de dekkracht, deel 1: Kubelka-Munk-methode voor witte en lichtgekleurde verf.\n• ISO 6504/3 – Bepaling van de contrastverhouding (transparantie) van lichtgekleurde verven bij een bepaalde verspreiding.\n• NF T 30 073 – Voor verven die speciaal ontwikkeld zijn voor een 3D-decoratief effect met een zeer dikke laag.\n\nProducten waaraan de EU-milieukeur voor verven en vernissen is toegekend, zoals vastgesteld bij [Besluit 2014/312/EU](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32014D0312) van de Commissie, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "TS2.3",
+                "title": "Weerbestendigheid (alleen verven voor gebruik buitenshuis)",
+                "specification": "Metsel-, hout- en metaalverven moeten bestand zijn tegen de mogelijke vormen van beschadiging door verwering in tabel 8.\n\nMetselverven worden gedurende 1 000 uur aan kunstmatige testomstandigheden blootgesteld, hout en metaalverven gedurende 500 uur.\n\nDit moet worden aangetoond volgens de aangegeven testmethoden, of het equivalent daarvan, onder kunstmatige verweringsomstandigheden.\n\nCorrosiebestendige verf moet worden onderworpen aan natte blootstelling.\n\nDe tests moeten worden uitgevoerd op de aankleurbare basis van een kleursysteem.\n\n**Tabel 8 Weerbestendigheidstests**\n\n| Beschadiging door verwering | Prestatie-eis | Aanbevolen test |\n|---|---|---|\n| Glansvermindering¹ | ten hoogste 30 % van de oorspronkelijke waarde | ISO 2813 |\n| Krijten | 1,5 of beter (0,5 of 1) | EN ISO 4628-6 |\n| Afbladdering | schildercijfer 2 of minder, schildoppervlakte 2 of minder | ISO 4628-5 |\n| Barstvorming | barstgetal 2 of minder, barstgrootte 3 of minder | ISO 4628-4 |\n| Blaasvorming | blaasdichtheid 3 of minder, blaasgrootte 3 of minder | ISO 4628-2 |\n| Corrosie² | roestvorming gelijk aan of beter dan Ri₂ | ISO 4628-3 |\n\n¹ Niet van toepassing op halfglanzende en matte afwerkingslagen (zie bijlage 1 voor nadere gegevens).\n² Voor roestwerende verven.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet testresultaten verstrekken waaruit blijkt dat de verf aan de in tabel 8 vermelde eisen voldoet.\n\nMet uitzondering van corrosie voor metalenverven moeten de kunstmatige verweringsomstandigheden die in ISO 11507 beschreven omstandigheden weerspiegelen of (voor houtafwerkingslagen voor buitenshuis) een QUV-toestel voor versnelde veroudering met cyclische blootstelling aan UV A-straling en besproeiing overeenkomstig EN 927-6 of het equivalent daarvan.\n\nVoor corrosie moeten de desbetreffende atmosferische corrosiecategorieën van EN ISO 12944-2 en de bijbehorende procedures van EN ISO 12944-6, of gelijkwaardig, worden gebruikt. Roestwerende verven voor stalen ondergronden worden getest nadat ze overeenkomstig ISO 9227 of gelijkwaardig 240 uur met zout zijn besproeid.\n\nProducten waaraan de EU-milieukeur voor verven en vernissen is toegekend, zoals vastgesteld bij [Besluit 2014/312/EU](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32014D0312) van de Commissie, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "TS2.4",
+                "title": "Schimmel- en algenbestendigheid van de film (alleen verven voor gebruik buitenshuis)",
+                "specification": "*(Dezelfde voor de kerncriteria en de uitgebreide criteria)*\n*(Voor toepassingen waarbij schimmel- en algenbestendigheid van de film nodig is)*\n\nBasisverven die worden gebruikt voor buitenmetselwerk en hout en die schimmel- en/of algenbestendige eigenschappen moeten bezitten, moeten voldoen aan de eisen van tabel 9.\n\n**Tabel 9 Eisen voor schimmel- en algenbestendigheid**\n\n| Toepassing | Schimmelbestendigheid | Algenbestendigheid |\n|---|---|---|\n| Metselwerk | Klasse 1 of lager | Score van 0 |\n| Hout | Klasse 1 of lager | Score van 0 |",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 23"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet testresultaten verstrekken waaruit blijkt dat aan de eisen van de testmethoden EN 15457 en/of EN 15458, of het equivalent daarvan, wordt voldaan. Voor coatings die ingekapselde droge-film-biociden bevatten, worden ook gewijzigde conditioneringsprotocollen aanvaard. Fabrikanten moeten informatie verstrekken over elke variatie in de conditionering samen met de testresultaten in overeenstemming met de normen EN 15457 en/of EN 15458.\n\nProducten waaraan de EU-milieukeur voor verven en vernissen is toegekend, zoals vastgesteld bij [Besluit 2014/312/EU](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32014D0312) van de Commissie, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "TS2.5",
+                "title": "Schimmel- en algenbestendigheid van de film (alleen verven voor gebruik buitenshuis)",
+                "specification": "Vloercoatings en vloerverven dienen een zodanige slijtvastheid te vertonen dat het massaverlies niet meer bedraagt dan 70 mg na 1 000 testcycli met een belasting van 1 000 g en een CS10-schuurwiel overeenkomstig EN ISO 7784-2.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 23"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de resultaten verstrekken van tests die zijn uitgevoerd overeenkomstig EN ISO 7784-2 of gelijkwaardig.\n\nProducten waaraan de EU-milieukeur voor verven en vernissen is toegekend, zoals vastgesteld bij [Besluit 2014/312/EU](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32014D0312) van de Commissie, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "TS2.6",
+                "title": "Verpakking",
+                "specification": "Verven moeten worden geleverd in verpakkingen van (maximaal) X liter *(naar keuze van de overheidsinstantie om de hoeveelheid verpakkingen te beperken)*.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 24"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Geen specifieke contractuele voorwaarde vereist."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS1.1",
+                "title": "Gehalte aan witte pigmenten",
+                "specification": "*(Deze eis is niet van toepassing op transparante en semitransparante coatings.)*\n\nVerven moeten een gehalte aan witte pigmenten (witte anorganische pigmenten met een brekingsindex die hoger is dan 1,8) per m² droge film hebben van ten hoogste:\n• 36 g/m² voor producten voor gebruik binnenshuis, met uitzondering van binnenmuurverven met een natte schrobweerstand van klasse 1 waarvoor 40 g/m² geldt;\n• 38 g/m² voor verven voor gebruik buitenshuis.\n\nGrondverven en primers moeten een gehalte aan witte pigmenten (witte anorganische pigmenten met een brekingsindex die hoger is dan 1,8) per m² droge film hebben van ten hoogste 25 g/m².",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 10"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie verstrekken over de verfformulering waaruit het gehalte aan witte pigmenten blijkt. Indien nodig moet de natte schrobweerstand van klasse 1 worden aangetoond op basis van een testrapport dat is uitgevoerd overeenkomstig EN 13300 met gebruikmaking van de methode EN ISO 11998 (Test voor reinigbaarheid en schrobweerstand).\n\nProducten waaraan de EU-milieukeur voor verven en vernissen is toegekend, zoals vastgesteld bij [Besluit 2014/312/EU](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32014D0312) van de Commissie, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "TS1.2",
+                "title": "Gehalte aan vluchtige organische stoffen",
+                "specification": "Het maximumgehalte aan vluchtige organische stoffen (VOS) mag de grenswaarden in tabel 2 niet overschrijden.\n\nHet VOS-gehalte moet worden bepaald voor het gebruiksklare product, inclusief alle kleurmiddelen en/of verdunners waarvan toevoeging vóór gebruik wordt aanbevolen.\n\n**Tabel 2 Grenswaarden van VOS-gehalten**\n\n| Productbeschrijving (met de bijbehorende subcategorielettercde uit Richtlijn 2004/42/EG) | VOS-grenswaarden (g/l met inbegrip van water) |\n|---|---|\n| a. Matte coatings voor wanden en plafonds voor gebruik binnenshuis (glans < 25 @ 60°) | 10 |\n| b. Glanzende coatings voor wanden en plafonds voor gebruik binnenshuis (glans > 25 @ 60°) | 40 |\n| c. Buitenmuren met minerale ondergrond | 25 |\n| d. Hout- en metaalverven voor binnen- en buitendecoratie en voor interieur- en gevelbekleding | 80 |\n| e. Vernissen en beitsen voor binnenhoutwerk, met inbegrip van dekkende beitsen | 65 |\n| e. Vernissen en beitsen voor buitenhoutwerk, met inbegrip van dekkende beitsen | 75 |\n| f. Houtbeitsen met minimale laagdikte voor binnen en buiten | 50 |\n| g. Primers | 15 |\n| h. Hechtprimers | 15 |\n| i. Eencomponentcoatings met bijzondere eigenschappen | 80 |\n| j. Tweecomponentencoatings met bijzondere eigenschappen, bestemd voor specifieke toepassingen zoals vloeren | 80 |\n| Coatings met decoratief effect | 80 |\n| Roestwerende verven | 80 |",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 12"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet of:\na) een berekening van het VOS-gehalte, indien beschikbaar, ondersteund door veiligheidsinformatiebladen, of\nb) een testrapport overeenkomstig ISO 11890-2 verstrekken. Producten met een VOS-gehalte van minder dan 1,0 g/l moeten worden getest overeenkomstig ISO 17895.\n\nProducten waaraan de EU-milieukeur voor verven en vernissen is toegekend, zoals vastgesteld bij [Besluit 2014/312/EU](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32014D0312) van de Commissie, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "TS1.3",
+                "title": "Gevarenetikettering van het product",
+                "specification": "Het eindproduct mag niet zijn ingedeeld als acuut toxisch, toxisch voor specifieke doelorganen, sensibiliserend voor de luchtwegen of de huid, kankerverwekkend, mutageen of giftig voor de voortplanting, of gevaarlijk voor het milieu, overeenkomstig Verordening (EG) nr. 1272/2008 (CLP-verordening), zoals aangegeven in tabel 4.\n\n**Tabel 4 Indeling van eindproducten**\n\n| Acute toxiciteit | Acute Tox. 1<br>Acute Tox. 2<br>Acute Tox. 3 |\n|---|---|\n| Specifieke doelorgaantoxiciteit — herhaalde blootstelling | STOT RE 1 of 2 |\n| Specifieke doelorgaantoxiciteit — eenmalige blootstelling | STOT SE 1, 2 of 3 |\n| Kankerverwekkendheid | Carc. 1A<br>Carc. 1B<br>Carc. 2 |\n| Mutageniteit in geslachtscellen | Muta. 1A<br>Muta. 1B<br>Muta. 2 |\n| Voortplantingstoxiciteit | Repr. 1A<br>Repr. 1B<br>Repr. 2 |\n| Gevaar voor het aquatisch milieu | Aquatic Acute 1<br>Aquatic Chronic 1 of 2<br>Aquatic Chronic 3* |\n| Sensibilisatie van de luchtwegen | Resp. Sens. 1, 1A of 1B |\n| Sensibilisatie van de huid | Skin Sens. 1, 1A of 1B |\n\n*Het eindproduct mag alleen met H412 worden ingedeeld indien gebruik wordt gemaakt van combinaties van droge filmconserveringsmiddelen zoals de 3-jood-2-propynylbutylcarbamaat (IPBC) bevatten in verven en vernissen voor gebruik buitenshuis in concentraties van ten hoogste 0,650 % m/m.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 13"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet passende documentatie verstrekken waaruit blijkt dat de te leveren producten niet zijn ingedeeld met de vermelde gevaren.\n\nDe documentatie over de indeling van het mengsel moet worden verstrekt overeenkomstig de voorschriften van [Verordening (EG) nr. 1272/2008 (CLP-verordening)](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32008R1272) en/of veiligheidsinformatiebladen.\n\nVoor producten voor gebruik buitenshuis die zijn ingedeeld met aquatische chronische toxiciteit 3 en die IPBC bevatten, moeten inschrijvers in voorkomend geval documentatie verstrekken waaruit blijkt dat het gehalte aan IPBC-combinaties ten hoogste 0,650 % m/m is. Producten waaraan de EU-milieukeur voor verven en vernissen is toegekend, zoals vastgesteld bij [Besluit 2014/312/EU](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32014D0312) van de Commissie, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "TS1.4",
+                "title": "Gevaarlijke ingrediënten",
+                "specification": "De verf moet voldoen aan de beperkingen in tabel 6, die de aanwezigheid van de aangegeven gevaarlijke stoffen in de verf of de concentratie ervan beperken.\n\n**Tabel 6 Eisen voor gevaarlijke ingrediënten in verven**\n\n| Ingrediënt | Beperking of bovenste concentratiegrens |\n|---|---|\n| Conserveringsmiddelen: | Conserveringsmiddelen mogen niet-bioaccumulerend zijn¹. |\n| Droge-filmconserveringsmiddelen: | Droge-filmconserveringsmiddelen mogen niet opzettelijk worden gebruikt, met uitzondering van:<br>- verven voor gebruik binnenshuis die specifiek nodig zijn voor gebruik in zeer vochtige ruimten met een bovenste concentratiegrens van 0,10 % m/m;<br>- verven voor gebruik buitenshuis met een bovenste concentratiegrens van 0,30 % m/m. |\n| Alkylfenolethoxylaten: | Mogen niet opzettelijk worden gebruikt.<br>Alkylfenolethoxylaten (APEO's) en hun derivaten mogen niet worden gebruikt in verf- of vernispreparaten of -formuleringen. |\n| Ftalaten: | Ftalaten³ die als zeer zorgwekkende stoffen zijn geïdentificeerd en in de kandidatenlijst van zeer zorgwekkende stoffen van de REACH-verordening zijn opgenomen mogen niet aanwezig zijn in verf- of vernispreparaten of formuleringen daarvan.<br>**Max. 0,1 % m/m** |\n| Formaldehyde: | Vrije formaldehyde in de witte basis, aankleurbare basis en kleurtint²: **0,0010 % m/m**<br>Met uitzondering van gevallen waarin formaldehydeafgevende stoffen nodig zijn of aanwezig zijn in polymeerdispersies, in welk geval de volgende waarde van toepassing is: **0,010 % m/m** |\n| Metalen: | Cadmium, lood, chroom VI, kwik, arseen, seleen: **0,010 % m/m** per metaal of metaalcomplex/zout, al naar gelang het geval. |\n| Isothiazolinon: | Totaal: **0,050 % m/m**<br>MIT³: **0,020 % m/m**<br>CIT/MIT⁴: **0,0015 % m/m** |\n\n¹ Een ingrediënt wordt als bioaccumulerend beschouwd wanneer Log Kow ≤ 3,2 of bioconcentratiefactor (BCF) ≤ 100.\n\n² Wanneer een breed scala van kleurtinten moet worden gebruikt, moet de inschrijver aangeven welke kleurtint de meeste kans op formaldehydevrijgave heeft. Vervolgens wordt dan alleen voor deze tint een testrapport gevraagd.\n\n³ Om aan deze eis te voldoen, moeten inschrijvers en/of hun leveranciers de REACH-kandidaatlijst op ftalaten screenen. Hoewel ftalaten gemakkelijk als ingrediënt kunnen worden geïdentificeerd omdat zij over het algemeen als weekmaker fungeren, zijn niet alle ftalaten die op de kandidatenlijst voorkomen gemakkelijk herkenbaar aan hun chemische naam. Daarom kan het nuttig zijn de inschrijvers een chemische omschrijving te geven. Hiertoe worden zij gedefinieerd als \"een groep chemische verbindingen waarvan de structuurbasis een ester van ftaalzuur (1,2-benzeendicarbon­zuur) is\". ECHA, kandidaatlijst van zeer zorgwekkende stoffen voor autorisatie, https://echa.europa.eu/candidate-list-table\n\n³ Methylisothiazolinon\n\n⁴ 5-chloor-2-methyl-4-isothiazolin-3-on (CIT) / 2-methyl-4-isothiazolin-3-on (MIT) in een verhouding van 3:1.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 16"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet passende documentatie verstrekken waaruit blijkt dat aan het criterium is voldaan, namelijk:\n• voor conserveringsmiddelen en APEO's: een veiligheidsinformatieblad voor het productmengsel;\n• voor ftalaten: een veiligheidsinformatieblad voor het productmengsel;\n• daarnaast voor conserveringsmiddelen: een testrapport aan de hand van de OESO 305-testrichtsnoer kan als alternatief voor het veiligheidsinformatieblad worden gebruikt, uitsluitend om te bevestigen dat de gebruikte conserveringsmiddelen niet-bioaccumulerend zijn);\n• voor formaldehyde: een testrapport op basis van de Merckquant-methode of hogedrukvioeistof-chromatografische methode (HPLC) (zie bijlage 2);\n• voor metalen: een testrapport op basis van de ISO 3856-serie of gelijkwaardig;\n• voor isothiazolinon: een veiligheidsinformatieblad voor het productmengsel.\n\nProducten waaraan de EU-milieukeur voor verven en vernissen is toegekend, zoals vastgesteld bij [Besluit 2014/312/EU](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32014D0312) van de Commissie, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "TS2.1",
+                "title": "Natte schrobweerstand (alleen verven voor gebruik binnenshuis)",
+                "specification": "*(Voor toepassingen die reinigbaarheid en schrobweerstand vereisen)*\n\n*(Deze eis is niet van toepassing op transparante en semitransparante coatings)*\n\nMuurverf waarvoor in de aanbesteding een natte schrobweerstand wordt vereist, moet een score hebben van klasse 1 of 2 voor natte schrobweerstand overeenkomstig EN 13300 en EN ISO 11998 of het equivalent daarvan. Matte wand- en plafondverven voor gebruik binnenshuis met een gehalte aan witte pigmenten van ten hoogste 25 g/m² droge film, zijn van deze eis vrijgesteld.\n\nDeze eis is alleen van toepassing op aankleurbare basissen van kleursystemen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een testrapport verstrekken overeenkomstig EN 13300 met gebruikmaking van testmethode EN ISO 11998 (test inzake reinigbaarheid en schrobweerstand) of gelijkwaardig.\n\nProducten waaraan de EU-milieukeur voor verven en vernissen is toegekend, zoals vastgesteld bij [Besluit 2014/312/EU](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32014D0312) van de Commissie, worden geacht te voldoen.\n\nEr wordt echter geen basiscriterium voorgesteld, maar als de verkregen verf wordt gebruikt op oppervlakken die intensief zullen worden gereinigd, worden openbare aanbestedende diensten aangemoedigd om de uitgebreide criterium te hanteren."
+                }
+              }
+            ]
+          },
+          "schilderwerken": {
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Gebruik van verven die voldoen aan de EU-criteria voor groene overheidsopdrachten",
+                "specification": "Opdrachten voor schilderwerken moeten worden uitgevoerd met verfproducten die voldoen aan de EU-eisen inzake groene overheidsopdrachten zoals bepaald in de technische specificaties van de EU-kerncriteria voor groene overheidsopdrachten, rubriek 4.1 Verven en vernissen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 29"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet bewijsstukken verstrekken waaruit blijkt dat de te gebruiken producten aan bovengenoemde criteria voldoen."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Beheer van afval en ongebruikte verf",
+                "specification": "De inschrijver moet een afvalbeheersplan indienen voor verfrestsen die overblijven bij de voorbereiding van de ondergrond en de toepassing. Dit plan omvat:\n• wanneer verf moet worden verwijderd/afgescheiden, een beoordeling van de potentiële gevaarlijke inhoud van verf die van ondergronden is ontdaan en, indien een risico wordt vastgesteld, een methodeverklaring om het risico te beperken door veilige omgang en verwijdering;\n• een methodeverklaring voor praktijen ter plaatse voor het reinigen van schilderapparatuur en de opslag van afval en ongebruikte verf voor veilige verwijdering als gevaarlijk afval;\n• maatregelen om afval en ongebruikte verf tot een minimum te beperken.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 30"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een gedocumenteerd afvalbeheersplan verstrekken met methodeverklaringen voor veilig afbijten van verf, reinigen van apparatuur en omgang met en verwijderen van afval en ongebruikte verf, alsmede de maatregelen die worden toegepast om afval en ongebruikte verf tot een minimum te beperken.\n\n*Controle van het verfafval vindt dan plaats via een contractuele uitvoeringsvoorwaarde.*"
+                }
+              }
+            ],
+            "extended_criteria": []
+          },
+          "wegmarkeringen": {
+            "core_criteria": [
+              {
+                "code": "TS1.1",
+                "title": "Gehalte aan vluchtige organische stoffen (VOS)",
+                "specification": "i) Het maximumgehalte aan VOS mag niet meer bedragen dan 150 g/l. Het VOS-gehalte moet worden bepaald voor het gebruiksklare product en moet alle aanbevolen toevoegingen vóór gebruik omvatten. Oplosmiddelen met een verwaarloosbare bijdrage aan smogvorming (vermeld in bijlage 4) kunnen van de VOS-berekening worden uitgesloten.\n\nWanneer de aanbestedende dienst bepaalt dat de wegmarkeringen moeten worden aangebracht onder weersomstandigheden die het gebruik van wegmarkeringen met een laag VOS-gehalte (relatieve luchtvochtigheid > 80 %, luchttemperatuur < 5 °C of > 40 °C) verhinderen, mag het totale VOS-gehalte bij wijze van uitzondering niet meer bedragen dan 395 g/l.\n\nii) De volgende verbindingen mogen niet worden gebruikt:\n− gechloreerde oplosmiddelen, zoals methyleenchloride of chloaralkanen;\n− aromatische oplosmiddelen, zoals benzeen, ethylbenzeen, tolueen of xyleen;\n− op ethyleen gebaseerde glycolethers of de acetaten daarvan.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 33"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de resultaten van de berekening op basis van de ingrediënten en grondstoffen of een testrapport overeenkomstig ISO EN 11890-2, ASTMD 2369 (wanneer reactieve verdunningsmiddelen aanwezig zijn) verstrekken, of een gelijkwaardig rapport, onderbouwd met de nodige berekeningen. Bovendien moet een verklaring worden verstrekt dat de specifiek uitgesloten oplosmiddelen niet worden gebruikt."
+                }
+              },
+              {
+                "code": "TS1.2",
+                "title": "Gevarenetikettering van het product",
+                "specification": "Het eindproduct mag niet zijn ingedeeld als acuut toxisch, toxisch voor specifieke doelorganen, kankerverwekkend, mutageen of giftig voor de voortplanting of gevaarlijk voor het milieu overeenkomstig Verordening (EG) nr. 1272/2008 (CLP-verordening), zoals aangegeven in tabel 13.\n\n**Tabel 13 Indeling van eindproducten**\n\n| Acute toxiciteit | Acute Tox. 1<br>Acute Tox. 2<br>Acute Tox. 3 |\n|---|---|\n| Specifieke doelorgaantoxiciteit — herhaalde blootstelling | STOT RE 1 of 2 |\n| Specifieke doelorgaantoxiciteit — eenmalige blootstelling | STOT SE 1, 2 of 3 |\n| Kankerverwekkendheid | Carc. 1A<br>Carc. 1B<br>Carc. 2 |\n| Mutageniteit in geslachtscellen | Muta. 1A<br>Muta. 1B<br>Muta. 2 |\n| Voortplantingstoxiciteit | Repr. 1A<br>Repr. 1B<br>Repr. 2 |\n| Gevaar voor het aquatisch milieu | Aquatic Acute 1<br>Aquatic Chronic 1 of 2 |",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet passende documentatie verstrekken waaruit blijkt dat de te leveren producten niet zijn ingedeeld met de vermelde gevaren.\n\nDe documentatie over de indeling van het mengsel moet worden verstrekt overeenkomstig de voorschriften van Verordening (EG) nr. 1272/2008 (CLP-verordening) en/of veiligheidsinformatiebladen."
+                }
+              },
+              {
+                "code": "TS1.3",
+                "title": "Gevaarlijke ingrediënten",
+                "specification": "Het product moet voldoen aan de in tabel 15 vermelde beperkingen, waarbij kan worden verplicht dat stoffen aan bepaalde kenmerken moeten voldoen of de concentratie ervan moet worden beperkt.\n\n**Tabel 15 Eisen voor gevaarlijke ingrediënten van wegmarkeringen**\n\n| Ingrediënt | Beperking of bovenste concentratiegrens |\n|---|---|\n| Droge-filmconserveringsmiddelen: | Conserveringsmiddel en mogen niet-bioaccumulerend zijn¹ |\n| Ftalaten: | Ftalaten² die als zeer zorgwekkende stoffen zijn geïdentificeerd en in de kandidatenlijst van zeer zorgwekkende stoffen van de REACH-verordening zijn opgenomen,³ mogen niet aanwezig zijn in verf- of vernispreparaten of formuleringen daarvan.<br>**0,1 % m/m** |\n| Metalen: | cadmium, lood, chroom VI, kwik, arseen, seleen<br>**0,01 % m/m** per metaal of metaalcomplex/zout, al naar gelang het geval |\n\n¹ Een ingrediënt wordt als bioaccumulerend beschouwd wanneer Log Kow ≤ 3,2 of bioconcentratiefactor (BCF) ≤ 100.\n\n² Om aan deze eis te voldoen, moeten inschrijvers en/of hun leveranciers de REACH-kandidaatlijst op ftalaten screenen. Hoewel ftalaten gemakkelijk als ingrediënt kunnen worden geïdentificeerd omdat zij over het algemeen als weekmaker fungeren, zijn niet alle ftalaten die op de kandidatenlijst voorkomen gemakkelijk identificeerbaar. Daarom kan het nuttig zijn de inschrijvers een chemische omschrijving te geven. Hiertoe worden zij gedefinieerd als \"een groep chemische verbindingen waarvan de structuurbasis een ester van ftaalzuur (1,2-benzeendicarbon­zuur) is\".\n\n⁵ ECHA, kandidaatlijst van zeer zorgwekkende stoffen voor autorisatie, https://echa.europa.eu/candidate-list-table",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 35"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet passende documentatie verstrekken waaruit blijkt dat de te leveren producten niet zijn ingedeeld met de vermelde gevaren.\n\nDe documentatie over de indeling van het mengsel moet worden verstrekt overeenkomstig de voorschriften van Verordening (EG) nr. 1272/2008 (CLP-verordening) en/of veiligheidsinformatiebladen."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Gehalte aan gevaarlijke ingrediënten in glasparels",
+                "specification": "De gebruikte glasparels mogen geen arseen, antimoon en lood bevatten in afzonderlijke concentraties van meer dan 200 ppm.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 37"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een testrapport verstrekken waarin de concentraties van de gespecificeerde stoffen in de glasparels worden gecontroleerd overeenkomstig EN 1423 of gelijkwaardig."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Kwaliteit en duurzaamheid van het wegmarkeringssysteem",
+                "specification": "De inschrijver moet aantonen dat de wegmarkering voldoet aan de minimale prestatie-eisen, namelijk nachtzichtbaarheid, dagzichtbaarheid, weerstand tegen slippen en erosie, na een bepaald aantal wieldoorgangen¹, zoals bepaald door de aanbestedende dienst in de aanbesteding.\n\n¹ Ter indicatie kan een redelijke prestatie worden beschouwd als 500 000 wieldoorgangen, volgens de normen EN 1824 en EN 13197. Indien een hoger prestatieniveau gewenst is, moet een hoger aantal wieldoorgangen worden opgegeven.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 38"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een testrapport of de goedkeuring van een nationale testinstelling verstrekken waaruit blijkt dat het wegmarkeringssysteem voldoet aan de voorwaarden van de opdracht en overeenkomstig EN 1824, EN 13197 of gelijkwaardig. Om de vergelijkbaarheid te waarborgen, specificeert de aanbestedende dienst in de aanbesteding de testmethode die door alle inschrijvers moet worden gebruikt."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS1.1",
+                "title": "Gehalte aan vluchtige organische stoffen (VOS)",
+                "specification": "i) Het maximumgehalte aan VOS mag niet meer bedragen dan 100 g/l.\n\nii) De volgende verbindingen mogen niet worden gebruikt:\n− gechloreerde oplosmiddelen, zoals methyleenchloride of chloaralkanen;\n− aromatische oplosmiddelen, zoals benzeen, ethylbenzeen, tolueen of xyleen;\n− op ethyleen gebaseerde glycolethers of de acetaten daarvan.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 33"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de resultaten van de berekening op basis van de ingrediënten en grondstoffen of een testrapport overeenkomstig ISO EN 11890-2, ASTMD 2369 (wanneer reactieve verdunningsmiddelen aanwezig zijn) verstrekken, of een gelijkwaardig rapport, onderbouwd met de nodige berekeningen. Bovendien moet een verklaring worden verstrekt dat de specifiek uitgesloten oplosmiddelen niet worden gebruikt."
+                }
+              },
+              {
+                "code": "TS1.2",
+                "title": "Gevarenetikettering van het product",
+                "specification": "Het eindproduct mag niet zijn ingedeeld als acuut toxisch, toxisch voor specifieke doelorganen, kankerverwekkend, mutageen of giftig voor de voortplanting, of gevaarlijk voor het milieu, overeenkomstig Verordening (EG) nr. 1272/2008 (CLP-verordening) zoals aangegeven in tabel 14.\n\n**Tabel 14 Indeling van eindproducten**\n\n| Acute toxiciteit | Acute Tox. 1<br>Acute Tox. 2<br>Acute Tox. 3 |\n|---|---|\n| Specifieke doelorgaantoxiciteit — herhaalde blootstelling | STOT RE 1 of 2 |\n| Specifieke doelorgaantoxiciteit — eenmalige blootstelling | STOT SE 1, 2 of 3 |\n| Kankerverwekkendheid | Carc. 1A<br>Carc. 1B<br>Carc. 2 |\n| Mutageniteit in geslachtscellen | Muta. 1A<br>Muta. 1B<br>Muta. 2 |\n| Voortplantingstoxiciteit | Repr. 1A<br>Repr. 1B<br>Repr. 2 |\n| Gevaar voor het aquatisch milieu | Aquatic Acute 1<br>Aquatic Chronic 1 of 2<br>Aquatic Chronic 3 |",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet passende documentatie verstrekken waaruit blijkt dat de te leveren producten niet zijn ingedeeld met de vermelde gevaren.\n\nDe documentatie over de indeling van het mengsel moet worden verstrekt overeenkomstig de voorschriften van Verordening (EG) nr. 1272/2008 (CLP-verordening) en/of veiligheidsinformatiebladen."
+                }
+              },
+              {
+                "code": "TS1.3",
+                "title": "Gevaarlijke ingrediënten",
+                "specification": "Het product moet voldoen aan de in tabel 16 vermelde beperkingen, waarbij kan worden verplicht dat stoffen aan bepaalde kenmerken moeten voldoen of de concentratie ervan moet worden beperkt.\n\n**Tabel 16 Eisen voor gevaarlijke ingrediënten van wegmarkeringen**\n\n| Ingrediënt | Beperking of bovenste concentratiegrens |\n|---|---|\n| Droge-filmconserveringsmiddelen: | Conserveringsmiddelen mogen niet-bioaccumulerend zijn¹ |\n| Ftalaten: | Ftalaten⁶ die als zeer zorgwekkende stoffen zijn geïdentificeerd en in de kandidatenlijst van zeer zorgwekkende stoffen van de REACH-verordening⁷ zijn opgenomen mogen niet aanwezig zijn in verf- of vernispreparaten of formuleringen daarvan.<br>**0,1 % m/m** |\n| Metalen: | cadmium, lood, chroom VI, kwik, arseen, seleen<br>**0,01 % m/m** per metaal of metaalcomplex/zout, al naar gelang het geval |\n\n¹ Een ingrediënt wordt als bioaccumulerend beschouwd wanneer Log Kow ≤ 3,2 of bioconcentratiefactor (BCF) ≤ 100.\n\n⁶ Toelichting: artikel 33, lid 1, van REACH verwijst niet naar mengsels (zoals verven en de meeste wegmarkeringen), maar alleen naar voorwerpen. Voorwerpen die gewoonlijk worden aangetroffen in wegmarkeringen die geen mengsels zijn, zijn structurele kunststoftoepassingen en voorgevormde wegmarkeringsproducten die worden gedefinieerd als tape, voorgevormde koudeplastwegmarkeringen of voorgevormde thermoplastwegmarkeringen. In dit geval is artikel 33, lid 1, van REACH van toepassing:\n\nOp grond van dit artikel dienen leveranciers (dit geldt ook voor de professionele winkels waar het artikel wordt gekocht en de producenten of importeurs van de artikelen) aan ontvangers (in dit geval inkopers) informatie te verstrekken over het veilig gebruik van het voorwerp. Minimaal moet aan de ontvanger (in dit geval de aanbestedende dienst) de naam van de stof worden meegedeeld die op de kandidatenlijst staat die het voorwerp bevat, indien zij aanwezig is in een concentratie van meer dan 0,1 % van het gewicht van het voorwerp.\n\n⁷ ECHA, kandidaatlijst van zeer zorgwekkende stoffen voor autorisatie, https://echa.europa.eu/candidate-list-table",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 35"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet passende documentatie verstrekken waaruit blijkt dat de te leveren producten niet zijn ingedeeld met de vermelde gevaren.\n\nDe documentatie over de indeling van het mengsel moet worden verstrekt overeenkomstig de voorschriften van Verordening (EG) nr. 1272/2008 (CLP-verordening) en/of veiligheidsinformatiebladen."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Gehalte aan gevaarlijke ingrediënten in glasparels",
+                "specification": "De gebruikte glasparels mogen geen arseen, antimoon en lood bevatten in afzonderlijke concentraties van meer dan 150 ppm.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 37"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een testrapport verstrekken waarin de concentraties van de gespecificeerde stoffen in de glasparels worden gecontroleerd overeenkomstig EN 1423 of gelijkwaardig."
+                }
+              }
+            ]
+          },
+          "wegmarkeringswerkzaamheden": {
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Gebruik van wegmarkeringen die voldoen aan de EU-criteria voor groene overheidsopdrachten",
+                "specification": "Alle opdrachten voor werken moeten worden uitgevoerd met wegmarkeringsproducten die voldoen aan de EU-eisen inzake groene overheidsopdrachten, zoals bepaald in de technische specificaties van de EU-kerncriteria voor groene overheidsopdrachten, rubriek 4.3 Wegmarkeringen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 42"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet bewijsstukken verstrekken waaruit blijkt dat de gebruikte producten aan bovengenoemde criteria voldoen."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Beheer van afval en ongebruikt wegmarkeringsmateriaal",
+                "specification": "De inschrijver moet een afvalbeheersplan indienen voor het wegmarkeringsmateriaal dat overblijft bij de voorbereiding van de ondergrond en de toepassing.\n\nDit plan omvat:\n• wanneer afscheiding moet worden uitgevoerd, een beoordeling van het potentiële gevaarlijke gehalte aan wegmarkeringsmateriaal dat van de ondergrond moet worden ontdaan en, indien een risico wordt vastgesteld, een verklaring van de methode om het risico te beperken door veilige omgang en verwijdering;\n• een methodeverklaring voor praktijken ter plaatse voor het reinigen van apparatuur en de opslag van afval en ongebruikt wegmarkeringsmateriaal voor veilige verwijdering als gevaarlijk afval;\n• maatregelen om afval en ongebruikte wegmarkeringsmaterialen tot een minimum te beperken.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 42"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een gedocumenteerd afvalbeheersplan verstrekken met methodeverklaringen voor veilig afscheiden, reinigen van apparatuur en omgang en verwijderen van afval en ongebruikt wegmarkeringsmateriaal, alsmede de maatregelen die worden toegepast om afval en ongebruikt wegmarkeringsmateriaal tot een minimum te beperken.\n\n*Controle van het ontstaan van afval van wegmarkeringsmateriaal moet worden geregeld in de vorm van een contractuele uitvoeringsvoorwaarde.*"
+                }
+              }
+            ],
+            "extended_criteria": []
+          }
+        }
+      }
+    },
+    {
+      "key": "selectiecriteria",
+      "title": "Selectiecriteria",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als selectiecriteria. Het doel is te waarborgen dat alleen leveranciers met aantoonbare kennis, middelen en procedures in aanmerking komen voor deelname.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale selectiecriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie in de tabel hieronder. De GPP definieert alleen selectiecriteria voor:\nCategorie 2: [Schilderwerken](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/03c84b99-a91e-4029-bed5-31ea7250558f/details)\nCategorie 4: [Wegmarkeringswerkzaamheden](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/03c84b99-a91e-4029-bed5-31ea7250558f/details)",
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "schilderwerken",
+            "label": "🎨 Schilderwerken",
+            "label_short": "Schilderwerken"
+          },
+          {
+            "key": "wegmarkeringen",
+            "label": "🚧 Wegmarkeringen",
+            "label_short": "Wegmarkeringen"
+          }
+        ],
+        "default_main_tab": "schilderwerken",
+        "data": {
+          "schilderwerken": {
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "specification": "De inschrijver moet vakbekwaamheid aantonen op de volgende gebieden, afhankelijk van de aard van de aanbestedede opdracht (kies voor zover van belang voor het contract):\n\n• methodeverklaringen voor het efficiënte gebruik van verf ter plaatse, met inbegrip van het opstellen van ramingen en het gebruik van gespecialiseerde apparatuur;\n• methodeverklaringen voor de voorbereiding van ondergronden en verfformuleringen voorafgaand aan de toepassing. Dit omvat in voorkomend geval veiligheidsprocedures voor het verwijderen van bestaande films en coatings en de omgang met nieuwe verven en vernissen tijdens de toepassing ervan;\n• de toepassing van milieuvriendelijkere producten, waaronder producten met een verlaagd VOS-gehalte;\n• de toepassing van duurzame en hoge specificatie-afwerkingslagen, met verwijzing naar desbetreffende EN-normen of gelijkwaardige normen;\n• beleidsmaatregelen en ondersteunende beheersystemen om verfafval tot een minimum te beperken, hergebruik of recycling van ongebruikte verf te maximaliseren en te zorgen voor de veilige verwijdering ervan en van andere chemische stoffen zoals verfabijtmiddelen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 29"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet bewijsstukken verstrekken in de vorm van informatie en referenties die verband houden met de desbetreffende contracten in de afgelopen vijf jaar waarbij de voornoemde elementen zijn uitgevoerd."
+                }
+              }
+            ],
+            "extended_criteria": []
+          },
+          "wegmarkeringen": {
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "Vakbekwaamheid van de inschrijver",
+                "specification": "De inschrijver moet vakbekwaamheid aantonen op de volgende gebieden, afhankelijk van de aard van de opdracht:\n\n• methodeverklaringen voor het efficiënte gebruik van wegmarkeringen ter plaatse, met inbegrip van het opstellen van ramingen en het gebruik van gespecialiseerde apparatuur;\n• methodeverklaringen voor de voorbereiding van de ondergrond (met inbegrip van, indien van toepassing, veiligheidsprocedures voor het verwijderen van wegmarkeringen die eventueel met loodpigment zijn gemaakt en als gevaarlijk worden beschouwd); of het onder hoge druk verwijderen van wegmarkeringen);\n• methodeverklaringen voor het opstellen van wegmarkeringsformuleringen en de omgang ermee tijdens de toepassing ervan;\n• de toepassing van milieuvriendelijkere producten, waaronder producten met een verlaagd VOS-gehalte;\n• de toepassing van duurzame en hoge specificatie-afwerkingslagen, met verwijzing naar desbetreffende EN-normen of gelijkwaardige normen;\n• beleidsmaatregelen en ondersteunende beheersystemen om het wegmarkeringsafval tot een minimum te beperken, hergebruik of recycling van afval en ongebruikte wegmarkeringen te maximaliseren en te zorgen voor de veilige verwijdering ervan en van andere chemische stoffen, zoals wegmarkeringsafbijtmiddelen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 41"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet bewijsstukken verstrekken in de vorm van informatie en referenties die verband houden met de desbetreffende contracten in de afgelopen vijf jaar waarbij de voornoemde elementen zijn uitgevoerd."
+                }
+              }
+            ],
+            "extended_criteria": []
+          }
+        }
+      }
+    },
+    {
+      "key": "gunningscriteria",
+      "title": "Gunningscriteria",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als gunningscriteria. Daarmee wordt vastgelegd op basis waarvan de inschrijvingen inhoudelijk worden beoordeeld en de economisch meest voordelige inschrijving wordt vastgesteld.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale gunningscriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie in de tabel hieronder. De GPP definieert gunningscriteria voor:\n\nCategorie 1: [Verf & vernis](popup:TOELICHTING||**Categorie 1: Verf & vernis**\n\nDe subgroep \"verf en vernis\" (ook \"verven\" genoemd) omvat verven en vernissen voor gebruik binnenshuis en buitenshuis, houtbeitsen en aanverwante producten, zoals hieronder gedefinieerd, bestemd voor gebruik door professionele gebruikers (niet voor industrieel gebruik).\n\nVerf- en vernisproducten zijn onder meer: vloerverven, producten die door distributeurs op verzoek van beroepsschilders worden gekleurd, kleursystemen, decoratieve verven in de vorm van vloeibare of pasteuze mengsels die eventueel zijn voorbehandeld, gekleurd of voorbereid door de fabrikant om aan de behoeften van de consument te voldoen, met inbegrip van houtverven, houtbeitsen en dekkende beitsen, muurcoatings en aflakken voor metaal alsook de primers en grondverven van dergelijke productsystemen.\n\nEU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen||)\n\nCategorie 2: [Schilderwerken](popup:TOELICHTING||**Categorie 2: Schilderwerken**\n\nOnder \"schilderwerken\" wordt verstaan wanneer contractanten, gewoonlijk \"schilders en decorateurs\" genoemd, rechtstreeks betrokken zijn bij het verven van binnen- of buitenoppervlakken op eenmalige, afroepende of cyclische basis, met inbegrip van lopende onderhouds- en herstelwerkzaamheden.\n\nEU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte||)\n\nCategorie 3: [Wegmarkeringen](popup:TOELICHTING||**Categorie 3: Wegmarkeringen**\n\nDe subgroep \"wegmarkeringen\" omvat producten zoals verf- of structurele kunststofsystemen die op het wegdek worden aangebracht om rijbanen, vakken en tekens af te bakenen en te zorgen voor wrijvingseigenschappen en nachtzichtbaarheid in droge, natte en regenomstandigheden.\n\nZij bestaan over het algemeen uit een gepigmenteerd wegmarkeringsmateriaal en glasparels die samen al dan niet een folie over de ondergrond vormen. Voorgevormde wegmarkeringsproducten die gedefinieerd zijn als tape, voorgevormde koudeplastwegmarkering of voorgevormde thermoplastwegmarkeringen met of zonder opbouwmateriaal vallen eveneens onder het toepassingsgebied, evenals primers en kleefstoffen die nodig zijn voor het aanbrengen van de wegmarkeringen.\n\nEU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen||)\n\nCategorie 4: [Wegmarkeringswerkzaamheden](popup:TOELICHTING||**Categorie 4: Wegmarkeringswerkzaamheden**\n\n\"Wegmarkeringswerkzaamheden\" zijn werkzaamheden waarbij contractanten, gewoonlijk \"wegmarkeerders\" genoemd, rechtstreeks betrokken zijn om op eenmalige of cyclische basis wegmarkeringen aan te brengen, met inbegrip van onderhouds- en herstelwerkzaamheden.\n\nEU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen||)",
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarden op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "verf_vernis",
+            "label": "📋 Verf & vernis",
+            "label_short": "Verf & vernis"
+          },
+          {
+            "key": "schilderwerken",
+            "label": "🎨 Schilderwerken",
+            "label_short": "Schilderwerken"
+          },
+          {
+            "key": "wegmarkeringen",
+            "label": "🛣️ Wegmarkeringen",
+            "label_short": "Wegmarkeringen"
+          },
+          {
+            "key": "wegmarkeringswerkzaamheden",
+            "label": "🚧 Wegmarkeringswerkzaamheden",
+            "label_short": "Wegmarkeringswerkzaamheden"
+          }
+        ],
+        "default_main_tab": "verf_vernis",
+        "data": {
+          "verf_vernis": {
+            "core_criteria": [
+              {
+                "code": "GS2",
+                "title": "De binnenluchtkwaliteit: verven voor gebruik binnenshuis",
+                "specification": "Er worden punten toegekend aan producten waarvan de emissies (van TVOS en/of formaldehyde) lager zijn dan de in de tabel 11 aangegeven grenswaarden.\n\n**Tabel 11 Grenswaarden van emissies naar lucht van verf voor gebruik binnenshuis**\n\n| Emissiebron | Emissiegrenswaarden (μg/m³) |\n|---|---|\n| | 3 dagen |\n| TVOS¹ | 10 000 |\n| Formaldehyde | – |\n\n¹ Totaal vluchtige organische stoffen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 27"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet testrapporten verstrekken op basis van analytische tests overeenkomstig EN 16402 of gelijkwaardig."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "GS1",
+                "title": "Gehalte aan halfvluchtige organische stoffen",
+                "specification": "Er worden punten toegekend indien het gehalte aan halfvluchtige organische stoffen (HVOS) van het verfproduct ten hoogste de in tabel 10 vermelde grenswaarden bedraagt.\n\nHet HVOS-gehalte moet worden bepaald voor het gebruiksklare product, inclusief alle kleurmiddelen en/of verdunners e.d. waarvan toevoeging vóór gebruik wordt aanbevolen.\n\n**Tabel 10 Grenswaarden van HVOS-gehalten**\n\n| Productbeschrijving (subcategorielettercodes uit Richtlijn 2004/42/EG) | HVOS-grenswaarden (g/l met inbegrip van water) |\n|---|---|\n| a. Matte coatings voor wanden en plafonds voor gebruik binnenshuis (glans < 25 @ 60°) | 30¹/40² |\n| b. Glanzende coatings voor wanden en plafonds voor gebruik binnenshuis (glans > 25 @ 60°) | 30¹/40² |\n| c. Buitenmuren met minerale ondergrond | 40 |\n| d. Hout- en metaalverven voor binnen- en buitendecoratie en voor interieur- en gevelbekleding | 50¹/60² |\n| e. Vernissen en beitsen voor binnenhoutwerk, met inbegrip van dekkende beitsen | 30 |\n| f. Vernissen en houtbeitsen voor buitenhoutwerk, met inbegrip van dekkende houtbeitsen | 60 |\n| g. Houtbeitsen met minimale laagdikte voor binnen en buiten | 30¹/40² |\n| h. Primers | 30¹/40² |\n| i. Hechtprimers | 30¹/40² |\n| j. Eencomponentcoatings met bijzondere eigenschappen | 50¹/60² |\n| k. Tweecomponentencoatings met bijzondere eigenschappen, bestemd voor specifieke toepassingen zoals vloeren | 50¹/60² |\n| l. Coatings met decoratief effect | 50¹/60² |\n| m. Roestwerende verven | 60 |\n\n**Opmerkingen:**\n\n¹ Witte verven en vernissen voor gebruik binnenshuis.\n\n² Gekleurde verven voor gebruik binnenshuis/verven en vernissen voor gebruik buitenshuis.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 24"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet of:\na) een berekening van het HVOS-gehalte, indien beschikbaar, ondersteund door veiligheidsinformatiebladen, of\nb) een testrapport overeenkomstig ISO 11890-2 verstrekken. Bovendien moet gebruik worden gemaakt van de in bijlage 3 vermelde testwijzigingen.\n\nProducten waaraan de EU-milieukeur voor verven en vernissen is toegekend, zoals vastgesteld bij [Besluit 2014/312/EU](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32014D0312) van de Commissie, worden geacht te voldoen."
+                }
+              },
+              {
+                "code": "GS2",
+                "title": "De binnenluchtkwaliteit: verven voor gebruik binnenshuis",
+                "specification": "Er worden punten toegekend aan producten waarvan de emissies (van TVOS en/of formaldehyde) lager zijn dan de in de tabel 12 aangegeven grenswaarden.\n\n**Tabel 12 Grenswaarden van emissies naar lucht van verf voor gebruik binnenshuis**\n\n| Emissiebron | Emissiegrenswaarden (μg/m³) |\n|---|---|\n| | 3 dagen |\n| TVOS¹ | 10 000 |\n| Formaldehyde | – |\n\n¹ Totaal vluchtige organische stoffen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 27"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet testrapporten verstrekken op basis van analytische tests overeenkomstig EN 16402 of gelijkwaardig."
+                }
+              }
+            ]
+          },
+          "schilderwerken": {
+            "core_criteria": [],
+            "extended_criteria": [
+              {
+                "code": "GS1",
+                "title": "Op prestatie gebaseerde schilderopdrachten",
+                "subtitle": "(Wanneer langlopende, op prestatie gebaseerde schilder- en onderhoudsopdrachten worden aanbesteed)",
+                "specification": "Er worden punten toegekend op basis van de geschatte hoeveelheid verf die wordt gebruikt voor het behoud van de kwaliteit van het geschilderde oppervlak gedurende de looptijd van de opdracht.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 30"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een document verstrekken met een raming van de hoeveelheid verf die tijdens de looptijd van het gecontracteerde programma nodig is, met inbegrip van veronderstellingen over het vereiste aantal herschilderbeurten gedurende de looptijd van de opdracht."
+                }
+              },
+              {
+                "code": "GS1",
+                "title": "Hergebruik en/of recycling van afval en ongebruikte verf",
+                "subtitle": "(Wanneer langlopende, op prestatie gebaseerde schilder- en onderhoudsopdrachten worden aanbesteed)",
+                "specification": "Er worden punten toegekend op grond van een verbintenis om afval en ongebruikte verf te hergebruiken of te recycleren. De inschrijver moet een beheersplan indienen met de regelingen die zijn getroffen om ervoor te zorgen dat afval en ongebruikte verf als gevolg van werken:\n• door de contractant worden hergebruikt, en/of\n• extern worden hergebruikt, en/of\n• worden gerecycled.\n\nHergebruik- of recyclageprocessen kunnen betrekking hebben op hergebruikprojecten of de vervaardiging van nieuwe verf met afval en ongebruikte producten als basis. Een controlesysteem moet worden gebruikt voor de verantwoording van afval en ongebruikte verf.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 30"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een gedocumenteerd beheersplan verstrekken met een beschrijving van de regelingen die zijn getroffen om ervoor te zorgen dat afval en ongebruikte verf door de contractant en/of een andere externe instantie worden hergebruikt en/of gerecycled."
+                }
+              }
+            ]
+          },
+          "wegmarkeringen": {
+            "core_criteria": [
+              {
+                "code": "GS1",
+                "title": "Wegmarkeringsformulering — Gehalte aan witte pigmenten (titaniumdioxide)",
+                "subtitle": "(Voor aanbestedingen waar specifieke kwaliteits- en duurzaamheidseisen worden gesteld)",
+                "specification": "Er worden punten toegekend aan de inschrijver die een product met een lager gehalte aan witte pigmenten dan de volgende grenzen aanbiedt:\n– voor systemen toegepast op < 1 kg/m²: < 14 % TiO₂,\n– voor systemen toegepast op > 1 kg/m²: < 10 % TiO₂.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 38"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie over de productformulering verstrekken, vergezeld van testresultaten of een conformiteitsverklaring van de desbetreffende homologatie-instantie², waaruit het gehalte aan witte pigmenten blijkt.\n\n² Een homologatie-instantie is een officiële instantie die de certificering en voorafgaande goedkeuring van producten uitvoert overeenkomstig specifieke prestatiecriteria voor gebruik op nationaal, regionaal en/of lokaal niveau."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "GS1",
+                "title": "Wegmarkeringsformulering — Gehalte aan witte pigmenten (titaniumdioxide)",
+                "subtitle": "(Voor aanbestedingen waar specifieke kwaliteits- en duurzaamheidseisen worden gesteld)",
+                "specification": "Er worden punten toegekend aan de inschrijver die een product met een lager gehalte aan witte pigmenten dan de volgende grenzen aanbiedt:\n– voor systemen toegepast op < 1 kg/m²: < 10 % TiO₂,\n– voor systemen toegepast op > 1 kg/m²: < 8 % TiO₂.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 38"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie over de productformulering verstrekken, vergezeld van testresultaten of een conformiteitsverklaring van de desbetreffende homologatie-instantie², waaruit het gehalte aan witte pigmenten blijkt.\n\n² Een homologatie-instantie is een officiële instantie die de certificering en voorafgaande goedkeuring van producten uitvoert overeenkomstig specifieke prestatiecriteria voor gebruik op nationaal, regionaal en/of lokaal niveau."
+                }
+              },
+              {
+                "code": "GS2",
+                "title": "Glasparels — gehalte aan gerecycled glas",
+                "subtitle": "(Voor de aanschaf van wegmarkeringen met glasparels die voldoen aan de in de aanbesteding bepaalde kwaliteit van nachtzichtbaarheid en retroreflectie. Dit criterium is niet van toepassing wanneer bijzondere eigenschappen, zoals hoge eisen inzake nachtzichtbaarheid, door de aanbestedende dienst worden gespecificeerd.)",
+                "specification": "Er worden X punten toegekend in verhouding tot de gerecycleerde inhoud (uitgedrukt in massa) van de totale hoeveelheid glasparels die wordt gebruikt om de opdracht uit te voeren. Het gerecycleerde gehalte wordt berekend op basis van een gemiddelde massabalans van de gebruikte grondstoffen (volgens de in ISO 14021 voorgeschreven methode).\n\n**Tabel 17. Er worden punten toegekend op basis van het gehalte aan gerecycled glas.**\n\n| Gehalte aan gerecycled glas | Punten |\n|---|---|\n| 75 % – 100 % | 100 % van de punten |\n| 50 % – 75 % | 75 % van de punten |\n| 25 % – 50 % | 50 % van de punten |\n| < 25 % | 0 punten |\n\nEr moet worden voldaan aan de in de aanbesteding bepaalde kwaliteit van nachtzichtbaarheid in natte omstandigheden.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 39"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet door derden geverifieerde documentatie van de fabrikant(en) van de glasparels verstrekken met vermelding van de gerecycleerde inhoud (in massa) van de totale hoeveelheid glasparels die wordt gebruikt voor de uitvoering van de opdracht. Bij de gunning van de opdracht of op verzoek van de aanbestedende dienst moet de inschrijver door derden geverifieerde documentatie ter staving van de berekening (volgens de in ISO 14021 voorgeschreven methode) van de genoemde gerecycleerde inhoud verstrekken, alsmede door derden geverifieerde documentatie van de gegevens ter staving van die berekening, met inbegrip van ten minste de documentatie van het productiecontrolesysteem van de partij en de fabriek (operationeel overeenkomstig EN 1423 of gelijkwaardig¹).\n\n¹ Dit kan ISO 9001 of een nationale of internationale regeling voor de controle van de traceerbaarheid van gerecycleerde inhoud omvatten."
+                }
+              }
+            ]
+          },
+          "wegmarkeringswerkzaamheden": {
+            "core_criteria": [],
+            "extended_criteria": [
+              {
+                "code": "GS1",
+                "title": "Op prestatie gebaseerde opdrachten",
+                "subtitle": "(Wanneer langlopende, op prestatie gebaseerde opdrachten voor het aanbrengen van wegmarkeringen en onderhoud worden aanbesteed)",
+                "specification": "Er worden punten toegekend op basis van het geschatte volume aan wegmarkeringsmateriaal dat wordt gebruikt voor het behoud van de kwaliteit van de wegmarkering gedurende de looptijd van de opdracht.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 43"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet een document verstrekken met de geraamde hoeveelheden wegmarkeringsmateriaal die tijdens de looptijd van de opdracht nodig zijn, met inbegrip van veronderstellingen over het vereiste aantal hermarkeringen tijdens de looptijd van de opdracht."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "contractual_conditions",
+      "title": "Uitvoeringsvoorwaarden",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- of nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als contractuele uitvoeringsvoorwaarden. Ze borgen dat de verplichtingen worden nagekomen.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale uitvoeringsvoorwaarden) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie in de tabel hieronder. De GPP definieert contractuele uitvoeringsvoorwaarden voor:\nCategorie 1: [Verf & vernis](popup:TOELICHTING||**Categorie 1: Verf & vernis**\n\nDe subgroep \"verf en vernis\" (ook \"verven\" genoemd) omvat verven en vernissen voor gebruik binnenshuis en buitenshuis, houtbeitsen en aanverwante producten, zoals hieronder gedefinieerd, bestemd voor gebruik door professionele gebruikers (niet voor industrieel gebruik).\n\nVerf- en vernisproducten zijn onder meer: vloerverven, producten die door distributeurs op verzoek van beroepsschilders worden gekleurd, kleursystemen, decoratieve verven in de vorm van vloeibare of pasteuze mengsels die eventueel zijn voorbehandeld, gekleurd of voorbereid door de fabrikant om aan de behoeften van de consument te voldoen, met inbegrip van houtverven, houtbeitsen en dekkende beitsen, muurcoatings en aflakken voor metaal alsook de primers en grondverven van dergelijke productsystemen.\n\nEU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen||)\nCategorie 2: [Schilderwerken](popup:TOELICHTING||**Categorie 2: Schilderwerken**\n\nOnder \"schilderwerken\" wordt verstaan wanneer contractanten, gewoonlijk \"schilders en decorateurs\" genoemd, rechtstreeks betrokken zijn bij het verven van binnen- of buitenoppervlakken op eenmalige, afroepende of cyclische basis, met inbegrip van lopende onderhouds- en herstelwerkzaamheden.\n\nEU-criteria inzake groene overheidsopdrachten voor onderhoud van de openbare ruimte||)\nCategorie 3: [Wegmarkeringen](popup:TOELICHTING||**Categorie 3: Wegmarkeringen**\n\nDe subgroep \"wegmarkeringen\" omvat producten zoals verf- of structurele kunststofsystemen die op het wegdek worden aangebracht om rijbanen, vakken en tekens af te bakenen en te zorgen voor wrijvingseigenschappen en nachtzichtbaarheid in droge, natte en regenomstandigheden.\n\nZij bestaan over het algemeen uit een gepigmenteerd wegmarkeringsmateriaal en glasparels die samen al dan niet een folie over de ondergrond vormen. Voorgevormde wegmarkeringsproducten die gedefinieerd zijn als tape, voorgevormde koudeplastwegmarkering of voorgevormde thermoplastwegmarkeringen met of zonder opbouwmateriaal vallen eveneens onder het toepassingsgebied, evenals primers en kleefstoffen die nodig zijn voor het aanbrengen van de wegmarkeringen.\n\nEU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen||)\nCategorie 4: [Wegmarkeringswerkzaamheden](popup:TOELICHTING||**Categorie 4: Wegmarkeringswerkzaamheden**\n\n\"Wegmarkeringswerkzaamheden\" zijn werkzaamheden waarbij contractanten, gewoonlijk \"wegmarkeerders\" genoemd, rechtstreeks betrokken zijn om op eenmalige of cyclische basis wegmarkeringen aan te brengen, met inbegrip van onderhouds- en herstelwerkzaamheden.\n\nEU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen||)",
+        "Neem in ieder geval de kerncriteria op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "verf_vernis",
+            "label": "📋 Verf & vernis",
+            "label_short": "Verf & vernis"
+          },
+          {
+            "key": "schilderwerken",
+            "label": "🎨 Schilderwerken",
+            "label_short": "Schilderwerken"
+          },
+          {
+            "key": "wegmarkeringen",
+            "label": "🛣️ Wegmarkeringen",
+            "label_short": "Wegmarkeringen"
+          },
+          {
+            "key": "wegmarkeringswerkzaamheden",
+            "label": "🚧 Wegmarkeringswerkzaamheden",
+            "label_short": "Wegmarkeringswerkzaamheden"
+          }
+        ],
+        "criteria_types": [
+          {
+            "key": "core_criteria",
+            "label": "🔵 Kerncriteria",
+            "label_short": "Kerncriteria"
+          }
+        ],
+        "data": {
+          "verf_vernis": {
+            "core_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Technisch advies en inspecties ter plaatse",
+                "subtitle": "",
+                "specification": "De inschrijver moet technisch advies en instructies voor de uitvoering van werken verstrekken aan de aanbestedende dienst of zijn contractanten. Dit omvat onder andere:\n• methodeverklaringen en richtsnoeren voor de voorbereiding van de ondergrond;\n• methodeverklaringen en richtsnoeren voor verfvoorbereiding, met inbegrip van ramingen voor toepassing per m²;\n• optimale omstandigheden voor opslag en toepassing van het product;\n• risicobeperkende maatregelen om milieuverontreiniging tot een minimum te beperken;\n• advies over het op de juiste wijze verwijderen van ongebruikte verf.\n\nTechnisch advies wordt op verzoek ook ter beschikking gesteld van de exploitatiebedrijven van de aanbestedende dienst of hun contractanten, hetzij in de vorm van bezoeken ter plaatse (in een aantal en omvang die door de aanbestedende dienst in de aanbestedingsfase worden bepaald) hetzij in de vorm van een technische hotline (in een door de aanbestedende dienst opgegeven taal).\n\nDe inschrijver moet documenten verstrekken die de genoemde gegevens bevatten. Schriftelijke feedback van de exploitanten die de verf aanbrengen, moet bevestigen dat het technisch advies en de ondersteuning ter plaatse op bevredigende wijze worden verstrekt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 27"
+                }
+              }
+            ]
+          },
+          "schilderwerken": {
+            "core_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Beheer van omgang met verf",
+                "subtitle": "",
+                "specification": "De contractant moet (voor op prestatie gebaseerde opdrachten) de gegevens verstrekken over:\n• de hoeveelheid aangekochte verf;\n• de feitelijke hoeveelheden verf die worden gebruikt om aan de specificaties van de opdracht te voldoen.\n\nDe contractant moet tevens gegevens verstrekken over het ontstaan van afval en ongebruikte verf, met inbegrip van traceringsgegevens met betrekking tot:\n• hergebruik door de contractant;\n• extern hergebruik;\n• recyclage;\n• veilige verwijdering.\n\nIn het geval dat een oude verflag van de ondergrond moet worden verwijderd, moet de contractant ook gegevens verstrekken dat deze verflag:\n• veilig is gehanteerd;\n• veilig is verwijderd voor verwerking als gevaarlijk afval.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 32"
+                }
+              }
+            ]
+          },
+          "wegmarkeringen": {
+            "core_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Technische ondersteuning en inspecties ter plaatse",
+                "subtitle": "",
+                "specification": "De contractant moet de aanbestedende dienst of zijn contractanten technisch advies en instructies voor de uitvoering van werken verstrekken, waaronder:\n• methodeverklaringen en richtsnoeren voor de voorbereiding van de ondergrond;\n• methodeverklaringen en richtsnoeren voor productvoorbereiding, met inbegrip van ramingen voor toepassing per m²;\n• optimale voorwaarden voor opslag en toepassing van het product, met inbegrip van ondersteuning bij het selecteren en gebruiken van toepassingsapparatuur;\n• risicobeperkende maatregelen om milieuverontreiniging tot een minimum te beperken;\n• advies over het op de juiste wijze verwijderen van ongebruikt product.\n\nTechnisch advies wordt op verzoek ook ter beschikking gesteld van de exploitatiebedrijven van de aanbestedende dienst of hun contractanten, hetzij in de vorm van bezoeken ter plaatse (in een aantal en omvang die door de aanbestedende dienst in de aanbestedingsfase worden bepaald) hetzij in de vorm van een technische hotline (in een door de aanbestedende dienst opgegeven taal).\n\nDe inschrijver moet documenten verstrekken die de genoemde gegevens bevatten. Schriftelijke feedback van de exploitanten die het wegmarkeringsproduct aanbrengen, moet bevestigen dat het technisch advies en de ondersteuning ter plaatse op bevredigende wijze worden verstrekt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 40"
+                }
+              }
+            ]
+          },
+          "wegmarkeringswerkzaamheden": {
+            "core_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Technische ondersteuning en inspecties ter plaatse",
+                "subtitle": "",
+                "specification": "De contractant moet (voor op prestatie gebaseerde opdrachten) de gegevens verstrekken over:\n• de hoeveelheid aangekochte wegmarkeringen;\n• de feitelijke hoeveelheden wegmarkeringen die worden gebruikt om aan de specificaties van de opdracht te voldoen.\n\nDe contractant moet tevens gegevens verstrekken over het ontstaan van afval en ongebruikt wegmarkeringsmateriaal, met inbegrip van traceringsgegevens met betrekking tot:\n• hergebruik door de contractant;\n• extern hergebruik;\n• recyclage;\n• veilige verwijdering.\n\nIn het geval dat een oude wegmarkeringslaag van de ondergrond moet worden verwijderd, moet de contractant ook gegevens verstrekken over:\n• veilig is gehanteerd;\n• veilig is verwijderd voor verwerking als gevaarlijk afval.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor verven, vernissen en wegmarkeringen - Pag. 43"
+                }
+              }
+            ]
+          }
+        }
+      }
     }
   ]
 }
