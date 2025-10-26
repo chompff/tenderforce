@@ -153,8 +153,8 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
       setStateInUrl({ code: selectedCode, org: organizationType, step: '4', estimation: answer });
       return;
     }
-    setPhase('sectoral-assessment');
-    setStateInUrl({ code: selectedCode, org: organizationType, step: 'sectoral', estimation: answer });
+    // When below threshold, EED is not applicable - navigate directly to results
+    navigate(`/results/${selectedCode}?org=${organizationType}&estimation=no`);
   };
 
   const handleHighThresholdSelect = (answer: string) => {

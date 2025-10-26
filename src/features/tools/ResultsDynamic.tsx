@@ -170,7 +170,10 @@ const ResultsDynamic: React.FC = () => {
             <div className="flex-1 min-w-0">
               <h1 className="text-xl font-bold text-gray-900 flex items-center gap-3">
                 {estimationAnswer === 'no' ? (
-                  'Geen EED verplichtingen'
+                  <>
+                    <span className="w-4 h-4 rounded-full bg-green-500"></span>
+                    Geen EED verplichtingen
+                  </>
                 ) : obligations.length > 0 ? (
                   <>
                     <span className="w-4 h-4 rounded-full" style={{ backgroundColor: '#A53434' }}></span>
@@ -182,9 +185,13 @@ const ResultsDynamic: React.FC = () => {
                   'Resultaten'
                 )}
               </h1>
-              
+
               {/* EED Description text */}
-              {estimationAnswer !== 'no' && obligations.length > 0 && (
+              {estimationAnswer === 'no' ? (
+                <p className="text-base text-gray-700 mt-3 leading-relaxed">
+                  Voor deze aanbesteding gelden geen verplichtingen op grond van de Energy Efficiency Directive (EED).
+                </p>
+              ) : estimationAnswer !== 'no' && obligations.length > 0 && (
                 <p className="text-base text-gray-700 mt-3 leading-relaxed">
                   U bent verplicht om alleen producten, diensten, gebouwen en werken met hoge energie-efficiëntieprestaties in te kopen, tenzij dit technisch niet haalbaar is.
                 </p>
@@ -243,13 +250,13 @@ const ResultsDynamic: React.FC = () => {
                 <CheckCircle className="w-6 h-6 text-green-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-green-900">Goed nieuws!</h3>
+                <h3 className="text-lg font-semibold text-green-900">De EED is niet van toepassing</h3>
                 <p className="text-green-700 mt-2">
-                  Je raming blijft onder de drempelwaarde van {organizationType && getThresholdAmount(organizationType, 'Diensten')}. 
-                  Dit betekent dat er geen specifieke sectorale verplichtingen van toepassing zijn op je aanbesteding.
+                  Je raming blijft onder de drempelwaarde van {organizationType && getThresholdAmount(organizationType, 'Diensten')}.
+                  Dit betekent dat de Europese Energie-Efficiëntierichtlijn (EED) niet van toepassing is op deze aanbesteding.
                 </p>
                 <p className="text-green-600 text-sm mt-3">
-                  Je kunt aanbesteden volgens de nationale aanbestedingsregels zonder aanvullende sectorale wetgeving.
+                  Je kunt aanbesteden volgens de nationale aanbestedingsregels zonder de specifieke EED verplichtingen.
                 </p>
               </div>
             </div>
