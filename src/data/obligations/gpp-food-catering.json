@@ -1,15 +1,20 @@
 {
   "obligation_id": "gpp-food-catering",
   "archetype": "GPP",
-  "title": "EU GPP criteria of nationaal gelijkwaardig",
-  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de EU-criteria inzake groene overheidsopdrachten voor catering en automaten toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
+  "title": "Verplichtingen onder EU GPP óf nationaal gelijkwaardig",
+  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de [EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/19d939de-19b6-4104-b94b-db421c045a8b/details) toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
   "badges": ["GPP", "NL", "EU"],
   "colors": {
     "text": "#356534",
     "badge_background": "#E1FDEB",
     "border": "#356534"
   },
-  "warnings": [],
+  "warnings": [
+    {
+      "severity": "yellow",
+      "text": "Let op: van toepassing indien ingekocht voor consumptie of catering"
+    }
+  ],
   "footer_warnings": [],
   "legal_references": [
     {
@@ -20,23 +25,625 @@
   ],
   "sections": [
     {
-      "key": "technical_specs",
-      "title": "Technische specificaties",
+      "key": "selection_criteria",
+      "title": "Selectiecriteria",
       "requirement_level": "verplicht",
-      "intro": "De GPP criteria voor catering en automaten zijn nog in ontwikkeling. Deze module bevat voorlopig placeholder content.",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als selectiecriteria. Het doel is te waarborgen dat alleen leveranciers met aantoonbare kennis, middelen en procedures in aanmerking komen voor deelname.",
       "warnings": [
         {
-          "severity": "yellow",
-          "text": "Let op: De inhoud van deze module is nog niet compleet. De definitieve GPP criteria worden later toegevoegd."
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale selectiecriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
         }
       ],
       "steps": [
-        "Raadpleeg de EU GPP criteria voor catering en automaten wanneer deze beschikbaar komen.",
-        "Vergelijk met de Nederlandse MVI criteria op www.mvicriteria.nl.",
-        "Neem de strengste criteria op in uw aanbestedingsdocumenten."
+        "Kies de categorie in de tabel hieronder. De GPP definieert alleen selectiecriteria voor cateringdiensten.",
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
       ],
       "steps_ordered": true,
-      "example_texts": []
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "cateringdiensten",
+            "label": "Kerncriteria voor cateringdiensten",
+            "label_short": "Cateringdiensten"
+          }
+        ],
+        "default_main_tab": "cateringdiensten",
+        "data": {
+          "cateringdiensten": {
+            "core_criteria": [
+              {
+                "code": "SC1",
+                "title": "Vakbekwaamheid van de inschrijver",
+                "specification": "De inschrijvers beschikken over relevante deskundigheid en ervaring op elk van de volgende gebieden waarvoor hij op grond van de overeenkomst verantwoordelijk is (selecteer de voor de overeenkomst relevante gebieden):\n\nBeschrijving van de methodiek voor:\n• de men samenstelling, waar nodig met aandacht voor grotere consumptie van plantaardig voedsel;\n• de voorkoming van voedselverspilling;\n• de veilige herverdeling van voedselverschotten, waar mogelijk;\n• de voorkoming, scheiding en verwijdering van ander afval;\n• het meten van de milieu-indicatoren die in TS 8 ten aanzien van cateringdiensten zijn voorgesteld, waaronder ten minste de hoeveelheid plantaardig voedsel, de voedselverspilling in diverse schakels van de waardeketen, de productie van ander afval uitgesplitst naar afvalstroom, energieverbruik, waterverbruik en brandstofverbruik, indien van toepassing;\n• water- en energiebesparing door apparatuur, en exploitatie en onderhoud daarvan (voor het hiervoor verantwoordelijke personeel);\n• de juiste dosering van en omgang met schoonmaakproducten en reinigingsprocedures;\n• het beheer, het toezicht en de traceerbaarheidsdocumentatie van (onder meer gevaarlijk) afval;\n• structureel milieubewust rijden door het personeel dat maaltijden bezorgt met het oog op een hogere brandstofefficiëntie;\n• het opleiden van personeel met betrekking tot jaarlijks herziene milieuaspecten/herzien beleid en het ondersteunen van beheersystemen voor zo min mogelijk voedselverspilling en afvalproductie; waar mogelijk en veilig het zoveel mogelijk herverdelen van voedselverschotten; en het optimaliseren van het hergebruik of de recycling en de veilige verwijdering van verpakkingsmateriaal en/of ander afval.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 23"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Bewijs in de vorm van informatie en referenties (zoals gedocumenteerde feedback van klanten) met betrekking tot de desbetreffende overeenkomsten met voornoemde elementen die in de afgelopen vijf jaar zijn uitgevoerd. Het bewijs moet worden ondersteund met gegevens over opleidingsactiviteiten."
+                }
+              }
+            ],
+            "extended_criteria": []
+          }
+        }
+      }
+    },
+    {
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als technische specificaties. Daarmee worden de inhoudelijke eisen vastgelegd die aan het werk, de levering of de dienst worden gesteld.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale technische specificaties) uit de EU GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn dient u deze op te nemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie in de tabel hieronder. De GPP definieert technische specificaties voor:\n   Categorie 1: Levensmiddelen\n   Categorie 2: Cateringdiensten\n   Categorie 3: Verkoopautomaten",
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "levensmiddelen",
+            "label": "🍎 Levensmiddelen",
+            "label_short": "Levensmiddelen"
+          },
+          {
+            "key": "cateringdiensten",
+            "label": "🍽️ Cateringdiensten",
+            "label_short": "Cateringdiensten"
+          },
+          {
+            "key": "verkoopautomaten",
+            "label": "🤖 Verkoopautomaten",
+            "label_short": "Verkoopautomaten"
+          }
+        ],
+        "default_main_tab": "levensmiddelen",
+        "data": {
+          "levensmiddelen": {
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Biologische levensmiddelen",
+                "specification": "**Optie A (eenvoudiger te verifiëren tijdens de uitvoering van de overeenkomst)**\n\nDe onderstaande levensmiddelen en dranken ([in te vullen door de aanbestedende dienst](popup:TOELICHTING||De lijst met producten kan bestaan uit: fruit, groenten, peulvruchten, rijst en pasta.\n\nDe aanbestedende dienst kan hier strenger zijn als TS1 als uitgebreid criterium moet dienen. De lijst met producten kan dan bestaan uit: fruit, groeten, peulvruchten, rijst, pasta, brood en bakkerijproducten, eieren, zuivelproducten enz.\n\nDeze lijst is volledig noch uitvoerig. Levensmiddelen en dranken die in de uitgebreide lijst worden genoemd of andere producten die niet op deze lijsten voorkomen, kunnen ook op de kernlijst (of de uitgebreide lijst) worden opgenomen als de aanbestedende dienst dat juist acht. Op de speciale website van Eurostat en van de IFOAM EU-groep staan gegevens en statistieken over biologische levensmiddelen\n\n**EU-criteria inzake levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 19**||)) moeten voldoen aan Verordening (EU) 2018/848 of latere wijzigingen daarvan.\n\n**Verificatie optie A**\n\nBewijs in de vorm van informatie en referenties (zoals gedocumenteerde feedback van klanten) met betrekking tot de desbetreffende overeenkomsten met voornoemde elementen die in de afgelopen vijf jaar zijn uitgevoerd. Het bewijs moet worden ondersteund met gegevens over opleidingsactiviteiten.\n\n**Optie B (lastiger te verifiëren tijdens uitvoering van de overeenkomst)**\n\nTen minste [X%](popup:TOELICHTING||**X = door de aanbestedende dienst vast te stellen percentage. Kies uit:**\n\n• 20-60 % van de massa van de totale aankoop van levensmiddelen en dranken.\n• 30-70 % van de waarde van de totale aankoop van levensmiddelen en dranken.\n\n**Als dit als uitgebreid criterium moet dienen, kies voor X:**\n\n• > 50 % van de massa van de totale aankoop van levensmiddelen en dranken of\n• > 60 % van de waarde van de totale aankoop van levensmiddelen en dranken.\n\n**EU-criteria inzake levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 8 en 19**||) van de totale aankoop van levensmiddelen en dranken moet voldoen aan Verordening (EU) 2018/848 of latere wijzigingen daarvan.\n\n**Verificatie optie B**\n\nDe inschrijver verstrekt de gegevens (hoeveelheid en naam) van de levensmiddelen en dranken die tijdens de uitvoering van de overeenkomst moeten worden geleverd, en vermeldt specifiek de producten die aan de biologische vereisten voldoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 8"
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Visserij- en aquacultuurproducten",
+                "specification": "Vis of schelpdieren die op de lijst met \"vis die gemeden moet worden\" — een weergave van de toestand van de visbestanden in diverse regio's — mogen niet worden gebruikt³.\n\n³ Er moet worden verwezen naar een specifieke lijst. Ter oriëntatie kan bv. gebruik worden gemaakt van de \"fish to avoid\"-lijst van de Marine Conservation Society (https://www.mcsuk.org/goodfishguide/ search), die gidsen van het WNF over duurzame zeevruchten, IUCN, Seaweb Europe, CITES, FAO, NOAA, Monterey Bay Aquarium Seafood Watch, Greenpeace, plus nationale gidsen over zeevruchten.\n\n**Verificatie**\n\nDe inschrijver verstrekt een verklaring waarin staat dat er alleen vis en visproducten zullen worden geleverd die aan de bovengenoemde eis voldoen. Tevens beschrijft de inschrijver op welke wijze hij tijdens de uitvoering van de overeenkomst de naleving wil waarborgen (bv. door de leveranciers van de verschillende producten te noemen en specifiek te vermelden welke daarvan eieren zullen leveren die voldoen aan de normen van code 1 of 2 van bijlage I, deel A, bij Verordening (EG) nr. 589/2008).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 9"
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Dierenwelzijn",
+                "specification": "Geen van de eieren in de schaal uit de conventionele landbouw krijgt code 3 van [Verordening (EG) nr. 589/2008](https://eur-lex.europa.eu/eli/reg/2008/589/oj/eng#).\n\n**Verificatie**\n\nDe inschrijver verstrekt een verklaring waarin staat geen van de eieren in de schaal uit de conventionele landbouw code 3 van Verordening (EG) nr. 589/2008 of latere wijzigingen daarvan krijgt. Tevens beschrijft de inschrijver op welke wijze hij tijdens de uitvoering van de overeenkomst de naleving wil waarborgen (bv. door de leveranciers te noemen en specifiek te vermelden welke daarvan eieren zullen leveren die voldoen aan de normen van code 1 of 2 van bijlage I, deel A, bij Verordening (EG) nr. 589/2008).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 12"
+                }
+              },
+              {
+                "code": "TS4.1",
+                "title": "Milieuvriendelijkere plantaardige vetten",
+                "specification": "Bij eventuele aankoop van voorverpakte levensmiddelen en/of dranken die plantaardige vetten bevatten, moeten ten minste [X%](popup:TOELICHTING||**X = door de aanbestedende dienst vast te stellen percentage.**\n\nVul in voor X: 10-50 % van de eenheden/artikelen voorverpakte levensmiddelen en/of dranken.\n\n**Als dit als uitgebreid criterium moet dienen, vul in voor X:**\n\n50-100 % van de eenheden/artikelen voorverpakte levensmiddelen en/of dranken.\n\n**EU-criteria inzake levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 8 en 21**||) van de eenheden/artikelen voorverpakte levensmiddelen met plantaardige olieën zijn geproduceerd uit gewassen die aan milieucriteria inzake bodem, biodiversiteit, verandering in landgebruik en voorraden aan organische koolstof beantwoorden, door te voldoen aan de eisen van een [certificeringsregeling](popup:TOELICHTING||Aan de hand van regelingen die afkomstig zijn van koepelorganisaties met een diverse ledenbestand (waaronder ngo's, het bedrijfsleven en overheden) zoals de Roundtable on Sustainable Palm Oil (RSPO), de Palm Oil Innovation Group (POIG), de Roundtable on Responsible Soy (RTRS), het Soybean Sustainability Assurance Protocol (SSAP) of ProTerra, kan naleving van de criteria worden aangetoond, mits deze regelingen betrekking hebben op de genoemde milieubeginselen. Andere regelingen, onder meer op nationaal niveau, worden als gelijkwaardig beschouwd, indien zij aan de genoemde milieubeginselen voldoen.\n\n**EU-criteria inzake levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 13**||) die op deze aspecten betrekking heeft, aan artikel 93 van Verordening (EU) nr. 1306/2013, of op een andere, gelijkwaardige wijze.\n\n**Verificatie**\n\nDe inschrijver verstrekt een verklaring waarin staat dat ten minste [X%](popup:TOELICHTING||**X = door de aanbestedende dienst vast te stellen percentage.**\n\nVul in voor X: 10-50 % van de eenheden/artikelen voorverpakte levensmiddelen en/of dranken.\n\n**Als dit als uitgebreid criterium moet dienen, vul in voor X:**\n\n50-100 % van de eenheden/artikelen voorverpakte levensmiddelen en/of dranken.\n\n**EU-criteria inzake levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 8 en 21**||) van alle levensmiddelen met plantaardige vetten (in eenheden) die tijdens de uitvoering van de overeenkomst moeten worden geleverd, aan de bovengenoemde eis voldoet. De inschrijver beschrijft de maatregelen die met het oog op de naleving zullen worden getroffen (zoals leveringsbronnen die mogelijk worden benut).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 12"
+                }
+              },
+              {
+                "code": "TS4.2",
+                "title": "Milieuvriendelijkere plantaardige vetten",
+                "specification": "Bij eventuele aankoop van plantaardige olie moet ten minste [Y%](popup:TOELICHTING||**Y = door de aanbestedende dienst vast te stellen percentage.**\n\nVul in voor Y: 10-50 % van de massa van de totale hoeveelheid plantaardige olie (gekocht als ruwe grondstof) of margarine.\n\n**Als dit als uitgebreid criterium moet dienen, vul in voor Y:**\n\n50-100 % van de massa van de totale hoeveelheid plantaardige olie (gekocht als ruwe grondstof) of margarine.\n\n**EU-criteria inzake levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 8 en 21**||) van de plantaardige olie die als ruwe grondstof wordt aangekocht, zijn geproduceerd uit gewassen die aan milieucriteria inzake bodem, biodiversiteit, verandering in landgebruik en voorraden aan organische koolstof beantwoorden, door te voldoen aan de eisen van een certificeringsregeling¹⁰ die op deze aspecten betrekking heeft, aan artikel 93 van Verordening (EU) nr. 1306/2013, of op een andere, gelijkwaardige wijze.\n\n**Verificatie**\n\nDe inschrijver verstrekt een verklaring waarin staat dat ten minste [Y%](popup:TOELICHTING||**Y = door de aanbestedende dienst vast te stellen percentage.**\n\nVul in voor Y: 10-50 % van de massa van de totale hoeveelheid plantaardige olie (gekocht als ruwe grondstof) of margarine.\n\n**Als dit als uitgebreid criterium moet dienen, vul in voor Y:**\n\n50-100 % van de massa van de totale hoeveelheid plantaardige olie (gekocht als ruwe grondstof) of margarine.\n\n**EU-criteria inzake levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 8 en 21**||) van alle plantaardige olie of derivaten daarvan (als ruwe grondstof of als margarine) die hij levert, aan de bovengenoemde eis voldoet. De inschrijver beschrijft de maatregelen die met het oog op de naleving zullen worden getroffen (zoals leveringsbronnen die mogelijk worden benut).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 12"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS2.2",
+                "title": "Visserij- en aquacultuurproducten",
+                "specification": "**Optie A (eenvoudiger te verifiëren tijdens de uitvoering van de overeenkomst)**\n\nDe onderstaande visproducten en visproducten (lijst met door de aanbestedende dienst te bepalen producten) moeten zijn geproduceerd op basis van bestanden binnen biologisch veilige grenzen ten aanzien van milieueffecten, waaronder overbevissing en achteruitgang van visbestanden, biodiversiteit, en verantwoord en duurzaam gebruik van de hulpbronnen. Dit houdt in dat er volgens wetenschappelijke inzichten een grote kans bestaat dat de geschatte paaibiomassa van het bestand hoger ligt dan het niveau waarop het bestand gevaar op instorting loopt. Deze inzichten moeten worden gebaseerd op beoordelingen door de onafhankelijke wetenschappelijke organen die de EU adviseren, met name de Internationale Raad voor Onderzoek der Zee (ICES), het Wetenschappelijk, Technisch en Economisch Comité voor de Visserij (WTECV) van de EU of regionale organisaties voor visserijbeheer uit de hele wereld⁴.\n\n⁴ Deze informatie is normaal gesproken beschikbaar op de websites van deze organisaties, bijvoorbeeld: www.ices.dk, https://stecf.jrc.ec.europa.eu/\n\n**Verificatie optie A**\n\nDe inschrijver verstrekt een verklaring waarin staat dat er alleen vis en visproducten zullen worden geleverd die aan de bovengenoemde eis voldoen. Tevens beschrijft de inschrijver op welke wijze hij tijdens de uitvoering van de overeenkomst de naleving wil waarborgen (bv. door de leveranciers van de verschillende producten te noemen en specifiek te vermelden welke daarvan eieren zullen leveren die voldoen aan de normen van code 1 of 2 van bijlage I, deel A, bij Verordening (EG) nr. 589/2008).\n\n**Optie B (lastiger te verifiëren tijdens uitvoering van de overeenkomst)**\n\nTen minste [Y %](popup:TOELICHTING||**Y staat voor de drempel die de aanbestedende dienst vaststelt. Kies uit:**\n\n• 20-50 % van de massa van de totale aankoop van vis- of aquacultuurproducten (biologische visproducten uitgezonderd).\n• 10-40 % van waarde van de totale aankoop van vis- of aquacultuurproducten (biologische visproducten uitgezonderd).\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 9 en 20**||) van de aankoop van vis en visproducten moet zijn geproduceerd op basis van bestanden binnen biologisch veilige grenzen ten aanzien van milieueffecten, waaronder overbevissing en achteruitgang van visbestanden, biodiversiteit, en verantwoord en duurzaam gebruik van de hulpbronnen. Dit houdt in dat er volgens wetenschappelijke inzichten een grote kans bestaat dat de geschatte paaibiomassa van het bestand hoger ligt dan het niveau waarop het bestand gevaar op instorting loopt. Deze inzichten moeten worden gebaseerd op beoordelingen door de onafhankelijke wetenschappelijke organen die de EU adviseren, met name de Internationale Raad voor Onderzoek der Zee (ICES), het Wetenschappelijk, Technisch en Economisch Comité voor de Visserij (WTECV) van de EU of regionale organisaties voor visserijbeheer uit de hele wereld⁶.\n\n⁶ Deze informatie is normaal gesproken beschikbaar op de websites van deze organisaties, bijvoorbeeld: www.ices.dk, https://stecf.jrc.ec.europa.eu/\n\n**Verificatie optie B**\n\nDe inschrijver verstrekt de gegevens (hoeveelheid en naam) van de visserij- en aquacultuurproducten die tijdens de uitvoering van de overeenkomst moeten worden geleverd, en vermeldt specifiek de producten die aan de vereisten voldoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 9"
+                }
+              },
+              {
+                "code": "TS2.3",
+                "title": "Visserij- en aquacultuurproducten",
+                "specification": "**Optie A (eenvoudiger te verifiëren tijdens de uitvoering van de overeenkomst)**\n\nDe onderstaande aquacultuurproducten (lijst met door de aanbestedende dienst te bepalen producten) moeten voldoen aan de voorschriften van een certificeringsregeling voor duurzame productie. Die regeling moet gebaseerd zijn op criteria van organisaties van verschillende belanghebbenden met een groot ledenaantal en gericht zijn op milieueffecten, onder meer ten aanzien van biodiversiteit en verantwoord en duurzaam gebruik van de hulpbronnen⁶.\n\n⁶ Deze informatie is normaal gesproken beschikbaar op de websites van deze organisaties, bijvoorbeeld: www.ices.dk, https://stecf.jrc.ec.europa.eu/\n\n**Verificatie optie A**\n\nDe inschrijver verstrekt een verklaring waarin staat dat er alleen aquacultuurproducten zullen worden geleverd die aan de bovengenoemde eis voldoen. Tevens beschrijft de inschrijver op welke wijze hij tijdens de uitvoering van de overeenkomst de naleving wil waarborgen (bv. door de leveranciers van de verschillende producten te noemen).\n\n**Optie B (lastiger te verifiëren tijdens uitvoering van de overeenkomst)**\n\nTen minste [Y %](popup:TOELICHTING||**Y staat voor de drempel die de aanbestedende dienst vaststelt. Kies uit:**\n\n• 20-50 % van de massa van de totale aankoop van vis- of aquacultuurproducten (biologische visproducten uitgezonderd).\n• 10-40 % van waarde van de totale aankoop van vis- of aquacultuurproducten (biologische visproducten uitgezonderd).\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 9 en 20**||) van de aankoop van aquacultuurproducten (de biologische aquacultuur uitgezonderd) moet voldoen aan de voorschriften van een certificeringsregeling voor duurzame productie. Die regeling moet gebaseerd zijn op criteria van organisaties van verschillende belanghebbenden met een groot ledenaantal en gericht zijn op milieueffecten, onder meer ten aanzien van biodiversiteit en verantwoord en duurzaam gebruik van de hulpbronnen⁸.\n\n⁸Toen dit werkdocument werd opgesteld, werden regelingen voor aquacultuurproducten zoals de Aquaculture Stewardship Council (ASC) of Globalgap geacht een afdoende mate van betrouwbaarheid te bieden. Andere nationale regelingen kunnen als gelijkwaardig worden beschouwd, indien zij aan de bovengenoemde milieubeginselen voldoen.\n\n**Verificatie optie B**\n\nDe inschrijver verstrekt de gegevens (hoeveelheid en naam) van de visserij- en aquacultuurproducten die tijdens de uitvoering van de overeenkomst moeten worden geleverd, en vermeldt specifiek de producten die aan de vereisten voldoen. Certificeringsregelingen die op de bovenstaande beginselen zijn gebaseerd, kunnen als bewijsmiddel worden vermeld.⁸",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 9"
+                }
+              }
+            ]
+          },
+          "cateringdiensten": {
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Inkoop van levensmiddelen",
+                "specification": "De levensmiddelen die dienen ter nakoming van de cateringovereenkomst worden overeenkomstig de EU-criteria voor groene overheidsopdrachten inzake levensmiddelen aangekocht.\n\n**Verificatie**\n\nZie de bovenstaande EU-criteria voor de aankoop van levensmiddelen:\n- Biologische levensmiddelen (TS 1 en GC 1)\n- Visserij- en aquacultuurproducten (TS 2 en GC 2)\n- Dierenwelzijn (TS 3 en GC 3)\n- Producten uit de eerlijke en ethische handel (GC 4)\n- Milieuvriendelijkere plantaardige vetten (TS 4)",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 24"
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Plantaardige menu's",
+                "specification": "Onder de aangeboden menu's zijn varianten die meer peulvruchten, groenten, fruit, volkorenproducten en noten bevatten, terwijl de aanbevolen nutriënteninname door de cliënten gelijk blijft, zoals (maak een selectie):\n• [X](popup:TOELICHTING||**X = door de aanbestedende dienst vast te stellen getal.**\n\nDit mag de aanbestedende dienst zelf beslissen gebaseerd op behoeften.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 24**||) vegetarische of plantaardige dag(en) per week;\n• [X](popup:TOELICHTING||**X = door de aanbestedende dienst vast te stellen getal.**\n\nDit mag de aanbestedende dienst zelf beslissen gebaseerd op behoeften.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 24**||) dagelijks aangeboden vegetarische of plantaardige gerechten of [Z](popup:TOELICHTING||**Z = door de aanbestedende dienst vast te stellen getal.**\n\nDit mag de aanbestedende dienst zelf beslissen gebaseerd op behoeften.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 24**||) dagen per week;\n• een vegetarische of plantaardige \"dagschotel\";\n• [Y](popup:TOELICHTING||**Y = door de aanbestedende dienst vast te stellen getal.**\n\nDit mag de aanbestedende dienst zelf beslissen gebaseerd op behoeften.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 24**||) gram plantaardige eiwitten of peulvruchten per (week of dag);\n• het bijmengen ([V%](popup:TOELICHTING||**V% = door de aanbestedende dienst vast te stellen percentage.**\n\nDit mag de aanbestedende dienst zelf beslissen gebaseerd op behoeften.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 24**||)) van vleesgerechten met bonen, granen of groenten.\n\n**Verificatie**\n\nDe inschrijver verstrekt de planning van het menu, samen met de alternatieven ter bevordering van de consumptie van peulvruchten, groenten en fruit. Het bovenstaande moet duidelijk en overeenkomstig de vastgestelde voorschriften worden aangeven.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 24"
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Voorkoming van voedsel- en drankenverspilling",
+                "specification": "*Opmerking: het kan zijn dat inschrijvers niet degenen zijn die besluiten over sommige beste praktijken in het kader van criterium TS 3 of deze aanbieden, aangezien het wellicht de aanbestedende diensten zijn die hierom verzoeken. De aanbestedende diensten kunnen bijvoorbeeld aan het begin en einde van de diensten minder menukeuzes toestaan, zodat te grote bestellingen en bederf van voorraden wordt voorkomen; of de inschrijvers deze maatregel niet kunnen treffen.*\n\nDe inschrijver beschikt over schriftelijke procedures waarin de beste praktijken voor het voorkomen van voedselverspilling worden beschreven. Die beste praktijken zijn onder meer (maak een selectie):\n• een nauwkeurig systeem voor voorraadbeheer en bestellingen opzetten, zodat te grote bestellingen en bederf van voorraden wordt voorkomen;\n• een voedselafvalregistratie opzetten: dit betekent het inspecteren van alle processen teneinde soorten en bronnen van lokaal geproduceerd afval in kaart te brengen, waaronder vloeibaar voedselafval (bv. dranken);\n• de hoeveelheden voedselafval doorlopend of periodiek meten;\n• een \"first-in, first-out\"-beleid voeren ten aanzien van de opslag van levensmiddelen en de houdbaarheiddata periodiek controleren;\n• levensmiddelen waarvan de houdbaarheidsdatum binnenkort verstrijkt, onmiddellijk gebruiken (flexibele maaltijdplanning);\n• ervoor zorgen dat levensmiddelen onder de juiste omstandigheden worden opgeslagen;\n• overmatig veel snijresten van grote stukken vlees, vis of ongesneden groenten voorkomen of deze hergebruiken;\n• een langetermijnanalyse naar de verkochte maaltijden uitvoeren, zodat bestellingen van levensmiddelen kunnen worden aangepast (aan de dag, het seizoen en externe factoren zoals feestdagen en grote evenementen) en een langetermijnanalyse naar het gebruik van voedselresten of levensmiddelen waarvan de houdbaarheidsdatum binnenkort verstrijkt;\n• strategieën ontwikkelen tegen de overproductie van maaltijden (bv. het invriezen van maaltijden);\n• efficiënt bestellen en opslaan: – veelvuldige bestellingen van bederlijke producten in de benodigde hoeveelheden;\n• bederlijke producten onder de juiste omstandigheden opslaan (o.a. correct afgestelde koeleenheden);\n  – verspilling tijdens de voedselbereiding voorkomen en personeel opleiden;\n  – voedsel snel afkoelen ter voorkoming van groei van micro-organismen te voorkomen;\n  – geen maaltijden bereiden voor uitsluitend visuele doeleinden (gebruik in plaats daarvan foto's);\n  – de grootte van de porties aanpassen en de hoeveelheden op de klanten afstemmen of diverse portiegroottes aanbieden;\n  – verpakkingsmateriaal kiezen (daarbij rekening houdend met aspecten als grootte, bescherming, portiegrootte enz.) dat zo min mogelijk voedselverspilling oplevert;\n  – meeneembakjes gebruiken en/of interne procedures hanteren voor het consumeren van overbeschotte levensmiddelen door het personeel en, waar mogelijk, de veilige herverdeling van voedselverschotten organiseren;\n  – de uitlevering laten vallen dat alle menutoys van opening tot sluiting beschikbaar moeten zijn;\n  – klanten bewustmaken van voedselverspilling en de oorzaken daarvan (bv. met behulp van posters);\n  – door middel communicatie het draagvlak onder klanten voor duurzaamheidsmaatregelen vergroten;\n  – een systeem invoeren met behulp waarvan klanten feedback kunnen geven over portiegroottes en de kwaliteit van de maaltijden (bv. feedbackformulieren om te onderzoeken waarom maaltijden niet volledig worden genuttigd) en vervolgens de juiste maatregelen treffen.\n\nDe inschrijver stelt de gasten op de hoogte van de speerpunten van het beleid ter voorkoming van voedselverspilling.\n\n**Verificatie**\n\nDe inschrijver levert bewijs in de vorm van standaardwerkwijzen voor aankoop, opslag, koken, menuplanning en bediening. Dit bewijs moeten worden gecomplementeerd met een beschrijving van de kanalen via welke de gasten worden geïnformeerd over het beleid ter voorkoming van voedselverspilling.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 25"
+                }
+              },
+              {
+                "code": "TS4",
+                "title": "Overige afvalstoffen: voorkoming, scheiding en verwijdering",
+                "specification": "**TS4.1 Afvalpreventie**\n\nDe inschrijver voert overeenkomstig de afvalhiërarchie van de kaderrichtlijn afvalstoffen (Richtlijn 2008/98/EG) een plan uit voor het terugdringen van de afvalproductie. Dit plan behelsst ten minste:\n– het opzetten van een afvalregistratie: d.w.z. het inspecteren van alle locaties en processen teneinde soorten en bronnen van lokaal geproduceerd afval in kaart te brengen;\n– afval verminderen bij de aankoop van levensmiddelen, dranken, verbruiksartikelen en verbruiksgoederen (maak een selectie). Dit houdt in:\n  • lang houdbare producten in bulk bestellen, als dat mogelijk en in milieuopzicht zintig is;\n  • geschikt verpakkingsmateriaal kiezen om de hoeveelheid verpakkingsafval te verminderen (grootte, bescherming, conservering, portiegrootte enz.);\n  • waar mogelijk recyclebaar verpakkingsmateriaal kiezen mits dat materiaal de voedselveiligheid en hygiëne zijn gewaarborgd. Composteerbare verpakkingen zijn een voorbeeld van recyclebaar verpakkingsmateriaal;\n  • waar mogelijk verpakkingsmateriaal retourneren voor hergebruik.\n– afval verminderen in de catering (selectie maken). Dit houdt in:\n  • artikelen met onnodige of overdadige secundaire verpakkingen mijden, overeenkomstig de behoeften van de cateringdienst;\n  • kruiderijen en maaltijden in navulverpakkingen bieden, indien het gebruik daarvan is toegestaan op grond van overwegingen inzake de voorkoming van voedselverspilling, voedselveiligheid en de volksgezondheid;\n  • mogelijkheden voor hergebruik inventariseren;\n  • waar mogelijk en indien in milieuopzicht zinnig verpakkingsmateriaal retourneren voor hergebruik.\n\n**Verificatie**\n\nDe inschrijver dient een afvalpreventieplan in. De inschrijver verstrekt een lijst met wegwerp- en niet-wegwerppartikelen die tijdens de uitvoering van de overeenkomst zullen worden gebruikt. De inschrijver geeft informatie over het materiaal waarvan de wegwerppartikelen zijn gemaakt, en vermeldt daarbij specifiek of de artikelen volgens EN 13432 recyclebaar of composteerbaar zijn.\n\n**TS4.2 Scheiding en verwijdering van afval**\n\n*Opmerking: dit criterium is alleen van toepassing als het gescheiden afval ook gescheiden wordt ingezameld.*\n\nDe inschrijver voert op basis van de plaatselijk beschikbare behandelingen van afvalstromen een plan uit voor de scheiding en verwijdering van afval.\n\nAls het afval wordt opgehaald door een erkende ophaaldienst (bv. de gemeente), sorteert de inschrijver het afval in voor de ophaaldienst bepaalde fracties. Als de erkende ophaaldienst biologisch afval en/of vetten en oliën inzamelt, scheidt de inschrijver biologisch afval en afgedankte vetten en oliën die afkomstig zijn uit de keuken of uit andere door het personeel gebruikte faciliteiten, en levert die in bij het erkende systeem voor inzameling en recycling.\n\nAls er geen systeem voor het inzamelen van vetten en oliën bestaat, deponeert de inschrijver die in een geschikte container en doet die bij het restafval. Vetten en oliën mogen niet in het riool worden geloosd.\n\nAls het afval op locatie wordt behandeld, verstrekt de inschrijver de procedures voor afvalbeheer die zijn opgenomen in het afvalbeheerplan voor afvalstromen, overeenkomstig de afvalhiërarchie in artikel 4 van de kaderrichtlijn afvalstoffen 2008/98/EG.\n\nIn de eerste schoonmaakfase van vettige ruimten/apparatuur moet methoden voor droog reinigen worden gebruikt alvorens de apparatuur nat te reinigen.\n\nAls de gasten zelf hun afval scheiden, moeten er duidelijke instructies voor afvalscheiding worden geboden.\n\n**Verificatie**\n\nDe inschrijver beschrijft de categorieën afvalstromen die gescheiden moeten worden en de procedures voor afvalverwijdering die tijdens de uitvoering van de overeenkomst moeten worden gevolgd.\n\nAls de gasten zelf hun afval scheiden, moet een voorbeeld van de instructies voor afvalscheiding worden verstrekt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 26"
+                }
+              },
+              {
+                "code": "TS5",
+                "title": "Chemische producten en verbruiksgoederen",
+                "specification": "**TS5.1** In beginsel moeten er niet-wegwerppartikelen²⁵ worden gebruikt. Dit gaat om onder meer om tafelgerei, zoals borden, mokken, glazen, bestek, tafelkleden, servetten enz. en andere artikelen, zoals handschoenen, vuilniszakken en dergelijke. Er zijn [uitzonderingen](popup:TOELICHTING||²⁵ Onder \"niet-wegwerppartikelen\" wordt verstaan: alle voorwerpen die voor herhaald gebruik zijn ontworpen. Met andere woorden: artikelen die niet erg brokkelig of poreus zijn, artikelen die binnen een redelijk tijdbestek bruikbaar blijven nadat hun doel waarvoor ze zijn gebruikt is vervuld, artikelen waarvan binnen een redelijk tijdbestek een doeltreffende vervanging kan worden verwacht indien en voor zover ze kapotgaan, artikelen die normaal gewassen worden en herhaaldelijk gebruikt kunnen worden voor hetzelfde doel waarvoor ze voor de eerste keer zijn gebruikt (zie Richtlijn (EU) 2019/904 art. 2(7) en 2(8)).\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 28**||).\n\nEventuele wegwerppartikelen moeten van recyclebaar plastic of van composteerbaar materiaal zijn gemaakt. Voor toepassingen die in aanraking komen met voedsel (bv. bestek en servies), verdienen composteerbare artikelen de voorkeur.\n\n**Verificatie**\n\nDe inschrijver verstrekt een lijst met wegwerp- en niet-wegwerppartikelen die tijdens de uitvoering van de overeenkomst zullen worden gebruikt, en vermeldt daarbij specifiek de wegwerppartikelen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 28"
+                }
+              },
+              {
+                "code": "TS6",
+                "title": "Energie- en waterverbruik in keukens",
+                "specification": "De inschrijver beschikt over schriftelijke procedures waarin de beste praktijken worden beschreven voor een zo gering mogelijk verbruik van energie en water door keukenapparatuur, waaronder procedures voor (selectie op basis van de infrastructuur van de aanbestedende dienst):\n\n**Algemene opmerkingen**\n• voorzie zo mogelijk elke keuken van afzonderlijke meters voor water en elektriciteit/gas;\n• schakel niet alle elektrische apparatuur gelijktijdig in, zodat een piekvraag naar elektriciteit wordt voorkomen;\n• schakel in de ruimten waar de maaltijden worden genuttigd, de verlichting en apparatuur alleen in tijdens de openingstijden voor het publiek.\n\n**Ovens:**\n• schakel alleen de ovens in die nodig zijn om aan de vraag te kunnen voldoen;\n• ovens die langer dan twintig minuten niet worden gebruikt, moeten worden uitgeschakeld;\n• benut de ongebruikte oveninhoud voor andere kookactiviteiten en schakel andere apparatuur niet in, of schakel deze uit;\n• gebruik voor het warmhouden van voedsel in plaats van een elektrische oven een goed isolerende warmhoudkast en schakel ovens zo snel mogelijk uit;\n• houd de ovendeur tijdens het kookproces zoveel mogelijk gesloten.\n\n**Kookplaten:**\n• schakel de branders/kookzones in wanneer dat nodig is, en schakel ze na gebruik weer uit;\n• laat 's nachts geen waakvlammen branden;\n• gebruik waar mogelijk open branders in plaats van één grote kookzone;\n• kook niet langdurig op branders/kookzones, maar gebruik ze korte tijd intensief en schakel ze dan uit;\n• benut vrije oveninhoud voor sommige kookactiviteiten die anders op een fornuis worden uitgevoerd (bv. pasta koken).\n\n**Overige fornuizen:**\n• schakel de apparatuur (grillen, frituurpannen enz.) pas in wanneer dat nodig is, en schakel deze na gebruik weer uit;\n• gebruik lagere standen om de opwarmtijd te verkorten: grillen en frituurpannen;\n• benut vrije oveninhoud voor sommige grill- en bakactiviteiten (roosteren, aanbraden en bakken).\n\n**Afzuiging**\n• wanneer de afzuiging handmatig wordt bediend, maak dan een medewerker verantwoordelijk voor het uitschakelen ervan;\n• als de afzuiging tijdgeschakeld is of via een gebouwbeheersysteem wordt bediend, zorg dan dat de instellingen beantwoorden aan de bedrijfsuren van de keuken;\n• neem beheersingsmaatregelen in het geval van wisselende bedrijfsuren, zodat de afzuigtijden dienovereenkomstig variëren;\n• als de afzuiging/luchttoevoer over variabele snelheden beschikt, kies dan de instelling die de juiste luchtstroom genereert. Gebruik een lagere stand tijdens perioden van verminderde activiteit;\n• reinig filters en luchtgaten regelmatig om de systeemweerstand te verlagen.\n\n**Vaatwasmachines**\n• schakel vaatwasmachines indien mogelijk uit om het energieverbruik in de stand-bymodus tot een minimum te beperken;\n• belaad de rekken zo vol mogelijk om het energieverbruik per stuk vaatwerk tot een minimum te beperken;\n• gebruik voor het voorspoelen koud water om het warmwaterverbruik tot een minimum te beperken;\n• spoel couverts en keukengerei niet handmatig af en gooi voedselresten bij het bioafval.\n\n**Koeling**\n• efficiënt gebruik: deuren zo min mogelijk openen;\n• onderhoud: onderhoud de afdichtingen en reinig de warmtewisselaars;\n• zorg voor voldoende ventilatie voor de warmtewisselaars van de koelkasten;\n• plaats koelapparatuur niet in de buurt van warmtebronnen;\n• juiste capaciteit: stel onderbenutte eenheden buiten gebruik. Kies voor elke eenheid de juiste capaciteit in plaats van meerdere kleinere eenheden aan te schaffen.\n\nDe beste praktijken zijn bestemd voor keukenmedewerkers die de gecontracteerde cateringdiensten leveren.\n\n**Verificatie**\n\nDe inschrijver legt schriftelijke procedures over waarin de beste praktijken voor het gebruik van keukenapparatuur worden beschreven.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 30"
+                }
+              },
+              {
+                "code": "TS7",
+                "title": "Vervoer van levensmiddelen",
+                "specification": "*Deze criteria gelden alleen wanneer de bezorging van levensmiddelen onder de gecontracteerde dienst valt en het wagenpark door de inschrijver wordt beheerd. \"Bezorging van levensmiddelen\" heeft betrekking op het vervoer van levensmiddelen naar en vanuit de keuken en naar de locatie waar de dienst wordt geleverd, mocht dat elders zijn.*\n\n**TS7.1** De inschrijver voert een emissiereductieplan uit om de uitstoot van broeikasgassen en luchtverontreinigende stoffen door dienstvoertuigen tot een minimum te beperken. Daarbij wordt gelet op routeoptimalisering, de vracht, het vraagstuk in verband met de laatste fase van de bezorging en, indien financieel haalbaar, de in de gunningscriteria GC 3.2, GC 3.3 en GC 3.4 genoemde technologieën.\n\n**Verificatie**\n\nDe inschrijver verstrekt een vervoersplan om de uitstoot van broeikasgassen en luchtverontreinigende stoffen tot een minimum te beperken en een ondertekende toezegging tot het kopen of huren van de voertuigen binnen de eerste zes maanden van de overeenkomst.\n\n**TS7.2 Emissies van luchtverontreinigende stoffen**\n\nAlle [zware bedrijfsvoertuigen](popup:TOELICHTING||Volgens [artikel 2 van Verordening (EG) nr. 595/2009](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:02009R0595-20200901#tocId8) betekent \\\"zwaar bedrijfsvoertuig\\\":\n\n\\\"voertuig behorende tot categorie M2, M3, N2, of N3, als bedoeld in Richtlijn 2007/46/EG.\\\"\n\n• **Categorie M:** Motorvoertuigen die zijn ontworpen en gebouwd voor het vervoer van passagiers en hun bagage:\n  - **Categorie M2:** Voertuigen voor het vervoer van passagiers met meer dan acht zitplaatsen, naast de bestuurderszitplaats, en met een maximummassa van niet meer dan 5 ton.\n  - **Categorie M3:** Voertuigen voor het vervoer van passagiers met meer dan acht zitplaatsen, naast de bestuurderszitplaats, en met een maximummassa van meer dan 5 ton.\n• **Categorie N:** Motorvoertuigen die zijn ontworpen en gebouwd voor het goederenvervoer:\n  - **Categorie N2:** Voertuigen voor goederenvervoer met een maximummassa van meer dan 3,5 ton, maar niet meer dan 12 ton.\n  - **Categorie N3:** Voertuigen voor goederenvervoer met een maximummassa van meer dan 12 ton.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 32**||) waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan de Euro 5-norm.\n\nAlle [lichte bedrijfsvoertuigen](popup:TOELICHTING||Volgens [artikel 3 van Verordening (EG) nr. 715/2007](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:02007R0715-20200901#tocId3) betekent \\\"licht bedrijfsvoertuig\\\":\n\n\\\"een voertuig van categorie M₁ of N₁, zoals gedefinieerd in bijlage II bij Richtlijn 2007/46/EG van het Europees Parlement en de Raad.\\\"\n\n• **Categorie M1:** Voertuigen voor het vervoer van passagiers, met ten hoogste acht zitplaatsen naast de bestuurderszitplaats.\n• **Categorie N1:** Voertuigen voor goederenvervoer met een maximummassa van niet meer dan 3,5 ton.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 32**||) waarmee de dienst wordt uitgevoerd, moeten ten minste voldoen aan de Euro 5-norm.\n\n**Verificatie**\n\nDe inschrijver moet de lijst van voertuigen van het wagenpark en de bijbehorende certificaten van overeenstemming overleggen. Voor de voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering, moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen. In het geval van nieuwe aankopen verstrekt de inschrijver een ondertekende toezegging tot het kopen of huren van de voertuigen binnen de eerste zes maanden van de overeenkomst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 32"
+                }
+              },
+              {
+                "code": "TS8",
+                "title": "Maatregelen en praktijken op het gebied van milieubeheer",
+                "specification": "De inschrijver moet beschikken over operationele procedures voor:\n1. het ten minste tweemaal per jaar (in representatieve weken) monitoren en registreren van de onderstaande indicatoren:\n  – het aantal bereide maaltijden en de totale hoeveelheid (uitgedrukt in massa) van alle voor die maaltijden gebruikte ingrediënten (met een ondergrens van bv. 1 kg per week);\n  – consumptie van groenten, fruit en peulvruchten (groenten, fruit en peulvruchten in grammen per maaltijd of vlees en vleesproducten in grammen per maaltijd) (deze indicator is niet verplicht, als de hoeveelheden groenten, fruit en peulvruchten in grammen per maaltijd of vlees en vleesproducten in grammen per maaltijd in de contractstuk zijn vastgelegd);\n  – aantal jaarlijks gegeven uren milieuopleiding aan het personeel per type medewerker (bv. functie en ervaring in het bedrijf);\n  – als voedselafval wordt gescheiden, de voedselverspilling (gr/maaltijd) gemeten als: voedselverspilling in de keuken, voedselverspilling door overproductie en voedselverspilling door gasten;\n  – ander afval (gr/maaltijd) wordt ten minste gescheiden in papier/karton, glas, plastic, metaal en restafval;³⁰\n  – brandstofverbruik (l/(km×maaltijd)) van de voertuigen voor de levering van levensmiddelen (mits de bezorging van levensmiddelen onder de dienst valt en het wagenpark door de inschrijver wordt beheerd);\n  – de mate van tevredenheid van de cliënten over de geleverde levensmiddelen en diensten (een B2C-indicator);\n  – de mate van tevredenheid van de aanbestedende dienst over de prestaties van de inschrijver (een B2B-indicator).\n2. het optimaliseren van de onder 1 gecontroleerde en geregistreerde milieu-indicatoren³¹. Het moet ten minste gaan om de procedures waarop de volgende criteria betrekking hebben:\n  – opleiding van personeel;\n  – plantaardige menu's;\n  – voorkoming van voedselverspilling;\n  – voorkoming, scheiding en verwijdering van ander afval;\n  – energie- en waterverbruik in keukens;\n  – vervoer van levensmiddelen, indien de bezorging daarvan onder de dienst valt en het wagenpark door de inschrijver wordt beheerd.\nHet personeel moet op de hoogte zijn van de operationele procedures.\n3. het evaluaren van de resultaten van de punten 1 en 2 door zowel veranderingen in de milieu-indicatoren als de uitvoering van de procedures bij te houden.\n4. het treffen van de benodigde maatregelen voor het corrigeren van eventuele afwijkingen en om die zo mogelijk in de toekomst te voorkomen.\n\n³⁰ Indien deze gegevens in de loop van het jaar alleen door middel van een afvalbeheerplan kunnen worden verzameld, geeft u de verplichting in de contractuele voorwaarden de aan gegevens op het vereiste niveau te berekenen op basis van de beschikbare gegevens met betrekking tot de totale massa afval per categorie. Specifieke bronnen van afval (restaurantkeuken, eten en drinken, vergaderruimtes enz.) kunnen in het gehele gebouw tot één percentage worden toegerekend, en zo kan de inschrijver komen tot een schatting van het afval op organisatieniveau.\n\n³¹ In situaties waar de contractvoorwaarden voorschrijven dat de cateringdienst op basis van specifieke milieucriteria moeten worden geleverd (bv. een minimumbijdrage van biologische producten aan de ingrediënten), moet de inschrijver ook de naleving van deze voorwaarden opvolgen en gegevens erover verzamelen.\n\n**Verificatie**\n\nDe inschrijver verstrekt de procedure:\n1. voor het ten minste tweemaal per jaar bijhouden en vastleggen van de in punt 1 genoemde indicatoren;\n2. voor het waarborgen van de implementatie van de operationele procedures;\n3. voor het corrigeren van de in de evaluatie gevonden afwijkingen en zo mogelijk het voorkomen daarvan in de toekomst.\n\nMilieubeheersystemen die zijn gecertificeerd volgens ISO 14001 of zijn opgenomen in de EMAS-registratie, en diensten met het milieukeur van type 1 van EN ISO 14024 worden geacht te voldoen, als zij beantwoorden aan de volgende milieudoelstellingen: grotere consumptie van groenten, minimalisering van voedselverspilling, en afval, minimalisering van het verbruik van energie, water en, indien van toepassing, brandstof.\n\nDe inschrijver moet een milieubeleidsplan hebben dat inzet op bewerkstelliging van deze doelstellingen, alsmede het door de certificeringsdienst afgegeven certificaat.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 33"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS5.1",
+                "title": "Chemische producten en verbruiksgoederen",
+                "specification": "Er moet gebruik worden gemaakt van niet-wegwerppartikelen. Dit gaat om onder meer om tafelgerei, zoals borden, mokken, glazen, bestek, tafelkleden, servetten enz. en andere artikelen, zoals handschoenen, vuilniszakken en dergelijke.\n\nUitzonderingen:\n• tafelgerei voor afhaalmaaltijden en fast-foodcatering;\n• vuilniszakken en schoonmaakhandschoenen;\n• papieren tafellakens die veelvuldig kunnen worden afgenomen en langdurig worden gebruikt (wegwerptafelkleden voor slechts één maaltijd zijn niet toegestaan);\n• tafelgerei voor de catering van grote evenementen.\n\nAlle gebruikte wegwerppartikelen moeten van recyclebaar plastic of van composteerbaar materiaal zijn gemaakt. Voor toepassingen die in aanraking komen met voedsel (bv. bestek en servies), verdienen composteerbare artikelen de voorkeur.\n\n**Verificatie**\n\nDe inschrijver verstrekt een lijst met wegwerp- en niet-wegwerppartikelen die tijdens de uitvoering van de overeenkomst zullen worden gebruikt, en vermeldt daarbij specifiek de wegwerppartikelen. De inschrijver geeft informatie over het materiaal waarvan de wegwerppartikelen zijn gemaakt, en vermeldt daarbij specifiek of de artikelen volgens EN 13432 recyclebaar of composteerbaar zijn.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 28"
+                }
+              },
+              {
+                "code": "TS5.2",
+                "title": "Chemische producten voor het wassen van de handen, het wassen van de vaat en routinematige schoonmaakwerkzaamheden",
+                "specification": "Alle producten die voor het wassen van de handen, het wassen van de vaat en [routinematige](popup:TOELICHTING||Met \"routinematig\" wordt gedoeld op naar regelmatige werkzaamheden die ten minste eenmaal per maand worden uitgevoerd. Schoonmaakwerkzaamheden die minder dan eenmaal per maand worden uitgevoerd, vallen buiten het bereik van dit project (glazenwassen uitgezonderd).\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 29**||) schoonmaakwerkzaamheden worden gebruikt, moeten voldoen aan de voorschriften van het EU-milieukeur voor dat bepaalde product of een equivalent daarvan.\n\n**Verificatie**\n\nDe inschrijver verstrekt een lijst met chemische producten voor het wassen van de handen, het wassen van de vaat en routinematige schoonmaakwerkzaamheden die tijdens de uitvoering van de overeenkomst zullen worden gebruikt, en vermeldt daarbij specifiek welke producten aan het criterium voldoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 29"
+                }
+              },
+              {
+                "code": "TS5.3",
+                "title": "Keukenrollen en keukenpapier",
+                "specification": "Alle keukenrollen en al het keukenpapier moeten voldoen aan de voorschriften van het EU-milieukeur voor dat bepaalde product of een equivalent daarvan.\n\n**Verificatie**\n\nDe inschrijver verstrekt een lijst met papierwaren die tijdens de uitvoering van de overeenkomst zullen worden gebruikt, en vermeldt daarbij specifiek welke producten aan het criterium voldoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 29"
+                }
+              }
+            ]
+          },
+          "verkoopautomaten": {
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Biologische levensmiddelen",
+                "specification": "**Optie A (Eenvoudiger te verifiëren tijdens de uitvoering van de overeenkomst)**\n\nDe onderstaande levensmiddelen en dranken die via het verkoopautomaat worden aangeboden, moeten voldoen aan de normen voor biologische producten ([door de aanbestedende dienst in te vullen lijst met levensmiddelen en dranken](popup:TOELICHTING||De lijst met producten kan bestaan uit: fruit, groenten, peulvruchten, rijst en pasta.\n\nDe aanbestedende dienst kan hier strenger zijn als TS1 als uitgebreid criterium moet dienen. De lijst met producten kan dan bestaan uit: fruit, groeten, peulvruchten, rijst, pasta, brood en bakkerijproducten, eieren, zuivelproducten enz.\n\nDeze lijst is volledig noch uitvoerig. Levensmiddelen en dranken die in de uitgebreide lijst worden genoemd of andere producten die niet op deze lijsten voorkomen, kunnen ook op de kernlijst (of de uitgebreide lijst) worden opgenomen als de aanbestedende dienst dat juist acht.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 50**||)).\n\n**Verificatie**\n\nDe inschrijver verstrekt een verklaring waarin staat dat alle bovengenoemde levensmiddelen en dranken, die tijdens de uitvoering van de overeenkomst moeten worden geleverd, zullen voldoen aan Verordening (EU) 2018/848 of latere wijzigingen daarvan. Tevens beschrijft de inschrijver de wijze waarop hij tijdens de uitvoering van de overeenkomst de biologische herkomst van de bovengenoemde producten wil garanderen (bv. door de leveranciers van de verschillende producten te noemen).\n\n**Optie B (Lastiger te verifiëren tijdens uitvoering van de overeenkomst)**\n\nTen minste [X%](popup:TOELICHTING||**X = door de aanbestedende dienst vast te stellen percentage.**\n\nVul in voor X:\n• 20-60 % van de massa van de totale aankoop van levensmiddelen en dranken.\n• 30-70 % van de waarde van de totale aankoop van levensmiddelen en dranken.\n\n**Als dit als uitgebreid criterium moet dienen, kies voor X:**\n• > 50 % van de massa van de totale aankoop van levensmiddelen en dranken of\n• > 60 % van de waarde van de totale aankoop van levensmiddelen en dranken.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 50**||) van de levensmiddelen en/of dranken die via het verkoopautomaat worden aangeboden, moet voldoen aan de normen voor biologische producten.\n\n**Verificatie**\n\nDe inschrijver verstrekt de gegevens (hoeveelheid en naam) van de levensmiddelen en dranken die tijdens de uitvoering van de overeenkomst via de verkoopautomaat worden aangeboden, en vermeldt specifiek de producten die aan de biologische voorschriften voldoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 50"
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "Milieuvriendelijkere plantaardige vetten",
+                "specification": "**TS2.1** Bij eventuele aankoop van voorverpakte levensmiddelen en/of dranken die plantaardige vetten of derivaten daarvan bevatten, moet ten minste [X%](popup:TOELICHTING||**X = door de aanbestedende dienst vast te stellen percentage.**\n\nVul in voor X: 10-50 % van de eenheden/artikelen voorverpakte levensmiddelen en/of dranken.\n\n**Als dit als uitgebreid criterium moet dienen, vul in voor X:**\n\n50-100 % van de eenheden/artikelen voorverpakte levensmiddelen en/of dranken.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 51**||), van de eenheden/artikelen voorverpakte levensmiddelen met plantaardige olieën zijn geproduceerd uit gewassen die aan milieucriteria inzake bodem, biodiversiteit, verandering in landgebruik en voorraden aan organische koolstof beantwoorden, door te voldoen aan de eisen van een [certificeringsregeling](popup:TOELICHTING||Aan de hand van regelingen die afkomstig zijn van koepelorganisaties met een diverse ledenbestand (waaronder ngo's, het bedrijfsleven en overheden) zoals de Roundtable on Sustainable Palm Oil (RSPO), de Palm Oil Innovation Group (POIG), de Roundtable on Responsible Soy (RTRS), het Soybean Sustainability Assurance Protocol (SSAP) of ProTerra, kan naleving van de criteria worden aangetoond, mits deze regelingen betrekking hebben op de genoemde milieubeginselen. Andere regelingen, onder meer op nationaal niveau, worden als gelijkwaardig beschouwd, indien zij aan de genoemde milieubeginselen voldoen.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 51**||) die op deze aspecten betrekking heeft, aan artikel 93 van Verordening (EU) nr. 1306/2013, of op een andere, gelijkwaardige wijze.\n\n**Verificatie**\n\nDe inschrijver verstrekt een verklaring waarin staat dat ten minste [X%](popup:TOELICHTING||**X = door de aanbestedende dienst vast te stellen percentage.**\n\nVul in voor X: 10-50 % van de eenheden/artikelen voorverpakte levensmiddelen en/of dranken.\n\n**Als dit als uitgebreid criterium moet dienen, vul in voor X:**\n\n50-100 % van de eenheden/artikelen voorverpakte levensmiddelen en/of dranken.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 51**||), van alle levensmiddelen met plantaardige olie (in eenheden/artikelen voorverpakte levensmiddelen) die hij levert, aan het bovengenoemde voorschrift voldoet. De inschrijver beschrijft de maatregelen die met het oog op de naleving zullen worden getroffen (zoals leveringsbronnen die mogelijk worden benut).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 51"
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Slimme controlemechanismen",
+                "specification": "*Dit criterium heeft betrekking op de volgende typen verkoopautomaten, voor zover die geen bederlijke voedingsmiddelen bevatten:*\n1. *gekoelde automaten met gesloten voorkant voor gestapelde blikjes en flesjes;*\n2. *gekoelde automaten met een glazen voorkant voor blikjes, flesjes, snoep en snacks;*\n3. *gekoelde automaten met een glazen voorkant en meerdere temperatuurzones;*\n4. *drankautomaten met koude dranken.*\n\n*Aan bederf onderhevige levensmiddelen zijn levensmiddelen en dranken die achterlitgaan, bederven of vergaan en gekoeld moeten worden bewaard om het proces van bederf en kwaliteitsverlies te vertragen (Codex Alimentarius).*\n\nDe inschrijver levert verkoopautomaten die voorzien zijn van geïntegreerde slimme controlemechanismen, ook wel energiebeheersystemen of -apparaten genoemd. Deze automaten zijn zo geprogrammeerd dat zij tijdens de openingsuren van de locatie waarop zij zijn geplaatst in bedrijf zijn en buiten die uren overschakelen naar de slaapstand of de energiebesparende modus voor levensmiddelen en dranken.\n\n**Verificatie**\n\nDe inschrijver legt de technische documentatie van het tijdens de dienst te gebruiken verkoopautomaat over, waarin staat dat aan dit voorschrift wordt voldaan.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 51"
+                }
+              },
+              {
+                "code": "TS4",
+                "title": "Herbruikbare bekers",
+                "specification": "*Opmerking: dit criterium heeft betrekking op automaten met warme en/of koude dranken. Dit voorschrift is alleen van toepassing, wanneer dat vanuit het oogpunt van voedselhygiëne, consumentveiligheid en de volksgezondheid verantwoord is; onder die voorwaarden kunnen inschrijvers niet aansprakelijk worden gesteld voor een afgegeven drank die verontreinigd raakt door een opnieuw gebruikte beker.*\n\nDe inschrijver levert drankautomaten voor niet-voorverpakte warme en/of koude dranken die geschikt zijn voor herbruikbare kopjes (van bv. porselein of glas) in plaats van wegwerpbekers. Indien het gebruik van wegwerpbekers vanwege de voedselhygiëne, consumentveiligheid of volksgezondheid onvermijdelijk is, moeten deze van recyclebaar plastic of van composteerbaar materiaal zijn gemaakt.\n\n**Verificatie**\n\nDe inschrijver legt de technische documentatie van het tijdens de dienstverlening te gebruiken verkoopautomaat over, waarin staat dat aan dit voorschrift wordt voldaan.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 52"
+                }
+              }
+            ],
+            "extended_criteria": []
+          }
+        }
+      }
+    },
+    {
+      "key": "award_criteria",
+      "title": "Gunningscriteria",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als gunningscriteria. Daarmee wordt vastgelegd op basis waarvan de inschrijvingen inhoudelijk worden beoordeeld en de economisch meest voordelige inschrijving wordt vastgesteld.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale gunningscriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie in de tabel hieronder. De GPP definieert gunningscriteria voor:\n   Categorie 1: [Grafische apparatuur](#)\n   Categorie 2: [Verbruiksartikelen](#)\n   Categorie 3: [Printdiensten](#)",
+        "Neem in ieder geval de kerncriteria en bijbehorende contractuele voorwaarden op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "levensmiddelen",
+            "label": "🍎 Levensmiddelen",
+            "label_short": "Levensmiddelen"
+          },
+          {
+            "key": "cateringdiensten",
+            "label": "🍽️ Cateringdiensten",
+            "label_short": "Cateringdiensten"
+          },
+          {
+            "key": "verkoopautomaten",
+            "label": "🤖 Verkoopautomaten",
+            "label_short": "Verkoopautomaten"
+          }
+        ],
+        "default_main_tab": "levensmiddelen",
+        "data": {
+          "levensmiddelen": {
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "Aanvullend, biologische levensmiddelen",
+                "specification": "**Optie A (eenvoudiger te verifiëren tijdens de uitvoering van de overeenkomst)**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen die verder gaan dan de lijst met levensmiddelen en dranken (genoemd in optie A van TS 1) en voldoen aan de normen voor biologische producten.\n\n**Verificatie optie A**\n\nBewijs in de vorm van informatie en referenties (zoals gedocumenteerde feedback van klanten) met betrekking tot de desbetreffende overeenkomsten met voornoemde elementen die in de afgelopen vijf jaar zijn uitgevoerd. Het bewijs moet worden ondersteund met gegevens over opleidingsactiviteiten.\n\n**Optie B (lastiger te verifiëren tijdens uitvoering van de overeenkomst)**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan de vereiste [X%](popup:TOELICHTING||**X = door de aanbestedende dienst vast te stellen percentage. Kies uit:**\n\n• 20-60 % van de massa van de totale aankoop van levensmiddelen en dranken.\n• 30-70 % van de waarde van de totale aankoop van levensmiddelen en dranken.\n\n**Als dit als uitgebreid criterium moet dienen, kies voor X:**\n\n• > 50 % van de massa van de totale aankoop van levensmiddelen en dranken of\n• > 60 % van de waarde van de totale aankoop van levensmiddelen en dranken.\n\n**EU-criteria inzake levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 8 en 19**||) van de totale aankoop van levensmiddelen en dranken is geproduceerd conform Verordening (EU) 2018/848 of latere wijzigingen daarvan.\n\n**Verificatie optie B**\n\nDe inschrijver verstrekt de gegevens (hoeveelheid en naam) van de levensmiddelen en dranken die tijdens de uitvoering van de overeenkomst moeten worden geleverd, en vermeldt specifiek de producten die aan de biologische vereisten voldoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 14"
+                }
+              },
+              {
+                "code": "GC2",
+                "title": "Aanvullend, visserij- en aquacultuurproducten",
+                "specification": "**GC2.1 Optie A (eenvoudiger te verifiëren tijdens de uitvoering van de overeenkomst)**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen die verder gaan dan de (onder optie A bij TS 3.2 vermelde) lijst met vis en visproducten die zijn geproduceerd op basis van bestanden binnen biologisch veilige grenzen ten aanzien van milieueffecten, waaronder overbevissing en achteruitgang van visbestanden, biodiversiteit, en verantwoord en duurzaam gebruik van de hulpbronnen.\n\n**Verificatie optie A**\n\nDe inschrijver verstrekt een verklaring waarin staat dat er alleen vis en visproducten zullen worden geleverd die aan de bovengenoemde eis voldoen. Tevens beschrijft de inschrijver op welke wijze hij tijdens de uitvoering van de overeenkomst de naleving wil waarborgen (bv. door de leveranciers van de verschillende producten te noemen).\n\n**GC2.1 Optie B (lastiger te verifiëren tijdens uitvoering van de overeenkomst)**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan de vereiste [Y%](popup:TOELICHTING||**Y staat voor de drempel die de aanbestedende dienst vaststelt. Kies uit:**\n\n• 10-40 % van waarde van de totale aankoop van vis- of aquacultuurproducten (biologische visproducten uitgezonderd).\n• 20-50 % van de massa van de totale aankoop van vis- of aquacultuurproducten (biologische visproducten uitgezonderd).\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 14 en 20**||) van de totale aankoop van vis en visproducten afkomstig is van bestanden die zich binnen biologisch veilige grenzen bevinden. Dit houdt in dat er volgens wetenschappelijke inzichten een grote kans bestaat dat de geschatte paaibiomassa van het bestand hoger ligt dan het niveau waarop het bestand gevaar op instorting loopt. Deze inzichten moeten worden gebaseerd op beoordelingen door de onafhankelijke wetenschappelijke organen die de EU adviseren, met name de Internationale Raad voor Onderzoek der Zee (ICES), het Wetenschappelijk, Technisch en Economisch Comité voor de Visserij (WTECV) van de EU of regionale organisaties voor visserijbeheer uit de hele wereld¹⁴.\n\n¹⁴ Deze informatie is normaal gesproken beschikbaar op de websites van deze organisaties, bijvoorbeeld: www.ices.dk, https://stecf.jrc.ec.europa.eu/\n\n**Verificatie optie B**\n\nDe inschrijver verstrekt de gegevens (hoeveelheid en naam) van de visserij- en aquacultuurproducten die tijdens de uitvoering van de overeenkomst moeten worden geleverd, en vermeldt specifiek de producten die aan de vereisten voldoen.\n\n**GC2.2 Optie A (eenvoudiger te verifiëren tijdens de uitvoering van de overeenkomst)**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen die verder gaan dan de (in optie A bij TS 2.3 vermelde) lijst met aquacultuurproducten die overeenkomstig de voorschriften van een certificeringsregeling voor duurzame productie zijn geproduceerd. Dit moet een regeling zijn die gebaseerd is op criteria van organisaties van verschillende belanghebbenden met een groot ledenaantal en die gericht is op milieueffecten, onder meer ten aanzien van biodiversiteit en verantwoord en duurzaam gebruik van de hulpbronnen¹⁵.\n\n¹⁵ Toen dit werkdocument werd opgesteld, werden regelingen voor aquacultuurproducten zoals de Aquaculture Stewardship Council (ASC) of Globalgap geacht een afdoende mate van betrouwbaarheid te bieden. Andere nationale regelingen kunnen als gelijkwaardig worden beschouwd, indien zij aan de bovengenoemde milieubeginselen voldoen.\n\n**Verificatie optie A**\n\nDe inschrijver verstrekt een verklaring waarin staat dat er alleen aquacultuurproducten zullen worden geleverd die aan de bovengenoemde eis voldoen. Tevens beschrijft de inschrijver op welke wijze hij tijdens de uitvoering van de overeenkomst de naleving wil waarborgen (bv. door de leveranciers van de verschillende producten te noemen).\n\n**GC2.2 Optie B (lastiger te verifiëren tijdens uitvoering van de overeenkomst)**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan de vereiste [X%](popup:TOELICHTING||**X staat voor de drempel die de aanbestedende dienst vaststelt. Vul in: 80% van de eieren in de schaal (biologische eiproducten uitgezonderd) krijgt code 1.**\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 9 en 20**||) van de aankoop van aquacultuurproducten die niet voldoen aan het criterium voor biologische producten, is geproduceerd overeenkomstig de voorschriften van een certificeringsregeling voor duurzame productie. Die regeling moet gebaseerd zijn op criteria van organisaties van verschillende belanghebbenden met een groot ledenaantal en gericht zijn op milieueffecten, onder meer ten aanzien van biodiversiteit en verantwoord en duurzaam gebruik van de hulpbronnen¹⁷.\n\n¹⁷ Toen dit werkdocument werd opgesteld, werden regelingen voor aquacultuurproducten zoals de Aquaculture Stewardship Council (ASC) of Globalgap geacht een afdoende mate van betrouwbaarheid te bieden. Andere nationale regelingen kunnen als gelijkwaardig worden beschouwd, indien zij aan de bovengenoemde milieubeginselen voldoen.\n\n**Verificatie optie B**\n\nDe inschrijver verstrekt de gegevens (hoeveelheid en naam) van de visserij- en aquacultuurproducten die tijdens de uitvoering van de overeenkomst moeten worden geleverd, en vermeldt specifiek de producten die aan de vereisten voldoen. Certificeringsregelingen die op de bovenstaande beginselen zijn gebaseerd, kunnen als bewijsmiddel worden vermeld.⁸\n\n⁸Toen dit werkdocument werd opgesteld, werden regelingen voor aquacultuurproducten zoals de Aquaculture Stewardship Council (ASC) of Globalgap geacht een afdoende mate van betrouwbaarheid te bieden. Andere nationale regelingen kunnen als gelijkwaardig worden beschouwd, indien zij aan de bovengenoemde milieubeginselen voldoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 14"
+                }
+              },
+              {
+                "code": "GC3",
+                "title": "Aanvullend, biologische levensmiddelen",
+                "specification": "**GC3.1** Op basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan de vereiste [X%](popup:TOELICHTING||**X staat voor de drempel die de aanbestedende dienst vaststelt. Vul in: 80% van de eieren in de schaal (biologische eiproducten uitgezonderd) krijgt code 1.**\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 9 en 20**||) van de eieren in de schaal (biologische eieren uitgezonderd) code 1 van Verordening (EG) nr. 589/2008 of latere wijzigingen daarvan krijgt.\n\n**Verificatie**\n\nDe inschrijver verstrekt een verklaring waarin staat geen van de eieren in de schaal uit de conventionele landbouw code 3 van Verordening (EG) nr. 589/2008 of latere wijzigingen daarvan krijgt. Tevens beschrijft de inschrijver op welke wijze hij tijdens de uitvoering van de overeenkomst de naleving wil waarborgen (bv. door de leveranciers te noemen en specifiek te vermelden welke daarvan eieren zullen leveren die voldoen aan de normen van code 1 of 2 van bijlage I, deel A, bij Verordening (EG) nr. 589/2008).\n\n**GC3.2** Op basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan de vereiste [Y%](popup:TOELICHTING||**Y staat voor de drempel die de aanbestedende dienst vaststelt. Kies: 0-25 % van vlees- en zuivelproducten (biologische vleesproducten uitgezonderd)**\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 9 en 20**||) van de totale aankoop van vlees en zuivel (biologisch vlees en biologische zuivel uitgezonderd) is geproduceerd overeenkomstig de voorschriften van een certificeringsregeling voor dierenwelzijn. Dit moet een regeling zijn die gebaseerd is op criteria van organisaties van verschillende belanghebbenden met een groot ledenaantal en die gericht is op enerzijds algemene aspecten, waaronder stressverlaging, zo gering mogelijk gebruik van noodzakelijke antibiotica, bedwelmd slachten, zo kort mogelijke vervoersduur, en anderzijds specifieke aspecten, zoals het beweidingsseizoen voor melkkoeien of het niet-couperen van varkensstaarten¹⁸.\n\n¹⁸ Producten die door derden zijn gecertificeerd op grond van algemeen aanvaarde en erkende normen, zoals Label Rouge, de add-on dierenwelzijnsnormen van Globalgap, of RSPCA Assured, worden geacht te voldoen, mits zij betrekking hebben op de bovengenoemde milieubeginselen.\n\n**Verificatie**\n\nDe inschrijver verstrekt de gegevens (hoeveelheid en naam) van de vleesproducten die tijdens de uitvoering van de overeenkomst moeten worden geleverd, en vermeldt specifiek de producten die aan de biologische vereisten voldoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 16"
+                }
+              },
+              {
+                "code": "GC4",
+                "title": "Producten uit de eerlijke en ethische handel",
+                "specification": "**Optie A (eenvoudiger te verifiëren tijdens de uitvoering van de overeenkomst)**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen waarin de onderstaande levensmiddelen en dranken ([lijst met levensmiddelen en dranken](popup:TOELICHTING||**De lijst met producten kan bestaan uit: koffie, thee, chocolade (cacao), suiker, bananen, ander fruit en verpakt fruit, exotische vruchtendranken, avocado's, tomaten, vanille enz.**\n\n**Als dit als uitgebreid criterium moet dienen kan de lijst met producten bestaan uit: koffie, thee, chocolade (cacao), suiker, bananen, ander fruit en verpakt fruit, exotische vruchtendranken, avocado's, tomaten, vanille enz.**\n\n**EU-criteria inzake levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 18 & 21**||)) zijn geproduceerd en verhandeld conform de voorschriften van een certificeringsregeling voor eerlijke en ethische handel die voorziet in een gecertificeerd gehalte van ten minste 90%. Dit moet een regeling zijn die gebaseerd is op criteria van organisaties van verschillende belanghebbenden met een groot ledenaantal en die gericht is op internationale normen voor eerlijke en ethische handel, met inbegrip van de arbeidsomstandigheden bij de productie overeenkomstig de [basisverdragen van de Internationale Arbeidsorganisatie (IAO), duurzame handel en prijsstelling](popup:TOELICHTING||**De regelingen die verondersteld worden aan de voorschriften van dit criterium te voldoen, hoeven geen onderdeel te zijn van de beweging voor eerlijke handel. Aan de hand van regelingen zoals Fairtrade®, UTZ, Bonsucro enz. kan naleving van het criterium worden aangetoond, mits deze regelingen betrekking hebben op de bovengenoemde beginselen. Andere nationale regelingen kunnen als gelijkwaardig worden beschouwd, indien zij aan de bovengenoemde beginselen voldoen.**\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 18**||).\n\n**Verificatie**\n\nDe inschrijver legt de lijst met producten over die tijdens de uitvoering van de overeenkomst moeten worden geleverd en aan het criterium voldoen.\n\n**Optie B (lastiger te verifiëren tijdens uitvoering van de overeenkomst)**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan de vereiste [X%](popup:TOELICHTING||**X staat voor de drempel die de aanbestedende dienst vaststelt. Vul in: X > 40-60 % van de totale aankoop van elk product dat op de lijst is opgenomen.**\n\n**Als dit als uitgebreid criterium moet dienen, vul in: X > 70-100 % van de totale aankoop van elk product: koffie, thee, chocolade (cacao), suiker en bananen.**\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 21**||) van de totale aankoop van elk van de onderstaande producten (lijst met levensmiddelen en dranken) is geproduceerd en verhandeld conform de voorschriften van een certificeringsregeling voor eerlijke en ethische handel die voorziet in een gecertificeerd gehalte van ten minste 90%. Dit moet een regeling zijn die gebaseerd is op criteria van organisaties van verschillende belanghebbenden met een groot ledenaantal en gericht is op internationale normen voor eerlijke handel, met inbegrip van de arbeidsomstandigheden bij de productie overeenkomstig de IAO-basisverdragen, duurzame handel en prijsstelling.\n\n**Verificatie:**\n\nDe inschrijver verstrekt de gegevens (hoeveelheid en naam) van alle producten die tijdens de uitvoering van de overeenkomst moeten worden geleverd, en vermeldt de producten die aan het criterium voldoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 17"
+                }
+              }
+            ],
+            "extended_criteria": []
+          },
+          "cateringdiensten": {
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "Chemische producten en verbruiksgoederen",
+                "specification": "**GC1.1 Chemische producten voor het wassen van de handen, het wassen van de vaat en routinematige schoonmaakwerkzaamheden**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan de vereiste [X%](popup:TOELICHTING||Van het volume van de aankopen bedoeld voor het wassen van de handen, het wassen van de vaat en routinematige schoonmaakwerkzaamheden is 50-100 % het EU-milieukeur voor dat bepaalde product of een equivalent daarvan toegekend.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 47**||) van de aankopen bedoeld voor het wassen van de handen, het wassen van de vaat en schoonmaakwerkzaamheden voldoet aan de voorschriften van het EU-milieukeur voor dat bepaalde product of een equivalent daarvan.\n\nExtra punten worden toegekend aan inschrijvingen waarin:\n– schoonmaakmiddelen en handzeep in de juiste hoeveelheden worden afgegeven door een automatische dispenser of een doseerpomp;\n– andere maatregelen (zoals stoomreiniging) worden genomen om het gebruik van chemische producten fors te verkleinen.\n\n**Verificatie**\n\nDe inschrijver verstrekt een lijst met chemische producten voor het wassen van de handen, het wassen van de vaat en routinematige schoonmaakwerkzaamheden die tijdens de uitvoering van de overeenkomst zullen worden gebruikt, en vermeldt daarbij specifiek welke producten aan het criterium voldoen.\n\nDe inschrijver verstrekt informatie over de te gebruiken doseersystemen en het eventuele onderhoud daarvan tijdens de uitvoering van de overeenkomst.\n\n**GC1.2 Keukenrollen en keukenpapier**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan de vereiste [Y%](popup:TOELICHTING||Als er geen producten met een milieukeur in de handel verkrijgbaar zijn, kan vrijstelling van de eisen worden verleend. Van het aankoopvolume van keukenrollen en keukenpapier is aan 0-50 % het EU-milieukeur voor dat bepaalde product of een equivalent daarvan toegekend.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 48**||) van de keukenrollen en het keukenpapier voldoet aan de voorschriften van het EU-milieukeur voor dat bepaalde product of een equivalent daarvan.\n\nExtra punten worden toegekend aan inschrijvingen waarin de keuken is voorzien van dispensers voor papieren handdoeken of van rollen met handdoeken van textiel.\n\n**Verificatie**\n\nDe inschrijver verstrekt een lijst met papierwaren die tijdens de uitvoering van de overeenkomst zullen worden gebruikt, en vermeldt daarbij specifiek welke producten aan het criterium voldoen.\n\nDe inschrijver verstrekt informatie over de tijdens de uitvoering van de overeenkomst te gebruiken dispensers.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 35"
+                }
+              },
+              {
+                "code": "GC2",
+                "title": "Energie- en waterverbruik in keukens",
+                "specification": "*Dit criterium is alleen ten toepassing, als de catering verantwoordelijk is voor de levering van de apparatuur.*\n\nDeze criteria laten situaties waarin overheidsinstanties overeenkomstig artikel 6 van Richtlijn 2012/27/ EU betreffende energie-efficiëntie alleen producten en diensten met hoge energie-efficiëntieprestaties mogen aankopen, onverlet.\n\n**GC2.1a Koeling - koelvitrines en koelbewaarkasten**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan [A%](popup:TOELICHTING||**A staat voor de drempel die de aanbestedende dienst vaststelt. Vul in: 0-50 % van de koelvitrines (vitrines met een extern aggregaat worden niet meegeteld) en koelbewaarkasten.**\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 49**||) van de koelvitrines en koelbewaarkasten een lagere energie-efficiëntie-index (EEI) heeft dan de waarden in de onderstaande tabel:\n\n| Categorie | EEI | Minimale energieklasse |\n|-----------|-----|------------------------|\n| Koeltoonbanken | < 25 | A |\n| 1-deurs koelbewaarkasten | < 25 | A |\n| 2-deurs koelbewaarkasten | < 50 | C |\n| Vriestoonbanken | < 35 | B |\n| 1-deurs koelbewaarkasten | < 50 | C |\n| 2-deurs koelbewaarkasten | < 50 | C |\n| Koel-vriesbewaarkasten | < 75 | D |\n\n**GC2.1b Koeling - huishoudelijke apparaten**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan [C%](popup:TOELICHTING||**C staat voor de drempel die de aanbestedende dienst vaststelt. Vul in: 0-50 % van de diepvrieskisten en wijnbewaarkasten met één of meerdere temperatuurzones.**\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 49**||) van de huishoudelijke apparaten een lagere energie-efficiëntie-index (EEI) heeft dan de waarden in de onderstaande tabel:\n\n| Categorie | EEI |\n|-----------|-----|\n| Diepvrieskisten | < 22 |\n| Wijnbewaarkasten met één temperatuurzone | < 42 |\n| Wijnbewaarkasten met meerdere temperatuurzones | < 55 |\n\nOpmerking: Gedelegeerde Verordening (EU) nr. 1060/2010 van de Commissie met betrekking tot de energie-etikettering van huishoudelijke koelapparaten en de koelmiddelen van die apparatuur wordt momenteel herzien (https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1562161019863&uri=PI_COM:Ares(2018)5145999).\n\n**GC2.1c Koeling - aardopwarmingsvermogen**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan [E%](popup:TOELICHTING||**E staat voor de drempel die de aanbestedende dienst vaststelt. Vul in: 100 % van de apparatuur die koelmiddelen met een GWP kleiner dan 5 gebruikt.**\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 49**||) van de apparatuur koelmiddelen gebruikt met een aardopwarmingsvermogen (global warming potential; \"GWP\") kleiner dan 5.\n\n**Verificatie**\n\nDe inschrijver verstrekt een lijst met de apparatuur die tijdens de uitvoering van de overeenkomst zal worden gebruikt, en vermeldt daarbij specifiek welke apparaten aan dit criterium voldoen.\n\nDe inschrijver verstrekt informatie over de EEI overeenkomstig Gedelegeerde Verordening (EU) 2015/1094 betreffende de energie-etikettering van professionele koelbewaarkasten of Gedelegeerde Verordening (EU) nr. 1060/2010 met betrekking tot de energie-etikettering van huishoudelijke koelapparaten en de koelmiddelen van die apparatuur, of een latere herziening of wijziging daarvan.\n\nIn het geval van nieuwe aankopen verstrekt de inschrijver een ondertekende toezegging tot het kopen of huren van de apparatuur binnen de eerste zes maanden van de overeenkomst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 36"
+                }
+              },
+              {
+                "code": "GC3",
+                "title": "Vervoer van levensmiddelen",
+                "specification": "*Opmerking: Deze criteria gelden alleen wanneer de bezorging van levensmiddelen onder de gecontracteerde dienst valt en het wagenpark door de inschrijver wordt beheerd. \"Bezorging van levensmiddelen\" heeft betrekking op het vervoer van levensmiddelen naar en vanuit de keuken en naar de locatie waar de dienst wordt geleverd, mocht dat elders zijn.*\n\n**GC3.1 Emissies van luchtverontreinigende stoffen**\n\nEr worden punten toegekend aan inschrijvingen met een wagenpark dat geheel uit [Euro 6/VI-voertuigen](popup:TOELICHTING||Verordening (EG) nr. 715/2007 van het Europees Parlement en de Raad van 20 juni 2007 betreffende de typegoedkeuring van motorvoertuigen met betrekking tot emissies van lichte personen- en bedrijfsvoertuigen (Euro 5 en Euro 6) en de toegang tot reparatie- en onderhoudsinformatie, en Verordening (EG) nr. 595/2009 van het Europees Parlement en de Raad van 18 juni 2009 betreffende de typegoedkeuring van motorvoertuigen en motoren met betrekking tot emissies van zware bedrijfsvoertuigen (Euro VI) en de toegang tot reparatie- en onderhoudsinformatie, tot wijziging van Verordening (EG) nr. 715/2007 en Richtlijn 2007/46/EG en tot intrekking van de Richtlijnen 80/1269/EEG, 2005/55/EG en 2005/78/EG.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 41**||) bestaat.\n\n**Verificatie**\n\nDe inschrijver moet de lijst van voertuigen van het wagenpark en de bijbehorende certificaten van overeenstemming overleggen. Voor de voertuigen die aan de bovengenoemde norm voldoen na een technische verbetering, moeten de metingen, na controle door een onafhankelijke derde, worden gedocumenteerd en in de offerte worden opgenomen.\n\nIn het geval van nieuwe aankopen verstrekt de inschrijver een ondertekende toezegging tot het kopen of huren van de voertuigen binnen de eerste zes maanden van de overeenkomst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 40"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "GC1.1",
+                "title": "Chemische producten voor het wassen van de handen, het wassen van de vaat en routinematige schoonmaakwerkzaamheden",
+                "specification": "Extra punten worden toegekend aan inschrijvingen waarin:\n\n• schoonmaakmiddelen en handzeep in de juiste hoeveelheden worden afgegeven door een automatische dispenser of een doseerpomp;\n• andere maatregelen (zoals stoomreiniging) worden genomen om het gebruik van chemische producten fors te verkleinen.\n\n**Verificatie**\n\nDe inschrijver verstrekt een lijst met chemische producten voor het wassen van de handen, het wassen van de vaat en routinematige schoonmaakwerkzaamheden die tijdens de uitvoering van de overeenkomst zullen worden gebruikt, en vermeldt daarbij specifiek welke producten aan het criterium voldoen.\n\nDe inschrijver verstrekt informatie over de te gebruiken doseersystemen en het eventuele onderhoud daarvan tijdens de uitvoering van de overeenkomst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 35"
+                }
+              },
+              {
+                "code": "GC1.2",
+                "title": "Keukenrollen en keukenpapier",
+                "specification": "Extra punten worden toegekend aan inschrijvingen waarin de keuken is voorzien van dispensers voor papieren handdoeken of van rollen met handdoeken van textiel.\n\n**Verificatie**\n\nDe inschrijver verstrekt een lijst met papierwaren die tijdens de uitvoering van de overeenkomst zullen worden gebruikt, en vermeldt daarbij specifiek welke producten aan het criterium voldoen.\n\nDe inschrijver verstrekt informatie over de tijdens de uitvoering van de overeenkomst te gebruiken dispensers.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 35"
+                }
+              },
+              {
+                "code": "GC2.1a",
+                "title": "Koeling - koelvitrines en koelbewaarkasten",
+                "specification": "Op basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan [B%](popup:TOELICHTING||**B staat voor de drempel die de aanbestedende dienst vaststelt. Vul in: 0-50 % van de koelvitrines (vitrines met een extern aggregaat worden niet meegeteld) en koelbewaarkasten.**\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 49**||) van de koelvitrines en koelbewaarkasten een lagere energie-efficiëntie-index (EEI) heeft dan 25 (energielabel A).\n\n**Verificatie**\n\nDe inschrijver verstrekt een lijst met de apparatuur die tijdens de uitvoering van de overeenkomst zal worden gebruikt, en vermeldt daarbij specifiek welke apparaten aan dit criterium voldoen.\n\nDe inschrijver verstrekt [informatie](popup:TOELICHTING||Een energie-etiket van de apparaten, testverslagen of eventuele andere technische documentatie en, indien van toepassing, een ondertekende toezegging tot het kopen of huren van de apparatuur binnen de eerste zes maanden van de overeenkomst.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 37**||) over de technologie waarvan de apparatuur gebruikmaakt.\n\nIn het geval van nieuwe aankopen verstrekt de inschrijver een ondertekende toezegging tot het kopen of huren van de apparatuur binnen de eerste zes maanden van de overeenkomst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 36"
+                }
+              },
+              {
+                "code": "GC2.1b",
+                "title": "Koeling - huishoudelijke apparaten",
+                "specification": "Op basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan [D%](popup:TOELICHTING||**D staat voor de drempel die de aanbestedende dienst vaststelt. Vul in: 0-50 % van de diepvrieskisten en wijnbewaarkasten met één of meerdere temperatuurzones.**\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 49**||) van de huishoudelijke koelapparaten een lagere energie-efficiëntie-index (EEI) heeft dan 22.\n\n**Verificatie**\n\nDe inschrijver verstrekt een lijst met de apparatuur die tijdens de uitvoering van de overeenkomst zal worden gebruikt, en vermeldt daarbij specifiek welke apparaten aan dit criterium voldoen.\n\nDe inschrijver verstrekt [informatie](popup:TOELICHTING||Een energie-etiket van de apparaten, testverslagen of eventuele andere technische documentatie en, indien van toepassing, een ondertekende toezegging tot het kopen of huren van de apparatuur binnen de eerste zes maanden van de overeenkomst.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 37**||) over de technologie waarvan de apparatuur gebruikmaakt.\n\nIn het geval van nieuwe aankopen verstrekt de inschrijver een ondertekende toezegging tot het kopen of huren van de apparatuur binnen de eerste zes maanden van de overeenkomst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 36"
+                }
+              },
+              {
+                "code": "GC2.1c",
+                "title": "Koeling - aardopwarmingsvermogen",
+                "specification": "Op basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan [E%](popup:TOELICHTING||**E staat voor de drempel die de aanbestedende dienst vaststelt. Vul in: 100 % van de apparatuur die koelmiddelen met een GWP kleiner dan 3 gebruikt.**\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 49**||) van de apparatuur koelmiddelen gebruikt met een aardopwarmingsvermogen (global warming potential; \"GWP\") kleiner dan 3.\n\n**Verificatie**\n\nDe inschrijver verstrekt een lijst met de apparatuur die tijdens de uitvoering van de overeenkomst zal worden gebruikt, en vermeldt daarbij specifiek welke apparaten aan dit criterium voldoen.\n\nDe inschrijver verstrekt [informatie](popup:TOELICHTING||Een energie-etiket van de apparaten, testverslagen of eventuele andere technische documentatie en, indien van toepassing, een ondertekende toezegging tot het kopen of huren van de apparatuur binnen de eerste zes maanden van de overeenkomst.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 37**||) over de technologie waarvan de apparatuur gebruikmaakt.\n\nIn het geval van nieuwe aankopen verstrekt de inschrijver een ondertekende toezegging tot het kopen of huren van de apparatuur binnen de eerste zes maanden van de overeenkomst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 36"
+                }
+              },
+              {
+                "code": "GC2.2",
+                "title": "Kooktoestellen",
+                "specification": "Op basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan [G%](popup:TOELICHTING||**G staat voor de drempel die de aanbestedende dienst vaststelt. Vul in: 51-100 % van de kooktoestellen die met de genoemde technologie is uitgerust.**\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 49**||) van de kooktoestellen is voorzien van:\n\n• een inductiekookplaat of gaskookplaat met geoptimaliseerde branders, geregeld door pannensensoren;\n• geïsoleerde voedselverwarmers;\n• een heteluchtoven, combi-oven of snelkoker;\n• een afzuigkap met een detectieapparaat dat registreert dat het kooktoestel in gebruik is, en het bijbehorende deel van de afzuigkap inschakelt zonder tegelijkertijd de gehele afzuigkap in werking te stellen.\n\n**Verificatie**\n\nDe inschrijver verstrekt een lijst met de apparatuur die tijdens de uitvoering van de overeenkomst zal worden gebruikt, en vermeldt daarbij specifiek welke apparaten aan dit criterium voldoen.\n\nDe inschrijver verstrekt [informatie](popup:TOELICHTING||Een technisch fiche of technische documentatie van de apparatuur en, indien van toepassing, een ondertekende toezegging tot het kopen of huren van de apparatuur binnen de eerste zes maanden van de overeenkomst.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 39**||) over de technologie waarvan de apparatuur gebruikmaakt.\n\nIn het geval van nieuwe aankopen verstrekt de inschrijver een ondertekende toezegging tot het kopen of huren van de apparatuur binnen de eerste zes maanden van de overeenkomst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 36"
+                }
+              },
+              {
+                "code": "GC2.3",
+                "title": "Professionele vaatwasmachines",
+                "specification": "Op basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan [H%](popup:TOELICHTING||**H staat voor de drempel die de aanbestedende dienst vaststelt. Vul in: 51-100 % van de vaatwasmachines die met de genoemde technologie is uitgerust.**\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 49**||) van de vaatwasmachines is voorzien van:\n\n• een systeem voor warmteterugwinning uit afvoerluchtwarme, warmteterugwinning uit afvalwater of gedroogd vaatwerk;\n• een dubbele wand;\n• geoptimaliseerde filtersystemen: centrifugeersystemen (cycloonfilter) of een geïntegreerd systeem voor voorreiniging;\n• meerdere spoelzones.\n\n**Verificatie**\n\nDe inschrijver verstrekt een lijst met de apparatuur die tijdens de uitvoering van de overeenkomst zal worden gebruikt, en vermeldt daarbij specifiek welke apparaten aan dit criterium voldoen.\n\nDe inschrijver verstrekt [informatie](popup:TOELICHTING||Een technisch fiche of technische documentatie van de apparatuur en, indien van toepassing, een ondertekende toezegging tot het kopen of huren van de apparatuur binnen de eerste zes maanden van de overeenkomst.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 39**||) over de technologie waarvan de apparatuur gebruikmaakt.\n\nIn het geval van nieuwe aankopen verstrekt de inschrijver een ondertekende toezegging tot het kopen of huren van de apparatuur binnen de eerste zes maanden van de overeenkomst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 36"
+                }
+              },
+              {
+                "code": "GC3.2",
+                "title": "Emissies van luchtverontreinigende stoffen",
+                "specification": "Er worden punten toegekend aan inschrijvingen met een wagenpark dat geheel bestaat uit:\n\n• lichte bedrijfsvoertuigen met een prestatie ≤ 45 g CO₂/km (typegoedkeuringswaarde);\n• hybride, OEM-aardgasvoertuigen voor twee soorten brandstof (Original Equipment Manufacturer; fabrikant van originele uitrusting, wat wil zeggen: nieuw, geen ombouw) met een gasenergieverhouding van ten minste 50 %, met rechtstreekse inspuiting van aardgas onder hoge druk, plug-in-hybride, elektrische of met waterstof aangedreven zware bedrijfsvoertuigen;\n• elektrische voertuigen van categorie L.\n\n**Verificatie**\n\nDe inschrijver legt de technische documentatie van de voor de dienstverlening te gebruiken voertuigen over, waarin de CO₂-emissies per kilometer bij de typegoedkeuring worden aangegeven.\n\nIn het geval van nieuwe aankopen verstrekt de inschrijver een ondertekende toezegging tot het kopen of huren van de voertuigen binnen de eerste zes maanden van de overeenkomst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 41"
+                }
+              },
+              {
+                "code": "GC3.3",
+                "title": "Koelmiddelen",
+                "specification": "Er worden punten toegekend aan inschrijvingen waarin een voertuigenbestand wordt aangeboden dat zwate bedrijfsvoertuigen die koelmiddelen gebruiken met een aardopwarmingsvermogen (global warming potential; \"GWP\") lager dan 150.\n\n**Verificatie**\n\nDe inschrijver legt de technische documentatie van de voor de dienstverlening te gebruiken voertuigen over, waarin het GWP van de voor de zware bedrijfsvoertuigen gebruikte koelmiddelen wordt vermeld.\n\nIn het geval van nieuwe aankopen verstrekt de inschrijver een ondertekende toezegging tot het kopen of huren van de voertuigen binnen de eerste zes maanden van de overeenkomst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 41"
+                }
+              },
+              {
+                "code": "GC3.4",
+                "title": "Fietslogistiek",
+                "specification": "*Opmerking: voor steden met geschikte topografische omstandigheden en de juiste infrastructuur, en voor diensten die de bezorging van kleine volumes levensmiddelen betreffen, zoals diensten voor kleine bijeenkomsten.*\n\nEr worden punten toegekend aan inschrijvingen waarin een voertuigenbestand wordt aangeboden dat fietsen, eventueel met trapondersteuning, en fietsaanhangwagens omvat. Met de fietsen en fietsaanhangwagens wordt beoogd het vraagstuk in verband met de laatste fase van de bezorging aan te pakken, overeenkomstig het emissieductieplan in TS 71 om de uitstoot van broeikasgassen en luchtverontreinigende stoffen tot een minimum te beperken.\n\n**Verificatie**\n\nDe inschrijver legt de technische documentatie en serienummers van de voor de dienstverlening te gebruiken fietsen over.\n\nIn het geval van nieuwe aankopen verstrekt de inschrijver een ondertekende toezegging tot het kopen of huren van de apparatuur binnen de eerste zes maanden van de overeenkomst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 41"
+                }
+              }
+            ]
+          },
+          "verkoopautomaten": {
+            "core_criteria": [
+              {
+                "code": "GC1",
+                "title": "Aanvullend, biologische levensmiddelen",
+                "specification": "**Optie A**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen die verder gaan dan de lijst met levensmiddelen en dranken die via het verkoopautomaat worden aangeboden (genoemd in optie A bij TS 1), en die voldoen aan de normen voor biologische producten.\n\n**Verificatie**\n\nDe inschrijver verstrekt een verklaring waarin staat dat alle bovengenoemde levensmiddelen en dranken, die tijdens de uitvoering van de overeenkomst moeten worden geleverd, zullen voldoen aan Verordening (EU) 2018/848 of latere wijzigingen daarvan. Tevens beschrijft de inschrijver de wijze waarop hij tijdens de uitvoering van de overeenkomst de biologische herkomst van de bovengenoemde producten wil garanderen (bv. door de leveranciers van de verschillende producten te noemen).\n\n**Optie B**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen waarin meer dan de vereiste [X%](popup:TOELICHTING||Indien bij TS 1 optie B is toegepast bij, vul hier het gekozen percentage in voor X.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 57**||) van de levensmiddelen en dranken die via het verkoopautomaat worden aangeboden is geproduceerd conform Verordening (EU) 2018/848.\n\n**Verificatie**\n\nDe inschrijver verstrekt de gegevens (hoeveelheid en naam) van de levensmiddelen en dranken die tijdens de uitvoering van de overeenkomst via de verkoopautomaat worden aangeboden, en vermeldt specifiek de producten die aan de biologische voorschriften voldoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 53"
+                }
+              },
+              {
+                "code": "GC2",
+                "title": "Producten uit de eerlijke en ethische handel",
+                "specification": "**Optie A**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen waarin de onderstaande levensmiddelen en dranken ([door de aanbestedende dienst in te vullen lijst met levensmiddelen en dranken](popup:TOELICHTING||De lijst met producten kan bestaan uit: koffie, thee, chocolade (cacao), suiker, bananen, ander fruit en verpakt fruit, exotische vruchtendranken, avocado's, tomaten, vanille enz.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 57**||)) die via de verkoopautomaten worden aangeboden, zijn geproduceerd en verhandeld conform de voorschriften van een certificeringsregeling voor eerlijke en ethische handel. Deze regeling moet voorzien in een gecertificeerd gehalte van ten minste 90% en moet gebaseerd zijn op criteria van organisaties van verschillende belanghebbenden met een groot ledenaantal. De regeling is gericht op internationale normen voor eerlijke en ethische handel, met inbegrip van de arbeidsomstandigheden bij de productie overeenkomstig de [basisverdragen van de IAO](popup:TOELICHTING||De acht verdragseisen van de IAO zijn nadrukkelijk opgenomen in de statutaire documenten inzake: gedwongen of verplichte arbeid, 1930 (nr. 29), de vrijheid tot het oprichten van vakverenigingen en de bescherming van het vakverenigingsrecht, 1948 (nr. 87), het recht zich te organiseren en collectief te onderhandelen, 1949 (nr. 98), de afschaffing van gedwongen arbeid, 1957 (nr. 98), de minimumleeftijd, 1973 (nr. 138), de ergste vormen van kinderarbeid, 1999 (nr. 182), gelijke beloning, 1951 (nr. 100) en discriminatie in arbeid en beroep, 1958 (nr. 111).\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 18**||), duurzame handel en prijsstelling.\n\n**Verificatie**\n\nDe inschrijver verstrekt de lijst met artikelen die tijdens de uitvoering van de overeenkomst via de verkoopautomaten worden aangeboden en aan het criterium voldoen.\n\n**Optie B**\n\nOp basis van evenredigheid worden punten toegekend aan inschrijvingen waarin van het totale aantal artikelen die via verkoopautomaten worden aangeboden, meer dan [X%](popup:TOELICHTING||De lijst met producten kan bestaan uit: koffie, thee, chocolade (cacao), suiker, bananen, verpakt fruit, exotische vruchtendranken enz.\n\n**X staat voor de drempel die de aanbestedende dienst vaststelt. Vul in: 10-30% van de totale aankoop van elk product: koffie, thee, chocolade (cacao), suiker en bananen.**\n\n**Als dit als uitgebreid criterium moet dienen, vul in: 30-70% van de totale aankoop van elk product: koffie, thee, chocolade (cacao), suiker en bananen.**\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 21**||) (door de aanbestedende dienst in te vullen lijst met levensmiddelen en dranken) [conform](popup:TOELICHTING||De regelingen die verondersteld worden aan de voorschriften van dit criterium te voldoen, hoeven geen onderdeel te zijn van de beweging voor eerlijke handel. Aan de hand van regelingen zoals Fairtrade®, UTZ, Bonsucro enz. kan naleving van het criterium worden aangetoond, mits deze regelingen betrekking hebben op de bovengenoemde beginselen. Andere nationale regelingen kunnen als gelijkwaardig worden beschouwd, indien zij aan de bovengenoemde beginselen voldoen.\n\n**EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 18**||) de voorschriften van een certificeringsregeling voor eerlijke en ethische handel zijn geproduceerd en verhandeld. Deze regeling moet voorzien in een gecertificeerd gehalte van ten minste 90% en moet gebaseerd zijn op criteria van organisaties van verschillende belanghebbenden met een groot ledenaantal. De regeling is gericht op internationale normen voor eerlijke en ethische handel, met inbegrip van de arbeidsomstandigheden bij de productie overeenkomstig de basisverdragen van de IAO, duurzame handel en prijsstelling.\n\n**Verificatie**\n\nDe inschrijver verstrekt de gegevens (hoeveelheid en naam) van alle producten die tijdens de uitvoering van de overeenkomst voor de verkoopautomaten moeten worden geleverd, en vermeldt specifiek de producten die aan het criterium voldoen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 53"
+                }
+              },
+              {
+                "code": "GC4",
+                "title": "Jaarlijks energieverbruik",
+                "specification": "*Dit criterium heeft betrekking op de volgende typen verkoopautomaten:*\n\n1. *gekoelde automaten met gesloten voorkant voor gestapelde blikjes en flesjes;*\n2. *gekoelde automaten met een glazen voorkant voor blikjes, flesjes, snoep en snacks;*\n3. *gekoelde automaten met een glazen voorkant voor uitsluitend bederfelijke levensmiddelen;*\n4. *gekoelde automaten met een glazen voorkant en meerdere temperatuurzones;*\n5. *drankautomaten met warme en/of koude dranken.*\n\n*In de aanbesteding zullen het type en het volume van de te leveren verkoopautomaten worden vermeld. Dit gunningscriterium mag alleen worden gebruikt om verkoopautomaten van hetzelfde type en volume te vergelijken.*\n\nHet aantal punten dat wordt toegekend aan de inschrijvingen voor verkoopautomaten is omgekeerd evenredig aan het jaarlijkse energieverbruik van de automaten.\n\n**Verificatie**\n\nDe inschrijver verstrekt de lijst met verkoopautomaten die tijdens de uitvoering van de overeenkomst zullen worden gebruikt. Tevens legt de inschrijver de technische documentatie van deze verkoopautomaten over, samen met kopieën van de testverslagen van de automaten overeenkomstig EN 50597 voor verkoopautomaten van 1 tot en met 4 en overeenkomstig het convenant Energiemeting deel B van de European Vending & Coffee Service Association (EVA) voor drankautomaten met warme en/of koude dranken.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 54"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "GC4",
+                "title": "GWP van koelmiddelen",
+                "specification": "*Dit criterium heeft betrekking op de volgende verkoopautomaten:*\n\n1. *gekoelde automaten met gesloten voorkant voor gestapelde blikjes en flesjes;*\n2. *gekoelde automaten met een glazen voorkant voor blikjes, flesjes, snoep en snacks;*\n3. *gekoelde automaten met een glazen voorkant voor uitsluitend bederfelijke levensmiddelen;*\n4. *gekoelde automaten met een glazen voorkant en meerdere temperatuurzones.*\n\n*In de aanbesteding zal het type aan te kopen verkoopautomaat worden vermeld. Dit gunningscriterium mag alleen worden gebruikt om verkoopautomaten van hetzelfde type te vergelijken.*\n\nAan de inschrijvingen worden punten toegekend in verhouding tot het aantal gekoelde verkoopautomaten dat koelmiddelen gebruikt met een GWP lager dan 150.\n\n**Verificatie**\n\nDe inschrijver verstrekt een lijst met verkoopautomaten die tijdens de uitvoering van de overeenkomst zullen worden gebruikt, en vermeldt daarbij specifiek welke automaten aan dit criterium voldoen.\n\nDe inschrijver moet kopieën van de technische documentatie overleggen, waarin het GWP van het koelmiddel wordt aangegeven.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 55"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "contract_performance_clauses",
+      "title": "Uitvoeringsvoorwaarden",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als contractuele uitvoeringsvoorwaarden. Ze borgen dat de verplichtingen worden nagekomen.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale uitvoeringsvoorwaarden) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Kies de categorie in de tabel hieronder. De GPP definieert contractuele uitvoeringsvoorwaarden voor:\n   Categorie 1: [Grafische apparatuur](#)\n   Categorie 2: [Verbruiksartikelen](#)\n   Categorie 3: [Printdiensten](#)",
+        "Neem in ieder geval de kerncriteria op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "levensmiddelen",
+            "label": "🍎 Levensmiddelen",
+            "label_short": "Levensmiddelen"
+          },
+          {
+            "key": "cateringdiensten",
+            "label": "🍽️ Cateringdiensten",
+            "label_short": "Cateringdiensten"
+          },
+          {
+            "key": "verkoopautomaten",
+            "label": "🤖 Verkoopautomaten",
+            "label_short": "Verkoopautomaten"
+          }
+        ],
+        "default_main_tab": "levensmiddelen",
+        "data": {
+          "levensmiddelen": {
+            "core_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Aanbestedingsbeheerpraktijken",
+                "specification": "Gedurende de looptijd van de overeenkomst verzamelt en registreert de dienstverlener de facturen en andere documenten die aantonen dat aan het criterium is voldaan overeenkomstig de voorschriften voor het verifiëren van de desbetreffende technische specificaties en gunningscriteria TSx-y en GCx-y.\n\nDeze facturen moeten voor verificatiedoeleinden beschikbaar worden gesteld aan de aanbestedende dienst. De aanbestedende dienst kan regels opstellen voor boeten bij niet-naleving.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 18"
+                }
+              }
+            ],
+            "extended_criteria": []
+          },
+          "cateringdiensten": {
+            "core_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Milieuvriendelijke drinkwatervoorziening",
+                "specification": "*Opmerking: dit criterium is alleen van toepassing in gevallen waarin (toegang tot) drinkwater kan worden geboden.*\n\nDe aannemer stelt op de locatie van de cateringdienst voor consumptie bestemd leidingwater gratis ter beschikking (rechtstreekse toegang tot een kraan of door leidingwater in een kan of automaat aan te bieden) en verstrekt herbruikbare drinkglazen.\n\nDe aannemer informeert de klanten over de beschikbaarheid van drinkwater op de locatie.\n\nDe aanbestedende dienst kan regels opstellen voor boeten bij niet-naleving.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 43"
+                }
+              },
+              {
+                "code": "CUV2",
+                "title": "Aanschaf van nieuwe keukenapparatuur en voertuigen",
+                "specification": "Indien keukenapparatuur of een voertuig van het wagenpark wordt vervangen, moet de nieuwe aanschaf bijdragen aan het in stand houden of verbeteren van de samenstelling en technologieën zoals omschreven in de offerte, zodat aan de gunningscriteria GC 2 en GC 3 wordt voldaan.\n\nAls voor de levering van de gecontracteerde dienst alle of een deel van de keukenapparatuur nieuw moet worden aangekocht, moet de aannemer apparatuur aanschaffen in de hoogste energieklasse die in de handel beschikbaar is.\n\nDe aannemer meldt de aanschaf van nieuwe apparatuur bij de aanbestedende dienst.\n\nDe aanbestedende dienst kan regels opstellen voor boeten bij niet-naleving.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 43"
+                }
+              },
+              {
+                "code": "CUV3",
+                "title": "Maatregelen en praktijken op het gebied van milieubeheer",
+                "specification": "Tijdens de overeenkomst documenteert en rapporteert de aannemer:\n\n• de resultaten van de controle van indicatoren; en\n• de resultaten van de evaluatie en, indien van toepassing, de correctieve en preventieve maatregelen overeenkomstig de schriftelijke procedures voor verificatie van TS 8 (Maatregelen en praktijken op het gebied van milieubeheer).\n\nDeze verslagen moeten voor verificatiedoeleinden beschikbaar worden gesteld aan de aanbestedende dienst.\n\nDe aanbestedende dienst kan regels opstellen voor boeten bij niet-naleving.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 44"
+                }
+              },
+              {
+                "code": "CUV4",
+                "title": "Opleiding van personeel",
+                "specification": "Voor personeel dat onlangs in dienst is genomen, organiseert de aannemer opleidingen op de werkplek over de in het selectiecriterium (SC 1) vermelde methodiek.\n\nVoor vast personeel en tijdelijk personeel met een contract langer dan één jaar organiseert de aannemer ten minste eenmaal per jaar geactualiseerde opleidingen op de werkplek over de in het selectiecriterium (SC 1) vermelde methodiek.\n\nDe aannemer meldt de aangeboden opleiding aan de aanbestedende dienst.\n\nDe aanbestedende dienst kan regels opstellen voor boeten bij niet-naleving.\n\n**Aanbevolen waarden**\n\nVoor vast personeel en tijdelijk personeel met een contract langer dan één jaar bedraagt de aanbevolen opleidingsduur op de werkplek 16 uur per jaar. Voor ander tijdelijk personeel of personeel met korte contracten moet de opleidingsduur evenredig zijn aan de lengte van het contract. De duur van de opleiding kan worden aangepast aan de behoeften en voorwaarden van de aanbestedingen.\n\nDe medewerkers die verantwoordelijk zijn voor het samenstellen van de menu's, en in het bijzonder van de veganistische menu's, moeten aanwijzingen krijgen over de wijze waarop zij de menu's zo kunnen samenstellen dat de maaltijden de aanbevolen hoeveelheid voedingsstoffen bevatten en het totale milieueffect ervan wordt beperkt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 44"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "CUV5",
+                "title": "Herverdeling van levensmiddelen en dranken",
+                "specification": "*Opmerking: dit geldt voor locaties waarin de regels inzake hygiëne herverdeling toelaten en de organisaties die zich daarmee bezighouden, belangstelling tonen voor de voedseloverschotten.*\n\nDe aannemer zorgt voor de herverdeling van levensmiddelen door (maak een selectie):\n\n• contact op te nemen met de organisaties die voedingsmiddelen inzamelen en doneren aan voedselherverdelingsorganisaties;\n• de procedures uit te voeren voor het inzamelen van gekoelde en gekookte levensmiddelen die de organisatie met de cateraars overeengekomen (indien de daarvoor benodigde apparatuur beschikbaar is);\n• toe te zien op de koudeketen voor gekookte producten en deze in stand te houden totdat de producten door de organisatie worden opgehaald. De aanbestedende dienst kan, afhankelijk van de omstandigheden ter plaatse, de temperatuur bepalen die moet worden aangehouden om de koudeketen voor gekookte producten te waarborgen.\n\nDe aannemer houdt een administratie bij van de herverdeling van levensmiddelen.\n\nDe aanbestedende dienst kan regels opstellen voor boeten bij niet-naleving.\n\nDe aanbestedende dienst wordt verzocht om de EU-richtlijnen inzake voedseldonatie te raadplegen als ook het EFSA-advies inzake de gevaren van voedseldonatie (nieuwe benadering voor het beheer van voedselveiligheid).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 44"
+                }
+              }
+            ]
+          },
+          "verkoopautomaten": {
+            "core_criteria": [
+              {
+                "code": "CUV1",
+                "title": "Aankoop van nieuwe verkoopautomaten",
+                "specification": "Als voor de levering van de gecontracteerde dienst alle of een deel van de verkoopautomaten nieuw moet worden aangekocht, moet de aannemer apparaten aanschaffen die voldoen aan de voorschriften van technische specificatie TS3.\n\nDe aannemer meldt de aanschaf van nieuwe verkoopautomaten bij de aanbestedende dienst.\n\nDe aanbestedende dienst kan regels opstellen voor boeten bij niet-naleving.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor levensmiddelen, cateringdiensten en verkoopautomaten - Pag. 56"
+                }
+              }
+            ],
+            "extended_criteria": []
+          }
+        }
+      }
     }
   ]
 }

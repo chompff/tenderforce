@@ -1,8 +1,8 @@
 {
   "obligation_id": "gpp-data-centres",
   "archetype": "GPP",
-  "title": "EU GPP criteria of nationaal gelijkwaardig",
-  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de EU-criteria inzake groene overheidsopdrachten voor datacenters, serverruimtes en clouddiensten toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
+  "title": "Verplichtingen onder EU GPP óf nationaal gelijkwaardig",
+  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de [EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/df8a7a26-3d83-49b9-82f6-79f6ebef3243/details) toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
   "badges": ["GPP", "NL", "EU"],
   "colors": {
     "text": "#356534",
@@ -20,23 +20,546 @@
   ],
   "sections": [
     {
-      "key": "technical_specs",
-      "title": "Technische specificaties",
+      "key": "selectiecriteria",
+      "title": "Selectiecriteria",
       "requirement_level": "verplicht",
-      "intro": "De GPP criteria voor datacenters, serverruimtes en clouddiensten zijn nog in ontwikkeling. Deze module bevat voorlopig placeholder content.",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als selectiecriteria. Het doel is te waarborgen dat alleen leveranciers met aantoonbare kennis, middelen en procedures in aanmerking komen voor deelname.",
       "warnings": [
         {
-          "severity": "yellow",
-          "text": "Let op: De inhoud van deze module is nog niet compleet. De definitieve GPP criteria worden later toegevoegd."
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale selectiecriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
         }
       ],
       "steps": [
-        "Raadpleeg de EU GPP criteria voor datacenters, serverruimtes en clouddiensten wanneer deze beschikbaar komen.",
-        "Vergelijk met de Nederlandse MVI criteria op www.mvicriteria.nl.",
-        "Neem de strengste criteria op in uw aanbestedingsdocumenten."
+        "Raadpleeg de onderstaande tabel met alle selectiecriteria en check welke van toepassing zijn op de aanbesteding.",
+        "Neem de relevante kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
       ],
       "steps_ordered": true,
-      "example_texts": []
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "datacentra",
+            "label": "Kerncriteria voor datacentra, serverruimtes en cloudservices",
+            "label_short": "datacentra, serverruimtes en cloudservices"
+          }
+        ],
+        "default_main_tab": "datacentra",
+        "data": {
+          "datacentra": {
+            "core_criteria": [
+              {
+                "code": "SC1",
+                "title": "Servergebruik",
+                "subtitle": "Van toepassing op:",
+                "specification": "• De aanschaf van IT-virtualisatie- of consolidatiediensten;\n• De aanschaf van beheer- en onderhoudsdiensten voor het datacentrum of de serverruimte van een onderneming;\n\n*Let op: Alleen op te nemen wanneer het datacentrum wordt beheerd door een derde partij.*\n\nDe inschrijver dient te beschikken over de relevante competenties en ervaring in het optimaliseren van het servergebruik. Dit is inclusief servervisualisatiediensten, beheertools en software ten aanzien van het gebruik² en de consolidatie van IT-middelen in datacentra.\n\n²Dit kan tevens betrekking hebben op de virtualisatie en optimalisatie van opgeslagen gegevens door gebruik te maken van compressie, het ontdubbelen van gegevens, thin provisioning, gelaagde opslag en opslagsystemen die door software gedefinieerd zijn.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 9"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Inschrijvers dienen bewijs te leveren van eerdere projecten met vergelijkbare workloads om het gebruik van IT-apparatuur te realiseren, handhaven en verbeteren. Dit is inclusief beschrijvingen van methoden die worden toegepast om het gebruik te optimaliseren. De geaccepteerde bewjsstukken zijn, onder andere, informatie en referenties inzake relevante contracten in de afgelopen 3 jaar waarbij de hierboven genoemde elementen zijn uitgevoerd. De bewjsstukken kunnen betrekking hebben op relevante contracten of personeel dat betrokken is het leveren van de dienst. Dit dient tevens ondersteund te worden door cv's van personeelsleden die aan het project zullen werken en hun relevante projectervaring."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "SC2",
+                "title": "Controle op aan beperkingen onderworpen stoffen in servers, gegevensopslag- en netwerkappuratuur",
+                "subtitle": "Van toepassing op de aanschaf van milieuvriendelijkere IT-apparatuur.\nOp te nemen wanneer IT-apparatuur dient te worden aanbesteed.",
+                "specification": "De inschrijver toont de implementatie aan van een programma voor de uitvoering van controles op aan beperkingen onderworpen stoffen (Restricted Substance Controls, RSC's) in de aanvoerketens van de te leveren producten. Productevaluaties op basis van de RSC's moeten minimaal de volgende gebieden beslaan:\n\n• planning/ontwerpproces van het product;\n• naleving door de leverancier;\n• analytische testen.\n\nDe implementatie dient de richtnoeren in IEC 62476 te volgen en de IEC 62474 database voor materiaalverklaring te gebruiken als uitgangspunt voor het identificeren, volgen en opgeven van specifieke informatie over de samenstelling van de te leveren producten.\n\nDe RSC's worden uitgevoerd voor, ten minste, de:\n\n• stoffen op de kandidatenlijst van REACH;\n• aan beperkingen onderworpen stoffen en uitzonderingen in de Richtlijn Beperking van gevaarlijke stoffen.\n\nDe ondersteunende materiaalverklaringen moeten actueel worden gehouden voor de relevante materialen, onderdelen en subsystemen van de te leveren producten.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 9"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver stelt documentatie ter beschikking die het systeem en de procedures beschrijft en een bewijs geeft van de implementatie ervan."
+                }
+              },
+              {
+                "code": "SC3",
+                "title": "Beheer van koelenergie",
+                "subtitle": "Van toepassing op:",
+                "specification": "• De bouw van een nieuw datacentrum;\n• De uitbreiding van een bestaande faciliteit met een nieuw datacentrum en infrastructuur voor de serverruimte;\n• De aanschaf van consolidatiediensten voor bestaande gedistribueerde serverruimtes in een nieuw datacentrum;\n• De aanschaf van beheer- en onderhoudsdiensten voor het datacentrum of de serverruimte van een onderneming;\n\n*Let op: Alleen op te nemen wanneer het datacentrum wordt beheerd door een derde partij.*\n\nDe inschrijver dient relevante competenties en ervaring te hebben in het minimaliseren van het gebruik van koelenergie, het identificeren van mogelijkheden om het energiegebruik te reduceren en het gebruik van resterende afvalwarmte (bijv. voor het verwarmen van aangrenzende gebouwen of stadsverwarmingsnetwerken). Inschrijvers moeten met name informatie verstrekken over:\n\n• Het vermogen en de vaardigheden van de inschrijvende organisatie en eventuele opdrachtnemers om maatregelen voor energiereductie en hergebruik van energie te identificeren en implementeren. Hiervoor dient een competente energiebeheerder aangesteld te worden voor elke locatie onder het contract.\n\n• De operationele ervaring in het gebruik van controlesystemen en -software voor strategieën ten aanzien van energiereductie, waarbij met name wordt verwezen naar EU Gedragscode³)/EN 50600 TR99-1 inzake beste praktijken voor 'koelbeheer' en 'instellingen van temperatuur en luchtvochtigheid'.\n\nInschrijvers moeten bewjsstukken overleggen van eerdere datacentrumprojecten met vergelijkbare kenmerken die aantonen hoe zij het gebruik van koelenergie hebben verminderd of geminimaliseerd.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 10"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Bewjsstukken in de vorm van informatie en referenties voor specifieke datacentra-locaties die in de afgelopen 3 jaar zijn beheerd. De bewjsstukken kunnen betrekking hebben op relevante contracten of belangrijk personeel dat betrokken is het leveren van de dienst."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als technische specificaties. Daarmee worden de inhoudelijke eisen vastgelegd die aan het werk, de levering of de dienst worden gesteld.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale technische specificaties) uit de EU GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn dient u deze op te nemen."
+        }
+      ],
+      "steps": [
+        "Raadpleeg de onderstaande tabel met alle technische specificaties en check welke van toepassing zijn op de aanbesteding.",
+        "Neem de relevante kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "datacentra",
+            "label": "Kerncriteria voor datacentra, serverruimtes en cloudservices",
+            "label_short": "datacentra, serverruimtes en cloudservices"
+          }
+        ],
+        "default_main_tab": "datacentra",
+        "data": {
+          "datacentra": {
+            "core_criteria": [
+              {
+                "code": "TS1",
+                "title": "Efficiëntie server in actieve staat",
+                "subtitle": "Van toepassing op de aanschaf van milieuvriendelijkere IT-apparatuur.",
+                "specification": "Voor elk servermodel dat wordt ingezet in het datacentrum moet de berekende efficiëntiescore in actieve staat (EffACTIVE) hoger dan of gelijk zijn aan de minimale efficiëntiedrempelwaarden in actieve staat die hieronder worden weergegeven.\n\n| Producttype | Minimale EffACTIVE |\n|-------------|--------------------|\n| **1 stopcontact** | |\n| Rack | 11,0 |\n| Toren | 9,4 |\n| **2 stopcontacten** | |\n| Rack | 13,0 |\n| Toren | 12,0 |\n| Blade of meerdere knooppunten | 14,0 |\n| **4 stopcontacten** | |\n| Rack | 16,0 |\n| Blade of meerdere knooppunten | 9,6 |",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 11"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt de berekening van de efficiëntie in actieve staat voor elk servermodel op basis van de EN 303470-meetmethode. Indien verschillende configuraties van het servermodel worden voorgesteld voor gebruik, moeten de geteste prestaties van de hoge en de lage configuratie worden aangegeven. Verificatie kan ook de vorm aannemen van testresultaten voor een model met de specifieke te gebruiken configuratie.\n\nTestresultaten verkregen voor het doel van CE-markering of keurmerkwkwalificatie, uitgevoerd volgens de gelijkwaardige testnormen, kunnen worden gebruikt ter verificatie."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "ICT-werkgebied – temperatuur en luchtvochtigheid",
+                "subtitle": "Van toepassing:",
+                "specification": "• Op de aanschaf van milieuvriendelijkere IT-apparatuur.\n• In geval van luchtkoeling en waar het datacentrum is ontworpen voor besparende en/of vrije koeling. Toepasselijke klassen voor de operationele toestand worden beschreven in bijlage I.\n\nICT-hardware ondersteunt de werking binnen de toegestane luchtvochtigheid en het droge temperatuurbereik van operationele toestand klasse A2 van de Verordening inzake ecologisch ontwerp (EU) 2019/424 waarin de eisen voor het ecologische ontwerp van servers en gegevensopslagproducten is vastgesteld.\n\nDe apparatuur moet worden getest in functie van het toegestane bereik gedurende minimaal 16 bedrijfsuren (werking op hoge temperatuur is niet bedoeld voor continu gebruik). De testprocedure moet representatief zijn voor echte operationele toestanden (zie de bijbehorende toelichting). Testmethoden die zijn opgenomen in de Europese normen inzake de operationele toestandsklasse van servers, ontwikkeld in antwoord op het concept-normalisatiemandaat onder de Verordening inzake ecologisch ontwerp (EU) 2019/424, kunnen eveneens worden gebruikt voor dit doel.\n\nHet energieverbruik van de ventilator onder normale en verhoogde invoertemperaturen moet ook worden gerapporteerd om te kunnen valideren dat er energie wordt bespaard.\n\n*Van toepassing in geval van vloeistofkoeling*\n\nICT-hardware moet de werking binnen het temperatuurbereik van het toevoerwater ondersteunen, zoals aangegeven in de aanbesteding met verwijzing naar klassen W2 en W3 in bijlage II.\n\n**Toelichting 1: Representatief thermisch testen van ICT-apparatuur**\n\nDeze aantekening identificeert de basis van het representatief thermisch testen van ICT-apparatuur. Om de testprocedure representatief te laten zijn voor echte operationele omstandigheden, moet deze zijn ontworpen voor het simuleren van:\n\n• verlopende veranderingen van korte duur onder invloed van de koelapparatuur, bijvoorbeeld de overgang van vrije koeling naar een mechanisch systeem;\n• kortstondige intensieve blootstellingsperioden onder invloed van omgevingsomstandigheden, bijvoorbeeld tijdens aanhoudende hittegolven in de zomer; en\n• een indicatieve frequentie van beide bovenstaande gebeurtenissen tijdens een bedrijfsjaar.\n\n**Toelichting 2: Thermische prestaties en ingezet vermogen**\n\nHet is belangrijk om op te merken dat het toekennen van extra punten aan A3-servers moet worden overwogen in het kader van of een aangewezen A2-server of A3-servers het totale ingezette vermogen reduceren.\n\nIndien het verlies van capaciteit, gedreven door het ondersteunen van de servers op 40°C, resulteert in meer ingezette servers, mogen de extra punten niet worden toegekend.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 12"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet specificaties en verklaringen van de fabrikant overleggen voor elk ICT-apparaat.\n\nDe inschrijver moet verklaren dat de werking van de servermodellen voor een geschat aantal uur binnen het toegestane bereik is getest gedurende een opgegeven tijdperiode. De testspecificatie moet worden verstrekt.\n\nInformatie en testresultaten verstrekt voor doeleinden van CE-markering kunnen worden gebruikt als verificatie."
+                }
+              },
+              {
+                "code": "TS4",
+                "title": "Beheer van afgedankte servers, gegevensopslag- en netwerkappuratuur",
+                "subtitle": "Van toepassing op de aanschaf van diensten voor afgedankte servers, gegevensopslag- en netwerkappuratuur.",
+                "specification": "*Dit criterium moet worden gebruikt in combinatie met clausule CPC3 inzake contractuitvoering.*\n\nInschrijvers leveren een dienst voor:\n\n– hergebruik en recycling van het volledige product en/of\n– selectieve behandeling van componenten die vallen onder de vereisten van bijlage VII van de AEEA-richtlijn voor apparatuur die het einde van de levensduur heeft bereikt;\n– recycling van componenten om kritieke grondstoffen te recupereren.\n\nDe dienstverlening moet bestaan uit de volgende activiteiten:\n\n– verzameling;\n– vertrouwelijke verwerking en beveiligde gegevensverwijdering (tenzij dit intern wordt uitgevoerd);\n– functioneel testen, onderhouden, repareren en upgraden om hergebruik voor te bereiden op hergebruik⁴;\n– marketing van producten voor hergebruik;\n– demontage voor hergebruik, recycling en verwijdering van componenten.\n\nBij het leveren van de dienst moet verslag gedaan van het deel van de apparatuur dat is voorbereid op opnieuw op de markt is gebracht voor hergebruik en het deel van de apparatuur dat is voorbereid op recycling of verwijdering.\n\nVoorbereidende handelingen voor hergebruik, recycling en verwijdering moeten verricht met volledige naleving van de eisen in artikel 8 en bijlagen VII en VIII van de (herziene) AEEA-richtlijn 2012/19/EU en met verwijzing naar de lijst met componenten voor selectieve behandeling (zie bijbehorende toelichting).\n\nInschrijvers moeten ook bewjsstukken overleggen van alle uitgevoerde acties om de recycling van de kritieke grondstoffen kobalt (in accu's) en neodymium (in harde schijven) te verbeteren en lijn met de beschikbare informatie over de inhoud van kobalt en neodymium, zoals voorzien in bijlage II.3.3 van de verordening inzake ecologisch ontwerp (EU) 2019/424.\n\n⁴Een aantal lidstaten hebben normen en/of schema's ontwikkeld waarnaar overheidsdiensten kunnen verwijzen om meer details te verstrekken over hoe de apparatuur geschikt kan worden gemaakt voor hergebruik en doorverkoop.\n\n**Toelichting: componenten die selectieve behandeling vereisen**\n\nDe volgende componenten vereisen selectieve behandeling in overeenstemming met bijlage VII van de AEEA-richtlijn:\n\n• componenten die kwik bevatten,\n• accu's,\n• printplaten groter dan 10 cm²,\n• brombevlammeringsmiddelen die plastic bevatten,\n• chloorfluorkoolstoffen (CFC), chloorfluorkoolwaterstoffen (HCFC) of fluorkoolwaterstoffen (HFC), koolwaterstoffen (HC), externe elektrische kabels,\n• condensatoren (PCB) met een condensator,\n• componenten die keramische vezels bevatten,\n• elektrolytcondensatoren die PCB's of cadmium bevatten,\n• apparatuur die ozonafbrekende gassen of gassen met een aardopwarmingspotentieel (GWP) van meer dan 15 hebben,\n• apparatuur die gassen moet verwijderen in overeenstemming met Verordening (EG) nr. 1005/2009.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 15"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt details van de regelingen voor verzameling, gegevensbeveiliging, voorbereiding voor hergebruik, remarketing voor hergebruik en recycling/verwijdering. Gedurende het contract is dit inclusief geldig bewijs van het gebruik van de gebruiken AEEA-behandelingsfaciliteiten en de scheiding en behandeling van specifieke componenten die kritieke grondstoffen kunnen bevatten."
+                }
+              },
+              {
+                "code": "TS5",
+                "title": "Milieubewaking",
+                "subtitle": "Te gebruiken in geval van nieuwbouw of modernisatie van datacentra bij:",
+                "specification": "• De bouw van een nieuw datacentrum\n• De uitbreiding van een bestaand gebouw met een nieuw datacentrum en infrastructuur voor de serverruimte\n• De consolidatie van bestaande serverruimtes en/of datacentra in nieuwe of bestaande datacentra.\n\nDe inschrijver moet aantonen dat de faciliteit voorzieningen en infrastructuren voor milieubeheersing heeft die in lijn zijn met de eisen en aanbevelingen van norm EN 50600-2-3 en de volgende metingen kunnen verrichten:\n\n1. Temperaturen computerruimte:\n   a) temperatuur toevoerlucht;\n   b) temperatuur afvoerlucht;\n   c) temperatuur koude gang (waar gebruikt);\n   d) temperatuur warme gang (waar gebruikt).\n2. Relatieve vochtigheid:\n   a) externe relatieve vochtigheid\n   b) relatieve vochtigheid computerruimte\n3. Luchtdruk onder de toegangsvloer (indien een toegangsvloer is geïnstalleerd)\n4. Stroomsnelheden koelmiddel (indien het ontwerp van het systeem voor milieubeheersing berust op de beweging van vloeistoffen, bijv. waterkoeling)\n\nInschrijvers moeten tevens verslag uitbrengen over de granulariteit van het meetstelsel dat zij voorstellen te installeren.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 17"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet ontwerpen en technische specificaties overleggen van het controlesysteem dat wordt geïnstalleerd en identificeren hoe dit de granulariteit van het gerapporteerde meetstelsel zal leveren in overeenstemming met EN 50600-2-3. De aanbestedende overheidsdienst behoudt zich het recht voor een verslag van een geschikte externe audit van het datacentrum aan te vragen om de implementatie van de beste praktijken te verifiëren."
+                }
+              },
+              {
+                "code": "TS8",
+                "title": "Gereedheid voor hergebruik afvalwarmte",
+                "subtitle": "Van toepassing op:",
+                "specification": "• De bouw van een nieuw datacentrum\n• Uitbreiding van een bestaand gebouw met een nieuw datacentrum en infrastructuur voor de serverruimte\n• Consolidatie van bestaande serverruimtes en/of datacentra in nieuwe of bestaande datacentra.\n\n*Het wordt aanbevolen deze technische specificatie alleen in te stellen wanneer er al vraag is naar de warmte op of bij de locatie of wanneer de overheidsdienst een duidelijk geplande of potentiële mogelijkheid heeft geïdentificeerd op of bij de locatie.*\n\nHet datacentrum of de serverruimte moeten zorgen voor routering van een toekomstig leidingsysteem of andere lay-outkenmerken voor warmteoverdracht die aansluitingen op of de modernisatie mogelijk maken van een watersysteem dat elke rij van het serverrek bereikt, zodat de vloeistofkoeling hiervan in een later stadium eenvoudig kan worden aangepast.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 20"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet engineeringtekeningen van het ontwerp overleggen die aantonen dat een watersysteem met vertakkingen naar elke rij van het serverrek kan worden ingepast of dat de lay-out is ontworpen op een zodanige manier dat dit eenvoudig kan worden aangepast.\n\nDe aanbestedende overheidsdienst behoudt zich het recht voor een verslag van een geschikte externe audit van het datacentrum aan te vragen om de implementatie van dit criterium te verifiëren."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "TS1",
+                "title": "Efficiëntie server in actieve staat",
+                "subtitle": "Van toepassing op de aanschaf van milieuvriendelijkere IT-apparatuur.",
+                "specification": "Voor elk servermodel dat wordt ingezet in het datacentrum moet de berekende efficiëntiescore in actieve staat (EffACTIVE) hoger dan of gelijk zijn aan de minimale efficiëntiedrempelwaarden in actieve staat die hieronder worden weergegeven.\n\n| Producttype | Minimale EffACTIVE |\n|-------------|--------------------|\n| **1 stopcontact** | |\n| Rack | 13,0 |\n| Toren | 11,0 |\n| **2 stopcontacten** | |\n| Rack | 18,0 |\n| Toren | 12,0 |\n| Blade of meerdere knooppunten | 20,0 |\n| **4 stopcontacten** | |\n| Rack | 16,0 |\n| Blade of meerdere knooppunten | 9,6 |",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 11"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt de berekening van de efficiëntie in actieve staat voor elk servermodel op basis van de EN 303470-meetmethode. Indien verschillende configuraties van het servermodel worden voorgesteld voor gebruik, moeten de geteste prestaties van de hoge en de lage configuratie worden aangegeven. Verificatie kan ook de vorm aannemen van testresultaten voor een model met de specifieke te gebruiken configuratie.\n\nTestresultaten verkregen voor het doel van CE-markering of keurmerkkwalificatie, uitgevoerd volgens de gelijkwaardige testnormen, kunnen worden gebruikt ter verificatie."
+                }
+              },
+              {
+                "code": "TS2",
+                "title": "ICT-werkgebied – temperatuur en luchtvochtigheid",
+                "subtitle": "Van toepassing:",
+                "specification": "• Op de aanschaf van milieuvriendelijkere IT-apparatuur.\n• In geval van luchtkoeling en waar het datacentrum is ontworpen voor besparende en/of vrije koeling. Toepasselijke klassen voor de operationele toestand worden beschreven in bijlage I.\n\nICT-hardware ondersteunt de werking binnen de toegestane luchtvochtigheid en het droge temperatuurbereik van operationele toestand klasse A3 van de Verordening inzake ecologisch ontwerp (EU) 2019/424 waarin de eisen voor het ecologische ontwerp van servers en gegevensopslagproducten is vastgesteld.\n\nDe apparatuur moet worden getest in functie van het toegestane bereik gedurende minimaal 88 bedrijfsuren (werking op hoge temperatuur is niet bedoeld voor continu gebruik). De testprocedure moet representatief zijn voor echte operationele toestanden (zie de bijbehorende toelichting).\n\nTestmethoden die zijn opgenomen in de Europese normen inzake de operationele toestandsklasse van servers, ontwikkeld in antwoord op het concept-normalisatiemandaat onder de Verordening inzake ecologisch ontwerp (EU) 2019/424, kunnen eveneens worden gebruikt voor dit doel.\n\nHet energieverbruik van de ventilator onder normale en verhoogde invoertemperaturen moet ook worden gerapporteerd om te kunnen valideren dat er energie wordt bespaard.\n\n*Van toepassing in geval van vloeistofkoeling*\n\nICT-hardware moet de werking binnen het temperatuurbereik van het toevoerwater ondersteunen zoals aangegeven in de aanbesteding met verwijzing naar klassen W4 en W5 in bijlage II.\n\n**Toelichting 1: Representatief thermisch testen van ICT-apparatuur**\n\nDeze aantekening identificeert de basis van het representatief thermisch testen van ICT-apparatuur. Om de testprocedure representatief te laten zijn voor echte operationele omstandigheden, moet deze zijn ontworpen voor het simuleren van:\n\n• verlopende veranderingen van korte duur onder invloed van de koelapparatuur, bijvoorbeeld de overgang van vrije koeling naar een mechanisch systeem;\n• kortstondige intensieve blootstellingsperioden onder invloed van omgevingsomstandigheden, bijvoorbeeld tijdens aanhoudende hittegolven in de zomer; en\n• een indicatieve frequentie van beide bovenstaande gebeurtenissen tijdens een bedrijfsjaar.\n\n**Toelichting 2: Thermische prestaties en ingezet vermogen**\n\nHet is belangrijk om op te merken dat het toekennen van extra punten aan A3-servers moet worden overwogen in het kader van of een aangewezen A2-server of A3-servers het totale ingezette vermogen reduceren.\n\nIndien het verlies van capaciteit, gedreven door het ondersteunen van de servers op 40°C, resulteert in meer ingezette servers, mogen de extra punten niet worden toegekend.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 12"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet specificaties en verklaringen van de fabrikant overleggen voor elk ICT-apparaat.\n\nDe inschrijver moet verklaren dat de werking van de servermodellen voor een geschat aantal uur binnen het toegestane bereik is getest gedurende een opgegeven tijdperiode. De testspecificatie moet worden verstrekt.\n\nInformatie en testresultaten verstrekt voor doeleinden van CE-markering kunnen worden gebruikt als verificatie."
+                }
+              },
+              {
+                "code": "TS3",
+                "title": "Ontwerp voor reparatie en upgraden van servers en gegevensopslag",
+                "subtitle": "Van toepassing op de aanbesteding van nieuwe servers en gegevensopslag in het datacentrum van een onderneming.",
+                "specification": "De inschrijver geeft duidelijke instructies om een niet-destructieve reparatie of vervanging van de volgende componenten mogelijk te maken:\n\n– apparaten voor gegevensopslag;\n– geheugen;\n– processor (CPU);\n– moederbord;\n– uitbreidingskaarten/grafische kaarten;\n– voedingsunit (power supply unit, PSU);\n– ventilatoren;\n– accu's.\n\nDe instructies moeten ten minste voor elke noodzakelijke reparatie en component de volgende informatie bevatten:\n\n1. de soort handeling;\n2. het type en nummer van de ontgrendelen bevestigingstechniek(en);\n3. de benodigde gereedschappen.\n\nDe instructies worden beschikbaar gesteld aan bevoegde derde partijen, waaronder tussenpersonen, reparateurs en leveranciers van reserveonderdelen, recyclingbedrijven en onderhoudspartijen, via registratie op de webpagina van de fabrikant. Deze instructies moeten voor een periode van ten minste 8 jaar nadat het serverproduct op de markt is geplaatst beschikbaar worden gesteld.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 14"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver geeft toegang tot de instructies voor reparatie voor doeleinden van verificatie. Informatie over reparaties moet volgens EN 45559:2019 worden verstrekt: methoden voor het verstrekken van informatie met betrekking tot aspecten van materiaalefficiëntie van energiegerelateerde producten. Testresultaten verkregen voor doeleinden van CE-markering kunnen worden gebruikt als verificatie."
+                }
+              },
+              {
+                "code": "TS6",
+                "title": "Beste praktijken koelsysteem – nieuwbouw of modernisatie van datacentra",
+                "subtitle": "Van toepassing op:",
+                "specification": "• De bouw van een nieuw datacentrum;\n• De uitbreiding van een bestaand gebouw met een nieuw datacentrum en infrastructuur voor de serverruimte;\n• De consolidatie van bestaande serverruimtes en/of datacentra in nieuwe of bestaande datacentra.\n\nDe inschrijver moet aantonen dat het ontwerp de 'verwachte' beste praktijken integreert die worden vermeld voor de volgende ontwerpaspecten in de laatste versie van [EU Gedragscode/EN50600 TR09-1]:\n\n• beheer en ontwerp van de luchtstroom\n• de koelinstallatie\n• airconditioners/luchtbehandeling computerruimte\n\nDaarnaast moeten, waar mogelijk, vrije koeling en besparende koelmethoden worden geïmplementeerd (zie ook de bijbehorende toelichting) en een beoordeling van toekomstige klimaatweisbaarheid en risico's voor de koelsystemen worden uitgevoerd.\n\n**Toelichting: vrije koeling en besparende koelmethoden**\n\nVrije koeling/besparende koeling heeft betrekking op ontwerpen van koelinstallaties die profiteren van koele omgevingsomstandigheden om gedeeltelijk of volledig te voldoen aan alle koelvereisten van de faciliteit, zodat de afhankelijkheid van enige vorm van mechanische koeling, waaronder compressoren, wordt verminderd of zelfs volledig verwijderd en daardoor een aanzienlijke verlaging van het energieverbruik mogelijk maakt.\n\nDe mogelijkheden voor het gebruik van vrije koeling zijn toegenomen in koelere en drogere klimaten en waar een verhoogde ingestelde temperatuur wordt gebruikt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 17"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet ontwerpen en tekeningen overleggen die de beste praktijken van *Gedragscode/EN 50600 TR09-1* integreren. De aanbestedende overheidsdienst behoudt zich het recht voor een externe audit van het datacentrum aan te vragen om de implementatie van de beste praktijken te verifiëren. In geval van deelname aan de EU Gedragscode moet de inschrijver het ingevulde 'verslagformulier'⁵ indienen ter registratie bij de EU Gedragscode, inclusief de beschrijving van het implementatieplan voor de verwachte praktijken. Bewijs van de deelnamestatus toegekend door het DG gezamenlijk onderzoekscentrum van de Europese Commissie moet eveneens worden overlegd.\n\n*Aanvaarding als deelnemer van de EU Gedragscode en implementatie van de beste praktijken worden ook bewaakt onder een clausule van contractuitvoering.*\n\n⁵https://e3p.jrc.ec.europa.eu/publications/ict-code-conduct-reporting-form-participants-and-endorsers-guidelines"
+                }
+              },
+              {
+                "code": "TS7",
+                "title": "Beste praktijken koelsysteem – bestaande colocatie- of hosting datacentra",
+                "subtitle": "Van toepassing op:",
+                "specification": "• De uitbreiding van een bestaand gebouw met een nieuw datacentrum en/of infrastructuur voor de serverruimte\n• De aanschaf van colocatie-services\n• De aanschaf van hostingservices\n• De aanschaf van cloudservices\n\nDe inschrijver moet aantonen dat het datacentrum de 'verwachte' beste praktijken integreert die worden vermeld voor de volgende ontwerpaspecten in de laatste versie van [EU Gedragscode EN50600 TR09-1]:\n\n• beheer en ontwerp van de luchtstroom\n• de koelinstallatie\n• airconditioners/luchtbehandeling computerruimte\n\nDaarnaast moeten, waar mogelijk, vrije koeling en besparende koelmethoden worden geïmplementeerd (zie ook de bijbehorende toelichting).\n\n**Toelichting: vrije koeling en besparende koelmethoden**\n\nVrije koeling/besparende koeling heeft betrekking op ontwerpen van koelinstallaties die profiteren van koele omgevingsomstandigheden om gedeeltelijk of volledig te voldoen aan alle koelvereisten van de faciliteit, zodat de afhankelijkheid van enige vorm van mechanische koeling, waaronder compressoren, wordt verminderd of zelfs volledig verwijderd en daardoor een aanzienlijke verlaging van het energieverbruik mogelijk maakt.\n\nDe mogelijkheden voor het gebruik van vrije koeling zijn toegenomen in koelere en drogere klimaten en waar een verhoogde ingestelde temperatuur wordt gebruikt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet [actuele deelname aan de EU Gedragscode or externe verificatie van implementatie van de verwachte praktijken zoals vermeld in EN50600 TR09-1] aantonen.\n\nDe inschrijver moet het ingevulde rapportageformulier overleggen⁶ waarin de implementatiestatus van de verwachte beste praktijken worden beschreven voor alle hierboven genoemde ontwerpaspecten. De aanbestedende overheidsdienst behoudt zich het recht voor een verslag van een geschikte externe audit van het datacentrum aan te vragen om de implementatie van de beste praktijken te verifiëren. Een rechtvaardiging voor het ontbreken van de vermelde 'verwachte' beste praktijken moet worden overlegd.\n\n⁶https://e3p.jrc.ec.europa.eu/publications/ict-code-conduct-reporting-form-participants-and-endorsers-guidelines"
+                }
+              },
+              {
+                "code": "TS8",
+                "title": "Milieubewaking",
+                "subtitle": "Van toepassing op:",
+                "specification": "• De bouw van een nieuw datacentrum\n• Uitbreiding van een bestaand gebouw met een nieuw datacentrum en infrastructuur voor de serverruimte\n• Consolidatie van bestaande serverruimtes en/of datacentra in nieuwe of bestaande datacentra.\n\n*Het criterium moet worden aangepast naar de plaatselijke beschikbaarheid van stadsverwarmingssystemen en -netwerken, die hergebruik van warmte op dezelfde locatie kunnen bevatten. Een uitgebreide technische specificatie wordt aanbevolen indien er al toegang is tot dergelijke netwerken.*\n\nHet datacentrum moet aangesloten zijn op [percentage te bepalen door de aanbestedende overheidsdienst] % van de afvalwarmte van het datacentrum en dit ook leveren, uitgedrukt als de energiehergebruikfactor (Energy Reuse Factor, ERF) van plaatselijke warmteverbruikers.[7]\n\nDe ERF moet voor elke faciliteit worden berekend volgens EN 50600-4-6:2020 of een gelijkwaardige norm.\n\n[7] Dit kan verbruikers bevatten op dezelfde locatie of verbonden met het datacentrum via een stadsverwarmingsnetwerk.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 20"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet berekeningen en ontwerpen van engineeringtekeningen overleggen voor systemen en de verbinding van warmteruggebruik. Bewjsstukken van contractuele regelingen of intentieverklaringen moeten worden verkregen van de operator van het netwerk.\n\nDe aanbestedende overheidsdienst behoudt zich het recht voor een verslag van een geschikte externe audit van het datacentrum aan te vragen om de implementatie van dit criterium te verifiëren. Een externe verificatie van de ERF kan worden geaccepteerd als bewijs.\n\nExtern geverifieerde energiebeheersystemen (op basis van de ISO 50001) of milieubeheersystemen (op basis van EMAS of ISO 14001) die de berekende ERF rapporteren, kunnen ook als bewijs worden geaccepteerd."
+                }
+              },
+              {
+                "code": "TS9",
+                "title": "Hernieuwbare energiefactor (REF)",
+                "subtitle": "Van toepassing op:",
+                "specification": "• De bouw van een nieuw datacentrum\n• Uitbreiding van een bestaand gebouw met een nieuw datacentrum en infrastructuur voor de serverruimte\n• Consolidatie van bestaande serverruimtes en/of datacentra in nieuwe of bestaande datacentra.\n\n*Op te nemen wanneer het datacentrum wordt beheerd door een derde partij. De aanbestedende overheidsdienst wordt aangeraden de markt met potentiële dienstverleners en plaatselijke beschikbaarheid van levering te testen alvorens dit criterium te gebruiken.*\n\nDe hernieuwbare energiefactor (Renewable Energy Factor, REF) van het datacentrum moet gelijk zijn aan 1 (100% hernieuwbaar). De REF voor geleverde en verbruikte energie in het datacentrum moet worden berekend volgens EN 50600-4-3.\n\nDe elektriciteit die bijdraagt aan de REF moet afkomstig zijn uit hernieuwbare bronnen, zoals gedefinieerd door Richtlijn 2009/28/EG.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 21"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De REF en de gegevens over levering en verbruik van elektriciteit, en de loadprofielen waarop de berekeningen zijn gebaseerd, moeten worden aangegeven.\n\nEen externe verificatie van de REF kan worden geaccepteerd als bewijs.\n\nEen extern geverifieerd energiebeheersysteem (op basis van de ISO 50001) of milieubeheersysteem (op basis van EMAS of ISO 14001) die de berekende REF rapporteren, kunnen ook als bewijs worden geaccepteerd."
+                }
+              },
+              {
+                "code": "TS10",
+                "title": "Aardopwarmingspotentieel van mengsel van koelmiddelen",
+                "subtitle": "Van toepassing op:",
+                "specification": "• De bouw van een nieuw datacentrum\n• Uitbreiding van een bestaand gebouw met een nieuw datacentrum en infrastructuur voor de serverruimte\n• Consolidatie van bestaande serverruimtes en/of datacentra in nieuwe of bestaande datacentra.\n\n*Op te nemen wanneer het datacentrum wordt beheerd door een derde partij.*\n\nHet gewogen gemiddelde van het aardopwarmingspotentieel (GWP) voor het mengsel van koelmiddelen dat wordt gebruikt in het koelsysteem van het datacentrum mag niet hoger zijn dan 10, tenzij wordt bewezen dat die koelmiddelen niet gebruikt kunnen worden om uitzonderlijke redenen of de energie-efficiëntie van de koelsystemen zou verminderen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 21"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Inschrijvers moeten de berekening van het gewogen gemiddelde van het aardopwarmingspotentieel rapporteren, met inbegrip van de voorraad van koelmiddelen die worden gebruikt op de locaties of om de dienst te verlenen, en consistentie vertonen met de methode die wordt beschreven in bijlage IV van de Verordening (EU) nr. 517/2014.\n\nEen extern geverifieerd energiebeheersysteem (ISO 50001) of milieubeheersysteem (EMAS of ISO 14001) dat het gebruik van koelmiddelen rapporteert, kan als bewijs worden geaccepteerd.\n\nUitzonderlijke omstandigheden die het gebruik van koelmiddelen met gewogen gemiddelden van het GWP tussen 0 en 10 verhinderen, worden gedocumenteerd."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "gunningscriteria",
+      "title": "Gunningscriteria",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als gunningscriteria. Daarmee wordt vastgelegd op basis waarvan de inschrijvingen inhoudelijk worden beoordeeld en de economisch meest voordelige inschrijving wordt vastgesteld.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale gunningscriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Raadpleeg de onderstaande tabel met alle gunningscriteria en check welke van toepassing zijn op de aanbesteding.",
+        "Neem de relevante kerncriteria en bijbehorende contractuele voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "datacentra",
+            "label": "Kerncriteria voor datacentra, serverruimtes en cloudservices",
+            "label_short": "datacentra, serverruimtes en cloudservices"
+          }
+        ],
+        "default_main_tab": "datacentra",
+        "data": {
+          "datacentra": {
+            "core_criteria": [
+              {
+                "code": "AC1",
+                "title": "Server-vermogen in ruststand",
+                "subtitle": "Van toepassing op de aanschaf van milieuvriendelijkere IT-apparatuur.",
+                "specification": "*Dit criterium moet alleen worden gebruikt in combinatie met TS1. Aan servers die voldoen aan TS11 kunnen dan extra punten worden toegekend voor de vermogensprestaties in ruststand.*\n\nDit is alleen van toepassing wanneer het producttype (bijv. rek- of torenservers, servers met 1 stopcontact of met 2 stopcontacten) en de systeemkenmerken die het stroomverbruik beïnvloeden (bijv. CPU-prestaties, server met of zonder stroomredundantie, geheugen, aanvullende apparaten), worden beschreven in de technische specificatie.\n\nMet uitzondering van robuuste servers, kunnen aan HPC-servers (High Performance Computing) en servers met geïntegreerde APA's (Auxiliary Performance Accelerators) maximaal x punten worden toegekend (nog te bepalen). Punten worden toegekend aan servermodellen op basis van het niveau van verbetering ten opzichte van de minimale prestatiedrempelwaarden, zoals berekend voor een servertype in overeenstemming met de Verordening (EU) 2019/424 van de Commissie waarin de eisen voor het ecologische ontwerp zijn vastgelegd voor servers en gegevensopslagproducten.\n\n**Toelichting: berekenen van de stroom in ruststand volgens Richtlijn (EU) 2019/424 van de Commissie**\n\nEN 303 470 is gebaseerd op de SERT versie 2-testmethode en bevat een specifieke stroomtest in ruststand, actieve stroomberekening en actieve efficiëntiestandaard. Onder de vereisten van het ecologische ontwerp, moet deze informatie openbaar worden gemaakt door fabrikanten. Om de kerncriteria te gebruiken, moet de minimale drempelwaarde voor elk servertype worden berekend op basis van de aanvullende servercomponenten die opgenomen moeten worden in de inschrijving en in de aanbesteding.\n\nDe methode van het ecologische ontwerp wordt gedetailleerd beschreven in bijlage III van dit criteriadocument. Elke drempelwaarde moet worden bepaald volgens de volgende vergelijking:\n\nPidle = Pbase + ∑Padd_i\n\nwaarbij Pbase de toegestane basisstroom is in ruststand in tabel 3, en ∑Padd_i de som van de toegestane stroom in ruststand voor toepasselijke, aanvullende componenten zoals bepaald in tabel 4. Voor bladeservers wordt Pidle berekend als de totaal gemeten stroom gedeeld door het aantal geïnstalleerde bladeservers in het geteste bladechassis.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 23"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet details verstrekken over de berekening van het stroomverbruik van de individuele server in ruststand op basis van EN 303470-testen en in lijn met Verordening (EU) 2019/424 van de Commissie (zie ook de bijbehorende toelichting). Indien verschillende configuraties van de servermodellen worden voorgesteld voor gebruik, moeten de geteste prestaties van de hoge en de lage configuratie worden aangegeven. Als alternatief kan de inschrijver ook naleving aantonen door een testrapport van een vergelijkbaar geconfigureerde server van hetzelfde model te overleggen."
+                }
+              },
+              {
+                "code": "AC3",
+                "title": "Servergebruik",
+                "subtitle": "Van toepassing op:",
+                "specification": "• De aanschaf van IT-virtualisatie- of consolidatiediensten;\n• De aanschaf van beheer- en onderhoudsdiensten voor het datacentrum of de serverruimte van een onderneming.\n\n*Let op: Alleen op te nemen wanneer het datacentrum wordt beheerd door een derde partij.*\n\nPunten worden toegekend aan inschrijvers op basis van het jaarlijkse servergebruik in:\n\n• bestaand beheerde datacentra;\n• vergelijkbaar omvang en equivalent aan de te leveren diensten.\n\nOm het servergebruik te berekenen moet de inschrijver volgende informatie verstrekken:\n\n1. Het gemiddelde van servergebruikspercentage (U) voor vergelijkbare faciliteiten (bepaald op basis van bedrijfsratio server/IT-apparatuur8) wordt elk kwartaal gerapporteerd aan de aanbestedende overheidsdienst als een voortdurende inschrijving.\n2. De inschrijver rapporteert de minimale en de maximale bedrijfsratio's die voor deze berekening zijn gebruikt.\n3. Diensten die de aanbestedende overheidsdienst gebruikt om te waarborgen dat het voordeel van verbeterde bedrijfsratio's aan de klantenovereenkomst worden geleverd met behulp van gedeelde apparatuur versus 'dedicated' of 'bare metal' hosting. Dit kan bijv. plaatsvinden met een gemiddeld aantal machines per workload (berekend over de verschillende 'ingeschakelde' workloads in het datacentrum).\n\n8Voor virtuele machines/containers; bedrijfsratio's: het aantal actieve workloads / het totale aantal virtuele machines op geplande tijden. Voor servers/hardware; bedrijfsratio's: het totale aantal fysieke machines/servers met workloads / het totale aantal fysieke machines\n\n**Scoring:**\n\n• Maximale punten (x punten – nog te bepalen): de inschrijver vertoont een bedrijfsratio (U) die tenminste 70 % is.\n• Halve punten (0,5x punten – nog te bepalen): de inschrijver vertoont een bedrijfsratio die tussen de 40 % en 70 % ligt.\n• Kwart punten (0,25x punten – nog te bepalen): de inschrijver vertoont een bedrijfsratio die tussen de 25 % en 40 % ligt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 24"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt historische gegevens over een volledige periode van 12 maanden voor alle relevante faciliteiten over de gemiddelde, maximale en minimale bedrijfsratio's (U) zoals vastgelegd door interne bedrijfssoftware en controle. De inschrijver geeft tevens aan hoe deze statistieken in een rapportageformaat zullen worden verstrekt tijdens het contract, evenals de controle-/audit- en verificatiemogelijkheden die kunnen worden uitgevoerd door de aanbestedende overheidsdienst of hun externe auditors."
+                }
+              },
+              {
+                "code": "AC4",
+                "title": "Beheer van afgedankte servers",
+                "subtitle": "Van toepassing op de aanschaf van milieuvriendelijkere IT-apparatuur.",
+                "specification": "*Dit criterium moet worden gebruikt in combinatie met TS4. Inschrijvers moeten aantonen hoe ze verder gaan dan de minimale technische vereisten.*\n\nPunten worden toegekend voor een dienst die aantoonbaar hoger percentage doet bereiken van apparatuur die wordt voorbereid op hergebruik ten opzichte van apparatuur dat wordt gerecycled of verwijderd.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 26"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver verstrekt historische gegevens over het percentage apparatuur dat is voorbereid op hergebruik versus apparatuur dat is gerecycled of verwijderd. Deze kunnen gebaseerd zijn op bestaande contracten van de inschrijver en ondersteund met jaarrapporten."
+                }
+              },
+              {
+                "code": "AC5",
+                "title": "Effectiviteit stroomverbruik (PUE) – Ontworpen PUE",
+                "subtitle": "Van toepassing op:",
+                "specification": "• De bouw van een nieuw datacentrum;\n• De uitbreiding van een bestaand gebouw met een nieuw datacentrum en infrastructuur voor de serverruimte;\n• De aanschaf van consolidatiediensten voor bestaande gedistribueerde serverruimtes in een nieuw datacentrum;\n• De aanschaf van colocatie-services;\n• De aanschaf van hostingservices;\n• De aanschaf van cloudservices.\n\n*Let op: Alleen op te nemen wanneer het datacentrum wordt beheerd door een derde partij.*\n\nPunten kunnen aan aanbestedende overheidsdiensten worden toegekend die de inschrijvers aanmoedigen maximaal energie-efficiëntie na te streven door het design-doelwit te verbeteren dat beschreven wordt in hun technische inschrijving, uitgedrukt als ontworpen PUE bij volledig laden.\n\n*Indien het datacentrum vrije koeling kan gebruiken, wordt aangeraden te refereren naar de klimaatzone waarin deze faciliteit is geïmplementeerd in de aanbesteding.*\n\nDe ontworpen PUE moet worden gebaseerd op een energiemodel van een nieuw gebouwd faciliteit of modelleringsresultaten van grote renovaties. Het model gebruikt standaard instellingen voor IT-apparatuur en ontwerpt zoveel mogelijk volgens de richtlijnen in de nieuwste versie van ISO/IEC 30134-2:2016, waarbij in punt 7.1 een model dat gedetailleerd is als niveau 2 is voorgeschreven.\n\nElke grote afwijking ten opzichte van de ontworpen/gemodelleerde PUE van een bestaand datacentrum moet worden gemeld aan de overheidsdienst. Het herbergen van nieuwe en aanvullende IT-apparatuur in een volledige of gedeeltelijk geladen datacenter zou moeten resulteren in een verbetering in de gemiddelde ontworpen PUE.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 27"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de berekening van het ontworpen-PUE overleggen, gemodelleerd volgens de richtlijnen in ISO/IEC 30134-2:2016, met vermelding van minimaal het volgende:\n\n• klimaatzone waarin het datacentrum gelegen is;\n• bijbehorende temperaturen voor vrije koeling gespecificeerd in bijlage I;\n• opgegeven bereik bij volledige belasting.\n\nIn het geval dat de inschrijver een bestaand datacentrum van vergelijkbare omvang gebruikt, of het infrastructuur uitbreidt, moet hij of zij een bewijs overleggen van de huidige gemeten PUE volgens de bijbehorende PUE (zie hieronder AC6)."
+                }
+              },
+              {
+                "code": "AC6",
+                "title": "Effectiviteit stroomverbruik (PUE) – PUE verbeteringspotentieel",
+                "subtitle": "Van toepassing op:",
+                "specification": "• De aanschaf van colocatie-services;\n• De aanschaf van hostingservices;\n• De aanschaf van cloudservices.\n\n*Let op: Alleen op te nemen wanneer het datacentrum wordt beheerd door een derde partij.*\n\nTen eerste vermeldt de inschrijver een beschrijving van het energie-efficiëntieverbeteringsplan waarin het geschatte verbeteringspotentieel voor een datacentrum waarbij IT-apparatuur wordt gehost gespecificeerd wordt, en de wijze waarop dit gerealiseerd wordt. Dit vormt een contract voor contractuitvoering CPC 8.\n\nDe inschrijver rapporteert hierbij volledige jaargemiddelde PUE-prestaties van de faciliteit voor elk van de afgelopen drie volledige jaren. Een verbeteringstraject wordt vastgesteld dat de verwachte reductie in PUE laat zien voor de komende drie jaar, inclusief benoemde interventies.\n\nTen tweede rapporteert de inschrijver de gemeten en annualized PUE (jaargemiddelde) in overeenstemming met en volgens de aanbevelingen van ISO/IEC 30134-2:2016.\n\nEr worden punten toegekend voor het verstrekken van een jaarlijkse aanvullende PUE-metingen die op grote schaal worden uitgevoerd volgens de in ISO/IEC 30134-2:2016 benoemde niveaus (d.w.z. per individuele serverrack of groepen racks). De verstrekking van specifieke metingen van deze aard is tot dusver een activiteit waarvoor vrijwel enkel grote hyperscaleoperaties over de nodige systemen en/of kennis beschikken. Het wordt niet verwacht dat overheidsdiensten dergelijke rapportages in aanvulling op de maandelijkse jaargemiddelde PUE-waarden zullen verstrekken gedurende de eerste contractperiode.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 27"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver overlegt de metingen van annualized PUE volgens ISO/IEC 30134-2:2016 voor de gehele faciliteit over de afgelopen drie jaar. Aanvullende PUE-metingen volgens de in ISO/IEC 30134-2:2016 benoemde niveaus (d.w.z. per individuele serverrack of groepen racks) moeten worden gerapporteerd.\n\nDe inschrijver verstrekt bewijs van toewijding van het datacentrum aan metingen volgens de ISO 50001 (energiemanagement) en/of ISO 14001 (environmental management)/EMAS, waar de berekende PUE (annualized of hoger gedetailleerd niveau) wordt gerapporteerd."
+                }
+              },
+              {
+                "code": "AC10",
+                "title": "Hernieuwbare energiefactor (REF)",
+                "subtitle": "Van toepassing op:",
+                "specification": "• De bouw van een nieuw datacentrum;\n• De uitbreiding van een bestaand gebouw met een nieuw datacentrum en infrastructuur voor de serverruimte;\n• De aanschaf van consolidatiediensten voor bestaande gedistribueerde serverruimtes in een nieuw datacentrum;\n• De aanschaf van colocatie-services;\n• De aanschaf van hostingservices;\n• De aanschaf van cloudservices.\n\n*Let op: Alleen op te nemen wanneer het datacentrum wordt beheerd door een derde partij.*\n\n*Dit moet niet worden gebruikt als alternatief of in combinatie met TS9.*\n\n*Het wordt niet aanbevolen dit in te stellen zonder de PUE-criteria te gebruiken (AC5 en AC6 hierboven), aangezien anders subsidies voor het gebruik van hernieuwbare energie aanbestedingsdiensten geen motivatie geven aan hun energieverbruik te reduceren. Het wordt daarom aangeraden te benadrukken dat het PUE-criterium belangrijker is voor de aanbesteding, door bijvoorbeeld de weging van de scores te verhogen ten opzichte van de REF.*\n\nPunten worden toegekend aan leveranciers met een hogere hernieuwbare energiefactor (Renewable Energy Factor, REF)9. De REF moet worden berekend volgens de EN 50600-4-3.\n\nDe elektriciteit die bijdraagt aan de REF moet afkomstig zijn uit hernieuwbare bronnen, zoals gedefinieerd door Richtlijn 2009/28/EG10.\n\n9EN 50600-4-3 ziet op de impact van elektriciteitsproductie bij niet-hernieuwbare energie en voor de mate van beschikbaarheid op vraag van hernieuwbare energie. Deze norm biedt een methode voor het meten van het gebruik van hernieuwbare energie in datacentra en houdt rekening met verschillende elektriciteitstoeleveringsscenario's die varieren van 100% hernieuwbaar terwijl het datacentrum operationeel is (in realtime/op vraag – die als perfect wordt gezien) tot afhankelijk van de algehele mix van elektriciteitsopwekking voor het nationale net (die als niet-hernieuwbaar aangemerkt wordt), en verschillende varianten daartussen die steunen op 'matching' van het hernieuwbare energieaanbod.\n\n10De aanbestedende overheidsdienst kan in de aanbesteding aangeven dat hij/zij eventuele contracten voorrang geeft die gebruikmaken van hernieuwbare energie, opgewekt op- en/of nabij de locatie.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 31"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De REF en de gegevens over levering en verbruik van elektriciteit, en de loadprofielen waarop de berekeningen zijn gebaseerd, moeten worden aangegeven.\n\nEen externe verificatie van de REF kan worden geaccepteerd als bewijs.\n\nEen extern geverifieerd energiebeheersysteem (op basis van de ISO 50001) of milieubeheersysteem (op basis van EMAS of ISO 14001) die de berekende REF rapporteren, kunnen ook als bewijs worden geaccepteerd."
+                }
+              },
+              {
+                "code": "AC11",
+                "title": "Aardopwarmingspotentieel van mengsel van koelmiddelen",
+                "subtitle": "Van toepassing op:",
+                "specification": "• De bouw van een nieuw datacentrum;\n• De uitbreiding van een bestaand gebouw met een nieuw datacentrum en infrastructuur voor de serverruimte;\n• De aanschaf van consolidatiediensten voor bestaande gedistribueerde serverruimtes in een nieuw datacentrum;\n• De aanschaf van colocatie-services;\n• De aanschaf van hostingservices;\n• De aanschaf van cloudservices.\n\n*Let op: Alleen op te nemen wanneer het datacentrum wordt beheerd door een derde partij.*\n\nPunten worden toegekend afhankelijk van het gewogen gemiddelde van het aardopwarmingspotentieel (GWP) voor het mengsel van koelmiddelen dat wordt gebruikt in het koelsysteem van het datacentrum.\n\n**Scoring:**\n\n• Het gewogen gemiddelde ligt beneden 20: x punten (nog te bepalen);\n• Het gewogen gemiddelde ligt beneden 10: 2 × x punten (nog te bepalen);\n• Het gewogen gemiddelde ligt beneden 5: 3 × x punten (nog te bepalen);\n• Het gewogen gemiddelde ligt beneden 1: 4 × x punten (nog te bepalen).\n\nHet gewogen gemiddelde GWP is berekend als:\n\n*gewogen gemiddelde GWP = (GWPi × Qi) / Qtot*\n\nwaarbij:\n\n*GWPi*: de aardopwarmingspotentieel van het koelmiddel i;\n\n*Qi*: de lading van het koelmiddel i;\n\n*Qtot*: de som van de ladingen van alle gebruikte koelmiddelen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 32"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "Inschrijvers moeten de berekening van het gewogen gemiddelde van het aardopwarmingspotentieel rapporteren, met inbegrip van de voorraad van koelmiddelen die worden gebruikt op de locaties of om de dienst te verlenen, en consistentie vertonen met de methode die wordt beschreven in bijlage IV van de Verordening (EU) nr. 517/2014.\n\nEen extern geverifieerd energiebeheersysteem (ISO 50001) of milieubeheersysteem (EMAS of ISO 14001) dat het gebruik van koelmiddelen rapporteert, kan als bewijs worden geaccepteerd."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "AC2",
+                "title": "Server ingezette stroomvraag",
+                "subtitle": "Van toepassing op de aanschaf van milieuvriendelijkere IT-apparatuur.",
+                "specification": "*Dit criterium wordt aanbevolen indien de aanbestedende overheidsdienst aanbestedingen wenst te ontvangen op basis van het stroomverbruik van de voorziene IT-workload om dit vervolgens te monitoren tijdens de werking. Te gebruiken in combinatie met CPC1.*\n\nPunten worden toegekend op basis van de ingezette stroomschatting berekend voor alle servertypes en de respectieve configuraties die worden ingezet in het datacentrum.\n\nDe prestaties van de verschillende serverconfiguraties kunnen worden geïnterpoleerd van hoge en lage testgegevens van de configuraties. De berekening kan worden gebaseerd op de workload die wordt vermeld door de aanbestedende overheidsdienst.\n\nMaximale punten worden toegekend aan de inschrijving met het laagste stroomverbruik. Aan alle andere inschrijvingen worden punten toegekend in verhouding tot de beste inschrijving.\n\n**Bijbehorende contractuele voorwaarde**\n\nDe inschrijver moet de berekening van de ingezette stroom in detail overleggen, op basis van [nog te bepalen]:\n\n• de ingezette stroommethode van EN 303470 met gestandaardiseerde workload, of\n• een testprotocol dat wordt bepaald door de aanbestedende overheidsdienst.\n\nWaar de prestaties van configuraties zijn geïnterpoleerd van testgegevens, moet informatie over de gebruikte methode worden verstrekt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 23"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet de berekening van de ingezette stroom in detail overleggen, op basis van [nog te bepalen]:\n\n• de ingezette stroommethode van EN 303470 met gestandaardiseerde workload, of\n• een testprotocol dat wordt bepaald door de aanbestedende overheidsdienst.\n\nWaar de prestaties van configuraties zijn geïnterpoleerd van testgegevens, moet informatie over de gebruikte methode worden verstrekt."
+                }
+              },
+              {
+                "code": "AC7",
+                "title": "Energieverbruik koelsysteem",
+                "subtitle": "Van toepassing op de bouw/modernisatie van een nieuw/bestaand datacentrum.",
+                "specification": "Punten worden toegekend op basis van het geschatte energieverbruik van het koelsysteem dat nodig is om het ontwerp van het datacentrum te beheren met het oog op de klimaatomstandigheden voor de locatie. Punten worden toegekend aan de inschrijving met het best presterende ontwerp (volledig aantal gespecificeerde punten).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 26"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet documentatie, modellering en berekeningen voor de schatting van het ontwerpproces overleggen."
+                }
+              },
+              {
+                "code": "AC8",
+                "title": "Hergebruik van afvalwarmte (voor nieuwe datacentra)",
+                "subtitle": "Het criterium moet worden aangepast aan de plaatselijke beschikbaarheid van stadsverwarmingssystemen en -netwerken. Het wordt aanbevolen een uitgebreid gunningscriterium op te stellen indien een overheidsdienst plaatselijke mogelijkheden vaststelt.",
+                "specification": "Punten worden toegekend aan inschrijvers die toezeggen meer dan x% [percentage nog te bepalen door de aanbestedende overheidsdienst] van de afvalwarmte van het datacentrum te leveren, uitgedrukt als de energiehergebruikfactor (ERF) van plaatselijke eindgebruikers. Een extra punt wordt gegeven voor elke 10% extra afvalwarmte dat het datacentrum levert.\n\nDe ERF moet voor elke faciliteit worden berekend volgens EN 50600-4-6:2020 of een gelijkwaardige norm.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 26"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet berekeningen in overeenstemming met ETSI ES 205 200-2-1 of een gelijkwaardige norm en de engineeringtekeningen van het ontwerp voor de hergebruiksystemen voor warmte en de aansluiting overleggen. Bewjsstukken van contractuele regelingen of intentieverklaringen moeten worden verkregen van potentiële warmteklanten."
+                }
+              },
+              {
+                "code": "AC9",
+                "title": "Hergebruik van afvalwarmte (voor beheerde diensten)",
+                "subtitle": "Van toepassing op:",
+                "specification": "• De aanbesteding van colocatiediensten\n• De aanbesteding van hostingservices\n• De aanbesteding van cloudservices\n• Het beheer en onderhoud voor het datacentrum/de serverruimte van een onderneming\n\n*Het wordt aanbevolen dit uitgebreide gunningscriterium te gebruiken wanneer een dienst wordt aanbesteed.*\n\nPunten worden toegekend op basis van de aangegeven energiehergebruikfactor (ERF) voor de faciliteiten die worden gebruikt om het contract uit te voeren. Punten worden toegekend naar rato van de inschrijver die de hoogste energiehergebruikfactor biedt.\n\nDe ERF moet voor elke faciliteit worden berekend volgens EN 50600-4-6:2020 of een gelijkwaardige norm.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 27"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De inschrijver moet berekeningen overleggen volgens EN 50600-4-6:2020 of een gelijkwaardige norm. Een externe verificatie van de ERF kan worden geaccepteerd als bewijs.\n\nExtern geverifieerde energiebeheersystemen (op basis van de ISO 50001) of milieubeheersystemen (op basis van EMAS of ISO 14001) die de berekende ERF rapporteren, kunnen ook als bewijs worden geaccepteerd."
+                }
+              },
+              {
+                "code": "AC10",
+                "title": "Hernieuwbare energiefactor (REF)",
+                "subtitle": "Van toepassing op:",
+                "specification": "• De aanbesteding van colocatiediensten\n• De aanbesteding van hostingservices\n• De aanbesteding van cloudservices\n• Het beheer en onderhoud voor het datacentrum/de serverruimte van een onderneming\n\n*Op te nemen wanneer het datacentrum wordt beheerd door een derde partij. De punten mogen alleen worden toegekend aan inschrijvers die voldoen aan de minimale eisen voor IT- en M&E-systeemprestaties. Voor cloudservices kan de op de load afgestemde REF worden gevraagd als gemiddelde waarde voor de locaties die de dienst verlenen.*\n\nPunten worden toegekend naar rato van de inschrijver die de hoogste op load afgestemde REF biedt voor elektriciteitsgebruik.\n\nDe REF voor geleverde en verbruikte energie in het datacentrum moet worden berekend volgens EN 50600-4-3.⁸ Het loadprofiel van het genererende vermogen moet dan zijn gerelateerd aan het verwachte loadprofiel van het datacentrum.\n\nDe elektriciteit die bijdraagt aan de REF moet afkomstig zijn uit hernieuwbare bronnen, zoals gedefinieerd door richtlijn 2009/28/EG.⁹\n\n⁸ EUROPESE NORM EN 50600-4-3 – Informatietechnologie – Faciliteiten en infrastructuren in datacentra – Deel 4-3: Hernieuwbare energiefactor\n\n⁹ Richtlijn 2009/28/EG van het Europees Parlement en de Raad van 23 april 2009 ter bevordering van het gebruik van energie uit hernieuwbare bronnen. Vanaf 30 juni 2021 is de definitie van hernieuwbare bronnen die is uiteengezet in Richtlijn 2018/2001/EU, met intrekking van Richtlijn 2009/28/EG, van toepassing.\n\n**Toelichting: Garantie van oorsprong**\n\nAlle EU-landen zijn wettelijk verplicht onder richtlijnen 2009/28/EG en 2004/8/EG om regels inzake garantie van oorsprong in te stellen voor elektriciteit uit hernieuwbare energiebronnen. Deze regels bieden een goede wettelijke basis voor verificatie. De huidige staat van de verplichte toepassing van regels inzake garantie van oorsprong kan tussen de lidstaten variëren.\n\nAls alternatief kan de leverancier onafhankelijk bewijs aanleveren van het feit dat een overeenkomstige hoeveelheid elektriciteit is gegenereerd uit bronnen die zijn gedefinieerd als hernieuwbaar (bijv. een verhandelbaar certificaat van een onafhankelijk afgevende instantie die is goedgekeurd door de overheid). Een ander alternatief zou zijn indien de geleverde elektriciteit een Type-1-keurmerk heeft met een definitie die ten minste even strikt is als die in richtlijn 2009/28/EG.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 27"
+                },
+                "contractual_condition": {
+                  "title": "Bijbehorende contractuele voorwaarde",
+                  "text": "De REF en de gegevens over levering en verbruik van elektriciteit, en de loadprofielen waarop de berekeningen zijn gebaseerd, moeten worden aangegeven.\n\nEen externe verificatie van de REF kan worden geaccepteerd als bewijs.\n\nExtern geverifieerde energiebeheersystemen (op basis van de ISO 50001) of milieubeheersystemen (op basis van EMAS of ISO 14001) die de berekende REF rapporteren, kunnen ook als bewijs worden geaccepteerd."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "uitvoeringsvoorwaarden",
+      "title": "Uitvoeringsvoorwaarden",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als contractuele uitvoeringsvoorwaarden. Ze borgen dat de verplichtingen worden nagekomen.",
+      "warnings": [
+        {
+          "severity": "orange",
+          "text": "Let op: De kerncriteria (minimale uitvoeringsvoorwaarden) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Raadpleeg de onderstaande tabel met alle uitvoeringsvoorwaarden en check welke van toepassing zijn op de aanbesteding.",
+        "Neem de voorwaarde op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n   a. Ga naar de tool en kies de relevante productcategorie.\n   b. Zet het [ambitieniveau](popup:VOORBEELD||De MVI criteriatool bevat een filter waar je het ambitieniveau kan bepalen.\n\n![Ambitieniveau filter](/ambitie-niveau.png)\n\nwww.mvicriteria.nl||) op BASIS.\n   c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n   d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "datacentra",
+            "label": "Kerncriteria voor datacentra, serverruimtes en cloudservices",
+            "label_short": "datacentra, serverruimtes en cloudservices"
+          }
+        ],
+        "default_main_tab": "datacentra",
+        "data": {
+          "datacentra": {
+            "core_criteria": [
+              {
+                "code": "CPC2",
+                "title": "Controle van gebruik IT-apparatuur",
+                "subtitle": "Van toepassing op de aanschaf van diensten voor het beheer en onderhoud van datacentra of serverruimtes van een onderneming.",
+                "specification": "*Op te nemen wanneer het datacentrum wordt beheerd door een derde partij. Te gebruiken in combinatie met AC3*\n\nDe opdrachtnemer moet gedurende het specifieke IT-project periodieke verslagen aanleveren van optimalisatie-analyse en het behalen van de doelstellingen voor gebruik die zijn overeengekomen met de klant.\n\nDe dienstverlener moeten maandelijks het gebruikspercentage van de servers in het datacentrum meten en rapporteren op basis van EN 50134-5.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 30"
+                },
+                "contractual_condition": null
+              },
+              {
+                "code": "CPC3",
+                "title": "Rapportage over de eindbestemming van servers, gegevensopslag- en netwerkapparatuur",
+                "subtitle": "Van toepassing op de aanschaf van diensten voor afgedankte servers, gegevensopslag- en netwerkapparatuur.",
+                "specification": "*Te gebruiken in combinatie met TS4.*\n\nDe opdrachtnemer moet een rapport aanleveren over de status van de apparatuur in de inventaris zodra alle items zijn verwerkt voor hergebruik, recycling of verwijdering. Het rapport moet de verhouding van items die zijn hergebruikt of gerecycled vermelden en of deze in de EU zijn gebleven of werden geëxporteerd.\n\nVoor apparatuur en componenten die in de EU zijn gerecycled, moeten de volgende bewjsstukken voor de behandelingsfaciliteiten worden geaccepteerd:\n\n• een vergunning afgegeven door de nationale bevoegde overheidsdienst in overeenstemming met artikel 23 van Richtlijn 2008/98/EG, of\n• een externe certificering van naleving met de technische vereisten van EN 50625-1 of een gelijkwaardige nalevingsregel.\n\nWaar apparatuur en componenten worden geëxporteerd voor hergebruik of recycling, moeten opdrachtnemers de volgende informatie over verzending en behandeling aanleveren:\n\n• verzendinformatie voor apparatuur die is bedoeld voor hergebruik in overeenstemming met bijlage VI van AEEA-richtlijn 2012/19/EU.\n\nVoor AEEA geëxporteerd voor behandeling buiten de EU, een externe certificering van naleving met de minimale AEEA-vereisten die zijn uiteengezet in het criterium, of met de technische vereisten van EN 50625-1 of een gelijkwaardige nalevingsregel.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 30"
+                },
+                "contractual_condition": null
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "CPC1",
+                "title": "Controle van IT-energieverbruik",
+                "subtitle": "Van toepassing op de aanschaf van diensten voor het beheer en onderhoud van datacentra of serverruimtes van een onderneming.",
+                "specification": "*Op te nemen wanneer het datacentrum wordt beheerd door een derde partij. Te gebruiken in combinatie met AC2.*\n\nDe opdrachtnemer moet maandelijks en jaarlijks gegevens aanleveren over de IT-apparatuur die aanwezig is in het datacentrum.\n\nDe controle van energieverbruik moet in lijn zijn met de eisen en aanbevelingen van norm EN 50600-2-2.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor datacentra, serverruimtes en cloudservices - Pag. 30"
+                },
+                "contractual_condition": null
+              }
+            ]
+          }
+        }
+      }
     }
   ]
 }
