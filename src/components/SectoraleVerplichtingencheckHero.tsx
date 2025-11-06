@@ -672,9 +672,9 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
                           onClick={() => handleSectoralAssessmentSelect('noodsituatie')}
                           className="group p-6 bg-white border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center"
                         >
-                          <span className="text-xl font-bold text-gray-900 block mb-3">Ja, noodsituatie</span>
+                          <span className="text-xl font-bold text-gray-900 block mb-3">Ja, noodrespons volksgezondheid</span>
                           <p className="text-sm text-gray-600 leading-relaxed">
-                            Urgente aanbestedingen in noodsituaties of crisissituaties.
+                            Aanbesteding in reactie op een acute bedreiging van de volksgezondheid, waarbij onmiddellijke actie noodzakelijk is.
                           </p>
                         </button>
                         
