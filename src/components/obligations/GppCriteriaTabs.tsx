@@ -50,6 +50,7 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
 }) => {
   const [mainTab, setMainTab] = useState<string>(defaultMainTab || mainTabs[0]?.key || '');
   const [subTab, setSubTab] = useState<'core_criteria' | 'extended_criteria'>('core_criteria');
+  const tabsContainerRef = React.useRef<HTMLDivElement>(null);
 
   const subTabs = [
     { key: 'core_criteria' as const, label: 'Kerncriteria', color: 'bg-red-500' },
@@ -528,6 +529,20 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
     }
   }, [mainTab, visibleSubTabs, subTab]);
 
+  // Auto-scroll active tab into view when it changes
+  React.useEffect(() => {
+    if (tabsContainerRef.current) {
+      const activeTab = tabsContainerRef.current.querySelector(`[data-state="active"]`);
+      if (activeTab) {
+        activeTab.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center'
+        });
+      }
+    }
+  }, [mainTab]);
+
   // Hide main tabs if there's only one tab
   const showMainTabs = mainTabs.length > 1;
 
@@ -536,12 +551,12 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
       {/* Main tabs - Product categories */}
       <Tabs value={mainTab} onValueChange={setMainTab} className="w-full">
         {showMainTabs && (
-          <TabsList className="flex flex-row gap-1 w-full h-auto p-1 justify-start bg-gray-100">
+          <TabsList ref={tabsContainerRef} className="flex flex-row gap-1 w-full h-auto p-1 justify-start bg-gray-100 overflow-x-auto flex-nowrap no-scrollbar">
             {mainTabs.map((tab) => (
               <TabsTrigger
                 key={tab.key}
                 value={tab.key}
-                className="px-4 py-2 text-sm data-[state=active]:bg-white data-[state=active]:text-blue-600 data-[state=active]:font-semibold"
+                className="px-4 py-2 text-sm whitespace-nowrap data-[state=active]:bg-white data-[state=active]:text-blue-600 data-[state=active]:font-semibold flex-shrink-0"
               >
                 {tab.label}
               </TabsTrigger>
