@@ -36,6 +36,29 @@ GPP_TO_MODULE_MAP = {
     'GPP: Electricity': 'gpp-electricity',
 }
 
+# Mapping from Dutch GPP names to module IDs
+DUTCH_GPP_TO_MODULE_MAP = {
+    'Levensmiddelen, cateringdiensten en verkoopautomaten': 'gpp-food-catering',
+    'Onderhoud van de openbare ruimte': 'gpp-public-space',
+    'Ondehoud van de openbare ruimte': 'gpp-public-space',  # Typo in CSV
+    'Textielproducten en -diensten': 'gpp-textiles',
+    'Textiles': 'gpp-textiles',  # English variant in CSV
+    'Textile products and services': 'gpp-textiles',  # English variant in CSV
+    'Computers, monitoren, tablets en smartphones': 'gpp-computers',
+    'Datacentra, serverruimtes en cloudservices': 'gpp-data-centres',
+    'Elektriciteit': 'gpp-electricity',
+    'Grafische apparatuur, verbruiksartikelen en printdiensten': 'gpp-imaging-equipment',
+    'Meubels': 'gpp-furniture',
+    'Meubilair': 'gpp-furniture',
+    'Ontwerp, bouw en beheer van kantoorgebouwen': 'gpp-office-buildings',
+    'Ontwerp, bouw en onderhoud van wegen': 'gpp-road-design',
+    'Straatverlichting en verkeerslichten': 'gpp-road-lighting',
+    'Verven, vernissen en wegmarkeringen': 'gpp-paints',
+    'Wegtransport': 'gpp-road-transport',
+    'Wegvervoer': 'gpp-road-transport',
+    'Binnenschoonmaakdiensten': 'gpp-cleaning',
+}
+
 # Manual mappings for special cases
 # These are CPV codes that don't appear in any CSV but need to be included
 MANUAL_MAPPINGS = {
@@ -100,14 +123,15 @@ CSV_SOURCES = [
         'module_id': 'ecodesign_products',
         'include_when': 'TRUE',
     },
-    {
-        'file': 'data/sources/cpv-gpp-mapping.csv',
-        'name': 'GPP',
-        'cpv_column': 'CPV CODE',
-        'value_column': 'Mapped GPP',
-        'value_map': GPP_TO_MODULE_MAP,
-        'skip_values': ['GPP: Not applicable'],
-    },
+    # Comment out the old GPP mapping as we'll use the Dutch one instead
+    # {
+    #     'file': 'data/sources/cpv-gpp-mapping.csv',
+    #     'name': 'GPP',
+    #     'cpv_column': 'CPV CODE',
+    #     'value_column': 'Mapped GPP',
+    #     'value_map': GPP_TO_MODULE_MAP,
+    #     'skip_values': ['GPP: Not applicable'],
+    # },
     {
         'file': 'data/sources/cpv-services-mapping.csv',
         'name': 'Services',
@@ -133,6 +157,83 @@ CSV_SOURCES = [
         'include_when': 'TRUE',
     },
 ]
+
+
+def process_dutch_gpp_csv(project_root, cpv_mappings, stats):
+    """Process the new Dutch GPP CSV with multiple module support."""
+    csv_path = project_root / 'data' / 'sources' / 'cpv-gpp-mapping-2024-11-24.csv'
+    source_name = 'Dutch GPP (2024-11-24)'
+
+    print(f"\nProcessing {source_name} CSV: {csv_path}")
+
+    if not csv_path.exists():
+        print(f"  WARNING: File not found, skipping")
+        return
+
+    source_stats = {'processed': 0, 'skipped': 0, 'new': 0, 'merged': 0, 'multi_module': 0}
+
+    with open(csv_path, 'r', encoding='utf-8-sig') as f:
+        reader = csv.DictReader(f)
+
+        for row in reader:
+            cpv_code = row['CPV Code'].strip()
+            modules_str = row['GPP Module(s)'].strip()
+
+            if not modules_str:
+                source_stats['skipped'] += 1
+                continue
+
+            # Split multiple modules by semicolon
+            module_names = [m.strip() for m in modules_str.split(';')]
+            module_ids = []
+
+            for module_name in module_names:
+                if module_name in DUTCH_GPP_TO_MODULE_MAP:
+                    module_id = DUTCH_GPP_TO_MODULE_MAP[module_name]
+                    if module_id not in module_ids:  # Avoid duplicates
+                        module_ids.append(module_id)
+                else:
+                    print(f"  WARNING: Unknown Dutch module name: '{module_name}' for CPV {cpv_code}")
+
+            if not module_ids:
+                source_stats['skipped'] += 1
+                continue
+
+            if len(module_ids) > 1:
+                source_stats['multi_module'] += 1
+
+            # Add or merge the modules for this CPV code
+            if cpv_code in cpv_mappings:
+                # Merge: add modules that aren't already present
+                for module_id in module_ids:
+                    if module_id not in cpv_mappings[cpv_code]:
+                        cpv_mappings[cpv_code].append(module_id)
+                        source_stats['merged'] += 1
+                # Sort using custom module order
+                cpv_mappings[cpv_code].sort(key=get_module_sort_key)
+            else:
+                # New CPV code
+                cpv_mappings[cpv_code] = module_ids
+                # Sort using custom module order
+                cpv_mappings[cpv_code].sort(key=get_module_sort_key)
+                source_stats['new'] += 1
+
+            source_stats['processed'] += 1
+
+            # Update module stats
+            for module_id in module_ids:
+                stats[f'module_{module_id}'] += 1
+
+    print(f"  Processed: {source_stats['processed']} CPV codes")
+    print(f"  New: {source_stats['new']}")
+    print(f"  Merged: {source_stats['merged']}")
+    print(f"  Multi-module: {source_stats['multi_module']} CPV codes with multiple modules")
+    print(f"  Skipped: {source_stats['skipped']}")
+
+    stats[f'{source_name}_processed'] = source_stats['processed']
+    stats[f'{source_name}_new'] = source_stats['new']
+    stats[f'{source_name}_merged'] = source_stats['merged']
+    stats[f'{source_name}_multi_module'] = source_stats['multi_module']
 
 
 def process_csv_source(project_root, source_config, cpv_mappings, stats):
@@ -221,6 +322,9 @@ def main():
     # Process all CSV sources
     for source_config in CSV_SOURCES:
         process_csv_source(project_root, source_config, cpv_mappings, stats)
+
+    # Process the new Dutch GPP CSV with multiple module support
+    process_dutch_gpp_csv(project_root, cpv_mappings, stats)
 
     # Merge manual mappings
     print("\nMerging manual mappings...")
