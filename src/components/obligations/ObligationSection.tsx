@@ -225,7 +225,7 @@ export const ObligationSection: React.FC<ObligationSectionProps> = ({
 
             {/* Overlay for unauthenticated users - NOT blurred */}
             {!isAuthenticated && (
-              <div className="absolute inset-0 flex items-center justify-center bg-white/70 backdrop-blur-[2px] z-10 rounded-b-lg">
+              <div className="absolute inset-0 flex items-start justify-center pt-8 bg-white/70 backdrop-blur-[2px] z-10 rounded-b-lg">
                 <div className="text-center p-6 max-w-sm bg-white rounded-lg shadow-lg border border-gray-200">
                   <Lock className="w-12 h-12 mx-auto mb-4 text-blue-600" />
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
