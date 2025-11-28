@@ -19,6 +19,9 @@ const Footer: React.FC = () => {
             <p className="text-sm text-gray-700 leading-relaxed">
               De EED Check maakt snel inzichtelijk of - en in welke mate - de EED van toepassing is op uw voorgenomen aanbesteding.
             </p>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              Gebruik de EED Check in de bètafase helemaal gratis. We verzamelen feedback om de tool door te ontwikkelen en nog beter aan te laten sluiten op de praktijk.
+            </p>
             <p className="text-sm text-gray-700">
               Feedback is welkom: <a href="mailto:feedback@eedcheck.eu" className="text-blue-600 hover:text-blue-800 underline">feedback@eedcheck.eu</a>
             </p>
@@ -28,7 +31,7 @@ const Footer: React.FC = () => {
           <div className="space-y-6">
             <h3 className="text-lg font-bold text-gray-900">OVER</h3>
             <p className="text-sm text-gray-700 leading-relaxed">
-              De EED Check is op persoonlijke titel ontwikkeld door experts in Europese regelgeving, ondersteund door een ervaren ontwikkelteam.
+              De tool is ontwikkeld voor aanbestedingsprofessionals die tijdig inzicht willen in EED-verplichtingen.
             </p>
           </div>
 
@@ -36,7 +39,7 @@ const Footer: React.FC = () => {
           <div className="space-y-6">
             <h3 className="text-lg font-bold text-gray-900">DISCLAIMER</h3>
             <p className="text-sm text-gray-700 leading-relaxed">
-              Deze tool is in ontwikkeling. De resultaten zijn indicatief en niet juridisch bindend. Voor formele besluiten wordt geadviseerd een jurist te raadplegen.
+              Omdat de tool zich in bèta bevindt, kunnen functies wijzigen en zijn resultaten indicatief. Voor formele besluiten blijft juridisch advies vereist.
             </p>
           </div>
         </div>
