@@ -179,7 +179,7 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
     const elements: React.ReactNode[] = [];
     let currentTextBlock: string[] = [];
 
-    const parseInlineFormatting = (line: string) => {
+    const parseInlineFormatting = (line: string): React.ReactNode[] => {
       // Parse **bold**, *italic*, _italic_, and replace placeholders with React elements
       const parts: React.ReactNode[] = [];
       let remaining = line;
@@ -200,7 +200,7 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
         // Try to match **bold**
         const boldMatch = remaining.match(/^(\*\*)(.*?)\*\*/);
         if (boldMatch) {
-          parts.push(<strong key={key++}>{boldMatch[2]}</strong>);
+          parts.push(<strong key={key++}>{parseInlineFormatting(boldMatch[2])}</strong>);
           remaining = remaining.slice(boldMatch[0].length);
           continue;
         }
@@ -208,7 +208,7 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
         // Try to match *italic* (single asterisk, not followed by another asterisk)
         const italicAsteriskMatch = remaining.match(/^(\*)([^*]+?)\*/);
         if (italicAsteriskMatch) {
-          parts.push(<em key={key++}>{italicAsteriskMatch[2]}</em>);
+          parts.push(<em key={key++}>{parseInlineFormatting(italicAsteriskMatch[2])}</em>);
           remaining = remaining.slice(italicAsteriskMatch[0].length);
           continue;
         }
@@ -216,7 +216,7 @@ export const GppCriteriaTabs: React.FC<GppCriteriaTabsProps> = ({
         // Try to match _italic_ (underscore)
         const italicUnderscoreMatch = remaining.match(/^(_)([^_]+?)_/);
         if (italicUnderscoreMatch) {
-          parts.push(<em key={key++}>{italicUnderscoreMatch[2]}</em>);
+          parts.push(<em key={key++}>{parseInlineFormatting(italicUnderscoreMatch[2])}</em>);
           remaining = remaining.slice(italicUnderscoreMatch[0].length);
           continue;
         }

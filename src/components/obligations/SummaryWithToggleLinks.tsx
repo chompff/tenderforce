@@ -13,14 +13,46 @@ export const SummaryWithToggleLinks: React.FC<SummaryWithToggleLinksProps> = ({
   onToggleLegal,
   legalReferences = []
 }) => {
+  // Pre-process text to handle ~~text~~ strikethrough/grey syntax
+  const preprocessGreyText = (input: string): string => {
+    // Replace ~~text~~ with {{grey:text}}
+    return input.replace(/~~([^~]+)~~/g, '{{grey:$1}}');
+  };
+
   // Parse text for [text](toggle:legal) and [text](popup:title||content||reference) patterns
   const parseText = (input: string): React.ReactNode[] => {
+    // First preprocess for grey text
+    input = preprocessGreyText(input);
     const parts: React.ReactNode[] = [];
     let lastIndex = 0;
 
     // Manual parsing to handle nested parentheses properly
     let i = 0;
     while (i < input.length) {
+      // Look for grey text marker {{grey:...}}
+      if (input.substring(i, i + 7) === '{{grey:') {
+        const greyStart = i + 7;
+        const greyEnd = input.indexOf('}}', greyStart);
+
+        if (greyEnd !== -1) {
+          // Add any text before this match
+          if (i > lastIndex) {
+            parts.push(input.substring(lastIndex, i));
+          }
+
+          const greyText = input.substring(greyStart, greyEnd);
+          parts.push(
+            <span key={`grey-${i}`} className="text-gray-400">
+              {greyText}
+            </span>
+          );
+
+          lastIndex = greyEnd + 2;
+          i = greyEnd + 2;
+          continue;
+        }
+      }
+
       // Look for opening bracket
       if (input[i] === '[') {
         const linkTextStart = i + 1;

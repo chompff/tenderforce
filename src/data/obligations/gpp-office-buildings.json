@@ -1,8 +1,8 @@
 {
   "obligation_id": "gpp-office-buildings",
   "archetype": "GPP",
-  "title": "EU GPP criteria of nationaal gelijkwaardig",
-  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de EU-criteria inzake groene overheidsopdrachten voor ontwerp, bouw en beheer van kantoorgebouwen toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen.",
+  "title": "Verplichtingen onder EU GPP óf nationaal gelijkwaardig",
+  "summary": "Vanwege de gekozen CPV code bent u volgens de EED verplicht om de [EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen](https://circabc.europa.eu/ui/group/44278090-3fae-4515-bcc2-44fd57c1d0d1/library/d535c83f-0238-4a71-8e77-8c8303fc7db5/details) toe te passen. Als de Nederlandse MVI criteria strenger zijn moeten deze worden opgenomen. Controleer altijd of er MVI criteria zijn voor elke fase van uw aanbesteding.",
   "badges": ["GPP", "NL", "EU"],
   "colors": {
     "text": "#356534",
@@ -20,23 +20,1084 @@
   ],
   "sections": [
     {
-      "key": "technical_specs",
-      "title": "Technische specificaties",
+      "key": "selection_criteria",
+      "title": "Selectiecriteria",
       "requirement_level": "verplicht",
-      "intro": "De GPP criteria voor ontwerp, bouw en beheer van kantoorgebouwen zijn nog in ontwikkeling. Deze module bevat voorlopig placeholder content.",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als selectiecriteria. Het doel is te waarborgen dat alleen leveranciers met aantoonbare kennis, middelen en procedures in aanmerking komen voor deelname.",
       "warnings": [
         {
           "severity": "yellow",
-          "text": "Let op: De inhoud van deze module is nog niet compleet. De definitieve GPP criteria worden later toegevoegd."
+          "text": "Let op: De kerncriteria (minimale selectiecriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
         }
       ],
       "steps": [
-        "Raadpleeg de EU GPP criteria voor ontwerp, bouw en beheer van kantoorgebouwen wanneer deze beschikbaar komen.",
-        "Vergelijk met de Nederlandse MVI criteria op www.mvicriteria.nl.",
-        "Neem de strengste criteria op in uw aanbestedingsdocumenten."
+        "Kies de fase in de tabel hieronder. De GPP definieert alleen selectiecriteria voor de fase:\n  A: Selectie ontwerpteam & contractanten\n  ~~B: Ontwerp- en prestatievereisten~~\n  ~~C: Locatievoorbereiding~~\n  ~~D: Werkzaamheden~~\n  ~~E: Energiesysteem & energiediensten~~\n  ~~F: Overdracht~~\n  ~~G: Facilities management~~",
+        "Neem in ieder geval de kerncriteria op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n  a. Ga naar de tool en kies de relevante categorie.\n  b. Zet het [ambitieniveau](https://www.mvicriteria.nl) op BASIS.\n  c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n  d. Behandelt een MVI basiscriterium een onderwerp dat de GPP niet behandelt? Neem dit MVI criterium op."
       ],
       "steps_ordered": true,
-      "example_texts": []
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "phase_a",
+            "label": "Kerncriteria voor fase A: Selectie ontwerpteam & contractanten",
+            "label_short": "A. Selectie ontwerpteam & contractanten"
+          },
+          {
+            "key": "phase_b",
+            "label": "Kerncriteria voor fase B: Ontwerp- en prestatievereisten",
+            "label_short": "B. Ontwerp- en prestatievereisten",
+            "disabled": true
+          },
+          {
+            "key": "phase_c",
+            "label": "Kerncriteria voor fase C: Locatievoorbereiding",
+            "label_short": "C. Locatievoorbereiding",
+            "disabled": true
+          },
+          {
+            "key": "phase_d",
+            "label": "Kerncriteria voor fase D: Werkzaamheden",
+            "label_short": "D. Werkzaamheden",
+            "disabled": true
+          },
+          {
+            "key": "phase_e",
+            "label": "Kerncriteria voor fase E: Energiesysteem & energiediensten",
+            "label_short": "E. Energiesysteem & energiediensten",
+            "disabled": true
+          },
+          {
+            "key": "phase_f",
+            "label": "Kerncriteria voor fase F: Overdracht",
+            "label_short": "F. Overdracht",
+            "disabled": true
+          },
+          {
+            "key": "phase_g",
+            "label": "Kerncriteria voor fase G: Facilities management",
+            "label_short": "G. Facilities management",
+            "disabled": true
+          }
+        ],
+        "default_main_tab": "phase_a",
+        "data": {
+          "phase_a": {
+            "core_criteria": [
+              {
+                "code": "A1",
+                "title": "Bekwaamheden van de projectmanager",
+                "specification": "De projectmanager beschikt over relevante bekwaamheden en ervaring op elk van de volgende gebieden waarvoor hij op grond van het contract verantwoordelijk is (selecteer de voor het contract relevante gebieden):\n\n• het projectbeheer van contracten voor gebouwen waarbij is voldaan aan de door de klant vastgestelde milieuprestatievereisten of waarbij deze zijn overtroffen;\n• succesvolle identificatie en succesvol beheer van de levering van een reeks milieutechnologieën en ontwerpinnovaties die nodig waren voor de levering van verbeterde milieuprestaties en -kwaliteit;\n• betrokkenheid bij de financiële beoordeling van milieutechnologieën en ontwerpinnovaties als onderdeel van de levering van projecten.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 10"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Bewijsstukken in de vorm van informatie en referenties die verband houden met de desbetreffende contracten in de afgelopen vijf jaar waarbij de genoemde elementen zijn uitgevoerd. Dit wordt ondersteund door cv's van de medewerkers die werkzaam zullen zijn voor het project."
+                }
+              },
+              {
+                "code": "A2",
+                "title": "Bekwaamheden van het ontwerpteam",
+                "specification": "Het consortium bestaande uit de architect, de adviseur en/of het ontwerpteam beschikt over relevante bekwaamheden en ervaring op elk van de volgende gebieden waarvoor het op grond van het contract verantwoordelijk is *(selecteer de voor het contract relevante gebieden)*:\n\n• het beheer van bouwcontracten waarbij milieuprestaties zijn geleverd die verder gingen dan de minimale vereisten van de bouwvoorschriften *(aangeven of dit nationale, regionale, lokale of andere voorschriften zijn)* met betrekking tot de volgende aspecten *(aan te vullen met de elementen die de aanbestedende dienst van belang acht en die hieronder niet worden genoemd)*;\n• ontwerp van energie-efficiënte bouwschil en diensten voor nieuwbouw- of renovatieprojecten *(kies wat van toepassing is)*, waaronder, indien beschikbaar, de gemeten energieprestatiegegevens per m² van voltooide projecten, met inbegrip van verwarming, koeling, verlichting, warm water en hulpapparatuur;\n• installatie van energiebeheersystemen voor gebouwen, gebouwbeheerders informeren over de manier waarop deze werken en hoe deze kunnen worden gebruikt om energieverbruikspatronen in gebouwen te diagnosticeren;\n• ontwerp van waterefficiënte diensten, waaronder gemeten waterbehoefte per medewerker van voltooide projecten;\n• de specificatie, aanbesteding en installatie van bouwmaterialen met weinig milieueffecten. Inclusief verwijzingen naar MPV's die aan ISO 14025 of EN 15804 voldoen;\n• de ontwikkeling en uitvoering van vervoersregelingen voor het personeel, waaronder infrastructuur voor voertuigen met een lage uitstoot en fietsen.\n\nMet speciale aandacht voor relevante projectervaring en permanente beroepsontwikkeling op deze gebieden.\n\n*De aanbestedende dienst kan een minimaal aantal contracten verplicht stellen, afhankelijk van de aard van het project.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 11"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Bewijsstukken in de vorm van informatie en referenties die verband houden met de desbetreffende contracten in de afgelopen vijf jaar waarbij de voornoemde elementen zijn uitgevoerd. Dit wordt ondersteund door cv's van de medewerkers die werkzaam zullen zijn voor het project."
+                }
+              },
+              {
+                "code": "A3",
+                "title": "Bekwaamheden van de hoofdaannemer voor de bouw en gespecialiseerde contractanten",
+                "subtitle": "*Deze criteria kunnen deel uitmaken van een voorselectie van de hoofdaannemer of wanneer er gespecialiseerde contractanten noodzakelijk zijn, zoals sloopbedrijven of leveranciers van energiediensten.*",
+                "specification": "De contractant voor de bouw beschikt over relevante bekwaamheden en ervaring op het gebied van de voltooiing van bouwcontracten waarbij is aangetoond dat deze hebben geleid tot verbeterde milieuprestaties.\n\nIn het geval van \"ontwerp-plus-bouw\"-contracten is criterium A1 ook relevant voor het ingeschakelde ontwerpteam.\n\nRelevante ervaringsgebieden omvatten (afhankelijk van het project en de geselecteerde GPP-criteria):\n\n• ontwerp van energie-efficiënte bouwschil en diensten voor nieuwbouw- of renovatieprojecten *(kies wat van toepassing is)*, waaronder, indien beschikbaar, de gemeten energiebehoefte per m² van voltooide projecten, met inbegrip van verwarming, koeling, verlichting, warm water en hulpapparatuur. Dit is toepasbaar in het kader van nieuwbouw- en/of renovatieprojecten (kies wat van toepassing is);\n• de installatie van energiebeheersystemen voor gebouwen en informatie aan gebouwbeheerders over de manier waarop deze werken;\n• installatie van waterefficiënte diensten, waaronder, indien beschikbaar, gemeten waterbehoefte per medewerker van voltooide projecten;\n• de aanbesteding, installatie en verificatie van bouwmaterialen met weinig milieueffecten;\n• de succesvolle uitvoering van beheersplannen op het gebied van sloop- en bouwafval om de afvalproductie te minimaliseren. Selectie en kennis van externe zuiveringsopties.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 12"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Bewijsstukken in de vorm van informatie en referenties die verband houden met de desbetreffende contracten in de afgelopen vijf jaar waarbij de voornoemde elementen zijn uitgevoerd. Dit wordt tevens ondersteund door cv's van de medewerkers die voor het project werkzaam zullen zijn en hun relevante projectervaring."
+                }
+              },
+              {
+                "code": "A4",
+                "title": "Bekwaamheden van DBO-contractanten en vastgoedontwikkelaars",
+                "subtitle": "*Deze criteria kunnen deel uitmaken van een voorselectie van de DBO-contractant of de vastgoedontwikkelaar die het gebouw zal exploiteren.*",
+                "specification": "De contractant beschikt over relevante bekwaamheden en ervaring op het gebied van de bouw en exploitatie van kantoorgebouwen waarbij is aangetoond dat ze hebben geleid tot verbeterde milieuprestaties. Ook criterium A1 is van belang voor het ingezette ontwerpteam.\n\nRelevante ervaringsgebieden omvatten (afhankelijk van het project en de geselecteerde GPP-criteria):\n\n• het beheer van ontwerpteams die de vergunningverlening en de bouw realiseren van kantoorgebouwen die hebben voldaan aan de vereisten van de klant, waaronder in het kader van DBO-contracten;\n• het beheer van de hoofdaannemers voor de bouw van kantoorgebouwen met verbeterde milieuprestaties, waaronder in het kader van DBO-contracten;\n• permanent facilities management om de prestaties van kantoorgebouwen te optimaliseren, waaronder het gebruik van systemen als energiebeheersystemen voor gebouwen, het inhuren van energiemanagers en de permanente bewaking van/verslaglegging over de prestaties.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 13"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Bewijsstukken in de vorm van informatie en referenties die verband houden met eerdere projecten en contracten in de afgelopen vijf jaar waarbij de voornoemde elementen zijn uitgevoerd.\n\nDit wordt tevens ondersteund door cv's van de medewerkers die voor het project werkzaam zullen zijn en hun relevante projectervaring."
+                }
+              },
+              {
+                "code": "A5",
+                "title": "Energiebeheerssysteem",
+                "subtitle": "*Deze criteria kunnen deel uitmaken van een voorselectie van een ontwikkelaar en/of exploitant (facilities manager) van het kantoorgebouw.*",
+                "specification": "De DBO-contractant of de vastgoedontwikkelaar die het gebouw gaat exploiteren, moet ervaring kunnen aantonen op het gebied van de invoering van energiebeheerssystemen voor locaties, zoals ISO 50001 of gelijkwaardig, als onderdeel van regelingen voor het facilities management.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 14"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De DBO-contractant of de vastgoedontwikkelaar verstrekt beheerssysteemcertificeringen voor de locaties die hij exploiteert of in de afgelopen drie jaar heeft geëxploiteerd."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "A1",
+                "title": "Bekwaamheden van de projectmanager",
+                "specification": "De projectmanager beschikt over relevante bekwaamheden en ervaring op elk van de volgende gebieden waarvoor hij op grond van het contract verantwoordelijk is *(selecteer de voor het contract relevante gebieden)*:\n\n• het projectbeheer van contracten voor gebouwen waarbij is voldaan aan de door de klant vastgestelde milieuprestatievereisten of waarbij deze zijn overtroffen;\n• succesvolle identificatie en succesvol beheer van de levering van een reeks milieutechnologieën en ontwerpinnovaties die nodig waren voor de levering van verbeterde milieuprestaties en -kwaliteit;\n• betrokkenheid bij de financiële beoordeling van milieutechnologieën en ontwerpinnovaties als onderdeel van de levering van projecten;\n• projecten die tevens bestonden uit de beoordeling van de milieuprestaties van een gebouw met behulp van regelingen bestaande uit meerdere criteria voor de beoordeling, verslaglegging en certificering van een gebouw;\n• het gebruik van holistische beoordelingshulpmiddelen bij het ontwerp, de beoordeling en de specificatie van milieuvriendelijkere gebouwen, waaronder levenscycluskostenberekening (LCC) en levenscyclusanalyse (LCA).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 10"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Bewijsstukken in de vorm van informatie en referenties die verband houden met de desbetreffende contracten in de afgelopen vijf jaar waarbij de voornoemde elementen zijn uitgevoerd. Dit wordt ondersteund door cv's van de medewerkers die werkzaam zullen zijn voor het project."
+                }
+              },
+              {
+                "code": "A2",
+                "title": "Bekwaamheden van het ontwerpteam",
+                "specification": "Het consortium bestaande uit de architect, de adviseur en/of het ontwerpteam beschikt over relevante bekwaamheden en ervaring op elk van de volgende gebieden waarvoor het op grond van het contract verantwoordelijk is *(selecteer de voor het contract relevante gebieden)*:\n\n• het beheer van bouwcontracten waarbij milieuprestaties zijn geleverd die verder gingen dan de minimale vereisten van de bouwvoorschriften *(aangeven of dit nationale, regionale, lokale of andere voorschriften zijn)* met betrekking tot de volgende aspecten *(aan te vullen met de elementen die de aanbestedende dienst van belang acht en die hieronder niet worden genoemd)*;\n• ontwerp van energie-efficiënte bouwschil en diensten voor nieuwbouw- of renovatieprojecten *(kies wat van toepassing is)*, waaronder, indien beschikbaar, de gemeten energieprestatiegegevens per m² van voltooide projecten, met inbegrip van verwarming, koeling, verlichting, warm water en hulpapparatuur;\n• de specificatie en het ontwerp van apparatuur voor de opwekking van hernieuwbare energie en/of energie met een hoge efficiëntie;\n• installatie van energiebeheersystemen voor gebouwen, gebouwbeheerders informeren over de manier waarop deze werken en hoe deze kunnen worden gebruikt om energieverbruikspatronen in gebouwen te diagnosticeren;\n• ontwerp van waterefficiënte diensten, waaronder gemeten waterbehoefte per medewerker van voltooide projecten;\n• bioklimatologische architectuur en passief ontwerp voor goed thermisch en optisch comfort, natuurlijke luchtzuivering, enz.;\n• beoordeling van de milieuprestaties van het gebouw met behulp van regelingen bestaande uit meerdere criteria voor de beoordeling en certificering van het gebouw;\n• de specificatie, aanbesteding en installatie van bouwmaterialen met weinig milieueffecten. Inclusief verwijzingen naar MPV's die aan ISO 14025 of EN 15804 voldoen;\n• het gebruik van holistische beoordelingshulpmiddelen bij het ontwerp en de specificatie van milieuvriendelijkere gebouwen, waaronder levenscycluskostenberekening (LCC) en levenscyclusanalyse (LCA). Vergelijkende onderzoeken conform ISO 14040/14044 of EN 15978;\n• ontwerp, specificatie en bewaking met betrekking tot natuurlijk daglicht en verbinding, thermisch comfort en kwaliteit van de binnenlucht;\n• de ontwikkeling en uitvoering van vervoersregelingen voor het personeel, waaronder infrastructuur voor voertuigen met een lage uitstoot en fietsen.\n\nMet speciale aandacht voor relevante projectervaring en permanente beroepsontwikkeling op deze gebieden.\n\n*De aanbestedende dienst kan een minimaal aantal contracten verplicht stellen, afhankelijk van de aard van het project.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 11"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Bewijsstukken in de vorm van informatie en referenties die verband houden met de desbetreffende contracten in de afgelopen vijf jaar waarbij de voornoemde elementen zijn uitgevoerd. Dit wordt ondersteund door cv's van de medewerkers die werkzaam zullen zijn voor het project."
+                }
+              },
+              {
+                "code": "A3",
+                "title": "Bekwaamheden van de hoofdaannemer voor de bouw en gespecialiseerde contractanten",
+                "subtitle": "*Deze criteria kunnen deel uitmaken van een voorselectie van de hoofdaannemer of wanneer er gespecialiseerde contractanten noodzakelijk zijn, zoals sloopbedrijven of leveranciers van energiediensten.*",
+                "specification": "De contractant voor de bouw beschikt over relevante bekwaamheden en ervaring op het gebied van de voltooiing van bouwcontracten waarbij is aangetoond dat deze hebben geleid tot verbeterde milieuprestaties.\n\nIn het geval van \"ontwerp-plus-bouw\"-contracten is criterium A1 ook relevant voor het ingeschakelde ontwerpteam.\n\nRelevante ervaringsgebieden omvatten (afhankelijk van het project en de geselecteerde GPP-criteria):\n\n• ontwerp van energie-efficiënte bouwschil en diensten, waaronder, indien beschikbaar, de gemeten energiebehoefte per m² van voltooide projecten, met inbegrip van verwarming, koeling, verlichting, warm water en hulpapparatuur. Dit is toepasbaar in het kader van nieuwbouw- en/of renovatieprojecten (kies wat van toepassing is);\n• de installatie, inbedrijfstelling en (indien van toepassing) lopende exploitatie/onderhoud van apparatuur voor de opwekking van hernieuwbare energie en/of energie met hoge efficiëntie;\n• de installatie van energiebeheersystemen voor gebouwen en informatie aan gebouwbeheerders over de manier waarop deze werken;\n• installatie van waterefficiënte diensten, waaronder, indien beschikbaar, gemeten waterbehoefte per medewerker van voltooide projecten;\n• functionele passieve ontwerpelementen voor het realiseren van een laag energieverbruik en goed thermisch en optisch comfort enz., aangetoond door middel van onderzoek na ingebruikname;\n• de aanbesteding, installatie en verificatie van bouwmaterialen met weinig milieueffecten. Beheer van de toeleveringsketen voor het waarborgen van de naleving van systemen voor de beoordeling en certificering van gebouwen en voor de ondersteuning van gemodelleerde strategieën voor de efficiëntie van hulpbronnen;\n• de succesvolle uitvoering van afvalbeheersplannen voor sloopterreinen om de afvalproductie te minimaliseren. Selectie en kennis van externe zuiveringsopties;\n• installatie van functies voor natuurlijk daglicht en verbinding, thermisch comfort en kwaliteit van de binnenlucht.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 12"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Bewijsstukken in de vorm van informatie en referenties die verband houden met eerdere contracten in de afgelopen vijf jaar waarbij de voornoemde elementen zijn uitgevoerd.\n\nDit wordt ondersteund door bewijsstukken en gegevens van:\n• audits door derden;\n• audits na ingebruikname;\n• LCC/LCA-analyse; en/of\n• gegevensverzameling afkomstig van toezicht.\n\nDit wordt tevens ondersteund door cv's van de medewerkers die voor het project werkzaam zullen zijn en hun relevante projectervaring."
+                }
+              },
+              {
+                "code": "A4",
+                "title": "Bekwaamheden van DBO-contractanten en vastgoedontwikkelaars",
+                "subtitle": "*Deze criteria kunnen deel uitmaken van een voorselectie van de DBO-contractant of de vastgoedontwikkelaar die het gebouw zal exploiteren.*",
+                "specification": "De contractant beschikt over relevante bekwaamheden en ervaring op het gebied van het beheer van de bouw en exploitatie van kantoorgebouwen waarbij is aangetoond dat ze hebben geleid tot verbeterde milieuprestaties. Ook criterium A1 is van belang voor het ingezette ontwerpteam.\n\nRelevante ervaringsgebieden omvatten (afhankelijk van het project en de geselecteerde GPP-criteria):\n\n• het beheer van ontwerpteams die de vergunningverlening en de bouw realiseren van kantoorgebouwen die hebben voldaan aan de vereisten van de klant, waaronder in het kader van DBO-contracten;\n• het beheer van de hoofdaannemers voor de bouw van kantoorgebouwen met verbeterde milieuprestaties, waaronder in het kader van DBO-contracten;\n• het beheer van ontwerpteams en/of hoofdaannemers met het oog op het verkrijgen van cijfers overeenkomstig beoordelings- en certificeringsregelingen voor gebouwen met meerdere criteria;\n• permanent facilities management om de prestaties van kantoorgebouwen te optimaliseren, waaronder het gebruik van systemen als energiebeheersystemen voor gebouwen, het inhuren van energiemanagers en de permanente bewaking van/verslaglegging over de prestaties.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 13"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Bewijsstukken in de vorm van informatie en referenties die verband houden met eerdere projecten en contracten in de afgelopen vijf jaar waarbij de voornoemde elementen zijn uitgevoerd.\n\nDit wordt tevens ondersteund door cv's van de medewerkers die voor het project werkzaam zullen zijn en hun relevante projectervaring."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "technical_specs",
+      "title": "Technische specificaties",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als technische specificaties. Daarmee worden de inhoudelijke eisen vastgelegd die aan het werk, de levering of de dienst worden gesteld.",
+      "warnings": [
+        {
+          "severity": "yellow",
+          "text": "Let op: De kerncriteria (minimale technische specificaties) uit de EU GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn dient u deze op te nemen."
+        }
+      ],
+      "steps": [
+        "Kies de fase in de tabel hieronder. De GPP definieert technische specificaties voor de fases:\n  ~~A: Selectie ontwerpteam & contractanten~~\n  B: Ontwerp- en prestatievereisten\n  C: Locatievoorbereiding\n  D: Werkzaamheden\n  E: Energiesysteem & energiediensten\n  F: Overdracht\n  G: Facilities management",
+        "Neem in ieder geval de kerncriteria op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n  a. Ga naar de tool en kies de relevante categorie.\n  b. Zet het [ambitieniveau](https://www.mvicriteria.nl) op BASIS.\n  c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n  d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "phase_a",
+            "label": "Kerncriteria voor fase A: Selectie ontwerpteam & contractanten",
+            "label_short": "A. Selectie ontwerpteam & contractanten",
+            "disabled": true
+          },
+          {
+            "key": "phase_b",
+            "label": "Kerncriteria voor fase B: Ontwerp- en prestatievereisten",
+            "label_short": "B. Ontwerp- en prestatievereisten"
+          },
+          {
+            "key": "phase_c",
+            "label": "Kerncriteria voor fase C: Locatievoorbereiding",
+            "label_short": "C. Locatievoorbereiding"
+          },
+          {
+            "key": "phase_d",
+            "label": "Kerncriteria voor fase D: Werkzaamheden",
+            "label_short": "D. Werkzaamheden"
+          },
+          {
+            "key": "phase_e",
+            "label": "Kerncriteria voor fase E: Energiesysteem & energiediensten",
+            "label_short": "E. Energiesysteem & energiediensten"
+          },
+          {
+            "key": "phase_f",
+            "label": "Kerncriteria voor fase F: Overdracht",
+            "label_short": "F. Overdracht"
+          },
+          {
+            "key": "phase_g",
+            "label": "Kerncriteria voor fase G: Facilities management",
+            "label_short": "G. Facilities management"
+          }
+        ],
+        "default_main_tab": "phase_b",
+        "data": {
+          "phase_b": {
+            "core_criteria": [
+              {
+                "code": "B1",
+                "title": "Minimale energieprestatie",
+                "subtitle": "*Het wordt aanbevolen om een bespreking te beleggen met de lokale bevoegde instantie op het gebied van bouwtoezicht over welke prestatiebenchmark het best kan worden gebruikt.*",
+                "specification": "De berekende energieprestaties van een kantoorgebouw voldoen aan de volgende vereisten, die kunnen worden vastgesteld in relatie tot de energieprestatie of de kosten:\n\nOptie 1: Energieprestatie\n• bij nieuwbouwprojecten: een energieprestatiecertificaat van klasse C of drie maal de kWh/m²-drempelwaarde⁸ voor de beste klasse *of* maximaal 135 kWh/m² *(de meest strikte optie)*;\n• bij ingrijpende renovaties: een energieprestatiecertificaat van klasse D of vier maal de kWh/m²-drempelwaarde voor de beste klasse *of* maximaal 170 kWh/m² *(de meest strikte optie)*.\n\nOptie 2: Kostenoptimale prestatie\n• bij nieuwbouw- en ingrijpende renovatieprojecten is dit de kostenoptimale primaire energiebehoefte voor een openbaar kantoorgebouw, uitgedrukt in kWh/m² en berekend overeenkomstig de methode in Gedelegeerde Verordening (EU) nr. 244/2012 van de Commissie.\n\nIndien de nationale minimumvereisten strenger zijn dan deze vereisten, wordt gunningscriterium 8.1 gebruikt in plaats van dit criterium om verdere kostenefficiënte verbeterde prestaties te bevorderen.\n\n⁸ De drempelwaarde is de hoogste energiebehoefte (uitgedrukt in kWh/m²) die is toegestaan binnen een klasse van het energieprestatiecertificaat.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 16"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver dient informatie in waaruit blijkt dat het ontwerp van het gebouw dat voor de vergunningverlening wordt ingediend bij de lokale instantie voor bouwtoezicht, voldoet aan de GPP-vereisten.\n\nDeze informatie bestaat uit de energieprestaties van het gebouw berekend overeenkomstig EN 15603 of gelijkwaardige of de nationale rekenmethode die van toepassing is op de locatie waar het gebouw zich bevindt. Daarnaast wordt een kostenoptimale berekening verstrekt overeenkomstig de vermelde methode.\n\nDe berekeningen worden gecontroleerd door een bevoegde autoriteit⁹ of een beoordelaar van gebouwen die gecertificeerd is voor het gebruik van de methode.\n\n⁹ Een bevoegde autoriteit is een nationaal, regionaal of lokaal orgaan dat is aangewezen voor de uitoefening van onafhankelijk toezicht op de minimale energieprestatie van gebouwen, energieprestatiecertificaten en bouwinspecties."
+                }
+              },
+              {
+                "code": "B2",
+                "title": "Lichtbeheerssystemen",
+                "subtitle": "*Het wordt aanbevolen een opdracht te plaatsen voor het ontwerp van lampen en verlichting onder verwijzing naar de Europese GPP-criteria voor binnenverlichting.*",
+                "specification": "Wanneer lichtbeheerssystemen in een lidstaat geen minimumvereiste zijn of wanneer er in de nationale rekenmethode geen rekening wordt gehouden met de bijdragen daarvan, worden er bewegingssensoren geïnstalleerd in overeenstemming met technische specificatie 3.2.3 van de [Europese GPP-criteria voor binnenverlichting](https://green-business.ec.europa.eu/green-public-procurement/gpp-criteria-and-requirements_en).\n\nDaarnaast moeten gebruikers verlichtingssystemen kunnen besturen of negeren in lokale zones of ruimten in het gebouw.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 17"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt technische specificaties voor de te installeren lichtbeheerssystemen. De verificatie met betrekking tot de inbedrijfstelling en de overdracht wordt behandeld in punt F3."
+                }
+              },
+              {
+                "code": "B3",
+                "title": "Energiebeheerssysteem voor gebouwen",
+                "specification": "Er wordt een energiebeheerssysteem voor gebouwen geïnstalleerd en in gebruik genomen dat gebruikers en facilities managers voorziet van realtime informatie over het energieverbruik van het gebouw door middel van een netwerk van sensoren en minstens elk half uur een meting van de nutsvoorzieningen.\n\nDe gebruikersinterface maakt het mogelijk dat gebruikers en facilities managers informatie over het energieverbruik van het gebouw kunnen analyseren en downloaden zonder dat daar uitgebreide opleiding voor nodig is.\n\nDe prestaties van de belangrijkste aspecten van het gebouw die door het systeem kunnen worden beheerd (namelijk verlichting, verwarming en koeling), zijn eenvoudig aan te passen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 17"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt specificaties voor het energiebeheerssysteem voor gebouwen, waaronder informatie over de gebruikersinterface.\n\nDaarnaast wordt uit deze informatie duidelijk hoe gegevens worden weergegeven, gerapporteerd en beschikbaar gesteld aan ten minste de facilities en/of energiemanagers van het gebouw."
+                }
+              },
+              {
+                "code": "B4",
+                "title": "Koolstofarme of koolstofvrije energiebronnen",
+                "specification": "Wanneer het gebouw kan worden aangesloten op kosteneffectieve alternatieve energiesystemen met een hoge efficiëntie, worden de energiesystemen van het gebouw zodanig ontworpen dat ze kunnen worden aangesloten op deze infrastructuur.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 18"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver stellen vast waar bestaande infrastructuur aanwezig is en bepalen of het vanuit milieuoogpunt loont om het gebouw op deze infrastructuur aan te sluiten.\n\nDe primaire energiebesparingen worden gekwantificeerd."
+                }
+              },
+              {
+                "code": "B5",
+                "title": "Vervoersplan voor het personeel en infrastructuur",
+                "subtitle": "*Het criterium betreffende het vervoersplan voor het personeel kan worden gecombineerd met een gunningscriterium waarin de kwaliteit van het plan wordt beoordeeld.*",
+                "specification": "In overleg met de aanbestedende dienst, de lokale planologische dienst en de relevante infrastructuuraanbieders wordt voor het gebouw een vervoersplan voor het personeel ontwikkeld. In het plan worden specifieke maatregelen vastgesteld die, rekening houdend met de lokale omstandigheden, de noodzaak om met eigen auto naar het gebouw te komen kunnen beperken en het gebruik van duurzamere vervoersmethoden kunnen bevorderen, zoals fietsen en lopen, openbaar vervoer, voertuigen met een lage uitstoot en carpooling.\n\nEr wordt minimaal een veilige, overdekte en eenvoudig toegankelijke fietsenstalling geïntegreerd in het ontwerp van het gebouw. *Het aantal plekken moet worden vastgesteld onder verwijzing naar de lokale normen of de beoordelingsregeling van het gebouw, waarbij rekening wordt gehouden met een mogelijke verwachte toename als gevolg van de invoering van het vervoersplan voor het personeel.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 18"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Ontwerpteams of contractanten verstrekken plattegronden van het gebouw met daarop aangegeven de parkeerplekken voor elektrische voertuigen en stallingsplekken voor fietsen en de aan te leggen bijbehorende servicepunten. Daarnaast worden de aannamen verstrekt die zijn gebruikt om de ruimtevoorziening te schatten. Ontwerpteams of contractanten verstrekken een opzet voor een vervoersplan voor het personeel."
+                }
+              },
+              {
+                "code": "B5",
+                "title": "Opslag van recyclebaar afval",
+                "specification": "Er wordt voorzien in specifieke opslagruimten binnen het gebouw of op het terrein van het gebouw, zodat recycleerbare materialen en afgedankte producten door de gebruikers kunnen worden gescheiden (onder verwijzing naar de vereisten in punt F5).\n\nDe grootte van verzamellocatie(s) voor afval wordt afgestemd op het waarschijnlijke bezettingsniveau, zodat er voldoende containers kunnen worden geplaatst om recycling te maximaliseren en tevens restafval te verwerken.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Ontwerpteams of contractanten verstrekken plannen van het gebouw met vermelding van de ruimte(n) die zijn aangewezen voor scheiding en inzameling van afval, alsmede de aannamen die zijn gemaakt om de benodigde ruimte te schatten."
+                }
+              },
+              {
+                "code": "B6",
+                "title": "Waterbesparende installaties",
+                "specification": "Alle waterfaciliteiten voor sanitaire voorzieningen en keukens worden uitgerust met waterbesparende uitrusting die voldoet aan de criteria voor [sanitaire kranen](https://green-business.ec.europa.eu/green-public-procurement/gpp-criteria-and-requirements_en) en [spoeltoiletten en urinoirs](https://green-business.ec.europa.eu/green-public-procurement/gpp-criteria-and-requirements_en).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Zie de desbetreffende documenten met Europese GPP-criteria."
+                }
+              },
+              {
+                "code": "B7.1",
+                "title": "Thermisch comfort",
+                "specification": "De ontwerpwaarden voor de binnentemperatuur (minimale kamertemperatuur in de winter, maximale kamertemperatuur in de zomer) voor kantoorgebouwen voldoen ten minste aan categorie II van EN 15251 of gelijkwaardig. Er wordt verwezen naar bijlage A1 voor mechanisch gekoelde gebouwen en bijlage A2 voor passief gekoelde gebouwen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Ontwerpteams of de DB-contractant of de DBO-contractant verstrekken modelleringsgegevens voor de kamertemperatuur."
+                }
+              },
+              {
+                "code": "B7.2",
+                "title": "Beheer van daglicttoetreding en verblinding",
+                "specification": "Het bruikbare kantooroppervlak bestaat voor 80 % uit het bruikbaar vloeroppervlak waar een gemiddelde daglichtfactor wordt behaald van 1,5 % voor gevels die naar buiten wijzen en 0,7 % voor gevels die naar binnen wijzen. Beide percentages worden gemeten op de hoogte van het werkoppervlak, dat wordt vastgesteld door de aanbestedende dienst.\n\nEr wordt vastgesteld op welke locaties binnen het gebouw verblinding kan optreden en er worden beheersmaatregelen gespecificeerd om rechtstreekse of onrechtstreekse verblinding op deze locaties te beperken.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 20"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Ontwerpteams of de DB-contractant of de DBO-contractant verstrekken modelleringsgegevens voor de omstandigheden voor daglicttoetreding en de vaststelling van verblindingsrisico's samen met een beheersstrategie voor verblinding."
+                }
+              },
+              {
+                "code": "B7.3",
+                "title": "Kwaliteit van de binnenlucht",
+                "specification": "Er wordt aangegeven dat het ventilatiesysteem binnenlucht aanlevert met een kwaliteitsbeoordeling van IDA 2 overeenkomstig EN 15251 of gelijkwaardig.\n\nOp locaties met een slechte kwaliteit van de buitenlucht worden de ventilatiesystemen van het gebouw zodanig ontworpen dat wordt gewaarborgd dat er schone lucht naar de kantoren wordt gevoerd in overeenstemming met het volgende criterium:\n\n• er mogen geen luchtinlaten worden geplaatst op een gevel of gevels die zich bevinden langs een drukke weg (de weg moet worden vermeld in de uitnodiging tot inschrijving). Indien dit niet mogelijk is, moet de opening zo hoog mogelijk boven de grond worden geplaatst. Daarnaast voldoet het ontwerp aan leidraad A2.2 in EN 13779;\n• filters van ventilatiesystemen voldoen aan de specificaties in tabel A.5 van EN 13779 of gelijkwaardig.\n\nSlechte luchtkwaliteit wordt gedefinieerd als buitenlucht van klasse 2 of 3 overeenkomstig EN 13779.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 20"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Het ontwerpteam of de DBO-contractant toont aan dat het gebouw voldoet aan de criteria voor de kwaliteitsbeoordeling van binnenlucht in EN 15251 of gelijkwaardig. Er worden tekeningen en plattegronden van de ventilatiesystemen verstrekt waarin de locaties van de luchtinlaten zijn ingetekend. Deze worden verstrekt in de gedetailleerde ontwerpfase en na voltooiing. Ze bevatten tevens lokale luchtbewakingsgegevens van de lokale overheidsinstantie, waardoor de locatie kan worden ingedeeld overeenkomstig EN 13779."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "B1",
+                "title": "Minimale energieprestatie",
+                "subtitle": "*Het wordt aanbevolen om een bespreking te beleggen met de lokale bevoegde instantie op het gebied van bouwtoezicht over welke prestatiebenchmark het best kan worden gebruikt.*",
+                "specification": "De berekende energieprestatie van een kantoorgebouw voldoet aan de volgende vereisten:\n\n• bij nieuwbouwprojecten: een energieprestatiecertificaat van klasse B of twee maal de kWh/m²-drempelwaarde⁸ voor de beste klasse of maximaal 100 kWh/m² *(de meest strikte optie)*;\n• bij ingrijpende renovaties: een energieprestatiecertificaat van klasse C of drie maal de kWh/m²-drempelwaarde⁸ voor de beste klasse of maximaal 135 kWh/m² *(de meest strikte optie)*.\n\nIndien de nationale minimale vereisten of de nationale vereisten voor bijna-energieneutrale gebouwen per 31 december 2018 strenger zijn dan de voornoemde vereisten, wordt in plaats daarvan gunningscriterium B8.1 gebruikt om verdere kostenefficiënte verbeterde prestaties en diepgaande renovaties te bevorderen.\n\nTechnische specificatie B9 wordt ook gebruikt voor het vaststellen van vereisten van bijdragen van technologieën voor energie met een lage of geen koolstofuitstoot.\n\nEr wordt een dynamisch thermisch simulatiemodel dat voldoet aan de uurnethode van ISO 13790 of gelijkwaardig gebruikt om de verwarmings- en koelingsprestaties te valideren.\n\nBij ingrijpende renovaties wordt gebruikgemaakt van invoergegevens die de geïnspecteerde bouwdetails van het gebouw weergeven.\n\n⁸ De drempelwaarde is de hoogste energiebehoefte (uitgedrukt in kWh/m²) die is toegestaan binnen een klasse van het energieprestatiecertificaat.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 16"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver dient de volgende informatie in waaruit blijkt dat het ontwerp van het gebouw dat voor de vergunningverlening wordt ingediend bij de lokale instantie voor bouwtoezicht, voldoet aan de GPP-vereisten.\n\nDeze informatie bestaat uit de energieprestaties van het gebouw berekend overeenkomstig EN 15603 of gelijkwaardig of de nationale rekenmethode die van toepassing is op de locatie waar het gebouw zich bevindt.\n\nDe informatie wordt gevalideerd door de resultaten van modellering overeenkomstig ISO 13790 of gelijkwaardig.\n\nDe berekeningen worden gecontroleerd door een bevoegde autoriteit⁶ of een beoordelaar van gebouwen die gecertificeerd is voor het gebruik van de desbetreffende methodologieën en rekenmethoden.\n\n⁶ Een bevoegde autoriteit is een nationaal, regionaal of lokaal orgaan dat is aangewezen voor de uitoefening van onafhankelijk toezicht op de minimale energieprestatie van gebouwen, energieprestatiecertificaten en bouwinspecties."
+                }
+              },
+              {
+                "code": "B3",
+                "title": "Energiebeheerssysteem voor gebouwen",
+                "specification": "Er wordt een energiebeheerssysteem voor gebouwen geïnstalleerd en in gebruik genomen dat gebruikers en facilities managers voorziet van realtime informatie over het energieverbruik van het gebouw door middel van een netwerk van sensoren en minstens elk half uur een meting van de nutsvoorzieningen.\n\nDe gebruikersinterface maakt het mogelijk dat gebruikers en facilities managers informatie over het energieverbruik van het gebouw kunnen analyseren en downloaden zonder dat daar uitgebreide opleiding voor nodig is.\n\nDaarnaast kunnen gebruikers de comfortinstellingen in zones van het gebouw aanpassen. De prestaties van de belangrijkste aspecten van het gebouw die door het systeem kunnen worden beheerd (namelijk verlichting, verwarming en koeling), zijn eenvoudig aan te passen.\n\nDaarnaast maakt het systeem het volgende mogelijk:\n• analyse en besturing van het energieverbruik in verschillende zones van het gebouw (ten minste voor verwarming, koeling en verlichting);\n• optimalisatie van de prestaties overeenkomstig de omgevingsomstandigheden binnen en buiten het gebouw; en\n• diagnose van de reden voor eventuele afwijkingen van de ontwerpprestaties.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 17"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt specificaties voor het energiebeheerssysteem voor gebouwen, waaronder informatie over de gebruikersinterface.\n\nDaarnaast wordt uit deze informatie duidelijk hoe gegevens worden weergegeven, gerapporteerd en beschikbaar gesteld aan ten minste de facilities en/of energiemanagers van het gebouw."
+                }
+              },
+              {
+                "code": "B4",
+                "title": "Koolstofarme of koolstofvrije energiebronnen",
+                "specification": "Ten minste 10 % van de primaire energiebehoefte van het gebouw wordt geleverd/opgewekt door plaatselijke hernieuwbare energiebronnen of kosteneffectieve alternatieve systemen met een hoge efficiëntie die zijn geïnstalleerd op het terrein van het gebouw of die worden gedeeld met andere gebouwen.\n\n*Dit minimumvereiste kan worden aangepast afhankelijk van de lokale omstandigheden. Het vereiste kan worden afgestemd onder verwijzing naar lokaal beleid inzake ruimtelijke ordening en/of een verkennend onderzoek van de locatie.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 18"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt ontwerpen en tekeningen voor de te installeren energiesystemen, samen met berekeningen van de gemodelleerde energieopwekking en de nettobijdrage aan het primaire energieverbruik van het gebouw."
+                }
+              },
+              {
+                "code": "B5",
+                "title": "Vervoersplan voor het personeel en infrastructuur",
+                "subtitle": "*Het criterium betreffende het vervoersplan voor het personeel kan worden gecombineerd met een gunningscriterium waarin de kwaliteit van het plan wordt beoordeeld.*",
+                "specification": "In overleg met de aanbestedende dienst, de lokale planologische dienst en de relevante infrastructuuraanbieders wordt voor het gebouw een vervoersplan voor het personeel ontwikkeld. In het plan worden specifieke maatregelen vastgesteld die, rekening houdend met de lokale omstandigheden, de noodzaak om met eigen auto naar het gebouw te komen kunnen beperken en het gebruik van duurzamere vervoersmethoden kunnen bevorderen, zoals fietsen en lopen, openbaar vervoer, voertuigen met een lage uitstoot en carpooling.\n\nEr wordt ten minste ruimte en infrastructuur voor de volgende vervoersmethoden geïntegreerd in het ontwerp van het gebouw:\n• elektrische voertuigen: specifieke parkeerplaatsen met bijbehorende elektrische oplaadpunten;\n• fietsenstalling: veilige, overdekte en eenvoudig toegankelijke fietsenstalling met oplaadpunten voor elektrische fietsen.\n\n*In beide gevallen wordt het aantal plekken vastgesteld onder verwijzing naar de lokale normen of de vereisten in de regeling voor de beoordeling van het gebouw.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 18"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Ontwerpteams of contractanten verstrekken plattegronden van het gebouw met daarop aangegeven de parkeerplekken voor elektrische voertuigen en stallingsplekken voor fietsen en de aan te leggen bijbehorende servicepunten. Daarnaast worden de aannamen verstrekt die zijn gebruikt om de ruimtevoorziening te schatten. Ontwerpteams of contractanten verstrekken een opzet voor een vervoersplan voor het personeel."
+                }
+              },
+              {
+                "code": "B7.1",
+                "title": "Thermisch comfort",
+                "specification": "De ontwerpwaarden voor de binnentemperatuur (minimale kamertemperatuur in de winter, maximale kamertemperatuur in de zomer) voor kantoorgebouwen voldoen ten minste aan categorie I van EN 15251 of gelijkwaardig. Er wordt verwezen naar bijlage A1 voor mechanisch gekoelde gebouwen en bijlage A2 voor passief gekoelde gebouwen.\n\nDe naleving wordt aangetoond met behulp van dynamische thermische simulatiemodellering die wordt uitgevoerd overeenkomstig de uurmethode in EN ISO 13790 of gelijkwaardig.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 19"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Ontwerpteams of de DB-contractant of de DBO-contractant verstrekken modelleringsgegevens voor de kamertemperatuur."
+                }
+              },
+              {
+                "code": "B7.2",
+                "title": "Beheer van daglicttoetreding en verblinding",
+                "specification": "Er wordt gebruikgemaakt van dynamische modellering om aan te tonen dat gedurende het jaar het bruikbare kantooroppervlak gedurende minimaal 55 % van de uren dat het gebouw in gebruik is de volgende waarden bereikt:\n• daglichtautonomie van een ruimte (Spatial Daylight Autonomy, SDA) van ≥ 300 lux op het werkoppervlak; en\n• waarschijnlijkheid van verblinding door daglicht (Daylight Glare Probability, DGP) van ≤ 40 % voor locaties met meer dan 1.000 lux (zonder geïnstalleerde zonbeheersmaatregelen).\n\nBeide waarden worden gemeten op de hoogte van het werkoppervlak, dat wordt vastgesteld door de aanbestedende dienst. De DGP wordt gemeten voor uitzicht uit het raam op ooghoogte.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 20"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Ontwerpteams of de DB-contractant of de DBO-contractant verstrekken een overzichtsverslag op basis van de modelleringsgegevens van één jaar voor daglicttoetreding en verblindingsniveaus."
+                }
+              },
+              {
+                "code": "B7.3",
+                "title": "Beheer van daglicttoetreding en verblinding",
+                "specification": "Er wordt aangegeven dat het ventilatiesysteem lucht aanlevert met een kwaliteitsbeoordeling van IDA 1 overeenkomstig EN 15251 of gelijkwaardig.\n\nOp locaties met een slechte kwaliteit van de buitenlucht worden de ventilatiesystemen van het gebouw zodanig ontworpen dat wordt gewaarborgd dat er schone lucht naar de kantoren wordt gevoerd in overeenstemming met het volgende criterium:\n• alle luchtinlaten bevinden zich [ten minste 20 meter](# \"Dit is de geometrische afstand gemeten over de oppervlakten van het openbare domein en het gebouw en geen lineaire afstand van punt tot punt. Soms kan hier in computerondersteund ontwerpen (CAD) naar worden verwezen als een meervoudige of gesegmenteerde lijn of een polylijn.\") van bronnen van slechte luchtkwaliteit (zoals hierna gedefinieerd). Indien dit niet mogelijk is, moet de opening zo hoog mogelijk boven de grond worden geplaatst. Daarnaast voldoet het ontwerp aan leidraad A2.2 in EN 13779;\n• filters van ventilatiesystemen voldoen aan de specificaties in tabel A.5 van EN 13779 of gelijkwaardig.\n\nSlechte luchtkwaliteit wordt gedefinieerd als buitenlucht van klasse 2 of 3 overeenkomstig EN 13779.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 20"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Het ontwerpteam of de DBO-contractant toont aan dat het gebouw voldoet aan de criteria voor de kwaliteitsbeoordeling van binnenlucht in EN 15251 of gelijkwaardig. Er worden tekeningen en plattegronden van de ventilatiesystemen verstrekt waarin de locaties van de luchtinlaten zijn ingetekend. Deze worden verstrekt in de gedetailleerde ontwerpfase en na voltooiing. Ze bevatten tevens lokale luchtbewakingsgegevens van de lokale overheidsinstantie, waardoor de locatie kan worden ingedeeld overeenkomstig EN 13779."
+                }
+              }
+            ]
+          },
+          "phase_c": {
+            "core_criteria": [
+              {
+                "code": "C1",
+                "title": "Audit- en beheersplan voor sloopafval",
+                "specification": "Minimaal 55 gewichtsprocent van niet-gevaarlijke afvalstoffen die worden gegenereerd tijdens de sloop- en stripwerkzaamheden, uitgezonderd uitgraven en opvullen, wordt voorbereid voor hergebruik, recycling en andere vormen van materiaalterugwinning. Dit omvat:\ni) hout, glas, metaal, baksteen, steen, keramiek en beton die worden herwonnen uit de belangrijkste bouwwestructuren;\nii) inrichting en niet-structurele elementen, waaronder deuren en deurposten, vloeren, plafondtegels, gipsplaten, plastic profielen, isolatiematerialen, raamkozijnen, vensterglas, bakstenen, beton in de vorm van blokken en voorgegote elementen, wapeningsstaven.\n\nDe contractant voert voorafgaand aan de sloop/het strippen een controle uit om vast te stellen wat kan worden hergebruikt, gerecycled of herwonnen. Deze controle bestaat uit:\ni) identificatie en risicobeoordeling van gevaarlijke afvalstoffen (waaronder AEEA) die mogelijk gespecialiseerde behandeling en verwerking vereisen, of emissies die zich kunnen voordoen tijdens de sloop;\nii) een hoeveelhedenlijst met een uitsplitsing van de verschillende bouwmaterialen en -producten;\niii) een schatting van het percentage materialen dat kan worden hergebruikt en gerecycled op basis van voorstellen voor systemen van gescheiden inzameling tijdens het sloopproces.\n\nDe geïdentificeerde materialen, producten en elementen worden afzonderlijk vermeld op een hoeveelhedenlijst van de sloop.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 27"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De hoofdcontractant voor de bouw, DB-contractant of DBO-contractant dient een verslag van een controle voorafgaand aan de sloop/het strippen in die de vermelde informatie bevat.\n\nEr wordt gebruikgemaakt van een systeem voor de controle en verantwoording van geproduceerd afval. De bestemming van afvalzendingen en afgedankte materialen wordt getraceerd met behulp van vrachtbrieven en facturen. De controlegegevens worden aan de aanbestedende dienst verstrekt."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "C1",
+                "title": "Audit- en beheersplan voor sloopafval",
+                "specification": "Minimaal 80 gewichtsprocent van niet-gevaarlijke afvalstoffen die worden gegenereerd tijdens de sloop- en stripwerkzaamheden, uitgezonderd uitgraven en opvullen, wordt voorbereid voor hergebruik en recycling. Dit omvat:\ni) hout, glas, metaal, baksteen, keramiek en beton die worden herwonnen uit de belangrijkste bouwstructuren;\nii) inrichting en niet-structurele elementen, waaronder deuren en deurposten, vloeren, plafondtegels, gipsplaten, plastic profielen, isolatiematerialen, raamkozijnen, vensterglas, bakstenen, beton in de vorm van blokken en voorgegote elementen, wapeningsstaven.\n\nDe contractant voert voorafgaand aan de sloop/het strippen een controle uit om vast te stellen wat kan worden hergebruikt of gerecycled. Deze controle bestaat uit:\ni) identificatie en risicobeoordeling van gevaarlijke afvalstoffen (waaronder AEEA) die mogelijk gespecialiseerde behandeling of verwerking vereisen, of emissies die zich kunnen voordoen tijdens de sloop;\nii) een hoeveelhedenlijst met een uitsplitsing van de verschillende bouwmaterialen en -producten;\niii) een schatting van het percentage materialen dat kan worden hergebruikt en gerecycled op basis van voorstellen voor systemen van gescheiden inzameling tijdens het sloopproces.\n\nDe geïdentificeerde materialen, producten en elementen worden afzonderlijk vermeld op een hoeveelhedenlijst van de sloop.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 27"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De hoofdcontractant voor de bouw, DB-contractant of DBO-contractant dient een verslag van een controle voorafgaand aan de sloop/het strippen in die de vermelde informatie bevat.\n\nEr wordt gebruikgemaakt van een systeem voor de controle en verantwoording van geproduceerd afval. De bestemming van afvalzendingen en afgedankte materialen wordt getraceerd met behulp van vrachtbrieven en facturen. De controlegegevens worden aan de aanbestedende dienst verstrekt."
+                }
+              }
+            ]
+          },
+          "phase_d": {
+            "core_criteria": [
+              {
+                "code": "D1",
+                "title": "Inkoop van legaal verkregen hout door de hoofdcontractant voor de bouw",
+                "subtitle": "*Deze technische specificatie moet worden gecombineerd met de contractuele uitvoeringsvoorwaarde in D7.*",
+                "specification": "Al het hout en alle houtproducten die binnen het toepassingsgebied van de EU-houtverordening vallen die worden geleverd in het kader van de opdracht, moeten legaal worden verkregen overeenkomstig Verordening (EU) nr. 995/2010 (hierna de \"EU-houtverordening\" genoemd).",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 28"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Uiterlijk ten tijde van de gunning van de opdracht verstrekt de hoofdcontractant informatie over:\n• de marktdeelnemers of handelaars (zoals gedefinieerd in de EU-houtverordening) die het hout leveren dat en de houtproducten leveren die worden gebruikt voor de bouw van het gebouw;\n• bewijsstukken van de door de marktdeelnemer(s) bij het voor het eerst op de Europese markt brengen van het hout dat en de houtproducten die worden gebruikt in de bouw van het gebouw ingevoerde risicobeoordelings- en risicobeperkingsprocedures (overeenkomstig artikel 6, lid 1, onder b) en c), van de EU-houtverordening), alsmede, indien van toepassing, de middelen waarmee handelaars verderop in de toeleveringsketen de traceerbaarheid waarborgen, overeenkomstig artikel 5 van de EU-houtverordening."
+                }
+              },
+              {
+                "code": "D2",
+                "title": "Installatie en inbedrijfstelling van de energiesystemen van het gebouw",
+                "subtitle": "*Afhankelijk van de gekozen aanbestedingsprocedure kan dit ook van toepassing zijn op systemen die worden geïnstalleerd door een externe energiedienstencontractant (zie punt E).*",
+                "specification": "De volgende systemen worden ontworpen, geïnstalleerd en in bedrijf gesteld conform de overeengekomen ontwerpen en specificaties:\n• verwarming, koeling en ventilatie (HVAC-systemen);\n• koolstofarme en koolstofvrije energietechnologieën;\n• energiebeheersysteem voor gebouwen;\n• lichtbeheersystemen.\n\nElk systeem wordt onderworpen aan een functionele prestatietest, met inbegrip van de meting van de prestaties.\n\nHVAC-systemen voldoen aan EN 12599 of gelijkwaardig en, indien relevant voor andere geïnstalleerde systemen, andere toepasselijke EN-, ISO- of nationale normen, of het equivalent daarvan.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 28"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De hoofdcontractant voor de bouw of de DBO-contractant stellen een beschrijving op van de procedure voor een functionele prestatietest en verplichten zich tot de uitvoering van deze test om te verzekeren dat de systemen functioneren binnen de ontwerpparameters."
+                }
+              },
+              {
+                "code": "D3",
+                "title": "Afvalbeheer op de locatie",
+                "specification": "Het tijdens de bouw en renovatie geproduceerde afval, exclusief sloopafval, bedraagt minder dan of is gelijk aan 11 ton per 100 m² bruto intern kantoorvloeroppervlak.\n\nEr wordt een afvalbeheersplan voor de locatie opgesteld voorafgaand aan het begin van de werkzaamheden op locatie. In het plan worden systemen vastgesteld voor de gescheiden inzameling van materialen op locatie voor hergebruik, recycling en andere vormen van terugwinning. Het afvalbeheersplan voor de locatie omvat:\ni) bouwproducten waaruit de belangrijkste bouwelementen bestaan, waaronder hout, glas, metaal, baksteen, keramiek, beton en inert afval, alsmede bijbehorende verpakkingsmaterialen;\nii) bouwproducten die deel uitmaken van de inrichting van het gebouw, waaronder vloeren, plafondtegels, gipsplaten, plastic profielen en isolatiematerialen, alsmede bijbehorende verpakkingsmaterialen.\n\nBij de gescheiden inzameling van materialen voor hergebruik, recycling en terugwinning wordt de afvalhiërarchie van Richtlijn 2008/98/EG in acht genomen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 29"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De hoofdcontractant voor de bouw, de DB-contractant of de DBO-contractant dient een afvalbeheersplan voor de locatie in dat bestaat uit\ni) een materiaalstaat voor de geschatte afvalproductie, op basis van goede praktijken;\nii) een schatting van het percentage materiaal dat kan worden hergebruikt op basis van gescheiden inzameling tijdens het bouwproces;\niii) een schatting van het percentage materiaal dat kan worden gerecycled en herwonnen op basis van gescheiden inzameling.\n\nEr wordt een systeem ingevoerd voor de controle en verantwoording van geproduceerd afval en om de bestemming van afvalzendingen te traceren. De controlegegevens worden aan de aanbestedende dienst verstrekt."
+                }
+              },
+              {
+                "code": "D4",
+                "title": "Selectie van materialen en afwerking voor de inrichting",
+                "specification": "Elk materiaal dat en elke afwerking die wordt geselecteerd voor de inrichting van de kantoren voldoen aan de in onderstaande tabel F vermelde emissiegrenswaarden. Dit voorschrift geldt voor:\n• plafondtegels;\n• verf en vernis;\n• vloer- en muurbedekking van textiel;\n• laminaat en flexibele vloerbedekking;\n• houten vloerbedekking.\n\nAlle tests worden uitgevoerd op het voltooide product.\n\n**Tabel F. Emissiegrenswaarden voor materialen en afwerkingen**\n\n| Product | Emissiegrenswaarden (μg/m³) | |\n| --- | 3 dagen | 28 dagen |\n| TVOS | 10 000 | < 2 000 |\n| Formaldehyde | – | < 120 |",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 29"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De hoofdcontractant voor de bouw of de DBO-contractant verstrekt conforme testresultaten voor elk geïnstalleerd materiaal en elke geïnstalleerde afwerking. De emissies worden vastgesteld conform CEN/TS 16516 of gelijkwaardige producttestnormen of keurmerken die gebruikmaken van de Europese referentieruimte als basis voor de tests."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "D3",
+                "title": "Afvalbeheer op de locatie",
+                "specification": "Het tijdens de bouw en renovatie geproduceerde afval, exclusief sloopafval, bedraagt minder dan of is gelijk aan 7 ton per 100 m² bruto intern kantoorvloeroppervlak.\n\nEr wordt een afvalbeheersplan voor de locatie opgesteld voorafgaand aan het begin van de werkzaamheden op locatie. In het plan worden mogelijkheden voor het voorkomen van afval geïdentificeerd en systemen vastgesteld voor de gescheiden inzameling van materialen op locatie voor hergebruik, recycling en andere vormen van terugwinning. Het afvalbeheersplan voor de locatie omvat:\ni) bouwproducten waaruit de belangrijkste bouwelementen bestaan, waaronder hout, glas, metaal, baksteen, keramiek, beton en inert afval, alsmede bijbehorende verpakkingsmaterialen;\nii) bouwproducten die deel uitmaken van de inrichting van het gebouw, waaronder vloeren, plafondtegels, gipsplaten, plastic profielen en isolatiematerialen, alsmede bijbehorende verpakkingsmaterialen.\n\nBij de gescheiden inzameling van materialen voor hergebruik, recycling en terugwinning wordt de afvalhiërarchie van Richtlijn 2008/98/EG in acht genomen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 29"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De hoofdcontractant voor de bouw, de DB-contractant of de DBO-contractant dient een afvalbeheersplan voor de locatie in dat bestaat uit:\ni) een materiaalstaat voor de geschatte afvalproductie en de mogelijkheden voor de voorkoming van afval, op basis van goede praktijken;\nii) een schatting van het percentage materiaal dat kan worden hergebruikt op basis van gescheiden inzameling tijdens het bouwproces;\niii) een schatting van het percentage materiaal dat kan worden gerecycled en herwonnen op basis van gescheiden inzameling.\n\nEr wordt een systeem ingevoerd voor de controle en verantwoording van geproduceerd afval en om de bestemming van afvalzendingen te traceren. De controlegegevens worden aan de aanbestedende dienst verstrekt."
+                }
+              },
+              {
+                "code": "D4",
+                "title": "Selectie van materialen en afwerking voor de inrichting",
+                "specification": "Elk materiaal dat en elke afwerking die wordt geselecteerd voor de inrichting van de kantoren voldoen aan de in onderstaande tabel G vermelde emissiegrenswaarden. Dit voorschrift geldt voor:\n• plafondtegels;\n• verf en vernis;\n• vloer- en muurbedekking van textiel;\n• laminaat en flexibele vloerbedekking;\n• houten vloerbedekking.\n\nAlle tests worden uitgevoerd op het voltooide product.\n\n**Tabel G. Emissiegrenswaarden voor materialen en afwerkingen**\n\n| Product | Emissiegrenswaarden (μg/m³) – 3 dagen | Emissiegrenswaarden (μg/m³) – 28 dagen |\n| --- | --- | --- |\n| TVOS | 10 000 | < 1 000 |\n| SVOS | – | 100 |\n| Formaldehyde | – | < 40 |\n| Kankerverwekkende stoffen: | < 10 totaal van de vier stoffen | < 1 voor elke stof |\n| • trichloorethyleen | | |\n| • benzeen | | |\n| • DEHP | | |\n| • DBP | | |",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 29"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De hoofdcontractant voor de bouw of de DBO-contractant verstrekt conforme testresultaten voor elk geïnstalleerd materiaal en elke geïnstalleerde afwerking. De emissies worden vastgesteld conform CEN/TS 16516 of gelijkwaardige producttestnormen of keurmerken die gebruikmaken van de Europese referentieruimte als basis voor de tests."
+                }
+              }
+            ]
+          },
+          "phase_e": {
+            "core_criteria": [
+              {
+                "code": "E1",
+                "title": "Verwarmingssystemen, met inbegrip van warmtekrachtkoppeling (wkk)",
+                "specification": "Alle verwarmingssystemen, met inbegrip van systemen die worden voorzien via wkk-installaties, die warmte leveren aan op water of op lucht gebaseerde distributiesystemen voor verwarming in een kantoorgebouw, voldoen aan de desbetreffende kern-GPP-criteria die de efficiëntie van elke technologie aantonen:\n• voor verwarmingstoestellen op basis van water, waaronder tevens boilers en warmtepompen met een verwarmingsvermogen tot 400 kW vallen, en voor warmtekrachtkoppelingsinstallaties met een capaciteit voor de opwekking van elektriciteit van minder dan of gelijk aan 50 kWe, moet worden voldaan aan de technische specificaties 3.1 en 3.2. De criteria kunnen hier worden geraadpleegd: http://ec.europa.eu/environment/gpp/pdf/criteria/water_based/heaters_nl.pdf\n• voor warmtekrachtkoppelingsinstallaties die aandrijvingsmechanismen omvatten met een capaciteit voor de opwekking van elektriciteit van meer dan 50 kWe, moet worden voldaan aan technische specificatie 3.1.1, waarin een minimaal totaal jaarrendement van 75 % wordt gespecificeerd, en aan technische specificatie 3.2.2, waarin voorschriften worden gespecificeerd voor warmtekrachtkoppeling met een hoge efficiëntie.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 33"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Inschrijvers verstrekken gegevens over de technische prestaties van de producten die zij voorstellen te installeren, waaruit blijkt hoe wordt voldaan aan de toepasselijke GPP-criteria."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "E1",
+                "title": "Verwarmingssystemen, met inbegrip van warmtekrachtkoppeling (wkk)",
+                "specification": "Alle verwarmingssystemen, met inbegrip van systemen die worden voorzien via wkk-installaties, die warmte leveren aan op water of op lucht gebaseerde distributiesystemen voor verwarming in een kantoorgebouw, voldoen aan de desbetreffende uitgebreide GPP-criteria die de efficiëntie van elke technologie aantonen:\n• voor verwarmingstoestellen op basis van water, waaronder tevens boilers en warmtepompen met een verwarmingsvermogen tot 400 kW vallen, en voor warmtekrachtkoppelingsinstallaties met een capaciteit voor de opwekking van elektriciteit van minder dan of gelijk aan 50 kWe moet worden voldaan aan de technische specificaties 3.1 en 3.2. De criteria kunnen hier worden geraadpleegd: http://ec.europa.eu/environment/gpp/pdf/criteria/water_based/heaters_nl.pdf\n• voor warmtekrachtkoppelingsinstallaties die aandrijfmechanismen omvatten met een capaciteit voor de opwekking van elektriciteit van meer dan 50 kWe moet worden voldaan aan technische specificatie 3.2.1, waarin een minimaal totaal jaarrendement van 75 % wordt gespecificeerd, en aan technische specificatie 3.2.2, waarin voorschriften worden gespecificeerd voor warmtekrachtkoppeling met een hoge efficiëntie. De criteria kunnen hier worden geraadpleegd: http://ec.europa.eu/environment/gpp/pdf/criteria/chp/nl.pdf",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 33"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Inschrijvers verstrekken gegevens over de technische prestaties van de producten die zij voorstellen te installeren waaruit blijkt hoe wordt voldaan aan de toepasselijke GPP-criteria."
+                }
+              }
+            ]
+          },
+          "phase_f": {
+            "core_criteria": [
+              {
+                "code": "F1",
+                "title": "Kwaliteit van de voltooide bouwschil",
+                "specification": "De bouwschil en de constructie daarvan worden zodanig ontworpen dat een hoge norm van luchtdichtheid wordt gewaarborgd. De ontworpen luchtdichtheid bedraagt 4 m³/(h.m²) bij 50 Pascal voor nieuwbouw en 8 m³/(h.m²) bij 50 Pascal voor ingrijpende renovaties.\n\nNa de voltooiing van het gebouw test de hoofdaannemer de kwaliteit van de voltooide bouwschil en de constructie daarvan overeenkomstig EN 13829 of gelijkwaardig om te waarborgen dat de ontwerpprestaties zijn behaald.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De inschrijver verstrekt een toezegging om, na voltooiing, tests uit te voeren van de luchtdichtheid van de bouwschil en om eventuele gebreken die zich voordoen, te verhelpen."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "F1",
+                "title": "Kwaliteit van de voltooide bouwschil",
+                "specification": "De bouwschil en de constructie daarvan worden zodanig ontworpen dat de continuïteit van de isolatie en een hoge norm van luchtdichtheid worden gewaarborgd. De ontworpen luchtdichtheid bedraagt 2 m³/(h.m²) bij 50 Pascal voor nieuwbouw en 5 m³/(h.m²) bij 50 Pascal voor ingrijpende renovaties.\n\nNa voltooiing van het gebouw test en beoordeelt de hoofdcontractant de kwaliteit van de voltooide bouwschil en de constructie daarvan overeenkomstig EN 13187 en EN 13829 of gelijkwaardig om te waarborgen dat er zich geen gebreken voordoen en dat de ontwerpprestaties worden behaald.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De inschrijver verstrekt een toezegging om, na voltooiing, de thermische integriteit en de luchtdichtheid van de bouwschil te testen en om eventuele gebreken die zich voordoen, te verhelpen."
+                }
+              }
+            ]
+          },
+          "phase_g": {
+            "core_criteria": [
+              {
+                "code": "G1",
+                "title": "Energiebeheerssysteem voor gebouwen",
+                "specification": "De facilities manager verstrekt maandelijkse verslagen aan de gebruiker met behulp van gegevens afkomstig uit het energiebeheersysteem voor het gebouw. De regeling wordt op jaarbasis beoordeeld. In de verslagen wordt het energieverbruik voor verwarming, koeling, ventilatie en verlichting per seizoen uitgesplitst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 38"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Potentiële contractanten voor het facilities management of DBO-contractanten dienen hun voorgestelde indeling voor de verslagen in als onderdeel van hun reactie op de uitnodiging tot inschrijving."
+                }
+              },
+              {
+                "code": "G2",
+                "title": "Energieprestatiecontract",
+                "specification": "De exploitant van het gebouw of de facilities manager (zoals van toepassing) stelt, op basis van de voorlopige modellering van het energieverbruik van het gebouw (zie criterium A1), grenswaarden vast voor het energieverbruik in verband met verlichting, verwarming, koeling, ventilatie en hulpspanningsvoorziening. Geprognosticeerde belasting in verband met gebruikers, zoals servers en kleine afnames, vallen hierbuiten.\n\nDe opdracht wordt gebaseerd op gemiddelde gegevens over tien jaar voor het weer en gradendagen voor de locatie. In de opdracht worden tevens aanpassingen gedefinieerd voor mogelijke toekomstige variatie in de bezetting, extreme weersomstandigheden en marktenergikosten.\n\nIndien het energieverbruik deze grenswaarden overschrijdt, is de exploitant van het gebouw of de facilities manager (zoals van toepassing) aansprakelijk voor de aanvullende kosten. Als het energieverbruik onder deze grenswaarden valt, worden de besparingen 50/50 gedeeld (of overeenkomstig een andere overeengekomen verdeling van de besparingen) met de aanbestedende dienst. De regeling wordt op jaarbasis beoordeeld.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 38"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De exploitant van het gebouw of de facilities manager verplicht zich middels een contractuele toezegging tot de overeengekomen regeling, met inbegrip van het toepassingsgebied en de grenswaarden voor energie. Er wordt voorzien in een proces voor de onafhankelijke samenvoeging en presentatie van de jaarlijkse gegevens."
+                }
+              },
+              {
+                "code": "G3",
+                "title": "Afvalbeheerssysteem",
+                "specification": "De gebouwbeheerder voert systemen in waarmee gebruikers papier, karton, verpakkingen van levensmiddelen en dranken (glas, kunststof en andere materialen waarvoor lokale gescheiden inzamelingssystemen bestaan) ten behoeve van recycling in verschillende stromen kunnen scheiden. Batterijen, inkt en tonercartridges, IT-apparatuur en meubels worden indien mogelijk ook ingezameld en voorbereid voor hergebruik of recycling.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 39"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Facilities managers of DBO-contractanten dienen een voorstel in voor de te gebruiken systemen, met inbegrip van details over de afvalstromen, de scheidingssystemen, de bedrijfsregelingen en de te gebruiken contractanten."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "G1",
+                "title": "Energiebeheerssysteem voor gebouwen",
+                "specification": "De facilities manager verstrekt maandelijkse verslagen aan de gebruiker met behulp van gegevens afkomstig uit het energiebeheersysteem voor het gebouw. De regeling wordt op jaarbasis beoordeeld.\n\nIn de verslagen worden tendensen in het energieverbruik in het gebouw geïdentificeerd. Deze tendensen worden uitgesplitst zodat verwarming, koeling en verlichting per seizoen kunnen worden geïdentificeerd, evenals per zone of afdeling. De verslagen bevatten tevens aanbevelingen over herstelmaatregelen en/of verdere energiebesparingen die kunnen worden gerealiseerd.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 38"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Potentiële contractanten voor het facilities management of DBO-contractanten dienen hun voorgestelde indeling voor de verslagen in als onderdeel van hun reactie op de uitnodiging tot inschrijving."
+                }
+              },
+              {
+                "code": "G3",
+                "title": "Afvalbeheerssysteem",
+                "specification": "De gebouwbeheerder voert systemen in waarmee gebruikers en in het gebouw gevestigde cateringdiensten papier (minstens twee klassen), karton, verpakkingen van levensmiddelen en dranken (glas, kunststof en andere materialen waarvoor lokale gescheiden inzamelingssystemen bestaan) en levensmiddelen-/cateringafval ten behoeve van recycling in verschillende stromen kunnen scheiden. Batterijen, inkt en tonercartridges, IT-apparatuur en meubels worden indien mogelijk ook ingezameld en voorbereid voor hergebruik of recycling.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 39"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Facilities managers of DBO-contractanten dienen een voorstel in voor de te gebruiken systemen, met inbegrip van details over de afvalstromen, de scheidingssystemen, de bedrijfsregelingen en de te gebruiken contractanten."
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "award_criteria",
+      "title": "Gunningscriteria",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als gunningscriteria. Daarmee wordt vastgelegd op basis waarvan de inschrijvingen inhoudelijk worden beoordeeld en de economisch meest voordelige inschrijving wordt vastgesteld.",
+      "warnings": [
+        {
+          "severity": "yellow",
+          "text": "Let op: De kerncriteria (minimale gunningscriteria) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Kies de fase in de tabel hieronder. De GPP definieert gunningscriteria voor de fases:\n  ~~A: Selectie ontwerpteam & contractanten~~\n  B: Ontwerp- en prestatievereisten\n  ~~C: Locatievoorbereiding~~\n  ~~D: Werkzaamheden~~\n  ~~E: Energiesysteem & energiediensten~~\n  F: Overdracht\n  ~~G: Facilities management~~",
+        "Neem in ieder geval de kerncriteria op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n  a. Ga naar de tool en kies de relevante categorie.\n  b. Zet het [ambitieniveau](https://www.mvicriteria.nl) op BASIS.\n  c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n  d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "steps_ordered": true,
+      "example_texts": [],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "phase_a",
+            "label": "Kerncriteria voor fase A: Selectie ontwerpteam & contractanten",
+            "label_short": "A. Selectie ontwerpteam & contractanten",
+            "disabled": true
+          },
+          {
+            "key": "phase_b",
+            "label": "Kerncriteria voor fase B: Ontwerp- en prestatievereisten",
+            "label_short": "B. Ontwerp- en prestatievereisten"
+          },
+          {
+            "key": "phase_c",
+            "label": "Kerncriteria voor fase C: Locatievoorbereiding",
+            "label_short": "C. Locatievoorbereiding",
+            "disabled": true
+          },
+          {
+            "key": "phase_d",
+            "label": "Kerncriteria voor fase D: Werkzaamheden",
+            "label_short": "D. Werkzaamheden",
+            "disabled": true
+          },
+          {
+            "key": "phase_e",
+            "label": "Kerncriteria voor fase E: Energiesysteem & energiediensten",
+            "label_short": "E. Energiesysteem & energiediensten",
+            "disabled": true
+          },
+          {
+            "key": "phase_f",
+            "label": "Kerncriteria voor fase F: Overdracht",
+            "label_short": "F. Overdracht"
+          },
+          {
+            "key": "phase_g",
+            "label": "Kerncriteria voor fase G: Facilities management",
+            "label_short": "G. Facilities management",
+            "disabled": true
+          }
+        ],
+        "default_main_tab": "phase_b",
+        "data": {
+          "phase_b": {
+            "core_criteria": [
+              {
+                "code": "B8.1",
+                "title": "Minimumvereisten betreffende energieprestaties",
+                "subtitle": "*Dit criterium vormt een aanvulling op en stimuleert verdere prestatieverbeteringen die verdergaan dan de vereisten in criterium B1.*",
+                "specification": "De aanbestedende dienst kent punten toe overeenkomstig de gemodelleerde verbetering van de energieprestaties van het gebouw bovenop die van criterium B1. Dit kan zijn gebaseerd op de indeling van het energieprestatiecertificaat of in verbeteringsgradaties van 15 kWh/m².",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 21"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver dient informatie in waaruit blijkt dat het ontwerp van het gebouw dat voor de vergunningverlening wordt ingediend bij de lokale instantie voor bouwtoezicht, voldoet aan de GPP-vereisten.\n\nDeze informatie bestaat uit de energieprestaties van het gebouw berekend overeenkomstig EN 15603 of gelijkwaardig of de nationale rekenmethode die van toepassing is op de locatie waar het gebouw zich bevindt. Daarnaast wordt een kostenoptimale berekening verstrekt overeenkomstig de vermelde methode. De berekeningen worden gecontroleerd door [een bevoegde autoriteit](popup:TOELICHTING||\"een bevoegde autoriteit\"\n\nEen bevoegde autoriteit is een nationaal, regionaal of lokaal orgaan dat is aangewezen voor de uitoefening van onafhankelijk toezicht op de minimale energieprestatie van gebouwen, energieprestatiecertificaten en bouwinspecties.||EU-criteria inzake groene overheidsopdrachten het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 17) of een beoordelaar van gebouwen die gecertificeerd is voor het gebruik van de methode."
+                }
+              },
+              {
+                "code": "B8.2",
+                "title": "Minimumvereisten betreffende energieprestaties",
+                "specification": "Er worden punten toegekend wanneer gunningscriterium B10.1 voor MPV's tevens is opgenomen in de uitnodiging tot inschrijving. Het aardopwarmingsvermogen (Global Warming Potential, GWP)¹¹ van de verwachte energieprestaties van het gebouw wordt berekend op grond van de in B10.1 gebruikte gebruiksduur. De GWP-resultaten voor B1 en B10.1 worden bij elkaar opgeteld. Er worden punten toegekend aan de inschrijvers met het laagste totale GWP.\n\n¹¹ Indien de invoer afkomstig van B1 in kWh wordt aangeleverd, wordt dit omgezet in GWP met behulp van uitstootfactoren voor het elektriciteitsmengsel en de gebruikte brandstoffen, zoals vermeld in de productcategorievoorschriften van het MPV-systeem.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Prestatiegegevens afkomstig van de verificatie van criteria B1 en B10.1 worden gebruikt om het GWP te berekenen. De gegevens en berekeningen worden verstrekt in een overzicht."
+                }
+              },
+              {
+                "code": "B10.1",
+                "title": "Prestaties van de belangrijkste bouwelementen: aggregatie van milieuproductverklaringen (MPV's)",
+                "specification": "*Dit criterium wordt gebruikt in combinatie met kerncriterium voor gunning B8. Minimumvereisten betreffende energieprestaties om rekening te houden met de gebruiksfase van het gebouw.*\n\n*Dit criterium mag alleen worden toegepast wanneer er aan de inschrijvers een [hoeveelhedenlijst](popup:TOELICHTING||Hoeveelhedenlijst\n\nEen hoeveelhedenlijst wordt gedefinieerd als \"een lijst met artikelen die gedetailleerde identificerende beschrijvingen en duidelijke hoeveelheden verstrekt van de werken waaruit een opdracht bestaat\" (RICS 2011).||EU-criteria inzake groene overheidsopdrachten het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 22) voor een referentiegebouw wordt verstrekt als basis voor een vergelijking of wanneer tijdens een mededingingsprocedure de door de verschillende inschrijvers ingediende ontwerpen worden vergeleken.*\n\n*Tijdens de aanbestedingsprocedure moeten aanvullende technische richtsnoeren worden gevolgd, zoals opgenomen in bijlage 1 van de GPP voor het ontwerp, de bouw en het beheer van kantoorgebouwen (MPV-optie).*\n\n*Een technisch beoordelaar die is gespecialiseerd in LCA, verleent bijstand bij het opstellen van de uitnodiging tot inschrijving en voert een kritische beoordeling uit van de inschrijvingen.*\n\nDe aanbestedende dienst kent punten toe op basis van de verbetering in de prestaties op het gebied van de levensduur van de in tabel A opgenomen belangrijkste bouwelementen in vergelijking met een referentiegebouw of andere deelnemende ontwerpen. Dit wordt uitgevoerd overeenkomstig optie 1 (op basis van MPV's), zoals hieronder weergegeven. *De basis voor de vergelijking en de te gebruiken optie worden vermeld in de uitnodiging tot inschrijving.*\n\n**Tabel A. Omvang van de te beoordelen bouwelementen**\n\n| Nieuwbouw | Renovatie |\n| --- | --- |\n| – Funderingen en onderbouw | – Buitenmuren, bedekking en isolatie |\n| – Bouwframe, met inbegrip van balken, zuilen en platen | – Dakrenovatie en isolatie |\n| – Buitenmuren, bedekking en isolatie | – Ramen |\n| – Vloeren en plafonds | |\n| – Binnenmuren | |\n| – Ramen | |\n| – Daken | |\n\n*Wanneer aanvullende vloeren of aanbouw wordt voorzien met een oppervlakte van > 25 % van het bestaande bruikbare vloeroppervlak, is tevens de lijst met nieuwbouwelementen van toepassing.*\n\nDe prestaties worden beoordeeld met behulp van milieuproductverklaringen (MPV's) die voldoen aan ISO 14025 of EN 15804. In de uitnodiging tot inschrijving wordt vermeld welke van de volgende drie methoden wordt gebruikt voor de beoordeling:\ni) vereenvoudigde optie: aggregatie van de resultaten van de GWP-indicator voor elk bouwelement, opgegeven als CO₂-equivalente uitstoot;\nii) optie op basis van indicatorresultaten: aggregatie van de resultaten van de MPV-karakterisering (de LCA-resultaten voor indicatoren) voor elk bouwelement; of\niii) optie op basis van score of beoordeling: aggregatie van de gewogen MPV-scores of beoordelingen (meestal een numerieke score of beoordeling in de vorm van letters) voor elk bouwelement.\n\nDe productcategorieregels (PCR's)¹³ voor de MPV's worden vermeld in de uitnodiging tot inschrijving en alle inschrijvers aggregeren MPV's op basis van de PCR's, die voldoen aan ISO 14025 of EN 15804. Er wordt uitsluitend gebruikgemaakt van extern geverifieerde PCR's. Dit omvat tevens de verificatie van primaire gegevens.\n\n¹³ Productcategorieregels moeten worden gevolgd voor de productie van elke MPV binnen een programma. Hierin wordt gedefinieerd hoe voor elk product de levenscyclusanalyse wordt uitgevoerd en geverifieerd om zo de consistentie te waarborgen.\n\nIn sommige lidstaten bestaan mogelijk al vergunningsvoorschriften en bijbehorende regels voor gebouwen om het GWP op te geven. In dat geval doen de inschrijvers opgave overeenkomstig die voorschriften. Normalisatie en weging voor de toekenning van een score of beoordeling van bouwelementen is toegestaan wanneer er nationale PCR's zijn opgesteld ter ondersteuning van de bouwvergunningsvoorschriften of een beoordelings- en certificeringsregeling voor een gebouw.\n\n*Wanneer er een analyse op basis van MPV's wordt uitgevoerd voorafgaand aan het plaatsen van een opdracht voor een hoofdcontractant, verstrekt het ontwerpteam de aanbestedende dienst een overzicht van de belangrijkste technische aannamen, zodat deze kunnen worden opgenomen in de aanbestedingsstukken.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt een materiaallijst voor het voorgestelde ontwerp en de MPV-resultaten, die worden gerapporteerd overeenkomstig ISO 14025 of EN 15804. De vergelijking met het referentiegebouw wordt schriftelijk vastgelegd in een kort technisch verslag waarin de voorgestelde ontwerpoptie(s) worden vergeleken en het verbeteringspotentieel wordt berekend. In het technische verslag wordt beschreven hoe de \"te behandelen technische punten\" (zoals beschreven in bijlage 1) zijn gedekt.\n\nWanneer de resultaten van een beoordelings- en certificeringssysteem voor gebouwen worden gebruikt, verstrekt de geaccrediteerde bouwbeoordelaar van de inschrijver verificatie overeenkomstig de door het systeem gebruikte methode.\n\n*Het technische verslag vormt het onderwerp van een kritische beoordeling door de door de aanbestedende dienst aangestelde LCA-beoordelaar. De kritische beoordeling wordt uitgevoerd overeenkomstig de richtsnoeren van bijlage 3 van de GPP inzake het ontwerp, de bouw en het beheer van kantoorgebouwen.*"
+                }
+              },
+              {
+                "code": "B10.2",
+                "title": "Opname van gerecycled materiaal in beton en metselwerk",
+                "specification": "*Dit criterium wordt gebruikt wanneer alle inschrijvers een structurele oplossing voor beton en metselwerk moeten ontwerpen. Er wordt [aangeraden](popup:TOELICHTING||Indien specifieke plaatselijke omstandigheden en het lokale beleid ten aanzien van ruimtelijke ordening het gebruik van gerecyclede materialen ondersteunen, kan de aanbestedende dienst per geval beoordelen of er een criterium betreffende gerecycled materiaal kan worden opgenomen in de uitnodiging tot inschrijving naast het holistische criterium B10.1 (MPV/LCA). De aannamen en de inventarisgegevens voor de levensduur die betrekking hebben op de productie- en bouwfase van de gerecyclede materialen, moeten deel uitmaken van het antwoord op B10.1.||EU-criteria inzake groene overheidsopdrachten het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 24) om dit criterium te combineren met criterium B10.3, maar het mag niet worden gebruikt als criterium B10.1 is geselecteerd.*\n\n*Dit criterium is van toepassing op kantoorgebouwen met bouwframes van beton, muren van betonblokken en binnen- en buitenmuren bestaande uit vulling en metselwerk.*\n\nDe aanbestedende dienst kent punten toe aan inschrijvers die een waarde aan gerecycled materiaal en/of gerecyclede [bijproducten](popup:TOELICHTING||Een bijproduct wordt in artikel 5 van de kaderrichtlijn afvalstoffen gedefinieerd als \"[e]en stof die of een voorwerp dat het resultaat is van een productieproces dat niet in de eerste plaats bedoeld is voor de productie van die stof of dat voorwerp [...]\".||EU-criteria inzake groene overheidsopdrachten het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 25) bereiken van meer dan of gelijk aan 15 % voor de som van de in tabel C genoemde belangrijkste bouwelementen.\n\n*Het minimale gehalte kan hoger worden vastgesteld als er overeenstemming wordt bereikt met het ontwerpteam voorafgaand aan het plaatsen van de opdracht voor de hoofdcontractant.*\n\n**Tabel C. Omvang van de op te nemen bouwelementen**\n\n| Nieuwbouw | Renovatie |\n| --- | --- |\n| – Bouwframe, met inbegrip van balken, zuilen en platen | – Buitenmuren |\n| – Buitenmuren | – Binnenmuren |\n| – Vloeren en plafonds | – Dakrenovatie en isolatie |\n| – Binnenmuren | |\n| – Daken | |\n| – Funderingen en onderbouw | |\n\n*Wanneer aanvullende vloeren of aanbouw wordt voorzien met een oppervlakte van > 25 % van het bestaande bruikbare vloeroppervlak, is tevens de lijst met nieuwbouwelementen van toepassing.*\n\nHet gerecyclede materiaal wordt berekend op basis van een gemiddelde massabalans van gerecyclede materialen en/of bijproducten overeenkomstig de productiewijze en de manier waarop ze worden aangeleverd op de locatie (zoals van toepassing):\n– voor elke reeds gemengde partij waarvan leveringen worden gezonden naar de bouwlocatie, in overeenstemming met EN 12620 (Toeslagmaterialen voor beton) en EN 206 (Beton) of gelijkwaardig;\n– op jaarbasis voor in de fabriek vervaardigde panelen, zuilen, blokken en elementen met opgegeven materiaalniveaus, in overeenstemming met EN 12620 (Toeslagmaterialen voor beton) en EN 206 (Beton) of gelijkwaardig.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 24"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De inschrijvers voor hoofdcontractant, de DB-contractant of de DBO-contractant doen een voorstel voor de totale hoeveelheid gerecycled materiaal waarin de proportionele bijdrage van de totale gerecyclede materialen aan de totale waarde van de gespecificeerde bouwelementen wordt gekwantificeerd op basis van informatie verstrekt door de producent(en) van het bouwproduct.\n\nDe inschrijvers voor hoofdcontractant, de DB-contractant of de DBO-contractant beschrijven hoe de totale waarde wordt berekend en geverifieerd, met inbegrip van, ten minste, partijdocumenten, documentatie over productiecontrole in de fabriek en leveringsdocumentatie, en de manier waarop externe verificatie zal worden uitgevoerd tijdens de bouwfase.\n\n*De bestelling en de levering op de locatie van deze bouwelementen wordt later geverifieerd door de hoofdcontractant voor de bouw (zie punt D6).*"
+                }
+              },
+              {
+                "code": "B10.3",
+                "title": "Prestatievereisten voor CO₂e-uitstoot afkomstig van het vervoer van toeslagmaterialen",
+                "specification": "*Dit criterium mag niet worden gebruikt wanneer criterium B10.1 wordt toegepast. Het wordt aanbevolen te overwegen dit criterium te combineren met criterium B10.2 om zo een algeheel milieuvoordeel te behalen. Dit moet altijd worden gebaseerd op inzicht in de lokale marktomstandigheden en door het vaststellen en duidelijk in de uitnodiging tot inschrijving vermelden van een weging van de twee criteria die een daadwerkelijke mededinging verzekeren en inschrijvingen belonen die de beste totale milieuprestaties bieden.*\n\n*In sommige lidstaten bestaan er mogelijk al bouwvergunningsvoorschriften en bijbehorende instrumenten die beschikbaar zijn voor de berekening van vervoersgerelateerde CO₂-equivalente uitstoot. In dat geval geven de inschrijvers de uitstoot op basis van deze voorschriften aan.*\n\nEr worden punten toegekend evenredig aan de vermindering van de CO₂e-uitstoot/ton toeslagmaterialen voor gebruik in de productie van de in de tabel E vermelde belangrijkste bouwelementen. De methode en het instrument die moeten worden gebruikt voor de berekening van CO₂e-uitstoot van vervoer, wordt vermeld in de uitnodiging tot inschrijving.\n\nToeslagmaterialen kunnen bestaan uit:\ni) natuurlijke toeslagmaterialen (zoals zand, grind, steenslag)\nii) gerecyclede toeslagmaterialen (zoals materialen afkomstig van bouw- en sloopafval), en\niii) secundaire toeslagmaterialen (zoals slakken en as afkomstig van industriële processen).\n\nEr kan een maximaal streefcijfer voor CO₂e-uitstoot/ton vervoerde toeslagmaterialen worden vastgesteld door de aanbestedende dienst op basis van de informatie van het ontwerpteam. Dit wordt, samen met de aannamen en voorschriften, opgenomen in de uitnodiging tot inschrijving voor de hoofdcontractant.\n\n**Tabel E. Omvang van de op te nemen bouwelementen**\n\n| Nieuwbouw | Renovatie |\n| --- | --- |\n| – Bouwframe, met inbegrip van balken, zuilen en platen | – Buitenmuren |\n| – Buitenmuren | – Binnenmuren |\n| – Vloeren en plafonds | – Dakrenovatie |\n| – Binnenmuren | |\n| – Daken | |\n| – Funderingen en onderbouw | |\n\n*Wanneer aanvullende vloeren of aanbouw wordt voorzien met een oppervlakte van > 25 % van het bestaande bruikbare vloeroppervlak, is tevens de lijst met nieuwbouwelementen van toepassing.*",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 26"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De DB-inschrijver of de DBO-inschrijver verstrekt een schatting van de CO₂e/ton voor toeslagmaterialen die worden gebruikt in de gespecificeerde bouwelementen met behulp van het in de uitnodiging tot inschrijving vermelde berekeningsinstrument. De vervoerswijze(n) wordt (worden) vermeld en de emissiefactor voor elke vervoerswijze wordt vermenigvuldigd met de desbetreffende materiaalhoeveelheden die zijn vermeld op de hoeveelhedenlijst."
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "B8.1",
+                "title": "Minimumvereisten betreffende energieprestaties",
+                "specification": "*Dit criterium vormt een aanvulling op en stimuleert verdere prestatieverbeteringen die verdergaan dan de vereisten in criterium B1.*\n\nDe aanbestedende dienst kent punten toe overeenkomstig de gemodelleerde verbetering van de energieprestaties van het gebouw:\n• evenredig aan hoe dicht het voorgestelde ontwerp de nationale voorschriften betreffende bijna-energieneutrale gebouwen in de lidstaat benadert in kWh/m² of, als deze niet zijn vastgesteld,\n• op basis van een vergelijking van ontwerpvoorstellen die, afhankelijk van de geldende nationale minimumvereisten, een primaire energiebehoefte hebben van:\n• i) renovaties: maximaal 100 kWh/m²;\n  ii) nieuwbouw: maximaal 60 kWh/m².\n\nDe punten kunnen worden toegekend in verbeteringsgradaties van 15 kWh/m². In alle gevallen moeten de combinaties van maatregelen om deze prestaties te behalen, leiden tot een positieve netto contante waarde wanneer de kostenefficiënte rekenmethode voor kantoorgebouwen van de overheid wordt berekend overeenkomstig de methode in Gedelegeerde Verordening (EU) nr. 244/2012 van de Commissie.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 21"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver dient de volgende informatie in waaruit blijkt dat het ontwerp van het gebouw dat voor de vergunningsverlening wordt ingediend bij de lokale instantie voor bouwtoezicht voldoet aan de GPP-vereisten.\n\nDeze informatie bestaat uit de energieprestaties van het gebouw berekend overeenkomstig EN 15603 of gelijkwaardig of de nationale rekenmethode die van toepassing is op de locatie waar het gebouw zich bevindt. De informatie wordt gevalideerd door de resultaten van modellering overeenkomstig ISO 13790 of gelijkwaardig.\n\nDe berekeningen worden gecontroleerd door [een bevoegde autoriteit](popup:TOELICHTING||\"een bevoegde autoriteit\"\n\nEen bevoegde autoriteit is een nationaal, regionaal of lokaal orgaan dat is aangewezen voor de uitoefening van onafhankelijk toezicht op de minimale energieprestatie van gebouwen, energieprestatiecertificaten en bouwinspecties.||EU-criteria inzake groene overheidsopdrachten het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 17) of een beoordelaar van gebouwen die gecertificeerd is voor het gebruik van de desbetreffende methodologieën en rekenmethoden."
+                }
+              },
+              {
+                "code": "B9",
+                "title": "Koolstofarme of koolstofvrije energiebronnen",
+                "specification": "*Dit criterium vormt een aanvulling op en stimuleert prestatieverbeteringen die verdergaan dan de vereisten van criterium B4.*\n\nDe aanbestedende dienst kent punten toe evenredig aan de aanvullende primaire energiebehoefte van het gebouw die wordt geleverd/opgewekt door plaatselijke hernieuwbare energiebronnen of alternatieve systemen met een hoge efficiëntie die zijn geïnstalleerd op het terrein van het gebouw of die worden gedeeld met andere gebouwen.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Het ontwerpteam (in geval van een ontwerpwestrijd) of de DB-contractant of de DBO-contractant verstrekt ontwerpen en tekeningen voor de te installeren energiesystemen, samen met berekeningen van de gemodelleerde energieopwekking en de nettobijdrage aan het primaire energieverbruik van het gebouw."
+                }
+              },
+              {
+                "code": "B10.1",
+                "title": "Prestaties van de belangrijkste bouwelementen: aggregatie van milieuproductverklaringen (MPV's)",
+                "specification": "*Dit criterium wordt gebruikt in combinatie met kerncriterium voor gunning B8. Minimumvereisten betreffende energieprestaties om rekening te houden met de gebruiksfase van het gebouw.*\n\nDit criterium mag alleen worden toegepast wanneer er aan de inschrijvers een [hoeveelhedenlijst](popup:TOELICHTING||Hoeveelhedenlijst\n\nEen hoeveelhedenlijst wordt gedefinieerd als \"een lijst met artikelen die gedetailleerde identificerende beschrijvingen en duidelijke hoeveelheden verstrekt van de werken waaruit een opdracht bestaat\" (RICS 2011).||EU-criteria inzake groene overheidsopdrachten het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 22) voor een referentiegebouw wordt verstrekt als basis voor een vergelijking of wanneer tijdens een mededingingsprocedure de door de verschillende inschrijvers ingediende ontwerpen worden vergeleken.\n\n*Tijdens de aanbestedingsprocedure moeten aanvullende technische richtsnoeren worden gevolgd, zoals opgenomen in bijlage 1 van de GPP voor het ontwerp, de bouw en het beheer van kantoorgebouwen (MPV-optie).*\n\n*Een technisch beoordelaar die is gespecialiseerd in LCA, verleent bijstand bij het opstellen van de uitnodiging tot inschrijving en voert een kritische beoordeling uit van de inschrijvingen.*\n\nDe aanbestedende dienst kent punten toe op basis van de verbetering in de prestaties op het gebied van de levensduur van de in tabel B opgenomen belangrijkste bouwelementen in vergelijking met een referentiegebouw of andere deelnemende ontwerpen. Dit wordt uitgevoerd overeenkomstig optie 2 (op basis van een LCA), zoals hieronder weergegeven. De basis voor de vergelijking en de te gebruiken optie worden vermeld in de uitnodiging tot inschrijving.\n\n**Tabel B. Omvang van de te beoordelen bouwelementen**\n\n| Nieuwbouw | Renovatie |\n|---|---|\n| – Funderingen en onderbouw | – Buitenmuren, bedekking en isolatie |\n| – Bouwframe, met inbegrip van balken, zuilen en platen | – Dakrenovatie en isolatie |\n| – Buitenmuren, bedekking en isolatie | – Ramen |\n| – Vloeren en plafonds | |\n| – Binnenmuren | |\n| – Ramen | |\n| – Daken | |\n\nWanneer aanvullende vloeren of aanbouw wordt voorzien met een oppervlakte van > 25 % van het bestaande bruikbare vloeroppervlak, is tevens de lijst met nieuwbouwelementen van toepassing.\n\nDe prestaties worden beoordeeld door de uitvoering van een levenscyclusanalyse (LCA) van het gebouw in overeenstemming met ISO 14040/14044 of EN 15978. In de uitnodiging tot inschrijving wordt vermeld welke van de volgende methoden wordt gebruikt voor de beoordeling:\ni) resultaten van de effectcategorie: de geaggregeerde kenmerkende resultaten voor elke indicator die zijn verkregen met behulp van de gespecificeerde LCA-methode;\nii) score op basis van het LCA-instrument: één score die wordt verkregen met behulp van een nationaal of regionaal LCA-instrument voor gebouwen dat wordt gebruikt door overheidsinstanties;\niii) LCA-score van de beoordelingsregeling van het gebouw: een genormaliseerde of gewogen score afkomstig van een op een LCA gebaseerd criterium binnen een nationale beoordelings- en certificeringsregeling voor gebouwen die wordt gebruikt door overheidsinstanties.\n\nIn elk geval omvat de methode, ten minste, de in bijlage 2 gespecificeerde indicatoren voor de effectcategorie van de levensduur.\n\nWanneer er een LCA wordt uitgevoerd voorafgaand aan het plaatsen van een opdracht voor een hoofdcontractant, verstrekt het ontwerpteam de aanbestedende dienst een overzicht van de belangrijkste technische aannamen, zodat deze kunnen worden opgenomen in de aanbestedingsstukken.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 22"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "Het ontwerpteam of de DB-inschrijver of de DBO-inschrijver verstrekt een materiaallijst voor het voorgestelde ontwerp en de LCA-resultaten, die worden gerapporteerd overeenkomstig ISO 14044 of EN 15978. De vergelijking met het referentiegebouw wordt schriftelijk vastgelegd in een kort technisch verslag waarin de voorgestelde ontwerpoptie(s) worden vergeleken en het verbeteringspotentieel wordt berekend. In het technische verslag wordt beschreven hoe de \"te behandelen technische punten\" (zoals beschreven in bijlage 2) zijn gedekt.\n\nWanneer de resultaten van een beoordelings- en certificeringssysteem voor gebouwen worden gebruikt, verstrekt de geaccrediteerde bouwbeoordelaar van de inschrijver verificatie overeenkomstig de door het systeem gebruikte methode.\n\n*Het technische verslag vormt het onderwerp van een kritische beoordeling door de door de aanbestedende dienst aangestelde technische LCA-beoordelaar. De kritische beoordeling wordt uitgevoerd overeenkomstig de in bijlage 3 opgenomen richtsnoeren.*"
+                }
+              },
+              {
+                "code": "B10.2",
+                "title": "Opname van gerecycled materiaal in beton en metselwerk",
+                "specification": "*Dit criterium wordt gebruikt wanneer alle inschrijvers een structurele oplossing voor beton en metselwerk moeten ontwerpen. Er wordt [aangeraden](popup:TOELICHTING||Indien specifieke plaatselijke omstandigheden en het lokale beleid ten aanzien van ruimtelijke ordening het gebruik van gerecyclede materialen ondersteunen, kan de aanbestedende dienst per geval beoordelen of er een criterium betreffende gerecycled materiaal kan worden opgenomen in de uitnodiging tot inschrijving naast het holistische criterium B10.1 (MPV/LCA). De aannamen en de inventarisgegevens voor de levensduur die betrekking hebben op de productie- en bouwfase van de gerecyclede materialen, moeten deel uitmaken van het antwoord op B10.1.||EU-criteria inzake groene overheidsopdrachten het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 24) om dit criterium te combineren met criterium B10.3, maar het mag niet worden gebruikt als criterium B10.1 is geselecteerd.*\n\n*Dit criterium is van toepassing op kantoorgebouwen met bouwframes van beton, muren van betonblokken en binnen- en buitenmuren bestaande uit vulling en metselwerk.*\n\nDe aanbestedende dienst kent punten toe aan inschrijvers die een waarde aan gerecycled materiaal, hergebruikt materiaal en/of gerecyclede [bijproducten](popup:TOELICHTING||Een bijproduct wordt in artikel 5 van de kaderrichtlijn afvalstoffen gedefinieerd als \"[e]en stof die of een voorwerp dat het resultaat is van een productieproces dat niet in de eerste plaats bedoeld is voor de productie van die stof of dat voorwerp [...]\".||EU-criteria inzake groene overheidsopdrachten het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 25) bereiken van meer dan of gelijk aan 30 % voor de som van de in tabel D genoemde belangrijkste bouwelementen.\n\n*Het minimale gehalte kan hoger worden vastgesteld als er overeenstemming wordt bereikt met het ontwerpteam voorafgaand aan het plaatsen van de opdracht voor de hoofdcontractant.*\n\n*De aanbestedende dienst kan ervoor kiezen meer punten toe te kennen aan hergebruikt materiaal overeenkomstig de lokale omstandigheden. Dit kan mede bestaan uit het geven van de voorkeur aan ontwerpen waarin de primaire dragende structuur van een bestaand gebouw wordt hergebruikt.*\n\n**Tabel D. Omvang van de op te nemen bouwelementen**\n\n| Nieuwbouw | Renovatie |\n|---|---|\n| – Bouwframe, met inbegrip van balken, zuilen en platen | – Buitenmuren |\n| – Buitenmuren | – Binnenmuren |\n| – Vloeren en plafonds | – Dakrenovatie |\n| – Binnenmuren | |\n| – Daken | |\n| – Fundering en onderbouw | |\n\nWanneer aanvullende vloeren of aanbouw worden voorgesteld met een oppervlakte van > 25 % van het bestaande bruikbare vloeroppervlak, is tevens de lijst met nieuwbouwelementen van toepassing.\n\nHet gerecyclede of hergebruikte materiaal wordt berekend op basis van een gemiddelde massabalans van gerecyclede materialen en/of bijproducten overeenkomstig de productiewijze en de manier waarop ze worden aangeleverd op de locatie (zoals van toepassing):\n– voor elke reeds gemengde partij waarvan leveringen worden gezonden naar de bouwlocatie, in overeenstemming met EN 12620 (Toeslagmaterialen voor beton) en EN 206 (Beton) of gelijkwaardig;\n– op jaarbasis voor in de fabriek vervaardigde panelen, zuilen, blokken en elementen met opgegeven materiaalniveaus, in overeenstemming met EN 12620 (Toeslagmaterialen voor beton) en EN 206 (Beton) of gelijkwaardig;\n– in zijn geheel hergebruikte producten, inclusief bevestiging van hun oorsprong.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 24"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De inschrijvers voor hoofdcontractant of de DB-contractant of de DBO-contractant doet een voorstel voor de totale hoeveelheid gerecycled of hergebruikt materiaal waarin de proportionele bijdrage van de totale gerecyclede materialen aan de totale waarde van de gespecificeerde bouwelementen wordt gekwantificeerd op basis van informatie verstrekt door de producent(en) van het bouwproduct.\n\nDe inschrijvers voor hoofdcontractant, de DB-contractant of de DBO-contractant beschrijft hoe de totale waarde wordt berekend en geverifieerd, met inbegrip van, ten minste, partijdocumenten, documentatie over productiecontrole in de fabriek en leveringsdocumentatie, en de manier waarop externe verificatie zal worden uitgevoerd tijdens de bouwfase.\n\n*De bestelling en de levering op de locatie van deze bouwelementen wordt later geverifieerd door de hoofdcontractant voor de bouw (zie punt D6).*"
+                }
+              }
+            ]
+          },
+          "phase_f": {
+            "core_criteria": [
+              {
+                "code": "F2",
+                "title": "Installatie en inbedrijfstelling van koolstofarme of koolstofvrije energiebronnen",
+                "specification": "Er worden extra punten toegekend aan inschrijvers die nazorg verlenen die verdergaat dan de minimale garantievoorschriften, om te waarborgen dat de systemen correct functioneren.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 34"
+                },
+                "contractual_condition": {
+                  "title": "Verificatie",
+                  "text": "De hoofdcontractant voor de bouw of de DBO-contractant stelt een overzicht op van de omvang van de nazorg, in termen van personeelstijd en technische omvang."
+                }
+              }
+            ],
+            "extended_criteria": []
+          }
+        }
+      }
+    },
+    {
+      "key": "contract_performance_clauses",
+      "title": "Uitvoeringsvoorwaarden",
+      "requirement_level": "verplicht",
+      "intro": "Bij deze aanbesteding moeten de EU GPP- óf nationaal gelijkwaardige criteria uitdrukkelijk worden opgenomen als contractuele uitvoeringsvoorwaarden. Ze borgen dat de verplichtingen worden nagekomen.",
+      "warnings": [
+        {
+          "severity": "yellow",
+          "text": "Let op: De kerncriteria (minimale uitvoeringsvoorwaarden) uit de GPP zijn verplicht voor deze aanbesteding. Als de Nederlandse MVI criteria strenger zijn moet u deze opnemen."
+        }
+      ],
+      "steps": [
+        "Kies de fase in de tabel hieronder. De GPP definieert gunningscriteria voor de fases:\n  ~~A: Selectie ontwerpteam & contractanten~~\n  ~~B: Ontwerp- en prestatievereisten~~\n  ~~C: Locatievoorbereiding~~\n  D: Werkzaamheden\n  ~~E: Energiesysteem & energiediensten~~\n  F: Overdracht\n  G: Facilities management",
+        "Neem in ieder geval de kerncriteria op in de aanbestedingsdocumenten.",
+        "Stel vervolgens via [www.mvicriteria.nl](https://www.mvicriteria.nl) vast of de geldende nationale criteria strenger zijn.\n  a. Ga naar de tool en kies de relevante categorie.\n  b. Zet het [ambitieniveau](https://www.mvicriteria.nl) op BASIS.\n  c. Is een MVI basiscriterium strenger dan een GPP kerncriterium? Neem dit strengere MVI criterium op.\n  d. Behandeld een MVI basiscriterium een onderwerp dat de GPP niet behandeld? Neem dit MVI criterium op."
+      ],
+      "gpp_specs": {
+        "main_tabs": [
+          {
+            "key": "phase_a",
+            "label": "Kerncriteria voor fase A: Selectie ontwerpteam & contractanten",
+            "label_short": "A. Selectie ontwerpteam & contractanten",
+            "disabled": true
+          },
+          {
+            "key": "phase_b",
+            "label": "Kerncriteria voor fase B: Ontwerp- en prestatievereisten",
+            "label_short": "B. Ontwerp- en prestatievereisten",
+            "disabled": true
+          },
+          {
+            "key": "phase_c",
+            "label": "Kerncriteria voor fase C: Locatievoorbereiding",
+            "label_short": "C. Locatievoorbereiding",
+            "disabled": true
+          },
+          {
+            "key": "phase_d",
+            "label": "Kerncriteria voor fase D: Bouw van het gebouw of ingrijpende renovatiewerkzaamheden",
+            "label_short": "D. Werkzaamheden"
+          },
+          {
+            "key": "phase_e",
+            "label": "Kerncriteria voor fase E: Energiesysteem & energiediensten",
+            "label_short": "E. Energiesysteem & energiediensten",
+            "disabled": true
+          },
+          {
+            "key": "phase_f",
+            "label": "Kerncriteria voor fase F: Overdracht",
+            "label_short": "F. Overdracht"
+          },
+          {
+            "key": "phase_g",
+            "label": "Kerncriteria voor fase G: Facilities management",
+            "label_short": "G. Facilities management"
+          }
+        ],
+        "default_main_tab": "phase_d",
+        "data": {
+          "phase_d": {
+            "core_criteria": [
+              {
+                "code": "D5",
+                "title": "Installatie en inbedrijfstelling van de energiesystemen van het gebouw",
+                "specification": "*Afhankelijk van de gekozen aanbestedingsprocedure kan dit ook van toepassing zijn op systemen die worden geïnstalleerd door een externe energiedienstencontractant (zie punt E).*\n\nDe volgende systemen worden geïnstalleerd en in bedrijf gesteld conform de overeengekomen ontwerpen en specificaties:\n• verwarming, koeling en ventilatie (HVAC-systemen);\n• koolstofarme en koolstofvrije energietechnologieën;\n• energiebeheersysteem voor gebouwen;\n• lichtbeheerssystemen.\n\nElk systeem wordt onderworpen aan een functionele prestatietest zoals beschreven in de succesvolle inschrijving, met inbegrip van de meting van de prestaties.\n\nDe hoofdcontractant voor de bouw of de DBO-contractant verstrekt een kopie van het toezichtsverslag of -certificaat waarin wordt bevestigd dat de tests van de technische voorzieningen van het gebouw zijn uitgevoerd en waarin gegevens worden verstrekt die bevestigen dat de technische voorzieningen presteren binnen de ontwerpparameters.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 30"
+                }
+              },
+              {
+                "code": "D6",
+                "title": "Opname van gerecycled materiaal",
+                "specification": "Wanneer materialen worden besteld en naar de locatie worden gebracht, worden verklaringen betreffende het gerecyclede materiaal voor elke [productpartij](popup:TOELICHTING||Onder \"partij\" wordt verstaan: een hoeveelheid van op uniforme wijze geëtiketteerde producten, vervaardigd in dezelfde menginstallatie, onder dezelfde omstandigheden en overeenkomstig een vaste menginstelling met dezelfde grondstoffen.||EU-criteria inzake groene overheidsopdrachten het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 31) geverifieerd.\n\nDe belangrijkste contractant voor de bouw of de DBO-contractant verifieert verklaringen door informatie op te vragen bij de leverancier(s) van de gebruikte bouwproducten. Deze informatie omvat massabalansberekeningen die worden ondersteund door testresultaten van de partij, leveringsdocumenten en/of documentatie over de productiecontrole in de fabriek. Voor elk van bovenstaande documenten worden de gegevens geverifieerd middels een controle door een externe partij.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 30"
+                }
+              },
+              {
+                "code": "D7",
+                "title": "Installatie en inbedrijfstelling van de energiesystemen van het gebouw",
+                "specification": "*Indien mogelijk, wordt aanbevolen om steekproefsgewijze controles uit te voeren in samenwerking met de bevoegde autoriteit die verantwoordelijk is voor de uitvoering van de EU-houtverordening.*\n\nDe aanbestedende dienst heeft het recht om steekproefsgewijze controles uit te voeren betreffende de naleving van technische specificatie D1 voor alle of een specifieke set houtproducten die worden gebruikt in het kader van de opdracht. Op verzoek verstrekt de contractant bewijsstukken om de naleving van de EU-houtverordening aan te tonen.\n\nIn de meeste gevallen, wanneer de contractant niet de onderneming is die hout of houtproducten voor de eerste keer op de Europese markt brengt, maar deze producten verkrijgt van anderen (gedefinieerd als \"[handelaar](popup:TOELICHTING||Onder \"handelaar\" wordt verstaan: een natuurlijke of rechtspersoon die in het kader van een handelsactiviteit op de interne markt hout of houtproducten koopt of verkoopt die reeds op de interne markt zijn gebracht.||EU-criteria inzake groene overheidsopdrachten het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 31)\" in de EU-houtverordening), moet de contractant de volgende informatie over hout of houtproducten verstrekken die zal worden geverifieerd tijdens een steekproefsgewijze controle:\n• de marktdeelnemers of interne handelaars die het hout dat en de houtproducten die worden gebruikt in de bouw van het gebouw, hebben geleverd;\n• documenten of andere informatie waaruit blijkt dat deze houtproducten in overeenstemming zijn met de toepasselijke wetgeving;\n• bewijsstukken van de risicobeoordelings- en risicobeperkingsprocedures die zijn ingevoerd overeenkomstig artikel 6, lid 1, onder b) en c), van de EU-houtverordening.\n\nIn gevallen waarin de contractant hout of houtproducten voor de eerste keer op de Europese markt brengt voor gebruik in het bouwproject (gedefinieerd als \"[marktdeelnemer](popup:TOELICHTING||Onder \"marktdeelnemer\" wordt verstaan: een natuurlijke of rechtspersoon die hout of houtproducten op de markt brengt.||EU-criteria inzake groene overheidsopdrachten het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 31)\" in de EU-houtverordening), moet de contractant de volgende informatie over hout of houtproducten verstrekken die worden gecontroleerd tijdens de steekproefsgewijze controle:\n• een beschrijving van elke gebruikte houtsoort, met inbegrip van de handelsnaam, het type product en de gebruikelijke benaming van de boomsoort en, indien van toepassing, de volledige wetenschappelijke benaming daarvan;\n• naam en adres van de leverancier van het hout en de houtproducten;\n• het land waar het hout is gekapt en, indien van toepassing:\n  i) het subnationale gebied waar het hout is gekapt,\n  ii) de kapconcessie,\n  iii) de hoeveelheid (uitgedrukt in omvang, gewicht of aantal eenheden);\n• documenten of andere informatie waaruit blijkt dat deze houtproducten in overeenstemming zijn met de toepasselijke wetgeving;\n• bewijsstukken van de risicobeoordelings- en risicobeperkingsprocedures die zijn ingevoerd overeenkomstig artikel 6, lid 1, onder b) en c), van de EU-houtverordening. Dit kan tevens certificering of andere door derden geverifieerde regelingen omvatten.\n\nHout dat valt onder een geldige FLEGT- of CITES-licentie van de EU, wordt beschouwd als legaal gekapt hout overeenkomstig de EU-houtverordening.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 31"
+                }
+              },
+              {
+                "code": "D8",
+                "title": "Afvalbeheer op de locatie",
+                "specification": "De werking van het overeengekomen afvalbeheersplan voor de locatie wordt gecontroleerd en er wordt over gerapporteerd tijdens de voortgang van de bouwwerkzaamheden op de locatie. Dit omvat gegevens over het gewicht van de op grond van gescheiden inzameling op locatie ingezamelde materialen voor hergebruik en recycling overeenkomstig het in de technische specificaties beschreven toepassingsgebied.\n\nEr wordt een systeem gebruikt voor het controleren en kwantificeren van afvalproductie en materialen die worden gescheiden voor recycling en hergebruikt. Tevens wordt de bestemming van afvalzendingen getraceerd en geverifieerd. De controle- en traceringsgegevens worden op overeengekomen periodieke basis verstrekt aan de aanbestedende dienst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 32"
+                }
+              }
+            ],
+            "extended_criteria": []
+          },
+          "phase_f": {
+            "core_criteria": [
+              {
+                "code": "F3",
+                "title": "Kwaliteit van de voltooide bouwschil",
+                "specification": "De hoofdcontractant test de kwaliteit van de voltooide bouwschil en de constructie daarvan om te waarborgen dat deze voldoen aan de ontwerpspecificaties betreffende luchtdichtheid. Wanneer er gebreken worden geconstateerd, worden herstelmaatregelen voorgesteld.\n\nEr wordt een test met de overdrukmethode uitgevoerd voor ten minste 20 % van het bruikbare interne vloeroppervlak van het gebouw, waarbij wordt aangetoond dat de ontworpen luchtdichtheid 4 m3/(h.m2) bedraagt bij 50 Pascal voor nieuwbouw en 8 m3/(h.m2) bedraagt bij 50 Pascal voor ingrijpende renovaties.\n\nDe test wordt uitgevoerd overeenkomstig EN 13829 of gelijkwaardige normen die worden aanvaard door de desbetreffende instantie voor bouwtoezicht waar het gebouw zich bevindt.\n\nDe tests worden uitgevoerd na de praktische voltooiing van het gebouw. De contractant verstrekt een kopie van een controleverslag of -certificaat waarin wordt bevestigd dat het gebouw voldoet aan de voorschriften betreffende luchtdichtheid na uitvoering van een test overeenkomstig EN 13829 of gelijkwaardig.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 34"
+                }
+              },
+              {
+                "code": "F4",
+                "title": "Lichtbeheerssystemen",
+                "specification": "De systemen worden in bedrijf gesteld overeenkomstig contractuele uitvoeringsvoorwaarde 3.3.1 voor hetzelfde criterium. De hoofdcontractant verstrekt een gebruikshandleiding voor de systemen overeenkomstig GPP-criterium 3.3.1 voor het ontwerp van binnenverlichting (technische specificatie).\n\nGebruikers en *(indien van toepassing)* de aangewezen aanbieder van facilities management krijgen een cursus over het gebruik van de systemen. Ook de interface met het energiebeheersysteem voor het gebouw (criterium F2) komt aan de orde.\n\nHet ontwerpteam of de DB-contractant of de DBO-contractant verstrekt een kopie van het toezichtsverslag of -certificaat waarin wordt bevestigd dat de tests van de lichtbeheerssystemen zijn uitgevoerd en waarin gegevens worden verstrekt die bevestigen dat de systemen presteren binnen de ontwerpparameters. Daarnaast wordt bevestigd dat de vereiste materialen en cursussen zijn verstrekt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 35"
+                }
+              },
+              {
+                "code": "F5",
+                "title": "Energiebeheersysteem voor gebouwen",
+                "specification": "Het energiebeheersysteem voor het gebouw wordt in bedrijf gesteld overeenkomstig de vereiste technische specificaties. De belangrijkste contractant verstrekt een gebruikshandleiding voor het energiebeheersysteem voor het gebouw. Gebruikers en (indien van toepassing) de aangewezen aanbieder van facilities management krijgen een cursus over het gebruik van het energiebeheersysteem. Dit omvat het gebruik van de gebruikersinterface voor het analyseren en downloaden van energiegegevens met behulp van toegankelijke softwarehulpmiddelen.\n\nDe hoofdcontractant voor de bouw of de DBO-contractant verstrekt:\n• een kopie van het toezichtsverslag of -certificaat waarin wordt bevestigd dat het energiebeheersysteem is getest;\n• gegevens waaruit blijkt dat het systeem presteert binnen de ontwerpparameters;\n• bevestiging dat de vereiste materialen en cursussen zijn verstrekt.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 35"
+                }
+              },
+              {
+                "code": "F6",
+                "title": "Installatie en inbedrijfstelling van koolstofarme of koolstofvrije energiebronnen",
+                "specification": "De koolstofarme of koolstofvrije energiesystemen worden in bedrijf gesteld overeenkomstig de vereiste technische specificaties. De hoofdcontractant voor de bouw of de DBO-contractant verstrekt een kopie van het toezichtsverslag of -certificaat waarin wordt bevestigd dat de tests van de energiesystemen zijn uitgevoerd en waarin gegevens worden verstrekt die bevestigen dat de systemen presteren binnen de ontwerpparameters.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 35"
+                }
+              },
+              {
+                "code": "F7",
+                "title": "Opslag van recyclebaar afval",
+                "specification": "Na voltooiing wordt bevestigd dat is voorzien in specifieke opslagruimte binnen het gebouw of op het terrein van het gebouw, zodat recycleerbare materialen en afgedankte producten door de gebruikers kunnen worden gescheiden (onder verwijzing naar de vereisten van criterium B6).\n\nDe contractant voor de bouw, de DB-contractant of de DBO-contractant verstrekt definitieve gedetailleerde plannen voor de gebouwde recyclingfaciliteiten.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 36"
+                }
+              },
+              {
+                "code": "F8",
+                "title": "Testen van de luchtkwaliteit",
+                "specification": "De hoofdcontractant test de luchtkwaliteit binnen het gebouw uiterlijk vier weken na de voltooiing van de inrichting van het gebouw met de materialen en afwerkingen van criterium D5 en voorafgaand aan de ingebruikname.\n\nDe tests worden uitgevoerd voor elke afzonderlijke ruimte-indeling in het gebouw die meer dan 10 % uitmaakt van de kantoorruimte. Per ruimte-indeling worden twee voorbeeldruimten met verschillende gevelaspecten getest.\n\nDe testresultaten voor elke geteste ruimtespecificatie in het gebouw voldoen aan de voorschriften in tabel H.\n\n**Tabel H. Parameters voor het testen van de luchtkwaliteit in het kantoorgebouw**\n\n| Te testen stoffen | Testparameters |\n|---|---|\n| **Totaal vluchtige organische stoffen (TVOS)** | < 500 μg/m³ (achturig gemiddelde) overeenkomstig ISO 16017-2 of gelijkwaardig |\n| **Formaldehyde** | < 100 μg/m³ (gemiddelde over 30 minuten) overeenkomstig ISO 16000-3 of gelijkwaardig |\n| **Deeltjes** | Een achturig gemiddelde voor twee deeltjesgroottes overeenkomstig ISO 7708 of gelijkwaardig:\n• PM 10: 50 μg/m³\n• PM 2,5: 15 μg/m³ |\n\nDe hoofdcontractant voor de bouw of de DBO-contractant voert tests uit en verstrekt de testresultaten waaruit blijkt dat wordt voldaan aan de vereiste parameters. Alle metingen worden gedaan tijdens normale bezettingsuren en onder de ontworpen ventilatie-omstandigheden waarbij de systemen minstens 12-24 uur voorafgaand aan de tests zijn ingeschakeld.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 36"
+                }
+              }
+            ],
+            "extended_criteria": [
+              {
+                "code": "F3",
+                "title": "Kwaliteit van de voltooide bouwschil",
+                "specification": "De hoofdcontractant test en beoordeelt de kwaliteit van de voltooide bouwschil en de constructie daarvan om te waarborgen dat deze voldoen aan de ontwerpspecificaties betreffende luchtdichtheid en continuïteit van de isolatie. Wanneer er gebreken worden geconstateerd, worden herstelmaatregelen voorgesteld.\n\nDe controle wordt uitgevoerd in de vorm van een beoordeling op basis van thermografiebeelden die wordt gemaakt overeenkomstig EN 13187, en er wordt een test met de overdrukmethode uitgevoerd voor ten minste 20 % van het bruikbare interne vloeroppervlak van het gebouw, waarbij wordt aangetoond dat de ontworpen luchtdichtheid 2 m3/(h.m2) bedraagt bij 50 Pascal voor nieuwbouw en 5 m3/(h.m2) bedraagt bij 50 Pascal voor ingrijpende renovaties.\n\nDe blowerdoortest wordt uitgevoerd overeenkomstig EN 13829 of gelijkwaardige normen die worden aanvaard door de desbetreffende instantie voor bouwtoezicht waar het gebouw zich bevindt.\nDe tests worden uitgevoerd na de praktische voltooiing van het gebouw. De contractant verstrekt een kopie van een controleverslag of -certificaat waarin wordt bevestigd dat het gebouw voldoet aan de voorschriften betreffende luchtdichtheid na uitvoering van een test overeenkomstig EN 13829 of gelijkwaardig.\n\nEr doen zich geen aanzienlijke gebreken of onregelmatigheden voor in de constructiedetails in overeenstemming met EN 13187 of gelijkwaardig.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 34"
+                }
+              }
+            ]
+          },
+          "phase_g": {
+            "core_criteria": [
+              {
+                "code": "G4",
+                "title": "Energieprestatiecontract",
+                "specification": "Energiegegevens worden onafhankelijk bij elkaar gevoegd, zodat de energieprestaties van het gebouw op jaarbasis kunnen worden gecontroleerd ten opzichte van overeengekomen grenswaarden voor het energieverbruik. De exploitant van het gebouw of de facilities manager zorgt ervoor dat een externe partij de gegevens van facturen/meters van de nutsvoorzieningen en het energiebeheersysteem van het gebouw samenvoegt.\n\nDeze gegevens worden jaarlijks beoordeeld door zowel de exploitant als de aanbestedende dienst om het energieverbruik van het gebouw vast te kunnen stellen alsmede de maandelijkse winst/het maandelijkse verlies voor de exploitant en de aanbestedende dienst.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 39"
+                }
+              },
+              {
+                "code": "G5",
+                "title": "Afvalbeheerssysteem",
+                "specification": "De gebouwbeheerder controleert en kwantificeert voortdurend op de overeengekomen basis de totale afvalproductie en het recyclepercentage voor het gebouw/de gebouwen. Facilities managers of DBO-contractanten verstrekken de aanbestedende dienst maandelijks gegevens waarin de afvalproductie wordt gekwantificeerd als onderdeel van de totale afvalproductie van het gebouw en in kg per afvalfractie.",
+                "source": {
+                  "text": "EU-criteria inzake groene overheidsopdrachten voor het ontwerp, de bouw en het beheer van kantoorgebouwen - Pag. 39"
+                }
+              }
+            ],
+            "extended_criteria": []
+          }
+        }
+      }
     }
   ]
 }
