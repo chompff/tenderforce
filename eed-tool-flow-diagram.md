@@ -94,8 +94,8 @@ graph LR
     end
     
     subgraph "Decentral Authorities"
-        DA1[Services: €221,000]
-        DA2[Supplies: €221,000]
+        DA1[Services: €216,000]
+        DA2[Supplies: €216,000]
         DA3[Works: €5,538,000]
     end
     
@@ -106,7 +106,7 @@ graph LR
     end
     
     subgraph "Subsidized Entities"
-        SE1[Services: €221,000]
+        SE1[Services: €216,000]
         SE2[Supplies: €5,538,000]
     end
 ```

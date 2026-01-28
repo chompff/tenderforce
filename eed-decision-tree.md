@@ -96,7 +96,7 @@ graph LR
         end
         
         subgraph "Decentral Authorities"
-            DA[Services: €221,000<br/>Supplies: €221,000<br/>Works: €5,538,000]
+            DA[Services: €216,000<br/>Supplies: €216,000<br/>Works: €5,538,000]
         end
         
         subgraph "Special Sector"
@@ -104,7 +104,7 @@ graph LR
         end
         
         subgraph "Subsidized"
-            SUB[Services: €221,000<br/>Works: €5,538,000]
+            SUB[Services: €216,000<br/>Works: €5,538,000]
         end
     end
 ```

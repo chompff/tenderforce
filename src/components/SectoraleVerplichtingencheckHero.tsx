@@ -92,25 +92,25 @@ const SectoraleVerplichtingencheckHero: React.FC = () => {
     const thresholds: Record<string, Record<string, string>> = {
       'rijksoverheid': {
         'Werken': '€5.538.000',
-        'Leveringen': '€143.000', 
-        'Diensten': '€143.000',
+        'Leveringen': '€140.000', 
+        'Diensten': '€140.000',
         'Concessie': '€5.538.000'
       },
       'decentraal': {
         'Werken': '€5.538.000',
-        'Leveringen': '€221.000',
-        'Diensten': '€221.000', 
+        'Leveringen': '€216.000',
+        'Diensten': '€216.000', 
         'Concessie': '€5.538.000'
       },
       'publiekrechterlijk': {
         'Werken': '€5.538.000',
-        'Leveringen': '€221.000',
-        'Diensten': '€221.000',
+        'Leveringen': '€216.000',
+        'Diensten': '€216.000',
         'Concessie': '€5.538.000'
       }
     };
     
-    const threshold = thresholds[orgType]?.[aanbestedingType] || '€221.000';
+    const threshold = thresholds[orgType]?.[aanbestedingType] || '€216.000';
     console.log(`💰 Threshold calculation: ${orgType} + ${aanbestedingType} = ${threshold}`);
     return threshold;
   };
